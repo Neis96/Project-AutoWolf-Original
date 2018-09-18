@@ -8,7 +8,7 @@
 
     Private Sub VehiculoBindingNavigatorSaveItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs)
         Me.Validate()
-        Me.VehiculoBindingSource.EndEdit()
+        'Me.VehiculoBindingSource.EndEdit()
         ' Me.TableAdapterManager.UpdateAll(Me.PrimeraBdDataSet)
 
     End Sub

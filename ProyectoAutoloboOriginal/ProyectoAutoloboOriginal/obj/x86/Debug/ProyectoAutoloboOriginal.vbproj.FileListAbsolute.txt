@@ -1,1 +1,10 @@
-C:\Users\thoma\Desktop\thom\programacion\Ejercicios visual\krak\Project-AutoWolf-Original\ProyectoAutoloboOriginal\ProyectoAutoloboOriginal\bin\Debug\ProyectoAutoloboOriginal.exe.config
+C:\Users\thoma\Desktop\thom\programacion\Ejercicios visual\krak\Project-AutoWolf-Original\ProyectoAutoloboOriginal\ProyectoAutoloboOriginal\bin\Debug\ProyectoAutoloboOriginal.exe
+C:\Users\thoma\Desktop\thom\programacion\Ejercicios visual\krak\Project-AutoWolf-Original\ProyectoAutoloboOriginal\ProyectoAutoloboOriginal\bin\Debug\ProyectoAutoloboOriginal.pdb
+C:\Users\thoma\Desktop\thom\programacion\Ejercicios visual\krak\Project-AutoWolf-Original\ProyectoAutoloboOriginal\ProyectoAutoloboOriginal\bin\Debug\ProyectoAutoloboOriginal.xml
+C:\Users\thoma\Desktop\thom\programacion\Ejercicios visual\krak\Project-AutoWolf-Original\ProyectoAutoloboOriginal\ProyectoAutoloboOriginal\obj\x86\Debug\ProyectoAutoloboOriginal.vbprojResolveAssemblyReference.cache
+C:\Users\thoma\Desktop\thom\programacion\Ejercicios visual\krak\Project-AutoWolf-Original\ProyectoAutoloboOriginal\ProyectoAutoloboOriginal\obj\x86\Debug\ProyectoAutoloboOriginal.Home.resources
+C:\Users\thoma\Desktop\thom\programacion\Ejercicios visual\krak\Project-AutoWolf-Original\ProyectoAutoloboOriginal\ProyectoAutoloboOriginal\obj\x86\Debug\ProyectoAutoloboOriginal.Resources.resources
+C:\Users\thoma\Desktop\thom\programacion\Ejercicios visual\krak\Project-AutoWolf-Original\ProyectoAutoloboOriginal\ProyectoAutoloboOriginal\obj\x86\Debug\ProyectoAutoloboOriginal.vbproj.GenerateResource.Cache
+C:\Users\thoma\Desktop\thom\programacion\Ejercicios visual\krak\Project-AutoWolf-Original\ProyectoAutoloboOriginal\ProyectoAutoloboOriginal\obj\x86\Debug\ProyectoAutoloboOriginal.exe
+C:\Users\thoma\Desktop\thom\programacion\Ejercicios visual\krak\Project-AutoWolf-Original\ProyectoAutoloboOriginal\ProyectoAutoloboOriginal\obj\x86\Debug\ProyectoAutoloboOriginal.xml
+C:\Users\thoma\Desktop\thom\programacion\Ejercicios visual\krak\Project-AutoWolf-Original\ProyectoAutoloboOriginal\ProyectoAutoloboOriginal\obj\x86\Debug\ProyectoAutoloboOriginal.pdb
