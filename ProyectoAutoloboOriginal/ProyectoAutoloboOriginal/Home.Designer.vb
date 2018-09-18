@@ -24,10 +24,10 @@ Partial Class Home
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Home))
-        Me.PrimeraBdDataSet = New ProyectoAutoloboOriginal.primeraBdDataSet()
+        'Me.PrimeraBdDataSet = New ProyectoAutoloboOriginal.primeraBdDataSet()
         Me.VehiculoBindingSource = New System.Windows.Forms.BindingSource(Me.components)
-        Me.VehiculoTableAdapter = New ProyectoAutoloboOriginal.primeraBdDataSetTableAdapters.vehiculoTableAdapter()
-        Me.TableAdapterManager = New ProyectoAutoloboOriginal.primeraBdDataSetTableAdapters.TableAdapterManager()
+        'Me.VehiculoTableAdapter = New ProyectoAutoloboOriginal.primeraBdDataSetTableAdapters.vehiculoTableAdapter()
+        'Me.TableAdapterManager = New ProyectoAutoloboOriginal.primeraBdDataSetTableAdapters.TableAdapterManager()
         Me.BindingNavigator1 = New System.Windows.Forms.BindingNavigator(Me.components)
         Me.BindingNavigatorMoveFirstItem = New System.Windows.Forms.ToolStripButton()
         Me.BindingNavigatorMovePreviousItem = New System.Windows.Forms.ToolStripButton()
@@ -40,7 +40,7 @@ Partial Class Home
         Me.BindingNavigatorSeparator2 = New System.Windows.Forms.ToolStripSeparator()
         Me.BindingNavigatorAddNewItem = New System.Windows.Forms.ToolStripButton()
         Me.BindingNavigatorDeleteItem = New System.Windows.Forms.ToolStripButton()
-        CType(Me.PrimeraBdDataSet, System.ComponentModel.ISupportInitialize).BeginInit()
+        '  CType(Me.PrimeraBdDataSet, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.VehiculoBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.BindingNavigator1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.BindingNavigator1.SuspendLayout()
@@ -48,27 +48,27 @@ Partial Class Home
         '
         'PrimeraBdDataSet
         '
-        Me.PrimeraBdDataSet.DataSetName = "primeraBdDataSet"
-        Me.PrimeraBdDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
+        '   Me.PrimeraBdDataSet.DataSetName = "primeraBdDataSet"
+        'Me.PrimeraBdDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
         '
         'VehiculoBindingSource
         '
         Me.VehiculoBindingSource.DataMember = "vehiculo"
-        Me.VehiculoBindingSource.DataSource = Me.PrimeraBdDataSet
+        '  Me.VehiculoBindingSource.DataSource = Me.PrimeraBdDataSet
         '
         'VehiculoTableAdapter
         '
-        Me.VehiculoTableAdapter.ClearBeforeFill = True
+        ' Me.VehiculoTableAdapter.ClearBeforeFill = True
         '
         'TableAdapterManager
         '
-        Me.TableAdapterManager.BackupDataSetBeforeUpdate = False
-        Me.TableAdapterManager.choferTableAdapter = Nothing
-        Me.TableAdapterManager.clienteTableAdapter = Nothing
-        Me.TableAdapterManager.t_modeloTableAdapter = Nothing
-        Me.TableAdapterManager.UpdateOrder = ProyectoAutoloboOriginal.primeraBdDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete
-        Me.TableAdapterManager.vehiculoTableAdapter = Me.VehiculoTableAdapter
-        Me.TableAdapterManager.viajeTableAdapter = Nothing
+        ' Me.TableAdapterManager.BackupDataSetBeforeUpdate = False
+        '  Me.TableAdapterManager.choferTableAdapter = Nothing
+        '  Me.TableAdapterManager.clienteTableAdapter = Nothing
+        ' Me.TableAdapterManager.t_modeloTableAdapter = Nothing
+        'Me.TableAdapterManager.UpdateOrder = ProyectoAutoloboOriginal.primeraBdDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete
+        ' Me.TableAdapterManager.vehiculoTableAdapter = Me.VehiculoTableAdapter
+        ' Me.TableAdapterManager.viajeTableAdapter = Nothing
         '
         'BindingNavigator1
         '
@@ -181,7 +181,7 @@ Partial Class Home
         Me.Controls.Add(Me.BindingNavigator1)
         Me.Name = "Home"
         Me.Text = "Home"
-        CType(Me.PrimeraBdDataSet, System.ComponentModel.ISupportInitialize).EndInit()
+        'CType(Me.PrimeraBdDataSet, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.VehiculoBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.BindingNavigator1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.BindingNavigator1.ResumeLayout(False)
@@ -190,10 +190,10 @@ Partial Class Home
         Me.PerformLayout()
 
     End Sub
-    Friend WithEvents PrimeraBdDataSet As ProyectoAutoloboOriginal.primeraBdDataSet
+    'Friend WithEvents PrimeraBdDataSet As ProyectoAutoloboOriginal.primeraBdDataSet
     Friend WithEvents VehiculoBindingSource As System.Windows.Forms.BindingSource
-    Friend WithEvents VehiculoTableAdapter As ProyectoAutoloboOriginal.primeraBdDataSetTableAdapters.vehiculoTableAdapter
-    Friend WithEvents TableAdapterManager As ProyectoAutoloboOriginal.primeraBdDataSetTableAdapters.TableAdapterManager
+    'Friend WithEvents VehiculoTableAdapter As ProyectoAutoloboOriginal.primeraBdDataSetTableAdapters.vehiculoTableAdapter
+    ' Friend WithEvents TableAdapterManager As ProyectoAutoloboOriginal.primeraBdDataSetTableAdapters.TableAdapterManager
     Friend WithEvents BindingNavigator1 As System.Windows.Forms.BindingNavigator
     Friend WithEvents BindingNavigatorAddNewItem As System.Windows.Forms.ToolStripButton
     Friend WithEvents BindingNavigatorCountItem As System.Windows.Forms.ToolStripLabel
