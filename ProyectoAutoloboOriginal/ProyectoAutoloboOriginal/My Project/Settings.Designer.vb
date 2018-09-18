@@ -63,6 +63,37 @@ Namespace My
                 Return CType(Me("BaseRemiseriaConnectionString"),String)
             End Get
         End Property
+        
+        <Global.System.Configuration.ApplicationScopedSettingAttribute(),  _
+         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.Configuration.SpecialSettingAttribute(Global.System.Configuration.SpecialSetting.ConnectionString),  _
+         Global.System.Configuration.DefaultSettingValueAttribute("Data Source=DESKTOP-K3J4GCO;Initial Catalog=primeraBd;Integrated Security=True")>  _
+        Public ReadOnly Property primeraBdConnectionString() As String
+            Get
+                Return CType(Me("primeraBdConnectionString"),String)
+            End Get
+        End Property
+        
+        <Global.System.Configuration.ApplicationScopedSettingAttribute(),  _
+         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.Configuration.SpecialSettingAttribute(Global.System.Configuration.SpecialSetting.ConnectionString),  _
+         Global.System.Configuration.DefaultSettingValueAttribute("Data Source=DESKTOP-K3J4GCO;Initial Catalog=ProjectAutoWolfOriginal;Integrated Se"& _ 
+            "curity=True")>  _
+        Public ReadOnly Property ProjectAutoWolfOriginalConnectionString() As String
+            Get
+                Return CType(Me("ProjectAutoWolfOriginalConnectionString"),String)
+            End Get
+        End Property
+        
+        <Global.System.Configuration.ApplicationScopedSettingAttribute(),  _
+         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.Configuration.SpecialSettingAttribute(Global.System.Configuration.SpecialSetting.ConnectionString),  _
+         Global.System.Configuration.DefaultSettingValueAttribute("Data Source=|DataDirectory|\Database1.sdf")>  _
+        Public ReadOnly Property Database1ConnectionString() As String
+            Get
+                Return CType(Me("Database1ConnectionString"),String)
+            End Get
+        End Property
     End Class
 End Namespace
 
