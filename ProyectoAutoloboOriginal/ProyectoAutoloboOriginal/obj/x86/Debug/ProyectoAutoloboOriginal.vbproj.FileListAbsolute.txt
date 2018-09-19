@@ -8,3 +8,6 @@ C:\Users\thoma\Desktop\thom\programacion\Ejercicios visual\krak\Project-AutoWolf
 C:\Users\thoma\Desktop\thom\programacion\Ejercicios visual\krak\Project-AutoWolf-Original\ProyectoAutoloboOriginal\ProyectoAutoloboOriginal\obj\x86\Debug\ProyectoAutoloboOriginal.exe
 C:\Users\thoma\Desktop\thom\programacion\Ejercicios visual\krak\Project-AutoWolf-Original\ProyectoAutoloboOriginal\ProyectoAutoloboOriginal\obj\x86\Debug\ProyectoAutoloboOriginal.xml
 C:\Users\thoma\Desktop\thom\programacion\Ejercicios visual\krak\Project-AutoWolf-Original\ProyectoAutoloboOriginal\ProyectoAutoloboOriginal\obj\x86\Debug\ProyectoAutoloboOriginal.pdb
+C:\Users\user\Desktop\GitHub\Projecto Autolobo Original\Project AutoWolf Original\ProyectoAutoloboOriginal\ProyectoAutoloboOriginal\obj\x86\Debug\ProyectoAutoloboOriginal.exe
+C:\Users\user\Desktop\GitHub\Projecto Autolobo Original\Project AutoWolf Original\ProyectoAutoloboOriginal\ProyectoAutoloboOriginal\obj\x86\Debug\ProyectoAutoloboOriginal.xml
+C:\Users\user\Desktop\GitHub\Projecto Autolobo Original\Project AutoWolf Original\ProyectoAutoloboOriginal\ProyectoAutoloboOriginal\obj\x86\Debug\ProyectoAutoloboOriginal.pdb
