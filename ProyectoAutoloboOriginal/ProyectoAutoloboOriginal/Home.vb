@@ -12,4 +12,8 @@
         ' Me.TableAdapterManager.UpdateAll(Me.PrimeraBdDataSet)
 
     End Sub
+
+    Private Sub ButtonHome_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles ButtonHome.Click
+
+    End Sub
 End Class

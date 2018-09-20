@@ -37,8 +37,11 @@ Partial Class Home
         Me.GuiaToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ContactosToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ConfiguracionToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.Button1 = New System.Windows.Forms.Button()
-        Me.Button2 = New System.Windows.Forms.Button()
+        Me.ButtonHome = New System.Windows.Forms.Button()
+        Me.ButtonSocio = New System.Windows.Forms.Button()
+        Me.ButtonChof = New System.Windows.Forms.Button()
+        Me.Buttviaje = New System.Windows.Forms.Button()
+        Me.ButtVehiculo = New System.Windows.Forms.Button()
         Me.MenuStrip1.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -61,19 +64,19 @@ Partial Class Home
         'NuevoUsuarioToolStripMenuItem
         '
         Me.NuevoUsuarioToolStripMenuItem.Name = "NuevoUsuarioToolStripMenuItem"
-        Me.NuevoUsuarioToolStripMenuItem.Size = New System.Drawing.Size(151, 22)
+        Me.NuevoUsuarioToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
         Me.NuevoUsuarioToolStripMenuItem.Text = "Nuevo Socio"
         '
         'NueToolStripMenuItem
         '
         Me.NueToolStripMenuItem.Name = "NueToolStripMenuItem"
-        Me.NueToolStripMenuItem.Size = New System.Drawing.Size(151, 22)
+        Me.NueToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
         Me.NueToolStripMenuItem.Text = "Nuevo Viaje"
         '
         'NuevaReservaToolStripMenuItem
         '
         Me.NuevaReservaToolStripMenuItem.Name = "NuevaReservaToolStripMenuItem"
-        Me.NuevaReservaToolStripMenuItem.Size = New System.Drawing.Size(151, 22)
+        Me.NuevaReservaToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
         Me.NuevaReservaToolStripMenuItem.Text = "Nueva Reserva"
         '
         'VerToolStripMenuItem
@@ -86,7 +89,7 @@ Partial Class Home
         'ResumenToolStripMenuItem
         '
         Me.ResumenToolStripMenuItem.Name = "ResumenToolStripMenuItem"
-        Me.ResumenToolStripMenuItem.Size = New System.Drawing.Size(123, 22)
+        Me.ResumenToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
         Me.ResumenToolStripMenuItem.Text = "Resumen"
         '
         'GestionToolStripMenuItem
@@ -124,13 +127,13 @@ Partial Class Home
         'GuiaToolStripMenuItem
         '
         Me.GuiaToolStripMenuItem.Name = "GuiaToolStripMenuItem"
-        Me.GuiaToolStripMenuItem.Size = New System.Drawing.Size(128, 22)
+        Me.GuiaToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
         Me.GuiaToolStripMenuItem.Text = "Guia"
         '
         'ContactosToolStripMenuItem
         '
         Me.ContactosToolStripMenuItem.Name = "ContactosToolStripMenuItem"
-        Me.ContactosToolStripMenuItem.Size = New System.Drawing.Size(128, 22)
+        Me.ContactosToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
         Me.ContactosToolStripMenuItem.Text = "Contactos"
         '
         'ConfiguracionToolStripMenuItem
@@ -139,31 +142,61 @@ Partial Class Home
         Me.ConfiguracionToolStripMenuItem.Size = New System.Drawing.Size(95, 20)
         Me.ConfiguracionToolStripMenuItem.Text = "Configuracion"
         '
-        'Button1
+        'ButtonHome
         '
-        Me.Button1.Location = New System.Drawing.Point(67, 69)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(75, 23)
-        Me.Button1.TabIndex = 1
-        Me.Button1.Text = "Button1"
-        Me.Button1.UseVisualStyleBackColor = True
+        Me.ButtonHome.Location = New System.Drawing.Point(763, 41)
+        Me.ButtonHome.Name = "ButtonHome"
+        Me.ButtonHome.Size = New System.Drawing.Size(75, 23)
+        Me.ButtonHome.TabIndex = 1
+        Me.ButtonHome.Text = "Button1"
+        Me.ButtonHome.UseVisualStyleBackColor = True
         '
-        'Button2
+        'ButtonSocio
         '
-        Me.Button2.Location = New System.Drawing.Point(67, 124)
-        Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(75, 23)
-        Me.Button2.TabIndex = 2
-        Me.Button2.Text = "Button2"
-        Me.Button2.UseVisualStyleBackColor = True
+        Me.ButtonSocio.Location = New System.Drawing.Point(67, 96)
+        Me.ButtonSocio.Name = "ButtonSocio"
+        Me.ButtonSocio.Size = New System.Drawing.Size(75, 23)
+        Me.ButtonSocio.TabIndex = 2
+        Me.ButtonSocio.Text = "SOCIOS"
+        Me.ButtonSocio.UseVisualStyleBackColor = True
+        '
+        'ButtonChof
+        '
+        Me.ButtonChof.Location = New System.Drawing.Point(67, 140)
+        Me.ButtonChof.Name = "ButtonChof"
+        Me.ButtonChof.Size = New System.Drawing.Size(75, 23)
+        Me.ButtonChof.TabIndex = 3
+        Me.ButtonChof.Text = "CHOFERES"
+        Me.ButtonChof.UseVisualStyleBackColor = True
+        '
+        'Buttviaje
+        '
+        Me.Buttviaje.Location = New System.Drawing.Point(67, 186)
+        Me.Buttviaje.Name = "Buttviaje"
+        Me.Buttviaje.Size = New System.Drawing.Size(75, 23)
+        Me.Buttviaje.TabIndex = 4
+        Me.Buttviaje.Text = "VIAJE"
+        Me.Buttviaje.UseVisualStyleBackColor = True
+        '
+        'ButtVehiculo
+        '
+        Me.ButtVehiculo.Location = New System.Drawing.Point(67, 241)
+        Me.ButtVehiculo.Name = "ButtVehiculo"
+        Me.ButtVehiculo.Size = New System.Drawing.Size(75, 23)
+        Me.ButtVehiculo.TabIndex = 5
+        Me.ButtVehiculo.Text = "VEHICULO"
+        Me.ButtVehiculo.UseVisualStyleBackColor = True
         '
         'Home
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(1005, 431)
-        Me.Controls.Add(Me.Button2)
-        Me.Controls.Add(Me.Button1)
+        Me.Controls.Add(Me.ButtVehiculo)
+        Me.Controls.Add(Me.Buttviaje)
+        Me.Controls.Add(Me.ButtonChof)
+        Me.Controls.Add(Me.ButtonSocio)
+        Me.Controls.Add(Me.ButtonHome)
         Me.Controls.Add(Me.MenuStrip1)
         Me.MainMenuStrip = Me.MenuStrip1
         Me.Name = "Home"
@@ -189,8 +222,11 @@ Partial Class Home
     Friend WithEvents GuiaToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents ContactosToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents ConfiguracionToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
-    Friend WithEvents Button1 As System.Windows.Forms.Button
-    Friend WithEvents Button2 As System.Windows.Forms.Button
+    Friend WithEvents ButtonHome As System.Windows.Forms.Button
+    Friend WithEvents ButtonSocio As System.Windows.Forms.Button
+    Friend WithEvents ButtonChof As System.Windows.Forms.Button
+    Friend WithEvents Buttviaje As System.Windows.Forms.Button
+    Friend WithEvents ButtVehiculo As System.Windows.Forms.Button
     'Friend WithEvents PrimeraBdDataSet As ProyectoAutoloboOriginal.primeraBdDataSet
     'Friend WithEvents VehiculoTableAdapter As ProyectoAutoloboOriginal.primeraBdDataSetTableAdapters.vehiculoTableAdapter
     ' Friend WithEvents TableAdapterManager As ProyectoAutoloboOriginal.primeraBdDataSetTableAdapters.TableAdapterManager
