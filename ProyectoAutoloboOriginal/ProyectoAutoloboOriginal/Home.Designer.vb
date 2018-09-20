@@ -61,32 +61,32 @@ Partial Class Home
         'NuevoUsuarioToolStripMenuItem
         '
         Me.NuevoUsuarioToolStripMenuItem.Name = "NuevoUsuarioToolStripMenuItem"
-        Me.NuevoUsuarioToolStripMenuItem.Size = New System.Drawing.Size(151, 22)
+        Me.NuevoUsuarioToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
         Me.NuevoUsuarioToolStripMenuItem.Text = "Nuevo Socio"
         '
         'NueToolStripMenuItem
         '
         Me.NueToolStripMenuItem.Name = "NueToolStripMenuItem"
-        Me.NueToolStripMenuItem.Size = New System.Drawing.Size(151, 22)
+        Me.NueToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
         Me.NueToolStripMenuItem.Text = "Nuevo Viaje"
         '
         'NuevaReservaToolStripMenuItem
         '
         Me.NuevaReservaToolStripMenuItem.Name = "NuevaReservaToolStripMenuItem"
-        Me.NuevaReservaToolStripMenuItem.Size = New System.Drawing.Size(151, 22)
+        Me.NuevaReservaToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
         Me.NuevaReservaToolStripMenuItem.Text = "Nueva Reserva"
         '
         'VerToolStripMenuItem
         '
         Me.VerToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ResumenToolStripMenuItem})
         Me.VerToolStripMenuItem.Name = "VerToolStripMenuItem"
-        Me.VerToolStripMenuItem.Size = New System.Drawing.Size(36, 20)
+        Me.VerToolStripMenuItem.Size = New System.Drawing.Size(35, 20)
         Me.VerToolStripMenuItem.Text = "Ver"
         '
         'ResumenToolStripMenuItem
         '
         Me.ResumenToolStripMenuItem.Name = "ResumenToolStripMenuItem"
-        Me.ResumenToolStripMenuItem.Size = New System.Drawing.Size(123, 22)
+        Me.ResumenToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
         Me.ResumenToolStripMenuItem.Text = "Resumen"
         '
         'GestionToolStripMenuItem
@@ -141,7 +141,7 @@ Partial Class Home
         '
         'Button1
         '
-        Me.Button1.Location = New System.Drawing.Point(67, 69)
+        Me.Button1.Location = New System.Drawing.Point(814, 343)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(75, 23)
         Me.Button1.TabIndex = 1
@@ -150,7 +150,7 @@ Partial Class Home
         '
         'Button2
         '
-        Me.Button2.Location = New System.Drawing.Point(67, 124)
+        Me.Button2.Location = New System.Drawing.Point(814, 285)
         Me.Button2.Name = "Button2"
         Me.Button2.Size = New System.Drawing.Size(75, 23)
         Me.Button2.TabIndex = 2
