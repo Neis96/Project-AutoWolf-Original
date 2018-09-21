@@ -8,3 +8,21 @@ C:\Users\thoma\Desktop\thom\programacion\Ejercicios visual\krak\Project-AutoWolf
 C:\Users\thoma\Desktop\thom\programacion\Ejercicios visual\krak\Project-AutoWolf-Original\ProyectoAutoloboOriginal\ProyectoAutoloboOriginal\obj\x86\Debug\ProyectoAutoloboOriginal.exe
 C:\Users\thoma\Desktop\thom\programacion\Ejercicios visual\krak\Project-AutoWolf-Original\ProyectoAutoloboOriginal\ProyectoAutoloboOriginal\obj\x86\Debug\ProyectoAutoloboOriginal.xml
 C:\Users\thoma\Desktop\thom\programacion\Ejercicios visual\krak\Project-AutoWolf-Original\ProyectoAutoloboOriginal\ProyectoAutoloboOriginal\obj\x86\Debug\ProyectoAutoloboOriginal.pdb
+C:\Users\user\Desktop\GitHub\Projecto Autolobo Original\Project AutoWolf Original\ProyectoAutoloboOriginal\ProyectoAutoloboOriginal\obj\x86\Debug\ProyectoAutoloboOriginal.exe
+C:\Users\user\Desktop\GitHub\Projecto Autolobo Original\Project AutoWolf Original\ProyectoAutoloboOriginal\ProyectoAutoloboOriginal\obj\x86\Debug\ProyectoAutoloboOriginal.xml
+C:\Users\user\Desktop\GitHub\Projecto Autolobo Original\Project AutoWolf Original\ProyectoAutoloboOriginal\ProyectoAutoloboOriginal\obj\x86\Debug\ProyectoAutoloboOriginal.pdb
+C:\Users\thoma\Desktop\thom\programacion\Ejercicios visual\krak\Project-AutoWolf-Original\ProyectoAutoloboOriginal\ProyectoAutoloboOriginal\obj\x86\Debug\ProyectoAutoloboOriginal.Loggin.resources
+F:\usuarios\alumno\Escritorio\GITKRAKEN\Project-AutoWolf-Original\ProyectoAutoloboOriginal\ProyectoAutoloboOriginal\obj\x86\Debug\ProyectoAutoloboOriginal.exe
+F:\usuarios\alumno\Escritorio\GITKRAKEN\Project-AutoWolf-Original\ProyectoAutoloboOriginal\ProyectoAutoloboOriginal\obj\x86\Debug\ProyectoAutoloboOriginal.xml
+F:\usuarios\alumno\Escritorio\GITKRAKEN\Project-AutoWolf-Original\ProyectoAutoloboOriginal\ProyectoAutoloboOriginal\obj\x86\Debug\ProyectoAutoloboOriginal.pdb
+F:\usuarios\alumno\Escritorio\GITKRAKEN\Project-AutoWolf-Original\ProyectoAutoloboOriginal\ProyectoAutoloboOriginal\bin\Debug\ProyectoAutoloboOriginal.exe
+F:\usuarios\alumno\Escritorio\GITKRAKEN\Project-AutoWolf-Original\ProyectoAutoloboOriginal\ProyectoAutoloboOriginal\bin\Debug\ProyectoAutoloboOriginal.pdb
+F:\usuarios\alumno\Escritorio\GITKRAKEN\Project-AutoWolf-Original\ProyectoAutoloboOriginal\ProyectoAutoloboOriginal\bin\Debug\ProyectoAutoloboOriginal.xml
+F:\usuarios\alumno\Escritorio\GITKRAKEN\Project-AutoWolf-Original\ProyectoAutoloboOriginal\ProyectoAutoloboOriginal\obj\x86\Debug\ProyectoAutoloboOriginal.vbprojResolveAssemblyReference.cache
+F:\usuarios\alumno\Escritorio\GITKRAKEN\Project-AutoWolf-Original\ProyectoAutoloboOriginal\ProyectoAutoloboOriginal\obj\x86\Debug\ProyectoAutoloboOriginal.Chofer.resources
+F:\usuarios\alumno\Escritorio\GITKRAKEN\Project-AutoWolf-Original\ProyectoAutoloboOriginal\ProyectoAutoloboOriginal\obj\x86\Debug\ProyectoAutoloboOriginal.Inicio.resources
+F:\usuarios\alumno\Escritorio\GITKRAKEN\Project-AutoWolf-Original\ProyectoAutoloboOriginal\ProyectoAutoloboOriginal\obj\x86\Debug\ProyectoAutoloboOriginal.Loggin.resources
+F:\usuarios\alumno\Escritorio\GITKRAKEN\Project-AutoWolf-Original\ProyectoAutoloboOriginal\ProyectoAutoloboOriginal\obj\x86\Debug\ProyectoAutoloboOriginal.Resources.resources
+F:\usuarios\alumno\Escritorio\GITKRAKEN\Project-AutoWolf-Original\ProyectoAutoloboOriginal\ProyectoAutoloboOriginal\obj\x86\Debug\ProyectoAutoloboOriginal.bottonhomesocios.resources
+F:\usuarios\alumno\Escritorio\GITKRAKEN\Project-AutoWolf-Original\ProyectoAutoloboOriginal\ProyectoAutoloboOriginal\obj\x86\Debug\ProyectoAutoloboOriginal.vehiculo.resources
+F:\usuarios\alumno\Escritorio\GITKRAKEN\Project-AutoWolf-Original\ProyectoAutoloboOriginal\ProyectoAutoloboOriginal\obj\x86\Debug\ProyectoAutoloboOriginal.vbproj.GenerateResource.Cache

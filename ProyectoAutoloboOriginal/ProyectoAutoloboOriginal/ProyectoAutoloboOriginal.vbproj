@@ -89,13 +89,25 @@
     <Import Include="System.Xml.Linq" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Home.vb">
+    <Compile Include="FormAltaChofer.Designer.vb">
+      <DependentUpon>FormAltaChofer.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormAltaChofer.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Home.Designer.vb">
-      <DependentUpon>Home.vb</DependentUpon>
+    <Compile Include="FormInicio.Designer.vb">
+      <DependentUpon>FormInicio.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormInicio.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="FormLoggin.Designer.vb">
+      <DependentUpon>FormLoggin.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormLoggin.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LogginConexion.vb" />
     <Compile Include="My Project\AssemblyInfo.vb" />
     <Compile Include="My Project\Application.Designer.vb">
       <AutoGen>True</AutoGen>
@@ -116,16 +128,40 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>ProjectAutoWolfOriginalDataSet.xsd</DependentUpon>
     </Compile>
+    <Compile Include="FormAltaSocios.Designer.vb">
+      <DependentUpon>FormAltaSocios.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormAltaSocios.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormAltaVehiculo.Designer.vb">
+      <DependentUpon>FormAltaVehiculo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormAltaVehiculo.vb">
+      <SubType>Form</SubType>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Home.resx">
-      <DependentUpon>Home.vb</DependentUpon>
+    <EmbeddedResource Include="FormAltaChofer.resx">
+      <DependentUpon>FormAltaChofer.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormInicio.resx">
+      <DependentUpon>FormInicio.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormLoggin.resx">
+      <DependentUpon>FormLoggin.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="My Project\Resources.resx">
       <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.vb</LastGenOutput>
       <CustomToolNamespace>My.Resources</CustomToolNamespace>
       <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormAltaSocios.resx">
+      <DependentUpon>FormAltaSocios.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormAltaVehiculo.resx">
+      <DependentUpon>FormAltaVehiculo.vb</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
