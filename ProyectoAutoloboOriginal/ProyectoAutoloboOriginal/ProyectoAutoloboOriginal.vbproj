@@ -95,11 +95,10 @@
     <Compile Include="Chofer.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Home.vb">
-      <SubType>Form</SubType>
+    <Compile Include="Inicio.Designer.vb">
+      <DependentUpon>Inicio.vb</DependentUpon>
     </Compile>
-    <Compile Include="Home.Designer.vb">
-      <DependentUpon>Home.vb</DependentUpon>
+    <Compile Include="Inicio.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Loggin.Designer.vb">
@@ -146,8 +145,8 @@
     <EmbeddedResource Include="Chofer.resx">
       <DependentUpon>Chofer.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Home.resx">
-      <DependentUpon>Home.vb</DependentUpon>
+    <EmbeddedResource Include="Inicio.resx">
+      <DependentUpon>Inicio.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Loggin.resx">
       <DependentUpon>Loggin.vb</DependentUpon>
