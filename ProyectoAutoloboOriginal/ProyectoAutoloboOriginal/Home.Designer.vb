@@ -83,7 +83,7 @@ Partial Class Home
         '
         Me.VerToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ResumenToolStripMenuItem})
         Me.VerToolStripMenuItem.Name = "VerToolStripMenuItem"
-        Me.VerToolStripMenuItem.Size = New System.Drawing.Size(36, 20)
+        Me.VerToolStripMenuItem.Size = New System.Drawing.Size(35, 20)
         Me.VerToolStripMenuItem.Text = "Ver"
         '
         'ResumenToolStripMenuItem
@@ -144,15 +144,25 @@ Partial Class Home
         '
         'ButtonHome
         '
+<<<<<<< HEAD
         Me.ButtonHome.Location = New System.Drawing.Point(763, 41)
         Me.ButtonHome.Name = "ButtonHome"
         Me.ButtonHome.Size = New System.Drawing.Size(75, 23)
         Me.ButtonHome.TabIndex = 1
         Me.ButtonHome.Text = "Button1"
         Me.ButtonHome.UseVisualStyleBackColor = True
+=======
+        Me.Button1.Location = New System.Drawing.Point(814, 343)
+        Me.Button1.Name = "Button1"
+        Me.Button1.Size = New System.Drawing.Size(75, 23)
+        Me.Button1.TabIndex = 1
+        Me.Button1.Text = "Button1"
+        Me.Button1.UseVisualStyleBackColor = True
+>>>>>>> Develop
         '
         'ButtonSocio
         '
+<<<<<<< HEAD
         Me.ButtonSocio.Location = New System.Drawing.Point(67, 96)
         Me.ButtonSocio.Name = "ButtonSocio"
         Me.ButtonSocio.Size = New System.Drawing.Size(75, 23)
@@ -186,6 +196,14 @@ Partial Class Home
         Me.ButtVehiculo.TabIndex = 5
         Me.ButtVehiculo.Text = "VEHICULO"
         Me.ButtVehiculo.UseVisualStyleBackColor = True
+=======
+        Me.Button2.Location = New System.Drawing.Point(814, 285)
+        Me.Button2.Name = "Button2"
+        Me.Button2.Size = New System.Drawing.Size(75, 23)
+        Me.Button2.TabIndex = 2
+        Me.Button2.Text = "Button2"
+        Me.Button2.UseVisualStyleBackColor = True
+>>>>>>> Develop
         '
         'Home
         '
