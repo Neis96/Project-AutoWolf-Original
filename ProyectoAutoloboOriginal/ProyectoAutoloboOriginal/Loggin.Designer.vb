@@ -26,8 +26,8 @@ Partial Class Loggin
         Me.BtnSalir = New System.Windows.Forms.Button()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
-        Me.TextBox2 = New System.Windows.Forms.TextBox()
-        Me.ComboBox1 = New System.Windows.Forms.ComboBox()
+        Me.TextPass = New System.Windows.Forms.TextBox()
+        Me.ComboUsuario = New System.Windows.Forms.ComboBox()
         Me.SuspendLayout()
         '
         'BtnIngresar
@@ -66,31 +66,31 @@ Partial Class Loggin
         Me.Label2.TabIndex = 5
         Me.Label2.Text = "Contraseña"
         '
-        'TextBox2
+        'TextPass
         '
-        Me.TextBox2.Location = New System.Drawing.Point(121, 79)
-        Me.TextBox2.Name = "TextBox2"
-        Me.TextBox2.PasswordChar = Global.Microsoft.VisualBasic.ChrW(42)
-        Me.TextBox2.Size = New System.Drawing.Size(128, 20)
-        Me.TextBox2.TabIndex = 3
+        Me.TextPass.Location = New System.Drawing.Point(121, 79)
+        Me.TextPass.Name = "TextPass"
+        Me.TextPass.PasswordChar = Global.Microsoft.VisualBasic.ChrW(42)
+        Me.TextPass.Size = New System.Drawing.Size(128, 20)
+        Me.TextPass.TabIndex = 3
         '
-        'ComboBox1
+        'ComboUsuario
         '
-        Me.ComboBox1.FormattingEnabled = True
-        Me.ComboBox1.Location = New System.Drawing.Point(121, 36)
-        Me.ComboBox1.Name = "ComboBox1"
-        Me.ComboBox1.Size = New System.Drawing.Size(128, 21)
-        Me.ComboBox1.TabIndex = 6
+        Me.ComboUsuario.FormattingEnabled = True
+        Me.ComboUsuario.Location = New System.Drawing.Point(121, 36)
+        Me.ComboUsuario.Name = "ComboUsuario"
+        Me.ComboUsuario.Size = New System.Drawing.Size(128, 21)
+        Me.ComboUsuario.TabIndex = 6
         '
         'Loggin
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(284, 261)
-        Me.Controls.Add(Me.ComboBox1)
+        Me.Controls.Add(Me.ComboUsuario)
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.Label1)
-        Me.Controls.Add(Me.TextBox2)
+        Me.Controls.Add(Me.TextPass)
         Me.Controls.Add(Me.BtnSalir)
         Me.Controls.Add(Me.BtnIngresar)
         Me.Name = "Loggin"
@@ -103,6 +103,6 @@ Partial Class Loggin
     Friend WithEvents BtnSalir As System.Windows.Forms.Button
     Friend WithEvents Label1 As System.Windows.Forms.Label
     Friend WithEvents Label2 As System.Windows.Forms.Label
-    Friend WithEvents TextBox2 As System.Windows.Forms.TextBox
-    Friend WithEvents ComboBox1 As System.Windows.Forms.ComboBox
+    Friend WithEvents TextPass As System.Windows.Forms.TextBox
+    Friend WithEvents ComboUsuario As System.Windows.Forms.ComboBox
 End Class
