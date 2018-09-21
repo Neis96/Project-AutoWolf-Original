@@ -1,4 +1,4 @@
-﻿Public Class bottonhomesocios
+﻿Public Class SOCIOS
 
     Private Sub Buttonhomesocios_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Buttonhomesocios.Click
 

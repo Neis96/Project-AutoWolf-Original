@@ -1,5 +1,5 @@
 ﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
-Partial Class bottonhomesocios
+Partial Class SOCIOS
     Inherits System.Windows.Forms.Form
 
     'Form reemplaza a Dispose para limpiar la lista de componentes.
@@ -34,13 +34,13 @@ Partial Class bottonhomesocios
         Me.Buttonhomesocios.Text = "Button1"
         Me.Buttonhomesocios.UseVisualStyleBackColor = True
         '
-        'bottonhomesocios
+        'SOCIOS
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(836, 381)
         Me.Controls.Add(Me.Buttonhomesocios)
-        Me.Name = "bottonhomesocios"
+        Me.Name = "SOCIOS"
         Me.Text = "socios"
         Me.ResumeLayout(False)
 
