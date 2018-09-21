@@ -25,29 +25,29 @@ Partial Class FormInicio
         Me.Button1 = New System.Windows.Forms.Button()
         Me.MenuStrip1 = New System.Windows.Forms.MenuStrip()
         Me.ArchivoToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.VerToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.GestionToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.SociosToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.AyudaToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.ConfiguracionesToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.NuevoToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.SocioToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ViajeToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ReservaToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ChoferToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.VehiculoToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.VerToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ResumenToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.GestionToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.LiquidacionToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ChoferesToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.CtaCorrienteToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.SociosToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.AyudaToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.GuiaToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ContactoToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.ChoferToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.VehiculoToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ConfiguracionesToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.MenuStrip1.SuspendLayout()
         Me.SuspendLayout()
         '
         'Button1
         '
-        Me.Button1.Location = New System.Drawing.Point(212, 148)
+        Me.Button1.Location = New System.Drawing.Point(281, 172)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(75, 23)
         Me.Button1.TabIndex = 0
@@ -69,39 +69,6 @@ Partial Class FormInicio
         Me.ArchivoToolStripMenuItem.Name = "ArchivoToolStripMenuItem"
         Me.ArchivoToolStripMenuItem.Size = New System.Drawing.Size(60, 20)
         Me.ArchivoToolStripMenuItem.Text = "Archivo"
-        '
-        'VerToolStripMenuItem
-        '
-        Me.VerToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ResumenToolStripMenuItem})
-        Me.VerToolStripMenuItem.Name = "VerToolStripMenuItem"
-        Me.VerToolStripMenuItem.Size = New System.Drawing.Size(35, 20)
-        Me.VerToolStripMenuItem.Text = "Ver"
-        '
-        'GestionToolStripMenuItem
-        '
-        Me.GestionToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.LiquidacionToolStripMenuItem})
-        Me.GestionToolStripMenuItem.Name = "GestionToolStripMenuItem"
-        Me.GestionToolStripMenuItem.Size = New System.Drawing.Size(59, 20)
-        Me.GestionToolStripMenuItem.Text = "Gestion"
-        '
-        'SociosToolStripMenuItem
-        '
-        Me.SociosToolStripMenuItem.Name = "SociosToolStripMenuItem"
-        Me.SociosToolStripMenuItem.Size = New System.Drawing.Size(53, 20)
-        Me.SociosToolStripMenuItem.Text = "Socios"
-        '
-        'AyudaToolStripMenuItem
-        '
-        Me.AyudaToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.GuiaToolStripMenuItem, Me.ContactoToolStripMenuItem})
-        Me.AyudaToolStripMenuItem.Name = "AyudaToolStripMenuItem"
-        Me.AyudaToolStripMenuItem.Size = New System.Drawing.Size(53, 20)
-        Me.AyudaToolStripMenuItem.Text = "Ayuda"
-        '
-        'ConfiguracionesToolStripMenuItem
-        '
-        Me.ConfiguracionesToolStripMenuItem.Name = "ConfiguracionesToolStripMenuItem"
-        Me.ConfiguracionesToolStripMenuItem.Size = New System.Drawing.Size(106, 20)
-        Me.ConfiguracionesToolStripMenuItem.Text = "Configuraciones"
         '
         'NuevoToolStripMenuItem
         '
@@ -128,11 +95,37 @@ Partial Class FormInicio
         Me.ReservaToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
         Me.ReservaToolStripMenuItem.Text = "Reserva"
         '
+        'ChoferToolStripMenuItem
+        '
+        Me.ChoferToolStripMenuItem.Name = "ChoferToolStripMenuItem"
+        Me.ChoferToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
+        Me.ChoferToolStripMenuItem.Text = "Chofer"
+        '
+        'VehiculoToolStripMenuItem
+        '
+        Me.VehiculoToolStripMenuItem.Name = "VehiculoToolStripMenuItem"
+        Me.VehiculoToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
+        Me.VehiculoToolStripMenuItem.Text = "Vehiculo"
+        '
+        'VerToolStripMenuItem
+        '
+        Me.VerToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ResumenToolStripMenuItem})
+        Me.VerToolStripMenuItem.Name = "VerToolStripMenuItem"
+        Me.VerToolStripMenuItem.Size = New System.Drawing.Size(35, 20)
+        Me.VerToolStripMenuItem.Text = "Ver"
+        '
         'ResumenToolStripMenuItem
         '
         Me.ResumenToolStripMenuItem.Name = "ResumenToolStripMenuItem"
         Me.ResumenToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
         Me.ResumenToolStripMenuItem.Text = "Resumen"
+        '
+        'GestionToolStripMenuItem
+        '
+        Me.GestionToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.LiquidacionToolStripMenuItem})
+        Me.GestionToolStripMenuItem.Name = "GestionToolStripMenuItem"
+        Me.GestionToolStripMenuItem.Size = New System.Drawing.Size(59, 20)
+        Me.GestionToolStripMenuItem.Text = "Gestion"
         '
         'LiquidacionToolStripMenuItem
         '
@@ -144,14 +137,27 @@ Partial Class FormInicio
         'ChoferesToolStripMenuItem
         '
         Me.ChoferesToolStripMenuItem.Name = "ChoferesToolStripMenuItem"
-        Me.ChoferesToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
+        Me.ChoferesToolStripMenuItem.Size = New System.Drawing.Size(144, 22)
         Me.ChoferesToolStripMenuItem.Text = "Choferes"
         '
         'CtaCorrienteToolStripMenuItem
         '
         Me.CtaCorrienteToolStripMenuItem.Name = "CtaCorrienteToolStripMenuItem"
-        Me.CtaCorrienteToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
+        Me.CtaCorrienteToolStripMenuItem.Size = New System.Drawing.Size(144, 22)
         Me.CtaCorrienteToolStripMenuItem.Text = "Cta Corriente"
+        '
+        'SociosToolStripMenuItem
+        '
+        Me.SociosToolStripMenuItem.Name = "SociosToolStripMenuItem"
+        Me.SociosToolStripMenuItem.Size = New System.Drawing.Size(53, 20)
+        Me.SociosToolStripMenuItem.Text = "Socios"
+        '
+        'AyudaToolStripMenuItem
+        '
+        Me.AyudaToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.GuiaToolStripMenuItem, Me.ContactoToolStripMenuItem})
+        Me.AyudaToolStripMenuItem.Name = "AyudaToolStripMenuItem"
+        Me.AyudaToolStripMenuItem.Size = New System.Drawing.Size(53, 20)
+        Me.AyudaToolStripMenuItem.Text = "Ayuda"
         '
         'GuiaToolStripMenuItem
         '
@@ -165,19 +171,13 @@ Partial Class FormInicio
         Me.ContactoToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
         Me.ContactoToolStripMenuItem.Text = "Contacto"
         '
-        'ChoferToolStripMenuItem
+        'ConfiguracionesToolStripMenuItem
         '
-        Me.ChoferToolStripMenuItem.Name = "ChoferToolStripMenuItem"
-        Me.ChoferToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
-        Me.ChoferToolStripMenuItem.Text = "Chofer"
+        Me.ConfiguracionesToolStripMenuItem.Name = "ConfiguracionesToolStripMenuItem"
+        Me.ConfiguracionesToolStripMenuItem.Size = New System.Drawing.Size(106, 20)
+        Me.ConfiguracionesToolStripMenuItem.Text = "Configuraciones"
         '
-        'VehiculoToolStripMenuItem
-        '
-        Me.VehiculoToolStripMenuItem.Name = "VehiculoToolStripMenuItem"
-        Me.VehiculoToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
-        Me.VehiculoToolStripMenuItem.Text = "Vehiculo"
-        '
-        'Inicio
+        'FormInicio
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
@@ -185,7 +185,7 @@ Partial Class FormInicio
         Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.MenuStrip1)
         Me.MainMenuStrip = Me.MenuStrip1
-        Me.Name = "Inicio"
+        Me.Name = "FormInicio"
         Me.Text = "Inicio"
         Me.MenuStrip1.ResumeLayout(False)
         Me.MenuStrip1.PerformLayout()

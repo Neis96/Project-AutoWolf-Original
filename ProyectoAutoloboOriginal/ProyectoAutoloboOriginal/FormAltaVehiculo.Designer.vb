@@ -22,28 +22,28 @@ Partial Class FormAltaVehiculo
     'No lo modifique con el editor de código.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Me.ButtonHomeVehiculo = New System.Windows.Forms.Button()
+        Me.BtnGuardar = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
-        'ButtonHomeVehiculo
+        'BtnGuardar
         '
-        Me.ButtonHomeVehiculo.Location = New System.Drawing.Point(545, 24)
-        Me.ButtonHomeVehiculo.Name = "ButtonHomeVehiculo"
-        Me.ButtonHomeVehiculo.Size = New System.Drawing.Size(75, 23)
-        Me.ButtonHomeVehiculo.TabIndex = 0
-        Me.ButtonHomeVehiculo.Text = "Button1"
-        Me.ButtonHomeVehiculo.UseVisualStyleBackColor = True
+        Me.BtnGuardar.Location = New System.Drawing.Point(242, 261)
+        Me.BtnGuardar.Name = "BtnGuardar"
+        Me.BtnGuardar.Size = New System.Drawing.Size(75, 23)
+        Me.BtnGuardar.TabIndex = 0
+        Me.BtnGuardar.Text = "Button1"
+        Me.BtnGuardar.UseVisualStyleBackColor = True
         '
-        'vehiculo
+        'FormAltaVehiculo
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(661, 383)
-        Me.Controls.Add(Me.ButtonHomeVehiculo)
-        Me.Name = "vehiculo"
+        Me.Controls.Add(Me.BtnGuardar)
+        Me.Name = "FormAltaVehiculo"
         Me.Text = "vehiculo"
         Me.ResumeLayout(False)
 
     End Sub
-    Friend WithEvents ButtonHomeVehiculo As System.Windows.Forms.Button
+    Friend WithEvents BtnGuardar As System.Windows.Forms.Button
 End Class

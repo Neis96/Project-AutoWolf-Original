@@ -1,6 +1,6 @@
 ﻿Public Class FormAltaVehiculo
 
-    Private Sub ButtonHomeVehiculo_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles ButtonHomeVehiculo.Click
+    Private Sub ButtonHomeVehiculo_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles BtnGuardar.Click
 
     End Sub
 
