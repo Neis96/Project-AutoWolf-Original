@@ -89,25 +89,25 @@
     <Import Include="System.Xml.Linq" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Chofer.Designer.vb">
-      <DependentUpon>Chofer.vb</DependentUpon>
+    <Compile Include="FormAltaChofer.Designer.vb">
+      <DependentUpon>FormAltaChofer.vb</DependentUpon>
     </Compile>
-    <Compile Include="Chofer.vb">
+    <Compile Include="FormAltaChofer.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Inicio.Designer.vb">
-      <DependentUpon>Inicio.vb</DependentUpon>
+    <Compile Include="FormInicio.Designer.vb">
+      <DependentUpon>FormInicio.vb</DependentUpon>
     </Compile>
-    <Compile Include="Inicio.vb">
+    <Compile Include="FormInicio.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Loggin.Designer.vb">
-      <DependentUpon>Loggin.vb</DependentUpon>
+    <Compile Include="FormLoggin.Designer.vb">
+      <DependentUpon>FormLoggin.vb</DependentUpon>
     </Compile>
-    <Compile Include="Loggin.vb">
+    <Compile Include="FormLoggin.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Module1.vb" />
+    <Compile Include="LogginConexion.vb" />
     <Compile Include="My Project\AssemblyInfo.vb" />
     <Compile Include="My Project\Application.Designer.vb">
       <AutoGen>True</AutoGen>
@@ -128,28 +128,28 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>ProjectAutoWolfOriginalDataSet.xsd</DependentUpon>
     </Compile>
-    <Compile Include="socios.Designer.vb">
-      <DependentUpon>socios.vb</DependentUpon>
+    <Compile Include="FormAltaSocios.Designer.vb">
+      <DependentUpon>FormAltaSocios.vb</DependentUpon>
     </Compile>
-    <Compile Include="socios.vb">
+    <Compile Include="FormAltaSocios.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="vehiculo.Designer.vb">
-      <DependentUpon>vehiculo.vb</DependentUpon>
+    <Compile Include="FormAltaVehiculo.Designer.vb">
+      <DependentUpon>FormAltaVehiculo.vb</DependentUpon>
     </Compile>
-    <Compile Include="vehiculo.vb">
+    <Compile Include="FormAltaVehiculo.vb">
       <SubType>Form</SubType>
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Chofer.resx">
-      <DependentUpon>Chofer.vb</DependentUpon>
+    <EmbeddedResource Include="FormAltaChofer.resx">
+      <DependentUpon>FormAltaChofer.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Inicio.resx">
-      <DependentUpon>Inicio.vb</DependentUpon>
+    <EmbeddedResource Include="FormInicio.resx">
+      <DependentUpon>FormInicio.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Loggin.resx">
-      <DependentUpon>Loggin.vb</DependentUpon>
+    <EmbeddedResource Include="FormLoggin.resx">
+      <DependentUpon>FormLoggin.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="My Project\Resources.resx">
       <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
@@ -157,11 +157,11 @@
       <CustomToolNamespace>My.Resources</CustomToolNamespace>
       <SubType>Designer</SubType>
     </EmbeddedResource>
-    <EmbeddedResource Include="socios.resx">
-      <DependentUpon>socios.vb</DependentUpon>
+    <EmbeddedResource Include="FormAltaSocios.resx">
+      <DependentUpon>FormAltaSocios.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="vehiculo.resx">
-      <DependentUpon>vehiculo.vb</DependentUpon>
+    <EmbeddedResource Include="FormAltaVehiculo.resx">
+      <DependentUpon>FormAltaVehiculo.vb</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>

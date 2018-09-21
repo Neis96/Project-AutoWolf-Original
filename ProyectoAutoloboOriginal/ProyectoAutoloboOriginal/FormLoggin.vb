@@ -1,4 +1,4 @@
-﻿Public Class Loggin
+﻿Public Class FormLoggin
 
     Private Sub Loggin_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
 
