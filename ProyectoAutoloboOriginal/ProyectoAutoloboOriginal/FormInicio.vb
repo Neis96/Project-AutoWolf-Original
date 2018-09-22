@@ -1,7 +1,7 @@
 ﻿Public Class FormInicio
 
     Private Sub Button1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button1.Click
-        FormAltaSocios.Show()
+        'FormAltaSocios.Show()
 
     End Sub
 
@@ -14,6 +14,10 @@
     End Sub
 
     Private Sub ChoferToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles ChoferToolStripMenuItem.Click
+
+    End Sub
+
+    Private Sub CrearToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles CrearToolStripMenuItem.Click
 
     End Sub
 End Class

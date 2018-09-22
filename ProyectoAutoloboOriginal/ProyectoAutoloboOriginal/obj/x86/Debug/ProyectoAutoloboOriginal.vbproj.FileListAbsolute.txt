@@ -2,7 +2,6 @@ C:\Users\thoma\Desktop\thom\programacion\Ejercicios visual\krak\Project-AutoWolf
 C:\Users\thoma\Desktop\thom\programacion\Ejercicios visual\krak\Project-AutoWolf-Original\ProyectoAutoloboOriginal\ProyectoAutoloboOriginal\bin\Debug\ProyectoAutoloboOriginal.pdb
 C:\Users\thoma\Desktop\thom\programacion\Ejercicios visual\krak\Project-AutoWolf-Original\ProyectoAutoloboOriginal\ProyectoAutoloboOriginal\bin\Debug\ProyectoAutoloboOriginal.xml
 C:\Users\thoma\Desktop\thom\programacion\Ejercicios visual\krak\Project-AutoWolf-Original\ProyectoAutoloboOriginal\ProyectoAutoloboOriginal\obj\x86\Debug\ProyectoAutoloboOriginal.vbprojResolveAssemblyReference.cache
-C:\Users\thoma\Desktop\thom\programacion\Ejercicios visual\krak\Project-AutoWolf-Original\ProyectoAutoloboOriginal\ProyectoAutoloboOriginal\obj\x86\Debug\ProyectoAutoloboOriginal.Home.resources
 C:\Users\thoma\Desktop\thom\programacion\Ejercicios visual\krak\Project-AutoWolf-Original\ProyectoAutoloboOriginal\ProyectoAutoloboOriginal\obj\x86\Debug\ProyectoAutoloboOriginal.Resources.resources
 C:\Users\thoma\Desktop\thom\programacion\Ejercicios visual\krak\Project-AutoWolf-Original\ProyectoAutoloboOriginal\ProyectoAutoloboOriginal\obj\x86\Debug\ProyectoAutoloboOriginal.vbproj.GenerateResource.Cache
 C:\Users\thoma\Desktop\thom\programacion\Ejercicios visual\krak\Project-AutoWolf-Original\ProyectoAutoloboOriginal\ProyectoAutoloboOriginal\obj\x86\Debug\ProyectoAutoloboOriginal.exe
@@ -11,7 +10,6 @@ C:\Users\thoma\Desktop\thom\programacion\Ejercicios visual\krak\Project-AutoWolf
 C:\Users\user\Desktop\GitHub\Projecto Autolobo Original\Project AutoWolf Original\ProyectoAutoloboOriginal\ProyectoAutoloboOriginal\obj\x86\Debug\ProyectoAutoloboOriginal.exe
 C:\Users\user\Desktop\GitHub\Projecto Autolobo Original\Project AutoWolf Original\ProyectoAutoloboOriginal\ProyectoAutoloboOriginal\obj\x86\Debug\ProyectoAutoloboOriginal.xml
 C:\Users\user\Desktop\GitHub\Projecto Autolobo Original\Project AutoWolf Original\ProyectoAutoloboOriginal\ProyectoAutoloboOriginal\obj\x86\Debug\ProyectoAutoloboOriginal.pdb
-C:\Users\thoma\Desktop\thom\programacion\Ejercicios visual\krak\Project-AutoWolf-Original\ProyectoAutoloboOriginal\ProyectoAutoloboOriginal\obj\x86\Debug\ProyectoAutoloboOriginal.Loggin.resources
 F:\usuarios\alumno\Escritorio\GITKRAKEN\Project-AutoWolf-Original\ProyectoAutoloboOriginal\ProyectoAutoloboOriginal\obj\x86\Debug\ProyectoAutoloboOriginal.exe
 F:\usuarios\alumno\Escritorio\GITKRAKEN\Project-AutoWolf-Original\ProyectoAutoloboOriginal\ProyectoAutoloboOriginal\obj\x86\Debug\ProyectoAutoloboOriginal.xml
 F:\usuarios\alumno\Escritorio\GITKRAKEN\Project-AutoWolf-Original\ProyectoAutoloboOriginal\ProyectoAutoloboOriginal\obj\x86\Debug\ProyectoAutoloboOriginal.pdb
@@ -26,3 +24,8 @@ F:\usuarios\alumno\Escritorio\GITKRAKEN\Project-AutoWolf-Original\ProyectoAutolo
 F:\usuarios\alumno\Escritorio\GITKRAKEN\Project-AutoWolf-Original\ProyectoAutoloboOriginal\ProyectoAutoloboOriginal\obj\x86\Debug\ProyectoAutoloboOriginal.bottonhomesocios.resources
 F:\usuarios\alumno\Escritorio\GITKRAKEN\Project-AutoWolf-Original\ProyectoAutoloboOriginal\ProyectoAutoloboOriginal\obj\x86\Debug\ProyectoAutoloboOriginal.vehiculo.resources
 F:\usuarios\alumno\Escritorio\GITKRAKEN\Project-AutoWolf-Original\ProyectoAutoloboOriginal\ProyectoAutoloboOriginal\obj\x86\Debug\ProyectoAutoloboOriginal.vbproj.GenerateResource.Cache
+C:\Users\thoma\Desktop\thom\programacion\Ejercicios visual\krak\Project-AutoWolf-Original\ProyectoAutoloboOriginal\ProyectoAutoloboOriginal\obj\x86\Debug\ProyectoAutoloboOriginal.FormAltaChofer.resources
+C:\Users\thoma\Desktop\thom\programacion\Ejercicios visual\krak\Project-AutoWolf-Original\ProyectoAutoloboOriginal\ProyectoAutoloboOriginal\obj\x86\Debug\ProyectoAutoloboOriginal.FormInicio.resources
+C:\Users\thoma\Desktop\thom\programacion\Ejercicios visual\krak\Project-AutoWolf-Original\ProyectoAutoloboOriginal\ProyectoAutoloboOriginal\obj\x86\Debug\ProyectoAutoloboOriginal.FormLoggin.resources
+C:\Users\thoma\Desktop\thom\programacion\Ejercicios visual\krak\Project-AutoWolf-Original\ProyectoAutoloboOriginal\ProyectoAutoloboOriginal\obj\x86\Debug\ProyectoAutoloboOriginal.FormAltaSocios.resources
+C:\Users\thoma\Desktop\thom\programacion\Ejercicios visual\krak\Project-AutoWolf-Original\ProyectoAutoloboOriginal\ProyectoAutoloboOriginal\obj\x86\Debug\ProyectoAutoloboOriginal.FormAltaVehiculo.resources

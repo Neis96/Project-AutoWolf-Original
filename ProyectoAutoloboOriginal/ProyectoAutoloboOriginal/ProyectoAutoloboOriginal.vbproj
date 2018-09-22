@@ -89,6 +89,12 @@
     <Import Include="System.Xml.Linq" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CreacionUsuario.Designer.vb">
+      <DependentUpon>CreacionUsuario.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CreacionUsuario.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="FormAltaChofer.Designer.vb">
       <DependentUpon>FormAltaChofer.vb</DependentUpon>
     </Compile>
@@ -142,6 +148,9 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="CreacionUsuario.resx">
+      <DependentUpon>CreacionUsuario.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FormAltaChofer.resx">
       <DependentUpon>FormAltaChofer.vb</DependentUpon>
     </EmbeddedResource>

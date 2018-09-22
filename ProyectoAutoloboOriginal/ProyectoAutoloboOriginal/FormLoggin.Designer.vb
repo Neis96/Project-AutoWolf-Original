@@ -26,8 +26,8 @@ Partial Class FormLoggin
         Me.BtnSalir = New System.Windows.Forms.Button()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
-        Me.TextBox2 = New System.Windows.Forms.TextBox()
-        Me.ComboBox1 = New System.Windows.Forms.ComboBox()
+        Me.TextContrasena = New System.Windows.Forms.TextBox()
+        Me.TextUsuario = New System.Windows.Forms.TextBox()
         Me.SuspendLayout()
         '
         'BtnIngresar
@@ -66,34 +66,33 @@ Partial Class FormLoggin
         Me.Label2.TabIndex = 5
         Me.Label2.Text = "Contraseña"
         '
-        'TextBox2
+        'TextContrasena
         '
-        Me.TextBox2.Location = New System.Drawing.Point(121, 79)
-        Me.TextBox2.Name = "TextBox2"
-        Me.TextBox2.PasswordChar = Global.Microsoft.VisualBasic.ChrW(42)
-        Me.TextBox2.Size = New System.Drawing.Size(128, 20)
-        Me.TextBox2.TabIndex = 3
+        Me.TextContrasena.Location = New System.Drawing.Point(121, 79)
+        Me.TextContrasena.Name = "TextContrasena"
+        Me.TextContrasena.PasswordChar = Global.Microsoft.VisualBasic.ChrW(42)
+        Me.TextContrasena.Size = New System.Drawing.Size(128, 20)
+        Me.TextContrasena.TabIndex = 3
         '
-        'ComboBox1
+        'TextUsuario
         '
-        Me.ComboBox1.FormattingEnabled = True
-        Me.ComboBox1.Location = New System.Drawing.Point(121, 36)
-        Me.ComboBox1.Name = "ComboBox1"
-        Me.ComboBox1.Size = New System.Drawing.Size(128, 21)
-        Me.ComboBox1.TabIndex = 6
+        Me.TextUsuario.Location = New System.Drawing.Point(121, 41)
+        Me.TextUsuario.Name = "TextUsuario"
+        Me.TextUsuario.Size = New System.Drawing.Size(128, 20)
+        Me.TextUsuario.TabIndex = 6
         '
-        'Loggin
+        'FormLoggin
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(284, 261)
-        Me.Controls.Add(Me.ComboBox1)
+        Me.Controls.Add(Me.TextUsuario)
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.Label1)
-        Me.Controls.Add(Me.TextBox2)
+        Me.Controls.Add(Me.TextContrasena)
         Me.Controls.Add(Me.BtnSalir)
         Me.Controls.Add(Me.BtnIngresar)
-        Me.Name = "Loggin"
+        Me.Name = "FormLoggin"
         Me.Text = "Loggin"
         Me.ResumeLayout(False)
         Me.PerformLayout()
@@ -103,6 +102,6 @@ Partial Class FormLoggin
     Friend WithEvents BtnSalir As System.Windows.Forms.Button
     Friend WithEvents Label1 As System.Windows.Forms.Label
     Friend WithEvents Label2 As System.Windows.Forms.Label
-    Friend WithEvents TextBox2 As System.Windows.Forms.TextBox
-    Friend WithEvents ComboBox1 As System.Windows.Forms.ComboBox
+    Friend WithEvents TextContrasena As System.Windows.Forms.TextBox
+    Friend WithEvents TextUsuario As System.Windows.Forms.TextBox
 End Class
