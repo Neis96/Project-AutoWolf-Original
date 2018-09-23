@@ -88,6 +88,9 @@ Partial Class Altas
         Me.SociosTableAdapter = New pruebaBD.Database1DataSetTableAdapters.SociosTableAdapter()
         Me.ViajesTableAdapter = New pruebaBD.Database1DataSetTableAdapters.ViajesTableAdapter()
         Me.VehiculoTableAdapter = New pruebaBD.Database1DataSetTableAdapters.VehiculoTableAdapter()
+        Me.ComboChofer = New System.Windows.Forms.ComboBox()
+        Me.ComboSocios = New System.Windows.Forms.ComboBox()
+        Me.ComboAuto = New System.Windows.Forms.ComboBox()
         NombreLabel = New System.Windows.Forms.Label()
         Fecha_nacimientoLabel = New System.Windows.Forms.Label()
         NombreLabel1 = New System.Windows.Forms.Label()
@@ -169,7 +172,7 @@ Partial Class Altas
         'IdChoferLabel
         '
         IdChoferLabel.AutoSize = True
-        IdChoferLabel.Location = New System.Drawing.Point(1008, 113)
+        IdChoferLabel.Location = New System.Drawing.Point(1008, 97)
         IdChoferLabel.Name = "IdChoferLabel"
         IdChoferLabel.Size = New System.Drawing.Size(52, 13)
         IdChoferLabel.TabIndex = 22
@@ -178,7 +181,7 @@ Partial Class Altas
         'IdSociosLabel
         '
         IdSociosLabel.AutoSize = True
-        IdSociosLabel.Location = New System.Drawing.Point(1008, 139)
+        IdSociosLabel.Location = New System.Drawing.Point(1006, 129)
         IdSociosLabel.Name = "IdSociosLabel"
         IdSociosLabel.Size = New System.Drawing.Size(53, 13)
         IdSociosLabel.TabIndex = 24
@@ -187,7 +190,7 @@ Partial Class Altas
         'IdVehiculosLabel
         '
         IdVehiculosLabel.AutoSize = True
-        IdVehiculosLabel.Location = New System.Drawing.Point(1008, 165)
+        IdVehiculosLabel.Location = New System.Drawing.Point(1008, 159)
         IdVehiculosLabel.Name = "IdVehiculosLabel"
         IdVehiculosLabel.Size = New System.Drawing.Size(67, 13)
         IdVehiculosLabel.TabIndex = 26
@@ -240,7 +243,7 @@ Partial Class Altas
         '
         'Button3
         '
-        Me.Button3.Location = New System.Drawing.Point(1088, 307)
+        Me.Button3.Location = New System.Drawing.Point(1130, 313)
         Me.Button3.Name = "Button3"
         Me.Button3.Size = New System.Drawing.Size(75, 23)
         Me.Button3.TabIndex = 2
@@ -409,7 +412,7 @@ Partial Class Altas
         'IdChoferTextBox
         '
         Me.IdChoferTextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.ViajesBindingSource, "idChofer", True))
-        Me.IdChoferTextBox.Location = New System.Drawing.Point(1088, 110)
+        Me.IdChoferTextBox.Location = New System.Drawing.Point(727, 94)
         Me.IdChoferTextBox.Name = "IdChoferTextBox"
         Me.IdChoferTextBox.Size = New System.Drawing.Size(200, 20)
         Me.IdChoferTextBox.TabIndex = 23
@@ -417,7 +420,7 @@ Partial Class Altas
         'IdSociosTextBox
         '
         Me.IdSociosTextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.ViajesBindingSource, "idSocios", True))
-        Me.IdSociosTextBox.Location = New System.Drawing.Point(1088, 136)
+        Me.IdSociosTextBox.Location = New System.Drawing.Point(727, 126)
         Me.IdSociosTextBox.Name = "IdSociosTextBox"
         Me.IdSociosTextBox.Size = New System.Drawing.Size(200, 20)
         Me.IdSociosTextBox.TabIndex = 25
@@ -425,7 +428,7 @@ Partial Class Altas
         'IdVehiculosTextBox
         '
         Me.IdVehiculosTextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.ViajesBindingSource, "idVehiculos", True))
-        Me.IdVehiculosTextBox.Location = New System.Drawing.Point(1088, 162)
+        Me.IdVehiculosTextBox.Location = New System.Drawing.Point(727, 156)
         Me.IdVehiculosTextBox.Name = "IdVehiculosTextBox"
         Me.IdVehiculosTextBox.Size = New System.Drawing.Size(200, 20)
         Me.IdVehiculosTextBox.TabIndex = 27
@@ -627,11 +630,38 @@ Partial Class Altas
         '
         Me.VehiculoTableAdapter.ClearBeforeFill = True
         '
+        'ComboChofer
+        '
+        Me.ComboChofer.FormattingEnabled = True
+        Me.ComboChofer.Location = New System.Drawing.Point(1088, 94)
+        Me.ComboChofer.Name = "ComboChofer"
+        Me.ComboChofer.Size = New System.Drawing.Size(200, 21)
+        Me.ComboChofer.TabIndex = 49
+        '
+        'ComboSocios
+        '
+        Me.ComboSocios.FormattingEnabled = True
+        Me.ComboSocios.Location = New System.Drawing.Point(1088, 124)
+        Me.ComboSocios.Name = "ComboSocios"
+        Me.ComboSocios.Size = New System.Drawing.Size(200, 21)
+        Me.ComboSocios.TabIndex = 50
+        '
+        'ComboAuto
+        '
+        Me.ComboAuto.FormattingEnabled = True
+        Me.ComboAuto.Location = New System.Drawing.Point(1088, 151)
+        Me.ComboAuto.Name = "ComboAuto"
+        Me.ComboAuto.Size = New System.Drawing.Size(200, 21)
+        Me.ComboAuto.TabIndex = 51
+        '
         'Altas
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(1346, 616)
+        Me.Controls.Add(Me.ComboAuto)
+        Me.Controls.Add(Me.ComboSocios)
+        Me.Controls.Add(Me.ComboChofer)
         Me.Controls.Add(Me.ButtonEliminarVehioculo)
         Me.Controls.Add(Me.ButagregarVehiculo)
         Me.Controls.Add(Me.Label4)
@@ -737,4 +767,7 @@ Partial Class Altas
     Friend WithEvents Label4 As System.Windows.Forms.Label
     Friend WithEvents ButagregarVehiculo As System.Windows.Forms.Button
     Friend WithEvents ButtonEliminarVehioculo As System.Windows.Forms.Button
+    Friend WithEvents ComboChofer As System.Windows.Forms.ComboBox
+    Friend WithEvents ComboSocios As System.Windows.Forms.ComboBox
+    Friend WithEvents ComboAuto As System.Windows.Forms.ComboBox
 End Class

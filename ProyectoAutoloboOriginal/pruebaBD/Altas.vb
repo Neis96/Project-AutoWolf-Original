@@ -1,4 +1,8 @@
-﻿Public Class Altas
+﻿Imports System.Data.SqlClient
+
+Public Class Altas
+
+   
 
     Private Sub Button1_Click(sender As System.Object, e As System.EventArgs) Handles Button1.Click
         If NombreTextBox.Text = "" Then
@@ -38,6 +42,8 @@
     End Sub
 
     Private Sub Altas_Load(sender As System.Object, e As System.EventArgs) Handles MyBase.Load
+       
+
         'TODO: esta línea de código carga datos en la tabla 'Database1DataSet.Vehiculo' Puede moverla o quitarla según sea necesario.
         Me.VehiculoTableAdapter.Fill(Me.Database1DataSet.Vehiculo)
         'TODO: esta línea de código carga datos en la tabla 'Database1DataSet.Viajes' Puede moverla o quitarla según sea necesario.
@@ -171,9 +177,9 @@
     End Sub
 
     Private Sub ButagregarVehiculo_Click(sender As System.Object, e As System.EventArgs) Handles ButagregarVehiculo.Click
-        If ModeloTextBox.Text = "" Then
+        If MarcaTextBox.Text = "" Then
             MsgBox("El campo esta vacio")
-            ModeloTextBox.Focus()
+            MarcaTextBox.Focus()
         Else
             If MarcaTextBox.Text = "" Then
                 MsgBox("El campo esta vacio")
@@ -182,7 +188,9 @@
                 Me.Validate()
                 Me.VehiculoBindingSource.EndEdit()  'finalizo edicion
 
-                Me.TableAdapterManager.UpdateAll(Me.Database1DataSet) 'guardo en disco
+                Me.TableAdapterManager.UpdateAll(Me.Database1DataSet)   'guardo y actualiza form de altas   
+
+                Form1.TableAdapterManager.UpdateAll(Me.Database1DataSet) 'guarda y actuliza el form principal
 
                 MsgBox("Registro guardado con exito")
 
@@ -227,10 +235,15 @@
                     'apreto si
                     Me.VehiculoBindingSource.RemoveCurrent() 'borro el regiostro donde estoy parado
                     Me.VehiculoBindingSource.EndEdit() 'cierro bd
-                    Me.TableAdapterManager.UpdateAll(Me.Database1DataSet) 'guardo en disco
+                    Me.TableAdapterManager.UpdateAll(Me.Database1DataSet) 'guardo en disco guarda y actualiza en alta
+                    Form1.TableAdapterManager.UpdateAll(Me.Database1DataSet) 'guarda y actuliza en el form principal
                     Form1.VehiculoTableAdapter.Fill(Form1.Database1DataSet.Vehiculo) ' para actualizar en el otro formulario la grilla acordarse de que el punto despues del database va la tabla trabajada
                 End If
             End If
         End If
+    End Sub
+
+    Private Sub ComboBox1_SelectedIndexChanged(sender As System.Object, e As System.EventArgs) Handles ComboChofer.SelectedIndexChanged
+
     End Sub
 End Class

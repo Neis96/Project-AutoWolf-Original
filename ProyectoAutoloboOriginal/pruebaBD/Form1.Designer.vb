@@ -38,11 +38,11 @@ Partial Class Form1
         Dim Fecha_origenLabel As System.Windows.Forms.Label
         Dim Fecha_destinoLabel As System.Windows.Forms.Label
         Dim TotalLabel As System.Windows.Forms.Label
-        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Form1))
         Dim IdLabel2 As System.Windows.Forms.Label
         Dim ModeloLabel As System.Windows.Forms.Label
         Dim MarcaLabel As System.Windows.Forms.Label
         Dim AñoLabel As System.Windows.Forms.Label
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Form1))
         Me.ChoferBindingNavigator = New System.Windows.Forms.BindingNavigator(Me.components)
         Me.BindingNavigatorAddNewItem = New System.Windows.Forms.ToolStripButton()
         Me.ChoferBindingSource = New System.Windows.Forms.BindingSource(Me.components)
@@ -116,6 +116,8 @@ Partial Class Form1
         Me.DataGridViewTextBoxColumn17 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.DataGridViewTextBoxColumn18 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.DataGridViewTextBoxColumn19 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Button5 = New System.Windows.Forms.Button()
+        Me.Button6 = New System.Windows.Forms.Button()
         IdLabel = New System.Windows.Forms.Label()
         NombreLabel = New System.Windows.Forms.Label()
         Fecha_nacimientoLabel = New System.Windows.Forms.Label()
@@ -282,6 +284,42 @@ Partial Class Form1
         TotalLabel.Size = New System.Drawing.Size(34, 13)
         TotalLabel.TabIndex = 32
         TotalLabel.Text = "Total:"
+        '
+        'IdLabel2
+        '
+        IdLabel2.AutoSize = True
+        IdLabel2.Location = New System.Drawing.Point(850, 566)
+        IdLabel2.Name = "IdLabel2"
+        IdLabel2.Size = New System.Drawing.Size(18, 13)
+        IdLabel2.TabIndex = 41
+        IdLabel2.Text = "id:"
+        '
+        'ModeloLabel
+        '
+        ModeloLabel.AutoSize = True
+        ModeloLabel.Location = New System.Drawing.Point(850, 592)
+        ModeloLabel.Name = "ModeloLabel"
+        ModeloLabel.Size = New System.Drawing.Size(44, 13)
+        ModeloLabel.TabIndex = 43
+        ModeloLabel.Text = "modelo:"
+        '
+        'MarcaLabel
+        '
+        MarcaLabel.AutoSize = True
+        MarcaLabel.Location = New System.Drawing.Point(850, 618)
+        MarcaLabel.Name = "MarcaLabel"
+        MarcaLabel.Size = New System.Drawing.Size(39, 13)
+        MarcaLabel.TabIndex = 45
+        MarcaLabel.Text = "marca:"
+        '
+        'AñoLabel
+        '
+        AñoLabel.AutoSize = True
+        AñoLabel.Location = New System.Drawing.Point(850, 645)
+        AñoLabel.Name = "AñoLabel"
+        AñoLabel.Size = New System.Drawing.Size(28, 13)
+        AñoLabel.TabIndex = 47
+        AñoLabel.Text = "año:"
         '
         'ChoferBindingNavigator
         '
@@ -551,7 +589,7 @@ Partial Class Form1
         Me.ViajesDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.ViajesDataGridView.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.DataGridViewTextBoxColumn9, Me.DataGridViewTextBoxColumn10, Me.DataGridViewTextBoxColumn11, Me.DataGridViewTextBoxColumn12, Me.DataGridViewTextBoxColumn13, Me.DataGridViewTextBoxColumn14, Me.DataGridViewTextBoxColumn15})
         Me.ViajesDataGridView.DataSource = Me.ViajesBindingSource
-        Me.ViajesDataGridView.Location = New System.Drawing.Point(532, 380)
+        Me.ViajesDataGridView.Location = New System.Drawing.Point(526, 399)
         Me.ViajesDataGridView.Name = "ViajesDataGridView"
         Me.ViajesDataGridView.Size = New System.Drawing.Size(778, 110)
         Me.ViajesDataGridView.TabIndex = 19
@@ -680,11 +718,11 @@ Partial Class Form1
         '
         'Button3
         '
-        Me.Button3.Location = New System.Drawing.Point(1135, 334)
+        Me.Button3.Location = New System.Drawing.Point(1154, 341)
         Me.Button3.Name = "Button3"
         Me.Button3.Size = New System.Drawing.Size(75, 23)
         Me.Button3.TabIndex = 36
-        Me.Button3.Text = "Button3"
+        Me.Button3.Text = "Nuevo"
         Me.Button3.UseVisualStyleBackColor = True
         '
         'Label1
@@ -753,15 +791,6 @@ Partial Class Form1
         Me.Button4.Text = "Button4"
         Me.Button4.UseVisualStyleBackColor = True
         '
-        'IdLabel2
-        '
-        IdLabel2.AutoSize = True
-        IdLabel2.Location = New System.Drawing.Point(850, 566)
-        IdLabel2.Name = "IdLabel2"
-        IdLabel2.Size = New System.Drawing.Size(18, 13)
-        IdLabel2.TabIndex = 41
-        IdLabel2.Text = "id:"
-        '
         'IdTextBox2
         '
         Me.IdTextBox2.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.VehiculoBindingSource, "id", True))
@@ -769,15 +798,6 @@ Partial Class Form1
         Me.IdTextBox2.Name = "IdTextBox2"
         Me.IdTextBox2.Size = New System.Drawing.Size(200, 20)
         Me.IdTextBox2.TabIndex = 42
-        '
-        'ModeloLabel
-        '
-        ModeloLabel.AutoSize = True
-        ModeloLabel.Location = New System.Drawing.Point(850, 592)
-        ModeloLabel.Name = "ModeloLabel"
-        ModeloLabel.Size = New System.Drawing.Size(44, 13)
-        ModeloLabel.TabIndex = 43
-        ModeloLabel.Text = "modelo:"
         '
         'ModeloTextBox
         '
@@ -787,15 +807,6 @@ Partial Class Form1
         Me.ModeloTextBox.Size = New System.Drawing.Size(200, 20)
         Me.ModeloTextBox.TabIndex = 44
         '
-        'MarcaLabel
-        '
-        MarcaLabel.AutoSize = True
-        MarcaLabel.Location = New System.Drawing.Point(850, 618)
-        MarcaLabel.Name = "MarcaLabel"
-        MarcaLabel.Size = New System.Drawing.Size(39, 13)
-        MarcaLabel.TabIndex = 45
-        MarcaLabel.Text = "marca:"
-        '
         'MarcaTextBox
         '
         Me.MarcaTextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.VehiculoBindingSource, "marca", True))
@@ -803,15 +814,6 @@ Partial Class Form1
         Me.MarcaTextBox.Name = "MarcaTextBox"
         Me.MarcaTextBox.Size = New System.Drawing.Size(200, 20)
         Me.MarcaTextBox.TabIndex = 46
-        '
-        'AñoLabel
-        '
-        AñoLabel.AutoSize = True
-        AñoLabel.Location = New System.Drawing.Point(850, 645)
-        AñoLabel.Name = "AñoLabel"
-        AñoLabel.Size = New System.Drawing.Size(28, 13)
-        AñoLabel.TabIndex = 47
-        AñoLabel.Text = "año:"
         '
         'AñoDateTimePicker
         '
@@ -866,11 +868,31 @@ Partial Class Form1
         Me.DataGridViewTextBoxColumn19.HeaderText = "año"
         Me.DataGridViewTextBoxColumn19.Name = "DataGridViewTextBoxColumn19"
         '
+        'Button5
+        '
+        Me.Button5.Location = New System.Drawing.Point(1106, 309)
+        Me.Button5.Name = "Button5"
+        Me.Button5.Size = New System.Drawing.Size(75, 23)
+        Me.Button5.TabIndex = 51
+        Me.Button5.Text = "Button5"
+        Me.Button5.UseVisualStyleBackColor = True
+        '
+        'Button6
+        '
+        Me.Button6.Location = New System.Drawing.Point(1199, 309)
+        Me.Button6.Name = "Button6"
+        Me.Button6.Size = New System.Drawing.Size(75, 23)
+        Me.Button6.TabIndex = 52
+        Me.Button6.Text = "Button6"
+        Me.Button6.UseVisualStyleBackColor = True
+        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(1338, 1061)
+        Me.Controls.Add(Me.Button6)
+        Me.Controls.Add(Me.Button5)
         Me.Controls.Add(Me.VehiculoDataGridView)
         Me.Controls.Add(Me.Label4)
         Me.Controls.Add(IdLabel2)
@@ -1013,5 +1035,7 @@ Partial Class Form1
     Friend WithEvents DataGridViewTextBoxColumn17 As System.Windows.Forms.DataGridViewTextBoxColumn
     Friend WithEvents DataGridViewTextBoxColumn18 As System.Windows.Forms.DataGridViewTextBoxColumn
     Friend WithEvents DataGridViewTextBoxColumn19 As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents Button5 As System.Windows.Forms.Button
+    Friend WithEvents Button6 As System.Windows.Forms.Button
 
 End Class

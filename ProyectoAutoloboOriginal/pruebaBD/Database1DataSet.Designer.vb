@@ -33,6 +33,12 @@ Partial Public Class Database1DataSet
     
     Private tableViajes As ViajesDataTable
     
+    Private relationFK_Socios_Viajes As Global.System.Data.DataRelation
+    
+    Private relationFK_Vehiculo_Viajes As Global.System.Data.DataRelation
+    
+    Private relationFK_Chofer_Viajes As Global.System.Data.DataRelation
+    
     Private _schemaSerializationMode As Global.System.Data.SchemaSerializationMode = Global.System.Data.SchemaSerializationMode.IncludeSchema
     
     <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
@@ -266,6 +272,9 @@ Partial Public Class Database1DataSet
                 Me.tableViajes.InitVars
             End If
         End If
+        Me.relationFK_Socios_Viajes = Me.Relations("FK_Socios_Viajes")
+        Me.relationFK_Vehiculo_Viajes = Me.Relations("FK_Vehiculo_Viajes")
+        Me.relationFK_Chofer_Viajes = Me.Relations("FK_Chofer_Viajes")
     End Sub
     
     <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
@@ -284,6 +293,28 @@ Partial Public Class Database1DataSet
         MyBase.Tables.Add(Me.tableVehiculo)
         Me.tableViajes = New ViajesDataTable()
         MyBase.Tables.Add(Me.tableViajes)
+        Dim fkc As Global.System.Data.ForeignKeyConstraint
+        fkc = New Global.System.Data.ForeignKeyConstraint("FK_Socios_Viajes", New Global.System.Data.DataColumn() {Me.tableSocios.idColumn}, New Global.System.Data.DataColumn() {Me.tableViajes.RegistroColumn})
+        Me.tableViajes.Constraints.Add(fkc)
+        fkc.AcceptRejectRule = Global.System.Data.AcceptRejectRule.None
+        fkc.DeleteRule = Global.System.Data.Rule.Cascade
+        fkc.UpdateRule = Global.System.Data.Rule.Cascade
+        fkc = New Global.System.Data.ForeignKeyConstraint("FK_Vehiculo_Viajes", New Global.System.Data.DataColumn() {Me.tableVehiculo.idColumn}, New Global.System.Data.DataColumn() {Me.tableViajes.RegistroColumn})
+        Me.tableViajes.Constraints.Add(fkc)
+        fkc.AcceptRejectRule = Global.System.Data.AcceptRejectRule.None
+        fkc.DeleteRule = Global.System.Data.Rule.Cascade
+        fkc.UpdateRule = Global.System.Data.Rule.Cascade
+        fkc = New Global.System.Data.ForeignKeyConstraint("FK_Chofer_Viajes", New Global.System.Data.DataColumn() {Me.tableChofer.IdColumn}, New Global.System.Data.DataColumn() {Me.tableViajes.idChoferColumn})
+        Me.tableViajes.Constraints.Add(fkc)
+        fkc.AcceptRejectRule = Global.System.Data.AcceptRejectRule.None
+        fkc.DeleteRule = Global.System.Data.Rule.Cascade
+        fkc.UpdateRule = Global.System.Data.Rule.Cascade
+        Me.relationFK_Socios_Viajes = New Global.System.Data.DataRelation("FK_Socios_Viajes", New Global.System.Data.DataColumn() {Me.tableSocios.idColumn}, New Global.System.Data.DataColumn() {Me.tableViajes.RegistroColumn}, false)
+        Me.Relations.Add(Me.relationFK_Socios_Viajes)
+        Me.relationFK_Vehiculo_Viajes = New Global.System.Data.DataRelation("FK_Vehiculo_Viajes", New Global.System.Data.DataColumn() {Me.tableVehiculo.idColumn}, New Global.System.Data.DataColumn() {Me.tableViajes.RegistroColumn}, false)
+        Me.Relations.Add(Me.relationFK_Vehiculo_Viajes)
+        Me.relationFK_Chofer_Viajes = New Global.System.Data.DataRelation("FK_Chofer_Viajes", New Global.System.Data.DataColumn() {Me.tableChofer.IdColumn}, New Global.System.Data.DataColumn() {Me.tableViajes.idChoferColumn}, false)
+        Me.Relations.Add(Me.relationFK_Chofer_Viajes)
     End Sub
     
     <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
@@ -1450,9 +1481,12 @@ Partial Public Class Database1DataSet
         
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
-        Public Overloads Function AddViajesRow(ByVal idChofer As Integer, ByVal idSocios As Integer, ByVal idVehiculos As Integer, ByVal fecha_origen As Date, ByVal fecha_destino As Date, ByVal Total As Double) As ViajesRow
+        Public Overloads Function AddViajesRow(ByVal parentChoferRowByFK_Chofer_Viajes As ChoferRow, ByVal idSocios As Integer, ByVal idVehiculos As Integer, ByVal fecha_origen As Date, ByVal fecha_destino As Date, ByVal Total As Double) As ViajesRow
             Dim rowViajesRow As ViajesRow = CType(Me.NewRow,ViajesRow)
-            Dim columnValuesArray() As Object = New Object() {Nothing, idChofer, idSocios, idVehiculos, fecha_origen, fecha_destino, Total}
+            Dim columnValuesArray() As Object = New Object() {Nothing, Nothing, idSocios, idVehiculos, fecha_origen, fecha_destino, Total}
+            If (Not (parentChoferRowByFK_Chofer_Viajes) Is Nothing) Then
+                columnValuesArray(1) = parentChoferRowByFK_Chofer_Viajes(0)
+            End If
             rowViajesRow.ItemArray = columnValuesArray
             Me.Rows.Add(rowViajesRow)
             Return rowViajesRow
@@ -1725,6 +1759,16 @@ Partial Public Class Database1DataSet
         Public Sub Setfecha_nacimientoNull()
             Me(Me.tableChofer.fecha_nacimientoColumn) = Global.System.Convert.DBNull
         End Sub
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Public Function GetViajesRows() As ViajesRow()
+            If (Me.Table.ChildRelations("FK_Chofer_Viajes") Is Nothing) Then
+                Return New ViajesRow(-1) {}
+            Else
+                Return CType(MyBase.GetChildRows(Me.Table.ChildRelations("FK_Chofer_Viajes")),ViajesRow())
+            End If
+        End Function
     End Class
     
     '''<summary>
@@ -1860,6 +1904,16 @@ Partial Public Class Database1DataSet
         Public Sub SetdireccionNull()
             Me(Me.tableSocios.direccionColumn) = Global.System.Convert.DBNull
         End Sub
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Public Function GetViajesRows() As ViajesRow()
+            If (Me.Table.ChildRelations("FK_Socios_Viajes") Is Nothing) Then
+                Return New ViajesRow(-1) {}
+            Else
+                Return CType(MyBase.GetChildRows(Me.Table.ChildRelations("FK_Socios_Viajes")),ViajesRow())
+            End If
+        End Function
     End Class
     
     '''<summary>
@@ -1968,6 +2022,16 @@ Partial Public Class Database1DataSet
         Public Sub SetañoNull()
             Me(Me.tableVehiculo.añoColumn) = Global.System.Convert.DBNull
         End Sub
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Public Function GetViajesRows() As ViajesRow()
+            If (Me.Table.ChildRelations("FK_Vehiculo_Viajes") Is Nothing) Then
+                Return New ViajesRow(-1) {}
+            Else
+                Return CType(MyBase.GetChildRows(Me.Table.ChildRelations("FK_Vehiculo_Viajes")),ViajesRow())
+            End If
+        End Function
     End Class
     
     '''<summary>
@@ -2071,6 +2135,39 @@ Partial Public Class Database1DataSet
             End Get
             Set
                 Me(Me.tableViajes.TotalColumn) = value
+            End Set
+        End Property
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Public Property SociosRow() As SociosRow
+            Get
+                Return CType(Me.GetParentRow(Me.Table.ParentRelations("FK_Socios_Viajes")),SociosRow)
+            End Get
+            Set
+                Me.SetParentRow(value, Me.Table.ParentRelations("FK_Socios_Viajes"))
+            End Set
+        End Property
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Public Property VehiculoRow() As VehiculoRow
+            Get
+                Return CType(Me.GetParentRow(Me.Table.ParentRelations("FK_Vehiculo_Viajes")),VehiculoRow)
+            End Get
+            Set
+                Me.SetParentRow(value, Me.Table.ParentRelations("FK_Vehiculo_Viajes"))
+            End Set
+        End Property
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Public Property ChoferRow() As ChoferRow
+            Get
+                Return CType(Me.GetParentRow(Me.Table.ParentRelations("FK_Chofer_Viajes")),ChoferRow)
+            End Get
+            Set
+                Me.SetParentRow(value, Me.Table.ParentRelations("FK_Chofer_Viajes"))
             End Set
         End Property
         
@@ -3742,12 +3839,12 @@ Namespace Database1DataSetTableAdapters
                     allChangedRows.AddRange(updatedRows)
                 End If
             End If
-            If (Not (Me._viajesTableAdapter) Is Nothing) Then
-                Dim updatedRows() As Global.System.Data.DataRow = dataSet.Viajes.Select(Nothing, Nothing, Global.System.Data.DataViewRowState.ModifiedCurrent)
+            If (Not (Me._sociosTableAdapter) Is Nothing) Then
+                Dim updatedRows() As Global.System.Data.DataRow = dataSet.Socios.Select(Nothing, Nothing, Global.System.Data.DataViewRowState.ModifiedCurrent)
                 updatedRows = Me.GetRealUpdatedRows(updatedRows, allAddedRows)
                 If ((Not (updatedRows) Is Nothing)  _
                             AndAlso (0 < updatedRows.Length)) Then
-                    result = (result + Me._viajesTableAdapter.Update(updatedRows))
+                    result = (result + Me._sociosTableAdapter.Update(updatedRows))
                     allChangedRows.AddRange(updatedRows)
                 End If
             End If
@@ -3760,12 +3857,12 @@ Namespace Database1DataSetTableAdapters
                     allChangedRows.AddRange(updatedRows)
                 End If
             End If
-            If (Not (Me._sociosTableAdapter) Is Nothing) Then
-                Dim updatedRows() As Global.System.Data.DataRow = dataSet.Socios.Select(Nothing, Nothing, Global.System.Data.DataViewRowState.ModifiedCurrent)
+            If (Not (Me._viajesTableAdapter) Is Nothing) Then
+                Dim updatedRows() As Global.System.Data.DataRow = dataSet.Viajes.Select(Nothing, Nothing, Global.System.Data.DataViewRowState.ModifiedCurrent)
                 updatedRows = Me.GetRealUpdatedRows(updatedRows, allAddedRows)
                 If ((Not (updatedRows) Is Nothing)  _
                             AndAlso (0 < updatedRows.Length)) Then
-                    result = (result + Me._sociosTableAdapter.Update(updatedRows))
+                    result = (result + Me._viajesTableAdapter.Update(updatedRows))
                     allChangedRows.AddRange(updatedRows)
                 End If
             End If
@@ -3787,11 +3884,11 @@ Namespace Database1DataSetTableAdapters
                     allAddedRows.AddRange(addedRows)
                 End If
             End If
-            If (Not (Me._viajesTableAdapter) Is Nothing) Then
-                Dim addedRows() As Global.System.Data.DataRow = dataSet.Viajes.Select(Nothing, Nothing, Global.System.Data.DataViewRowState.Added)
+            If (Not (Me._sociosTableAdapter) Is Nothing) Then
+                Dim addedRows() As Global.System.Data.DataRow = dataSet.Socios.Select(Nothing, Nothing, Global.System.Data.DataViewRowState.Added)
                 If ((Not (addedRows) Is Nothing)  _
                             AndAlso (0 < addedRows.Length)) Then
-                    result = (result + Me._viajesTableAdapter.Update(addedRows))
+                    result = (result + Me._sociosTableAdapter.Update(addedRows))
                     allAddedRows.AddRange(addedRows)
                 End If
             End If
@@ -3803,11 +3900,11 @@ Namespace Database1DataSetTableAdapters
                     allAddedRows.AddRange(addedRows)
                 End If
             End If
-            If (Not (Me._sociosTableAdapter) Is Nothing) Then
-                Dim addedRows() As Global.System.Data.DataRow = dataSet.Socios.Select(Nothing, Nothing, Global.System.Data.DataViewRowState.Added)
+            If (Not (Me._viajesTableAdapter) Is Nothing) Then
+                Dim addedRows() As Global.System.Data.DataRow = dataSet.Viajes.Select(Nothing, Nothing, Global.System.Data.DataViewRowState.Added)
                 If ((Not (addedRows) Is Nothing)  _
                             AndAlso (0 < addedRows.Length)) Then
-                    result = (result + Me._sociosTableAdapter.Update(addedRows))
+                    result = (result + Me._viajesTableAdapter.Update(addedRows))
                     allAddedRows.AddRange(addedRows)
                 End If
             End If
@@ -3821,11 +3918,11 @@ Namespace Database1DataSetTableAdapters
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
         Private Function UpdateDeletedRows(ByVal dataSet As Database1DataSet, ByVal allChangedRows As Global.System.Collections.Generic.List(Of Global.System.Data.DataRow)) As Integer
             Dim result As Integer = 0
-            If (Not (Me._sociosTableAdapter) Is Nothing) Then
-                Dim deletedRows() As Global.System.Data.DataRow = dataSet.Socios.Select(Nothing, Nothing, Global.System.Data.DataViewRowState.Deleted)
+            If (Not (Me._viajesTableAdapter) Is Nothing) Then
+                Dim deletedRows() As Global.System.Data.DataRow = dataSet.Viajes.Select(Nothing, Nothing, Global.System.Data.DataViewRowState.Deleted)
                 If ((Not (deletedRows) Is Nothing)  _
                             AndAlso (0 < deletedRows.Length)) Then
-                    result = (result + Me._sociosTableAdapter.Update(deletedRows))
+                    result = (result + Me._viajesTableAdapter.Update(deletedRows))
                     allChangedRows.AddRange(deletedRows)
                 End If
             End If
@@ -3837,11 +3934,11 @@ Namespace Database1DataSetTableAdapters
                     allChangedRows.AddRange(deletedRows)
                 End If
             End If
-            If (Not (Me._viajesTableAdapter) Is Nothing) Then
-                Dim deletedRows() As Global.System.Data.DataRow = dataSet.Viajes.Select(Nothing, Nothing, Global.System.Data.DataViewRowState.Deleted)
+            If (Not (Me._sociosTableAdapter) Is Nothing) Then
+                Dim deletedRows() As Global.System.Data.DataRow = dataSet.Socios.Select(Nothing, Nothing, Global.System.Data.DataViewRowState.Deleted)
                 If ((Not (deletedRows) Is Nothing)  _
                             AndAlso (0 < deletedRows.Length)) Then
-                    result = (result + Me._viajesTableAdapter.Update(deletedRows))
+                    result = (result + Me._sociosTableAdapter.Update(deletedRows))
                     allChangedRows.AddRange(deletedRows)
                 End If
             End If

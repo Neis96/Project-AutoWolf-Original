@@ -220,7 +220,7 @@
   <xs:element name="Database1DataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="Database1DataSet" msprop:Generator_UserDSName="Database1DataSet">
     <xs:complexType>
       <xs:choice minOccurs="0" maxOccurs="unbounded">
-        <xs:element name="Chofer" msprop:Generator_TableClassName="ChoferDataTable" msprop:Generator_TableVarName="tableChofer" msprop:Generator_TablePropName="Chofer" msprop:Generator_RowDeletingName="ChoferRowDeleting" msprop:Generator_RowChangingName="ChoferRowChanging" msprop:Generator_RowEvHandlerName="ChoferRowChangeEventHandler" msprop:Generator_RowDeletedName="ChoferRowDeleted" msprop:Generator_UserTableName="Chofer" msprop:Generator_RowChangedName="ChoferRowChanged" msprop:Generator_RowEvArgName="ChoferRowChangeEvent" msprop:Generator_RowClassName="ChoferRow">
+        <xs:element name="Chofer" msprop:Generator_TableClassName="ChoferDataTable" msprop:Generator_TableVarName="tableChofer" msprop:Generator_RowChangedName="ChoferRowChanged" msprop:Generator_TablePropName="Chofer" msprop:Generator_RowDeletingName="ChoferRowDeleting" msprop:Generator_RowChangingName="ChoferRowChanging" msprop:Generator_RowEvHandlerName="ChoferRowChangeEventHandler" msprop:Generator_RowDeletedName="ChoferRowDeleted" msprop:Generator_RowClassName="ChoferRow" msprop:Generator_UserTableName="Chofer" msprop:Generator_RowEvArgName="ChoferRowChangeEvent">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="Id" msdata:ReadOnly="true" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnVarNameInTable="columnId" msprop:Generator_ColumnPropNameInRow="Id" msprop:Generator_ColumnPropNameInTable="IdColumn" msprop:Generator_UserColumnName="Id" type="xs:int" />
@@ -235,7 +235,7 @@
             </xs:sequence>
           </xs:complexType>
         </xs:element>
-        <xs:element name="Socios" msprop:Generator_TableClassName="SociosDataTable" msprop:Generator_TableVarName="tableSocios" msprop:Generator_TablePropName="Socios" msprop:Generator_RowDeletingName="SociosRowDeleting" msprop:Generator_RowChangingName="SociosRowChanging" msprop:Generator_RowEvHandlerName="SociosRowChangeEventHandler" msprop:Generator_RowDeletedName="SociosRowDeleted" msprop:Generator_UserTableName="Socios" msprop:Generator_RowChangedName="SociosRowChanged" msprop:Generator_RowEvArgName="SociosRowChangeEvent" msprop:Generator_RowClassName="SociosRow">
+        <xs:element name="Socios" msprop:Generator_TableClassName="SociosDataTable" msprop:Generator_TableVarName="tableSocios" msprop:Generator_RowChangedName="SociosRowChanged" msprop:Generator_TablePropName="Socios" msprop:Generator_RowDeletingName="SociosRowDeleting" msprop:Generator_RowChangingName="SociosRowChanging" msprop:Generator_RowEvHandlerName="SociosRowChangeEventHandler" msprop:Generator_RowDeletedName="SociosRowDeleted" msprop:Generator_RowClassName="SociosRow" msprop:Generator_UserTableName="Socios" msprop:Generator_RowEvArgName="SociosRowChangeEvent">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="id" msdata:ReadOnly="true" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnVarNameInTable="columnid" msprop:Generator_ColumnPropNameInRow="id" msprop:Generator_ColumnPropNameInTable="idColumn" msprop:Generator_UserColumnName="id" type="xs:int" />
@@ -264,7 +264,7 @@
             </xs:sequence>
           </xs:complexType>
         </xs:element>
-        <xs:element name="Vehiculo" msprop:Generator_TableClassName="VehiculoDataTable" msprop:Generator_TableVarName="tableVehiculo" msprop:Generator_TablePropName="Vehiculo" msprop:Generator_RowDeletingName="VehiculoRowDeleting" msprop:Generator_RowChangingName="VehiculoRowChanging" msprop:Generator_RowEvHandlerName="VehiculoRowChangeEventHandler" msprop:Generator_RowDeletedName="VehiculoRowDeleted" msprop:Generator_UserTableName="Vehiculo" msprop:Generator_RowChangedName="VehiculoRowChanged" msprop:Generator_RowEvArgName="VehiculoRowChangeEvent" msprop:Generator_RowClassName="VehiculoRow">
+        <xs:element name="Vehiculo" msprop:Generator_TableClassName="VehiculoDataTable" msprop:Generator_TableVarName="tableVehiculo" msprop:Generator_RowChangedName="VehiculoRowChanged" msprop:Generator_TablePropName="Vehiculo" msprop:Generator_RowDeletingName="VehiculoRowDeleting" msprop:Generator_RowChangingName="VehiculoRowChanging" msprop:Generator_RowEvHandlerName="VehiculoRowChangeEventHandler" msprop:Generator_RowDeletedName="VehiculoRowDeleted" msprop:Generator_RowClassName="VehiculoRow" msprop:Generator_UserTableName="Vehiculo" msprop:Generator_RowEvArgName="VehiculoRowChangeEvent">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="id" msdata:ReadOnly="true" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnVarNameInTable="columnid" msprop:Generator_ColumnPropNameInRow="id" msprop:Generator_ColumnPropNameInTable="idColumn" msprop:Generator_UserColumnName="id" type="xs:int" />
@@ -286,7 +286,7 @@
             </xs:sequence>
           </xs:complexType>
         </xs:element>
-        <xs:element name="Viajes" msprop:Generator_TableClassName="ViajesDataTable" msprop:Generator_TableVarName="tableViajes" msprop:Generator_TablePropName="Viajes" msprop:Generator_RowDeletingName="ViajesRowDeleting" msprop:Generator_RowChangingName="ViajesRowChanging" msprop:Generator_RowEvHandlerName="ViajesRowChangeEventHandler" msprop:Generator_RowDeletedName="ViajesRowDeleted" msprop:Generator_UserTableName="Viajes" msprop:Generator_RowChangedName="ViajesRowChanged" msprop:Generator_RowEvArgName="ViajesRowChangeEvent" msprop:Generator_RowClassName="ViajesRow">
+        <xs:element name="Viajes" msprop:Generator_TableClassName="ViajesDataTable" msprop:Generator_TableVarName="tableViajes" msprop:Generator_RowChangedName="ViajesRowChanged" msprop:Generator_TablePropName="Viajes" msprop:Generator_RowDeletingName="ViajesRowDeleting" msprop:Generator_RowChangingName="ViajesRowChanging" msprop:Generator_RowEvHandlerName="ViajesRowChangeEventHandler" msprop:Generator_RowDeletedName="ViajesRowDeleted" msprop:Generator_RowClassName="ViajesRow" msprop:Generator_UserTableName="Viajes" msprop:Generator_RowEvArgName="ViajesRowChangeEvent">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="Registro" msdata:ReadOnly="true" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnVarNameInTable="columnRegistro" msprop:Generator_ColumnPropNameInRow="Registro" msprop:Generator_ColumnPropNameInTable="RegistroColumn" msprop:Generator_UserColumnName="Registro" type="xs:int" />
@@ -321,5 +321,17 @@
       <xs:selector xpath=".//mstns:Viajes" />
       <xs:field xpath="mstns:Registro" />
     </xs:unique>
+    <xs:keyref name="FK_Socios_Viajes" refer="Constraint2" msprop:rel_Generator_UserChildTable="Viajes" msprop:rel_Generator_ChildPropName="GetViajesRows" msprop:rel_Generator_UserRelationName="FK_Socios_Viajes" msprop:rel_Generator_ParentPropName="SociosRow" msprop:rel_Generator_RelationVarName="relationFK_Socios_Viajes" msprop:rel_Generator_UserParentTable="Socios">
+      <xs:selector xpath=".//mstns:Viajes" />
+      <xs:field xpath="mstns:Registro" />
+    </xs:keyref>
+    <xs:keyref name="FK_Vehiculo_Viajes" refer="Vehiculo_Constraint1" msprop:rel_Generator_UserChildTable="Viajes" msprop:rel_Generator_ChildPropName="GetViajesRows" msprop:rel_Generator_UserRelationName="FK_Vehiculo_Viajes" msprop:rel_Generator_ParentPropName="VehiculoRow" msprop:rel_Generator_RelationVarName="relationFK_Vehiculo_Viajes" msprop:rel_Generator_UserParentTable="Vehiculo">
+      <xs:selector xpath=".//mstns:Viajes" />
+      <xs:field xpath="mstns:Registro" />
+    </xs:keyref>
+    <xs:keyref name="FK_Chofer_Viajes" refer="Constraint1" msprop:rel_Generator_UserChildTable="Viajes" msprop:rel_Generator_ChildPropName="GetViajesRows" msprop:rel_Generator_UserRelationName="FK_Chofer_Viajes" msprop:rel_Generator_ParentPropName="ChoferRow" msprop:rel_Generator_RelationVarName="relationFK_Chofer_Viajes" msprop:rel_Generator_UserParentTable="Chofer">
+      <xs:selector xpath=".//mstns:Viajes" />
+      <xs:field xpath="mstns:idChofer" />
+    </xs:keyref>
   </xs:element>
 </xs:schema>
