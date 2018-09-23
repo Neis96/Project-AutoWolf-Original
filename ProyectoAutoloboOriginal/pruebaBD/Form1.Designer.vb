@@ -116,7 +116,7 @@ Partial Class Form1
         Me.DataGridViewTextBoxColumn17 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.DataGridViewTextBoxColumn18 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.DataGridViewTextBoxColumn19 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Button5 = New System.Windows.Forms.Button()
+        Me.ButtonFacturacion = New System.Windows.Forms.Button()
         Me.Button6 = New System.Windows.Forms.Button()
         IdLabel = New System.Windows.Forms.Label()
         NombreLabel = New System.Windows.Forms.Label()
@@ -868,14 +868,14 @@ Partial Class Form1
         Me.DataGridViewTextBoxColumn19.HeaderText = "año"
         Me.DataGridViewTextBoxColumn19.Name = "DataGridViewTextBoxColumn19"
         '
-        'Button5
+        'ButtonFacturacion
         '
-        Me.Button5.Location = New System.Drawing.Point(1106, 309)
-        Me.Button5.Name = "Button5"
-        Me.Button5.Size = New System.Drawing.Size(75, 23)
-        Me.Button5.TabIndex = 51
-        Me.Button5.Text = "Button5"
-        Me.Button5.UseVisualStyleBackColor = True
+        Me.ButtonFacturacion.Location = New System.Drawing.Point(1000, 309)
+        Me.ButtonFacturacion.Name = "ButtonFacturacion"
+        Me.ButtonFacturacion.Size = New System.Drawing.Size(115, 23)
+        Me.ButtonFacturacion.TabIndex = 51
+        Me.ButtonFacturacion.Text = "FACTURACION"
+        Me.ButtonFacturacion.UseVisualStyleBackColor = True
         '
         'Button6
         '
@@ -892,7 +892,7 @@ Partial Class Form1
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(1338, 1061)
         Me.Controls.Add(Me.Button6)
-        Me.Controls.Add(Me.Button5)
+        Me.Controls.Add(Me.ButtonFacturacion)
         Me.Controls.Add(Me.VehiculoDataGridView)
         Me.Controls.Add(Me.Label4)
         Me.Controls.Add(IdLabel2)
@@ -1035,7 +1035,7 @@ Partial Class Form1
     Friend WithEvents DataGridViewTextBoxColumn17 As System.Windows.Forms.DataGridViewTextBoxColumn
     Friend WithEvents DataGridViewTextBoxColumn18 As System.Windows.Forms.DataGridViewTextBoxColumn
     Friend WithEvents DataGridViewTextBoxColumn19 As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents Button5 As System.Windows.Forms.Button
+    Friend WithEvents ButtonFacturacion As System.Windows.Forms.Button
     Friend WithEvents Button6 As System.Windows.Forms.Button
 
 End Class

@@ -38,4 +38,12 @@
     Private Sub Button4_Click(sender As System.Object, e As System.EventArgs) Handles Button4.Click
         Altas.Show()
     End Sub
+
+    Private Sub Button5_Click(sender As System.Object, e As System.EventArgs) Handles ButtonFacturacion.Click
+        facturacion.Show()
+    End Sub
+
+    Private Sub Button6_Click(sender As System.Object, e As System.EventArgs) Handles Button6.Click
+
+    End Sub
 End Class

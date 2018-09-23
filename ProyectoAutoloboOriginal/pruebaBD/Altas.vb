@@ -42,7 +42,9 @@ Public Class Altas
     End Sub
 
     Private Sub Altas_Load(sender As System.Object, e As System.EventArgs) Handles MyBase.Load
-       
+        Dim idChofer As Integer
+        idChofer = Me.ChoferTableAdapter.Fill(Me.Database1DataSet.Chofer)
+        ComboChofer.Items.Add(idChofer)
 
         'TODO: esta línea de código carga datos en la tabla 'Database1DataSet.Vehiculo' Puede moverla o quitarla según sea necesario.
         Me.VehiculoTableAdapter.Fill(Me.Database1DataSet.Vehiculo)
@@ -95,21 +97,23 @@ Public Class Altas
             NombreTextBox.Focus()
         Else
             Me.Validate()
-            Me.SociosBindingSource.EndEdit()  'finalizo edicion
+            Me.ViajesBindingSource.EndEdit()  'finalizo edicion
 
             Me.TableAdapterManager.UpdateAll(Me.Database1DataSet) 'guardo en disco
 
+            Form1.TableAdapterManager.UpdateAll(Form1.Database1DataSet)
+
             MsgBox("Registro guardado con exito")
 
-            'Home.StockTableAdapter.Fill(Home.VideoClubDataSet.Stock) 'actuliza el form principal
+            Form1.ViajesTableAdapter.Fill(Form1.Database1DataSet.Viajes) 'actuliza el form principal
 
-            Me.SociosTableAdapter.Fill(Me.Database1DataSet.Socios) 'Actuliza el form en el que estas
+            Me.ViajesTableAdapter.Fill(Me.Database1DataSet.Viajes) 'Actuliza el form en el que estas
 
-            Me.SociosBindingSource.MoveLast() 'ver ultimo agragado 
+            Me.ViajesBindingSource.MoveLast() 'ver ultimo agragado 
 
             'respetar siempre el orden de las instrucciones
 
-            MsgBox("El codigo de socio es es: " & SociosBindingSource.Current("Registro")) 'te muestra el registro en el que estas parado
+            'MsgBox("El codigo de socio es es: " & SociosBindingSource.Current("Registro")) 'te muestra el registro en el que estas parado
             'pasa el valor del ID a strig 'veo el dato que necesite
 
             Me.ViajesBindingSource.AddNew()
