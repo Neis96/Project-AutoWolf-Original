@@ -36,15 +36,12 @@ Partial Class Altas
         Dim Fecha_destinoLabel As System.Windows.Forms.Label
         Dim TotalLabel As System.Windows.Forms.Label
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Altas))
+        Dim ModeloLabel As System.Windows.Forms.Label
+        Dim MarcaLabel As System.Windows.Forms.Label
+        Dim AñoLabel As System.Windows.Forms.Label
         Me.Button1 = New System.Windows.Forms.Button()
         Me.Button2 = New System.Windows.Forms.Button()
         Me.Button3 = New System.Windows.Forms.Button()
-        Me.Database1DataSet = New pruebaBD.Database1DataSet()
-        Me.ChoferBindingSource = New System.Windows.Forms.BindingSource(Me.components)
-        Me.ChoferTableAdapter = New pruebaBD.Database1DataSetTableAdapters.ChoferTableAdapter()
-        Me.TableAdapterManager = New pruebaBD.Database1DataSetTableAdapters.TableAdapterManager()
-        Me.SociosTableAdapter = New pruebaBD.Database1DataSetTableAdapters.SociosTableAdapter()
-        Me.ViajesTableAdapter = New pruebaBD.Database1DataSetTableAdapters.ViajesTableAdapter()
         Me.ChoferBindingNavigator = New System.Windows.Forms.BindingNavigator(Me.components)
         Me.BindingNavigatorAddNewItem = New System.Windows.Forms.ToolStripButton()
         Me.BindingNavigatorCountItem = New System.Windows.Forms.ToolStripLabel()
@@ -60,12 +57,10 @@ Partial Class Altas
         Me.ChoferBindingNavigatorSaveItem = New System.Windows.Forms.ToolStripButton()
         Me.NombreTextBox = New System.Windows.Forms.TextBox()
         Me.Fecha_nacimientoDateTimePicker = New System.Windows.Forms.DateTimePicker()
-        Me.SociosBindingSource = New System.Windows.Forms.BindingSource(Me.components)
         Me.NombreTextBox1 = New System.Windows.Forms.TextBox()
         Me.ApellidoTextBox = New System.Windows.Forms.TextBox()
         Me.DniTextBox = New System.Windows.Forms.TextBox()
         Me.DireccionTextBox = New System.Windows.Forms.TextBox()
-        Me.ViajesBindingSource = New System.Windows.Forms.BindingSource(Me.components)
         Me.IdChoferTextBox = New System.Windows.Forms.TextBox()
         Me.IdSociosTextBox = New System.Windows.Forms.TextBox()
         Me.IdVehiculosTextBox = New System.Windows.Forms.TextBox()
@@ -75,6 +70,24 @@ Partial Class Altas
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Label3 = New System.Windows.Forms.Label()
+        Me.Button4 = New System.Windows.Forms.Button()
+        Me.Button5 = New System.Windows.Forms.Button()
+        Me.ModeloTextBox = New System.Windows.Forms.TextBox()
+        Me.MarcaTextBox = New System.Windows.Forms.TextBox()
+        Me.AñoDateTimePicker = New System.Windows.Forms.DateTimePicker()
+        Me.Label4 = New System.Windows.Forms.Label()
+        Me.ButagregarVehiculo = New System.Windows.Forms.Button()
+        Me.ButtonEliminarVehioculo = New System.Windows.Forms.Button()
+        Me.VehiculoBindingSource = New System.Windows.Forms.BindingSource(Me.components)
+        Me.Database1DataSet = New pruebaBD.Database1DataSet()
+        Me.ViajesBindingSource = New System.Windows.Forms.BindingSource(Me.components)
+        Me.SociosBindingSource = New System.Windows.Forms.BindingSource(Me.components)
+        Me.ChoferBindingSource = New System.Windows.Forms.BindingSource(Me.components)
+        Me.ChoferTableAdapter = New pruebaBD.Database1DataSetTableAdapters.ChoferTableAdapter()
+        Me.TableAdapterManager = New pruebaBD.Database1DataSetTableAdapters.TableAdapterManager()
+        Me.SociosTableAdapter = New pruebaBD.Database1DataSetTableAdapters.SociosTableAdapter()
+        Me.ViajesTableAdapter = New pruebaBD.Database1DataSetTableAdapters.ViajesTableAdapter()
+        Me.VehiculoTableAdapter = New pruebaBD.Database1DataSetTableAdapters.VehiculoTableAdapter()
         NombreLabel = New System.Windows.Forms.Label()
         Fecha_nacimientoLabel = New System.Windows.Forms.Label()
         NombreLabel1 = New System.Windows.Forms.Label()
@@ -87,18 +100,22 @@ Partial Class Altas
         Fecha_origenLabel = New System.Windows.Forms.Label()
         Fecha_destinoLabel = New System.Windows.Forms.Label()
         TotalLabel = New System.Windows.Forms.Label()
-        CType(Me.Database1DataSet, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.ChoferBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
+        ModeloLabel = New System.Windows.Forms.Label()
+        MarcaLabel = New System.Windows.Forms.Label()
+        AñoLabel = New System.Windows.Forms.Label()
         CType(Me.ChoferBindingNavigator, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.ChoferBindingNavigator.SuspendLayout()
-        CType(Me.SociosBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.VehiculoBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.Database1DataSet, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.ViajesBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.SociosBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.ChoferBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'NombreLabel
         '
         NombreLabel.AutoSize = True
-        NombreLabel.Location = New System.Drawing.Point(48, 253)
+        NombreLabel.Location = New System.Drawing.Point(38, 116)
         NombreLabel.Name = "NombreLabel"
         NombreLabel.Size = New System.Drawing.Size(45, 13)
         NombreLabel.TabIndex = 6
@@ -107,7 +124,7 @@ Partial Class Altas
         'Fecha_nacimientoLabel
         '
         Fecha_nacimientoLabel.AutoSize = True
-        Fecha_nacimientoLabel.Location = New System.Drawing.Point(48, 280)
+        Fecha_nacimientoLabel.Location = New System.Drawing.Point(38, 143)
         Fecha_nacimientoLabel.Name = "Fecha_nacimientoLabel"
         Fecha_nacimientoLabel.Size = New System.Drawing.Size(91, 13)
         Fecha_nacimientoLabel.TabIndex = 8
@@ -116,7 +133,7 @@ Partial Class Altas
         'NombreLabel1
         '
         NombreLabel1.AutoSize = True
-        NombreLabel1.Location = New System.Drawing.Point(578, 235)
+        NombreLabel1.Location = New System.Drawing.Point(34, 347)
         NombreLabel1.Name = "NombreLabel1"
         NombreLabel1.Size = New System.Drawing.Size(45, 13)
         NombreLabel1.TabIndex = 12
@@ -125,7 +142,7 @@ Partial Class Altas
         'ApellidoLabel
         '
         ApellidoLabel.AutoSize = True
-        ApellidoLabel.Location = New System.Drawing.Point(578, 261)
+        ApellidoLabel.Location = New System.Drawing.Point(34, 373)
         ApellidoLabel.Name = "ApellidoLabel"
         ApellidoLabel.Size = New System.Drawing.Size(46, 13)
         ApellidoLabel.TabIndex = 14
@@ -134,7 +151,7 @@ Partial Class Altas
         'DniLabel
         '
         DniLabel.AutoSize = True
-        DniLabel.Location = New System.Drawing.Point(578, 287)
+        DniLabel.Location = New System.Drawing.Point(34, 399)
         DniLabel.Name = "DniLabel"
         DniLabel.Size = New System.Drawing.Size(24, 13)
         DniLabel.TabIndex = 16
@@ -143,7 +160,7 @@ Partial Class Altas
         'DireccionLabel
         '
         DireccionLabel.AutoSize = True
-        DireccionLabel.Location = New System.Drawing.Point(578, 313)
+        DireccionLabel.Location = New System.Drawing.Point(34, 425)
         DireccionLabel.Name = "DireccionLabel"
         DireccionLabel.Size = New System.Drawing.Size(53, 13)
         DireccionLabel.TabIndex = 18
@@ -152,7 +169,7 @@ Partial Class Altas
         'IdChoferLabel
         '
         IdChoferLabel.AutoSize = True
-        IdChoferLabel.Location = New System.Drawing.Point(996, 214)
+        IdChoferLabel.Location = New System.Drawing.Point(1008, 113)
         IdChoferLabel.Name = "IdChoferLabel"
         IdChoferLabel.Size = New System.Drawing.Size(52, 13)
         IdChoferLabel.TabIndex = 22
@@ -161,7 +178,7 @@ Partial Class Altas
         'IdSociosLabel
         '
         IdSociosLabel.AutoSize = True
-        IdSociosLabel.Location = New System.Drawing.Point(996, 240)
+        IdSociosLabel.Location = New System.Drawing.Point(1008, 139)
         IdSociosLabel.Name = "IdSociosLabel"
         IdSociosLabel.Size = New System.Drawing.Size(53, 13)
         IdSociosLabel.TabIndex = 24
@@ -170,7 +187,7 @@ Partial Class Altas
         'IdVehiculosLabel
         '
         IdVehiculosLabel.AutoSize = True
-        IdVehiculosLabel.Location = New System.Drawing.Point(996, 266)
+        IdVehiculosLabel.Location = New System.Drawing.Point(1008, 165)
         IdVehiculosLabel.Name = "IdVehiculosLabel"
         IdVehiculosLabel.Size = New System.Drawing.Size(67, 13)
         IdVehiculosLabel.TabIndex = 26
@@ -179,7 +196,7 @@ Partial Class Altas
         'Fecha_origenLabel
         '
         Fecha_origenLabel.AutoSize = True
-        Fecha_origenLabel.Location = New System.Drawing.Point(996, 293)
+        Fecha_origenLabel.Location = New System.Drawing.Point(1008, 192)
         Fecha_origenLabel.Name = "Fecha_origenLabel"
         Fecha_origenLabel.Size = New System.Drawing.Size(69, 13)
         Fecha_origenLabel.TabIndex = 28
@@ -188,7 +205,7 @@ Partial Class Altas
         'Fecha_destinoLabel
         '
         Fecha_destinoLabel.AutoSize = True
-        Fecha_destinoLabel.Location = New System.Drawing.Point(996, 319)
+        Fecha_destinoLabel.Location = New System.Drawing.Point(1008, 218)
         Fecha_destinoLabel.Name = "Fecha_destinoLabel"
         Fecha_destinoLabel.Size = New System.Drawing.Size(74, 13)
         Fecha_destinoLabel.TabIndex = 30
@@ -197,7 +214,7 @@ Partial Class Altas
         'TotalLabel
         '
         TotalLabel.AutoSize = True
-        TotalLabel.Location = New System.Drawing.Point(996, 344)
+        TotalLabel.Location = New System.Drawing.Point(1008, 243)
         TotalLabel.Name = "TotalLabel"
         TotalLabel.Size = New System.Drawing.Size(34, 13)
         TotalLabel.TabIndex = 32
@@ -205,61 +222,30 @@ Partial Class Altas
         '
         'Button1
         '
-        Me.Button1.Location = New System.Drawing.Point(192, 514)
+        Me.Button1.Location = New System.Drawing.Point(139, 207)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(75, 23)
         Me.Button1.TabIndex = 0
-        Me.Button1.Text = "Button1"
+        Me.Button1.Text = "Agregar"
         Me.Button1.UseVisualStyleBackColor = True
         '
         'Button2
         '
-        Me.Button2.Location = New System.Drawing.Point(642, 514)
+        Me.Button2.Location = New System.Drawing.Point(37, 478)
         Me.Button2.Name = "Button2"
         Me.Button2.Size = New System.Drawing.Size(75, 23)
         Me.Button2.TabIndex = 1
-        Me.Button2.Text = "Button2"
+        Me.Button2.Text = "Agregar"
         Me.Button2.UseVisualStyleBackColor = True
         '
         'Button3
         '
-        Me.Button3.Location = New System.Drawing.Point(1120, 514)
+        Me.Button3.Location = New System.Drawing.Point(1088, 307)
         Me.Button3.Name = "Button3"
         Me.Button3.Size = New System.Drawing.Size(75, 23)
         Me.Button3.TabIndex = 2
-        Me.Button3.Text = "Button3"
+        Me.Button3.Text = "Agregar"
         Me.Button3.UseVisualStyleBackColor = True
-        '
-        'Database1DataSet
-        '
-        Me.Database1DataSet.DataSetName = "Database1DataSet"
-        Me.Database1DataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
-        '
-        'ChoferBindingSource
-        '
-        Me.ChoferBindingSource.DataMember = "Chofer"
-        Me.ChoferBindingSource.DataSource = Me.Database1DataSet
-        '
-        'ChoferTableAdapter
-        '
-        Me.ChoferTableAdapter.ClearBeforeFill = True
-        '
-        'TableAdapterManager
-        '
-        Me.TableAdapterManager.BackupDataSetBeforeUpdate = False
-        Me.TableAdapterManager.ChoferTableAdapter = Me.ChoferTableAdapter
-        Me.TableAdapterManager.SociosTableAdapter = Me.SociosTableAdapter
-        Me.TableAdapterManager.UpdateOrder = pruebaBD.Database1DataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete
-        Me.TableAdapterManager.VehiculoTableAdapter = Nothing
-        Me.TableAdapterManager.ViajesTableAdapter = Me.ViajesTableAdapter
-        '
-        'SociosTableAdapter
-        '
-        Me.SociosTableAdapter.ClearBeforeFill = True
-        '
-        'ViajesTableAdapter
-        '
-        Me.ViajesTableAdapter.ClearBeforeFill = True
         '
         'ChoferBindingNavigator
         '
@@ -275,7 +261,7 @@ Partial Class Altas
         Me.ChoferBindingNavigator.MovePreviousItem = Me.BindingNavigatorMovePreviousItem
         Me.ChoferBindingNavigator.Name = "ChoferBindingNavigator"
         Me.ChoferBindingNavigator.PositionItem = Me.BindingNavigatorPositionItem
-        Me.ChoferBindingNavigator.Size = New System.Drawing.Size(1365, 25)
+        Me.ChoferBindingNavigator.Size = New System.Drawing.Size(1346, 25)
         Me.ChoferBindingNavigator.TabIndex = 3
         Me.ChoferBindingNavigator.Text = "BindingNavigator1"
         '
@@ -375,7 +361,7 @@ Partial Class Altas
         'NombreTextBox
         '
         Me.NombreTextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.ChoferBindingSource, "nombre", True))
-        Me.NombreTextBox.Location = New System.Drawing.Point(145, 250)
+        Me.NombreTextBox.Location = New System.Drawing.Point(135, 113)
         Me.NombreTextBox.Name = "NombreTextBox"
         Me.NombreTextBox.Size = New System.Drawing.Size(200, 20)
         Me.NombreTextBox.TabIndex = 7
@@ -383,20 +369,15 @@ Partial Class Altas
         'Fecha_nacimientoDateTimePicker
         '
         Me.Fecha_nacimientoDateTimePicker.DataBindings.Add(New System.Windows.Forms.Binding("Value", Me.ChoferBindingSource, "fecha_nacimiento", True))
-        Me.Fecha_nacimientoDateTimePicker.Location = New System.Drawing.Point(145, 276)
+        Me.Fecha_nacimientoDateTimePicker.Location = New System.Drawing.Point(135, 139)
         Me.Fecha_nacimientoDateTimePicker.Name = "Fecha_nacimientoDateTimePicker"
         Me.Fecha_nacimientoDateTimePicker.Size = New System.Drawing.Size(200, 20)
         Me.Fecha_nacimientoDateTimePicker.TabIndex = 9
         '
-        'SociosBindingSource
-        '
-        Me.SociosBindingSource.DataMember = "Socios"
-        Me.SociosBindingSource.DataSource = Me.Database1DataSet
-        '
         'NombreTextBox1
         '
         Me.NombreTextBox1.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.SociosBindingSource, "nombre", True))
-        Me.NombreTextBox1.Location = New System.Drawing.Point(637, 232)
+        Me.NombreTextBox1.Location = New System.Drawing.Point(93, 344)
         Me.NombreTextBox1.Name = "NombreTextBox1"
         Me.NombreTextBox1.Size = New System.Drawing.Size(100, 20)
         Me.NombreTextBox1.TabIndex = 13
@@ -404,7 +385,7 @@ Partial Class Altas
         'ApellidoTextBox
         '
         Me.ApellidoTextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.SociosBindingSource, "apellido", True))
-        Me.ApellidoTextBox.Location = New System.Drawing.Point(637, 258)
+        Me.ApellidoTextBox.Location = New System.Drawing.Point(93, 370)
         Me.ApellidoTextBox.Name = "ApellidoTextBox"
         Me.ApellidoTextBox.Size = New System.Drawing.Size(100, 20)
         Me.ApellidoTextBox.TabIndex = 15
@@ -412,7 +393,7 @@ Partial Class Altas
         'DniTextBox
         '
         Me.DniTextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.SociosBindingSource, "dni", True))
-        Me.DniTextBox.Location = New System.Drawing.Point(637, 284)
+        Me.DniTextBox.Location = New System.Drawing.Point(93, 396)
         Me.DniTextBox.Name = "DniTextBox"
         Me.DniTextBox.Size = New System.Drawing.Size(100, 20)
         Me.DniTextBox.TabIndex = 17
@@ -420,20 +401,15 @@ Partial Class Altas
         'DireccionTextBox
         '
         Me.DireccionTextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.SociosBindingSource, "direccion", True))
-        Me.DireccionTextBox.Location = New System.Drawing.Point(637, 310)
+        Me.DireccionTextBox.Location = New System.Drawing.Point(93, 422)
         Me.DireccionTextBox.Name = "DireccionTextBox"
         Me.DireccionTextBox.Size = New System.Drawing.Size(100, 20)
         Me.DireccionTextBox.TabIndex = 19
         '
-        'ViajesBindingSource
-        '
-        Me.ViajesBindingSource.DataMember = "Viajes"
-        Me.ViajesBindingSource.DataSource = Me.Database1DataSet
-        '
         'IdChoferTextBox
         '
         Me.IdChoferTextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.ViajesBindingSource, "idChofer", True))
-        Me.IdChoferTextBox.Location = New System.Drawing.Point(1076, 211)
+        Me.IdChoferTextBox.Location = New System.Drawing.Point(1088, 110)
         Me.IdChoferTextBox.Name = "IdChoferTextBox"
         Me.IdChoferTextBox.Size = New System.Drawing.Size(200, 20)
         Me.IdChoferTextBox.TabIndex = 23
@@ -441,7 +417,7 @@ Partial Class Altas
         'IdSociosTextBox
         '
         Me.IdSociosTextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.ViajesBindingSource, "idSocios", True))
-        Me.IdSociosTextBox.Location = New System.Drawing.Point(1076, 237)
+        Me.IdSociosTextBox.Location = New System.Drawing.Point(1088, 136)
         Me.IdSociosTextBox.Name = "IdSociosTextBox"
         Me.IdSociosTextBox.Size = New System.Drawing.Size(200, 20)
         Me.IdSociosTextBox.TabIndex = 25
@@ -449,7 +425,7 @@ Partial Class Altas
         'IdVehiculosTextBox
         '
         Me.IdVehiculosTextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.ViajesBindingSource, "idVehiculos", True))
-        Me.IdVehiculosTextBox.Location = New System.Drawing.Point(1076, 263)
+        Me.IdVehiculosTextBox.Location = New System.Drawing.Point(1088, 162)
         Me.IdVehiculosTextBox.Name = "IdVehiculosTextBox"
         Me.IdVehiculosTextBox.Size = New System.Drawing.Size(200, 20)
         Me.IdVehiculosTextBox.TabIndex = 27
@@ -457,7 +433,7 @@ Partial Class Altas
         'Fecha_origenDateTimePicker
         '
         Me.Fecha_origenDateTimePicker.DataBindings.Add(New System.Windows.Forms.Binding("Value", Me.ViajesBindingSource, "fecha_origen", True))
-        Me.Fecha_origenDateTimePicker.Location = New System.Drawing.Point(1076, 289)
+        Me.Fecha_origenDateTimePicker.Location = New System.Drawing.Point(1088, 188)
         Me.Fecha_origenDateTimePicker.Name = "Fecha_origenDateTimePicker"
         Me.Fecha_origenDateTimePicker.Size = New System.Drawing.Size(200, 20)
         Me.Fecha_origenDateTimePicker.TabIndex = 29
@@ -465,7 +441,7 @@ Partial Class Altas
         'Fecha_destinoDateTimePicker
         '
         Me.Fecha_destinoDateTimePicker.DataBindings.Add(New System.Windows.Forms.Binding("Value", Me.ViajesBindingSource, "fecha_destino", True))
-        Me.Fecha_destinoDateTimePicker.Location = New System.Drawing.Point(1076, 315)
+        Me.Fecha_destinoDateTimePicker.Location = New System.Drawing.Point(1088, 214)
         Me.Fecha_destinoDateTimePicker.Name = "Fecha_destinoDateTimePicker"
         Me.Fecha_destinoDateTimePicker.Size = New System.Drawing.Size(200, 20)
         Me.Fecha_destinoDateTimePicker.TabIndex = 31
@@ -473,7 +449,7 @@ Partial Class Altas
         'TotalTextBox
         '
         Me.TotalTextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.ViajesBindingSource, "Total", True))
-        Me.TotalTextBox.Location = New System.Drawing.Point(1076, 341)
+        Me.TotalTextBox.Location = New System.Drawing.Point(1088, 240)
         Me.TotalTextBox.Name = "TotalTextBox"
         Me.TotalTextBox.Size = New System.Drawing.Size(200, 20)
         Me.TotalTextBox.TabIndex = 33
@@ -481,7 +457,7 @@ Partial Class Altas
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(175, 133)
+        Me.Label1.Location = New System.Drawing.Point(90, 68)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(49, 13)
         Me.Label1.TabIndex = 34
@@ -490,7 +466,7 @@ Partial Class Altas
         'Label2
         '
         Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(649, 133)
+        Me.Label2.Location = New System.Drawing.Point(90, 296)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(39, 13)
         Me.Label2.TabIndex = 35
@@ -499,17 +475,174 @@ Partial Class Altas
         'Label3
         '
         Me.Label3.AutoSize = True
-        Me.Label3.Location = New System.Drawing.Point(1094, 120)
+        Me.Label3.Location = New System.Drawing.Point(1127, 68)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(30, 13)
         Me.Label3.TabIndex = 36
         Me.Label3.Text = "Viaje"
         '
+        'Button4
+        '
+        Me.Button4.Location = New System.Drawing.Point(250, 207)
+        Me.Button4.Name = "Button4"
+        Me.Button4.Size = New System.Drawing.Size(75, 23)
+        Me.Button4.TabIndex = 37
+        Me.Button4.Text = "Eliminar"
+        Me.Button4.UseVisualStyleBackColor = True
+        '
+        'Button5
+        '
+        Me.Button5.Location = New System.Drawing.Point(162, 478)
+        Me.Button5.Name = "Button5"
+        Me.Button5.Size = New System.Drawing.Size(75, 23)
+        Me.Button5.TabIndex = 38
+        Me.Button5.Text = "Eliminar"
+        Me.Button5.UseVisualStyleBackColor = True
+        '
+        'ModeloLabel
+        '
+        ModeloLabel.AutoSize = True
+        ModeloLabel.Location = New System.Drawing.Point(1031, 422)
+        ModeloLabel.Name = "ModeloLabel"
+        ModeloLabel.Size = New System.Drawing.Size(44, 13)
+        ModeloLabel.TabIndex = 40
+        ModeloLabel.Text = "modelo:"
+        '
+        'ModeloTextBox
+        '
+        Me.ModeloTextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.VehiculoBindingSource, "modelo", True))
+        Me.ModeloTextBox.Location = New System.Drawing.Point(1081, 419)
+        Me.ModeloTextBox.Name = "ModeloTextBox"
+        Me.ModeloTextBox.Size = New System.Drawing.Size(200, 20)
+        Me.ModeloTextBox.TabIndex = 41
+        '
+        'MarcaLabel
+        '
+        MarcaLabel.AutoSize = True
+        MarcaLabel.Location = New System.Drawing.Point(1031, 448)
+        MarcaLabel.Name = "MarcaLabel"
+        MarcaLabel.Size = New System.Drawing.Size(39, 13)
+        MarcaLabel.TabIndex = 42
+        MarcaLabel.Text = "marca:"
+        '
+        'MarcaTextBox
+        '
+        Me.MarcaTextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.VehiculoBindingSource, "marca", True))
+        Me.MarcaTextBox.Location = New System.Drawing.Point(1081, 445)
+        Me.MarcaTextBox.Name = "MarcaTextBox"
+        Me.MarcaTextBox.Size = New System.Drawing.Size(200, 20)
+        Me.MarcaTextBox.TabIndex = 43
+        '
+        'AñoLabel
+        '
+        AñoLabel.AutoSize = True
+        AñoLabel.Location = New System.Drawing.Point(1031, 475)
+        AñoLabel.Name = "AñoLabel"
+        AñoLabel.Size = New System.Drawing.Size(28, 13)
+        AñoLabel.TabIndex = 44
+        AñoLabel.Text = "año:"
+        '
+        'AñoDateTimePicker
+        '
+        Me.AñoDateTimePicker.DataBindings.Add(New System.Windows.Forms.Binding("Value", Me.VehiculoBindingSource, "año", True))
+        Me.AñoDateTimePicker.Location = New System.Drawing.Point(1081, 471)
+        Me.AñoDateTimePicker.Name = "AñoDateTimePicker"
+        Me.AñoDateTimePicker.Size = New System.Drawing.Size(200, 20)
+        Me.AñoDateTimePicker.TabIndex = 45
+        '
+        'Label4
+        '
+        Me.Label4.AutoSize = True
+        Me.Label4.Location = New System.Drawing.Point(1035, 347)
+        Me.Label4.Name = "Label4"
+        Me.Label4.Size = New System.Drawing.Size(47, 13)
+        Me.Label4.TabIndex = 46
+        Me.Label4.Text = "vehiculo"
+        '
+        'ButagregarVehiculo
+        '
+        Me.ButagregarVehiculo.Location = New System.Drawing.Point(1021, 555)
+        Me.ButagregarVehiculo.Name = "ButagregarVehiculo"
+        Me.ButagregarVehiculo.Size = New System.Drawing.Size(75, 23)
+        Me.ButagregarVehiculo.TabIndex = 47
+        Me.ButagregarVehiculo.Text = "agregar"
+        Me.ButagregarVehiculo.UseVisualStyleBackColor = True
+        '
+        'ButtonEliminarVehioculo
+        '
+        Me.ButtonEliminarVehioculo.Location = New System.Drawing.Point(1183, 555)
+        Me.ButtonEliminarVehioculo.Name = "ButtonEliminarVehioculo"
+        Me.ButtonEliminarVehioculo.Size = New System.Drawing.Size(75, 23)
+        Me.ButtonEliminarVehioculo.TabIndex = 48
+        Me.ButtonEliminarVehioculo.Text = "Eliminar"
+        Me.ButtonEliminarVehioculo.UseVisualStyleBackColor = True
+        '
+        'VehiculoBindingSource
+        '
+        Me.VehiculoBindingSource.DataMember = "Vehiculo"
+        Me.VehiculoBindingSource.DataSource = Me.Database1DataSet
+        '
+        'Database1DataSet
+        '
+        Me.Database1DataSet.DataSetName = "Database1DataSet"
+        Me.Database1DataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
+        '
+        'ViajesBindingSource
+        '
+        Me.ViajesBindingSource.DataMember = "Viajes"
+        Me.ViajesBindingSource.DataSource = Me.Database1DataSet
+        '
+        'SociosBindingSource
+        '
+        Me.SociosBindingSource.DataMember = "Socios"
+        Me.SociosBindingSource.DataSource = Me.Database1DataSet
+        '
+        'ChoferBindingSource
+        '
+        Me.ChoferBindingSource.DataMember = "Chofer"
+        Me.ChoferBindingSource.DataSource = Me.Database1DataSet
+        '
+        'ChoferTableAdapter
+        '
+        Me.ChoferTableAdapter.ClearBeforeFill = True
+        '
+        'TableAdapterManager
+        '
+        Me.TableAdapterManager.BackupDataSetBeforeUpdate = False
+        Me.TableAdapterManager.ChoferTableAdapter = Me.ChoferTableAdapter
+        Me.TableAdapterManager.SociosTableAdapter = Me.SociosTableAdapter
+        Me.TableAdapterManager.UpdateOrder = pruebaBD.Database1DataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete
+        Me.TableAdapterManager.VehiculoTableAdapter = Nothing
+        Me.TableAdapterManager.ViajesTableAdapter = Me.ViajesTableAdapter
+        '
+        'SociosTableAdapter
+        '
+        Me.SociosTableAdapter.ClearBeforeFill = True
+        '
+        'ViajesTableAdapter
+        '
+        Me.ViajesTableAdapter.ClearBeforeFill = True
+        '
+        'VehiculoTableAdapter
+        '
+        Me.VehiculoTableAdapter.ClearBeforeFill = True
+        '
         'Altas
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(1365, 616)
+        Me.ClientSize = New System.Drawing.Size(1346, 616)
+        Me.Controls.Add(Me.ButtonEliminarVehioculo)
+        Me.Controls.Add(Me.ButagregarVehiculo)
+        Me.Controls.Add(Me.Label4)
+        Me.Controls.Add(ModeloLabel)
+        Me.Controls.Add(Me.ModeloTextBox)
+        Me.Controls.Add(MarcaLabel)
+        Me.Controls.Add(Me.MarcaTextBox)
+        Me.Controls.Add(AñoLabel)
+        Me.Controls.Add(Me.AñoDateTimePicker)
+        Me.Controls.Add(Me.Button5)
+        Me.Controls.Add(Me.Button4)
         Me.Controls.Add(Me.Label3)
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.Label1)
@@ -543,13 +676,14 @@ Partial Class Altas
         Me.Controls.Add(Me.Button1)
         Me.Name = "Altas"
         Me.Text = "Altas"
-        CType(Me.Database1DataSet, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.ChoferBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.ChoferBindingNavigator, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ChoferBindingNavigator.ResumeLayout(False)
         Me.ChoferBindingNavigator.PerformLayout()
-        CType(Me.SociosBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.VehiculoBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.Database1DataSet, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.ViajesBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.SociosBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.ChoferBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -593,4 +727,14 @@ Partial Class Altas
     Friend WithEvents Label1 As System.Windows.Forms.Label
     Friend WithEvents Label2 As System.Windows.Forms.Label
     Friend WithEvents Label3 As System.Windows.Forms.Label
+    Friend WithEvents Button4 As System.Windows.Forms.Button
+    Friend WithEvents Button5 As System.Windows.Forms.Button
+    Friend WithEvents VehiculoBindingSource As System.Windows.Forms.BindingSource
+    Friend WithEvents VehiculoTableAdapter As pruebaBD.Database1DataSetTableAdapters.VehiculoTableAdapter
+    Friend WithEvents ModeloTextBox As System.Windows.Forms.TextBox
+    Friend WithEvents MarcaTextBox As System.Windows.Forms.TextBox
+    Friend WithEvents AñoDateTimePicker As System.Windows.Forms.DateTimePicker
+    Friend WithEvents Label4 As System.Windows.Forms.Label
+    Friend WithEvents ButagregarVehiculo As System.Windows.Forms.Button
+    Friend WithEvents ButtonEliminarVehioculo As System.Windows.Forms.Button
 End Class

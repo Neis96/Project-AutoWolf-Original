@@ -10,3 +10,15 @@ C:\Users\User\Desktop\proyecto en local\pruebaBD\pruebaBD\obj\x86\Debug\pruebaBD
 C:\Users\User\Desktop\proyecto en local\pruebaBD\pruebaBD\obj\x86\Debug\pruebaBD.exe
 C:\Users\User\Desktop\proyecto en local\pruebaBD\pruebaBD\obj\x86\Debug\pruebaBD.xml
 C:\Users\User\Desktop\proyecto en local\pruebaBD\pruebaBD\obj\x86\Debug\pruebaBD.pdb
+C:\Users\User\Desktop\proyecto\kraken\Project-AutoWolf-Original\ProyectoAutoloboOriginal\pruebaBD\bin\Debug\pruebaBD.exe.config
+C:\Users\User\Desktop\proyecto\kraken\Project-AutoWolf-Original\ProyectoAutoloboOriginal\pruebaBD\obj\x86\Debug\pruebaBD.exe
+C:\Users\User\Desktop\proyecto\kraken\Project-AutoWolf-Original\ProyectoAutoloboOriginal\pruebaBD\obj\x86\Debug\pruebaBD.xml
+C:\Users\User\Desktop\proyecto\kraken\Project-AutoWolf-Original\ProyectoAutoloboOriginal\pruebaBD\obj\x86\Debug\pruebaBD.pdb
+C:\Users\User\Desktop\proyecto\kraken\Project-AutoWolf-Original\ProyectoAutoloboOriginal\pruebaBD\obj\x86\Debug\pruebaBD.Altas.resources
+C:\Users\User\Desktop\proyecto\kraken\Project-AutoWolf-Original\ProyectoAutoloboOriginal\pruebaBD\obj\x86\Debug\pruebaBD.Form1.resources
+C:\Users\User\Desktop\proyecto\kraken\Project-AutoWolf-Original\ProyectoAutoloboOriginal\pruebaBD\obj\x86\Debug\pruebaBD.Resources.resources
+C:\Users\User\Desktop\proyecto\kraken\Project-AutoWolf-Original\ProyectoAutoloboOriginal\pruebaBD\obj\x86\Debug\pruebaBD.vbproj.GenerateResource.Cache
+C:\Users\User\Desktop\proyecto\kraken\Project-AutoWolf-Original\ProyectoAutoloboOriginal\pruebaBD\bin\Debug\PruebaLocalConeccion.sdf
+C:\Users\User\Desktop\proyecto\kraken\Project-AutoWolf-Original\ProyectoAutoloboOriginal\pruebaBD\bin\Debug\pruebaBD.exe
+C:\Users\User\Desktop\proyecto\kraken\Project-AutoWolf-Original\ProyectoAutoloboOriginal\pruebaBD\bin\Debug\pruebaBD.pdb
+C:\Users\User\Desktop\proyecto\kraken\Project-AutoWolf-Original\ProyectoAutoloboOriginal\pruebaBD\bin\Debug\pruebaBD.xml
