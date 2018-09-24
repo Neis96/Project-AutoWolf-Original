@@ -153,7 +153,7 @@ Partial Class Form1
         'IdLabel
         '
         IdLabel.AutoSize = True
-        IdLabel.Location = New System.Drawing.Point(34, 141)
+        IdLabel.Location = New System.Drawing.Point(25, 583)
         IdLabel.Name = "IdLabel"
         IdLabel.Size = New System.Drawing.Size(19, 13)
         IdLabel.TabIndex = 2
@@ -162,7 +162,7 @@ Partial Class Form1
         'NombreLabel
         '
         NombreLabel.AutoSize = True
-        NombreLabel.Location = New System.Drawing.Point(34, 167)
+        NombreLabel.Location = New System.Drawing.Point(25, 612)
         NombreLabel.Name = "NombreLabel"
         NombreLabel.Size = New System.Drawing.Size(45, 13)
         NombreLabel.TabIndex = 4
@@ -171,7 +171,7 @@ Partial Class Form1
         'Fecha_nacimientoLabel
         '
         Fecha_nacimientoLabel.AutoSize = True
-        Fecha_nacimientoLabel.Location = New System.Drawing.Point(34, 194)
+        Fecha_nacimientoLabel.Location = New System.Drawing.Point(25, 639)
         Fecha_nacimientoLabel.Name = "Fecha_nacimientoLabel"
         Fecha_nacimientoLabel.Size = New System.Drawing.Size(91, 13)
         Fecha_nacimientoLabel.TabIndex = 6
@@ -180,7 +180,7 @@ Partial Class Form1
         'IdLabel1
         '
         IdLabel1.AutoSize = True
-        IdLabel1.Location = New System.Drawing.Point(118, 492)
+        IdLabel1.Location = New System.Drawing.Point(40, 122)
         IdLabel1.Name = "IdLabel1"
         IdLabel1.Size = New System.Drawing.Size(18, 13)
         IdLabel1.TabIndex = 9
@@ -189,7 +189,7 @@ Partial Class Form1
         'NombreLabel1
         '
         NombreLabel1.AutoSize = True
-        NombreLabel1.Location = New System.Drawing.Point(118, 518)
+        NombreLabel1.Location = New System.Drawing.Point(40, 148)
         NombreLabel1.Name = "NombreLabel1"
         NombreLabel1.Size = New System.Drawing.Size(45, 13)
         NombreLabel1.TabIndex = 11
@@ -198,7 +198,7 @@ Partial Class Form1
         'ApellidoLabel
         '
         ApellidoLabel.AutoSize = True
-        ApellidoLabel.Location = New System.Drawing.Point(118, 544)
+        ApellidoLabel.Location = New System.Drawing.Point(40, 174)
         ApellidoLabel.Name = "ApellidoLabel"
         ApellidoLabel.Size = New System.Drawing.Size(46, 13)
         ApellidoLabel.TabIndex = 13
@@ -207,7 +207,7 @@ Partial Class Form1
         'DniLabel
         '
         DniLabel.AutoSize = True
-        DniLabel.Location = New System.Drawing.Point(118, 570)
+        DniLabel.Location = New System.Drawing.Point(40, 200)
         DniLabel.Name = "DniLabel"
         DniLabel.Size = New System.Drawing.Size(24, 13)
         DniLabel.TabIndex = 15
@@ -216,7 +216,7 @@ Partial Class Form1
         'DireccionLabel
         '
         DireccionLabel.AutoSize = True
-        DireccionLabel.Location = New System.Drawing.Point(118, 596)
+        DireccionLabel.Location = New System.Drawing.Point(40, 226)
         DireccionLabel.Name = "DireccionLabel"
         DireccionLabel.Size = New System.Drawing.Size(53, 13)
         DireccionLabel.TabIndex = 17
@@ -288,7 +288,7 @@ Partial Class Form1
         'IdLabel2
         '
         IdLabel2.AutoSize = True
-        IdLabel2.Location = New System.Drawing.Point(850, 566)
+        IdLabel2.Location = New System.Drawing.Point(466, 586)
         IdLabel2.Name = "IdLabel2"
         IdLabel2.Size = New System.Drawing.Size(18, 13)
         IdLabel2.TabIndex = 41
@@ -297,7 +297,7 @@ Partial Class Form1
         'ModeloLabel
         '
         ModeloLabel.AutoSize = True
-        ModeloLabel.Location = New System.Drawing.Point(850, 592)
+        ModeloLabel.Location = New System.Drawing.Point(466, 612)
         ModeloLabel.Name = "ModeloLabel"
         ModeloLabel.Size = New System.Drawing.Size(44, 13)
         ModeloLabel.TabIndex = 43
@@ -306,7 +306,7 @@ Partial Class Form1
         'MarcaLabel
         '
         MarcaLabel.AutoSize = True
-        MarcaLabel.Location = New System.Drawing.Point(850, 618)
+        MarcaLabel.Location = New System.Drawing.Point(466, 638)
         MarcaLabel.Name = "MarcaLabel"
         MarcaLabel.Size = New System.Drawing.Size(39, 13)
         MarcaLabel.TabIndex = 45
@@ -315,7 +315,7 @@ Partial Class Form1
         'AñoLabel
         '
         AñoLabel.AutoSize = True
-        AñoLabel.Location = New System.Drawing.Point(850, 645)
+        AñoLabel.Location = New System.Drawing.Point(466, 665)
         AñoLabel.Name = "AñoLabel"
         AñoLabel.Size = New System.Drawing.Size(28, 13)
         AñoLabel.TabIndex = 47
@@ -335,7 +335,7 @@ Partial Class Form1
         Me.ChoferBindingNavigator.MovePreviousItem = Me.BindingNavigatorMovePreviousItem
         Me.ChoferBindingNavigator.Name = "ChoferBindingNavigator"
         Me.ChoferBindingNavigator.PositionItem = Me.BindingNavigatorPositionItem
-        Me.ChoferBindingNavigator.Size = New System.Drawing.Size(1338, 25)
+        Me.ChoferBindingNavigator.Size = New System.Drawing.Size(1497, 25)
         Me.ChoferBindingNavigator.TabIndex = 0
         Me.ChoferBindingNavigator.Text = "BindingNavigator1"
         '
@@ -448,9 +448,9 @@ Partial Class Form1
         Me.ChoferDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.ChoferDataGridView.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.DataGridViewTextBoxColumn1, Me.DataGridViewTextBoxColumn2, Me.DataGridViewTextBoxColumn3})
         Me.ChoferDataGridView.DataSource = Me.ChoferBindingSource
-        Me.ChoferDataGridView.Location = New System.Drawing.Point(12, 299)
+        Me.ChoferDataGridView.Location = New System.Drawing.Point(12, 761)
         Me.ChoferDataGridView.Name = "ChoferDataGridView"
-        Me.ChoferDataGridView.Size = New System.Drawing.Size(384, 105)
+        Me.ChoferDataGridView.Size = New System.Drawing.Size(348, 220)
         Me.ChoferDataGridView.TabIndex = 1
         '
         'DataGridViewTextBoxColumn1
@@ -475,7 +475,7 @@ Partial Class Form1
         'IdTextBox
         '
         Me.IdTextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.ChoferBindingSource, "Id", True))
-        Me.IdTextBox.Location = New System.Drawing.Point(131, 138)
+        Me.IdTextBox.Location = New System.Drawing.Point(122, 583)
         Me.IdTextBox.Name = "IdTextBox"
         Me.IdTextBox.Size = New System.Drawing.Size(200, 20)
         Me.IdTextBox.TabIndex = 3
@@ -483,7 +483,7 @@ Partial Class Form1
         'NombreTextBox
         '
         Me.NombreTextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.ChoferBindingSource, "nombre", True))
-        Me.NombreTextBox.Location = New System.Drawing.Point(131, 164)
+        Me.NombreTextBox.Location = New System.Drawing.Point(122, 609)
         Me.NombreTextBox.Name = "NombreTextBox"
         Me.NombreTextBox.Size = New System.Drawing.Size(200, 20)
         Me.NombreTextBox.TabIndex = 5
@@ -491,7 +491,7 @@ Partial Class Form1
         'Fecha_nacimientoDateTimePicker
         '
         Me.Fecha_nacimientoDateTimePicker.DataBindings.Add(New System.Windows.Forms.Binding("Value", Me.ChoferBindingSource, "fecha_nacimiento", True))
-        Me.Fecha_nacimientoDateTimePicker.Location = New System.Drawing.Point(131, 190)
+        Me.Fecha_nacimientoDateTimePicker.Location = New System.Drawing.Point(122, 635)
         Me.Fecha_nacimientoDateTimePicker.Name = "Fecha_nacimientoDateTimePicker"
         Me.Fecha_nacimientoDateTimePicker.Size = New System.Drawing.Size(200, 20)
         Me.Fecha_nacimientoDateTimePicker.TabIndex = 7
@@ -502,7 +502,7 @@ Partial Class Form1
         Me.SociosDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.SociosDataGridView.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.DataGridViewTextBoxColumn4, Me.DataGridViewTextBoxColumn5, Me.DataGridViewTextBoxColumn6, Me.DataGridViewTextBoxColumn7, Me.DataGridViewTextBoxColumn8})
         Me.SociosDataGridView.DataSource = Me.SociosBindingSource
-        Me.SociosDataGridView.Location = New System.Drawing.Point(12, 709)
+        Me.SociosDataGridView.Location = New System.Drawing.Point(35, 263)
         Me.SociosDataGridView.Name = "SociosDataGridView"
         Me.SociosDataGridView.Size = New System.Drawing.Size(563, 220)
         Me.SociosDataGridView.TabIndex = 8
@@ -546,7 +546,7 @@ Partial Class Form1
         'IdTextBox1
         '
         Me.IdTextBox1.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.SociosBindingSource, "id", True))
-        Me.IdTextBox1.Location = New System.Drawing.Point(177, 489)
+        Me.IdTextBox1.Location = New System.Drawing.Point(99, 119)
         Me.IdTextBox1.Name = "IdTextBox1"
         Me.IdTextBox1.Size = New System.Drawing.Size(100, 20)
         Me.IdTextBox1.TabIndex = 10
@@ -554,7 +554,7 @@ Partial Class Form1
         'NombreTextBox1
         '
         Me.NombreTextBox1.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.SociosBindingSource, "nombre", True))
-        Me.NombreTextBox1.Location = New System.Drawing.Point(177, 515)
+        Me.NombreTextBox1.Location = New System.Drawing.Point(99, 145)
         Me.NombreTextBox1.Name = "NombreTextBox1"
         Me.NombreTextBox1.Size = New System.Drawing.Size(100, 20)
         Me.NombreTextBox1.TabIndex = 12
@@ -562,7 +562,7 @@ Partial Class Form1
         'ApellidoTextBox
         '
         Me.ApellidoTextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.SociosBindingSource, "apellido", True))
-        Me.ApellidoTextBox.Location = New System.Drawing.Point(177, 541)
+        Me.ApellidoTextBox.Location = New System.Drawing.Point(99, 171)
         Me.ApellidoTextBox.Name = "ApellidoTextBox"
         Me.ApellidoTextBox.Size = New System.Drawing.Size(100, 20)
         Me.ApellidoTextBox.TabIndex = 14
@@ -570,7 +570,7 @@ Partial Class Form1
         'DniTextBox
         '
         Me.DniTextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.SociosBindingSource, "dni", True))
-        Me.DniTextBox.Location = New System.Drawing.Point(177, 567)
+        Me.DniTextBox.Location = New System.Drawing.Point(99, 197)
         Me.DniTextBox.Name = "DniTextBox"
         Me.DniTextBox.Size = New System.Drawing.Size(100, 20)
         Me.DniTextBox.TabIndex = 16
@@ -578,7 +578,7 @@ Partial Class Form1
         'DireccionTextBox
         '
         Me.DireccionTextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.SociosBindingSource, "direccion", True))
-        Me.DireccionTextBox.Location = New System.Drawing.Point(177, 593)
+        Me.DireccionTextBox.Location = New System.Drawing.Point(99, 223)
         Me.DireccionTextBox.Name = "DireccionTextBox"
         Me.DireccionTextBox.Size = New System.Drawing.Size(100, 20)
         Me.DireccionTextBox.TabIndex = 18
@@ -589,9 +589,9 @@ Partial Class Form1
         Me.ViajesDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.ViajesDataGridView.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.DataGridViewTextBoxColumn9, Me.DataGridViewTextBoxColumn10, Me.DataGridViewTextBoxColumn11, Me.DataGridViewTextBoxColumn12, Me.DataGridViewTextBoxColumn13, Me.DataGridViewTextBoxColumn14, Me.DataGridViewTextBoxColumn15})
         Me.ViajesDataGridView.DataSource = Me.ViajesBindingSource
-        Me.ViajesDataGridView.Location = New System.Drawing.Point(526, 399)
+        Me.ViajesDataGridView.Location = New System.Drawing.Point(711, 366)
         Me.ViajesDataGridView.Name = "ViajesDataGridView"
-        Me.ViajesDataGridView.Size = New System.Drawing.Size(778, 110)
+        Me.ViajesDataGridView.Size = New System.Drawing.Size(778, 198)
         Me.ViajesDataGridView.TabIndex = 19
         '
         'DataGridViewTextBoxColumn9
@@ -700,35 +700,35 @@ Partial Class Form1
         '
         'Button1
         '
-        Me.Button1.Location = New System.Drawing.Point(155, 243)
+        Me.Button1.Image = CType(resources.GetObject("Button1.Image"), System.Drawing.Image)
+        Me.Button1.Location = New System.Drawing.Point(104, 687)
         Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(75, 23)
+        Me.Button1.Size = New System.Drawing.Size(63, 50)
         Me.Button1.TabIndex = 34
-        Me.Button1.Text = "Button1"
         Me.Button1.UseVisualStyleBackColor = True
         '
         'Button2
         '
-        Me.Button2.Location = New System.Drawing.Point(177, 639)
+        Me.Button2.Image = CType(resources.GetObject("Button2.Image"), System.Drawing.Image)
+        Me.Button2.Location = New System.Drawing.Point(235, 113)
         Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(75, 23)
+        Me.Button2.Size = New System.Drawing.Size(60, 52)
         Me.Button2.TabIndex = 35
-        Me.Button2.Text = "Button2"
         Me.Button2.UseVisualStyleBackColor = True
         '
         'Button3
         '
-        Me.Button3.Location = New System.Drawing.Point(1154, 341)
+        Me.Button3.Image = CType(resources.GetObject("Button3.Image"), System.Drawing.Image)
+        Me.Button3.Location = New System.Drawing.Point(1253, 291)
         Me.Button3.Name = "Button3"
-        Me.Button3.Size = New System.Drawing.Size(75, 23)
+        Me.Button3.Size = New System.Drawing.Size(75, 64)
         Me.Button3.TabIndex = 36
-        Me.Button3.Text = "Nuevo"
         Me.Button3.UseVisualStyleBackColor = True
         '
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(110, 77)
+        Me.Label1.Location = New System.Drawing.Point(101, 542)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(51, 13)
         Me.Label1.TabIndex = 37
@@ -746,7 +746,7 @@ Partial Class Form1
         'Label3
         '
         Me.Label3.AutoSize = True
-        Me.Label3.Location = New System.Drawing.Point(174, 440)
+        Me.Label3.Location = New System.Drawing.Point(96, 70)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(56, 13)
         Me.Label3.TabIndex = 39
@@ -762,6 +762,7 @@ Partial Class Form1
         Me.TableAdapterManager.ChoferTableAdapter = Me.ChoferTableAdapter
         Me.TableAdapterManager.SociosTableAdapter = Me.SociosTableAdapter
         Me.TableAdapterManager.UpdateOrder = pruebaBD.Database1DataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete
+        Me.TableAdapterManager.UsuarioTableAdapter = Nothing
         Me.TableAdapterManager.VehiculoTableAdapter = Me.VehiculoTableAdapter
         Me.TableAdapterManager.ViajesTableAdapter = Me.ViajesTableAdapter
         '
@@ -784,17 +785,17 @@ Partial Class Form1
         '
         'Button4
         '
-        Me.Button4.Location = New System.Drawing.Point(1176, 608)
+        Me.Button4.Image = CType(resources.GetObject("Button4.Image"), System.Drawing.Image)
+        Me.Button4.Location = New System.Drawing.Point(566, 687)
         Me.Button4.Name = "Button4"
-        Me.Button4.Size = New System.Drawing.Size(75, 23)
+        Me.Button4.Size = New System.Drawing.Size(62, 50)
         Me.Button4.TabIndex = 40
-        Me.Button4.Text = "Button4"
         Me.Button4.UseVisualStyleBackColor = True
         '
         'IdTextBox2
         '
         Me.IdTextBox2.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.VehiculoBindingSource, "id", True))
-        Me.IdTextBox2.Location = New System.Drawing.Point(900, 563)
+        Me.IdTextBox2.Location = New System.Drawing.Point(516, 583)
         Me.IdTextBox2.Name = "IdTextBox2"
         Me.IdTextBox2.Size = New System.Drawing.Size(200, 20)
         Me.IdTextBox2.TabIndex = 42
@@ -802,7 +803,7 @@ Partial Class Form1
         'ModeloTextBox
         '
         Me.ModeloTextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.VehiculoBindingSource, "modelo", True))
-        Me.ModeloTextBox.Location = New System.Drawing.Point(900, 589)
+        Me.ModeloTextBox.Location = New System.Drawing.Point(516, 609)
         Me.ModeloTextBox.Name = "ModeloTextBox"
         Me.ModeloTextBox.Size = New System.Drawing.Size(200, 20)
         Me.ModeloTextBox.TabIndex = 44
@@ -810,7 +811,7 @@ Partial Class Form1
         'MarcaTextBox
         '
         Me.MarcaTextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.VehiculoBindingSource, "marca", True))
-        Me.MarcaTextBox.Location = New System.Drawing.Point(900, 615)
+        Me.MarcaTextBox.Location = New System.Drawing.Point(516, 635)
         Me.MarcaTextBox.Name = "MarcaTextBox"
         Me.MarcaTextBox.Size = New System.Drawing.Size(200, 20)
         Me.MarcaTextBox.TabIndex = 46
@@ -818,7 +819,7 @@ Partial Class Form1
         'AñoDateTimePicker
         '
         Me.AñoDateTimePicker.DataBindings.Add(New System.Windows.Forms.Binding("Value", Me.VehiculoBindingSource, "año", True))
-        Me.AñoDateTimePicker.Location = New System.Drawing.Point(900, 641)
+        Me.AñoDateTimePicker.Location = New System.Drawing.Point(516, 661)
         Me.AñoDateTimePicker.Name = "AñoDateTimePicker"
         Me.AñoDateTimePicker.Size = New System.Drawing.Size(200, 20)
         Me.AñoDateTimePicker.TabIndex = 48
@@ -826,7 +827,7 @@ Partial Class Form1
         'Label4
         '
         Me.Label4.AutoSize = True
-        Me.Label4.Location = New System.Drawing.Point(851, 522)
+        Me.Label4.Location = New System.Drawing.Point(466, 542)
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(61, 13)
         Me.Label4.TabIndex = 49
@@ -838,7 +839,7 @@ Partial Class Form1
         Me.VehiculoDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.VehiculoDataGridView.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.DataGridViewTextBoxColumn16, Me.DataGridViewTextBoxColumn17, Me.DataGridViewTextBoxColumn18, Me.DataGridViewTextBoxColumn19})
         Me.VehiculoDataGridView.DataSource = Me.VehiculoBindingSource
-        Me.VehiculoDataGridView.Location = New System.Drawing.Point(790, 709)
+        Me.VehiculoDataGridView.Location = New System.Drawing.Point(469, 761)
         Me.VehiculoDataGridView.Name = "VehiculoDataGridView"
         Me.VehiculoDataGridView.Size = New System.Drawing.Size(461, 220)
         Me.VehiculoDataGridView.TabIndex = 50
@@ -870,16 +871,16 @@ Partial Class Form1
         '
         'ButtonFacturacion
         '
-        Me.ButtonFacturacion.Location = New System.Drawing.Point(1000, 309)
+        Me.ButtonFacturacion.Image = CType(resources.GetObject("ButtonFacturacion.Image"), System.Drawing.Image)
+        Me.ButtonFacturacion.Location = New System.Drawing.Point(985, 291)
         Me.ButtonFacturacion.Name = "ButtonFacturacion"
-        Me.ButtonFacturacion.Size = New System.Drawing.Size(115, 23)
+        Me.ButtonFacturacion.Size = New System.Drawing.Size(115, 69)
         Me.ButtonFacturacion.TabIndex = 51
-        Me.ButtonFacturacion.Text = "FACTURACION"
         Me.ButtonFacturacion.UseVisualStyleBackColor = True
         '
         'Button6
         '
-        Me.Button6.Location = New System.Drawing.Point(1199, 309)
+        Me.Button6.Location = New System.Drawing.Point(1340, 28)
         Me.Button6.Name = "Button6"
         Me.Button6.Size = New System.Drawing.Size(75, 23)
         Me.Button6.TabIndex = 52
@@ -890,7 +891,8 @@ Partial Class Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(1338, 1061)
+        Me.BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), System.Drawing.Image)
+        Me.ClientSize = New System.Drawing.Size(1497, 1061)
         Me.Controls.Add(Me.Button6)
         Me.Controls.Add(Me.ButtonFacturacion)
         Me.Controls.Add(Me.VehiculoDataGridView)

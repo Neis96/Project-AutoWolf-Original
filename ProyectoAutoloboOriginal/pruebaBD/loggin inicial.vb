@@ -1,7 +1,7 @@
 ﻿Public Class loggin_inicial
 
 
-    Private Sub UsuarioBindingNavigatorSaveItem_Click(sender As System.Object, e As System.EventArgs) Handles UsuarioBindingNavigatorSaveItem.Click
+    Private Sub UsuarioBindingNavigatorSaveItem_Click(sender As System.Object, e As System.EventArgs)
         Me.Validate()
         Me.UsuarioBindingSource.EndEdit()
         Me.TableAdapterManager.UpdateAll(Me.Database1DataSet)
@@ -29,4 +29,5 @@
         Me.Hide()
         LOGIN.Show()
     End Sub
+
 End Class
