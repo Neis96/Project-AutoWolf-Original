@@ -28,7 +28,7 @@
             IdComboBox.Focus()
         Else
             Me.Validate()
-            Me.ViajesBindingSource.EndEdit()  'finalizo edicion
+            Me.ViajesBindingSource.EndEdit()  'finalizo edicion ERROR
 
             Me.TableAdapterManager.UpdateAll(Me.Database1DataSet) 'guardo en disco
 

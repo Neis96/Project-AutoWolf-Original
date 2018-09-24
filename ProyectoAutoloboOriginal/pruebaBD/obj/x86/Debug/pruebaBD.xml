@@ -22,6 +22,10 @@ Represents the strongly named DataTable class.
 	<summary>
 Represents the strongly named DataTable class.
 </summary>
+</member><member name="T:pruebaBD.Database1DataSet.UsuarioDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
 </member><member name="T:pruebaBD.Database1DataSet.ChoferRow">
 	<summary>
 Represents strongly named DataRow class.
@@ -38,6 +42,10 @@ Represents strongly named DataRow class.
 	<summary>
 Represents strongly named DataRow class.
 </summary>
+</member><member name="T:pruebaBD.Database1DataSet.UsuarioRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
 </member><member name="T:pruebaBD.Database1DataSet.ChoferRowChangeEvent">
 	<summary>
 Row event argument class
@@ -51,6 +59,10 @@ Row event argument class
 Row event argument class
 </summary>
 </member><member name="T:pruebaBD.Database1DataSet.ViajesRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:pruebaBD.Database1DataSet.UsuarioRowChangeEvent">
 	<summary>
 Row event argument class
 </summary>
@@ -71,6 +83,10 @@ Represents the connection and commands used to retrieve and save data.
 Represents the connection and commands used to retrieve and save data.
 </summary>
 </member><member name="T:pruebaBD.Database1DataSetTableAdapters.ViajesTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:pruebaBD.Database1DataSetTableAdapters.UsuarioTableAdapter">
 	<summary>
 Represents the connection and commands used to retrieve and save data.
 </summary>
