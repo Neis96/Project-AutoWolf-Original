@@ -16,7 +16,7 @@
     End Sub
 
     Private Sub Button1_Click(sender As System.Object, e As System.EventArgs) Handles Button1.Click
-        If Me.UsuarioTableAdapter.FillBy(Me.Database1DataSet.Usuario, TextBox1.Text, TextBox2.Text) Then
+        If Me.UsuarioTableAdapter.FillBy(Me.Database1DataSet.Usuario, TextBox1.Text, TextBox2.Text) Then 'Esta es la configuracion de para la relacion con la base de datos de usuario y valla a la pagina original 
             Me.Hide()
             Form1.Show()
         Else
@@ -25,7 +25,7 @@
         End If
     End Sub
 
-    Private Sub Button2_Click(sender As System.Object, e As System.EventArgs) Handles Button2.Click
+    Private Sub Button2_Click(sender As System.Object, e As System.EventArgs) Handles Button2.Click  'esta es el boton para registrto tendriamos que ponerlo en un futuro con solo el ingreso de administrados 
         Me.Hide()
         LOGIN.Show()
     End Sub

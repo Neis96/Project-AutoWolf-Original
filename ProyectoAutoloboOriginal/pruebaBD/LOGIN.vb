@@ -14,7 +14,7 @@
     End Sub
 
     Private Sub Buttonregistro_Click(sender As System.Object, e As System.EventArgs) Handles Buttonregistro.Click
-        Me.UsuarioTableAdapter.Insert(AdministradorTextBox.Text, Usuarios_TextBox.Text, ContraseñasTextBox.Text, Nombre_TextBox.Text, Apelllido_TextBox.Text)
+        Me.UsuarioTableAdapter.Insert(AdministradorTextBox.Text, Usuarios_TextBox.Text, ContraseñasTextBox.Text, Nombre_TextBox.Text, Apelllido_TextBox.Text) 'este para cargar en la base de datos nuevos ususario 
         Me.UsuarioTableAdapter.Fill(Me.Database1DataSet.Usuario)
 
 

@@ -748,9 +748,9 @@ Partial Class Form1
         Me.Label3.AutoSize = True
         Me.Label3.Location = New System.Drawing.Point(96, 70)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(56, 13)
+        Me.Label3.Size = New System.Drawing.Size(40, 13)
         Me.Label3.TabIndex = 39
-        Me.Label3.Text = "USUARIO"
+        Me.Label3.Text = "SOCIO"
         '
         'ChoferTableAdapter
         '
@@ -891,7 +891,6 @@ Partial Class Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), System.Drawing.Image)
         Me.ClientSize = New System.Drawing.Size(1497, 1061)
         Me.Controls.Add(Me.Button6)
         Me.Controls.Add(Me.ButtonFacturacion)
