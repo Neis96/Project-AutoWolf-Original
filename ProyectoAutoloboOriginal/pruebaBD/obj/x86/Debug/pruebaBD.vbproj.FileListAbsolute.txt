@@ -25,3 +25,23 @@ C:\Users\User\Desktop\proyecto\kraken\Project-AutoWolf-Original\ProyectoAutolobo
 C:\Users\User\Desktop\proyecto\kraken\Project-AutoWolf-Original\ProyectoAutoloboOriginal\pruebaBD\obj\x86\Debug\pruebaBD.facturacion.resources
 C:\Users\User\Desktop\proyecto\kraken\Project-AutoWolf-Original\ProyectoAutoloboOriginal\pruebaBD\obj\x86\Debug\pruebaBD.loggin_inicial.resources
 C:\Users\User\Desktop\proyecto\kraken\Project-AutoWolf-Original\ProyectoAutoloboOriginal\pruebaBD\obj\x86\Debug\pruebaBD.LOGIN.resources
+C:\Users\user\Desktop\GitHub\Projecto Autolobo Original\Project AutoWolf Original\ProyectoAutoloboOriginal\pruebaBD\bin\Debug\pruebaBD.exe.config
+C:\Users\user\Desktop\GitHub\Projecto Autolobo Original\Project AutoWolf Original\ProyectoAutoloboOriginal\pruebaBD\obj\x86\Debug\pruebaBD.exe
+C:\Users\user\Desktop\GitHub\Projecto Autolobo Original\Project AutoWolf Original\ProyectoAutoloboOriginal\pruebaBD\obj\x86\Debug\pruebaBD.xml
+C:\Users\user\Desktop\GitHub\Projecto Autolobo Original\Project AutoWolf Original\ProyectoAutoloboOriginal\pruebaBD\obj\x86\Debug\pruebaBD.pdb
+C:\Users\user\Desktop\GitHub\Projecto Autolobo Original\Project AutoWolf Original\ProyectoAutoloboOriginal\pruebaBD\bin\Debug\PruebaLocalConeccion.sdf
+C:\Users\user\Desktop\GitHub\Projecto Autolobo Original\Project AutoWolf Original\ProyectoAutoloboOriginal\pruebaBD\bin\Debug\pruebaBD.exe
+C:\Users\user\Desktop\GitHub\Projecto Autolobo Original\Project AutoWolf Original\ProyectoAutoloboOriginal\pruebaBD\bin\Debug\pruebaBD.pdb
+C:\Users\user\Desktop\GitHub\Projecto Autolobo Original\Project AutoWolf Original\ProyectoAutoloboOriginal\pruebaBD\bin\Debug\pruebaBD.xml
+C:\Users\user\Desktop\GitHub\Projecto Autolobo Original\Project AutoWolf Original\ProyectoAutoloboOriginal\pruebaBD\obj\x86\Debug\pruebaBD.Resources.resources
+C:\Users\user\Desktop\GitHub\Projecto Autolobo Original\Project AutoWolf Original\ProyectoAutoloboOriginal\pruebaBD\obj\x86\Debug\pruebaBD.vbproj.GenerateResource.Cache
+C:\Users\user\Desktop\GitHub\Projecto Autolobo Original\Project AutoWolf Original\ProyectoAutoloboOriginal\pruebaBD\obj\x86\Debug\pruebaBD.choferes.resources
+C:\Users\user\Desktop\GitHub\Projecto Autolobo Original\Project AutoWolf Original\ProyectoAutoloboOriginal\pruebaBD\obj\x86\Debug\pruebaBD.reservas.resources
+C:\Users\user\Desktop\GitHub\Projecto Autolobo Original\Project AutoWolf Original\ProyectoAutoloboOriginal\pruebaBD\obj\x86\Debug\pruebaBD.Socios.resources
+C:\Users\user\Desktop\GitHub\Projecto Autolobo Original\Project AutoWolf Original\ProyectoAutoloboOriginal\pruebaBD\obj\x86\Debug\pruebaBD.vehiculos.resources
+C:\Users\user\Desktop\GitHub\Projecto Autolobo Original\Project AutoWolf Original\ProyectoAutoloboOriginal\pruebaBD\obj\x86\Debug\pruebaBD.viajes.resources
+C:\Users\user\Desktop\GitHub\Projecto Autolobo Original\Project AutoWolf Original\ProyectoAutoloboOriginal\pruebaBD\obj\x86\Debug\pruebaBD.Vehiculos1.resources
+C:\Users\user\Desktop\GitHub\Projecto Autolobo Original\Project AutoWolf Original\ProyectoAutoloboOriginal\pruebaBD\obj\x86\Debug\pruebaBD.Inicio.resources
+C:\Users\user\Desktop\GitHub\Projecto Autolobo Original\Project AutoWolf Original\ProyectoAutoloboOriginal\pruebaBD\obj\x86\Debug\pruebaBD.ModificarVehiculos.resources
+C:\Users\user\Desktop\GitHub\Projecto Autolobo Original\Project AutoWolf Original\ProyectoAutoloboOriginal\pruebaBD\obj\x86\Debug\pruebaBD.Configuracion.resources
+C:\Users\user\Desktop\GitHub\Projecto Autolobo Original\Project AutoWolf Original\ProyectoAutoloboOriginal\pruebaBD\obj\x86\Debug\pruebaBD.Resumen.resources

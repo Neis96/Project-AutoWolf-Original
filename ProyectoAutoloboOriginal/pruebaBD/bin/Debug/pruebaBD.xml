@@ -6,11 +6,32 @@ pruebaBD
 </name>
 </assembly>
 <members>
-<member name="T:pruebaBD.Database1DataSet.ChoferDataTable">
+<member name="P:pruebaBD.My.Resources.Resources.ResourceManager">
+	<summary>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+</member><member name="P:pruebaBD.My.Resources.Resources.Culture">
+	<summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+</member><member name="T:pruebaBD.My.Resources.Resources">
+	<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
+</member><member name="T:pruebaBD.Database1DataSet.ChoferDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:pruebaBD.Database1DataSet.ReservaDataTable">
 	<summary>
 Represents the strongly named DataTable class.
 </summary>
 </member><member name="T:pruebaBD.Database1DataSet.SociosDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:pruebaBD.Database1DataSet.UsuarioDataTable">
 	<summary>
 Represents the strongly named DataTable class.
 </summary>
@@ -22,15 +43,19 @@ Represents the strongly named DataTable class.
 	<summary>
 Represents the strongly named DataTable class.
 </summary>
-</member><member name="T:pruebaBD.Database1DataSet.UsuarioDataTable">
-	<summary>
-Represents the strongly named DataTable class.
-</summary>
 </member><member name="T:pruebaBD.Database1DataSet.ChoferRow">
 	<summary>
 Represents strongly named DataRow class.
 </summary>
+</member><member name="T:pruebaBD.Database1DataSet.ReservaRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
 </member><member name="T:pruebaBD.Database1DataSet.SociosRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:pruebaBD.Database1DataSet.UsuarioRow">
 	<summary>
 Represents strongly named DataRow class.
 </summary>
@@ -42,15 +67,19 @@ Represents strongly named DataRow class.
 	<summary>
 Represents strongly named DataRow class.
 </summary>
-</member><member name="T:pruebaBD.Database1DataSet.UsuarioRow">
-	<summary>
-Represents strongly named DataRow class.
-</summary>
 </member><member name="T:pruebaBD.Database1DataSet.ChoferRowChangeEvent">
 	<summary>
 Row event argument class
 </summary>
+</member><member name="T:pruebaBD.Database1DataSet.ReservaRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
 </member><member name="T:pruebaBD.Database1DataSet.SociosRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:pruebaBD.Database1DataSet.UsuarioRowChangeEvent">
 	<summary>
 Row event argument class
 </summary>
@@ -62,10 +91,6 @@ Row event argument class
 	<summary>
 Row event argument class
 </summary>
-</member><member name="T:pruebaBD.Database1DataSet.UsuarioRowChangeEvent">
-	<summary>
-Row event argument class
-</summary>
 </member><member name="T:pruebaBD.Database1DataSet">
 	<summary>
 Represents a strongly typed in-memory cache of data.
@@ -74,7 +99,15 @@ Represents a strongly typed in-memory cache of data.
 	<summary>
 Represents the connection and commands used to retrieve and save data.
 </summary>
+</member><member name="T:pruebaBD.Database1DataSetTableAdapters.ReservaTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
 </member><member name="T:pruebaBD.Database1DataSetTableAdapters.SociosTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:pruebaBD.Database1DataSetTableAdapters.UsuarioTableAdapter">
 	<summary>
 Represents the connection and commands used to retrieve and save data.
 </summary>
@@ -83,10 +116,6 @@ Represents the connection and commands used to retrieve and save data.
 Represents the connection and commands used to retrieve and save data.
 </summary>
 </member><member name="T:pruebaBD.Database1DataSetTableAdapters.ViajesTableAdapter">
-	<summary>
-Represents the connection and commands used to retrieve and save data.
-</summary>
-</member><member name="T:pruebaBD.Database1DataSetTableAdapters.UsuarioTableAdapter">
 	<summary>
 Represents the connection and commands used to retrieve and save data.
 </summary>
@@ -121,19 +150,6 @@ Used to sort self-referenced table's rows
 </member><member name="T:pruebaBD.Database1DataSetTableAdapters.TableAdapterManager">
 	<summary>
 TableAdapterManager is used to coordinate TableAdapters in the dataset to enable Hierarchical Update scenarios
-</summary>
-</member><member name="P:pruebaBD.My.Resources.Resources.ResourceManager">
-	<summary>
-  Returns the cached ResourceManager instance used by this class.
-</summary>
-</member><member name="P:pruebaBD.My.Resources.Resources.Culture">
-	<summary>
-  Overrides the current thread's CurrentUICulture property for all
-  resource lookups using this strongly typed resource class.
-</summary>
-</member><member name="T:pruebaBD.My.Resources.Resources">
-	<summary>
-  A strongly-typed resource class, for looking up localized strings, etc.
 </summary>
 </member>
 </members>

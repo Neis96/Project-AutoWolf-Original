@@ -88,10 +88,22 @@
     <Import Include="System.Xml.Linq" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Altas.Designer.vb">
-      <DependentUpon>Altas.vb</DependentUpon>
+    <Compile Include="Ayuda.Designer.vb">
+      <DependentUpon>Ayuda.vb</DependentUpon>
     </Compile>
-    <Compile Include="Altas.vb">
+    <Compile Include="Ayuda.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="choferes.Designer.vb">
+      <DependentUpon>choferes.vb</DependentUpon>
+    </Compile>
+    <Compile Include="choferes.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Configuracion.Designer.vb">
+      <DependentUpon>Configuracion.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Configuracion.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Database1DataSet.Designer.vb">
@@ -102,29 +114,28 @@
     <Compile Include="Database1DataSet.vb">
       <DependentUpon>Database1DataSet.xsd</DependentUpon>
     </Compile>
-    <Compile Include="facturacion.Designer.vb">
-      <DependentUpon>facturacion.vb</DependentUpon>
+    <Compile Include="Finalizar Viaje.Designer.vb">
+      <DependentUpon>Finalizar Viaje.vb</DependentUpon>
     </Compile>
-    <Compile Include="facturacion.vb">
+    <Compile Include="Finalizar Viaje.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.vb">
+    <Compile Include="Inicio.Designer.vb">
+      <DependentUpon>Inicio.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Inicio.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.vb">
-      <DependentUpon>Form1.vb</DependentUpon>
+    <Compile Include="Liquidacion Choferes.Designer.vb">
+      <DependentUpon>Liquidacion Choferes.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Liquidacion Choferes.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="loggin inicial.Designer.vb">
-      <DependentUpon>loggin inicial.vb</DependentUpon>
+    <Compile Include="ModificarVehiculos.Designer.vb">
+      <DependentUpon>ModificarVehiculos.vb</DependentUpon>
     </Compile>
-    <Compile Include="loggin inicial.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="LOGIN.Designer.vb">
-      <DependentUpon>LOGIN.vb</DependentUpon>
-    </Compile>
-    <Compile Include="LOGIN.vb">
+    <Compile Include="ModificarVehiculos.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="My Project\AssemblyInfo.vb" />
@@ -142,28 +153,79 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <Compile Include="My Project\Vehiculos.Designer.vb">
+      <DependentUpon>Vehiculos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Vehiculos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="reservas.Designer.vb">
+      <DependentUpon>reservas.vb</DependentUpon>
+    </Compile>
+    <Compile Include="reservas.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Resumen.Designer.vb">
+      <DependentUpon>Resumen.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Resumen.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Socios.Designer.vb">
+      <DependentUpon>Socios.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Socios.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vehiculos1.Designer.vb">
+      <DependentUpon>Vehiculos1.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Vehiculos1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="viajes.Designer.vb">
+      <DependentUpon>viajes.vb</DependentUpon>
+    </Compile>
+    <Compile Include="viajes.vb">
+      <SubType>Form</SubType>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Altas.resx">
-      <DependentUpon>Altas.vb</DependentUpon>
+    <EmbeddedResource Include="choferes.resx">
+      <DependentUpon>choferes.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="facturacion.resx">
-      <DependentUpon>facturacion.vb</DependentUpon>
+    <EmbeddedResource Include="Configuracion.resx">
+      <DependentUpon>Configuracion.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form1.resx">
-      <DependentUpon>Form1.vb</DependentUpon>
+    <EmbeddedResource Include="Inicio.resx">
+      <DependentUpon>Inicio.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="loggin inicial.resx">
-      <DependentUpon>loggin inicial.vb</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="LOGIN.resx">
-      <DependentUpon>LOGIN.vb</DependentUpon>
+    <EmbeddedResource Include="ModificarVehiculos.resx">
+      <DependentUpon>ModificarVehiculos.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="My Project\Resources.resx">
       <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.vb</LastGenOutput>
       <CustomToolNamespace>My.Resources</CustomToolNamespace>
       <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Vehiculos.resx">
+      <DependentUpon>Vehiculos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="reservas.resx">
+      <DependentUpon>reservas.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resumen.resx">
+      <DependentUpon>Resumen.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Socios.resx">
+      <DependentUpon>Socios.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vehiculos1.resx">
+      <DependentUpon>Vehiculos1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="viajes.resx">
+      <DependentUpon>viajes.vb</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
