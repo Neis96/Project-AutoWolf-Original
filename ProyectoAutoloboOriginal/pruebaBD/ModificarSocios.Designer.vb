@@ -1,5 +1,5 @@
 ﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
-Partial Class Socios
+Partial Class ModificarSocios
     Inherits System.Windows.Forms.Form
 
     'Form reemplaza a Dispose para limpiar la lista de componentes.
@@ -29,8 +29,8 @@ Partial Class Socios
         Dim DireccionLabel As System.Windows.Forms.Label
         Dim Id_socioLabel As System.Windows.Forms.Label
         Dim TelefonoLabel As System.Windows.Forms.Label
-        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Socios))
-        Me.ButAgregar = New System.Windows.Forms.Button()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(ModificarSocios))
+        Me.ButModificar = New System.Windows.Forms.Button()
         Me.SociosBindingNavigator = New System.Windows.Forms.BindingNavigator(Me.components)
         Me.BindingNavigatorAddNewItem = New System.Windows.Forms.ToolStripButton()
         Me.BindingNavigatorCountItem = New System.Windows.Forms.ToolStripLabel()
@@ -51,10 +51,10 @@ Partial Class Socios
         Me.Id_socioTextBox = New System.Windows.Forms.TextBox()
         Me.TelefonoTextBox = New System.Windows.Forms.TextBox()
         Me.SociosDataGridView = New System.Windows.Forms.DataGridView()
-        Me.Button2 = New System.Windows.Forms.Button()
-        Me.Button4 = New System.Windows.Forms.Button()
-        Me.ButConsulta = New System.Windows.Forms.Button()
-        Me.TextBoxconsultasocio = New System.Windows.Forms.TextBox()
+        Me.Butconsulta2 = New System.Windows.Forms.Button()
+        Me.ButEliminar = New System.Windows.Forms.Button()
+        Me.TextBoxConsulata2 = New System.Windows.Forms.TextBox()
+        Me.ButVolver = New System.Windows.Forms.Button()
         Me.DataGridViewTextBoxColumn1 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.DataGridViewTextBoxColumn2 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.DataGridViewTextBoxColumn3 = New System.Windows.Forms.DataGridViewTextBoxColumn()
@@ -81,7 +81,7 @@ Partial Class Socios
         'NombreLabel
         '
         NombreLabel.AutoSize = True
-        NombreLabel.Location = New System.Drawing.Point(29, 66)
+        NombreLabel.Location = New System.Drawing.Point(46, 84)
         NombreLabel.Name = "NombreLabel"
         NombreLabel.Size = New System.Drawing.Size(45, 13)
         NombreLabel.TabIndex = 2
@@ -90,7 +90,7 @@ Partial Class Socios
         'ApellidoLabel
         '
         ApellidoLabel.AutoSize = True
-        ApellidoLabel.Location = New System.Drawing.Point(29, 92)
+        ApellidoLabel.Location = New System.Drawing.Point(46, 110)
         ApellidoLabel.Name = "ApellidoLabel"
         ApellidoLabel.Size = New System.Drawing.Size(46, 13)
         ApellidoLabel.TabIndex = 4
@@ -99,7 +99,7 @@ Partial Class Socios
         'DniLabel
         '
         DniLabel.AutoSize = True
-        DniLabel.Location = New System.Drawing.Point(29, 118)
+        DniLabel.Location = New System.Drawing.Point(46, 136)
         DniLabel.Name = "DniLabel"
         DniLabel.Size = New System.Drawing.Size(24, 13)
         DniLabel.TabIndex = 6
@@ -108,7 +108,7 @@ Partial Class Socios
         'DireccionLabel
         '
         DireccionLabel.AutoSize = True
-        DireccionLabel.Location = New System.Drawing.Point(29, 144)
+        DireccionLabel.Location = New System.Drawing.Point(46, 162)
         DireccionLabel.Name = "DireccionLabel"
         DireccionLabel.Size = New System.Drawing.Size(53, 13)
         DireccionLabel.TabIndex = 8
@@ -117,7 +117,7 @@ Partial Class Socios
         'Id_socioLabel
         '
         Id_socioLabel.AutoSize = True
-        Id_socioLabel.Location = New System.Drawing.Point(29, 170)
+        Id_socioLabel.Location = New System.Drawing.Point(46, 188)
         Id_socioLabel.Name = "Id_socioLabel"
         Id_socioLabel.Size = New System.Drawing.Size(46, 13)
         Id_socioLabel.TabIndex = 10
@@ -126,20 +126,20 @@ Partial Class Socios
         'TelefonoLabel
         '
         TelefonoLabel.AutoSize = True
-        TelefonoLabel.Location = New System.Drawing.Point(29, 196)
+        TelefonoLabel.Location = New System.Drawing.Point(46, 214)
         TelefonoLabel.Name = "TelefonoLabel"
         TelefonoLabel.Size = New System.Drawing.Size(48, 13)
         TelefonoLabel.TabIndex = 12
         TelefonoLabel.Text = "telefono:"
         '
-        'ButAgregar
+        'ButModificar
         '
-        Me.ButAgregar.Location = New System.Drawing.Point(247, 66)
-        Me.ButAgregar.Name = "ButAgregar"
-        Me.ButAgregar.Size = New System.Drawing.Size(117, 72)
-        Me.ButAgregar.TabIndex = 0
-        Me.ButAgregar.Text = "agregar"
-        Me.ButAgregar.UseVisualStyleBackColor = True
+        Me.ButModificar.Location = New System.Drawing.Point(285, 110)
+        Me.ButModificar.Name = "ButModificar"
+        Me.ButModificar.Size = New System.Drawing.Size(141, 23)
+        Me.ButModificar.TabIndex = 0
+        Me.ButModificar.Text = "Modificar"
+        Me.ButModificar.UseVisualStyleBackColor = True
         '
         'SociosBindingNavigator
         '
@@ -155,7 +155,7 @@ Partial Class Socios
         Me.SociosBindingNavigator.MovePreviousItem = Me.BindingNavigatorMovePreviousItem
         Me.SociosBindingNavigator.Name = "SociosBindingNavigator"
         Me.SociosBindingNavigator.PositionItem = Me.BindingNavigatorPositionItem
-        Me.SociosBindingNavigator.Size = New System.Drawing.Size(1083, 25)
+        Me.SociosBindingNavigator.Size = New System.Drawing.Size(919, 25)
         Me.SociosBindingNavigator.TabIndex = 1
         Me.SociosBindingNavigator.Text = "BindingNavigator1"
         '
@@ -255,7 +255,7 @@ Partial Class Socios
         'NombreTextBox
         '
         Me.NombreTextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.SociosBindingSource, "nombre", True))
-        Me.NombreTextBox.Location = New System.Drawing.Point(88, 63)
+        Me.NombreTextBox.Location = New System.Drawing.Point(105, 81)
         Me.NombreTextBox.Name = "NombreTextBox"
         Me.NombreTextBox.Size = New System.Drawing.Size(100, 20)
         Me.NombreTextBox.TabIndex = 3
@@ -263,7 +263,7 @@ Partial Class Socios
         'ApellidoTextBox
         '
         Me.ApellidoTextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.SociosBindingSource, "apellido", True))
-        Me.ApellidoTextBox.Location = New System.Drawing.Point(88, 89)
+        Me.ApellidoTextBox.Location = New System.Drawing.Point(105, 107)
         Me.ApellidoTextBox.Name = "ApellidoTextBox"
         Me.ApellidoTextBox.Size = New System.Drawing.Size(100, 20)
         Me.ApellidoTextBox.TabIndex = 5
@@ -271,7 +271,7 @@ Partial Class Socios
         'DniTextBox
         '
         Me.DniTextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.SociosBindingSource, "dni", True))
-        Me.DniTextBox.Location = New System.Drawing.Point(88, 115)
+        Me.DniTextBox.Location = New System.Drawing.Point(105, 133)
         Me.DniTextBox.Name = "DniTextBox"
         Me.DniTextBox.Size = New System.Drawing.Size(100, 20)
         Me.DniTextBox.TabIndex = 7
@@ -279,7 +279,7 @@ Partial Class Socios
         'DireccionTextBox
         '
         Me.DireccionTextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.SociosBindingSource, "direccion", True))
-        Me.DireccionTextBox.Location = New System.Drawing.Point(88, 141)
+        Me.DireccionTextBox.Location = New System.Drawing.Point(105, 159)
         Me.DireccionTextBox.Name = "DireccionTextBox"
         Me.DireccionTextBox.Size = New System.Drawing.Size(100, 20)
         Me.DireccionTextBox.TabIndex = 9
@@ -287,7 +287,7 @@ Partial Class Socios
         'Id_socioTextBox
         '
         Me.Id_socioTextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.SociosBindingSource, "id_socio", True))
-        Me.Id_socioTextBox.Location = New System.Drawing.Point(88, 167)
+        Me.Id_socioTextBox.Location = New System.Drawing.Point(105, 185)
         Me.Id_socioTextBox.Name = "Id_socioTextBox"
         Me.Id_socioTextBox.Size = New System.Drawing.Size(100, 20)
         Me.Id_socioTextBox.TabIndex = 11
@@ -295,7 +295,7 @@ Partial Class Socios
         'TelefonoTextBox
         '
         Me.TelefonoTextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.SociosBindingSource, "telefono", True))
-        Me.TelefonoTextBox.Location = New System.Drawing.Point(88, 193)
+        Me.TelefonoTextBox.Location = New System.Drawing.Point(105, 211)
         Me.TelefonoTextBox.Name = "TelefonoTextBox"
         Me.TelefonoTextBox.Size = New System.Drawing.Size(100, 20)
         Me.TelefonoTextBox.TabIndex = 13
@@ -306,44 +306,44 @@ Partial Class Socios
         Me.SociosDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.SociosDataGridView.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.DataGridViewTextBoxColumn1, Me.DataGridViewTextBoxColumn2, Me.DataGridViewTextBoxColumn3, Me.DataGridViewTextBoxColumn4, Me.DataGridViewTextBoxColumn5, Me.DataGridViewTextBoxColumn6})
         Me.SociosDataGridView.DataSource = Me.SociosBindingSource
-        Me.SociosDataGridView.Location = New System.Drawing.Point(55, 292)
+        Me.SociosDataGridView.Location = New System.Drawing.Point(49, 342)
         Me.SociosDataGridView.Name = "SociosDataGridView"
-        Me.SociosDataGridView.Size = New System.Drawing.Size(643, 220)
+        Me.SociosDataGridView.Size = New System.Drawing.Size(644, 220)
         Me.SociosDataGridView.TabIndex = 14
         '
-        'Button2
+        'Butconsulta2
         '
-        Me.Button2.Location = New System.Drawing.Point(359, 251)
-        Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(120, 23)
-        Me.Button2.TabIndex = 15
-        Me.Button2.Text = "modificar"
-        Me.Button2.UseVisualStyleBackColor = True
+        Me.Butconsulta2.Location = New System.Drawing.Point(285, 285)
+        Me.Butconsulta2.Name = "Butconsulta2"
+        Me.Butconsulta2.Size = New System.Drawing.Size(141, 23)
+        Me.Butconsulta2.TabIndex = 15
+        Me.Butconsulta2.Text = "Consulta"
+        Me.Butconsulta2.UseVisualStyleBackColor = True
         '
-        'Button4
+        'ButEliminar
         '
-        Me.Button4.Location = New System.Drawing.Point(848, 56)
-        Me.Button4.Name = "Button4"
-        Me.Button4.Size = New System.Drawing.Size(75, 23)
-        Me.Button4.TabIndex = 17
-        Me.Button4.Text = "volver"
-        Me.Button4.UseVisualStyleBackColor = True
+        Me.ButEliminar.Location = New System.Drawing.Point(285, 188)
+        Me.ButEliminar.Name = "ButEliminar"
+        Me.ButEliminar.Size = New System.Drawing.Size(141, 23)
+        Me.ButEliminar.TabIndex = 16
+        Me.ButEliminar.Text = "Eliminar"
+        Me.ButEliminar.UseVisualStyleBackColor = True
         '
-        'ButConsulta
+        'TextBoxConsulata2
         '
-        Me.ButConsulta.Location = New System.Drawing.Point(231, 251)
-        Me.ButConsulta.Name = "ButConsulta"
-        Me.ButConsulta.Size = New System.Drawing.Size(100, 23)
-        Me.ButConsulta.TabIndex = 18
-        Me.ButConsulta.Text = "consultar"
-        Me.ButConsulta.UseVisualStyleBackColor = True
+        Me.TextBoxConsulata2.Location = New System.Drawing.Point(79, 288)
+        Me.TextBoxConsulata2.Name = "TextBoxConsulata2"
+        Me.TextBoxConsulata2.Size = New System.Drawing.Size(162, 20)
+        Me.TextBoxConsulata2.TabIndex = 17
         '
-        'TextBoxconsultasocio
+        'ButVolver
         '
-        Me.TextBoxconsultasocio.Location = New System.Drawing.Point(88, 254)
-        Me.TextBoxconsultasocio.Name = "TextBoxconsultasocio"
-        Me.TextBoxconsultasocio.Size = New System.Drawing.Size(100, 20)
-        Me.TextBoxconsultasocio.TabIndex = 19
+        Me.ButVolver.Location = New System.Drawing.Point(665, 61)
+        Me.ButVolver.Name = "ButVolver"
+        Me.ButVolver.Size = New System.Drawing.Size(75, 23)
+        Me.ButVolver.TabIndex = 18
+        Me.ButVolver.Text = "Volver"
+        Me.ButVolver.UseVisualStyleBackColor = True
         '
         'DataGridViewTextBoxColumn1
         '
@@ -407,15 +407,15 @@ Partial Class Socios
         Me.TableAdapterManager.VehiculoTableAdapter = Nothing
         Me.TableAdapterManager.ViajesTableAdapter = Nothing
         '
-        'Socios
+        'ModificarSocios
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(1083, 556)
-        Me.Controls.Add(Me.TextBoxconsultasocio)
-        Me.Controls.Add(Me.ButConsulta)
-        Me.Controls.Add(Me.Button4)
-        Me.Controls.Add(Me.Button2)
+        Me.ClientSize = New System.Drawing.Size(919, 663)
+        Me.Controls.Add(Me.ButVolver)
+        Me.Controls.Add(Me.TextBoxConsulata2)
+        Me.Controls.Add(Me.ButEliminar)
+        Me.Controls.Add(Me.Butconsulta2)
         Me.Controls.Add(Me.SociosDataGridView)
         Me.Controls.Add(NombreLabel)
         Me.Controls.Add(Me.NombreTextBox)
@@ -430,9 +430,9 @@ Partial Class Socios
         Me.Controls.Add(TelefonoLabel)
         Me.Controls.Add(Me.TelefonoTextBox)
         Me.Controls.Add(Me.SociosBindingNavigator)
-        Me.Controls.Add(Me.ButAgregar)
-        Me.Name = "Socios"
-        Me.Text = "Socios"
+        Me.Controls.Add(Me.ButModificar)
+        Me.Name = "ModificarSocios"
+        Me.Text = "ModificarSocios"
         CType(Me.SociosBindingNavigator, System.ComponentModel.ISupportInitialize).EndInit()
         Me.SociosBindingNavigator.ResumeLayout(False)
         Me.SociosBindingNavigator.PerformLayout()
@@ -443,7 +443,7 @@ Partial Class Socios
         Me.PerformLayout()
 
     End Sub
-    Friend WithEvents ButAgregar As System.Windows.Forms.Button
+    Friend WithEvents ButModificar As System.Windows.Forms.Button
     Friend WithEvents Database1DataSet As pruebaBD.Database1DataSet
     Friend WithEvents SociosBindingSource As System.Windows.Forms.BindingSource
     Friend WithEvents SociosTableAdapter As pruebaBD.Database1DataSetTableAdapters.SociosTableAdapter
@@ -474,8 +474,8 @@ Partial Class Socios
     Friend WithEvents DataGridViewTextBoxColumn4 As System.Windows.Forms.DataGridViewTextBoxColumn
     Friend WithEvents DataGridViewTextBoxColumn5 As System.Windows.Forms.DataGridViewTextBoxColumn
     Friend WithEvents DataGridViewTextBoxColumn6 As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents Button2 As System.Windows.Forms.Button
-    Friend WithEvents Button4 As System.Windows.Forms.Button
-    Friend WithEvents ButConsulta As System.Windows.Forms.Button
-    Friend WithEvents TextBoxconsultasocio As System.Windows.Forms.TextBox
+    Friend WithEvents Butconsulta2 As System.Windows.Forms.Button
+    Friend WithEvents ButEliminar As System.Windows.Forms.Button
+    Friend WithEvents TextBoxConsulata2 As System.Windows.Forms.TextBox
+    Friend WithEvents ButVolver As System.Windows.Forms.Button
 End Class

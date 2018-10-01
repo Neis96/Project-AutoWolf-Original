@@ -132,6 +132,12 @@
     <Compile Include="Liquidacion Choferes.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="ModificarSocios.Designer.vb">
+      <DependentUpon>ModificarSocios.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ModificarSocios.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="ModificarVehiculos.Designer.vb">
       <DependentUpon>ModificarVehiculos.vb</DependentUpon>
     </Compile>
@@ -199,6 +205,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Inicio.resx">
       <DependentUpon>Inicio.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ModificarSocios.resx">
+      <DependentUpon>ModificarSocios.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ModificarVehiculos.resx">
       <DependentUpon>ModificarVehiculos.vb</DependentUpon>

@@ -75,7 +75,6 @@
 
                 ModificarVehiculos.Show()
 
-                ModificarVehiculos.VehiculoBindingSource.Position = fila
 
                 'textbox si quiero que me muestre en los dos
                 
