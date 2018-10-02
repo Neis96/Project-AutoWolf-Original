@@ -22,19 +22,25 @@ Partial Class Inicio
     'No lo modifique con el editor de código.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Me.components = New System.ComponentModel.Container()
         Me.BtnViajes = New System.Windows.Forms.Button()
         Me.BtnSocio = New System.Windows.Forms.Button()
         Me.BtnChoferes = New System.Windows.Forms.Button()
         Me.BtnVehiculos = New System.Windows.Forms.Button()
         Me.Database1DataSet = New pruebaBD.Database1DataSet()
-
         Me.TableAdapterManager = New pruebaBD.Database1DataSetTableAdapters.TableAdapterManager()
         Me.BtnReserva = New System.Windows.Forms.Button()
         Me.TextBox1 = New System.Windows.Forms.TextBox()
         Me.Label1 = New System.Windows.Forms.Label()
+        Me.MenuStrip1 = New System.Windows.Forms.MenuStrip()
+        Me.ArchivoToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.VerToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ResumenToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.AyudaToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ConfiguracionToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ResumenToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
+        Me.LiquidacionChoferToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         CType(Me.Database1DataSet, System.ComponentModel.ISupportInitialize).BeginInit()
-
+        Me.MenuStrip1.SuspendLayout()
         Me.SuspendLayout()
         '
         'BtnViajes
@@ -78,8 +84,6 @@ Partial Class Inicio
         Me.Database1DataSet.DataSetName = "Database1DataSet"
         Me.Database1DataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
         '
-     
-        '
         'TableAdapterManager
         '
         Me.TableAdapterManager.BackupDataSetBeforeUpdate = False
@@ -102,7 +106,7 @@ Partial Class Inicio
         '
         'TextBox1
         '
-        Me.TextBox1.Location = New System.Drawing.Point(820, 177)
+        Me.TextBox1.Location = New System.Drawing.Point(447, 288)
         Me.TextBox1.Name = "TextBox1"
         Me.TextBox1.Size = New System.Drawing.Size(119, 20)
         Me.TextBox1.TabIndex = 8
@@ -110,11 +114,64 @@ Partial Class Inicio
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(775, 180)
+        Me.Label1.Location = New System.Drawing.Point(402, 291)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(39, 13)
         Me.Label1.TabIndex = 9
         Me.Label1.Text = "Label1"
+        '
+        'MenuStrip1
+        '
+        Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ArchivoToolStripMenuItem, Me.VerToolStripMenuItem, Me.ResumenToolStripMenuItem, Me.AyudaToolStripMenuItem, Me.ConfiguracionToolStripMenuItem})
+        Me.MenuStrip1.Location = New System.Drawing.Point(0, 0)
+        Me.MenuStrip1.Name = "MenuStrip1"
+        Me.MenuStrip1.Size = New System.Drawing.Size(972, 24)
+        Me.MenuStrip1.TabIndex = 10
+        Me.MenuStrip1.Text = "MenuStrip1"
+        '
+        'ArchivoToolStripMenuItem
+        '
+        Me.ArchivoToolStripMenuItem.Name = "ArchivoToolStripMenuItem"
+        Me.ArchivoToolStripMenuItem.Size = New System.Drawing.Size(60, 20)
+        Me.ArchivoToolStripMenuItem.Text = "Archivo"
+        '
+        'VerToolStripMenuItem
+        '
+        Me.VerToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ResumenToolStripMenuItem1})
+        Me.VerToolStripMenuItem.Name = "VerToolStripMenuItem"
+        Me.VerToolStripMenuItem.Size = New System.Drawing.Size(35, 20)
+        Me.VerToolStripMenuItem.Text = "Ver"
+        '
+        'ResumenToolStripMenuItem
+        '
+        Me.ResumenToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.LiquidacionChoferToolStripMenuItem})
+        Me.ResumenToolStripMenuItem.Name = "ResumenToolStripMenuItem"
+        Me.ResumenToolStripMenuItem.Size = New System.Drawing.Size(59, 20)
+        Me.ResumenToolStripMenuItem.Text = "Gestion"
+        '
+        'AyudaToolStripMenuItem
+        '
+        Me.AyudaToolStripMenuItem.Name = "AyudaToolStripMenuItem"
+        Me.AyudaToolStripMenuItem.Size = New System.Drawing.Size(53, 20)
+        Me.AyudaToolStripMenuItem.Text = "Ayuda"
+        '
+        'ConfiguracionToolStripMenuItem
+        '
+        Me.ConfiguracionToolStripMenuItem.Name = "ConfiguracionToolStripMenuItem"
+        Me.ConfiguracionToolStripMenuItem.Size = New System.Drawing.Size(95, 20)
+        Me.ConfiguracionToolStripMenuItem.Text = "Configuracion"
+        '
+        'ResumenToolStripMenuItem1
+        '
+        Me.ResumenToolStripMenuItem1.Name = "ResumenToolStripMenuItem1"
+        Me.ResumenToolStripMenuItem1.Size = New System.Drawing.Size(152, 22)
+        Me.ResumenToolStripMenuItem1.Text = "Resumen"
+        '
+        'LiquidacionChoferToolStripMenuItem
+        '
+        Me.LiquidacionChoferToolStripMenuItem.Name = "LiquidacionChoferToolStripMenuItem"
+        Me.LiquidacionChoferToolStripMenuItem.Size = New System.Drawing.Size(173, 22)
+        Me.LiquidacionChoferToolStripMenuItem.Text = "Liquidacion chofer"
         '
         'Inicio
         '
@@ -128,10 +185,13 @@ Partial Class Inicio
         Me.Controls.Add(Me.BtnChoferes)
         Me.Controls.Add(Me.BtnSocio)
         Me.Controls.Add(Me.BtnViajes)
+        Me.Controls.Add(Me.MenuStrip1)
+        Me.MainMenuStrip = Me.MenuStrip1
         Me.Name = "Inicio"
         Me.Text = "Inicio"
         CType(Me.Database1DataSet, System.ComponentModel.ISupportInitialize).EndInit()
-
+        Me.MenuStrip1.ResumeLayout(False)
+        Me.MenuStrip1.PerformLayout()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -147,4 +207,12 @@ Partial Class Inicio
     Friend WithEvents BtnReserva As System.Windows.Forms.Button
     Friend WithEvents TextBox1 As System.Windows.Forms.TextBox
     Friend WithEvents Label1 As System.Windows.Forms.Label
+    Friend WithEvents MenuStrip1 As System.Windows.Forms.MenuStrip
+    Friend WithEvents ArchivoToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents VerToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents ResumenToolStripMenuItem1 As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents ResumenToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents LiquidacionChoferToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents AyudaToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents ConfiguracionToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
 End Class

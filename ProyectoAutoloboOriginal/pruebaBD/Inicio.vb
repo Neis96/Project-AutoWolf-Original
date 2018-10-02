@@ -36,26 +36,17 @@
 
     End Sub
 
-    Private Sub ResumenToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs)
-
+    Private Sub ResumenToolStripMenuItem1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles ResumenToolStripMenuItem1.Click
         Resumen.Show()
 
     End Sub
 
-    Private Sub LiquidacionChoferesToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs)
-
+    Private Sub LiquidacionChoferToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles LiquidacionChoferToolStripMenuItem.Click
         Liquidacion_Choferes.Show()
 
     End Sub
 
-    Private Sub AyudaToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs)
-
-        Ayuda.Show()
-
-    End Sub
-
-    Private Sub ConfiguracionToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs)
-
+    Private Sub ConfiguracionToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles ConfiguracionToolStripMenuItem.Click
         Configuracion.Show()
 
     End Sub
