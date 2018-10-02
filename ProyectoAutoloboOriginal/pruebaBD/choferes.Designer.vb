@@ -53,6 +53,8 @@ Partial Class choferes
         Me.Id_choferTextBox = New System.Windows.Forms.TextBox()
         Me.ChoferDataGridView = New System.Windows.Forms.DataGridView()
         Me.ButtonSocios = New System.Windows.Forms.Button()
+        Me.Button1 = New System.Windows.Forms.Button()
+        Me.Button2 = New System.Windows.Forms.Button()
         Me.DataGridViewTextBoxColumn1 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.DataGridViewTextBoxColumn2 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.DataGridViewTextBoxColumn3 = New System.Windows.Forms.DataGridViewTextBoxColumn()
@@ -64,8 +66,6 @@ Partial Class choferes
         Me.Database1DataSet = New pruebaBD.Database1DataSet()
         Me.ChoferTableAdapter = New pruebaBD.Database1DataSetTableAdapters.ChoferTableAdapter()
         Me.TableAdapterManager = New pruebaBD.Database1DataSetTableAdapters.TableAdapterManager()
-        Me.Button1 = New System.Windows.Forms.Button()
-        Me.Button2 = New System.Windows.Forms.Button()
         Id_vehiculoLabel = New System.Windows.Forms.Label()
         TelefonoLabel = New System.Windows.Forms.Label()
         DireccionLabel = New System.Windows.Forms.Label()
@@ -330,6 +330,24 @@ Partial Class choferes
         Me.ButtonSocios.Text = "agregar"
         Me.ButtonSocios.UseVisualStyleBackColor = True
         '
+        'Button1
+        '
+        Me.Button1.Location = New System.Drawing.Point(395, 193)
+        Me.Button1.Name = "Button1"
+        Me.Button1.Size = New System.Drawing.Size(106, 23)
+        Me.Button1.TabIndex = 17
+        Me.Button1.Text = "modificar"
+        Me.Button1.UseVisualStyleBackColor = True
+        '
+        'Button2
+        '
+        Me.Button2.Location = New System.Drawing.Point(477, 146)
+        Me.Button2.Name = "Button2"
+        Me.Button2.Size = New System.Drawing.Size(75, 23)
+        Me.Button2.TabIndex = 18
+        Me.Button2.Text = "eliminar"
+        Me.Button2.UseVisualStyleBackColor = True
+        '
         'DataGridViewTextBoxColumn1
         '
         Me.DataGridViewTextBoxColumn1.DataPropertyName = "id_vehiculo"
@@ -391,30 +409,12 @@ Partial Class choferes
         '
         Me.TableAdapterManager.BackupDataSetBeforeUpdate = False
         Me.TableAdapterManager.ChoferTableAdapter = Me.ChoferTableAdapter
-        Me.TableAdapterManager.ReservaTableAdapter = Nothing
+        ' Me.TableAdapterManager.ReservaTableAdapter = Nothing
         Me.TableAdapterManager.SociosTableAdapter = Nothing
         Me.TableAdapterManager.UpdateOrder = pruebaBD.Database1DataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete
         Me.TableAdapterManager.UsuarioTableAdapter = Nothing
         Me.TableAdapterManager.VehiculoTableAdapter = Nothing
         Me.TableAdapterManager.ViajesTableAdapter = Nothing
-        '
-        'Button1
-        '
-        Me.Button1.Location = New System.Drawing.Point(316, 187)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(106, 23)
-        Me.Button1.TabIndex = 17
-        Me.Button1.Text = "modificar"
-        Me.Button1.UseVisualStyleBackColor = True
-        '
-        'Button2
-        '
-        Me.Button2.Location = New System.Drawing.Point(477, 146)
-        Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(75, 23)
-        Me.Button2.TabIndex = 18
-        Me.Button2.Text = "eliminar"
-        Me.Button2.UseVisualStyleBackColor = True
         '
         'choferes
         '

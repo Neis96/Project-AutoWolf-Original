@@ -1,15 +1,8 @@
 ﻿Public Class Inicio
 
-    Private Sub ReservaBindingNavigatorSaveItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs)
-        Me.Validate()
-        Me.ReservaBindingSource.EndEdit()
-        Me.TableAdapterManager.UpdateAll(Me.Database1DataSet)
-
-    End Sub
-
     Private Sub Inicio_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
         'TODO: esta línea de código carga datos en la tabla 'Database1DataSet.Reserva' Puede moverla o quitarla según sea necesario.
-        Me.ReservaTableAdapter.Fill(Me.Database1DataSet.Reserva)
+        ' Me.ReservaTableAdapter.Fill(Me.Database1DataSet.Reserva)
 
     End Sub
 
@@ -39,29 +32,29 @@
 
     Private Sub BtnReserva_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles BtnReserva.Click
 
-        reservas.Show()
+        'reservas.Show()
 
     End Sub
 
-    Private Sub ResumenToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles ResumenToolStripMenuItem.Click
+    Private Sub ResumenToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs)
 
         Resumen.Show()
 
     End Sub
 
-    Private Sub LiquidacionChoferesToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles LiquidacionChoferesToolStripMenuItem.Click
+    Private Sub LiquidacionChoferesToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs)
 
         Liquidacion_Choferes.Show()
 
     End Sub
 
-    Private Sub AyudaToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles AyudaToolStripMenuItem.Click
+    Private Sub AyudaToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs)
 
         Ayuda.Show()
 
     End Sub
 
-    Private Sub ConfiguracionToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles ConfiguracionToolStripMenuItem.Click
+    Private Sub ConfiguracionToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs)
 
         Configuracion.Show()
 

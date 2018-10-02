@@ -41,4 +41,44 @@
             NombreTextBox.Focus()
         End If
     End Sub
+
+    Private Sub Button2_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button2.Click
+        'eliminar
+        Dim fila, codConsulta, aux As Integer
+        codConsulta = InputBox("Ingrese codigo de consulta")
+        fila = Me.ChoferBindingSource.Find("id", codConsulta)
+        If fila = -1 Then
+            'no se encuentra
+            MsgBox("no se encontro")
+        Else
+            'lo encontro
+            Me.ChoferBindingSource.Position = fila 'situo el puntero en la fila buscada
+            aux = MsgBox("Quiere eliminar?" & codConsulta)
+            If aux = 1 Then 'apreto si
+                Me.ChoferBindingSource.RemoveCurrent() 'borra el registro donde estas situado
+                Me.ChoferBindingSource.EndEdit() 'cierro bd
+                Me.TableAdapterManager.UpdateAll(Me.Database1DataSet) 'guarda 
+
+                Me.ChoferTableAdapter.Fill(Me.Database1DataSet.Chofer) ' actualiza el form anterior
+
+
+            End If
+        End If
+    End Sub
+
+    Private Sub Button1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button1.Click
+        Dim direccion, nombre, apellido As String
+        Dim telefono, dni, id As Integer
+        direccion = DireccionTextBox.Text
+        nombre = NombreTextBox.Text
+        apellido = ApellidoTextBox.Text
+        telefono = TelefonoTextBox.Text
+        dni = DniTextBox.Text
+        id = Id_choferTextBox.Text
+        Me.ChoferTableAdapter.EsUnaCagada(telefono, direccion, dni, nombre, apellido, id)
+    End Sub
+
+    Private Sub DireccionTextBox_TextChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles DireccionTextBox.TextChanged
+
+    End Sub
 End Class

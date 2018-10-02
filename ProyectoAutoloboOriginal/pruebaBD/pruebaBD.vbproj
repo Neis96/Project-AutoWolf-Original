@@ -165,12 +165,6 @@
     <Compile Include="My Project\Vehiculos.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="reservas.Designer.vb">
-      <DependentUpon>reservas.vb</DependentUpon>
-    </Compile>
-    <Compile Include="reservas.vb">
-      <SubType>Form</SubType>
-    </Compile>
     <Compile Include="Resumen.Designer.vb">
       <DependentUpon>Resumen.vb</DependentUpon>
     </Compile>
@@ -197,6 +191,9 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="Ayuda.resx">
+      <DependentUpon>Ayuda.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="choferes.resx">
       <DependentUpon>choferes.vb</DependentUpon>
     </EmbeddedResource>
@@ -220,9 +217,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="My Project\Vehiculos.resx">
       <DependentUpon>Vehiculos.vb</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="reservas.resx">
-      <DependentUpon>reservas.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Resumen.resx">
       <DependentUpon>Resumen.vb</DependentUpon>

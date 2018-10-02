@@ -400,7 +400,7 @@ Partial Class ModificarSocios
         '
         Me.TableAdapterManager.BackupDataSetBeforeUpdate = False
         Me.TableAdapterManager.ChoferTableAdapter = Nothing
-        Me.TableAdapterManager.ReservaTableAdapter = Nothing
+        ' Me.TableAdapterManager.ReservaTableAdapter = Nothing
         Me.TableAdapterManager.SociosTableAdapter = Me.SociosTableAdapter
         Me.TableAdapterManager.UpdateOrder = pruebaBD.Database1DataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete
         Me.TableAdapterManager.UsuarioTableAdapter = Nothing
