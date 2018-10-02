@@ -28,13 +28,13 @@ Partial Class Inicio
         Me.BtnChoferes = New System.Windows.Forms.Button()
         Me.BtnVehiculos = New System.Windows.Forms.Button()
         Me.Database1DataSet = New pruebaBD.Database1DataSet()
-        Me.ReservaBindingSource = New System.Windows.Forms.BindingSource(Me.components)
+
         Me.TableAdapterManager = New pruebaBD.Database1DataSetTableAdapters.TableAdapterManager()
         Me.BtnReserva = New System.Windows.Forms.Button()
         Me.TextBox1 = New System.Windows.Forms.TextBox()
         Me.Label1 = New System.Windows.Forms.Label()
         CType(Me.Database1DataSet, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.ReservaBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
+
         Me.SuspendLayout()
         '
         'BtnViajes
@@ -78,10 +78,7 @@ Partial Class Inicio
         Me.Database1DataSet.DataSetName = "Database1DataSet"
         Me.Database1DataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
         '
-        'ReservaBindingSource
-        '
-        Me.ReservaBindingSource.DataMember = "Reserva"
-        Me.ReservaBindingSource.DataSource = Me.Database1DataSet
+     
         '
         'TableAdapterManager
         '
@@ -134,7 +131,7 @@ Partial Class Inicio
         Me.Name = "Inicio"
         Me.Text = "Inicio"
         CType(Me.Database1DataSet, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.ReservaBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
+
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -145,7 +142,7 @@ Partial Class Inicio
     Friend WithEvents BtnVehiculos As System.Windows.Forms.Button
     Friend WithEvents Database1DataSet As pruebaBD.Database1DataSet
     Friend WithEvents ReservaBindingSource As System.Windows.Forms.BindingSource
-    'Friend WithEvents ReservaTableAdapter As pruebaBD.Database1DataSetTableAdapters.ReservaTableAdapter
+
     Friend WithEvents TableAdapterManager As pruebaBD.Database1DataSetTableAdapters.TableAdapterManager
     Friend WithEvents BtnReserva As System.Windows.Forms.Button
     Friend WithEvents TextBox1 As System.Windows.Forms.TextBox
