@@ -17,7 +17,7 @@
 
     Private Sub BtnAgregar_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles BtnAgregar.Click
 
-        If DominioTextBox.Text = "" Then
+        If DominioTextBox.Text = ""  Then
             MsgBox("El campo esta vacio")
             DominioTextBox.Focus()
         Else
@@ -45,6 +45,16 @@
     End Sub
 
     Private Sub TextBoxConsulta_TextChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles TextBoxConsulta.TextChanged
+        'no logro hacer que funcione la consulta en textbox
+
+        'Dim vista As New DataView 'tipo de dato de la grilla
+        'Dim consulta As String
+        'consulta = TextBoxConsulta.Text
+
+        'vista.Table = Me.Database1DataSet.Vehiculo
+        'vista.RowFilter = "dominio = " & consulta
+
+        'Me.VehiculoDataGridView.DataSource = vista 'actualizo la grilla
 
         
 
@@ -58,7 +68,15 @@
 
     Private Sub BtnConsulta_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles BtnConsulta.Click
 
-        Me.VehiculoTableAdapter.FillBy((Me.Database1DataSet.Vehiculo), TextBoxConsulta.Text)
+        If TextBoxConsulta.Text <> "" Then
+
+            Me.VehiculoTableAdapter.FillBy((Me.Database1DataSet.Vehiculo), TextBoxConsulta.Text)
+
+
+        Else
+            MsgBox("El campo de consulta esta vacio")
+
+        End If
 
 
 
@@ -74,7 +92,8 @@
             If fila <> -1 Then
 
                 ModificarVehiculos.Show()
-
+                ModificarVehiculos.VehiculoTableAdapter.FillBy((Me.Database1DataSet.Vehiculo), TextBoxConsulta.Text)
+                ModificarVehiculos.DominioTextBox.Focus()
 
                 'textbox si quiero que me muestre en los dos
                 
