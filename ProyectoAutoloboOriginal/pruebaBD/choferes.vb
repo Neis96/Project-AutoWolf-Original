@@ -1,6 +1,6 @@
 ﻿Public Class choferes
 
-    Private Sub ChoferBindingNavigatorSaveItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles ChoferBindingNavigatorSaveItem.Click
+    Private Sub ChoferBindingNavigatorSaveItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs)
         Me.Validate()
         Me.ChoferBindingSource.EndEdit()
         Me.TableAdapterManager.UpdateAll(Me.Database1DataSet)
