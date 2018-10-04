@@ -283,7 +283,7 @@ Partial Class viajes
         'CheckBoxReserva
         '
         Me.CheckBoxReserva.AutoSize = True
-        Me.CheckBoxReserva.Location = New System.Drawing.Point(282, 165)
+        Me.CheckBoxReserva.Location = New System.Drawing.Point(282, 199)
         Me.CheckBoxReserva.Name = "CheckBoxReserva"
         Me.CheckBoxReserva.Size = New System.Drawing.Size(66, 17)
         Me.CheckBoxReserva.TabIndex = 26
@@ -293,7 +293,7 @@ Partial Class viajes
         'CheckCta
         '
         Me.CheckCta.AutoSize = True
-        Me.CheckCta.Location = New System.Drawing.Point(282, 199)
+        Me.CheckCta.Location = New System.Drawing.Point(282, 224)
         Me.CheckCta.Name = "CheckCta"
         Me.CheckCta.Size = New System.Drawing.Size(61, 17)
         Me.CheckCta.TabIndex = 27
@@ -304,7 +304,7 @@ Partial Class viajes
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(401, 437)
+        Me.ClientSize = New System.Drawing.Size(628, 527)
         Me.Controls.Add(Me.CheckCta)
         Me.Controls.Add(Me.CheckBoxReserva)
         Me.Controls.Add(Me.ComboBoxVehiculo)

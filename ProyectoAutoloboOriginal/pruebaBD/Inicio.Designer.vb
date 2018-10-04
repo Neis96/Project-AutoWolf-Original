@@ -38,11 +38,11 @@ Partial Class Inicio
         Me.AyudaToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ConfiguracionToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.DgvEstado = New System.Windows.Forms.DataGridView()
-        Me.DataGridView2 = New System.Windows.Forms.DataGridView()
+        Me.DgvReserva = New System.Windows.Forms.DataGridView()
         CType(Me.Database1DataSet, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.MenuStrip1.SuspendLayout()
         CType(Me.DgvEstado, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.DataGridView2, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.DgvReserva, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'BtnViajes
@@ -111,7 +111,7 @@ Partial Class Inicio
         Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ArchivoToolStripMenuItem, Me.VerToolStripMenuItem, Me.ResumenToolStripMenuItem, Me.AyudaToolStripMenuItem, Me.ConfiguracionToolStripMenuItem})
         Me.MenuStrip1.Location = New System.Drawing.Point(0, 0)
         Me.MenuStrip1.Name = "MenuStrip1"
-        Me.MenuStrip1.Size = New System.Drawing.Size(1149, 24)
+        Me.MenuStrip1.Size = New System.Drawing.Size(1244, 24)
         Me.MenuStrip1.TabIndex = 10
         Me.MenuStrip1.Text = "MenuStrip1"
         '
@@ -162,25 +162,25 @@ Partial Class Inicio
         'DgvEstado
         '
         Me.DgvEstado.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.DgvEstado.Location = New System.Drawing.Point(851, 59)
+        Me.DgvEstado.Location = New System.Drawing.Point(813, 59)
         Me.DgvEstado.Name = "DgvEstado"
-        Me.DgvEstado.Size = New System.Drawing.Size(286, 522)
+        Me.DgvEstado.Size = New System.Drawing.Size(419, 522)
         Me.DgvEstado.TabIndex = 11
         '
-        'DataGridView2
+        'DgvReserva
         '
-        Me.DataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.DataGridView2.Location = New System.Drawing.Point(201, 426)
-        Me.DataGridView2.Name = "DataGridView2"
-        Me.DataGridView2.Size = New System.Drawing.Size(592, 194)
-        Me.DataGridView2.TabIndex = 12
+        Me.DgvReserva.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.DgvReserva.Location = New System.Drawing.Point(192, 387)
+        Me.DgvReserva.Name = "DgvReserva"
+        Me.DgvReserva.Size = New System.Drawing.Size(592, 194)
+        Me.DgvReserva.TabIndex = 12
         '
         'Inicio
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(1149, 632)
-        Me.Controls.Add(Me.DataGridView2)
+        Me.ClientSize = New System.Drawing.Size(1244, 632)
+        Me.Controls.Add(Me.DgvReserva)
         Me.Controls.Add(Me.DgvEstado)
         Me.Controls.Add(Me.BtnReserva)
         Me.Controls.Add(Me.BtnVehiculos)
@@ -195,7 +195,7 @@ Partial Class Inicio
         Me.MenuStrip1.ResumeLayout(False)
         Me.MenuStrip1.PerformLayout()
         CType(Me.DgvEstado, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.DataGridView2, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.DgvReserva, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -218,5 +218,5 @@ Partial Class Inicio
     Friend WithEvents AyudaToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents ConfiguracionToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents DgvEstado As System.Windows.Forms.DataGridView
-    Friend WithEvents DataGridView2 As System.Windows.Forms.DataGridView
+    Friend WithEvents DgvReserva As System.Windows.Forms.DataGridView
 End Class

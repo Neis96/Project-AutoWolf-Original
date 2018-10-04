@@ -5,13 +5,13 @@
     Private Sub Inicio_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
         conexion.conectar()
         MostrarDatos()
-
-
     End Sub
 
     Public Sub MostrarDatos()
-        conexion.Consulta("SELECT REGISTRO, idChofer, idSocios, idVehiculos ,fecha_origen, lugar_origen, lugar_destino, Finalizado FROM VIAJES", "VIAJES")
+        conexion.Consulta("SELECT REGISTRO, Finalizado, idChofer, idSocios ,fecha_origen, lugar_destino FROM VIAJES", "VIAJES")
         DgvEstado.DataSource = conexion.ds.Tables("VIAJES")
+        conexion.Consulta("SELECT REGISTRO, Finalizado, idChofer, idSocios, fecha_origen, lugar_destino, reserva FROM VIAJES", "VIAJES")
+        DgvReserva.DataSource = conexion.ds.Tables("viajes")
     End Sub
 
     Private Sub BtnViajes_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles BtnViajes.Click

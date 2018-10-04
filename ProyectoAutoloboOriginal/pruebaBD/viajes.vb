@@ -16,14 +16,26 @@
 
     Private Sub Button1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button1.Click
         'boton guardar
-        Dim reserva, estado As String
-        If CheckBoxReserva.Checked Then
+        Dim cta, reserva, estado As String
+        If CheckBoxReserva.Checked Then 'aca pregunto si es una reserva
+
             reserva = "si"
-            estado = "no"
+
+            If CheckCta.Checked Then 'aca pregunto por la cta cte
+
+                cta = "si"
+                estado = "no"
+            Else
+                reserva = "si"
+                estado = "no"
+            End If
+
         Else
             reserva = "no"
             estado = "no"
+
         End If
+
         Me.ViajesBindingSource.Current("IdChofer") = Val(ComboBoxChofer.SelectedItem)
         Me.ViajesBindingSource.Current("idSocios") = Val(ComboBoxSocios.SelectedItem)
         Me.ViajesBindingSource.Current("idVehiculos") = Val(ComboBoxVehiculo.SelectedItem)
@@ -40,5 +52,16 @@
         Me.ViajesTableAdapter.Fill(Me.Database1DataSet.Viajes) 'actualizo en este formulario
         'Inicio.StockTableAdapter.Fill(Inicio.Database1DataSet.Viajes) 'actualizo en formulario principal
         Me.ViajesBindingSource.AddNew() 'preparo para seguir cargando
+    End Sub
+
+    Private Sub Button4_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button4.Click
+        Inicio.Show()
+        Me.Close()
+
+    End Sub
+
+    Private Sub Fecha_origenDateTimePicker_ValueChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Fecha_origenDateTimePicker.ValueChanged
+
+
     End Sub
 End Class
