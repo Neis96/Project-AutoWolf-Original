@@ -39,19 +39,7 @@ Partial Class viajes
         Me.TotalTextBox = New System.Windows.Forms.TextBox()
         Me.Lugar_origenTextBox = New System.Windows.Forms.TextBox()
         Me.Lugar_destinoTextBox = New System.Windows.Forms.TextBox()
-        Me.ViajesDataGridView = New System.Windows.Forms.DataGridView()
-        Me.DataGridViewTextBoxColumn1 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.idVehiculos = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.DataGridViewTextBoxColumn2 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.DataGridViewTextBoxColumn3 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.DataGridViewTextBoxColumn4 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.DataGridViewTextBoxColumn5 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.DataGridViewTextBoxColumn6 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.DataGridViewTextBoxColumn7 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.DataGridViewTextBoxColumn8 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.Button1 = New System.Windows.Forms.Button()
-        Me.Button2 = New System.Windows.Forms.Button()
-        Me.Button3 = New System.Windows.Forms.Button()
         Me.Button4 = New System.Windows.Forms.Button()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.ComboBoxChofer = New System.Windows.Forms.ComboBox()
@@ -64,6 +52,7 @@ Partial Class viajes
         Me.SociosTableAdapter = New pruebaBD.Database1DataSetTableAdapters.SociosTableAdapter()
         Me.VehiculoTableAdapter = New pruebaBD.Database1DataSetTableAdapters.VehiculoTableAdapter()
         Me.CheckBoxReserva = New System.Windows.Forms.CheckBox()
+        Me.CheckCta = New System.Windows.Forms.CheckBox()
         IdChoferLabel = New System.Windows.Forms.Label()
         IdSociosLabel = New System.Windows.Forms.Label()
         Fecha_origenLabel = New System.Windows.Forms.Label()
@@ -73,7 +62,6 @@ Partial Class viajes
         Lugar_destinoLabel = New System.Windows.Forms.Label()
         CType(Me.Database1DataSet, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.ViajesBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.ViajesDataGridView, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.ChoferBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.SociosBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.VehiculoBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -208,104 +196,20 @@ Partial Class viajes
         Me.Lugar_destinoTextBox.Size = New System.Drawing.Size(106, 20)
         Me.Lugar_destinoTextBox.TabIndex = 16
         '
-        'ViajesDataGridView
-        '
-        Me.ViajesDataGridView.AutoGenerateColumns = False
-        Me.ViajesDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.ViajesDataGridView.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.DataGridViewTextBoxColumn1, Me.idVehiculos, Me.DataGridViewTextBoxColumn2, Me.DataGridViewTextBoxColumn3, Me.DataGridViewTextBoxColumn4, Me.DataGridViewTextBoxColumn5, Me.DataGridViewTextBoxColumn6, Me.DataGridViewTextBoxColumn7, Me.DataGridViewTextBoxColumn8})
-        Me.ViajesDataGridView.DataSource = Me.ViajesBindingSource
-        Me.ViajesDataGridView.Location = New System.Drawing.Point(12, 325)
-        Me.ViajesDataGridView.Name = "ViajesDataGridView"
-        Me.ViajesDataGridView.Size = New System.Drawing.Size(973, 220)
-        Me.ViajesDataGridView.TabIndex = 17
-        '
-        'DataGridViewTextBoxColumn1
-        '
-        Me.DataGridViewTextBoxColumn1.DataPropertyName = "Registro"
-        Me.DataGridViewTextBoxColumn1.HeaderText = "Registro"
-        Me.DataGridViewTextBoxColumn1.Name = "DataGridViewTextBoxColumn1"
-        Me.DataGridViewTextBoxColumn1.ReadOnly = True
-        '
-        'idVehiculos
-        '
-        Me.idVehiculos.DataPropertyName = "idVehiculos"
-        Me.idVehiculos.HeaderText = "idVehiculos"
-        Me.idVehiculos.Name = "idVehiculos"
-        '
-        'DataGridViewTextBoxColumn2
-        '
-        Me.DataGridViewTextBoxColumn2.DataPropertyName = "idChofer"
-        Me.DataGridViewTextBoxColumn2.HeaderText = "idChofer"
-        Me.DataGridViewTextBoxColumn2.Name = "DataGridViewTextBoxColumn2"
-        '
-        'DataGridViewTextBoxColumn3
-        '
-        Me.DataGridViewTextBoxColumn3.DataPropertyName = "idSocios"
-        Me.DataGridViewTextBoxColumn3.HeaderText = "idSocios"
-        Me.DataGridViewTextBoxColumn3.Name = "DataGridViewTextBoxColumn3"
-        '
-        'DataGridViewTextBoxColumn4
-        '
-        Me.DataGridViewTextBoxColumn4.DataPropertyName = "fecha_origen"
-        Me.DataGridViewTextBoxColumn4.HeaderText = "fecha_origen"
-        Me.DataGridViewTextBoxColumn4.Name = "DataGridViewTextBoxColumn4"
-        '
-        'DataGridViewTextBoxColumn5
-        '
-        Me.DataGridViewTextBoxColumn5.DataPropertyName = "fecha_destino"
-        Me.DataGridViewTextBoxColumn5.HeaderText = "fecha_destino"
-        Me.DataGridViewTextBoxColumn5.Name = "DataGridViewTextBoxColumn5"
-        '
-        'DataGridViewTextBoxColumn6
-        '
-        Me.DataGridViewTextBoxColumn6.DataPropertyName = "Total"
-        Me.DataGridViewTextBoxColumn6.HeaderText = "Total"
-        Me.DataGridViewTextBoxColumn6.Name = "DataGridViewTextBoxColumn6"
-        '
-        'DataGridViewTextBoxColumn7
-        '
-        Me.DataGridViewTextBoxColumn7.DataPropertyName = "lugar_origen"
-        Me.DataGridViewTextBoxColumn7.HeaderText = "lugar_origen"
-        Me.DataGridViewTextBoxColumn7.Name = "DataGridViewTextBoxColumn7"
-        '
-        'DataGridViewTextBoxColumn8
-        '
-        Me.DataGridViewTextBoxColumn8.DataPropertyName = "lugar_destino"
-        Me.DataGridViewTextBoxColumn8.HeaderText = "lugar_destino"
-        Me.DataGridViewTextBoxColumn8.Name = "DataGridViewTextBoxColumn8"
-        '
         'Button1
         '
-        Me.Button1.Location = New System.Drawing.Point(640, 172)
+        Me.Button1.Location = New System.Drawing.Point(56, 317)
         Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(75, 23)
+        Me.Button1.Size = New System.Drawing.Size(105, 59)
         Me.Button1.TabIndex = 18
         Me.Button1.Text = "agregar"
         Me.Button1.UseVisualStyleBackColor = True
         '
-        'Button2
-        '
-        Me.Button2.Location = New System.Drawing.Point(640, 201)
-        Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(75, 23)
-        Me.Button2.TabIndex = 19
-        Me.Button2.Text = "eliminar"
-        Me.Button2.UseVisualStyleBackColor = True
-        '
-        'Button3
-        '
-        Me.Button3.Location = New System.Drawing.Point(751, 172)
-        Me.Button3.Name = "Button3"
-        Me.Button3.Size = New System.Drawing.Size(75, 23)
-        Me.Button3.TabIndex = 20
-        Me.Button3.Text = "modificar"
-        Me.Button3.UseVisualStyleBackColor = True
-        '
         'Button4
         '
-        Me.Button4.Location = New System.Drawing.Point(751, 201)
+        Me.Button4.Location = New System.Drawing.Point(214, 317)
         Me.Button4.Name = "Button4"
-        Me.Button4.Size = New System.Drawing.Size(75, 23)
+        Me.Button4.Size = New System.Drawing.Size(105, 59)
         Me.Button4.TabIndex = 21
         Me.Button4.Text = "volver"
         Me.Button4.UseVisualStyleBackColor = True
@@ -379,28 +283,36 @@ Partial Class viajes
         'CheckBoxReserva
         '
         Me.CheckBoxReserva.AutoSize = True
-        Me.CheckBoxReserva.Location = New System.Drawing.Point(320, 176)
+        Me.CheckBoxReserva.Location = New System.Drawing.Point(282, 165)
         Me.CheckBoxReserva.Name = "CheckBoxReserva"
         Me.CheckBoxReserva.Size = New System.Drawing.Size(66, 17)
         Me.CheckBoxReserva.TabIndex = 26
         Me.CheckBoxReserva.Text = "Reserva"
         Me.CheckBoxReserva.UseVisualStyleBackColor = True
         '
+        'CheckCta
+        '
+        Me.CheckCta.AutoSize = True
+        Me.CheckCta.Location = New System.Drawing.Point(282, 199)
+        Me.CheckCta.Name = "CheckCta"
+        Me.CheckCta.Size = New System.Drawing.Size(61, 17)
+        Me.CheckCta.TabIndex = 27
+        Me.CheckCta.Text = "Cta Cte"
+        Me.CheckCta.UseVisualStyleBackColor = True
+        '
         'viajes
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(1024, 576)
+        Me.ClientSize = New System.Drawing.Size(401, 437)
+        Me.Controls.Add(Me.CheckCta)
         Me.Controls.Add(Me.CheckBoxReserva)
         Me.Controls.Add(Me.ComboBoxVehiculo)
         Me.Controls.Add(Me.ComboBoxSocios)
         Me.Controls.Add(Me.ComboBoxChofer)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.Button4)
-        Me.Controls.Add(Me.Button3)
-        Me.Controls.Add(Me.Button2)
         Me.Controls.Add(Me.Button1)
-        Me.Controls.Add(Me.ViajesDataGridView)
         Me.Controls.Add(IdChoferLabel)
         Me.Controls.Add(IdSociosLabel)
         Me.Controls.Add(Fecha_origenLabel)
@@ -417,7 +329,6 @@ Partial Class viajes
         Me.Text = "viajes"
         CType(Me.Database1DataSet, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.ViajesBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.ViajesDataGridView, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.ChoferBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.SociosBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.VehiculoBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
@@ -434,20 +345,8 @@ Partial Class viajes
     Friend WithEvents TotalTextBox As System.Windows.Forms.TextBox
     Friend WithEvents Lugar_origenTextBox As System.Windows.Forms.TextBox
     Friend WithEvents Lugar_destinoTextBox As System.Windows.Forms.TextBox
-    Friend WithEvents ViajesDataGridView As System.Windows.Forms.DataGridView
     Friend WithEvents Button1 As System.Windows.Forms.Button
-    Friend WithEvents Button2 As System.Windows.Forms.Button
-    Friend WithEvents Button3 As System.Windows.Forms.Button
     Friend WithEvents Button4 As System.Windows.Forms.Button
-    Friend WithEvents DataGridViewTextBoxColumn1 As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents idVehiculos As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents DataGridViewTextBoxColumn2 As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents DataGridViewTextBoxColumn3 As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents DataGridViewTextBoxColumn4 As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents DataGridViewTextBoxColumn5 As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents DataGridViewTextBoxColumn6 As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents DataGridViewTextBoxColumn7 As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents DataGridViewTextBoxColumn8 As System.Windows.Forms.DataGridViewTextBoxColumn
     Friend WithEvents Label1 As System.Windows.Forms.Label
     Friend WithEvents ComboBoxChofer As System.Windows.Forms.ComboBox
     Friend WithEvents ComboBoxSocios As System.Windows.Forms.ComboBox
@@ -459,4 +358,5 @@ Partial Class viajes
     Friend WithEvents VehiculoBindingSource As System.Windows.Forms.BindingSource
     Friend WithEvents VehiculoTableAdapter As pruebaBD.Database1DataSetTableAdapters.VehiculoTableAdapter
     Friend WithEvents CheckBoxReserva As System.Windows.Forms.CheckBox
+    Friend WithEvents CheckCta As System.Windows.Forms.CheckBox
 End Class

@@ -1,9 +1,17 @@
 ﻿Public Class Inicio
 
-    Private Sub Inicio_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
-        'TODO: esta línea de código carga datos en la tabla 'Database1DataSet.Reserva' Puede moverla o quitarla según sea necesario.
-        ' Me.ReservaTableAdapter.Fill(Me.Database1DataSet.Reserva)
+    Dim conexion As conexion = New conexion()
 
+    Private Sub Inicio_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
+        conexion.conectar()
+        MostrarDatos()
+
+
+    End Sub
+
+    Public Sub MostrarDatos()
+        conexion.Consulta("SELECT REGISTRO, idChofer, idSocios, idVehiculos ,fecha_origen, lugar_origen, lugar_destino, Finalizado FROM VIAJES", "VIAJES")
+        DgvEstado.DataSource = conexion.ds.Tables("VIAJES")
     End Sub
 
     Private Sub BtnViajes_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles BtnViajes.Click

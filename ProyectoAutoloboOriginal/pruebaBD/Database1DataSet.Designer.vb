@@ -1813,6 +1813,8 @@ Partial Public Class Database1DataSet
         
         Private columnFinalizado As Global.System.Data.DataColumn
         
+        Private columnCta_cte As Global.System.Data.DataColumn
+        
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
         Public Sub New()
@@ -1937,6 +1939,14 @@ Partial Public Class Database1DataSet
         End Property
         
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Public ReadOnly Property Cta_cteColumn() As Global.System.Data.DataColumn
+            Get
+                Return Me.columnCta_cte
+            End Get
+        End Property
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0"),  _
          Global.System.ComponentModel.Browsable(false)>  _
         Public ReadOnly Property Count() As Integer
@@ -1973,9 +1983,9 @@ Partial Public Class Database1DataSet
         
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
-        Public Overloads Function AddViajesRow(ByVal idChofer As Integer, ByVal idSocios As Integer, ByVal fecha_origen As Date, ByVal fecha_destino As Date, ByVal Total As Double, ByVal lugar_origen As String, ByVal lugar_destino As String, ByVal idVehiculos As Integer, ByVal Reserva As String, ByVal Finalizado As String) As ViajesRow
+        Public Overloads Function AddViajesRow(ByVal idChofer As Integer, ByVal idSocios As Integer, ByVal fecha_origen As Date, ByVal fecha_destino As Date, ByVal Total As Double, ByVal lugar_origen As String, ByVal lugar_destino As String, ByVal idVehiculos As Integer, ByVal Reserva As String, ByVal Finalizado As String, ByVal Cta_cte As String) As ViajesRow
             Dim rowViajesRow As ViajesRow = CType(Me.NewRow,ViajesRow)
-            Dim columnValuesArray() As Object = New Object() {Nothing, idChofer, idSocios, fecha_origen, fecha_destino, Total, lugar_origen, lugar_destino, idVehiculos, Reserva, Finalizado}
+            Dim columnValuesArray() As Object = New Object() {Nothing, idChofer, idSocios, fecha_origen, fecha_destino, Total, lugar_origen, lugar_destino, idVehiculos, Reserva, Finalizado, Cta_cte}
             rowViajesRow.ItemArray = columnValuesArray
             Me.Rows.Add(rowViajesRow)
             Return rowViajesRow
@@ -2015,6 +2025,7 @@ Partial Public Class Database1DataSet
             Me.columnidVehiculos = MyBase.Columns("idVehiculos")
             Me.columnReserva = MyBase.Columns("Reserva")
             Me.columnFinalizado = MyBase.Columns("Finalizado")
+            Me.columnCta_cte = MyBase.Columns("Cta_cte")
         End Sub
         
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
@@ -2042,6 +2053,8 @@ Partial Public Class Database1DataSet
             MyBase.Columns.Add(Me.columnReserva)
             Me.columnFinalizado = New Global.System.Data.DataColumn("Finalizado", GetType(String), Nothing, Global.System.Data.MappingType.Element)
             MyBase.Columns.Add(Me.columnFinalizado)
+            Me.columnCta_cte = New Global.System.Data.DataColumn("Cta_cte", GetType(String), Nothing, Global.System.Data.MappingType.Element)
+            MyBase.Columns.Add(Me.columnCta_cte)
             Me.Constraints.Add(New Global.System.Data.UniqueConstraint("Constraint1", New Global.System.Data.DataColumn() {Me.columnRegistro}, true))
             Me.columnRegistro.AutoIncrement = true
             Me.columnRegistro.AutoIncrementSeed = -1
@@ -2055,6 +2068,7 @@ Partial Public Class Database1DataSet
             Me.columnlugar_destino.MaxLength = 100
             Me.columnReserva.MaxLength = 20
             Me.columnFinalizado.MaxLength = 20
+            Me.columnCta_cte.MaxLength = 20
         End Sub
         
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
@@ -3051,6 +3065,21 @@ Partial Public Class Database1DataSet
         
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Public Property Cta_cte() As String
+            Get
+                Try 
+                    Return CType(Me(Me.tableViajes.Cta_cteColumn),String)
+                Catch e As Global.System.InvalidCastException
+                    Throw New Global.System.Data.StrongTypingException("El valor de la columna 'Cta_cte' de la tabla 'Viajes' es DBNull.", e)
+                End Try
+            End Get
+            Set
+                Me(Me.tableViajes.Cta_cteColumn) = value
+            End Set
+        End Property
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
         Public Function Isfecha_origenNull() As Boolean
             Return Me.IsNull(Me.tableViajes.fecha_origenColumn)
         End Function
@@ -3143,6 +3172,18 @@ Partial Public Class Database1DataSet
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
         Public Sub SetFinalizadoNull()
             Me(Me.tableViajes.FinalizadoColumn) = Global.System.Convert.DBNull
+        End Sub
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Public Function IsCta_cteNull() As Boolean
+            Return Me.IsNull(Me.tableViajes.Cta_cteColumn)
+        End Function
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Public Sub SetCta_cteNull()
+            Me(Me.tableViajes.Cta_cteColumn) = Global.System.Convert.DBNull
         End Sub
     End Class
     
@@ -5168,6 +5209,7 @@ Namespace Database1DataSetTableAdapters
             tableMapping.ColumnMappings.Add("idVehiculos", "idVehiculos")
             tableMapping.ColumnMappings.Add("Reserva", "Reserva")
             tableMapping.ColumnMappings.Add("Finalizado", "Finalizado")
+            tableMapping.ColumnMappings.Add("Cta_cte", "Cta_cte")
             Me._adapter.TableMappings.Add(tableMapping)
             Me._adapter.DeleteCommand = New Global.System.Data.SqlServerCe.SqlCeCommand()
             Me._adapter.DeleteCommand.Connection = Me.Connection
@@ -5177,8 +5219,8 @@ Namespace Database1DataSetTableAdapters
             Me._adapter.InsertCommand = New Global.System.Data.SqlServerCe.SqlCeCommand()
             Me._adapter.InsertCommand.Connection = Me.Connection
             Me._adapter.InsertCommand.CommandText = "INSERT INTO [Viajes] ([idChofer], [idSocios], [fecha_origen], [fecha_destino], [T"& _ 
-                "otal], [lugar_origen], [lugar_destino], [idVehiculos], [Finalizado], [Reserva]) "& _ 
-                "VALUES (@p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9, @p10)"
+                "otal], [lugar_origen], [lugar_destino], [idVehiculos], [Finalizado], [Reserva], "& _ 
+                "[Cta_cte]) VALUES (@p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9, @p10, @p11)"
             Me._adapter.InsertCommand.CommandType = Global.System.Data.CommandType.Text
             Me._adapter.InsertCommand.Parameters.Add(New Global.System.Data.SqlServerCe.SqlCeParameter("@p1", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, true, 0, 0, "idChofer", Global.System.Data.DataRowVersion.Current, Nothing))
             Me._adapter.InsertCommand.Parameters.Add(New Global.System.Data.SqlServerCe.SqlCeParameter("@p2", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, true, 0, 0, "idSocios", Global.System.Data.DataRowVersion.Current, Nothing))
@@ -5190,12 +5232,13 @@ Namespace Database1DataSetTableAdapters
             Me._adapter.InsertCommand.Parameters.Add(New Global.System.Data.SqlServerCe.SqlCeParameter("@p8", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, true, 0, 0, "idVehiculos", Global.System.Data.DataRowVersion.Current, Nothing))
             Me._adapter.InsertCommand.Parameters.Add(New Global.System.Data.SqlServerCe.SqlCeParameter("@p9", Global.System.Data.SqlDbType.NVarChar, 0, Global.System.Data.ParameterDirection.Input, true, 0, 0, "Finalizado", Global.System.Data.DataRowVersion.Current, Nothing))
             Me._adapter.InsertCommand.Parameters.Add(New Global.System.Data.SqlServerCe.SqlCeParameter("@p10", Global.System.Data.SqlDbType.NVarChar, 0, Global.System.Data.ParameterDirection.Input, true, 0, 0, "Reserva", Global.System.Data.DataRowVersion.Current, Nothing))
+            Me._adapter.InsertCommand.Parameters.Add(New Global.System.Data.SqlServerCe.SqlCeParameter("@p11", Global.System.Data.SqlDbType.NVarChar, 0, Global.System.Data.ParameterDirection.Input, true, 0, 0, "Cta_cte", Global.System.Data.DataRowVersion.Current, Nothing))
             Me._adapter.UpdateCommand = New Global.System.Data.SqlServerCe.SqlCeCommand()
             Me._adapter.UpdateCommand.Connection = Me.Connection
             Me._adapter.UpdateCommand.CommandText = "UPDATE [Viajes] SET [idChofer] = @p1, [idSocios] = @p2, [fecha_origen] = @p3, [fe"& _ 
                 "cha_destino] = @p4, [Total] = @p5, [lugar_origen] = @p6, [lugar_destino] = @p7, "& _ 
-                "[idVehiculos] = @p8, [Finalizado] = @p9, [Reserva] = @p10 WHERE (([Registro] = @"& _ 
-                "p11))"
+                "[idVehiculos] = @p8, [Finalizado] = @p9, [Reserva] = @p10, [Cta_cte] = @p11 WHER"& _ 
+                "E (([Registro] = @p12))"
             Me._adapter.UpdateCommand.CommandType = Global.System.Data.CommandType.Text
             Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlServerCe.SqlCeParameter("@p1", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, true, 0, 0, "idChofer", Global.System.Data.DataRowVersion.Current, Nothing))
             Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlServerCe.SqlCeParameter("@p2", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, true, 0, 0, "idSocios", Global.System.Data.DataRowVersion.Current, Nothing))
@@ -5207,7 +5250,8 @@ Namespace Database1DataSetTableAdapters
             Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlServerCe.SqlCeParameter("@p8", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, true, 0, 0, "idVehiculos", Global.System.Data.DataRowVersion.Current, Nothing))
             Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlServerCe.SqlCeParameter("@p9", Global.System.Data.SqlDbType.NVarChar, 0, Global.System.Data.ParameterDirection.Input, true, 0, 0, "Finalizado", Global.System.Data.DataRowVersion.Current, Nothing))
             Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlServerCe.SqlCeParameter("@p10", Global.System.Data.SqlDbType.NVarChar, 0, Global.System.Data.ParameterDirection.Input, true, 0, 0, "Reserva", Global.System.Data.DataRowVersion.Current, Nothing))
-            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlServerCe.SqlCeParameter("@p11", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, true, 0, 0, "Registro", Global.System.Data.DataRowVersion.Original, Nothing))
+            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlServerCe.SqlCeParameter("@p11", Global.System.Data.SqlDbType.NVarChar, 0, Global.System.Data.ParameterDirection.Input, true, 0, 0, "Cta_cte", Global.System.Data.DataRowVersion.Current, Nothing))
+            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlServerCe.SqlCeParameter("@p12", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, true, 0, 0, "Registro", Global.System.Data.DataRowVersion.Original, Nothing))
         End Sub
         
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
@@ -5224,7 +5268,7 @@ Namespace Database1DataSetTableAdapters
             Me._commandCollection(0) = New Global.System.Data.SqlServerCe.SqlCeCommand()
             Me._commandCollection(0).Connection = Me.Connection
             Me._commandCollection(0).CommandText = "SELECT Registro, idChofer, idSocios, fecha_origen, fecha_destino, Total, lugar_or"& _ 
-                "igen, lugar_destino, idVehiculos, Finalizado, Reserva FROM Viajes"
+                "igen, lugar_destino, idVehiculos, Finalizado, Reserva, Cta_cte FROM Viajes"
             Me._commandCollection(0).CommandType = Global.System.Data.CommandType.Text
         End Sub
         
@@ -5305,7 +5349,7 @@ Namespace Database1DataSetTableAdapters
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0"),  _
          Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter"),  _
          Global.System.ComponentModel.DataObjectMethodAttribute(Global.System.ComponentModel.DataObjectMethodType.Insert, true)>  _
-        Public Overloads Overridable Function Insert(ByVal p1 As Integer, ByVal p2 As Integer, ByVal p3 As Global.System.Nullable(Of Date), ByVal p4 As Global.System.Nullable(Of Date), ByVal p5 As Global.System.Nullable(Of Double), ByVal p6 As String, ByVal p7 As String, ByVal p8 As Global.System.Nullable(Of Integer), ByVal p9 As String, ByVal p10 As String) As Integer
+        Public Overloads Overridable Function Insert(ByVal p1 As Integer, ByVal p2 As Integer, ByVal p3 As Global.System.Nullable(Of Date), ByVal p4 As Global.System.Nullable(Of Date), ByVal p5 As Global.System.Nullable(Of Double), ByVal p6 As String, ByVal p7 As String, ByVal p8 As Global.System.Nullable(Of Integer), ByVal p9 As String, ByVal p10 As String, ByVal p11 As String) As Integer
             Me.Adapter.InsertCommand.Parameters(0).Value = CType(p1,Integer)
             Me.Adapter.InsertCommand.Parameters(1).Value = CType(p2,Integer)
             If (p3.HasValue = true) Then
@@ -5348,6 +5392,11 @@ Namespace Database1DataSetTableAdapters
             Else
                 Me.Adapter.InsertCommand.Parameters(9).Value = CType(p10,String)
             End If
+            If (p11 Is Nothing) Then
+                Me.Adapter.InsertCommand.Parameters(10).Value = Global.System.DBNull.Value
+            Else
+                Me.Adapter.InsertCommand.Parameters(10).Value = CType(p11,String)
+            End If
             Dim previousConnectionState As Global.System.Data.ConnectionState = Me.Adapter.InsertCommand.Connection.State
             If ((Me.Adapter.InsertCommand.Connection.State And Global.System.Data.ConnectionState.Open)  _
                         <> Global.System.Data.ConnectionState.Open) Then
@@ -5367,7 +5416,7 @@ Namespace Database1DataSetTableAdapters
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0"),  _
          Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter"),  _
          Global.System.ComponentModel.DataObjectMethodAttribute(Global.System.ComponentModel.DataObjectMethodType.Update, true)>  _
-        Public Overloads Overridable Function Update(ByVal p1 As Integer, ByVal p2 As Integer, ByVal p3 As Global.System.Nullable(Of Date), ByVal p4 As Global.System.Nullable(Of Date), ByVal p5 As Global.System.Nullable(Of Double), ByVal p6 As String, ByVal p7 As String, ByVal p8 As Global.System.Nullable(Of Integer), ByVal p9 As String, ByVal p10 As String, ByVal p11 As Integer) As Integer
+        Public Overloads Overridable Function Update(ByVal p1 As Integer, ByVal p2 As Integer, ByVal p3 As Global.System.Nullable(Of Date), ByVal p4 As Global.System.Nullable(Of Date), ByVal p5 As Global.System.Nullable(Of Double), ByVal p6 As String, ByVal p7 As String, ByVal p8 As Global.System.Nullable(Of Integer), ByVal p9 As String, ByVal p10 As String, ByVal p11 As String, ByVal p12 As Integer) As Integer
             Me.Adapter.UpdateCommand.Parameters(0).Value = CType(p1,Integer)
             Me.Adapter.UpdateCommand.Parameters(1).Value = CType(p2,Integer)
             If (p3.HasValue = true) Then
@@ -5410,7 +5459,12 @@ Namespace Database1DataSetTableAdapters
             Else
                 Me.Adapter.UpdateCommand.Parameters(9).Value = CType(p10,String)
             End If
-            Me.Adapter.UpdateCommand.Parameters(10).Value = CType(p11,Integer)
+            If (p11 Is Nothing) Then
+                Me.Adapter.UpdateCommand.Parameters(10).Value = Global.System.DBNull.Value
+            Else
+                Me.Adapter.UpdateCommand.Parameters(10).Value = CType(p11,String)
+            End If
+            Me.Adapter.UpdateCommand.Parameters(11).Value = CType(p12,Integer)
             Dim previousConnectionState As Global.System.Data.ConnectionState = Me.Adapter.UpdateCommand.Connection.State
             If ((Me.Adapter.UpdateCommand.Connection.State And Global.System.Data.ConnectionState.Open)  _
                         <> Global.System.Data.ConnectionState.Open) Then

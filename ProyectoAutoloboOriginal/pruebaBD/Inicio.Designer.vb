@@ -29,23 +29,25 @@ Partial Class Inicio
         Me.Database1DataSet = New pruebaBD.Database1DataSet()
         Me.TableAdapterManager = New pruebaBD.Database1DataSetTableAdapters.TableAdapterManager()
         Me.BtnReserva = New System.Windows.Forms.Button()
-        Me.TextBox1 = New System.Windows.Forms.TextBox()
-        Me.Label1 = New System.Windows.Forms.Label()
         Me.MenuStrip1 = New System.Windows.Forms.MenuStrip()
         Me.ArchivoToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.VerToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ResumenToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
         Me.ResumenToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.LiquidacionChoferToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.AyudaToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ConfiguracionToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.ResumenToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
-        Me.LiquidacionChoferToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.DgvEstado = New System.Windows.Forms.DataGridView()
+        Me.DataGridView2 = New System.Windows.Forms.DataGridView()
         CType(Me.Database1DataSet, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.MenuStrip1.SuspendLayout()
+        CType(Me.DgvEstado, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.DataGridView2, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'BtnViajes
         '
-        Me.BtnViajes.Location = New System.Drawing.Point(29, 112)
+        Me.BtnViajes.Location = New System.Drawing.Point(29, 147)
         Me.BtnViajes.Name = "BtnViajes"
         Me.BtnViajes.Size = New System.Drawing.Size(132, 58)
         Me.BtnViajes.TabIndex = 0
@@ -54,7 +56,7 @@ Partial Class Inicio
         '
         'BtnSocio
         '
-        Me.BtnSocio.Location = New System.Drawing.Point(29, 203)
+        Me.BtnSocio.Location = New System.Drawing.Point(29, 235)
         Me.BtnSocio.Name = "BtnSocio"
         Me.BtnSocio.Size = New System.Drawing.Size(132, 59)
         Me.BtnSocio.TabIndex = 1
@@ -63,7 +65,7 @@ Partial Class Inicio
         '
         'BtnChoferes
         '
-        Me.BtnChoferes.Location = New System.Drawing.Point(29, 297)
+        Me.BtnChoferes.Location = New System.Drawing.Point(29, 325)
         Me.BtnChoferes.Name = "BtnChoferes"
         Me.BtnChoferes.Size = New System.Drawing.Size(132, 58)
         Me.BtnChoferes.TabIndex = 2
@@ -72,7 +74,7 @@ Partial Class Inicio
         '
         'BtnVehiculos
         '
-        Me.BtnVehiculos.Location = New System.Drawing.Point(29, 387)
+        Me.BtnVehiculos.Location = New System.Drawing.Point(29, 413)
         Me.BtnVehiculos.Name = "BtnVehiculos"
         Me.BtnVehiculos.Size = New System.Drawing.Size(132, 63)
         Me.BtnVehiculos.TabIndex = 3
@@ -97,35 +99,19 @@ Partial Class Inicio
         '
         'BtnReserva
         '
-        Me.BtnReserva.Location = New System.Drawing.Point(196, 112)
+        Me.BtnReserva.Location = New System.Drawing.Point(29, 59)
         Me.BtnReserva.Name = "BtnReserva"
         Me.BtnReserva.Size = New System.Drawing.Size(124, 58)
         Me.BtnReserva.TabIndex = 7
         Me.BtnReserva.Text = "Reservas"
         Me.BtnReserva.UseVisualStyleBackColor = True
         '
-        'TextBox1
-        '
-        Me.TextBox1.Location = New System.Drawing.Point(447, 288)
-        Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(119, 20)
-        Me.TextBox1.TabIndex = 8
-        '
-        'Label1
-        '
-        Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(402, 291)
-        Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(39, 13)
-        Me.Label1.TabIndex = 9
-        Me.Label1.Text = "Label1"
-        '
         'MenuStrip1
         '
         Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ArchivoToolStripMenuItem, Me.VerToolStripMenuItem, Me.ResumenToolStripMenuItem, Me.AyudaToolStripMenuItem, Me.ConfiguracionToolStripMenuItem})
         Me.MenuStrip1.Location = New System.Drawing.Point(0, 0)
         Me.MenuStrip1.Name = "MenuStrip1"
-        Me.MenuStrip1.Size = New System.Drawing.Size(972, 24)
+        Me.MenuStrip1.Size = New System.Drawing.Size(1149, 24)
         Me.MenuStrip1.TabIndex = 10
         Me.MenuStrip1.Text = "MenuStrip1"
         '
@@ -142,12 +128,24 @@ Partial Class Inicio
         Me.VerToolStripMenuItem.Size = New System.Drawing.Size(35, 20)
         Me.VerToolStripMenuItem.Text = "Ver"
         '
+        'ResumenToolStripMenuItem1
+        '
+        Me.ResumenToolStripMenuItem1.Name = "ResumenToolStripMenuItem1"
+        Me.ResumenToolStripMenuItem1.Size = New System.Drawing.Size(123, 22)
+        Me.ResumenToolStripMenuItem1.Text = "Resumen"
+        '
         'ResumenToolStripMenuItem
         '
         Me.ResumenToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.LiquidacionChoferToolStripMenuItem})
         Me.ResumenToolStripMenuItem.Name = "ResumenToolStripMenuItem"
         Me.ResumenToolStripMenuItem.Size = New System.Drawing.Size(59, 20)
         Me.ResumenToolStripMenuItem.Text = "Gestion"
+        '
+        'LiquidacionChoferToolStripMenuItem
+        '
+        Me.LiquidacionChoferToolStripMenuItem.Name = "LiquidacionChoferToolStripMenuItem"
+        Me.LiquidacionChoferToolStripMenuItem.Size = New System.Drawing.Size(173, 22)
+        Me.LiquidacionChoferToolStripMenuItem.Text = "Liquidacion chofer"
         '
         'AyudaToolStripMenuItem
         '
@@ -161,25 +159,29 @@ Partial Class Inicio
         Me.ConfiguracionToolStripMenuItem.Size = New System.Drawing.Size(95, 20)
         Me.ConfiguracionToolStripMenuItem.Text = "Configuracion"
         '
-        'ResumenToolStripMenuItem1
+        'DgvEstado
         '
-        Me.ResumenToolStripMenuItem1.Name = "ResumenToolStripMenuItem1"
-        Me.ResumenToolStripMenuItem1.Size = New System.Drawing.Size(152, 22)
-        Me.ResumenToolStripMenuItem1.Text = "Resumen"
+        Me.DgvEstado.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.DgvEstado.Location = New System.Drawing.Point(851, 59)
+        Me.DgvEstado.Name = "DgvEstado"
+        Me.DgvEstado.Size = New System.Drawing.Size(286, 522)
+        Me.DgvEstado.TabIndex = 11
         '
-        'LiquidacionChoferToolStripMenuItem
+        'DataGridView2
         '
-        Me.LiquidacionChoferToolStripMenuItem.Name = "LiquidacionChoferToolStripMenuItem"
-        Me.LiquidacionChoferToolStripMenuItem.Size = New System.Drawing.Size(173, 22)
-        Me.LiquidacionChoferToolStripMenuItem.Text = "Liquidacion chofer"
+        Me.DataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.DataGridView2.Location = New System.Drawing.Point(201, 426)
+        Me.DataGridView2.Name = "DataGridView2"
+        Me.DataGridView2.Size = New System.Drawing.Size(592, 194)
+        Me.DataGridView2.TabIndex = 12
         '
         'Inicio
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(972, 511)
-        Me.Controls.Add(Me.Label1)
-        Me.Controls.Add(Me.TextBox1)
+        Me.ClientSize = New System.Drawing.Size(1149, 632)
+        Me.Controls.Add(Me.DataGridView2)
+        Me.Controls.Add(Me.DgvEstado)
         Me.Controls.Add(Me.BtnReserva)
         Me.Controls.Add(Me.BtnVehiculos)
         Me.Controls.Add(Me.BtnChoferes)
@@ -192,6 +194,8 @@ Partial Class Inicio
         CType(Me.Database1DataSet, System.ComponentModel.ISupportInitialize).EndInit()
         Me.MenuStrip1.ResumeLayout(False)
         Me.MenuStrip1.PerformLayout()
+        CType(Me.DgvEstado, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.DataGridView2, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -205,8 +209,6 @@ Partial Class Inicio
 
     Friend WithEvents TableAdapterManager As pruebaBD.Database1DataSetTableAdapters.TableAdapterManager
     Friend WithEvents BtnReserva As System.Windows.Forms.Button
-    Friend WithEvents TextBox1 As System.Windows.Forms.TextBox
-    Friend WithEvents Label1 As System.Windows.Forms.Label
     Friend WithEvents MenuStrip1 As System.Windows.Forms.MenuStrip
     Friend WithEvents ArchivoToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents VerToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
@@ -215,4 +217,6 @@ Partial Class Inicio
     Friend WithEvents LiquidacionChoferToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents AyudaToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents ConfiguracionToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents DgvEstado As System.Windows.Forms.DataGridView
+    Friend WithEvents DataGridView2 As System.Windows.Forms.DataGridView
 End Class
