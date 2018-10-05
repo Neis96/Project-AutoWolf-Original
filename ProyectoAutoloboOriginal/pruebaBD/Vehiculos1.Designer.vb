@@ -32,40 +32,14 @@ Partial Class Vehiculos1
         Dim Venc_vtvLabel As System.Windows.Forms.Label
         Dim ColorLabel As System.Windows.Forms.Label
         Dim DueñoLabel As System.Windows.Forms.Label
-        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Vehiculos1))
         Me.TextBoxConsulta = New System.Windows.Forms.TextBox()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.BtnVolver = New System.Windows.Forms.Button()
         Me.BtnModificar = New System.Windows.Forms.Button()
         Me.BtnAgregar = New System.Windows.Forms.Button()
-        Me.VehiculoBindingNavigator = New System.Windows.Forms.BindingNavigator(Me.components)
-        Me.BindingNavigatorAddNewItem = New System.Windows.Forms.ToolStripButton()
         Me.VehiculoBindingSource = New System.Windows.Forms.BindingSource(Me.components)
         Me.Database1DataSet = New pruebaBD.Database1DataSet()
-        Me.BindingNavigatorCountItem = New System.Windows.Forms.ToolStripLabel()
-        Me.BindingNavigatorDeleteItem = New System.Windows.Forms.ToolStripButton()
-        Me.BindingNavigatorMoveFirstItem = New System.Windows.Forms.ToolStripButton()
-        Me.BindingNavigatorMovePreviousItem = New System.Windows.Forms.ToolStripButton()
-        Me.BindingNavigatorSeparator = New System.Windows.Forms.ToolStripSeparator()
-        Me.BindingNavigatorPositionItem = New System.Windows.Forms.ToolStripTextBox()
-        Me.BindingNavigatorSeparator1 = New System.Windows.Forms.ToolStripSeparator()
-        Me.BindingNavigatorMoveNextItem = New System.Windows.Forms.ToolStripButton()
-        Me.BindingNavigatorMoveLastItem = New System.Windows.Forms.ToolStripButton()
-        Me.BindingNavigatorSeparator2 = New System.Windows.Forms.ToolStripSeparator()
-        Me.VehiculoBindingNavigatorSaveItem = New System.Windows.Forms.ToolStripButton()
         Me.VehiculoDataGridView = New System.Windows.Forms.DataGridView()
-        Me.ModeloTextBox = New System.Windows.Forms.TextBox()
-        Me.MarcaTextBox = New System.Windows.Forms.TextBox()
-        Me.AñoDateTimePicker = New System.Windows.Forms.DateTimePicker()
-        Me.DominioTextBox = New System.Windows.Forms.TextBox()
-        Me.SeguroTextBox = New System.Windows.Forms.TextBox()
-        Me.Venc_gnc_DateTimePicker = New System.Windows.Forms.DateTimePicker()
-        Me.Venc_vtvDateTimePicker = New System.Windows.Forms.DateTimePicker()
-        Me.ColorTextBox = New System.Windows.Forms.TextBox()
-        Me.DueñoTextBox = New System.Windows.Forms.TextBox()
-        Me.VehiculoTableAdapter = New pruebaBD.Database1DataSetTableAdapters.VehiculoTableAdapter()
-        Me.TableAdapterManager = New pruebaBD.Database1DataSetTableAdapters.TableAdapterManager()
-        Me.BtnConsulta = New System.Windows.Forms.Button()
         Me.DataGridViewTextBoxColumn10 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.DataGridViewTextBoxColumn4 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.DataGridViewTextBoxColumn2 = New System.Windows.Forms.DataGridViewTextBoxColumn()
@@ -76,6 +50,18 @@ Partial Class Vehiculos1
         Me.DataGridViewTextBoxColumn5 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.DataGridViewTextBoxColumn6 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.DataGridViewTextBoxColumn7 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.VehiculoTableAdapter = New pruebaBD.Database1DataSetTableAdapters.VehiculoTableAdapter()
+        Me.TableAdapterManager = New pruebaBD.Database1DataSetTableAdapters.TableAdapterManager()
+        Me.BtnConsulta = New System.Windows.Forms.Button()
+        Me.DateTimePickerVtv = New System.Windows.Forms.DateTimePicker()
+        Me.DateTimePickerAno = New System.Windows.Forms.DateTimePicker()
+        Me.DateTimePickerGnc = New System.Windows.Forms.DateTimePicker()
+        Me.TextBoxSeguro = New System.Windows.Forms.TextBox()
+        Me.TextBoxDueno = New System.Windows.Forms.TextBox()
+        Me.TextBoxColor = New System.Windows.Forms.TextBox()
+        Me.TextBoxModelo = New System.Windows.Forms.TextBox()
+        Me.TextBoxMarca = New System.Windows.Forms.TextBox()
+        Me.TextBoxDominio = New System.Windows.Forms.TextBox()
         ModeloLabel = New System.Windows.Forms.Label()
         MarcaLabel = New System.Windows.Forms.Label()
         AñoLabel = New System.Windows.Forms.Label()
@@ -85,93 +71,10 @@ Partial Class Vehiculos1
         Venc_vtvLabel = New System.Windows.Forms.Label()
         ColorLabel = New System.Windows.Forms.Label()
         DueñoLabel = New System.Windows.Forms.Label()
-        CType(Me.VehiculoBindingNavigator, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.VehiculoBindingNavigator.SuspendLayout()
         CType(Me.VehiculoBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.Database1DataSet, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.VehiculoDataGridView, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
-        '
-        'ModeloLabel
-        '
-        ModeloLabel.AutoSize = True
-        ModeloLabel.Location = New System.Drawing.Point(27, 130)
-        ModeloLabel.Name = "ModeloLabel"
-        ModeloLabel.Size = New System.Drawing.Size(44, 13)
-        ModeloLabel.TabIndex = 52
-        ModeloLabel.Text = "modelo:"
-        '
-        'MarcaLabel
-        '
-        MarcaLabel.AutoSize = True
-        MarcaLabel.Location = New System.Drawing.Point(25, 92)
-        MarcaLabel.Name = "MarcaLabel"
-        MarcaLabel.Size = New System.Drawing.Size(39, 13)
-        MarcaLabel.TabIndex = 54
-        MarcaLabel.Text = "marca:"
-        '
-        'AñoLabel
-        '
-        AñoLabel.AutoSize = True
-        AñoLabel.Location = New System.Drawing.Point(27, 163)
-        AñoLabel.Name = "AñoLabel"
-        AñoLabel.Size = New System.Drawing.Size(28, 13)
-        AñoLabel.TabIndex = 56
-        AñoLabel.Text = "año:"
-        '
-        'DominioLabel
-        '
-        DominioLabel.AutoSize = True
-        DominioLabel.Location = New System.Drawing.Point(25, 59)
-        DominioLabel.Name = "DominioLabel"
-        DominioLabel.Size = New System.Drawing.Size(46, 13)
-        DominioLabel.TabIndex = 58
-        DominioLabel.Text = "dominio:"
-        '
-        'SeguroLabel
-        '
-        SeguroLabel.AutoSize = True
-        SeguroLabel.Location = New System.Drawing.Point(317, 59)
-        SeguroLabel.Name = "SeguroLabel"
-        SeguroLabel.Size = New System.Drawing.Size(42, 13)
-        SeguroLabel.TabIndex = 60
-        SeguroLabel.Text = "seguro:"
-        '
-        'Venc_gnc_Label
-        '
-        Venc_gnc_Label.AutoSize = True
-        Venc_gnc_Label.Location = New System.Drawing.Point(317, 86)
-        Venc_gnc_Label.Name = "Venc_gnc_Label"
-        Venc_gnc_Label.Size = New System.Drawing.Size(58, 13)
-        Venc_gnc_Label.TabIndex = 62
-        Venc_gnc_Label.Text = "venc gnc :"
-        '
-        'Venc_vtvLabel
-        '
-        Venc_vtvLabel.AutoSize = True
-        Venc_vtvLabel.Location = New System.Drawing.Point(317, 112)
-        Venc_vtvLabel.Name = "Venc_vtvLabel"
-        Venc_vtvLabel.Size = New System.Drawing.Size(52, 13)
-        Venc_vtvLabel.TabIndex = 64
-        Venc_vtvLabel.Text = "venc vtv:"
-        '
-        'ColorLabel
-        '
-        ColorLabel.AutoSize = True
-        ColorLabel.Location = New System.Drawing.Point(27, 191)
-        ColorLabel.Name = "ColorLabel"
-        ColorLabel.Size = New System.Drawing.Size(33, 13)
-        ColorLabel.TabIndex = 66
-        ColorLabel.Text = "color:"
-        '
-        'DueñoLabel
-        '
-        DueñoLabel.AutoSize = True
-        DueñoLabel.Location = New System.Drawing.Point(27, 217)
-        DueñoLabel.Name = "DueñoLabel"
-        DueñoLabel.Size = New System.Drawing.Size(40, 13)
-        DueñoLabel.TabIndex = 68
-        DueñoLabel.Text = "dueño:"
         '
         'TextBoxConsulta
         '
@@ -209,39 +112,12 @@ Partial Class Vehiculos1
         '
         'BtnAgregar
         '
-        Me.BtnAgregar.Location = New System.Drawing.Point(370, 174)
+        Me.BtnAgregar.Location = New System.Drawing.Point(243, 168)
         Me.BtnAgregar.Name = "BtnAgregar"
         Me.BtnAgregar.Size = New System.Drawing.Size(139, 60)
         Me.BtnAgregar.TabIndex = 28
         Me.BtnAgregar.Text = "Agregar"
         Me.BtnAgregar.UseVisualStyleBackColor = True
-        '
-        'VehiculoBindingNavigator
-        '
-        Me.VehiculoBindingNavigator.AddNewItem = Me.BindingNavigatorAddNewItem
-        Me.VehiculoBindingNavigator.BindingSource = Me.VehiculoBindingSource
-        Me.VehiculoBindingNavigator.CountItem = Me.BindingNavigatorCountItem
-        Me.VehiculoBindingNavigator.DeleteItem = Me.BindingNavigatorDeleteItem
-        Me.VehiculoBindingNavigator.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.BindingNavigatorMoveFirstItem, Me.BindingNavigatorMovePreviousItem, Me.BindingNavigatorSeparator, Me.BindingNavigatorPositionItem, Me.BindingNavigatorCountItem, Me.BindingNavigatorSeparator1, Me.BindingNavigatorMoveNextItem, Me.BindingNavigatorMoveLastItem, Me.BindingNavigatorSeparator2, Me.BindingNavigatorAddNewItem, Me.BindingNavigatorDeleteItem, Me.VehiculoBindingNavigatorSaveItem})
-        Me.VehiculoBindingNavigator.Location = New System.Drawing.Point(0, 0)
-        Me.VehiculoBindingNavigator.MoveFirstItem = Me.BindingNavigatorMoveFirstItem
-        Me.VehiculoBindingNavigator.MoveLastItem = Me.BindingNavigatorMoveLastItem
-        Me.VehiculoBindingNavigator.MoveNextItem = Me.BindingNavigatorMoveNextItem
-        Me.VehiculoBindingNavigator.MovePreviousItem = Me.BindingNavigatorMovePreviousItem
-        Me.VehiculoBindingNavigator.Name = "VehiculoBindingNavigator"
-        Me.VehiculoBindingNavigator.PositionItem = Me.BindingNavigatorPositionItem
-        Me.VehiculoBindingNavigator.Size = New System.Drawing.Size(1082, 25)
-        Me.VehiculoBindingNavigator.TabIndex = 52
-        Me.VehiculoBindingNavigator.Text = "BindingNavigator1"
-        '
-        'BindingNavigatorAddNewItem
-        '
-        Me.BindingNavigatorAddNewItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image
-        Me.BindingNavigatorAddNewItem.Image = CType(resources.GetObject("BindingNavigatorAddNewItem.Image"), System.Drawing.Image)
-        Me.BindingNavigatorAddNewItem.Name = "BindingNavigatorAddNewItem"
-        Me.BindingNavigatorAddNewItem.RightToLeftAutoMirrorImage = True
-        Me.BindingNavigatorAddNewItem.Size = New System.Drawing.Size(23, 22)
-        Me.BindingNavigatorAddNewItem.Text = "Agregar nuevo"
         '
         'VehiculoBindingSource
         '
@@ -253,90 +129,6 @@ Partial Class Vehiculos1
         Me.Database1DataSet.DataSetName = "Database1DataSet"
         Me.Database1DataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
         '
-        'BindingNavigatorCountItem
-        '
-        Me.BindingNavigatorCountItem.Name = "BindingNavigatorCountItem"
-        Me.BindingNavigatorCountItem.Size = New System.Drawing.Size(37, 22)
-        Me.BindingNavigatorCountItem.Text = "de {0}"
-        Me.BindingNavigatorCountItem.ToolTipText = "Número total de elementos"
-        '
-        'BindingNavigatorDeleteItem
-        '
-        Me.BindingNavigatorDeleteItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image
-        Me.BindingNavigatorDeleteItem.Image = CType(resources.GetObject("BindingNavigatorDeleteItem.Image"), System.Drawing.Image)
-        Me.BindingNavigatorDeleteItem.Name = "BindingNavigatorDeleteItem"
-        Me.BindingNavigatorDeleteItem.RightToLeftAutoMirrorImage = True
-        Me.BindingNavigatorDeleteItem.Size = New System.Drawing.Size(23, 22)
-        Me.BindingNavigatorDeleteItem.Text = "Eliminar"
-        '
-        'BindingNavigatorMoveFirstItem
-        '
-        Me.BindingNavigatorMoveFirstItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image
-        Me.BindingNavigatorMoveFirstItem.Image = CType(resources.GetObject("BindingNavigatorMoveFirstItem.Image"), System.Drawing.Image)
-        Me.BindingNavigatorMoveFirstItem.Name = "BindingNavigatorMoveFirstItem"
-        Me.BindingNavigatorMoveFirstItem.RightToLeftAutoMirrorImage = True
-        Me.BindingNavigatorMoveFirstItem.Size = New System.Drawing.Size(23, 22)
-        Me.BindingNavigatorMoveFirstItem.Text = "Mover primero"
-        '
-        'BindingNavigatorMovePreviousItem
-        '
-        Me.BindingNavigatorMovePreviousItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image
-        Me.BindingNavigatorMovePreviousItem.Image = CType(resources.GetObject("BindingNavigatorMovePreviousItem.Image"), System.Drawing.Image)
-        Me.BindingNavigatorMovePreviousItem.Name = "BindingNavigatorMovePreviousItem"
-        Me.BindingNavigatorMovePreviousItem.RightToLeftAutoMirrorImage = True
-        Me.BindingNavigatorMovePreviousItem.Size = New System.Drawing.Size(23, 22)
-        Me.BindingNavigatorMovePreviousItem.Text = "Mover anterior"
-        '
-        'BindingNavigatorSeparator
-        '
-        Me.BindingNavigatorSeparator.Name = "BindingNavigatorSeparator"
-        Me.BindingNavigatorSeparator.Size = New System.Drawing.Size(6, 25)
-        '
-        'BindingNavigatorPositionItem
-        '
-        Me.BindingNavigatorPositionItem.AccessibleName = "Posición"
-        Me.BindingNavigatorPositionItem.AutoSize = False
-        Me.BindingNavigatorPositionItem.Name = "BindingNavigatorPositionItem"
-        Me.BindingNavigatorPositionItem.Size = New System.Drawing.Size(50, 23)
-        Me.BindingNavigatorPositionItem.Text = "0"
-        Me.BindingNavigatorPositionItem.ToolTipText = "Posición actual"
-        '
-        'BindingNavigatorSeparator1
-        '
-        Me.BindingNavigatorSeparator1.Name = "BindingNavigatorSeparator1"
-        Me.BindingNavigatorSeparator1.Size = New System.Drawing.Size(6, 25)
-        '
-        'BindingNavigatorMoveNextItem
-        '
-        Me.BindingNavigatorMoveNextItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image
-        Me.BindingNavigatorMoveNextItem.Image = CType(resources.GetObject("BindingNavigatorMoveNextItem.Image"), System.Drawing.Image)
-        Me.BindingNavigatorMoveNextItem.Name = "BindingNavigatorMoveNextItem"
-        Me.BindingNavigatorMoveNextItem.RightToLeftAutoMirrorImage = True
-        Me.BindingNavigatorMoveNextItem.Size = New System.Drawing.Size(23, 22)
-        Me.BindingNavigatorMoveNextItem.Text = "Mover siguiente"
-        '
-        'BindingNavigatorMoveLastItem
-        '
-        Me.BindingNavigatorMoveLastItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image
-        Me.BindingNavigatorMoveLastItem.Image = CType(resources.GetObject("BindingNavigatorMoveLastItem.Image"), System.Drawing.Image)
-        Me.BindingNavigatorMoveLastItem.Name = "BindingNavigatorMoveLastItem"
-        Me.BindingNavigatorMoveLastItem.RightToLeftAutoMirrorImage = True
-        Me.BindingNavigatorMoveLastItem.Size = New System.Drawing.Size(23, 22)
-        Me.BindingNavigatorMoveLastItem.Text = "Mover último"
-        '
-        'BindingNavigatorSeparator2
-        '
-        Me.BindingNavigatorSeparator2.Name = "BindingNavigatorSeparator2"
-        Me.BindingNavigatorSeparator2.Size = New System.Drawing.Size(6, 25)
-        '
-        'VehiculoBindingNavigatorSaveItem
-        '
-        Me.VehiculoBindingNavigatorSaveItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image
-        Me.VehiculoBindingNavigatorSaveItem.Image = CType(resources.GetObject("VehiculoBindingNavigatorSaveItem.Image"), System.Drawing.Image)
-        Me.VehiculoBindingNavigatorSaveItem.Name = "VehiculoBindingNavigatorSaveItem"
-        Me.VehiculoBindingNavigatorSaveItem.Size = New System.Drawing.Size(23, 22)
-        Me.VehiculoBindingNavigatorSaveItem.Text = "Guardar datos"
-        '
         'VehiculoDataGridView
         '
         Me.VehiculoDataGridView.AutoGenerateColumns = False
@@ -347,102 +139,6 @@ Partial Class Vehiculos1
         Me.VehiculoDataGridView.Name = "VehiculoDataGridView"
         Me.VehiculoDataGridView.Size = New System.Drawing.Size(1049, 220)
         Me.VehiculoDataGridView.TabIndex = 52
-        '
-        'ModeloTextBox
-        '
-        Me.ModeloTextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.VehiculoBindingSource, "modelo", True))
-        Me.ModeloTextBox.Location = New System.Drawing.Point(94, 127)
-        Me.ModeloTextBox.Name = "ModeloTextBox"
-        Me.ModeloTextBox.Size = New System.Drawing.Size(194, 20)
-        Me.ModeloTextBox.TabIndex = 53
-        '
-        'MarcaTextBox
-        '
-        Me.MarcaTextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.VehiculoBindingSource, "marca", True))
-        Me.MarcaTextBox.Location = New System.Drawing.Point(92, 89)
-        Me.MarcaTextBox.Name = "MarcaTextBox"
-        Me.MarcaTextBox.Size = New System.Drawing.Size(194, 20)
-        Me.MarcaTextBox.TabIndex = 55
-        '
-        'AñoDateTimePicker
-        '
-        Me.AñoDateTimePicker.DataBindings.Add(New System.Windows.Forms.Binding("Value", Me.VehiculoBindingSource, "año", True))
-        Me.AñoDateTimePicker.Location = New System.Drawing.Point(94, 159)
-        Me.AñoDateTimePicker.Name = "AñoDateTimePicker"
-        Me.AñoDateTimePicker.Size = New System.Drawing.Size(194, 20)
-        Me.AñoDateTimePicker.TabIndex = 57
-        '
-        'DominioTextBox
-        '
-        Me.DominioTextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.VehiculoBindingSource, "dominio", True))
-        Me.DominioTextBox.Location = New System.Drawing.Point(92, 56)
-        Me.DominioTextBox.Name = "DominioTextBox"
-        Me.DominioTextBox.Size = New System.Drawing.Size(194, 20)
-        Me.DominioTextBox.TabIndex = 59
-        '
-        'SeguroTextBox
-        '
-        Me.SeguroTextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.VehiculoBindingSource, "seguro", True))
-        Me.SeguroTextBox.Location = New System.Drawing.Point(384, 56)
-        Me.SeguroTextBox.Name = "SeguroTextBox"
-        Me.SeguroTextBox.Size = New System.Drawing.Size(200, 20)
-        Me.SeguroTextBox.TabIndex = 61
-        '
-        'Venc_gnc_DateTimePicker
-        '
-        Me.Venc_gnc_DateTimePicker.DataBindings.Add(New System.Windows.Forms.Binding("Value", Me.VehiculoBindingSource, "venc_gnc ", True))
-        Me.Venc_gnc_DateTimePicker.Location = New System.Drawing.Point(384, 82)
-        Me.Venc_gnc_DateTimePicker.Name = "Venc_gnc_DateTimePicker"
-        Me.Venc_gnc_DateTimePicker.Size = New System.Drawing.Size(200, 20)
-        Me.Venc_gnc_DateTimePicker.TabIndex = 63
-        '
-        'Venc_vtvDateTimePicker
-        '
-        Me.Venc_vtvDateTimePicker.DataBindings.Add(New System.Windows.Forms.Binding("Value", Me.VehiculoBindingSource, "venc_vtv", True))
-        Me.Venc_vtvDateTimePicker.Location = New System.Drawing.Point(384, 108)
-        Me.Venc_vtvDateTimePicker.Name = "Venc_vtvDateTimePicker"
-        Me.Venc_vtvDateTimePicker.Size = New System.Drawing.Size(200, 20)
-        Me.Venc_vtvDateTimePicker.TabIndex = 65
-        '
-        'ColorTextBox
-        '
-        Me.ColorTextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.VehiculoBindingSource, "color", True))
-        Me.ColorTextBox.Location = New System.Drawing.Point(94, 188)
-        Me.ColorTextBox.Name = "ColorTextBox"
-        Me.ColorTextBox.Size = New System.Drawing.Size(200, 20)
-        Me.ColorTextBox.TabIndex = 67
-        '
-        'DueñoTextBox
-        '
-        Me.DueñoTextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.VehiculoBindingSource, "dueño", True))
-        Me.DueñoTextBox.Location = New System.Drawing.Point(94, 214)
-        Me.DueñoTextBox.Name = "DueñoTextBox"
-        Me.DueñoTextBox.Size = New System.Drawing.Size(200, 20)
-        Me.DueñoTextBox.TabIndex = 69
-        '
-        'VehiculoTableAdapter
-        '
-        Me.VehiculoTableAdapter.ClearBeforeFill = True
-        '
-        'TableAdapterManager
-        '
-        Me.TableAdapterManager.BackupDataSetBeforeUpdate = False
-        Me.TableAdapterManager.ChoferTableAdapter = Nothing
-        ' Me.TableAdapterManager.ReservaTableAdapter = Nothing
-        Me.TableAdapterManager.SociosTableAdapter = Nothing
-        Me.TableAdapterManager.UpdateOrder = pruebaBD.Database1DataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete
-        Me.TableAdapterManager.UsuarioTableAdapter = Nothing
-        Me.TableAdapterManager.VehiculoTableAdapter = Me.VehiculoTableAdapter
-        Me.TableAdapterManager.ViajesTableAdapter = Nothing
-        '
-        'BtnConsulta
-        '
-        Me.BtnConsulta.Location = New System.Drawing.Point(284, 322)
-        Me.BtnConsulta.Name = "BtnConsulta"
-        Me.BtnConsulta.Size = New System.Drawing.Size(75, 23)
-        Me.BtnConsulta.TabIndex = 70
-        Me.BtnConsulta.Text = "Consultar"
-        Me.BtnConsulta.UseVisualStyleBackColor = True
         '
         'DataGridViewTextBoxColumn10
         '
@@ -505,32 +201,202 @@ Partial Class Vehiculos1
         Me.DataGridViewTextBoxColumn7.HeaderText = "venc_vtv"
         Me.DataGridViewTextBoxColumn7.Name = "DataGridViewTextBoxColumn7"
         '
+        'VehiculoTableAdapter
+        '
+        Me.VehiculoTableAdapter.ClearBeforeFill = True
+        '
+        'TableAdapterManager
+        '
+        Me.TableAdapterManager.BackupDataSetBeforeUpdate = False
+        Me.TableAdapterManager.ChoferTableAdapter = Nothing
+        Me.TableAdapterManager.SociosTableAdapter = Nothing
+        Me.TableAdapterManager.UpdateOrder = pruebaBD.Database1DataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete
+        Me.TableAdapterManager.UsuarioTableAdapter = Nothing
+        Me.TableAdapterManager.VehiculoTableAdapter = Me.VehiculoTableAdapter
+        Me.TableAdapterManager.ViajesTableAdapter = Nothing
+        '
+        'BtnConsulta
+        '
+        Me.BtnConsulta.Location = New System.Drawing.Point(284, 322)
+        Me.BtnConsulta.Name = "BtnConsulta"
+        Me.BtnConsulta.Size = New System.Drawing.Size(75, 23)
+        Me.BtnConsulta.TabIndex = 70
+        Me.BtnConsulta.Text = "Consultar"
+        Me.BtnConsulta.UseVisualStyleBackColor = True
+        '
+        'DateTimePickerVtv
+        '
+        Me.DateTimePickerVtv.Format = System.Windows.Forms.DateTimePickerFormat.[Short]
+        Me.DateTimePickerVtv.Location = New System.Drawing.Point(282, 98)
+        Me.DateTimePickerVtv.Name = "DateTimePickerVtv"
+        Me.DateTimePickerVtv.Size = New System.Drawing.Size(100, 20)
+        Me.DateTimePickerVtv.TabIndex = 115
+        '
+        'DateTimePickerAno
+        '
+        Me.DateTimePickerAno.CustomFormat = "yyyy"
+        Me.DateTimePickerAno.Format = System.Windows.Forms.DateTimePickerFormat.[Short]
+        Me.DateTimePickerAno.Location = New System.Drawing.Point(83, 153)
+        Me.DateTimePickerAno.Name = "DateTimePickerAno"
+        Me.DateTimePickerAno.Size = New System.Drawing.Size(100, 20)
+        Me.DateTimePickerAno.TabIndex = 114
+        '
+        'DateTimePickerGnc
+        '
+        Me.DateTimePickerGnc.Format = System.Windows.Forms.DateTimePickerFormat.[Short]
+        Me.DateTimePickerGnc.Location = New System.Drawing.Point(282, 72)
+        Me.DateTimePickerGnc.Name = "DateTimePickerGnc"
+        Me.DateTimePickerGnc.Size = New System.Drawing.Size(100, 20)
+        Me.DateTimePickerGnc.TabIndex = 113
+        '
+        'TextBoxSeguro
+        '
+        Me.TextBoxSeguro.Location = New System.Drawing.Point(282, 46)
+        Me.TextBoxSeguro.Name = "TextBoxSeguro"
+        Me.TextBoxSeguro.Size = New System.Drawing.Size(100, 20)
+        Me.TextBoxSeguro.TabIndex = 112
+        '
+        'TextBoxDueno
+        '
+        Me.TextBoxDueno.Location = New System.Drawing.Point(83, 208)
+        Me.TextBoxDueno.Name = "TextBoxDueno"
+        Me.TextBoxDueno.Size = New System.Drawing.Size(100, 20)
+        Me.TextBoxDueno.TabIndex = 111
+        '
+        'TextBoxColor
+        '
+        Me.TextBoxColor.Location = New System.Drawing.Point(83, 181)
+        Me.TextBoxColor.Name = "TextBoxColor"
+        Me.TextBoxColor.Size = New System.Drawing.Size(100, 20)
+        Me.TextBoxColor.TabIndex = 110
+        '
+        'TextBoxModelo
+        '
+        Me.TextBoxModelo.Location = New System.Drawing.Point(83, 120)
+        Me.TextBoxModelo.Name = "TextBoxModelo"
+        Me.TextBoxModelo.Size = New System.Drawing.Size(100, 20)
+        Me.TextBoxModelo.TabIndex = 109
+        '
+        'TextBoxMarca
+        '
+        Me.TextBoxMarca.Location = New System.Drawing.Point(83, 82)
+        Me.TextBoxMarca.Name = "TextBoxMarca"
+        Me.TextBoxMarca.Size = New System.Drawing.Size(100, 20)
+        Me.TextBoxMarca.TabIndex = 108
+        '
+        'TextBoxDominio
+        '
+        Me.TextBoxDominio.Location = New System.Drawing.Point(83, 49)
+        Me.TextBoxDominio.Name = "TextBoxDominio"
+        Me.TextBoxDominio.Size = New System.Drawing.Size(100, 20)
+        Me.TextBoxDominio.TabIndex = 107
+        '
+        'ModeloLabel
+        '
+        ModeloLabel.AutoSize = True
+        ModeloLabel.Location = New System.Drawing.Point(32, 120)
+        ModeloLabel.Name = "ModeloLabel"
+        ModeloLabel.Size = New System.Drawing.Size(44, 13)
+        ModeloLabel.TabIndex = 98
+        ModeloLabel.Text = "modelo:"
+        '
+        'MarcaLabel
+        '
+        MarcaLabel.AutoSize = True
+        MarcaLabel.Location = New System.Drawing.Point(30, 82)
+        MarcaLabel.Name = "MarcaLabel"
+        MarcaLabel.Size = New System.Drawing.Size(39, 13)
+        MarcaLabel.TabIndex = 99
+        MarcaLabel.Text = "marca:"
+        '
+        'AñoLabel
+        '
+        AñoLabel.AutoSize = True
+        AñoLabel.Location = New System.Drawing.Point(32, 153)
+        AñoLabel.Name = "AñoLabel"
+        AñoLabel.Size = New System.Drawing.Size(28, 13)
+        AñoLabel.TabIndex = 100
+        AñoLabel.Text = "año:"
+        '
+        'DominioLabel
+        '
+        DominioLabel.AutoSize = True
+        DominioLabel.Location = New System.Drawing.Point(30, 49)
+        DominioLabel.Name = "DominioLabel"
+        DominioLabel.Size = New System.Drawing.Size(46, 13)
+        DominioLabel.TabIndex = 101
+        DominioLabel.Text = "dominio:"
+        '
+        'SeguroLabel
+        '
+        SeguroLabel.AutoSize = True
+        SeguroLabel.Location = New System.Drawing.Point(224, 49)
+        SeguroLabel.Name = "SeguroLabel"
+        SeguroLabel.Size = New System.Drawing.Size(42, 13)
+        SeguroLabel.TabIndex = 102
+        SeguroLabel.Text = "seguro:"
+        '
+        'Venc_gnc_Label
+        '
+        Venc_gnc_Label.AutoSize = True
+        Venc_gnc_Label.Location = New System.Drawing.Point(224, 78)
+        Venc_gnc_Label.Name = "Venc_gnc_Label"
+        Venc_gnc_Label.Size = New System.Drawing.Size(58, 13)
+        Venc_gnc_Label.TabIndex = 103
+        Venc_gnc_Label.Text = "venc gnc :"
+        '
+        'Venc_vtvLabel
+        '
+        Venc_vtvLabel.AutoSize = True
+        Venc_vtvLabel.Location = New System.Drawing.Point(224, 98)
+        Venc_vtvLabel.Name = "Venc_vtvLabel"
+        Venc_vtvLabel.Size = New System.Drawing.Size(52, 13)
+        Venc_vtvLabel.TabIndex = 104
+        Venc_vtvLabel.Text = "venc vtv:"
+        '
+        'ColorLabel
+        '
+        ColorLabel.AutoSize = True
+        ColorLabel.Location = New System.Drawing.Point(32, 181)
+        ColorLabel.Name = "ColorLabel"
+        ColorLabel.Size = New System.Drawing.Size(33, 13)
+        ColorLabel.TabIndex = 105
+        ColorLabel.Text = "color:"
+        '
+        'DueñoLabel
+        '
+        DueñoLabel.AutoSize = True
+        DueñoLabel.Location = New System.Drawing.Point(32, 207)
+        DueñoLabel.Name = "DueñoLabel"
+        DueñoLabel.Size = New System.Drawing.Size(40, 13)
+        DueñoLabel.TabIndex = 106
+        DueñoLabel.Text = "dueño:"
+        '
         'Vehiculos1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(1082, 601)
-        Me.Controls.Add(Me.BtnConsulta)
+        Me.Controls.Add(Me.DateTimePickerVtv)
+        Me.Controls.Add(Me.DateTimePickerAno)
+        Me.Controls.Add(Me.DateTimePickerGnc)
+        Me.Controls.Add(Me.TextBoxSeguro)
+        Me.Controls.Add(Me.TextBoxDueno)
+        Me.Controls.Add(Me.TextBoxColor)
+        Me.Controls.Add(Me.TextBoxModelo)
+        Me.Controls.Add(Me.TextBoxMarca)
+        Me.Controls.Add(Me.TextBoxDominio)
         Me.Controls.Add(ModeloLabel)
-        Me.Controls.Add(Me.ModeloTextBox)
         Me.Controls.Add(MarcaLabel)
-        Me.Controls.Add(Me.MarcaTextBox)
         Me.Controls.Add(AñoLabel)
-        Me.Controls.Add(Me.AñoDateTimePicker)
         Me.Controls.Add(DominioLabel)
-        Me.Controls.Add(Me.DominioTextBox)
         Me.Controls.Add(SeguroLabel)
-        Me.Controls.Add(Me.SeguroTextBox)
         Me.Controls.Add(Venc_gnc_Label)
-        Me.Controls.Add(Me.Venc_gnc_DateTimePicker)
         Me.Controls.Add(Venc_vtvLabel)
-        Me.Controls.Add(Me.Venc_vtvDateTimePicker)
         Me.Controls.Add(ColorLabel)
-        Me.Controls.Add(Me.ColorTextBox)
         Me.Controls.Add(DueñoLabel)
-        Me.Controls.Add(Me.DueñoTextBox)
+        Me.Controls.Add(Me.BtnConsulta)
         Me.Controls.Add(Me.VehiculoDataGridView)
-        Me.Controls.Add(Me.VehiculoBindingNavigator)
         Me.Controls.Add(Me.TextBoxConsulta)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.BtnVolver)
@@ -538,9 +404,6 @@ Partial Class Vehiculos1
         Me.Controls.Add(Me.BtnAgregar)
         Me.Name = "Vehiculos1"
         Me.Text = "Vehiculos1"
-        CType(Me.VehiculoBindingNavigator, System.ComponentModel.ISupportInitialize).EndInit()
-        Me.VehiculoBindingNavigator.ResumeLayout(False)
-        Me.VehiculoBindingNavigator.PerformLayout()
         CType(Me.VehiculoBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.Database1DataSet, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.VehiculoDataGridView, System.ComponentModel.ISupportInitialize).EndInit()
@@ -557,29 +420,7 @@ Partial Class Vehiculos1
     Friend WithEvents VehiculoBindingSource As System.Windows.Forms.BindingSource
     Friend WithEvents VehiculoTableAdapter As pruebaBD.Database1DataSetTableAdapters.VehiculoTableAdapter
     Friend WithEvents TableAdapterManager As pruebaBD.Database1DataSetTableAdapters.TableAdapterManager
-    Friend WithEvents VehiculoBindingNavigator As System.Windows.Forms.BindingNavigator
-    Friend WithEvents BindingNavigatorAddNewItem As System.Windows.Forms.ToolStripButton
-    Friend WithEvents BindingNavigatorCountItem As System.Windows.Forms.ToolStripLabel
-    Friend WithEvents BindingNavigatorDeleteItem As System.Windows.Forms.ToolStripButton
-    Friend WithEvents BindingNavigatorMoveFirstItem As System.Windows.Forms.ToolStripButton
-    Friend WithEvents BindingNavigatorMovePreviousItem As System.Windows.Forms.ToolStripButton
-    Friend WithEvents BindingNavigatorSeparator As System.Windows.Forms.ToolStripSeparator
-    Friend WithEvents BindingNavigatorPositionItem As System.Windows.Forms.ToolStripTextBox
-    Friend WithEvents BindingNavigatorSeparator1 As System.Windows.Forms.ToolStripSeparator
-    Friend WithEvents BindingNavigatorMoveNextItem As System.Windows.Forms.ToolStripButton
-    Friend WithEvents BindingNavigatorMoveLastItem As System.Windows.Forms.ToolStripButton
-    Friend WithEvents BindingNavigatorSeparator2 As System.Windows.Forms.ToolStripSeparator
-    Friend WithEvents VehiculoBindingNavigatorSaveItem As System.Windows.Forms.ToolStripButton
     Friend WithEvents VehiculoDataGridView As System.Windows.Forms.DataGridView
-    Friend WithEvents ModeloTextBox As System.Windows.Forms.TextBox
-    Friend WithEvents MarcaTextBox As System.Windows.Forms.TextBox
-    Friend WithEvents AñoDateTimePicker As System.Windows.Forms.DateTimePicker
-    Friend WithEvents DominioTextBox As System.Windows.Forms.TextBox
-    Friend WithEvents SeguroTextBox As System.Windows.Forms.TextBox
-    Friend WithEvents Venc_gnc_DateTimePicker As System.Windows.Forms.DateTimePicker
-    Friend WithEvents Venc_vtvDateTimePicker As System.Windows.Forms.DateTimePicker
-    Friend WithEvents ColorTextBox As System.Windows.Forms.TextBox
-    Friend WithEvents DueñoTextBox As System.Windows.Forms.TextBox
     Friend WithEvents BtnConsulta As System.Windows.Forms.Button
     Friend WithEvents DataGridViewTextBoxColumn10 As System.Windows.Forms.DataGridViewTextBoxColumn
     Friend WithEvents DataGridViewTextBoxColumn4 As System.Windows.Forms.DataGridViewTextBoxColumn
@@ -591,4 +432,13 @@ Partial Class Vehiculos1
     Friend WithEvents DataGridViewTextBoxColumn5 As System.Windows.Forms.DataGridViewTextBoxColumn
     Friend WithEvents DataGridViewTextBoxColumn6 As System.Windows.Forms.DataGridViewTextBoxColumn
     Friend WithEvents DataGridViewTextBoxColumn7 As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents DateTimePickerVtv As System.Windows.Forms.DateTimePicker
+    Friend WithEvents DateTimePickerAno As System.Windows.Forms.DateTimePicker
+    Friend WithEvents DateTimePickerGnc As System.Windows.Forms.DateTimePicker
+    Friend WithEvents TextBoxSeguro As System.Windows.Forms.TextBox
+    Friend WithEvents TextBoxDueno As System.Windows.Forms.TextBox
+    Friend WithEvents TextBoxColor As System.Windows.Forms.TextBox
+    Friend WithEvents TextBoxModelo As System.Windows.Forms.TextBox
+    Friend WithEvents TextBoxMarca As System.Windows.Forms.TextBox
+    Friend WithEvents TextBoxDominio As System.Windows.Forms.TextBox
 End Class
