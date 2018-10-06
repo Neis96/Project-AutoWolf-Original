@@ -42,7 +42,7 @@
 
     Private Sub BtnEliminar_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles BtnEliminar.Click
         Dim aceptar As String
-        
+
         If DominioTextBox.Text = "" Then
             MsgBox("El campo de dominio esta vacio")
         Else
@@ -60,7 +60,7 @@
 
             End If
 
-            End If
+        End If
 
 
     End Sub

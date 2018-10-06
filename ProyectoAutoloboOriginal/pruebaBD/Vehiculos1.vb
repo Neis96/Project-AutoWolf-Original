@@ -119,9 +119,16 @@
 
     Private Sub TextBoxConsulta_TextChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles TextBoxConsulta.TextChanged
 
-        If TextBoxConsulta.Text = "" Then
-            Me.VehiculoTableAdapter.Fill(Me.Database1DataSet.Vehiculo)
-        End If
+
+        Dim vista As New DataView 'tipo de dato de la grilla
+        vista.Table = Me.Database1DataSet.Vehiculo
+        vista.RowFilter = "Convert (dominio,System.String) like  '" & TextBoxConsulta.Text & "%'"
+        Me.VehiculoDataGridView.DataSource = vista 'actualizo la grilla
+
+
+        'If TextBoxConsulta.Text = "" Then
+        '    Me.VehiculoTableAdapter.Fill(Me.Database1DataSet.Vehiculo)
+        'End If
         'no logro hacer que funcione la consulta en textbox
 
         'Dim vista As New DataView 'tipo de dato de la grilla
@@ -145,18 +152,18 @@
 
     Private Sub BtnConsulta_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles BtnConsulta.Click
 
-        If TextBoxConsulta.Text <> "" Then
-            If Len(TextBoxConsulta.Text) >= 6 And Len(TextBoxConsulta.Text) <= 7 Then
+        'If TextBoxConsulta.Text <> "" Then
+        '    If Len(TextBoxConsulta.Text) >= 6 And Len(TextBoxConsulta.Text) <= 7 Then
 
-                Me.VehiculoTableAdapter.FillBy((Me.Database1DataSet.Vehiculo), TextBoxConsulta.Text)
+        '        Me.VehiculoTableAdapter.FillBy((Me.Database1DataSet.Vehiculo), TextBoxConsulta.Text)
 
-            Else
-                MsgBox("El dominio consultado no contiene la cantidad de caracteres validos")
-            End If
-        Else
-            MsgBox("El campo de consulta esta vacio")
+        '    Else
+        '        MsgBox("El dominio consultado no contiene la cantidad de caracteres validos")
+        '    End If
+        'Else
+        '    MsgBox("El campo de consulta esta vacio")
 
-        End If
+        'End If
 
 
 

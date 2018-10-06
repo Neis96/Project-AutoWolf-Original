@@ -40,16 +40,6 @@ Partial Class Vehiculos1
         Me.VehiculoBindingSource = New System.Windows.Forms.BindingSource(Me.components)
         Me.Database1DataSet = New pruebaBD.Database1DataSet()
         Me.VehiculoDataGridView = New System.Windows.Forms.DataGridView()
-        Me.DataGridViewTextBoxColumn10 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.DataGridViewTextBoxColumn4 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.DataGridViewTextBoxColumn2 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.DataGridViewTextBoxColumn1 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.DataGridViewTextBoxColumn3 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.DataGridViewTextBoxColumn8 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.DataGridViewTextBoxColumn9 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.DataGridViewTextBoxColumn5 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.DataGridViewTextBoxColumn6 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.DataGridViewTextBoxColumn7 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.VehiculoTableAdapter = New pruebaBD.Database1DataSetTableAdapters.VehiculoTableAdapter()
         Me.TableAdapterManager = New pruebaBD.Database1DataSetTableAdapters.TableAdapterManager()
         Me.BtnConsulta = New System.Windows.Forms.Button()
@@ -62,6 +52,16 @@ Partial Class Vehiculos1
         Me.TextBoxModelo = New System.Windows.Forms.TextBox()
         Me.TextBoxMarca = New System.Windows.Forms.TextBox()
         Me.TextBoxDominio = New System.Windows.Forms.TextBox()
+        Me.DataGridViewTextBoxColumn10 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewTextBoxColumn4 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewTextBoxColumn2 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewTextBoxColumn1 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewTextBoxColumn3 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewTextBoxColumn8 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewTextBoxColumn9 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewTextBoxColumn5 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewTextBoxColumn6 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewTextBoxColumn7 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         ModeloLabel = New System.Windows.Forms.Label()
         MarcaLabel = New System.Windows.Forms.Label()
         AñoLabel = New System.Windows.Forms.Label()
@@ -75,221 +75,6 @@ Partial Class Vehiculos1
         CType(Me.Database1DataSet, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.VehiculoDataGridView, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
-        '
-        'TextBoxConsulta
-        '
-        Me.TextBoxConsulta.Location = New System.Drawing.Point(133, 324)
-        Me.TextBoxConsulta.Name = "TextBoxConsulta"
-        Me.TextBoxConsulta.Size = New System.Drawing.Size(136, 20)
-        Me.TextBoxConsulta.TabIndex = 51
-        '
-        'Label1
-        '
-        Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(16, 327)
-        Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(111, 13)
-        Me.Label1.TabIndex = 50
-        Me.Label1.Text = "Consultar por dominio:"
-        '
-        'BtnVolver
-        '
-        Me.BtnVolver.Location = New System.Drawing.Point(979, 62)
-        Me.BtnVolver.Name = "BtnVolver"
-        Me.BtnVolver.Size = New System.Drawing.Size(75, 23)
-        Me.BtnVolver.TabIndex = 31
-        Me.BtnVolver.Text = "Volver"
-        Me.BtnVolver.UseVisualStyleBackColor = True
-        '
-        'BtnModificar
-        '
-        Me.BtnModificar.Location = New System.Drawing.Point(384, 322)
-        Me.BtnModificar.Name = "BtnModificar"
-        Me.BtnModificar.Size = New System.Drawing.Size(75, 23)
-        Me.BtnModificar.TabIndex = 29
-        Me.BtnModificar.Text = "Modificar"
-        Me.BtnModificar.UseVisualStyleBackColor = True
-        '
-        'BtnAgregar
-        '
-        Me.BtnAgregar.Location = New System.Drawing.Point(243, 168)
-        Me.BtnAgregar.Name = "BtnAgregar"
-        Me.BtnAgregar.Size = New System.Drawing.Size(139, 60)
-        Me.BtnAgregar.TabIndex = 28
-        Me.BtnAgregar.Text = "Agregar"
-        Me.BtnAgregar.UseVisualStyleBackColor = True
-        '
-        'VehiculoBindingSource
-        '
-        Me.VehiculoBindingSource.DataMember = "Vehiculo"
-        Me.VehiculoBindingSource.DataSource = Me.Database1DataSet
-        '
-        'Database1DataSet
-        '
-        Me.Database1DataSet.DataSetName = "Database1DataSet"
-        Me.Database1DataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
-        '
-        'VehiculoDataGridView
-        '
-        Me.VehiculoDataGridView.AutoGenerateColumns = False
-        Me.VehiculoDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.VehiculoDataGridView.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.DataGridViewTextBoxColumn10, Me.DataGridViewTextBoxColumn4, Me.DataGridViewTextBoxColumn2, Me.DataGridViewTextBoxColumn1, Me.DataGridViewTextBoxColumn3, Me.DataGridViewTextBoxColumn8, Me.DataGridViewTextBoxColumn9, Me.DataGridViewTextBoxColumn5, Me.DataGridViewTextBoxColumn6, Me.DataGridViewTextBoxColumn7})
-        Me.VehiculoDataGridView.DataSource = Me.VehiculoBindingSource
-        Me.VehiculoDataGridView.Location = New System.Drawing.Point(12, 369)
-        Me.VehiculoDataGridView.Name = "VehiculoDataGridView"
-        Me.VehiculoDataGridView.Size = New System.Drawing.Size(1049, 220)
-        Me.VehiculoDataGridView.TabIndex = 52
-        '
-        'DataGridViewTextBoxColumn10
-        '
-        Me.DataGridViewTextBoxColumn10.DataPropertyName = "id_vehiculo"
-        Me.DataGridViewTextBoxColumn10.HeaderText = "id_vehiculo"
-        Me.DataGridViewTextBoxColumn10.Name = "DataGridViewTextBoxColumn10"
-        Me.DataGridViewTextBoxColumn10.ReadOnly = True
-        '
-        'DataGridViewTextBoxColumn4
-        '
-        Me.DataGridViewTextBoxColumn4.DataPropertyName = "dominio"
-        Me.DataGridViewTextBoxColumn4.HeaderText = "dominio"
-        Me.DataGridViewTextBoxColumn4.Name = "DataGridViewTextBoxColumn4"
-        '
-        'DataGridViewTextBoxColumn2
-        '
-        Me.DataGridViewTextBoxColumn2.DataPropertyName = "marca"
-        Me.DataGridViewTextBoxColumn2.HeaderText = "marca"
-        Me.DataGridViewTextBoxColumn2.Name = "DataGridViewTextBoxColumn2"
-        '
-        'DataGridViewTextBoxColumn1
-        '
-        Me.DataGridViewTextBoxColumn1.DataPropertyName = "modelo"
-        Me.DataGridViewTextBoxColumn1.HeaderText = "modelo"
-        Me.DataGridViewTextBoxColumn1.Name = "DataGridViewTextBoxColumn1"
-        '
-        'DataGridViewTextBoxColumn3
-        '
-        Me.DataGridViewTextBoxColumn3.DataPropertyName = "año"
-        Me.DataGridViewTextBoxColumn3.HeaderText = "año"
-        Me.DataGridViewTextBoxColumn3.Name = "DataGridViewTextBoxColumn3"
-        '
-        'DataGridViewTextBoxColumn8
-        '
-        Me.DataGridViewTextBoxColumn8.DataPropertyName = "color"
-        Me.DataGridViewTextBoxColumn8.HeaderText = "color"
-        Me.DataGridViewTextBoxColumn8.Name = "DataGridViewTextBoxColumn8"
-        '
-        'DataGridViewTextBoxColumn9
-        '
-        Me.DataGridViewTextBoxColumn9.DataPropertyName = "dueño"
-        Me.DataGridViewTextBoxColumn9.HeaderText = "dueño"
-        Me.DataGridViewTextBoxColumn9.Name = "DataGridViewTextBoxColumn9"
-        '
-        'DataGridViewTextBoxColumn5
-        '
-        Me.DataGridViewTextBoxColumn5.DataPropertyName = "seguro"
-        Me.DataGridViewTextBoxColumn5.HeaderText = "seguro"
-        Me.DataGridViewTextBoxColumn5.Name = "DataGridViewTextBoxColumn5"
-        '
-        'DataGridViewTextBoxColumn6
-        '
-        Me.DataGridViewTextBoxColumn6.DataPropertyName = "venc_gnc "
-        Me.DataGridViewTextBoxColumn6.HeaderText = "venc_gnc "
-        Me.DataGridViewTextBoxColumn6.Name = "DataGridViewTextBoxColumn6"
-        '
-        'DataGridViewTextBoxColumn7
-        '
-        Me.DataGridViewTextBoxColumn7.DataPropertyName = "venc_vtv"
-        Me.DataGridViewTextBoxColumn7.HeaderText = "venc_vtv"
-        Me.DataGridViewTextBoxColumn7.Name = "DataGridViewTextBoxColumn7"
-        '
-        'VehiculoTableAdapter
-        '
-        Me.VehiculoTableAdapter.ClearBeforeFill = True
-        '
-        'TableAdapterManager
-        '
-        Me.TableAdapterManager.BackupDataSetBeforeUpdate = False
-        Me.TableAdapterManager.ChoferTableAdapter = Nothing
-        Me.TableAdapterManager.SociosTableAdapter = Nothing
-        Me.TableAdapterManager.UpdateOrder = pruebaBD.Database1DataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete
-        Me.TableAdapterManager.UsuarioTableAdapter = Nothing
-        Me.TableAdapterManager.VehiculoTableAdapter = Me.VehiculoTableAdapter
-        Me.TableAdapterManager.ViajesTableAdapter = Nothing
-        '
-        'BtnConsulta
-        '
-        Me.BtnConsulta.Location = New System.Drawing.Point(284, 322)
-        Me.BtnConsulta.Name = "BtnConsulta"
-        Me.BtnConsulta.Size = New System.Drawing.Size(75, 23)
-        Me.BtnConsulta.TabIndex = 70
-        Me.BtnConsulta.Text = "Consultar"
-        Me.BtnConsulta.UseVisualStyleBackColor = True
-        '
-        'DateTimePickerVtv
-        '
-        Me.DateTimePickerVtv.Format = System.Windows.Forms.DateTimePickerFormat.[Short]
-        Me.DateTimePickerVtv.Location = New System.Drawing.Point(282, 98)
-        Me.DateTimePickerVtv.Name = "DateTimePickerVtv"
-        Me.DateTimePickerVtv.Size = New System.Drawing.Size(100, 20)
-        Me.DateTimePickerVtv.TabIndex = 115
-        '
-        'DateTimePickerAno
-        '
-        Me.DateTimePickerAno.CustomFormat = "yyyy"
-        Me.DateTimePickerAno.Format = System.Windows.Forms.DateTimePickerFormat.[Short]
-        Me.DateTimePickerAno.Location = New System.Drawing.Point(83, 153)
-        Me.DateTimePickerAno.Name = "DateTimePickerAno"
-        Me.DateTimePickerAno.Size = New System.Drawing.Size(100, 20)
-        Me.DateTimePickerAno.TabIndex = 114
-        '
-        'DateTimePickerGnc
-        '
-        Me.DateTimePickerGnc.Format = System.Windows.Forms.DateTimePickerFormat.[Short]
-        Me.DateTimePickerGnc.Location = New System.Drawing.Point(282, 72)
-        Me.DateTimePickerGnc.Name = "DateTimePickerGnc"
-        Me.DateTimePickerGnc.Size = New System.Drawing.Size(100, 20)
-        Me.DateTimePickerGnc.TabIndex = 113
-        '
-        'TextBoxSeguro
-        '
-        Me.TextBoxSeguro.Location = New System.Drawing.Point(282, 46)
-        Me.TextBoxSeguro.Name = "TextBoxSeguro"
-        Me.TextBoxSeguro.Size = New System.Drawing.Size(100, 20)
-        Me.TextBoxSeguro.TabIndex = 112
-        '
-        'TextBoxDueno
-        '
-        Me.TextBoxDueno.Location = New System.Drawing.Point(83, 208)
-        Me.TextBoxDueno.Name = "TextBoxDueno"
-        Me.TextBoxDueno.Size = New System.Drawing.Size(100, 20)
-        Me.TextBoxDueno.TabIndex = 111
-        '
-        'TextBoxColor
-        '
-        Me.TextBoxColor.Location = New System.Drawing.Point(83, 181)
-        Me.TextBoxColor.Name = "TextBoxColor"
-        Me.TextBoxColor.Size = New System.Drawing.Size(100, 20)
-        Me.TextBoxColor.TabIndex = 110
-        '
-        'TextBoxModelo
-        '
-        Me.TextBoxModelo.Location = New System.Drawing.Point(83, 120)
-        Me.TextBoxModelo.Name = "TextBoxModelo"
-        Me.TextBoxModelo.Size = New System.Drawing.Size(100, 20)
-        Me.TextBoxModelo.TabIndex = 109
-        '
-        'TextBoxMarca
-        '
-        Me.TextBoxMarca.Location = New System.Drawing.Point(83, 82)
-        Me.TextBoxMarca.Name = "TextBoxMarca"
-        Me.TextBoxMarca.Size = New System.Drawing.Size(100, 20)
-        Me.TextBoxMarca.TabIndex = 108
-        '
-        'TextBoxDominio
-        '
-        Me.TextBoxDominio.Location = New System.Drawing.Point(83, 49)
-        Me.TextBoxDominio.Name = "TextBoxDominio"
-        Me.TextBoxDominio.Size = New System.Drawing.Size(100, 20)
-        Me.TextBoxDominio.TabIndex = 107
         '
         'ModeloLabel
         '
@@ -372,6 +157,233 @@ Partial Class Vehiculos1
         DueñoLabel.TabIndex = 106
         DueñoLabel.Text = "dueño:"
         '
+        'TextBoxConsulta
+        '
+        Me.TextBoxConsulta.Location = New System.Drawing.Point(133, 324)
+        Me.TextBoxConsulta.Name = "TextBoxConsulta"
+        Me.TextBoxConsulta.Size = New System.Drawing.Size(136, 20)
+        Me.TextBoxConsulta.TabIndex = 51
+        '
+        'Label1
+        '
+        Me.Label1.AutoSize = True
+        Me.Label1.Location = New System.Drawing.Point(16, 327)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(111, 13)
+        Me.Label1.TabIndex = 50
+        Me.Label1.Text = "Consultar por dominio:"
+        '
+        'BtnVolver
+        '
+        Me.BtnVolver.Location = New System.Drawing.Point(979, 62)
+        Me.BtnVolver.Name = "BtnVolver"
+        Me.BtnVolver.Size = New System.Drawing.Size(75, 23)
+        Me.BtnVolver.TabIndex = 31
+        Me.BtnVolver.Text = "Volver"
+        Me.BtnVolver.UseVisualStyleBackColor = True
+        '
+        'BtnModificar
+        '
+        Me.BtnModificar.Location = New System.Drawing.Point(282, 322)
+        Me.BtnModificar.Name = "BtnModificar"
+        Me.BtnModificar.Size = New System.Drawing.Size(75, 23)
+        Me.BtnModificar.TabIndex = 29
+        Me.BtnModificar.Text = "Modificar"
+        Me.BtnModificar.UseVisualStyleBackColor = True
+        '
+        'BtnAgregar
+        '
+        Me.BtnAgregar.Location = New System.Drawing.Point(243, 168)
+        Me.BtnAgregar.Name = "BtnAgregar"
+        Me.BtnAgregar.Size = New System.Drawing.Size(139, 60)
+        Me.BtnAgregar.TabIndex = 28
+        Me.BtnAgregar.Text = "Agregar"
+        Me.BtnAgregar.UseVisualStyleBackColor = True
+        '
+        'VehiculoBindingSource
+        '
+        Me.VehiculoBindingSource.DataMember = "Vehiculo"
+        Me.VehiculoBindingSource.DataSource = Me.Database1DataSet
+        '
+        'Database1DataSet
+        '
+        Me.Database1DataSet.DataSetName = "Database1DataSet"
+        Me.Database1DataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
+        '
+        'VehiculoDataGridView
+        '
+        Me.VehiculoDataGridView.AutoGenerateColumns = False
+        Me.VehiculoDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.VehiculoDataGridView.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.DataGridViewTextBoxColumn10, Me.DataGridViewTextBoxColumn4, Me.DataGridViewTextBoxColumn2, Me.DataGridViewTextBoxColumn1, Me.DataGridViewTextBoxColumn3, Me.DataGridViewTextBoxColumn8, Me.DataGridViewTextBoxColumn9, Me.DataGridViewTextBoxColumn5, Me.DataGridViewTextBoxColumn6, Me.DataGridViewTextBoxColumn7})
+        Me.VehiculoDataGridView.DataSource = Me.VehiculoBindingSource
+        Me.VehiculoDataGridView.Location = New System.Drawing.Point(33, 369)
+        Me.VehiculoDataGridView.MultiSelect = False
+        Me.VehiculoDataGridView.Name = "VehiculoDataGridView"
+        Me.VehiculoDataGridView.ReadOnly = True
+        Me.VehiculoDataGridView.Size = New System.Drawing.Size(1033, 220)
+        Me.VehiculoDataGridView.TabIndex = 52
+        '
+        'VehiculoTableAdapter
+        '
+        Me.VehiculoTableAdapter.ClearBeforeFill = True
+        '
+        'TableAdapterManager
+        '
+        Me.TableAdapterManager.BackupDataSetBeforeUpdate = False
+        Me.TableAdapterManager.ChoferTableAdapter = Nothing
+        Me.TableAdapterManager.SociosTableAdapter = Nothing
+        Me.TableAdapterManager.UpdateOrder = pruebaBD.Database1DataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete
+        Me.TableAdapterManager.UsuarioTableAdapter = Nothing
+        Me.TableAdapterManager.VehiculoTableAdapter = Me.VehiculoTableAdapter
+        Me.TableAdapterManager.ViajesTableAdapter = Nothing
+        '
+        'BtnConsulta
+        '
+        Me.BtnConsulta.Location = New System.Drawing.Point(650, 322)
+        Me.BtnConsulta.Name = "BtnConsulta"
+        Me.BtnConsulta.Size = New System.Drawing.Size(75, 23)
+        Me.BtnConsulta.TabIndex = 70
+        Me.BtnConsulta.Text = "Consultar"
+        Me.BtnConsulta.UseVisualStyleBackColor = True
+        '
+        'DateTimePickerVtv
+        '
+        Me.DateTimePickerVtv.Format = System.Windows.Forms.DateTimePickerFormat.[Short]
+        Me.DateTimePickerVtv.Location = New System.Drawing.Point(282, 98)
+        Me.DateTimePickerVtv.Name = "DateTimePickerVtv"
+        Me.DateTimePickerVtv.Size = New System.Drawing.Size(100, 20)
+        Me.DateTimePickerVtv.TabIndex = 115
+        '
+        'DateTimePickerAno
+        '
+        Me.DateTimePickerAno.CustomFormat = "yyyy"
+        Me.DateTimePickerAno.Format = System.Windows.Forms.DateTimePickerFormat.[Short]
+        Me.DateTimePickerAno.Location = New System.Drawing.Point(83, 153)
+        Me.DateTimePickerAno.Name = "DateTimePickerAno"
+        Me.DateTimePickerAno.Size = New System.Drawing.Size(100, 20)
+        Me.DateTimePickerAno.TabIndex = 114
+        '
+        'DateTimePickerGnc
+        '
+        Me.DateTimePickerGnc.Format = System.Windows.Forms.DateTimePickerFormat.[Short]
+        Me.DateTimePickerGnc.Location = New System.Drawing.Point(282, 72)
+        Me.DateTimePickerGnc.Name = "DateTimePickerGnc"
+        Me.DateTimePickerGnc.Size = New System.Drawing.Size(100, 20)
+        Me.DateTimePickerGnc.TabIndex = 113
+        '
+        'TextBoxSeguro
+        '
+        Me.TextBoxSeguro.Location = New System.Drawing.Point(282, 46)
+        Me.TextBoxSeguro.Name = "TextBoxSeguro"
+        Me.TextBoxSeguro.Size = New System.Drawing.Size(100, 20)
+        Me.TextBoxSeguro.TabIndex = 112
+        '
+        'TextBoxDueno
+        '
+        Me.TextBoxDueno.Location = New System.Drawing.Point(83, 208)
+        Me.TextBoxDueno.Name = "TextBoxDueno"
+        Me.TextBoxDueno.Size = New System.Drawing.Size(100, 20)
+        Me.TextBoxDueno.TabIndex = 111
+        '
+        'TextBoxColor
+        '
+        Me.TextBoxColor.Location = New System.Drawing.Point(83, 181)
+        Me.TextBoxColor.Name = "TextBoxColor"
+        Me.TextBoxColor.Size = New System.Drawing.Size(100, 20)
+        Me.TextBoxColor.TabIndex = 110
+        '
+        'TextBoxModelo
+        '
+        Me.TextBoxModelo.Location = New System.Drawing.Point(83, 120)
+        Me.TextBoxModelo.Name = "TextBoxModelo"
+        Me.TextBoxModelo.Size = New System.Drawing.Size(100, 20)
+        Me.TextBoxModelo.TabIndex = 109
+        '
+        'TextBoxMarca
+        '
+        Me.TextBoxMarca.Location = New System.Drawing.Point(83, 82)
+        Me.TextBoxMarca.Name = "TextBoxMarca"
+        Me.TextBoxMarca.Size = New System.Drawing.Size(100, 20)
+        Me.TextBoxMarca.TabIndex = 108
+        '
+        'TextBoxDominio
+        '
+        Me.TextBoxDominio.Location = New System.Drawing.Point(83, 49)
+        Me.TextBoxDominio.Name = "TextBoxDominio"
+        Me.TextBoxDominio.Size = New System.Drawing.Size(100, 20)
+        Me.TextBoxDominio.TabIndex = 107
+        '
+        'DataGridViewTextBoxColumn10
+        '
+        Me.DataGridViewTextBoxColumn10.DataPropertyName = "id_vehiculo"
+        Me.DataGridViewTextBoxColumn10.HeaderText = "id_vehiculo"
+        Me.DataGridViewTextBoxColumn10.Name = "DataGridViewTextBoxColumn10"
+        Me.DataGridViewTextBoxColumn10.ReadOnly = True
+        '
+        'DataGridViewTextBoxColumn4
+        '
+        Me.DataGridViewTextBoxColumn4.DataPropertyName = "dominio"
+        Me.DataGridViewTextBoxColumn4.HeaderText = "dominio"
+        Me.DataGridViewTextBoxColumn4.Name = "DataGridViewTextBoxColumn4"
+        Me.DataGridViewTextBoxColumn4.ReadOnly = True
+        Me.DataGridViewTextBoxColumn4.Width = 90
+        '
+        'DataGridViewTextBoxColumn2
+        '
+        Me.DataGridViewTextBoxColumn2.DataPropertyName = "marca"
+        Me.DataGridViewTextBoxColumn2.HeaderText = "marca"
+        Me.DataGridViewTextBoxColumn2.Name = "DataGridViewTextBoxColumn2"
+        Me.DataGridViewTextBoxColumn2.ReadOnly = True
+        '
+        'DataGridViewTextBoxColumn1
+        '
+        Me.DataGridViewTextBoxColumn1.DataPropertyName = "modelo"
+        Me.DataGridViewTextBoxColumn1.HeaderText = "modelo"
+        Me.DataGridViewTextBoxColumn1.Name = "DataGridViewTextBoxColumn1"
+        Me.DataGridViewTextBoxColumn1.ReadOnly = True
+        '
+        'DataGridViewTextBoxColumn3
+        '
+        Me.DataGridViewTextBoxColumn3.DataPropertyName = "año"
+        Me.DataGridViewTextBoxColumn3.HeaderText = "año"
+        Me.DataGridViewTextBoxColumn3.Name = "DataGridViewTextBoxColumn3"
+        Me.DataGridViewTextBoxColumn3.ReadOnly = True
+        '
+        'DataGridViewTextBoxColumn8
+        '
+        Me.DataGridViewTextBoxColumn8.DataPropertyName = "color"
+        Me.DataGridViewTextBoxColumn8.HeaderText = "color"
+        Me.DataGridViewTextBoxColumn8.Name = "DataGridViewTextBoxColumn8"
+        Me.DataGridViewTextBoxColumn8.ReadOnly = True
+        '
+        'DataGridViewTextBoxColumn9
+        '
+        Me.DataGridViewTextBoxColumn9.DataPropertyName = "dueño"
+        Me.DataGridViewTextBoxColumn9.HeaderText = "dueño"
+        Me.DataGridViewTextBoxColumn9.Name = "DataGridViewTextBoxColumn9"
+        Me.DataGridViewTextBoxColumn9.ReadOnly = True
+        '
+        'DataGridViewTextBoxColumn5
+        '
+        Me.DataGridViewTextBoxColumn5.DataPropertyName = "seguro"
+        Me.DataGridViewTextBoxColumn5.HeaderText = "seguro"
+        Me.DataGridViewTextBoxColumn5.Name = "DataGridViewTextBoxColumn5"
+        Me.DataGridViewTextBoxColumn5.ReadOnly = True
+        '
+        'DataGridViewTextBoxColumn6
+        '
+        Me.DataGridViewTextBoxColumn6.DataPropertyName = "venc_gnc "
+        Me.DataGridViewTextBoxColumn6.HeaderText = "venc_gnc "
+        Me.DataGridViewTextBoxColumn6.Name = "DataGridViewTextBoxColumn6"
+        Me.DataGridViewTextBoxColumn6.ReadOnly = True
+        '
+        'DataGridViewTextBoxColumn7
+        '
+        Me.DataGridViewTextBoxColumn7.DataPropertyName = "venc_vtv"
+        Me.DataGridViewTextBoxColumn7.HeaderText = "venc_vtv"
+        Me.DataGridViewTextBoxColumn7.Name = "DataGridViewTextBoxColumn7"
+        Me.DataGridViewTextBoxColumn7.ReadOnly = True
+        '
         'Vehiculos1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -422,6 +434,15 @@ Partial Class Vehiculos1
     Friend WithEvents TableAdapterManager As pruebaBD.Database1DataSetTableAdapters.TableAdapterManager
     Friend WithEvents VehiculoDataGridView As System.Windows.Forms.DataGridView
     Friend WithEvents BtnConsulta As System.Windows.Forms.Button
+    Friend WithEvents DateTimePickerVtv As System.Windows.Forms.DateTimePicker
+    Friend WithEvents DateTimePickerAno As System.Windows.Forms.DateTimePicker
+    Friend WithEvents DateTimePickerGnc As System.Windows.Forms.DateTimePicker
+    Friend WithEvents TextBoxSeguro As System.Windows.Forms.TextBox
+    Friend WithEvents TextBoxDueno As System.Windows.Forms.TextBox
+    Friend WithEvents TextBoxColor As System.Windows.Forms.TextBox
+    Friend WithEvents TextBoxModelo As System.Windows.Forms.TextBox
+    Friend WithEvents TextBoxMarca As System.Windows.Forms.TextBox
+    Friend WithEvents TextBoxDominio As System.Windows.Forms.TextBox
     Friend WithEvents DataGridViewTextBoxColumn10 As System.Windows.Forms.DataGridViewTextBoxColumn
     Friend WithEvents DataGridViewTextBoxColumn4 As System.Windows.Forms.DataGridViewTextBoxColumn
     Friend WithEvents DataGridViewTextBoxColumn2 As System.Windows.Forms.DataGridViewTextBoxColumn
@@ -432,13 +453,4 @@ Partial Class Vehiculos1
     Friend WithEvents DataGridViewTextBoxColumn5 As System.Windows.Forms.DataGridViewTextBoxColumn
     Friend WithEvents DataGridViewTextBoxColumn6 As System.Windows.Forms.DataGridViewTextBoxColumn
     Friend WithEvents DataGridViewTextBoxColumn7 As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents DateTimePickerVtv As System.Windows.Forms.DateTimePicker
-    Friend WithEvents DateTimePickerAno As System.Windows.Forms.DateTimePicker
-    Friend WithEvents DateTimePickerGnc As System.Windows.Forms.DateTimePicker
-    Friend WithEvents TextBoxSeguro As System.Windows.Forms.TextBox
-    Friend WithEvents TextBoxDueno As System.Windows.Forms.TextBox
-    Friend WithEvents TextBoxColor As System.Windows.Forms.TextBox
-    Friend WithEvents TextBoxModelo As System.Windows.Forms.TextBox
-    Friend WithEvents TextBoxMarca As System.Windows.Forms.TextBox
-    Friend WithEvents TextBoxDominio As System.Windows.Forms.TextBox
 End Class
