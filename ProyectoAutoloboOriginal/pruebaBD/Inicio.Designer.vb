@@ -131,7 +131,7 @@ Partial Class Inicio
         'ResumenToolStripMenuItem1
         '
         Me.ResumenToolStripMenuItem1.Name = "ResumenToolStripMenuItem1"
-        Me.ResumenToolStripMenuItem1.Size = New System.Drawing.Size(123, 22)
+        Me.ResumenToolStripMenuItem1.Size = New System.Drawing.Size(152, 22)
         Me.ResumenToolStripMenuItem1.Text = "Resumen"
         '
         'ResumenToolStripMenuItem
