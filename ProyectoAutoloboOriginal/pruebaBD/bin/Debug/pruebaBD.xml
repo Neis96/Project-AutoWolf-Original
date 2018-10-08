@@ -39,6 +39,22 @@ Represents the strongly named DataTable class.
 	<summary>
 Represents the strongly named DataTable class.
 </summary>
+</member><member name="T:pruebaBD.Database1DataSet.LiqCtaCtrDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:pruebaBD.Database1DataSet.LiquidacionChoferDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:pruebaBD.Database1DataSet.ResumenRemiseriaDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:pruebaBD.Database1DataSet.TablaDeTurnoDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
 </member><member name="T:pruebaBD.Database1DataSet.ChoferRow">
 	<summary>
 Represents strongly named DataRow class.
@@ -59,6 +75,22 @@ Represents strongly named DataRow class.
 	<summary>
 Represents strongly named DataRow class.
 </summary>
+</member><member name="T:pruebaBD.Database1DataSet.LiqCtaCtrRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:pruebaBD.Database1DataSet.LiquidacionChoferRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:pruebaBD.Database1DataSet.ResumenRemiseriaRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:pruebaBD.Database1DataSet.TablaDeTurnoRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
 </member><member name="T:pruebaBD.Database1DataSet.ChoferRowChangeEvent">
 	<summary>
 Row event argument class
@@ -76,6 +108,22 @@ Row event argument class
 Row event argument class
 </summary>
 </member><member name="T:pruebaBD.Database1DataSet.ViajesRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:pruebaBD.Database1DataSet.LiqCtaCtrRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:pruebaBD.Database1DataSet.LiquidacionChoferRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:pruebaBD.Database1DataSet.ResumenRemiseriaRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:pruebaBD.Database1DataSet.TablaDeTurnoRowChangeEvent">
 	<summary>
 Row event argument class
 </summary>
@@ -100,6 +148,22 @@ Represents the connection and commands used to retrieve and save data.
 Represents the connection and commands used to retrieve and save data.
 </summary>
 </member><member name="T:pruebaBD.Database1DataSetTableAdapters.ViajesTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:pruebaBD.Database1DataSetTableAdapters.LiqCtaCtrTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:pruebaBD.Database1DataSetTableAdapters.LiquidacionChoferTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:pruebaBD.Database1DataSetTableAdapters.ResumenRemiseriaTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:pruebaBD.Database1DataSetTableAdapters.TablaDeTurnoTableAdapter">
 	<summary>
 Represents the connection and commands used to retrieve and save data.
 </summary>

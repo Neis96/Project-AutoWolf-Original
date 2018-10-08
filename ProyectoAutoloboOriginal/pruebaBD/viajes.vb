@@ -20,19 +20,20 @@
         If CheckBoxReserva.Checked Then 'aca pregunto si es una reserva
 
             reserva = "si"
-
+            estado = "Reserva"
             If CheckCta.Checked Then 'aca pregunto por la cta cte
 
                 cta = "si"
                 estado = "no"
             Else
+                cta = "no"
                 reserva = "si"
                 estado = "no"
             End If
 
         Else
             reserva = "no"
-            estado = "no"
+            estado = "En curso"
 
         End If
 
@@ -45,7 +46,7 @@
         Me.ViajesBindingSource.Current("lugar_origen") = Lugar_origenTextBox.Text
         Me.ViajesBindingSource.Current("lugar_destino") = Lugar_destinoTextBox.Text
         Me.ViajesBindingSource.Current("Reserva") = reserva
-        Me.ViajesBindingSource.Current("Finalizado") = estado
+        Me.ViajesBindingSource.Current("Estado") = estado
 
         Me.ViajesBindingSource.EndEdit()
         Me.TableAdapterManager.UpdateAll(Me.Database1DataSet)

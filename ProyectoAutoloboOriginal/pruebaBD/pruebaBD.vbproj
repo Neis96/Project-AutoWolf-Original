@@ -201,6 +201,9 @@
     <EmbeddedResource Include="Configuracion.resx">
       <DependentUpon>Configuracion.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Finalizar Viaje.resx">
+      <DependentUpon>Finalizar Viaje.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Inicio.resx">
       <DependentUpon>Inicio.vb</DependentUpon>
     </EmbeddedResource>

@@ -148,7 +148,11 @@ Partial Class viajes
         '
         Me.TableAdapterManager.BackupDataSetBeforeUpdate = False
         Me.TableAdapterManager.ChoferTableAdapter = Nothing
+        Me.TableAdapterManager.LiqCtaCtrTableAdapter = Nothing
+        Me.TableAdapterManager.LiquidacionChoferTableAdapter = Nothing
+        Me.TableAdapterManager.ResumenRemiseriaTableAdapter = Nothing
         Me.TableAdapterManager.SociosTableAdapter = Nothing
+        Me.TableAdapterManager.TablaDeTurnoTableAdapter = Nothing
         Me.TableAdapterManager.UpdateOrder = pruebaBD.Database1DataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete
         Me.TableAdapterManager.UsuarioTableAdapter = Nothing
         Me.TableAdapterManager.VehiculoTableAdapter = Nothing
@@ -198,7 +202,7 @@ Partial Class viajes
         '
         'Button1
         '
-        Me.Button1.Location = New System.Drawing.Point(56, 317)
+        Me.Button1.Location = New System.Drawing.Point(51, 296)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(105, 59)
         Me.Button1.TabIndex = 18
@@ -207,7 +211,7 @@ Partial Class viajes
         '
         'Button4
         '
-        Me.Button4.Location = New System.Drawing.Point(214, 317)
+        Me.Button4.Location = New System.Drawing.Point(209, 296)
         Me.Button4.Name = "Button4"
         Me.Button4.Size = New System.Drawing.Size(105, 59)
         Me.Button4.TabIndex = 21
@@ -304,7 +308,7 @@ Partial Class viajes
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(628, 527)
+        Me.ClientSize = New System.Drawing.Size(410, 482)
         Me.Controls.Add(Me.CheckCta)
         Me.Controls.Add(Me.CheckBoxReserva)
         Me.Controls.Add(Me.ComboBoxVehiculo)

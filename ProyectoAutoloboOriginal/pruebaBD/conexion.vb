@@ -23,7 +23,7 @@ Public Class conexion
     End Sub
 
     Public Sub Consulta(ByVal sql As String, ByVal tabla As String)
-        ds.Clear()
+        ' ds.Clear()
 
         da = New SqlCeDataAdapter(sql, conexion)
         cmb = New SqlCeCommandBuilder(da)
