@@ -3,6 +3,28 @@
     Dim conexion As conexion = New conexion()
     Dim conexion2 As conexion = New conexion()
 
+    Private Sub Inicio_KeyDown(sender As Object, e As System.Windows.Forms.KeyEventArgs) Handles Me.KeyDown
+        If e.KeyCode = Keys.F1 Then
+
+            viajes.ShowDialog()
+
+        ElseIf e.KeyCode = Keys.F2 Then
+            Socios.Show()
+
+        ElseIf e.KeyCode = Keys.F3 Then
+            choferes.Show()
+
+
+        ElseIf e.KeyCode = Keys.F4 Then
+            Vehiculos1.Show()
+
+
+
+
+        End If
+
+    End Sub
+
 
     Private Sub Inicio_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
         'TODO: esta línea de código carga datos en la tabla 'Database1DataSet.Viajes' Puede moverla o quitarla según sea necesario.
@@ -75,8 +97,12 @@
         Dim fila As Integer
         fila = DgvEstado.CurrentCellAddress.Y 'saco la fila de donde hice click
         Finalizar_Viaje.TextBox1.Text = DgvEstado.Item(0, fila).Value() 'asigno al texbox1 del formulario ventas el valor del art
-        Finalizar_Viaje.TextBox2.Focus()
+
         Finalizar_Viaje.Show()
         Close()
+    End Sub
+
+    Private Sub ViajesF1ToolStripMenuItem_Click(sender As System.Object, e As System.EventArgs) Handles ViajesF1ToolStripMenuItem.Click
+
     End Sub
 End Class

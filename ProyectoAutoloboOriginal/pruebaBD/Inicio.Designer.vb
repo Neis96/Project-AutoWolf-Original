@@ -41,6 +41,10 @@ Partial Class Inicio
         Me.Database1DataSet = New pruebaBD.Database1DataSet()
         Me.TableAdapterManager = New pruebaBD.Database1DataSetTableAdapters.TableAdapterManager()
         Me.ViajesTableAdapter = New pruebaBD.Database1DataSetTableAdapters.ViajesTableAdapter()
+        Me.ViajesF1ToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.SociosF2ToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ChoferesF3ToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.VehiculosF4ToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.MenuStrip1.SuspendLayout()
         CType(Me.DgvEstado, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.DgvReserva, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -95,6 +99,7 @@ Partial Class Inicio
         '
         'ArchivoToolStripMenuItem
         '
+        Me.ArchivoToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ViajesF1ToolStripMenuItem, Me.SociosF2ToolStripMenuItem, Me.ChoferesF3ToolStripMenuItem, Me.VehiculosF4ToolStripMenuItem})
         Me.ArchivoToolStripMenuItem.Name = "ArchivoToolStripMenuItem"
         Me.ArchivoToolStripMenuItem.Size = New System.Drawing.Size(60, 20)
         Me.ArchivoToolStripMenuItem.Text = "Archivo"
@@ -182,6 +187,30 @@ Partial Class Inicio
         '
         Me.ViajesTableAdapter.ClearBeforeFill = True
         '
+        'ViajesF1ToolStripMenuItem
+        '
+        Me.ViajesF1ToolStripMenuItem.Name = "ViajesF1ToolStripMenuItem"
+        Me.ViajesF1ToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
+        Me.ViajesF1ToolStripMenuItem.Text = "Viajes F1"
+        '
+        'SociosF2ToolStripMenuItem
+        '
+        Me.SociosF2ToolStripMenuItem.Name = "SociosF2ToolStripMenuItem"
+        Me.SociosF2ToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
+        Me.SociosF2ToolStripMenuItem.Text = "Socios     F2"
+        '
+        'ChoferesF3ToolStripMenuItem
+        '
+        Me.ChoferesF3ToolStripMenuItem.Name = "ChoferesF3ToolStripMenuItem"
+        Me.ChoferesF3ToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
+        Me.ChoferesF3ToolStripMenuItem.Text = "Choferes F3"
+        '
+        'VehiculosF4ToolStripMenuItem
+        '
+        Me.VehiculosF4ToolStripMenuItem.Name = "VehiculosF4ToolStripMenuItem"
+        Me.VehiculosF4ToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
+        Me.VehiculosF4ToolStripMenuItem.Text = "Vehiculos F4"
+        '
         'Inicio
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -194,6 +223,7 @@ Partial Class Inicio
         Me.Controls.Add(Me.BtnSocio)
         Me.Controls.Add(Me.BtnViajes)
         Me.Controls.Add(Me.MenuStrip1)
+        Me.KeyPreview = True
         Me.MainMenuStrip = Me.MenuStrip1
         Me.Name = "Inicio"
         Me.Text = "Inicio"
@@ -227,4 +257,8 @@ Partial Class Inicio
     Friend WithEvents DgvReserva As System.Windows.Forms.DataGridView
     Friend WithEvents ViajesBindingSource As System.Windows.Forms.BindingSource
     Friend WithEvents ViajesTableAdapter As pruebaBD.Database1DataSetTableAdapters.ViajesTableAdapter
+    Friend WithEvents ViajesF1ToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents SociosF2ToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents ChoferesF3ToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents VehiculosF4ToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
 End Class

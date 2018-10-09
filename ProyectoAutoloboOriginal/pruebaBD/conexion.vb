@@ -2,7 +2,7 @@
 Imports System.Data.SqlServerCe
 
 Public Class conexion
-    Public conexion As New SqlCeConnection("Data Source=C:\Users\thoma\Desktop\thom\programacion\Ejercicios visual\krak\Project-AutoWolf-Original\ProyectoAutoloboOriginal\pruebaBD\PruebaLocalConeccion.sdf")
+    Public conexion As New SqlCeConnection("Data Source=C:\Users\User\Desktop\proyecto\kraken\Project-AutoWolf-Original\ProyectoAutoloboOriginal\pruebaBD\PruebaLocalConeccion.sdf")
     Private cmb As SqlCeCommandBuilder
     Public ds As DataSet = New DataSet()
     Public da As SqlCeDataAdapter

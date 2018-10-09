@@ -23,14 +23,14 @@ Partial Class choferes
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
-        Dim Id_vehiculoLabel As System.Windows.Forms.Label
         Dim TelefonoLabel As System.Windows.Forms.Label
         Dim DireccionLabel As System.Windows.Forms.Label
         Dim DniLabel As System.Windows.Forms.Label
         Dim NombreLabel As System.Windows.Forms.Label
         Dim ApellidoLabel As System.Windows.Forms.Label
         Dim Id_choferLabel As System.Windows.Forms.Label
-        Me.Id_vehiculoTextBox = New System.Windows.Forms.TextBox()
+        Me.ChoferBindingSource = New System.Windows.Forms.BindingSource(Me.components)
+        Me.Database1DataSet = New pruebaBD.Database1DataSet()
         Me.TelefonoTextBox = New System.Windows.Forms.TextBox()
         Me.DireccionTextBox = New System.Windows.Forms.TextBox()
         Me.DniTextBox = New System.Windows.Forms.TextBox()
@@ -47,30 +47,18 @@ Partial Class choferes
         Me.DataGridViewTextBoxColumn5 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.DataGridViewTextBoxColumn6 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.DataGridViewTextBoxColumn7 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.ChoferBindingSource = New System.Windows.Forms.BindingSource(Me.components)
-        Me.Database1DataSet = New pruebaBD.Database1DataSet()
         Me.ChoferTableAdapter = New pruebaBD.Database1DataSetTableAdapters.ChoferTableAdapter()
         Me.TableAdapterManager = New pruebaBD.Database1DataSetTableAdapters.TableAdapterManager()
-        Id_vehiculoLabel = New System.Windows.Forms.Label()
         TelefonoLabel = New System.Windows.Forms.Label()
         DireccionLabel = New System.Windows.Forms.Label()
         DniLabel = New System.Windows.Forms.Label()
         NombreLabel = New System.Windows.Forms.Label()
         ApellidoLabel = New System.Windows.Forms.Label()
         Id_choferLabel = New System.Windows.Forms.Label()
-        CType(Me.ChoferDataGridView, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.ChoferBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.Database1DataSet, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.ChoferDataGridView, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
-        '
-        'Id_vehiculoLabel
-        '
-        Id_vehiculoLabel.AutoSize = True
-        Id_vehiculoLabel.Location = New System.Drawing.Point(126, 84)
-        Id_vehiculoLabel.Name = "Id_vehiculoLabel"
-        Id_vehiculoLabel.Size = New System.Drawing.Size(61, 13)
-        Id_vehiculoLabel.TabIndex = 1
-        Id_vehiculoLabel.Text = "id vehiculo:"
         '
         'TelefonoLabel
         '
@@ -126,13 +114,15 @@ Partial Class choferes
         Id_choferLabel.TabIndex = 13
         Id_choferLabel.Text = "id chofer:"
         '
-        'Id_vehiculoTextBox
+        'ChoferBindingSource
         '
-        Me.Id_vehiculoTextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.ChoferBindingSource, "id_vehiculo", True))
-        Me.Id_vehiculoTextBox.Location = New System.Drawing.Point(193, 81)
-        Me.Id_vehiculoTextBox.Name = "Id_vehiculoTextBox"
-        Me.Id_vehiculoTextBox.Size = New System.Drawing.Size(100, 20)
-        Me.Id_vehiculoTextBox.TabIndex = 2
+        Me.ChoferBindingSource.DataMember = "Chofer"
+        Me.ChoferBindingSource.DataSource = Me.Database1DataSet
+        '
+        'Database1DataSet
+        '
+        Me.Database1DataSet.DataSetName = "Database1DataSet"
+        Me.Database1DataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
         '
         'TelefonoTextBox
         '
@@ -257,16 +247,6 @@ Partial Class choferes
         Me.DataGridViewTextBoxColumn7.Name = "DataGridViewTextBoxColumn7"
         Me.DataGridViewTextBoxColumn7.ReadOnly = True
         '
-        'ChoferBindingSource
-        '
-        Me.ChoferBindingSource.DataMember = "Chofer"
-        Me.ChoferBindingSource.DataSource = Me.Database1DataSet
-        '
-        'Database1DataSet
-        '
-        Me.Database1DataSet.DataSetName = "Database1DataSet"
-        Me.Database1DataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
-        '
         'ChoferTableAdapter
         '
         Me.ChoferTableAdapter.ClearBeforeFill = True
@@ -275,7 +255,11 @@ Partial Class choferes
         '
         Me.TableAdapterManager.BackupDataSetBeforeUpdate = False
         Me.TableAdapterManager.ChoferTableAdapter = Me.ChoferTableAdapter
+        Me.TableAdapterManager.LiqCtaCtrTableAdapter = Nothing
+        Me.TableAdapterManager.LiquidacionChoferTableAdapter = Nothing
+        Me.TableAdapterManager.ResumenRemiseriaTableAdapter = Nothing
         Me.TableAdapterManager.SociosTableAdapter = Nothing
+        Me.TableAdapterManager.TablaDeTurnoTableAdapter = Nothing
         Me.TableAdapterManager.UpdateOrder = pruebaBD.Database1DataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete
         Me.TableAdapterManager.UsuarioTableAdapter = Nothing
         Me.TableAdapterManager.VehiculoTableAdapter = Nothing
@@ -290,8 +274,6 @@ Partial Class choferes
         Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.ButtonSocios)
         Me.Controls.Add(Me.ChoferDataGridView)
-        Me.Controls.Add(Id_vehiculoLabel)
-        Me.Controls.Add(Me.Id_vehiculoTextBox)
         Me.Controls.Add(TelefonoLabel)
         Me.Controls.Add(Me.TelefonoTextBox)
         Me.Controls.Add(DireccionLabel)
@@ -306,9 +288,9 @@ Partial Class choferes
         Me.Controls.Add(Me.Id_choferTextBox)
         Me.Name = "choferes"
         Me.Text = "choferes"
-        CType(Me.ChoferDataGridView, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.ChoferBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.Database1DataSet, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.ChoferDataGridView, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -317,7 +299,6 @@ Partial Class choferes
     Friend WithEvents ChoferBindingSource As System.Windows.Forms.BindingSource
     Friend WithEvents ChoferTableAdapter As pruebaBD.Database1DataSetTableAdapters.ChoferTableAdapter
     Friend WithEvents TableAdapterManager As pruebaBD.Database1DataSetTableAdapters.TableAdapterManager
-    Friend WithEvents Id_vehiculoTextBox As System.Windows.Forms.TextBox
     Friend WithEvents TelefonoTextBox As System.Windows.Forms.TextBox
     Friend WithEvents DireccionTextBox As System.Windows.Forms.TextBox
     Friend WithEvents DniTextBox As System.Windows.Forms.TextBox
