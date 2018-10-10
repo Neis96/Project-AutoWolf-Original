@@ -32,22 +32,8 @@ Partial Class ModificarVehiculos
         Dim Venc_vtvLabel As System.Windows.Forms.Label
         Dim ColorLabel As System.Windows.Forms.Label
         Dim DueñoLabel As System.Windows.Forms.Label
-        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(ModificarVehiculos))
-        Me.VehiculoBindingNavigator = New System.Windows.Forms.BindingNavigator(Me.components)
-        Me.BindingNavigatorAddNewItem = New System.Windows.Forms.ToolStripButton()
         Me.VehiculoBindingSource = New System.Windows.Forms.BindingSource(Me.components)
         Me.Database1DataSet = New pruebaBD.Database1DataSet()
-        Me.BindingNavigatorCountItem = New System.Windows.Forms.ToolStripLabel()
-        Me.BindingNavigatorDeleteItem = New System.Windows.Forms.ToolStripButton()
-        Me.BindingNavigatorMoveFirstItem = New System.Windows.Forms.ToolStripButton()
-        Me.BindingNavigatorMovePreviousItem = New System.Windows.Forms.ToolStripButton()
-        Me.BindingNavigatorSeparator = New System.Windows.Forms.ToolStripSeparator()
-        Me.BindingNavigatorPositionItem = New System.Windows.Forms.ToolStripTextBox()
-        Me.BindingNavigatorSeparator1 = New System.Windows.Forms.ToolStripSeparator()
-        Me.BindingNavigatorMoveNextItem = New System.Windows.Forms.ToolStripButton()
-        Me.BindingNavigatorMoveLastItem = New System.Windows.Forms.ToolStripButton()
-        Me.BindingNavigatorSeparator2 = New System.Windows.Forms.ToolStripSeparator()
-        Me.VehiculoBindingNavigatorSaveItem = New System.Windows.Forms.ToolStripButton()
         Me.ModeloTextBox = New System.Windows.Forms.TextBox()
         Me.MarcaTextBox = New System.Windows.Forms.TextBox()
         Me.AñoDateTimePicker = New System.Windows.Forms.DateTimePicker()
@@ -71,8 +57,6 @@ Partial Class ModificarVehiculos
         Venc_vtvLabel = New System.Windows.Forms.Label()
         ColorLabel = New System.Windows.Forms.Label()
         DueñoLabel = New System.Windows.Forms.Label()
-        CType(Me.VehiculoBindingNavigator, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.VehiculoBindingNavigator.SuspendLayout()
         CType(Me.VehiculoBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.Database1DataSet, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
@@ -158,33 +142,6 @@ Partial Class ModificarVehiculos
         DueñoLabel.TabIndex = 17
         DueñoLabel.Text = "dueño:"
         '
-        'VehiculoBindingNavigator
-        '
-        Me.VehiculoBindingNavigator.AddNewItem = Me.BindingNavigatorAddNewItem
-        Me.VehiculoBindingNavigator.BindingSource = Me.VehiculoBindingSource
-        Me.VehiculoBindingNavigator.CountItem = Me.BindingNavigatorCountItem
-        Me.VehiculoBindingNavigator.DeleteItem = Me.BindingNavigatorDeleteItem
-        Me.VehiculoBindingNavigator.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.BindingNavigatorMoveFirstItem, Me.BindingNavigatorMovePreviousItem, Me.BindingNavigatorSeparator, Me.BindingNavigatorPositionItem, Me.BindingNavigatorCountItem, Me.BindingNavigatorSeparator1, Me.BindingNavigatorMoveNextItem, Me.BindingNavigatorMoveLastItem, Me.BindingNavigatorSeparator2, Me.BindingNavigatorAddNewItem, Me.BindingNavigatorDeleteItem, Me.VehiculoBindingNavigatorSaveItem})
-        Me.VehiculoBindingNavigator.Location = New System.Drawing.Point(0, 0)
-        Me.VehiculoBindingNavigator.MoveFirstItem = Me.BindingNavigatorMoveFirstItem
-        Me.VehiculoBindingNavigator.MoveLastItem = Me.BindingNavigatorMoveLastItem
-        Me.VehiculoBindingNavigator.MoveNextItem = Me.BindingNavigatorMoveNextItem
-        Me.VehiculoBindingNavigator.MovePreviousItem = Me.BindingNavigatorMovePreviousItem
-        Me.VehiculoBindingNavigator.Name = "VehiculoBindingNavigator"
-        Me.VehiculoBindingNavigator.PositionItem = Me.BindingNavigatorPositionItem
-        Me.VehiculoBindingNavigator.Size = New System.Drawing.Size(748, 25)
-        Me.VehiculoBindingNavigator.TabIndex = 0
-        Me.VehiculoBindingNavigator.Text = "BindingNavigator1"
-        '
-        'BindingNavigatorAddNewItem
-        '
-        Me.BindingNavigatorAddNewItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image
-        Me.BindingNavigatorAddNewItem.Image = CType(resources.GetObject("BindingNavigatorAddNewItem.Image"), System.Drawing.Image)
-        Me.BindingNavigatorAddNewItem.Name = "BindingNavigatorAddNewItem"
-        Me.BindingNavigatorAddNewItem.RightToLeftAutoMirrorImage = True
-        Me.BindingNavigatorAddNewItem.Size = New System.Drawing.Size(23, 22)
-        Me.BindingNavigatorAddNewItem.Text = "Agregar nuevo"
-        '
         'VehiculoBindingSource
         '
         Me.VehiculoBindingSource.DataMember = "Vehiculo"
@@ -194,90 +151,6 @@ Partial Class ModificarVehiculos
         '
         Me.Database1DataSet.DataSetName = "Database1DataSet"
         Me.Database1DataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
-        '
-        'BindingNavigatorCountItem
-        '
-        Me.BindingNavigatorCountItem.Name = "BindingNavigatorCountItem"
-        Me.BindingNavigatorCountItem.Size = New System.Drawing.Size(37, 22)
-        Me.BindingNavigatorCountItem.Text = "de {0}"
-        Me.BindingNavigatorCountItem.ToolTipText = "Número total de elementos"
-        '
-        'BindingNavigatorDeleteItem
-        '
-        Me.BindingNavigatorDeleteItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image
-        Me.BindingNavigatorDeleteItem.Image = CType(resources.GetObject("BindingNavigatorDeleteItem.Image"), System.Drawing.Image)
-        Me.BindingNavigatorDeleteItem.Name = "BindingNavigatorDeleteItem"
-        Me.BindingNavigatorDeleteItem.RightToLeftAutoMirrorImage = True
-        Me.BindingNavigatorDeleteItem.Size = New System.Drawing.Size(23, 22)
-        Me.BindingNavigatorDeleteItem.Text = "Eliminar"
-        '
-        'BindingNavigatorMoveFirstItem
-        '
-        Me.BindingNavigatorMoveFirstItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image
-        Me.BindingNavigatorMoveFirstItem.Image = CType(resources.GetObject("BindingNavigatorMoveFirstItem.Image"), System.Drawing.Image)
-        Me.BindingNavigatorMoveFirstItem.Name = "BindingNavigatorMoveFirstItem"
-        Me.BindingNavigatorMoveFirstItem.RightToLeftAutoMirrorImage = True
-        Me.BindingNavigatorMoveFirstItem.Size = New System.Drawing.Size(23, 22)
-        Me.BindingNavigatorMoveFirstItem.Text = "Mover primero"
-        '
-        'BindingNavigatorMovePreviousItem
-        '
-        Me.BindingNavigatorMovePreviousItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image
-        Me.BindingNavigatorMovePreviousItem.Image = CType(resources.GetObject("BindingNavigatorMovePreviousItem.Image"), System.Drawing.Image)
-        Me.BindingNavigatorMovePreviousItem.Name = "BindingNavigatorMovePreviousItem"
-        Me.BindingNavigatorMovePreviousItem.RightToLeftAutoMirrorImage = True
-        Me.BindingNavigatorMovePreviousItem.Size = New System.Drawing.Size(23, 22)
-        Me.BindingNavigatorMovePreviousItem.Text = "Mover anterior"
-        '
-        'BindingNavigatorSeparator
-        '
-        Me.BindingNavigatorSeparator.Name = "BindingNavigatorSeparator"
-        Me.BindingNavigatorSeparator.Size = New System.Drawing.Size(6, 25)
-        '
-        'BindingNavigatorPositionItem
-        '
-        Me.BindingNavigatorPositionItem.AccessibleName = "Posición"
-        Me.BindingNavigatorPositionItem.AutoSize = False
-        Me.BindingNavigatorPositionItem.Name = "BindingNavigatorPositionItem"
-        Me.BindingNavigatorPositionItem.Size = New System.Drawing.Size(50, 23)
-        Me.BindingNavigatorPositionItem.Text = "0"
-        Me.BindingNavigatorPositionItem.ToolTipText = "Posición actual"
-        '
-        'BindingNavigatorSeparator1
-        '
-        Me.BindingNavigatorSeparator1.Name = "BindingNavigatorSeparator1"
-        Me.BindingNavigatorSeparator1.Size = New System.Drawing.Size(6, 25)
-        '
-        'BindingNavigatorMoveNextItem
-        '
-        Me.BindingNavigatorMoveNextItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image
-        Me.BindingNavigatorMoveNextItem.Image = CType(resources.GetObject("BindingNavigatorMoveNextItem.Image"), System.Drawing.Image)
-        Me.BindingNavigatorMoveNextItem.Name = "BindingNavigatorMoveNextItem"
-        Me.BindingNavigatorMoveNextItem.RightToLeftAutoMirrorImage = True
-        Me.BindingNavigatorMoveNextItem.Size = New System.Drawing.Size(23, 22)
-        Me.BindingNavigatorMoveNextItem.Text = "Mover siguiente"
-        '
-        'BindingNavigatorMoveLastItem
-        '
-        Me.BindingNavigatorMoveLastItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image
-        Me.BindingNavigatorMoveLastItem.Image = CType(resources.GetObject("BindingNavigatorMoveLastItem.Image"), System.Drawing.Image)
-        Me.BindingNavigatorMoveLastItem.Name = "BindingNavigatorMoveLastItem"
-        Me.BindingNavigatorMoveLastItem.RightToLeftAutoMirrorImage = True
-        Me.BindingNavigatorMoveLastItem.Size = New System.Drawing.Size(23, 22)
-        Me.BindingNavigatorMoveLastItem.Text = "Mover último"
-        '
-        'BindingNavigatorSeparator2
-        '
-        Me.BindingNavigatorSeparator2.Name = "BindingNavigatorSeparator2"
-        Me.BindingNavigatorSeparator2.Size = New System.Drawing.Size(6, 25)
-        '
-        'VehiculoBindingNavigatorSaveItem
-        '
-        Me.VehiculoBindingNavigatorSaveItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image
-        Me.VehiculoBindingNavigatorSaveItem.Image = CType(resources.GetObject("VehiculoBindingNavigatorSaveItem.Image"), System.Drawing.Image)
-        Me.VehiculoBindingNavigatorSaveItem.Name = "VehiculoBindingNavigatorSaveItem"
-        Me.VehiculoBindingNavigatorSaveItem.Size = New System.Drawing.Size(23, 22)
-        Me.VehiculoBindingNavigatorSaveItem.Text = "Guardar datos"
         '
         'ModeloTextBox
         '
@@ -377,7 +250,6 @@ Partial Class ModificarVehiculos
         '
         Me.TableAdapterManager.BackupDataSetBeforeUpdate = False
         Me.TableAdapterManager.ChoferTableAdapter = Nothing
-        '  Me.TableAdapterManager.ReservaTableAdapter = Nothing
         Me.TableAdapterManager.SociosTableAdapter = Nothing
         Me.TableAdapterManager.UpdateOrder = pruebaBD.Database1DataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete
         Me.TableAdapterManager.UsuarioTableAdapter = Nothing
@@ -419,12 +291,8 @@ Partial Class ModificarVehiculos
         Me.Controls.Add(Me.ColorTextBox)
         Me.Controls.Add(DueñoLabel)
         Me.Controls.Add(Me.DueñoTextBox)
-        Me.Controls.Add(Me.VehiculoBindingNavigator)
         Me.Name = "ModificarVehiculos"
         Me.Text = "ModificarVehiculos"
-        CType(Me.VehiculoBindingNavigator, System.ComponentModel.ISupportInitialize).EndInit()
-        Me.VehiculoBindingNavigator.ResumeLayout(False)
-        Me.VehiculoBindingNavigator.PerformLayout()
         CType(Me.VehiculoBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.Database1DataSet, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
@@ -435,19 +303,6 @@ Partial Class ModificarVehiculos
     Friend WithEvents VehiculoBindingSource As System.Windows.Forms.BindingSource
     Friend WithEvents VehiculoTableAdapter As pruebaBD.Database1DataSetTableAdapters.VehiculoTableAdapter
     Friend WithEvents TableAdapterManager As pruebaBD.Database1DataSetTableAdapters.TableAdapterManager
-    Friend WithEvents VehiculoBindingNavigator As System.Windows.Forms.BindingNavigator
-    Friend WithEvents BindingNavigatorAddNewItem As System.Windows.Forms.ToolStripButton
-    Friend WithEvents BindingNavigatorCountItem As System.Windows.Forms.ToolStripLabel
-    Friend WithEvents BindingNavigatorDeleteItem As System.Windows.Forms.ToolStripButton
-    Friend WithEvents BindingNavigatorMoveFirstItem As System.Windows.Forms.ToolStripButton
-    Friend WithEvents BindingNavigatorMovePreviousItem As System.Windows.Forms.ToolStripButton
-    Friend WithEvents BindingNavigatorSeparator As System.Windows.Forms.ToolStripSeparator
-    Friend WithEvents BindingNavigatorPositionItem As System.Windows.Forms.ToolStripTextBox
-    Friend WithEvents BindingNavigatorSeparator1 As System.Windows.Forms.ToolStripSeparator
-    Friend WithEvents BindingNavigatorMoveNextItem As System.Windows.Forms.ToolStripButton
-    Friend WithEvents BindingNavigatorMoveLastItem As System.Windows.Forms.ToolStripButton
-    Friend WithEvents BindingNavigatorSeparator2 As System.Windows.Forms.ToolStripSeparator
-    Friend WithEvents VehiculoBindingNavigatorSaveItem As System.Windows.Forms.ToolStripButton
     Friend WithEvents ModeloTextBox As System.Windows.Forms.TextBox
     Friend WithEvents MarcaTextBox As System.Windows.Forms.TextBox
     Friend WithEvents AñoDateTimePicker As System.Windows.Forms.DateTimePicker

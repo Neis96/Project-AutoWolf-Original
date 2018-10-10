@@ -1,7 +1,7 @@
 ﻿Public Class Vehiculos1
 
 
-    Private Sub VehiculoBindingNavigatorSaveItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles VehiculoBindingNavigatorSaveItem.Click
+    Private Sub VehiculoBindingNavigatorSaveItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs)
         Me.Validate()
         Me.VehiculoBindingSource.EndEdit()
         Me.TableAdapterManager.UpdateAll(Me.Database1DataSet)
@@ -17,34 +17,128 @@
 
     Private Sub BtnAgregar_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles BtnAgregar.Click
 
-        If DominioTextBox.Text = "" Then
-            MsgBox("El campo esta vacio")
-            DominioTextBox.Focus()
-        Else
+        Dim dominio, marca, modelo, año, color, dueño, seguro, vtv, gnc As String
+        dominio = UCase(TextBoxDominio.Text)
+        marca = TextBoxMarca.Text
+        modelo = TextBoxModelo.Text
+        año = DateTimePickerAno.Text
+        color = TextBoxColor.Text
+        dueño = TextBoxDueno.Text
+        seguro = TextBoxSeguro.Text
+        vtv = DateTimePickerGnc.Text
+        gnc = DateTimePickerGnc.Text
 
-            Me.VehiculoBindingSource.EndEdit() 'finalizo edicion
+        If TextBoxDominio.Text <> "" Then
+            If Len(TextBoxDominio.Text) >= 6 And Len(TextBoxDominio.Text) <= 7 Then
 
-            Me.TableAdapterManager.UpdateAll(Me.Database1DataSet) 'guardo en disco
+                If TextBoxMarca.Text <> "" Then
+                    If TextBoxModelo.Text <> "" Then
+                        If DateTimePickerAno.Text <> "" Then
+                            If TextBoxColor.Text <> "" Then
+                                If TextBoxDueno.Text <> "" Then
+                                    If TextBoxSeguro.Text <> "" Then
 
-            MsgBox("Registro guardado con exito")
+                                        Me.VehiculoBindingSource.Current("dominio") = dominio
+                                        Me.VehiculoBindingSource.Current("marca") = marca
+                                        Me.VehiculoBindingSource.Current("modelo") = modelo
+                                        Me.VehiculoBindingSource.Current("año") = año
+                                        Me.VehiculoBindingSource.Current("color") = color
+                                        Me.VehiculoBindingSource.Current("dueño") = dueño
+                                        Me.VehiculoBindingSource.Current("seguro") = seguro
+                                        Me.VehiculoBindingSource.Current("venc_gnc ") = gnc
+                                        Me.VehiculoBindingSource.Current("venc_vtv") = vtv
+
+                                        Me.Validate()
+                                        Me.VehiculoBindingSource.Current.EndEdit() 'finalizo edicion
+
+                                        Me.TableAdapterManager.UpdateAll(Me.Database1DataSet) 'guardo en disco
+
+                                        MsgBox("Registro guardado con exito")
 
 
+                                        Me.VehiculoTableAdapter.Fill(Me.Database1DataSet.Vehiculo) 'Actuliza el form en el que estas
 
-            Me.VehiculoTableAdapter.Fill(Me.Database1DataSet.Vehiculo) 'Actuliza el form en el que estas
 
-            Me.VehiculoBindingSource.MoveLast() 'ver ultimo agragado 
+                                        'respetar siempre el orden de las instrucciones
 
-            'respetar siempre el orden de las instrucciones
 
-            Me.VehiculoBindingSource.AddNew() 'Para agregar el sig
+                                        'pasa el valor del ID a strig 'veo el dato que necesite
 
-            DominioTextBox.Focus()
 
-        End If
+                                        Me.VehiculoBindingSource.AddNew() 'Para agregar el sig
+
+                                        TextBoxDominio.Text = ""
+                                        TextBoxMarca.Text = ""
+                                        TextBoxModelo.Text = ""
+                                        TextBoxColor.Text = ""
+                                        TextBoxDueno.Text = ""
+                                        TextBoxSeguro.Text = ""
+                                        TextBoxDominio.Focus()
+                                    Else
+                                        MsgBox("El campo Seguro esta vacio")
+                                        TextBoxSeguro.Focus()
+
+                                    End If
+                                Else
+                                    MsgBox("El campo dueño esta vacio")
+                                    TextBoxDueno.Focus()
+
+                                End If
+                                Else
+                                    MsgBox("El campo color esta vacio")
+                                    TextBoxColor.Focus()
+
+                                End If
+                            Else
+                                MsgBox("El campo año esta vacio")
+                                DateTimePickerAno.Focus()
+
+                            End If
+                        Else
+                            MsgBox("El campo del modelo esta vacio")
+                            TextBoxModelo.Focus()
+
+                        End If
+
+                    Else
+                        MsgBox("El campo marca esta vacio")
+                        TextBoxMarca.Focus()
+
+                    End If
+                Else
+                    MsgBox("El campo dominio no contiene la cantidad de caracteres validos")
+                    TextBoxDominio.Focus()
+
+                End If
+            Else
+                MsgBox("El campo de dominio esta vacio")
+                TextBoxDominio.Focus()
+            End If
 
     End Sub
 
     Private Sub TextBoxConsulta_TextChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles TextBoxConsulta.TextChanged
+
+
+        Dim vista As New DataView 'tipo de dato de la grilla
+        vista.Table = Me.Database1DataSet.Vehiculo
+        vista.RowFilter = "Convert (dominio,System.String) like  '" & TextBoxConsulta.Text & "%'"
+        Me.VehiculoDataGridView.DataSource = vista 'actualizo la grilla
+
+
+        'If TextBoxConsulta.Text = "" Then
+        '    Me.VehiculoTableAdapter.Fill(Me.Database1DataSet.Vehiculo)
+        'End If
+        'no logro hacer que funcione la consulta en textbox
+
+        'Dim vista As New DataView 'tipo de dato de la grilla
+        'Dim consulta As String
+        'consulta = TextBoxConsulta.Text
+
+        'vista.Table = Me.Database1DataSet.Vehiculo
+        'vista.RowFilter = "dominio = " & consulta
+
+        'Me.VehiculoDataGridView.DataSource = vista 'actualizo la grilla
 
         
 
@@ -58,7 +152,18 @@
 
     Private Sub BtnConsulta_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles BtnConsulta.Click
 
-        Me.VehiculoTableAdapter.FillBy((Me.Database1DataSet.Vehiculo), TextBoxConsulta.Text)
+        'If TextBoxConsulta.Text <> "" Then
+        '    If Len(TextBoxConsulta.Text) >= 6 And Len(TextBoxConsulta.Text) <= 7 Then
+
+        '        Me.VehiculoTableAdapter.FillBy((Me.Database1DataSet.Vehiculo), TextBoxConsulta.Text)
+
+        '    Else
+        '        MsgBox("El dominio consultado no contiene la cantidad de caracteres validos")
+        '    End If
+        'Else
+        '    MsgBox("El campo de consulta esta vacio")
+
+        'End If
 
 
 
@@ -74,7 +179,8 @@
             If fila <> -1 Then
 
                 ModificarVehiculos.Show()
-
+                ModificarVehiculos.VehiculoTableAdapter.FillBy((ModificarVehiculos.Database1DataSet.Vehiculo), TextBoxConsulta.Text)
+                ModificarVehiculos.DominioTextBox.Focus()
 
                 'textbox si quiero que me muestre en los dos
                 

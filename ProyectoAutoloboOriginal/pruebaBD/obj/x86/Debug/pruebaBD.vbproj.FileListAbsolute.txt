@@ -31,7 +31,6 @@ C:\Users\user\Desktop\GitHub\Projecto Autolobo Original\Project AutoWolf Origina
 C:\Users\user\Desktop\GitHub\Projecto Autolobo Original\Project AutoWolf Original\ProyectoAutoloboOriginal\pruebaBD\obj\x86\Debug\pruebaBD.Resources.resources
 C:\Users\user\Desktop\GitHub\Projecto Autolobo Original\Project AutoWolf Original\ProyectoAutoloboOriginal\pruebaBD\obj\x86\Debug\pruebaBD.vbproj.GenerateResource.Cache
 C:\Users\user\Desktop\GitHub\Projecto Autolobo Original\Project AutoWolf Original\ProyectoAutoloboOriginal\pruebaBD\obj\x86\Debug\pruebaBD.choferes.resources
-C:\Users\user\Desktop\GitHub\Projecto Autolobo Original\Project AutoWolf Original\ProyectoAutoloboOriginal\pruebaBD\obj\x86\Debug\pruebaBD.reservas.resources
 C:\Users\user\Desktop\GitHub\Projecto Autolobo Original\Project AutoWolf Original\ProyectoAutoloboOriginal\pruebaBD\obj\x86\Debug\pruebaBD.Socios.resources
 C:\Users\user\Desktop\GitHub\Projecto Autolobo Original\Project AutoWolf Original\ProyectoAutoloboOriginal\pruebaBD\obj\x86\Debug\pruebaBD.vehiculos.resources
 C:\Users\user\Desktop\GitHub\Projecto Autolobo Original\Project AutoWolf Original\ProyectoAutoloboOriginal\pruebaBD\obj\x86\Debug\pruebaBD.viajes.resources
@@ -72,7 +71,15 @@ C:\Users\thoma\Desktop\thom\programacion\Ejercicios visual\krak\Project-AutoWolf
 C:\Users\thoma\Desktop\thom\programacion\Ejercicios visual\krak\Project-AutoWolf-Original\ProyectoAutoloboOriginal\pruebaBD\obj\x86\Debug\pruebaBD.Vehiculos1.resources
 C:\Users\thoma\Desktop\thom\programacion\Ejercicios visual\krak\Project-AutoWolf-Original\ProyectoAutoloboOriginal\pruebaBD\obj\x86\Debug\pruebaBD.viajes.resources
 C:\Users\thoma\Desktop\thom\programacion\Ejercicios visual\krak\Project-AutoWolf-Original\ProyectoAutoloboOriginal\pruebaBD\obj\x86\Debug\pruebaBD.vbproj.GenerateResource.Cache
+<<<<<<< HEAD
 C:\Users\User\Desktop\proyecto\kraken\Project-AutoWolf-Original\ProyectoAutoloboOriginal\pruebaBD\obj\x86\Debug\pruebaBD.vbprojResolveAssemblyReference.cache
 C:\Users\User\Desktop\proyecto\kraken\Project-AutoWolf-Original\ProyectoAutoloboOriginal\pruebaBD\obj\x86\Debug\pruebaBD.Ayuda.resources
 C:\Users\User\Desktop\proyecto\kraken\Project-AutoWolf-Original\ProyectoAutoloboOriginal\pruebaBD\obj\x86\Debug\pruebaBD.Finalizar_Viaje.resources
 C:\Users\thoma\Desktop\thom\programacion\Ejercicios visual\krak\Project-AutoWolf-Original\ProyectoAutoloboOriginal\pruebaBD\obj\x86\Debug\pruebaBD.Finalizar_Viaje.resources
+=======
+C:\Users\user\Desktop\GitHub\Projecto Autolobo Original\Project AutoWolf Original\ProyectoAutoloboOriginal\pruebaBD\obj\x86\Debug\pruebaBD.vbprojResolveAssemblyReference.cache
+C:\Users\user\Desktop\GitHub\Projecto Autolobo Original\Project AutoWolf Original\ProyectoAutoloboOriginal\pruebaBD\obj\x86\Debug\pruebaBD.Ayuda.resources
+C:\Users\user\Desktop\GitHub\Projecto Autolobo Original\Project AutoWolf Original\ProyectoAutoloboOriginal\pruebaBD\obj\x86\Debug\pruebaBD.ModificarSocios.resources
+C:\Users\User\Desktop\proyecto\kraken\Project-AutoWolf-Original\ProyectoAutoloboOriginal\pruebaBD\obj\x86\Debug\pruebaBD.vbprojResolveAssemblyReference.cache
+C:\Users\User\Desktop\proyecto\kraken\Project-AutoWolf-Original\ProyectoAutoloboOriginal\pruebaBD\obj\x86\Debug\pruebaBD.Ayuda.resources
+>>>>>>> Vehiculos
