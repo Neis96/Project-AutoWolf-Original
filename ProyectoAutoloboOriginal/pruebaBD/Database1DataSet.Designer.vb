@@ -7879,12 +7879,23 @@ Namespace Database1DataSetTableAdapters
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
         Private Sub InitCommandCollection()
-            Me._commandCollection = New Global.System.Data.SqlServerCe.SqlCeCommand(0) {}
+            Me._commandCollection = New Global.System.Data.SqlServerCe.SqlCeCommand(1) {}
             Me._commandCollection(0) = New Global.System.Data.SqlServerCe.SqlCeCommand()
             Me._commandCollection(0).Connection = Me.Connection
             Me._commandCollection(0).CommandText = "SELECT Registro, idChofer, idSocios, fecha_origen, fecha_destino, Total, lugar_or"& _ 
                 "igen, lugar_destino, idVehiculos, Reserva, Cta_cte, Estado FROM Viajes"
             Me._commandCollection(0).CommandType = Global.System.Data.CommandType.Text
+            Me._commandCollection(1) = New Global.System.Data.SqlServerCe.SqlCeCommand()
+            Me._commandCollection(1).Connection = Me.Connection
+            Me._commandCollection(1).CommandText = "SELECT        Registro, idChofer, idSocios, fecha_origen, fecha_destino, Total, l"& _ 
+                "ugar_origen, lugar_destino, idVehiculos, Reserva, Cta_cte, Estado"&Global.Microsoft.VisualBasic.ChrW(13)&Global.Microsoft.VisualBasic.ChrW(10)&"FROM         "& _ 
+                "   Viajes"&Global.Microsoft.VisualBasic.ChrW(13)&Global.Microsoft.VisualBasic.ChrW(10)&"WHERE        (idChofer = @ID) AND (Estado = @estado) AND (fecha_desti"& _ 
+                "no BETWEEN @desde AND @hasta)"
+            Me._commandCollection(1).CommandType = Global.System.Data.CommandType.Text
+            Me._commandCollection(1).Parameters.Add(New Global.System.Data.SqlServerCe.SqlCeParameter("@ID", Global.System.Data.SqlDbType.Int, 4, Global.System.Data.ParameterDirection.Input, true, 0, 0, "idChofer", Global.System.Data.DataRowVersion.Current, Nothing))
+            Me._commandCollection(1).Parameters.Add(New Global.System.Data.SqlServerCe.SqlCeParameter("@estado", Global.System.Data.SqlDbType.NVarChar, 100, Global.System.Data.ParameterDirection.Input, true, 0, 0, "Estado", Global.System.Data.DataRowVersion.Current, Nothing))
+            Me._commandCollection(1).Parameters.Add(New Global.System.Data.SqlServerCe.SqlCeParameter("@desde", Global.System.Data.SqlDbType.DateTime, 8, Global.System.Data.ParameterDirection.Input, true, 0, 0, "fecha_destino", Global.System.Data.DataRowVersion.Current, Nothing))
+            Me._commandCollection(1).Parameters.Add(New Global.System.Data.SqlServerCe.SqlCeParameter("@hasta", Global.System.Data.SqlDbType.DateTime, 8, Global.System.Data.ParameterDirection.Input, true, 0, 0, "fecha_destino", Global.System.Data.DataRowVersion.Current, Nothing))
         End Sub
         
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
@@ -7909,6 +7920,35 @@ Namespace Database1DataSetTableAdapters
             Dim dataTable As Database1DataSet.ViajesDataTable = New Database1DataSet.ViajesDataTable()
             Me.Adapter.Fill(dataTable)
             Return dataTable
+        End Function
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0"),  _
+         Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter"),  _
+         Global.System.ComponentModel.DataObjectMethodAttribute(Global.System.ComponentModel.DataObjectMethodType.Fill, false)>  _
+        Public Overloads Overridable Function FillBy(ByVal dataTable As Database1DataSet.ViajesDataTable, ByVal ID As Integer, ByVal estado As String, ByVal desde As Global.System.Nullable(Of Date), ByVal hasta As Global.System.Nullable(Of Date)) As Integer
+            Me.Adapter.SelectCommand = Me.CommandCollection(1)
+            Me.Adapter.SelectCommand.Parameters(0).Value = CType(ID,Integer)
+            If (estado Is Nothing) Then
+                Me.Adapter.SelectCommand.Parameters(1).Value = Global.System.DBNull.Value
+            Else
+                Me.Adapter.SelectCommand.Parameters(1).Value = CType(estado,String)
+            End If
+            If (desde.HasValue = true) Then
+                Me.Adapter.SelectCommand.Parameters(2).Value = CType(desde.Value,Date)
+            Else
+                Me.Adapter.SelectCommand.Parameters(2).Value = Global.System.DBNull.Value
+            End If
+            If (hasta.HasValue = true) Then
+                Me.Adapter.SelectCommand.Parameters(3).Value = CType(hasta.Value,Date)
+            Else
+                Me.Adapter.SelectCommand.Parameters(3).Value = Global.System.DBNull.Value
+            End If
+            If (Me.ClearBeforeFill = true) Then
+                dataTable.Clear
+            End If
+            Dim returnValue As Integer = Me.Adapter.Fill(dataTable)
+            Return returnValue
         End Function
         
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _

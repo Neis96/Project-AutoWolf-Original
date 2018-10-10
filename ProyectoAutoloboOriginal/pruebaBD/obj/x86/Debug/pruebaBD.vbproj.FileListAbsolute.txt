@@ -20,3 +20,4 @@ C:\Users\User\Desktop\proyecto\kraken\Project-AutoWolf-Original\ProyectoAutolobo
 C:\Users\User\Desktop\proyecto\kraken\Project-AutoWolf-Original\ProyectoAutoloboOriginal\pruebaBD\obj\x86\Debug\pruebaBD.exe
 C:\Users\User\Desktop\proyecto\kraken\Project-AutoWolf-Original\ProyectoAutoloboOriginal\pruebaBD\obj\x86\Debug\pruebaBD.xml
 C:\Users\User\Desktop\proyecto\kraken\Project-AutoWolf-Original\ProyectoAutoloboOriginal\pruebaBD\obj\x86\Debug\pruebaBD.pdb
+C:\Users\User\Desktop\proyecto\kraken\Project-AutoWolf-Original\ProyectoAutoloboOriginal\pruebaBD\obj\x86\Debug\pruebaBD.Liquidacion_Choferes.resources
