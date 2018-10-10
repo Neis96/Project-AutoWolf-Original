@@ -31,6 +31,10 @@ Public Class conexion
 
     End Sub
 
+    Public Sub actualizar(ByRef tabla As String)
+        ' da = New SqlCeDataAdapter()
+        'da.Fill(ds, tabla)
+    End Sub
     'Function insertar(ByVal sql)
     '    conexion.Open()
     '    comando = New SqlCeCommand(sql, conexion)

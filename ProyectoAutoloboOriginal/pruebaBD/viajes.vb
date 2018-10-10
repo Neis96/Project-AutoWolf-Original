@@ -1,5 +1,12 @@
 ﻿Public Class viajes
     Dim conexion As New conexion
+    ' instancio dataTable
+    '  Private dtViaje As New Database1DataSet.ViajesDataTable
+    ' instancio el tableAdapter
+    '  Private taViaje As New Database1DataSetTableAdapters.ViajesTableAdapter
+    ' instanciamos una fila
+    'Private fila As Database1DataSet.ViajesRow
+
 
     Private Sub viajes_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
         'TODO: esta línea de código carga datos en la tabla 'Database1DataSet.Vehiculo' Puede moverla o quitarla según sea necesario.
@@ -10,13 +17,14 @@
         Me.ChoferTableAdapter.Fill(Me.Database1DataSet.Chofer)
         'TODO: esta línea de código carga datos en la tabla 'Database1DataSet.Viajes' Puede moverla o quitarla según sea necesario.
         Me.ViajesTableAdapter.Fill(Me.Database1DataSet.Viajes)
-
+        ' Me.dtViaje = Me.taViaje.GetData
         Me.ViajesBindingSource.AddNew()
 
     End Sub
 
     Private Sub Button1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button1.Click
         'boton guardar
+
         Dim cta, reserva, estado, Lorigen, Ldestino As String ', agregar
         Dim chofer, socios, auto As Integer
         chofer = ComboBoxChofer.Text
@@ -52,9 +60,9 @@
         '    MsgBox("error")
         'End If
 
-        Me.ViajesBindingSource.Current("IdChofer") = Val(ComboBoxChofer.SelectedItem)
-        Me.ViajesBindingSource.Current("idSocios") = Val(ComboBoxSocios.SelectedItem)
-        Me.ViajesBindingSource.Current("idVehiculos") = Val(ComboBoxVehiculo.SelectedItem)
+        Me.ViajesBindingSource.Current("IdChofer") = Val(ComboBoxChofer.Text)
+        Me.ViajesBindingSource.Current("idSocios") = Val(ComboBoxSocios.Text)
+        Me.ViajesBindingSource.Current("idVehiculos") = Val(ComboBoxVehiculo.Text)
         Me.ViajesBindingSource.Current("fecha_origen") = Fecha_destinoDateTimePicker.Value
         Me.ViajesBindingSource.Current("fecha_destino") = Fecha_origenDateTimePicker.Value
         Me.ViajesBindingSource.Current("total") = Val(TotalTextBox.Text)
@@ -64,9 +72,13 @@
         Me.ViajesBindingSource.Current("Estado") = estado
         MsgBox("datos guardados")
         Me.ViajesBindingSource.EndEdit()
+        ' conexion.
         Me.TableAdapterManager.UpdateAll(Me.Database1DataSet)
         Me.ViajesTableAdapter.Fill(Me.Database1DataSet.Viajes) 'actualizo en este formulario
         Inicio.ViajesTableAdapter.Fill(Inicio.Database1DataSet.Viajes)
+        conexion.actualizar("VIAJES")
+
+        'conexion.da.Fill(conexion.ds)
         'Inicio.StockTableAdapter.Fill(Inicio.Database1DataSet.Viajes) 'actualizo en formulario principal
         Me.ViajesBindingSource.AddNew() 'preparo para seguir cargando
     End Sub

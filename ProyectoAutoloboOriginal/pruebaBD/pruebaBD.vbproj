@@ -207,6 +207,9 @@
     <EmbeddedResource Include="Inicio.resx">
       <DependentUpon>Inicio.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Liquidacion Choferes.resx">
+      <DependentUpon>Liquidacion Choferes.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="ModificarSocios.resx">
       <DependentUpon>ModificarSocios.vb</DependentUpon>
     </EmbeddedResource>

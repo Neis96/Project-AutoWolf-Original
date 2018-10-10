@@ -99,7 +99,7 @@
         Finalizar_Viaje.TextBox1.Text = DgvEstado.Item(0, fila).Value() 'asigno al texbox1 del formulario ventas el valor del art
 
         Finalizar_Viaje.Show()
-        Close()
+
     End Sub
 
     Private Sub ViajesF1ToolStripMenuItem_Click(sender As System.Object, e As System.EventArgs) Handles ViajesF1ToolStripMenuItem.Click
