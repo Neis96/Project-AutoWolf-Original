@@ -17,7 +17,7 @@
 
     Private Sub Button1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button1.Click
         'boton guardar
-        Dim cta, reserva, estado, agregar, Lorigen, Ldestino As String
+        Dim cta, reserva, estado, Lorigen, Ldestino As String ', agregar
         Dim chofer, socios, auto As Integer
         chofer = ComboBoxChofer.Text
         socios = ComboBoxSocios.Text
