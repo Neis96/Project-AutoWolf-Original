@@ -1,7 +1,7 @@
 ﻿Public Class Resumen
 
-    Dim conexion As conexion = New conexion()
-    Dim conexion2 As conexion = New conexion()
+    Dim ResumenChofer As conexion = New conexion()
+    Dim ResumenRemiseria As conexion = New conexion()
 
     Private Sub LiquidacionChoferBindingNavigatorSaveItem_Click(sender As System.Object, e As System.EventArgs)
         'Me.Validate()
@@ -13,10 +13,10 @@
 
     Public Sub MostrarResumen()
 
-        conexion.Consulta("SELECT Registro, id_chofer, Nombre, Desde, Hasta, Monto FROM LiquidacionChofer", "LiquidacionChofer")
-        DgvChofer.DataSource = conexion.ds.Tables("LiquidacionChofer")
-        conexion2.Consulta("SELECT Registro, Fecha, Monto FROM ResumenRemiseria", "ResumenRemiseria")
-        DgvAgencia.DataSource = conexion2.ds.Tables("ResumenRemiseria")
+        ResumenChofer.Consulta("SELECT Registro, id_chofer, Nombre, Desde, Hasta, Monto FROM LiquidacionChofer", "LiquidacionChofer")
+        DgvChofer.DataSource = ResumenChofer.ds.Tables("LiquidacionChofer")
+        ResumenRemiseria.Consulta("SELECT Registro, Fecha, Monto FROM ResumenRemiseria", "ResumenRemiseria")
+        DgvAgencia.DataSource = ResumenRemiseria.ds.Tables("ResumenRemiseria")
 
     End Sub
 
