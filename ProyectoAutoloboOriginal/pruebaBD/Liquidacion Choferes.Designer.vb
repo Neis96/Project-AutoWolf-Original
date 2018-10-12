@@ -75,6 +75,10 @@ Partial Class Liquidacion_Choferes
         Me.DataGridViewTextBoxColumn16 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.DataGridViewTextBoxColumn17 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.DataGridViewTextBoxColumn18 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.ResumenRemiseriaDataGridView = New System.Windows.Forms.DataGridView()
+        Me.DataGridViewTextBoxColumn19 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewTextBoxColumn20 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewTextBoxColumn21 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         CType(Me.ViajesDataGridView, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.ViajesBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.Database1DataSet, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -83,6 +87,7 @@ Partial Class Liquidacion_Choferes
         CType(Me.LiquidacionChoferBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.ResumenRemiseriaBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.LiquidacionChoferDataGridView, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.ResumenRemiseriaDataGridView, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'ViajesDataGridView
@@ -91,9 +96,9 @@ Partial Class Liquidacion_Choferes
         Me.ViajesDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.ViajesDataGridView.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.DataGridViewTextBoxColumn1, Me.DataGridViewTextBoxColumn2, Me.DataGridViewTextBoxColumn3, Me.DataGridViewTextBoxColumn4, Me.DataGridViewTextBoxColumn5, Me.DataGridViewTextBoxColumn6, Me.DataGridViewTextBoxColumn7, Me.DataGridViewTextBoxColumn8, Me.DataGridViewTextBoxColumn9, Me.DataGridViewTextBoxColumn10, Me.DataGridViewTextBoxColumn11, Me.DataGridViewTextBoxColumn12})
         Me.ViajesDataGridView.DataSource = Me.ViajesBindingSource
-        Me.ViajesDataGridView.Location = New System.Drawing.Point(59, 220)
+        Me.ViajesDataGridView.Location = New System.Drawing.Point(60, 220)
         Me.ViajesDataGridView.Name = "ViajesDataGridView"
-        Me.ViajesDataGridView.Size = New System.Drawing.Size(1243, 287)
+        Me.ViajesDataGridView.Size = New System.Drawing.Size(768, 287)
         Me.ViajesDataGridView.TabIndex = 1
         '
         'DataGridViewTextBoxColumn1
@@ -176,6 +181,7 @@ Partial Class Liquidacion_Choferes
         '
         'Database1DataSet
         '
+        Me.Database1DataSet.DataSetName = "Database1DataSet"
         Me.Database1DataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
         '
         'Label1
@@ -449,11 +455,43 @@ Partial Class Liquidacion_Choferes
         Me.DataGridViewTextBoxColumn18.HeaderText = "Nombre"
         Me.DataGridViewTextBoxColumn18.Name = "DataGridViewTextBoxColumn18"
         '
+        'ResumenRemiseriaDataGridView
+        '
+        Me.ResumenRemiseriaDataGridView.AutoGenerateColumns = False
+        Me.ResumenRemiseriaDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.ResumenRemiseriaDataGridView.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.DataGridViewTextBoxColumn19, Me.DataGridViewTextBoxColumn20, Me.DataGridViewTextBoxColumn21})
+        Me.ResumenRemiseriaDataGridView.DataSource = Me.ResumenRemiseriaBindingSource
+        Me.ResumenRemiseriaDataGridView.Location = New System.Drawing.Point(844, 229)
+        Me.ResumenRemiseriaDataGridView.Name = "ResumenRemiseriaDataGridView"
+        Me.ResumenRemiseriaDataGridView.Size = New System.Drawing.Size(414, 220)
+        Me.ResumenRemiseriaDataGridView.TabIndex = 28
+        '
+        'DataGridViewTextBoxColumn19
+        '
+        Me.DataGridViewTextBoxColumn19.DataPropertyName = "Registro"
+        Me.DataGridViewTextBoxColumn19.HeaderText = "Registro"
+        Me.DataGridViewTextBoxColumn19.Name = "DataGridViewTextBoxColumn19"
+        Me.DataGridViewTextBoxColumn19.ReadOnly = True
+        '
+        'DataGridViewTextBoxColumn20
+        '
+        Me.DataGridViewTextBoxColumn20.DataPropertyName = "Fecha"
+        Me.DataGridViewTextBoxColumn20.HeaderText = "Fecha"
+        Me.DataGridViewTextBoxColumn20.Name = "DataGridViewTextBoxColumn20"
+        '
+        'DataGridViewTextBoxColumn21
+        '
+        Me.DataGridViewTextBoxColumn21.DataPropertyName = "Monto"
+        Me.DataGridViewTextBoxColumn21.HeaderText = "Monto"
+        Me.DataGridViewTextBoxColumn21.Name = "DataGridViewTextBoxColumn21"
+        '
         'Liquidacion_Choferes
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(1542, 527)
+        Me.AutoScroll = True
+        Me.ClientSize = New System.Drawing.Size(1596, 587)
+        Me.Controls.Add(Me.ResumenRemiseriaDataGridView)
         Me.Controls.Add(Me.LiquidacionChoferDataGridView)
         Me.Controls.Add(Me.TextBoxPorcent)
         Me.Controls.Add(Me.Label8)
@@ -486,6 +524,7 @@ Partial Class Liquidacion_Choferes
         CType(Me.LiquidacionChoferBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.ResumenRemiseriaBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.LiquidacionChoferDataGridView, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.ResumenRemiseriaDataGridView, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -542,4 +581,8 @@ Partial Class Liquidacion_Choferes
     Friend WithEvents DataGridViewTextBoxColumn16 As System.Windows.Forms.DataGridViewTextBoxColumn
     Friend WithEvents DataGridViewTextBoxColumn17 As System.Windows.Forms.DataGridViewTextBoxColumn
     Friend WithEvents DataGridViewTextBoxColumn18 As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents ResumenRemiseriaDataGridView As System.Windows.Forms.DataGridView
+    Friend WithEvents DataGridViewTextBoxColumn19 As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents DataGridViewTextBoxColumn20 As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents DataGridViewTextBoxColumn21 As System.Windows.Forms.DataGridViewTextBoxColumn
 End Class

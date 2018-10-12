@@ -89,7 +89,7 @@
     End Sub
 
     Private Sub ConfiguracionToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles ConfiguracionToolStripMenuItem.Click
-        Configuracion.Show()
+
 
     End Sub
 
@@ -104,5 +104,14 @@
 
     Private Sub ViajesF1ToolStripMenuItem_Click(sender As System.Object, e As System.EventArgs) Handles ViajesF1ToolStripMenuItem.Click
 
+    End Sub
+
+    Private Sub CrearUsuariosToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles CrearUsuariosToolStripMenuItem.Click
+        RegistroUsuario.Show()
+
+    End Sub
+
+    Private Sub ModificarValoresToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles ModificarValoresToolStripMenuItem.Click
+        Configuracion.Show()
     End Sub
 End Class

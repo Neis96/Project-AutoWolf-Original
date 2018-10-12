@@ -7021,12 +7021,29 @@ Namespace Database1DataSetTableAdapters
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
         Private Sub InitCommandCollection()
-            Me._commandCollection = New Global.System.Data.SqlServerCe.SqlCeCommand(0) {}
+            Me._commandCollection = New Global.System.Data.SqlServerCe.SqlCeCommand(2) {}
             Me._commandCollection(0) = New Global.System.Data.SqlServerCe.SqlCeCommand()
             Me._commandCollection(0).Connection = Me.Connection
             Me._commandCollection(0).CommandText = "SELECT [administrador], [usuarios ], [contraseñas], [nombre ], [apelllido ] FROM "& _ 
                 "[Usuario]"
             Me._commandCollection(0).CommandType = Global.System.Data.CommandType.Text
+            Me._commandCollection(1) = New Global.System.Data.SqlServerCe.SqlCeCommand()
+            Me._commandCollection(1).Connection = Me.Connection
+            Me._commandCollection(1).CommandText = "SELECT        administrador, contraseñas, [nombre ], [apelllido ]"&Global.Microsoft.VisualBasic.ChrW(13)&Global.Microsoft.VisualBasic.ChrW(10)&"FROM          "& _ 
+                "  Usuario"&Global.Microsoft.VisualBasic.ChrW(13)&Global.Microsoft.VisualBasic.ChrW(10)&"WHERE        ([usuarios ] = @Param1) AND (contraseñas = @Param2)"
+            Me._commandCollection(1).CommandType = Global.System.Data.CommandType.Text
+            Me._commandCollection(1).Parameters.Add(New Global.System.Data.SqlServerCe.SqlCeParameter("@Param1", Global.System.Data.SqlDbType.NVarChar, 100, Global.System.Data.ParameterDirection.Input, true, 0, 0, "usuarios ", Global.System.Data.DataRowVersion.Current, Nothing))
+            Me._commandCollection(1).Parameters.Add(New Global.System.Data.SqlServerCe.SqlCeParameter("@Param2", Global.System.Data.SqlDbType.NVarChar, 100, Global.System.Data.ParameterDirection.Input, true, 0, 0, "contraseñas", Global.System.Data.DataRowVersion.Current, Nothing))
+            Me._commandCollection(2) = New Global.System.Data.SqlServerCe.SqlCeCommand()
+            Me._commandCollection(2).Connection = Me.Connection
+            Me._commandCollection(2).CommandText = "INSERT INTO Usuario"&Global.Microsoft.VisualBasic.ChrW(13)&Global.Microsoft.VisualBasic.ChrW(10)&"                         (administrador, [usuarios ], contra"& _ 
+                "señas, [nombre ], [apelllido ])"&Global.Microsoft.VisualBasic.ChrW(13)&Global.Microsoft.VisualBasic.ChrW(10)&"VALUES        (@p1,@p2,@p3,@p4,@p5)"
+            Me._commandCollection(2).CommandType = Global.System.Data.CommandType.Text
+            Me._commandCollection(2).Parameters.Add(New Global.System.Data.SqlServerCe.SqlCeParameter("@p1", Global.System.Data.SqlDbType.NVarChar, 100, Global.System.Data.ParameterDirection.Input, true, 0, 0, "administrador", Global.System.Data.DataRowVersion.Current, Nothing))
+            Me._commandCollection(2).Parameters.Add(New Global.System.Data.SqlServerCe.SqlCeParameter("@p2", Global.System.Data.SqlDbType.NVarChar, 100, Global.System.Data.ParameterDirection.Input, true, 0, 0, "usuarios ", Global.System.Data.DataRowVersion.Current, Nothing))
+            Me._commandCollection(2).Parameters.Add(New Global.System.Data.SqlServerCe.SqlCeParameter("@p3", Global.System.Data.SqlDbType.NVarChar, 100, Global.System.Data.ParameterDirection.Input, true, 0, 0, "contraseñas", Global.System.Data.DataRowVersion.Current, Nothing))
+            Me._commandCollection(2).Parameters.Add(New Global.System.Data.SqlServerCe.SqlCeParameter("@p4", Global.System.Data.SqlDbType.NVarChar, 100, Global.System.Data.ParameterDirection.Input, true, 0, 0, "nombre ", Global.System.Data.DataRowVersion.Current, Nothing))
+            Me._commandCollection(2).Parameters.Add(New Global.System.Data.SqlServerCe.SqlCeParameter("@p5", Global.System.Data.SqlDbType.NVarChar, 100, Global.System.Data.ParameterDirection.Input, true, 0, 0, "apelllido ", Global.System.Data.DataRowVersion.Current, Nothing))
         End Sub
         
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
@@ -7048,6 +7065,50 @@ Namespace Database1DataSetTableAdapters
          Global.System.ComponentModel.DataObjectMethodAttribute(Global.System.ComponentModel.DataObjectMethodType.[Select], true)>  _
         Public Overloads Overridable Function GetData() As Database1DataSet.UsuarioDataTable
             Me.Adapter.SelectCommand = Me.CommandCollection(0)
+            Dim dataTable As Database1DataSet.UsuarioDataTable = New Database1DataSet.UsuarioDataTable()
+            Me.Adapter.Fill(dataTable)
+            Return dataTable
+        End Function
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0"),  _
+         Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter"),  _
+         Global.System.ComponentModel.DataObjectMethodAttribute(Global.System.ComponentModel.DataObjectMethodType.Fill, false)>  _
+        Public Overloads Overridable Function FillBy(ByVal dataTable As Database1DataSet.UsuarioDataTable, ByVal Param1 As String, ByVal Param2 As String) As Integer
+            Me.Adapter.SelectCommand = Me.CommandCollection(1)
+            If (Param1 Is Nothing) Then
+                Me.Adapter.SelectCommand.Parameters(0).Value = Global.System.DBNull.Value
+            Else
+                Me.Adapter.SelectCommand.Parameters(0).Value = CType(Param1,String)
+            End If
+            If (Param2 Is Nothing) Then
+                Me.Adapter.SelectCommand.Parameters(1).Value = Global.System.DBNull.Value
+            Else
+                Me.Adapter.SelectCommand.Parameters(1).Value = CType(Param2,String)
+            End If
+            If (Me.ClearBeforeFill = true) Then
+                dataTable.Clear
+            End If
+            Dim returnValue As Integer = Me.Adapter.Fill(dataTable)
+            Return returnValue
+        End Function
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0"),  _
+         Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter"),  _
+         Global.System.ComponentModel.DataObjectMethodAttribute(Global.System.ComponentModel.DataObjectMethodType.[Select], false)>  _
+        Public Overloads Overridable Function GetDataBy1(ByVal Param1 As String, ByVal Param2 As String) As Database1DataSet.UsuarioDataTable
+            Me.Adapter.SelectCommand = Me.CommandCollection(1)
+            If (Param1 Is Nothing) Then
+                Me.Adapter.SelectCommand.Parameters(0).Value = Global.System.DBNull.Value
+            Else
+                Me.Adapter.SelectCommand.Parameters(0).Value = CType(Param1,String)
+            End If
+            If (Param2 Is Nothing) Then
+                Me.Adapter.SelectCommand.Parameters(1).Value = Global.System.DBNull.Value
+            Else
+                Me.Adapter.SelectCommand.Parameters(1).Value = CType(Param2,String)
+            End If
             Dim dataTable As Database1DataSet.UsuarioDataTable = New Database1DataSet.UsuarioDataTable()
             Me.Adapter.Fill(dataTable)
             Return dataTable
@@ -7124,6 +7185,53 @@ Namespace Database1DataSetTableAdapters
                     Me.Adapter.InsertCommand.Connection.Close
                 End If
             End Try
+        End Function
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0"),  _
+         Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter"),  _
+         Global.System.ComponentModel.DataObjectMethodAttribute(Global.System.ComponentModel.DataObjectMethodType.Insert, false)>  _
+        Public Overloads Overridable Function insertar(ByVal p1 As String, ByVal p2 As String, ByVal p3 As String, ByVal p4 As String, ByVal p5 As String) As Integer
+            Dim command As Global.System.Data.SqlServerCe.SqlCeCommand = Me.CommandCollection(2)
+            If (p1 Is Nothing) Then
+                command.Parameters(0).Value = Global.System.DBNull.Value
+            Else
+                command.Parameters(0).Value = CType(p1,String)
+            End If
+            If (p2 Is Nothing) Then
+                command.Parameters(1).Value = Global.System.DBNull.Value
+            Else
+                command.Parameters(1).Value = CType(p2,String)
+            End If
+            If (p3 Is Nothing) Then
+                command.Parameters(2).Value = Global.System.DBNull.Value
+            Else
+                command.Parameters(2).Value = CType(p3,String)
+            End If
+            If (p4 Is Nothing) Then
+                command.Parameters(3).Value = Global.System.DBNull.Value
+            Else
+                command.Parameters(3).Value = CType(p4,String)
+            End If
+            If (p5 Is Nothing) Then
+                command.Parameters(4).Value = Global.System.DBNull.Value
+            Else
+                command.Parameters(4).Value = CType(p5,String)
+            End If
+            Dim previousConnectionState As Global.System.Data.ConnectionState = command.Connection.State
+            If ((command.Connection.State And Global.System.Data.ConnectionState.Open)  _
+                        <> Global.System.Data.ConnectionState.Open) Then
+                command.Connection.Open
+            End If
+            Dim returnValue As Integer
+            Try 
+                returnValue = command.ExecuteNonQuery
+            Finally
+                If (previousConnectionState = Global.System.Data.ConnectionState.Closed) Then
+                    command.Connection.Close
+                End If
+            End Try
+            Return returnValue
         End Function
     End Class
     
@@ -8639,12 +8747,22 @@ Namespace Database1DataSetTableAdapters
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
         Private Sub InitCommandCollection()
-            Me._commandCollection = New Global.System.Data.SqlServerCe.SqlCeCommand(0) {}
+            Me._commandCollection = New Global.System.Data.SqlServerCe.SqlCeCommand(1) {}
             Me._commandCollection(0) = New Global.System.Data.SqlServerCe.SqlCeCommand()
             Me._commandCollection(0).Connection = Me.Connection
             Me._commandCollection(0).CommandText = "SELECT [Registro], [Desde], [Hasta], [Monto], [id_chofer], [Nombre] FROM [Liquida"& _ 
                 "cionChofer]"
             Me._commandCollection(0).CommandType = Global.System.Data.CommandType.Text
+            Me._commandCollection(1) = New Global.System.Data.SqlServerCe.SqlCeCommand()
+            Me._commandCollection(1).Connection = Me.Connection
+            Me._commandCollection(1).CommandText = "INSERT INTO LiquidacionChofer"&Global.Microsoft.VisualBasic.ChrW(13)&Global.Microsoft.VisualBasic.ChrW(10)&"                         (Desde, Hasta, Monto, id_"& _ 
+                "chofer, Nombre)"&Global.Microsoft.VisualBasic.ChrW(13)&Global.Microsoft.VisualBasic.ChrW(10)&"VALUES        (@Desde,@Hasta,@Monto,@idchofer,@Nombre)"
+            Me._commandCollection(1).CommandType = Global.System.Data.CommandType.Text
+            Me._commandCollection(1).Parameters.Add(New Global.System.Data.SqlServerCe.SqlCeParameter("@Desde", Global.System.Data.SqlDbType.DateTime, 8, Global.System.Data.ParameterDirection.Input, true, 0, 0, "Desde", Global.System.Data.DataRowVersion.Current, Nothing))
+            Me._commandCollection(1).Parameters.Add(New Global.System.Data.SqlServerCe.SqlCeParameter("@Hasta", Global.System.Data.SqlDbType.DateTime, 8, Global.System.Data.ParameterDirection.Input, true, 0, 0, "Hasta", Global.System.Data.DataRowVersion.Current, Nothing))
+            Me._commandCollection(1).Parameters.Add(New Global.System.Data.SqlServerCe.SqlCeParameter("@Monto", Global.System.Data.SqlDbType.Float, 8, Global.System.Data.ParameterDirection.Input, true, 0, 0, "Monto", Global.System.Data.DataRowVersion.Current, Nothing))
+            Me._commandCollection(1).Parameters.Add(New Global.System.Data.SqlServerCe.SqlCeParameter("@idchofer", Global.System.Data.SqlDbType.Int, 4, Global.System.Data.ParameterDirection.Input, true, 0, 0, "id_chofer", Global.System.Data.DataRowVersion.Current, Nothing))
+            Me._commandCollection(1).Parameters.Add(New Global.System.Data.SqlServerCe.SqlCeParameter("@Nombre", Global.System.Data.SqlDbType.NVarChar, 100, Global.System.Data.ParameterDirection.Input, true, 0, 0, "Nombre", Global.System.Data.DataRowVersion.Current, Nothing))
         End Sub
         
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
@@ -8809,6 +8927,53 @@ Namespace Database1DataSetTableAdapters
                     Me.Adapter.UpdateCommand.Connection.Close
                 End If
             End Try
+        End Function
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0"),  _
+         Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter"),  _
+         Global.System.ComponentModel.DataObjectMethodAttribute(Global.System.ComponentModel.DataObjectMethodType.Insert, false)>  _
+        Public Overloads Overridable Function Insert1(ByVal Desde As Global.System.Nullable(Of Date), ByVal Hasta As Global.System.Nullable(Of Date), ByVal Monto As Global.System.Nullable(Of Double), ByVal idchofer As Global.System.Nullable(Of Integer), ByVal Nombre As String) As Integer
+            Dim command As Global.System.Data.SqlServerCe.SqlCeCommand = Me.CommandCollection(1)
+            If (Desde.HasValue = true) Then
+                command.Parameters(0).Value = CType(Desde.Value,Date)
+            Else
+                command.Parameters(0).Value = Global.System.DBNull.Value
+            End If
+            If (Hasta.HasValue = true) Then
+                command.Parameters(1).Value = CType(Hasta.Value,Date)
+            Else
+                command.Parameters(1).Value = Global.System.DBNull.Value
+            End If
+            If (Monto.HasValue = true) Then
+                command.Parameters(2).Value = CType(Monto.Value,Double)
+            Else
+                command.Parameters(2).Value = Global.System.DBNull.Value
+            End If
+            If (idchofer.HasValue = true) Then
+                command.Parameters(3).Value = CType(idchofer.Value,Integer)
+            Else
+                command.Parameters(3).Value = Global.System.DBNull.Value
+            End If
+            If (Nombre Is Nothing) Then
+                command.Parameters(4).Value = Global.System.DBNull.Value
+            Else
+                command.Parameters(4).Value = CType(Nombre,String)
+            End If
+            Dim previousConnectionState As Global.System.Data.ConnectionState = command.Connection.State
+            If ((command.Connection.State And Global.System.Data.ConnectionState.Open)  _
+                        <> Global.System.Data.ConnectionState.Open) Then
+                command.Connection.Open
+            End If
+            Dim returnValue As Integer
+            Try 
+                returnValue = command.ExecuteNonQuery
+            Finally
+                If (previousConnectionState = Global.System.Data.ConnectionState.Closed) Then
+                    command.Connection.Close
+                End If
+            End Try
+            Return returnValue
         End Function
     End Class
     

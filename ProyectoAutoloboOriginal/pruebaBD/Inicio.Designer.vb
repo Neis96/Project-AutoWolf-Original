@@ -45,6 +45,8 @@ Partial Class Inicio
         Me.Database1DataSet = New pruebaBD.Database1DataSet()
         Me.TableAdapterManager = New pruebaBD.Database1DataSetTableAdapters.TableAdapterManager()
         Me.ViajesTableAdapter = New pruebaBD.Database1DataSetTableAdapters.ViajesTableAdapter()
+        Me.CrearUsuariosToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ModificarValoresToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.MenuStrip1.SuspendLayout()
         CType(Me.DgvEstado, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.DgvReserva, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -162,6 +164,7 @@ Partial Class Inicio
         '
         'ConfiguracionToolStripMenuItem
         '
+        Me.ConfiguracionToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.CrearUsuariosToolStripMenuItem, Me.ModificarValoresToolStripMenuItem})
         Me.ConfiguracionToolStripMenuItem.Name = "ConfiguracionToolStripMenuItem"
         Me.ConfiguracionToolStripMenuItem.Size = New System.Drawing.Size(95, 20)
         Me.ConfiguracionToolStripMenuItem.Text = "Configuracion"
@@ -189,6 +192,7 @@ Partial Class Inicio
         '
         'Database1DataSet
         '
+        Me.Database1DataSet.DataSetName = "Database1DataSet"
         Me.Database1DataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
         '
         'TableAdapterManager
@@ -210,6 +214,18 @@ Partial Class Inicio
         'ViajesTableAdapter
         '
         Me.ViajesTableAdapter.ClearBeforeFill = True
+        '
+        'CrearUsuariosToolStripMenuItem
+        '
+        Me.CrearUsuariosToolStripMenuItem.Name = "CrearUsuariosToolStripMenuItem"
+        Me.CrearUsuariosToolStripMenuItem.Size = New System.Drawing.Size(165, 22)
+        Me.CrearUsuariosToolStripMenuItem.Text = "Crear Usuarios"
+        '
+        'ModificarValoresToolStripMenuItem
+        '
+        Me.ModificarValoresToolStripMenuItem.Name = "ModificarValoresToolStripMenuItem"
+        Me.ModificarValoresToolStripMenuItem.Size = New System.Drawing.Size(165, 22)
+        Me.ModificarValoresToolStripMenuItem.Text = "Modificar Valores"
         '
         'Inicio
         '
@@ -261,4 +277,6 @@ Partial Class Inicio
     Friend WithEvents SociosF2ToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents ChoferesF3ToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents VehiculosF4ToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents CrearUsuariosToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents ModificarValoresToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
 End Class
