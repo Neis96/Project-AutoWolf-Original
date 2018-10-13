@@ -133,6 +133,12 @@
     <Compile Include="Liquidacion Choferes.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="LiquidacionCta.Designer.vb">
+      <DependentUpon>LiquidacionCta.vb</DependentUpon>
+    </Compile>
+    <Compile Include="LiquidacionCta.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Loggin.Designer.vb">
       <DependentUpon>Loggin.vb</DependentUpon>
     </Compile>
@@ -184,6 +190,12 @@
     <Compile Include="Resumen.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="ResumenCtaCte.Designer.vb">
+      <DependentUpon>ResumenCtaCte.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ResumenCtaCte.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Socios.Designer.vb">
       <DependentUpon>Socios.vb</DependentUpon>
     </Compile>
@@ -222,6 +234,9 @@
     <EmbeddedResource Include="Liquidacion Choferes.resx">
       <DependentUpon>Liquidacion Choferes.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="LiquidacionCta.resx">
+      <DependentUpon>LiquidacionCta.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Loggin.resx">
       <DependentUpon>Loggin.vb</DependentUpon>
     </EmbeddedResource>
@@ -245,6 +260,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Resumen.resx">
       <DependentUpon>Resumen.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ResumenCtaCte.resx">
+      <DependentUpon>ResumenCtaCte.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Socios.resx">
       <DependentUpon>Socios.vb</DependentUpon>

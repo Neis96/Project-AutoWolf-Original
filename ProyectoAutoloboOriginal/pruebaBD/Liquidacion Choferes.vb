@@ -219,4 +219,8 @@
 
 
     End Sub
+
+    Private Sub ComboBoxDueno_SelectedIndexChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles ComboBoxDueno.SelectedIndexChanged
+
+    End Sub
 End Class

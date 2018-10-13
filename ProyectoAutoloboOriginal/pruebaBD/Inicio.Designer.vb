@@ -39,14 +39,16 @@ Partial Class Inicio
         Me.LiquidacionChoferToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.AyudaToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ConfiguracionToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.CrearUsuariosToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ModificarValoresToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.DgvEstado = New System.Windows.Forms.DataGridView()
         Me.DgvReserva = New System.Windows.Forms.DataGridView()
+        Me.LiquidacionCtaCteToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ViajesBindingSource = New System.Windows.Forms.BindingSource(Me.components)
         Me.Database1DataSet = New pruebaBD.Database1DataSet()
         Me.TableAdapterManager = New pruebaBD.Database1DataSetTableAdapters.TableAdapterManager()
         Me.ViajesTableAdapter = New pruebaBD.Database1DataSetTableAdapters.ViajesTableAdapter()
-        Me.CrearUsuariosToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.ModificarValoresToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.LiquidacionCtaCteToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
         Me.MenuStrip1.SuspendLayout()
         CType(Me.DgvEstado, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.DgvReserva, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -139,13 +141,14 @@ Partial Class Inicio
         '
         'ResumenToolStripMenuItem1
         '
+        Me.ResumenToolStripMenuItem1.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.LiquidacionCtaCteToolStripMenuItem1})
         Me.ResumenToolStripMenuItem1.Name = "ResumenToolStripMenuItem1"
-        Me.ResumenToolStripMenuItem1.Size = New System.Drawing.Size(123, 22)
+        Me.ResumenToolStripMenuItem1.Size = New System.Drawing.Size(152, 22)
         Me.ResumenToolStripMenuItem1.Text = "Resumen"
         '
         'ResumenToolStripMenuItem
         '
-        Me.ResumenToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.LiquidacionChoferToolStripMenuItem})
+        Me.ResumenToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.LiquidacionChoferToolStripMenuItem, Me.LiquidacionCtaCteToolStripMenuItem})
         Me.ResumenToolStripMenuItem.Name = "ResumenToolStripMenuItem"
         Me.ResumenToolStripMenuItem.Size = New System.Drawing.Size(59, 20)
         Me.ResumenToolStripMenuItem.Text = "Gestion"
@@ -153,7 +156,7 @@ Partial Class Inicio
         'LiquidacionChoferToolStripMenuItem
         '
         Me.LiquidacionChoferToolStripMenuItem.Name = "LiquidacionChoferToolStripMenuItem"
-        Me.LiquidacionChoferToolStripMenuItem.Size = New System.Drawing.Size(173, 22)
+        Me.LiquidacionChoferToolStripMenuItem.Size = New System.Drawing.Size(178, 22)
         Me.LiquidacionChoferToolStripMenuItem.Text = "Liquidacion chofer"
         '
         'AyudaToolStripMenuItem
@@ -168,6 +171,18 @@ Partial Class Inicio
         Me.ConfiguracionToolStripMenuItem.Name = "ConfiguracionToolStripMenuItem"
         Me.ConfiguracionToolStripMenuItem.Size = New System.Drawing.Size(95, 20)
         Me.ConfiguracionToolStripMenuItem.Text = "Configuracion"
+        '
+        'CrearUsuariosToolStripMenuItem
+        '
+        Me.CrearUsuariosToolStripMenuItem.Name = "CrearUsuariosToolStripMenuItem"
+        Me.CrearUsuariosToolStripMenuItem.Size = New System.Drawing.Size(165, 22)
+        Me.CrearUsuariosToolStripMenuItem.Text = "Crear Usuarios"
+        '
+        'ModificarValoresToolStripMenuItem
+        '
+        Me.ModificarValoresToolStripMenuItem.Name = "ModificarValoresToolStripMenuItem"
+        Me.ModificarValoresToolStripMenuItem.Size = New System.Drawing.Size(165, 22)
+        Me.ModificarValoresToolStripMenuItem.Text = "Modificar Valores"
         '
         'DgvEstado
         '
@@ -184,6 +199,12 @@ Partial Class Inicio
         Me.DgvReserva.Name = "DgvReserva"
         Me.DgvReserva.Size = New System.Drawing.Size(422, 354)
         Me.DgvReserva.TabIndex = 12
+        '
+        'LiquidacionCtaCteToolStripMenuItem
+        '
+        Me.LiquidacionCtaCteToolStripMenuItem.Name = "LiquidacionCtaCteToolStripMenuItem"
+        Me.LiquidacionCtaCteToolStripMenuItem.Size = New System.Drawing.Size(178, 22)
+        Me.LiquidacionCtaCteToolStripMenuItem.Text = "Liquidacion Cta Cte"
         '
         'ViajesBindingSource
         '
@@ -215,17 +236,11 @@ Partial Class Inicio
         '
         Me.ViajesTableAdapter.ClearBeforeFill = True
         '
-        'CrearUsuariosToolStripMenuItem
+        'LiquidacionCtaCteToolStripMenuItem1
         '
-        Me.CrearUsuariosToolStripMenuItem.Name = "CrearUsuariosToolStripMenuItem"
-        Me.CrearUsuariosToolStripMenuItem.Size = New System.Drawing.Size(165, 22)
-        Me.CrearUsuariosToolStripMenuItem.Text = "Crear Usuarios"
-        '
-        'ModificarValoresToolStripMenuItem
-        '
-        Me.ModificarValoresToolStripMenuItem.Name = "ModificarValoresToolStripMenuItem"
-        Me.ModificarValoresToolStripMenuItem.Size = New System.Drawing.Size(165, 22)
-        Me.ModificarValoresToolStripMenuItem.Text = "Modificar Valores"
+        Me.LiquidacionCtaCteToolStripMenuItem1.Name = "LiquidacionCtaCteToolStripMenuItem1"
+        Me.LiquidacionCtaCteToolStripMenuItem1.Size = New System.Drawing.Size(178, 22)
+        Me.LiquidacionCtaCteToolStripMenuItem1.Text = "Liquidacion Cta Cte"
         '
         'Inicio
         '
@@ -279,4 +294,6 @@ Partial Class Inicio
     Friend WithEvents VehiculosF4ToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents CrearUsuariosToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents ModificarValoresToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents LiquidacionCtaCteToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents LiquidacionCtaCteToolStripMenuItem1 As System.Windows.Forms.ToolStripMenuItem
 End Class

@@ -28,11 +28,6 @@ Partial Class Finalizar_Viaje
         Me.ViajesTableAdapter = New pruebaBD.Database1DataSetTableAdapters.ViajesTableAdapter()
         Me.TableAdapterManager = New pruebaBD.Database1DataSetTableAdapters.TableAdapterManager()
         Me.ViajesDataGridView = New System.Windows.Forms.DataGridView()
-        Me.TextBox1 = New System.Windows.Forms.TextBox()
-        Me.Label1 = New System.Windows.Forms.Label()
-        Me.Label2 = New System.Windows.Forms.Label()
-        Me.ComboBox1 = New System.Windows.Forms.ComboBox()
-        Me.BtnTerminar = New System.Windows.Forms.Button()
         Me.DataGridViewTextBoxColumn1 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.DataGridViewTextBoxColumn2 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.DataGridViewTextBoxColumn9 = New System.Windows.Forms.DataGridViewTextBoxColumn()
@@ -44,6 +39,11 @@ Partial Class Finalizar_Viaje
         Me.DataGridViewTextBoxColumn4 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.DataGridViewTextBoxColumn5 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.DataGridViewTextBoxColumn12 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.TextBox1 = New System.Windows.Forms.TextBox()
+        Me.Label1 = New System.Windows.Forms.Label()
+        Me.Label2 = New System.Windows.Forms.Label()
+        Me.ComboBox1 = New System.Windows.Forms.ComboBox()
+        Me.BtnTerminar = New System.Windows.Forms.Button()
         CType(Me.Database1DataSet, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.ViajesBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.ViajesDataGridView, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -74,6 +74,7 @@ Partial Class Finalizar_Viaje
         Me.TableAdapterManager.TablaDeTurnoTableAdapter = Nothing
         Me.TableAdapterManager.UpdateOrder = pruebaBD.Database1DataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete
         Me.TableAdapterManager.UsuarioTableAdapter = Nothing
+        Me.TableAdapterManager.ValoresTableAdapter = Nothing
         Me.TableAdapterManager.VehiculoTableAdapter = Nothing
         Me.TableAdapterManager.ViajesTableAdapter = Me.ViajesTableAdapter
         '
@@ -87,48 +88,6 @@ Partial Class Finalizar_Viaje
         Me.ViajesDataGridView.Name = "ViajesDataGridView"
         Me.ViajesDataGridView.Size = New System.Drawing.Size(786, 220)
         Me.ViajesDataGridView.TabIndex = 1
-        '
-        'TextBox1
-        '
-        Me.TextBox1.Location = New System.Drawing.Point(219, 76)
-        Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(154, 20)
-        Me.TextBox1.TabIndex = 2
-        '
-        'Label1
-        '
-        Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(97, 79)
-        Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(115, 13)
-        Me.Label1.TabIndex = 4
-        Me.Label1.Text = "Numero de facturacion"
-        '
-        'Label2
-        '
-        Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(97, 134)
-        Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(40, 13)
-        Me.Label2.TabIndex = 5
-        Me.Label2.Text = "Estado"
-        '
-        'ComboBox1
-        '
-        Me.ComboBox1.FormattingEnabled = True
-        Me.ComboBox1.Location = New System.Drawing.Point(219, 126)
-        Me.ComboBox1.Name = "ComboBox1"
-        Me.ComboBox1.Size = New System.Drawing.Size(154, 21)
-        Me.ComboBox1.TabIndex = 6
-        '
-        'BtnTerminar
-        '
-        Me.BtnTerminar.Location = New System.Drawing.Point(194, 200)
-        Me.BtnTerminar.Name = "BtnTerminar"
-        Me.BtnTerminar.Size = New System.Drawing.Size(75, 23)
-        Me.BtnTerminar.TabIndex = 7
-        Me.BtnTerminar.Text = "Guardar"
-        Me.BtnTerminar.UseVisualStyleBackColor = True
         '
         'DataGridViewTextBoxColumn1
         '
@@ -207,6 +166,48 @@ Partial Class Finalizar_Viaje
         Me.DataGridViewTextBoxColumn12.HeaderText = "Estado"
         Me.DataGridViewTextBoxColumn12.Name = "DataGridViewTextBoxColumn12"
         Me.DataGridViewTextBoxColumn12.Width = 80
+        '
+        'TextBox1
+        '
+        Me.TextBox1.Location = New System.Drawing.Point(219, 36)
+        Me.TextBox1.Name = "TextBox1"
+        Me.TextBox1.Size = New System.Drawing.Size(154, 20)
+        Me.TextBox1.TabIndex = 2
+        '
+        'Label1
+        '
+        Me.Label1.AutoSize = True
+        Me.Label1.Location = New System.Drawing.Point(97, 39)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(115, 13)
+        Me.Label1.TabIndex = 4
+        Me.Label1.Text = "Numero de facturacion"
+        '
+        'Label2
+        '
+        Me.Label2.AutoSize = True
+        Me.Label2.Location = New System.Drawing.Point(97, 146)
+        Me.Label2.Name = "Label2"
+        Me.Label2.Size = New System.Drawing.Size(40, 13)
+        Me.Label2.TabIndex = 5
+        Me.Label2.Text = "Estado"
+        '
+        'ComboBox1
+        '
+        Me.ComboBox1.FormattingEnabled = True
+        Me.ComboBox1.Location = New System.Drawing.Point(219, 143)
+        Me.ComboBox1.Name = "ComboBox1"
+        Me.ComboBox1.Size = New System.Drawing.Size(154, 21)
+        Me.ComboBox1.TabIndex = 6
+        '
+        'BtnTerminar
+        '
+        Me.BtnTerminar.Location = New System.Drawing.Point(194, 200)
+        Me.BtnTerminar.Name = "BtnTerminar"
+        Me.BtnTerminar.Size = New System.Drawing.Size(75, 23)
+        Me.BtnTerminar.TabIndex = 7
+        Me.BtnTerminar.Text = "Guardar"
+        Me.BtnTerminar.UseVisualStyleBackColor = True
         '
         'Finalizar_Viaje
         '

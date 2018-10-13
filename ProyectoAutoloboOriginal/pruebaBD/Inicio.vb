@@ -114,4 +114,13 @@
     Private Sub ModificarValoresToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles ModificarValoresToolStripMenuItem.Click
         Configuracion.Show()
     End Sub
+
+    Private Sub LiquidacionCtaCteToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles LiquidacionCtaCteToolStripMenuItem.Click
+        LiquidacionCta.Show()
+
+    End Sub
+
+    Private Sub LiquidacionCtaCteToolStripMenuItem1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles LiquidacionCtaCteToolStripMenuItem1.Click
+
+    End Sub
 End Class

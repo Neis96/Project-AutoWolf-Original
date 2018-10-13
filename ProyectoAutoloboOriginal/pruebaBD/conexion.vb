@@ -2,7 +2,7 @@
 Imports System.Data.SqlServerCe
 
 Public Class conexion
-    Public conexion As New SqlCeConnection("Data Source=C:\Users\karat\Desktop\GIT COD ULT\Liq_funcional\Project-AutoWolf-Original\ProyectoAutoloboOriginal\pruebaBD\PruebaLocalConeccion.sdf")
+    Public conexion As New SqlCeConnection("Data Source=C:\Users\thoma\Desktop\thom\programacion\Ejercicios visual\krak\Project-AutoWolf-Original\ProyectoAutoloboOriginal\pruebaBD\PruebaLocalConeccion.sdf")
     Private cmb As SqlCeCommandBuilder
     Public ds As DataSet = New Database1DataSet() 'C:\Users\user\Desktop\GITKRAKEN\Project-AutoWolf-Original\ProyectoAutoloboOriginal\pruebaBD\bin\Debug\PruebaLocalConeccion.sdf
     Public da As SqlCeDataAdapter
@@ -23,8 +23,8 @@ Public Class conexion
     End Sub
 
     Public Sub Consulta(ByVal sql As String, ByVal tabla As String)
-        ds.Tables.Clear()
 
+        ds.Tables.Clear()
         da = New SqlCeDataAdapter(sql, conexion)
         cmb = New SqlCeCommandBuilder(da)
         da.Fill(ds, tabla)
