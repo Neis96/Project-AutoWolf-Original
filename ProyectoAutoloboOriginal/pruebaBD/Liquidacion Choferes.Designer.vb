@@ -26,15 +26,10 @@ Partial Class Liquidacion_Choferes
         Me.ViajesDataGridView = New System.Windows.Forms.DataGridView()
         Me.DataGridViewTextBoxColumn1 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.DataGridViewTextBoxColumn2 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.DataGridViewTextBoxColumn3 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewTextBoxColumn9 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.DataGridViewTextBoxColumn4 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.DataGridViewTextBoxColumn5 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.DataGridViewTextBoxColumn6 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.DataGridViewTextBoxColumn7 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.DataGridViewTextBoxColumn8 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.DataGridViewTextBoxColumn9 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.DataGridViewTextBoxColumn10 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.DataGridViewTextBoxColumn11 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.DataGridViewTextBoxColumn12 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.ViajesBindingSource = New System.Windows.Forms.BindingSource(Me.components)
         Me.Database1DataSet = New pruebaBD.Database1DataSet()
@@ -43,9 +38,8 @@ Partial Class Liquidacion_Choferes
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.Label4 = New System.Windows.Forms.Label()
-        Me.ComboBoxDueno = New System.Windows.Forms.ComboBox()
+        Me.ChoferBindingSource = New System.Windows.Forms.BindingSource(Me.components)
         Me.DateTimePickerDesde = New System.Windows.Forms.DateTimePicker()
-        Me.DateTimePickerHasta = New System.Windows.Forms.DateTimePicker()
         Me.Label5 = New System.Windows.Forms.Label()
         Me.TextBoxTotal = New System.Windows.Forms.TextBox()
         Me.TextBoxTotChofer = New System.Windows.Forms.TextBox()
@@ -56,29 +50,19 @@ Partial Class Liquidacion_Choferes
         Me.BtnConsultar = New System.Windows.Forms.Button()
         Me.BtnCalcular = New System.Windows.Forms.Button()
         Me.BtnLiquidar = New System.Windows.Forms.Button()
-        Me.ViajesTableAdapter = New pruebaBD.Database1DataSetTableAdapters.ViajesTableAdapter()
-        Me.TableAdapterManager = New pruebaBD.Database1DataSetTableAdapters.TableAdapterManager()
-        Me.ChoferBindingSource = New System.Windows.Forms.BindingSource(Me.components)
-        Me.ChoferTableAdapter = New pruebaBD.Database1DataSetTableAdapters.ChoferTableAdapter()
         Me.Label8 = New System.Windows.Forms.Label()
         Me.TextBoxPorcent = New System.Windows.Forms.TextBox()
+        Me.DateTimePickerHasta = New System.Windows.Forms.DateTimePicker()
+        Me.ViajesTableAdapter = New pruebaBD.Database1DataSetTableAdapters.ViajesTableAdapter()
+        Me.TableAdapterManager = New pruebaBD.Database1DataSetTableAdapters.TableAdapterManager()
+        Me.ChoferTableAdapter = New pruebaBD.Database1DataSetTableAdapters.ChoferTableAdapter()
         Me.ValoresBindingSource = New System.Windows.Forms.BindingSource(Me.components)
         Me.ValoresTableAdapter = New pruebaBD.Database1DataSetTableAdapters.ValoresTableAdapter()
         Me.LiquidacionChoferBindingSource = New System.Windows.Forms.BindingSource(Me.components)
         Me.LiquidacionChoferTableAdapter = New pruebaBD.Database1DataSetTableAdapters.LiquidacionChoferTableAdapter()
         Me.ResumenRemiseriaBindingSource = New System.Windows.Forms.BindingSource(Me.components)
         Me.ResumenRemiseriaTableAdapter = New pruebaBD.Database1DataSetTableAdapters.ResumenRemiseriaTableAdapter()
-        Me.LiquidacionChoferDataGridView = New System.Windows.Forms.DataGridView()
-        Me.DataGridViewTextBoxColumn13 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.DataGridViewTextBoxColumn14 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.DataGridViewTextBoxColumn15 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.DataGridViewTextBoxColumn16 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.DataGridViewTextBoxColumn17 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.DataGridViewTextBoxColumn18 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.ResumenRemiseriaDataGridView = New System.Windows.Forms.DataGridView()
-        Me.DataGridViewTextBoxColumn19 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.DataGridViewTextBoxColumn20 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.DataGridViewTextBoxColumn21 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.ComboBoxDueno = New System.Windows.Forms.ComboBox()
         CType(Me.ViajesDataGridView, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.ViajesBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.Database1DataSet, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -86,19 +70,17 @@ Partial Class Liquidacion_Choferes
         CType(Me.ValoresBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.LiquidacionChoferBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.ResumenRemiseriaBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.LiquidacionChoferDataGridView, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.ResumenRemiseriaDataGridView, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'ViajesDataGridView
         '
         Me.ViajesDataGridView.AutoGenerateColumns = False
         Me.ViajesDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.ViajesDataGridView.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.DataGridViewTextBoxColumn1, Me.DataGridViewTextBoxColumn2, Me.DataGridViewTextBoxColumn3, Me.DataGridViewTextBoxColumn4, Me.DataGridViewTextBoxColumn5, Me.DataGridViewTextBoxColumn6, Me.DataGridViewTextBoxColumn7, Me.DataGridViewTextBoxColumn8, Me.DataGridViewTextBoxColumn9, Me.DataGridViewTextBoxColumn10, Me.DataGridViewTextBoxColumn11, Me.DataGridViewTextBoxColumn12})
+        Me.ViajesDataGridView.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.DataGridViewTextBoxColumn1, Me.DataGridViewTextBoxColumn2, Me.DataGridViewTextBoxColumn9, Me.DataGridViewTextBoxColumn4, Me.DataGridViewTextBoxColumn5, Me.DataGridViewTextBoxColumn6, Me.DataGridViewTextBoxColumn12})
         Me.ViajesDataGridView.DataSource = Me.ViajesBindingSource
         Me.ViajesDataGridView.Location = New System.Drawing.Point(60, 220)
         Me.ViajesDataGridView.Name = "ViajesDataGridView"
-        Me.ViajesDataGridView.Size = New System.Drawing.Size(768, 287)
+        Me.ViajesDataGridView.Size = New System.Drawing.Size(744, 287)
         Me.ViajesDataGridView.TabIndex = 1
         '
         'DataGridViewTextBoxColumn1
@@ -114,11 +96,11 @@ Partial Class Liquidacion_Choferes
         Me.DataGridViewTextBoxColumn2.HeaderText = "idChofer"
         Me.DataGridViewTextBoxColumn2.Name = "DataGridViewTextBoxColumn2"
         '
-        'DataGridViewTextBoxColumn3
+        'DataGridViewTextBoxColumn9
         '
-        Me.DataGridViewTextBoxColumn3.DataPropertyName = "idSocios"
-        Me.DataGridViewTextBoxColumn3.HeaderText = "idSocios"
-        Me.DataGridViewTextBoxColumn3.Name = "DataGridViewTextBoxColumn3"
+        Me.DataGridViewTextBoxColumn9.DataPropertyName = "idVehiculos"
+        Me.DataGridViewTextBoxColumn9.HeaderText = "idVehiculos"
+        Me.DataGridViewTextBoxColumn9.Name = "DataGridViewTextBoxColumn9"
         '
         'DataGridViewTextBoxColumn4
         '
@@ -137,36 +119,6 @@ Partial Class Liquidacion_Choferes
         Me.DataGridViewTextBoxColumn6.DataPropertyName = "Total"
         Me.DataGridViewTextBoxColumn6.HeaderText = "Total"
         Me.DataGridViewTextBoxColumn6.Name = "DataGridViewTextBoxColumn6"
-        '
-        'DataGridViewTextBoxColumn7
-        '
-        Me.DataGridViewTextBoxColumn7.DataPropertyName = "lugar_origen"
-        Me.DataGridViewTextBoxColumn7.HeaderText = "lugar_origen"
-        Me.DataGridViewTextBoxColumn7.Name = "DataGridViewTextBoxColumn7"
-        '
-        'DataGridViewTextBoxColumn8
-        '
-        Me.DataGridViewTextBoxColumn8.DataPropertyName = "lugar_destino"
-        Me.DataGridViewTextBoxColumn8.HeaderText = "lugar_destino"
-        Me.DataGridViewTextBoxColumn8.Name = "DataGridViewTextBoxColumn8"
-        '
-        'DataGridViewTextBoxColumn9
-        '
-        Me.DataGridViewTextBoxColumn9.DataPropertyName = "idVehiculos"
-        Me.DataGridViewTextBoxColumn9.HeaderText = "idVehiculos"
-        Me.DataGridViewTextBoxColumn9.Name = "DataGridViewTextBoxColumn9"
-        '
-        'DataGridViewTextBoxColumn10
-        '
-        Me.DataGridViewTextBoxColumn10.DataPropertyName = "Reserva"
-        Me.DataGridViewTextBoxColumn10.HeaderText = "Reserva"
-        Me.DataGridViewTextBoxColumn10.Name = "DataGridViewTextBoxColumn10"
-        '
-        'DataGridViewTextBoxColumn11
-        '
-        Me.DataGridViewTextBoxColumn11.DataPropertyName = "Cta_cte"
-        Me.DataGridViewTextBoxColumn11.HeaderText = "Cta_cte"
-        Me.DataGridViewTextBoxColumn11.Name = "DataGridViewTextBoxColumn11"
         '
         'DataGridViewTextBoxColumn12
         '
@@ -215,7 +167,7 @@ Partial Class Liquidacion_Choferes
         'Label3
         '
         Me.Label3.AutoSize = True
-        Me.Label3.Location = New System.Drawing.Point(283, 42)
+        Me.Label3.Location = New System.Drawing.Point(266, 41)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(38, 13)
         Me.Label3.TabIndex = 10
@@ -224,35 +176,24 @@ Partial Class Liquidacion_Choferes
         'Label4
         '
         Me.Label4.AutoSize = True
-        Me.Label4.Location = New System.Drawing.Point(283, 80)
+        Me.Label4.Location = New System.Drawing.Point(266, 79)
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(35, 13)
         Me.Label4.TabIndex = 12
         Me.Label4.Text = "Hasta"
         '
-        'ComboBoxDueno
+        'ChoferBindingSource
         '
-        Me.ComboBoxDueno.FormattingEnabled = True
-        Me.ComboBoxDueno.Location = New System.Drawing.Point(115, 39)
-        Me.ComboBoxDueno.Name = "ComboBoxDueno"
-        Me.ComboBoxDueno.Size = New System.Drawing.Size(121, 21)
-        Me.ComboBoxDueno.TabIndex = 14
+        Me.ChoferBindingSource.DataMember = "Chofer"
+        Me.ChoferBindingSource.DataSource = Me.Database1DataSet
         '
         'DateTimePickerDesde
         '
         Me.DateTimePickerDesde.Format = System.Windows.Forms.DateTimePickerFormat.Time
-        Me.DateTimePickerDesde.Location = New System.Drawing.Point(327, 40)
+        Me.DateTimePickerDesde.Location = New System.Drawing.Point(310, 39)
         Me.DateTimePickerDesde.Name = "DateTimePickerDesde"
         Me.DateTimePickerDesde.Size = New System.Drawing.Size(78, 20)
         Me.DateTimePickerDesde.TabIndex = 15
-        '
-        'DateTimePickerHasta
-        '
-        Me.DateTimePickerHasta.Format = System.Windows.Forms.DateTimePickerFormat.Time
-        Me.DateTimePickerHasta.Location = New System.Drawing.Point(324, 79)
-        Me.DateTimePickerHasta.Name = "DateTimePickerHasta"
-        Me.DateTimePickerHasta.Size = New System.Drawing.Size(78, 20)
-        Me.DateTimePickerHasta.TabIndex = 16
         '
         'Label5
         '
@@ -265,6 +206,7 @@ Partial Class Liquidacion_Choferes
         '
         'TextBoxTotal
         '
+        Me.TextBoxTotal.Enabled = False
         Me.TextBoxTotal.Location = New System.Drawing.Point(96, 177)
         Me.TextBoxTotal.Name = "TextBoxTotal"
         Me.TextBoxTotal.Size = New System.Drawing.Size(100, 20)
@@ -272,6 +214,7 @@ Partial Class Liquidacion_Choferes
         '
         'TextBoxTotChofer
         '
+        Me.TextBoxTotChofer.Enabled = False
         Me.TextBoxTotChofer.Location = New System.Drawing.Point(267, 177)
         Me.TextBoxTotChofer.Name = "TextBoxTotChofer"
         Me.TextBoxTotChofer.Size = New System.Drawing.Size(100, 20)
@@ -288,6 +231,7 @@ Partial Class Liquidacion_Choferes
         '
         'TextBoxTotAgencia
         '
+        Me.TextBoxTotAgencia.Enabled = False
         Me.TextBoxTotAgencia.Location = New System.Drawing.Point(433, 177)
         Me.TextBoxTotAgencia.Name = "TextBoxTotAgencia"
         Me.TextBoxTotAgencia.Size = New System.Drawing.Size(100, 20)
@@ -304,6 +248,7 @@ Partial Class Liquidacion_Choferes
         '
         'TextBoxNombre
         '
+        Me.TextBoxNombre.Enabled = False
         Me.TextBoxNombre.Location = New System.Drawing.Point(115, 79)
         Me.TextBoxNombre.Name = "TextBoxNombre"
         Me.TextBoxNombre.Size = New System.Drawing.Size(121, 20)
@@ -329,12 +274,38 @@ Partial Class Liquidacion_Choferes
         '
         'BtnLiquidar
         '
-        Me.BtnLiquidar.Location = New System.Drawing.Point(595, 70)
+        Me.BtnLiquidar.Location = New System.Drawing.Point(581, 175)
         Me.BtnLiquidar.Name = "BtnLiquidar"
         Me.BtnLiquidar.Size = New System.Drawing.Size(75, 23)
         Me.BtnLiquidar.TabIndex = 26
         Me.BtnLiquidar.Text = "Liquidar"
         Me.BtnLiquidar.UseVisualStyleBackColor = True
+        '
+        'Label8
+        '
+        Me.Label8.AutoSize = True
+        Me.Label8.Location = New System.Drawing.Point(57, 114)
+        Me.Label8.Name = "Label8"
+        Me.Label8.Size = New System.Drawing.Size(58, 13)
+        Me.Label8.TabIndex = 27
+        Me.Label8.Text = "Porcentaje"
+        '
+        'TextBoxPorcent
+        '
+        Me.TextBoxPorcent.Location = New System.Drawing.Point(115, 114)
+        Me.TextBoxPorcent.Name = "TextBoxPorcent"
+        Me.TextBoxPorcent.Size = New System.Drawing.Size(121, 20)
+        Me.TextBoxPorcent.TabIndex = 28
+        '
+        'DateTimePickerHasta
+        '
+        Me.DateTimePickerHasta.CustomFormat = "dd/MM/yyyy hh:mm:ss"
+        Me.DateTimePickerHasta.Enabled = False
+        Me.DateTimePickerHasta.Format = System.Windows.Forms.DateTimePickerFormat.Custom
+        Me.DateTimePickerHasta.Location = New System.Drawing.Point(307, 78)
+        Me.DateTimePickerHasta.Name = "DateTimePickerHasta"
+        Me.DateTimePickerHasta.Size = New System.Drawing.Size(147, 20)
+        Me.DateTimePickerHasta.TabIndex = 29
         '
         'ViajesTableAdapter
         '
@@ -355,30 +326,9 @@ Partial Class Liquidacion_Choferes
         Me.TableAdapterManager.VehiculoTableAdapter = Nothing
         Me.TableAdapterManager.ViajesTableAdapter = Me.ViajesTableAdapter
         '
-        'ChoferBindingSource
-        '
-        Me.ChoferBindingSource.DataMember = "Chofer"
-        Me.ChoferBindingSource.DataSource = Me.Database1DataSet
-        '
         'ChoferTableAdapter
         '
         Me.ChoferTableAdapter.ClearBeforeFill = True
-        '
-        'Label8
-        '
-        Me.Label8.AutoSize = True
-        Me.Label8.Location = New System.Drawing.Point(57, 114)
-        Me.Label8.Name = "Label8"
-        Me.Label8.Size = New System.Drawing.Size(58, 13)
-        Me.Label8.TabIndex = 27
-        Me.Label8.Text = "Porcentaje"
-        '
-        'TextBoxPorcent
-        '
-        Me.TextBoxPorcent.Location = New System.Drawing.Point(115, 114)
-        Me.TextBoxPorcent.Name = "TextBoxPorcent"
-        Me.TextBoxPorcent.Size = New System.Drawing.Size(121, 20)
-        Me.TextBoxPorcent.TabIndex = 28
         '
         'ValoresBindingSource
         '
@@ -407,92 +357,25 @@ Partial Class Liquidacion_Choferes
         '
         Me.ResumenRemiseriaTableAdapter.ClearBeforeFill = True
         '
-        'LiquidacionChoferDataGridView
+        'ComboBoxDueno
         '
-        Me.LiquidacionChoferDataGridView.AutoGenerateColumns = False
-        Me.LiquidacionChoferDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.LiquidacionChoferDataGridView.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.DataGridViewTextBoxColumn13, Me.DataGridViewTextBoxColumn14, Me.DataGridViewTextBoxColumn15, Me.DataGridViewTextBoxColumn16, Me.DataGridViewTextBoxColumn17, Me.DataGridViewTextBoxColumn18})
-        Me.LiquidacionChoferDataGridView.DataSource = Me.LiquidacionChoferBindingSource
-        Me.LiquidacionChoferDataGridView.Location = New System.Drawing.Point(844, 32)
-        Me.LiquidacionChoferDataGridView.Name = "LiquidacionChoferDataGridView"
-        Me.LiquidacionChoferDataGridView.Size = New System.Drawing.Size(414, 182)
-        Me.LiquidacionChoferDataGridView.TabIndex = 28
-        '
-        'DataGridViewTextBoxColumn13
-        '
-        Me.DataGridViewTextBoxColumn13.DataPropertyName = "Registro"
-        Me.DataGridViewTextBoxColumn13.HeaderText = "Registro"
-        Me.DataGridViewTextBoxColumn13.Name = "DataGridViewTextBoxColumn13"
-        Me.DataGridViewTextBoxColumn13.ReadOnly = True
-        '
-        'DataGridViewTextBoxColumn14
-        '
-        Me.DataGridViewTextBoxColumn14.DataPropertyName = "Desde"
-        Me.DataGridViewTextBoxColumn14.HeaderText = "Desde"
-        Me.DataGridViewTextBoxColumn14.Name = "DataGridViewTextBoxColumn14"
-        '
-        'DataGridViewTextBoxColumn15
-        '
-        Me.DataGridViewTextBoxColumn15.DataPropertyName = "Hasta"
-        Me.DataGridViewTextBoxColumn15.HeaderText = "Hasta"
-        Me.DataGridViewTextBoxColumn15.Name = "DataGridViewTextBoxColumn15"
-        '
-        'DataGridViewTextBoxColumn16
-        '
-        Me.DataGridViewTextBoxColumn16.DataPropertyName = "Monto"
-        Me.DataGridViewTextBoxColumn16.HeaderText = "Monto"
-        Me.DataGridViewTextBoxColumn16.Name = "DataGridViewTextBoxColumn16"
-        '
-        'DataGridViewTextBoxColumn17
-        '
-        Me.DataGridViewTextBoxColumn17.DataPropertyName = "id_chofer"
-        Me.DataGridViewTextBoxColumn17.HeaderText = "id_chofer"
-        Me.DataGridViewTextBoxColumn17.Name = "DataGridViewTextBoxColumn17"
-        '
-        'DataGridViewTextBoxColumn18
-        '
-        Me.DataGridViewTextBoxColumn18.DataPropertyName = "Nombre"
-        Me.DataGridViewTextBoxColumn18.HeaderText = "Nombre"
-        Me.DataGridViewTextBoxColumn18.Name = "DataGridViewTextBoxColumn18"
-        '
-        'ResumenRemiseriaDataGridView
-        '
-        Me.ResumenRemiseriaDataGridView.AutoGenerateColumns = False
-        Me.ResumenRemiseriaDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.ResumenRemiseriaDataGridView.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.DataGridViewTextBoxColumn19, Me.DataGridViewTextBoxColumn20, Me.DataGridViewTextBoxColumn21})
-        Me.ResumenRemiseriaDataGridView.DataSource = Me.ResumenRemiseriaBindingSource
-        Me.ResumenRemiseriaDataGridView.Location = New System.Drawing.Point(844, 229)
-        Me.ResumenRemiseriaDataGridView.Name = "ResumenRemiseriaDataGridView"
-        Me.ResumenRemiseriaDataGridView.Size = New System.Drawing.Size(414, 220)
-        Me.ResumenRemiseriaDataGridView.TabIndex = 28
-        '
-        'DataGridViewTextBoxColumn19
-        '
-        Me.DataGridViewTextBoxColumn19.DataPropertyName = "Registro"
-        Me.DataGridViewTextBoxColumn19.HeaderText = "Registro"
-        Me.DataGridViewTextBoxColumn19.Name = "DataGridViewTextBoxColumn19"
-        Me.DataGridViewTextBoxColumn19.ReadOnly = True
-        '
-        'DataGridViewTextBoxColumn20
-        '
-        Me.DataGridViewTextBoxColumn20.DataPropertyName = "Fecha"
-        Me.DataGridViewTextBoxColumn20.HeaderText = "Fecha"
-        Me.DataGridViewTextBoxColumn20.Name = "DataGridViewTextBoxColumn20"
-        '
-        'DataGridViewTextBoxColumn21
-        '
-        Me.DataGridViewTextBoxColumn21.DataPropertyName = "Monto"
-        Me.DataGridViewTextBoxColumn21.HeaderText = "Monto"
-        Me.DataGridViewTextBoxColumn21.Name = "DataGridViewTextBoxColumn21"
+        Me.ComboBoxDueno.DataSource = Me.ChoferBindingSource
+        Me.ComboBoxDueno.DisplayMember = "id_chofer"
+        Me.ComboBoxDueno.FormattingEnabled = True
+        Me.ComboBoxDueno.Location = New System.Drawing.Point(115, 39)
+        Me.ComboBoxDueno.Name = "ComboBoxDueno"
+        Me.ComboBoxDueno.Size = New System.Drawing.Size(121, 21)
+        Me.ComboBoxDueno.TabIndex = 30
+        Me.ComboBoxDueno.ValueMember = "id_chofer"
         '
         'Liquidacion_Choferes
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.AutoScroll = True
-        Me.ClientSize = New System.Drawing.Size(1596, 587)
-        Me.Controls.Add(Me.ResumenRemiseriaDataGridView)
-        Me.Controls.Add(Me.LiquidacionChoferDataGridView)
+        Me.ClientSize = New System.Drawing.Size(869, 552)
+        Me.Controls.Add(Me.ComboBoxDueno)
+        Me.Controls.Add(Me.DateTimePickerHasta)
         Me.Controls.Add(Me.TextBoxPorcent)
         Me.Controls.Add(Me.Label8)
         Me.Controls.Add(Me.BtnLiquidar)
@@ -505,9 +388,7 @@ Partial Class Liquidacion_Choferes
         Me.Controls.Add(Me.Label6)
         Me.Controls.Add(Me.TextBoxTotal)
         Me.Controls.Add(Me.Label5)
-        Me.Controls.Add(Me.DateTimePickerHasta)
         Me.Controls.Add(Me.DateTimePickerDesde)
-        Me.Controls.Add(Me.ComboBoxDueno)
         Me.Controls.Add(Me.Label4)
         Me.Controls.Add(Me.Label3)
         Me.Controls.Add(Me.Label2)
@@ -523,8 +404,6 @@ Partial Class Liquidacion_Choferes
         CType(Me.ValoresBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.LiquidacionChoferBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.ResumenRemiseriaBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.LiquidacionChoferDataGridView, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.ResumenRemiseriaDataGridView, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -534,26 +413,12 @@ Partial Class Liquidacion_Choferes
     Friend WithEvents ViajesTableAdapter As pruebaBD.Database1DataSetTableAdapters.ViajesTableAdapter
     Friend WithEvents TableAdapterManager As pruebaBD.Database1DataSetTableAdapters.TableAdapterManager
     Friend WithEvents ViajesDataGridView As System.Windows.Forms.DataGridView
-    Friend WithEvents DataGridViewTextBoxColumn1 As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents DataGridViewTextBoxColumn2 As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents DataGridViewTextBoxColumn3 As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents DataGridViewTextBoxColumn4 As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents DataGridViewTextBoxColumn5 As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents DataGridViewTextBoxColumn6 As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents DataGridViewTextBoxColumn7 As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents DataGridViewTextBoxColumn8 As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents DataGridViewTextBoxColumn9 As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents DataGridViewTextBoxColumn10 As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents DataGridViewTextBoxColumn11 As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents DataGridViewTextBoxColumn12 As System.Windows.Forms.DataGridViewTextBoxColumn
     Friend WithEvents Label1 As System.Windows.Forms.Label
     Friend WithEvents CheckBoxDueno As System.Windows.Forms.CheckBox
     Friend WithEvents Label2 As System.Windows.Forms.Label
     Friend WithEvents Label3 As System.Windows.Forms.Label
     Friend WithEvents Label4 As System.Windows.Forms.Label
-    Friend WithEvents ComboBoxDueno As System.Windows.Forms.ComboBox
     Friend WithEvents DateTimePickerDesde As System.Windows.Forms.DateTimePicker
-    Friend WithEvents DateTimePickerHasta As System.Windows.Forms.DateTimePicker
     Friend WithEvents Label5 As System.Windows.Forms.Label
     Friend WithEvents TextBoxTotal As System.Windows.Forms.TextBox
     Friend WithEvents TextBoxTotChofer As System.Windows.Forms.TextBox
@@ -574,15 +439,13 @@ Partial Class Liquidacion_Choferes
     Friend WithEvents LiquidacionChoferTableAdapter As pruebaBD.Database1DataSetTableAdapters.LiquidacionChoferTableAdapter
     Friend WithEvents ResumenRemiseriaBindingSource As System.Windows.Forms.BindingSource
     Friend WithEvents ResumenRemiseriaTableAdapter As pruebaBD.Database1DataSetTableAdapters.ResumenRemiseriaTableAdapter
-    Friend WithEvents LiquidacionChoferDataGridView As System.Windows.Forms.DataGridView
-    Friend WithEvents DataGridViewTextBoxColumn13 As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents DataGridViewTextBoxColumn14 As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents DataGridViewTextBoxColumn15 As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents DataGridViewTextBoxColumn16 As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents DataGridViewTextBoxColumn17 As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents DataGridViewTextBoxColumn18 As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents ResumenRemiseriaDataGridView As System.Windows.Forms.DataGridView
-    Friend WithEvents DataGridViewTextBoxColumn19 As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents DataGridViewTextBoxColumn20 As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents DataGridViewTextBoxColumn21 As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents DataGridViewTextBoxColumn1 As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents DataGridViewTextBoxColumn2 As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents DataGridViewTextBoxColumn9 As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents DataGridViewTextBoxColumn4 As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents DataGridViewTextBoxColumn5 As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents DataGridViewTextBoxColumn6 As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents DataGridViewTextBoxColumn12 As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents DateTimePickerHasta As System.Windows.Forms.DateTimePicker
+    Friend WithEvents ComboBoxDueno As System.Windows.Forms.ComboBox
 End Class

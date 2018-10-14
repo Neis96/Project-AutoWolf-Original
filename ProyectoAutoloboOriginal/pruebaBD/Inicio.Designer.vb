@@ -39,14 +39,16 @@ Partial Class Inicio
         Me.LiquidacionChoferToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.AyudaToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ConfiguracionToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.CrearUsuariosToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ModificarValoresToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.DgvEstado = New System.Windows.Forms.DataGridView()
         Me.DgvReserva = New System.Windows.Forms.DataGridView()
         Me.ViajesBindingSource = New System.Windows.Forms.BindingSource(Me.components)
         Me.Database1DataSet = New pruebaBD.Database1DataSet()
         Me.TableAdapterManager = New pruebaBD.Database1DataSetTableAdapters.TableAdapterManager()
         Me.ViajesTableAdapter = New pruebaBD.Database1DataSetTableAdapters.ViajesTableAdapter()
-        Me.CrearUsuariosToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.ModificarValoresToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.LiquidacionChoferToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
+        Me.AgenciaToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.MenuStrip1.SuspendLayout()
         CType(Me.DgvEstado, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.DgvReserva, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -109,38 +111,39 @@ Partial Class Inicio
         'ViajesF1ToolStripMenuItem
         '
         Me.ViajesF1ToolStripMenuItem.Name = "ViajesF1ToolStripMenuItem"
-        Me.ViajesF1ToolStripMenuItem.Size = New System.Drawing.Size(139, 22)
+        Me.ViajesF1ToolStripMenuItem.Size = New System.Drawing.Size(140, 22)
         Me.ViajesF1ToolStripMenuItem.Text = "Viajes F1"
         '
         'SociosF2ToolStripMenuItem
         '
         Me.SociosF2ToolStripMenuItem.Name = "SociosF2ToolStripMenuItem"
-        Me.SociosF2ToolStripMenuItem.Size = New System.Drawing.Size(139, 22)
+        Me.SociosF2ToolStripMenuItem.Size = New System.Drawing.Size(140, 22)
         Me.SociosF2ToolStripMenuItem.Text = "Socios     F2"
         '
         'ChoferesF3ToolStripMenuItem
         '
         Me.ChoferesF3ToolStripMenuItem.Name = "ChoferesF3ToolStripMenuItem"
-        Me.ChoferesF3ToolStripMenuItem.Size = New System.Drawing.Size(139, 22)
+        Me.ChoferesF3ToolStripMenuItem.Size = New System.Drawing.Size(140, 22)
         Me.ChoferesF3ToolStripMenuItem.Text = "Choferes F3"
         '
         'VehiculosF4ToolStripMenuItem
         '
         Me.VehiculosF4ToolStripMenuItem.Name = "VehiculosF4ToolStripMenuItem"
-        Me.VehiculosF4ToolStripMenuItem.Size = New System.Drawing.Size(139, 22)
+        Me.VehiculosF4ToolStripMenuItem.Size = New System.Drawing.Size(140, 22)
         Me.VehiculosF4ToolStripMenuItem.Text = "Vehiculos F4"
         '
         'VerToolStripMenuItem
         '
         Me.VerToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ResumenToolStripMenuItem1})
         Me.VerToolStripMenuItem.Name = "VerToolStripMenuItem"
-        Me.VerToolStripMenuItem.Size = New System.Drawing.Size(35, 20)
+        Me.VerToolStripMenuItem.Size = New System.Drawing.Size(36, 20)
         Me.VerToolStripMenuItem.Text = "Ver"
         '
         'ResumenToolStripMenuItem1
         '
+        Me.ResumenToolStripMenuItem1.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.LiquidacionChoferToolStripMenuItem1, Me.AgenciaToolStripMenuItem})
         Me.ResumenToolStripMenuItem1.Name = "ResumenToolStripMenuItem1"
-        Me.ResumenToolStripMenuItem1.Size = New System.Drawing.Size(123, 22)
+        Me.ResumenToolStripMenuItem1.Size = New System.Drawing.Size(152, 22)
         Me.ResumenToolStripMenuItem1.Text = "Resumen"
         '
         'ResumenToolStripMenuItem
@@ -168,6 +171,18 @@ Partial Class Inicio
         Me.ConfiguracionToolStripMenuItem.Name = "ConfiguracionToolStripMenuItem"
         Me.ConfiguracionToolStripMenuItem.Size = New System.Drawing.Size(95, 20)
         Me.ConfiguracionToolStripMenuItem.Text = "Configuracion"
+        '
+        'CrearUsuariosToolStripMenuItem
+        '
+        Me.CrearUsuariosToolStripMenuItem.Name = "CrearUsuariosToolStripMenuItem"
+        Me.CrearUsuariosToolStripMenuItem.Size = New System.Drawing.Size(166, 22)
+        Me.CrearUsuariosToolStripMenuItem.Text = "Crear Usuarios"
+        '
+        'ModificarValoresToolStripMenuItem
+        '
+        Me.ModificarValoresToolStripMenuItem.Name = "ModificarValoresToolStripMenuItem"
+        Me.ModificarValoresToolStripMenuItem.Size = New System.Drawing.Size(166, 22)
+        Me.ModificarValoresToolStripMenuItem.Text = "Modificar Valores"
         '
         'DgvEstado
         '
@@ -215,17 +230,17 @@ Partial Class Inicio
         '
         Me.ViajesTableAdapter.ClearBeforeFill = True
         '
-        'CrearUsuariosToolStripMenuItem
+        'LiquidacionChoferToolStripMenuItem1
         '
-        Me.CrearUsuariosToolStripMenuItem.Name = "CrearUsuariosToolStripMenuItem"
-        Me.CrearUsuariosToolStripMenuItem.Size = New System.Drawing.Size(165, 22)
-        Me.CrearUsuariosToolStripMenuItem.Text = "Crear Usuarios"
+        Me.LiquidacionChoferToolStripMenuItem1.Name = "LiquidacionChoferToolStripMenuItem1"
+        Me.LiquidacionChoferToolStripMenuItem1.Size = New System.Drawing.Size(173, 22)
+        Me.LiquidacionChoferToolStripMenuItem1.Text = "Liquidacion chofer"
         '
-        'ModificarValoresToolStripMenuItem
+        'AgenciaToolStripMenuItem
         '
-        Me.ModificarValoresToolStripMenuItem.Name = "ModificarValoresToolStripMenuItem"
-        Me.ModificarValoresToolStripMenuItem.Size = New System.Drawing.Size(165, 22)
-        Me.ModificarValoresToolStripMenuItem.Text = "Modificar Valores"
+        Me.AgenciaToolStripMenuItem.Name = "AgenciaToolStripMenuItem"
+        Me.AgenciaToolStripMenuItem.Size = New System.Drawing.Size(173, 22)
+        Me.AgenciaToolStripMenuItem.Text = "Agencia"
         '
         'Inicio
         '
@@ -279,4 +294,6 @@ Partial Class Inicio
     Friend WithEvents VehiculosF4ToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents CrearUsuariosToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents ModificarValoresToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents LiquidacionChoferToolStripMenuItem1 As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents AgenciaToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
 End Class

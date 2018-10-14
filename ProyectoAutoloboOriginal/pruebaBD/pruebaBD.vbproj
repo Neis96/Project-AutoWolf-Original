@@ -178,6 +178,18 @@
     <Compile Include="RegistroUsuario.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Resumen Agencia.Designer.vb">
+      <DependentUpon>Resumen Agencia.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Resumen Agencia.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Resumen Chofer.Designer.vb">
+      <DependentUpon>Resumen Chofer.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Resumen Chofer.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Resumen.Designer.vb">
       <DependentUpon>Resumen.vb</DependentUpon>
     </Compile>
@@ -242,6 +254,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="RegistroUsuario.resx">
       <DependentUpon>RegistroUsuario.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resumen Agencia.resx">
+      <DependentUpon>Resumen Agencia.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resumen Chofer.resx">
+      <DependentUpon>Resumen Chofer.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Resumen.resx">
       <DependentUpon>Resumen.vb</DependentUpon>
