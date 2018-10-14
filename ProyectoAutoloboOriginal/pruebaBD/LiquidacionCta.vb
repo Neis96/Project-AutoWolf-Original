@@ -2,6 +2,7 @@
 
     Dim vista As conexion = New conexion()
     Dim cta As String = "si"
+    Dim estado As String = "Finalizado"
 
     Private Sub LiquidacionCta_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
         'TODO: esta línea de código carga datos en la tabla 'Database1DataSet.LiqCtaCtr' Puede moverla o quitarla según sea necesario.
@@ -12,7 +13,7 @@
         Me.LiqCtaCtrBindingSource.AddNew()
         DatePickHasta.Value = Now
         'TimePickDesde.Value = Now
-        Me.ViajesTableAdapter.FillBy2((Me.Database1DataSet.Viajes), cta)
+        Me.ViajesTableAdapter.FillBy2((Me.Database1DataSet.Viajes), cta, estado)
         'mostrar()
 
     End Sub

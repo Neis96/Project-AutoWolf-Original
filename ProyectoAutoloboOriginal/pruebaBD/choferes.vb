@@ -67,6 +67,7 @@
     End Sub
 
     Private Sub Button1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button1.Click
+        'modificar
         Dim direccion, nombre, apellido As String
         Dim telefono, dni, id As Integer
         direccion = DireccionTextBox.Text

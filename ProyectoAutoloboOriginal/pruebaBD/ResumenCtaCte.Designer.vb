@@ -23,24 +23,17 @@ Partial Class ResumenCtaCte
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
-        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(ResumenCtaCte))
         Me.Database1DataSet = New pruebaBD.Database1DataSet()
         Me.LiqCtaCtrBindingSource = New System.Windows.Forms.BindingSource(Me.components)
         Me.LiqCtaCtrTableAdapter = New pruebaBD.Database1DataSetTableAdapters.LiqCtaCtrTableAdapter()
         Me.TableAdapterManager = New pruebaBD.Database1DataSetTableAdapters.TableAdapterManager()
-        Me.LiqCtaCtrBindingNavigator = New System.Windows.Forms.BindingNavigator(Me.components)
-        Me.BindingNavigatorMoveFirstItem = New System.Windows.Forms.ToolStripButton()
-        Me.BindingNavigatorMovePreviousItem = New System.Windows.Forms.ToolStripButton()
-        Me.BindingNavigatorSeparator = New System.Windows.Forms.ToolStripSeparator()
-        Me.BindingNavigatorPositionItem = New System.Windows.Forms.ToolStripTextBox()
-        Me.BindingNavigatorCountItem = New System.Windows.Forms.ToolStripLabel()
-        Me.BindingNavigatorSeparator1 = New System.Windows.Forms.ToolStripSeparator()
-        Me.BindingNavigatorMoveNextItem = New System.Windows.Forms.ToolStripButton()
-        Me.BindingNavigatorMoveLastItem = New System.Windows.Forms.ToolStripButton()
-        Me.BindingNavigatorSeparator2 = New System.Windows.Forms.ToolStripSeparator()
-        Me.BindingNavigatorAddNewItem = New System.Windows.Forms.ToolStripButton()
-        Me.BindingNavigatorDeleteItem = New System.Windows.Forms.ToolStripButton()
-        Me.LiqCtaCtrBindingNavigatorSaveItem = New System.Windows.Forms.ToolStripButton()
+        Me.BtnConsulta = New System.Windows.Forms.Button()
+        Me.Socio = New System.Windows.Forms.TextBox()
+        Me.DesdePick = New System.Windows.Forms.DateTimePicker()
+        Me.HastaPick = New System.Windows.Forms.DateTimePicker()
+        Me.Label1 = New System.Windows.Forms.Label()
+        Me.Label2 = New System.Windows.Forms.Label()
+        Me.Label3 = New System.Windows.Forms.Label()
         Me.LiqCtaCtrDataGridView = New System.Windows.Forms.DataGridView()
         Me.DataGridViewTextBoxColumn1 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.DataGridViewTextBoxColumn2 = New System.Windows.Forms.DataGridViewTextBoxColumn()
@@ -49,8 +42,6 @@ Partial Class ResumenCtaCte
         Me.DataGridViewTextBoxColumn5 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         CType(Me.Database1DataSet, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.LiqCtaCtrBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.LiqCtaCtrBindingNavigator, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.LiqCtaCtrBindingNavigator.SuspendLayout()
         CType(Me.LiqCtaCtrDataGridView, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -83,116 +74,64 @@ Partial Class ResumenCtaCte
         Me.TableAdapterManager.VehiculoTableAdapter = Nothing
         Me.TableAdapterManager.ViajesTableAdapter = Nothing
         '
-        'LiqCtaCtrBindingNavigator
+        'BtnConsulta
         '
-        Me.LiqCtaCtrBindingNavigator.AddNewItem = Me.BindingNavigatorAddNewItem
-        Me.LiqCtaCtrBindingNavigator.BindingSource = Me.LiqCtaCtrBindingSource
-        Me.LiqCtaCtrBindingNavigator.CountItem = Me.BindingNavigatorCountItem
-        Me.LiqCtaCtrBindingNavigator.DeleteItem = Me.BindingNavigatorDeleteItem
-        Me.LiqCtaCtrBindingNavigator.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.BindingNavigatorMoveFirstItem, Me.BindingNavigatorMovePreviousItem, Me.BindingNavigatorSeparator, Me.BindingNavigatorPositionItem, Me.BindingNavigatorCountItem, Me.BindingNavigatorSeparator1, Me.BindingNavigatorMoveNextItem, Me.BindingNavigatorMoveLastItem, Me.BindingNavigatorSeparator2, Me.BindingNavigatorAddNewItem, Me.BindingNavigatorDeleteItem, Me.LiqCtaCtrBindingNavigatorSaveItem})
-        Me.LiqCtaCtrBindingNavigator.Location = New System.Drawing.Point(0, 0)
-        Me.LiqCtaCtrBindingNavigator.MoveFirstItem = Me.BindingNavigatorMoveFirstItem
-        Me.LiqCtaCtrBindingNavigator.MoveLastItem = Me.BindingNavigatorMoveLastItem
-        Me.LiqCtaCtrBindingNavigator.MoveNextItem = Me.BindingNavigatorMoveNextItem
-        Me.LiqCtaCtrBindingNavigator.MovePreviousItem = Me.BindingNavigatorMovePreviousItem
-        Me.LiqCtaCtrBindingNavigator.Name = "LiqCtaCtrBindingNavigator"
-        Me.LiqCtaCtrBindingNavigator.PositionItem = Me.BindingNavigatorPositionItem
-        Me.LiqCtaCtrBindingNavigator.Size = New System.Drawing.Size(588, 25)
-        Me.LiqCtaCtrBindingNavigator.TabIndex = 0
-        Me.LiqCtaCtrBindingNavigator.Text = "BindingNavigator1"
+        Me.BtnConsulta.Location = New System.Drawing.Point(236, 228)
+        Me.BtnConsulta.Name = "BtnConsulta"
+        Me.BtnConsulta.Size = New System.Drawing.Size(105, 60)
+        Me.BtnConsulta.TabIndex = 2
+        Me.BtnConsulta.Text = "Consultar"
+        Me.BtnConsulta.UseVisualStyleBackColor = True
         '
-        'BindingNavigatorMoveFirstItem
+        'Socio
         '
-        Me.BindingNavigatorMoveFirstItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image
-        Me.BindingNavigatorMoveFirstItem.Image = CType(resources.GetObject("BindingNavigatorMoveFirstItem.Image"), System.Drawing.Image)
-        Me.BindingNavigatorMoveFirstItem.Name = "BindingNavigatorMoveFirstItem"
-        Me.BindingNavigatorMoveFirstItem.RightToLeftAutoMirrorImage = True
-        Me.BindingNavigatorMoveFirstItem.Size = New System.Drawing.Size(23, 22)
-        Me.BindingNavigatorMoveFirstItem.Text = "Mover primero"
+        Me.Socio.Location = New System.Drawing.Point(302, 94)
+        Me.Socio.Name = "Socio"
+        Me.Socio.Size = New System.Drawing.Size(79, 20)
+        Me.Socio.TabIndex = 3
         '
-        'BindingNavigatorMovePreviousItem
+        'DesdePick
         '
-        Me.BindingNavigatorMovePreviousItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image
-        Me.BindingNavigatorMovePreviousItem.Image = CType(resources.GetObject("BindingNavigatorMovePreviousItem.Image"), System.Drawing.Image)
-        Me.BindingNavigatorMovePreviousItem.Name = "BindingNavigatorMovePreviousItem"
-        Me.BindingNavigatorMovePreviousItem.RightToLeftAutoMirrorImage = True
-        Me.BindingNavigatorMovePreviousItem.Size = New System.Drawing.Size(23, 22)
-        Me.BindingNavigatorMovePreviousItem.Text = "Mover anterior"
+        Me.DesdePick.Format = System.Windows.Forms.DateTimePickerFormat.[Short]
+        Me.DesdePick.Location = New System.Drawing.Point(302, 134)
+        Me.DesdePick.Name = "DesdePick"
+        Me.DesdePick.Size = New System.Drawing.Size(79, 20)
+        Me.DesdePick.TabIndex = 4
         '
-        'BindingNavigatorSeparator
+        'HastaPick
         '
-        Me.BindingNavigatorSeparator.Name = "BindingNavigatorSeparator"
-        Me.BindingNavigatorSeparator.Size = New System.Drawing.Size(6, 25)
+        Me.HastaPick.Format = System.Windows.Forms.DateTimePickerFormat.[Short]
+        Me.HastaPick.Location = New System.Drawing.Point(302, 174)
+        Me.HastaPick.Name = "HastaPick"
+        Me.HastaPick.Size = New System.Drawing.Size(79, 20)
+        Me.HastaPick.TabIndex = 5
         '
-        'BindingNavigatorPositionItem
+        'Label1
         '
-        Me.BindingNavigatorPositionItem.AccessibleName = "Posición"
-        Me.BindingNavigatorPositionItem.AutoSize = False
-        Me.BindingNavigatorPositionItem.Name = "BindingNavigatorPositionItem"
-        Me.BindingNavigatorPositionItem.Size = New System.Drawing.Size(50, 23)
-        Me.BindingNavigatorPositionItem.Text = "0"
-        Me.BindingNavigatorPositionItem.ToolTipText = "Posición actual"
+        Me.Label1.AutoSize = True
+        Me.Label1.Location = New System.Drawing.Point(215, 97)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(44, 13)
+        Me.Label1.TabIndex = 6
+        Me.Label1.Text = "Id socio"
         '
-        'BindingNavigatorCountItem
+        'Label2
         '
-        Me.BindingNavigatorCountItem.Name = "BindingNavigatorCountItem"
-        Me.BindingNavigatorCountItem.Size = New System.Drawing.Size(37, 15)
-        Me.BindingNavigatorCountItem.Text = "de {0}"
-        Me.BindingNavigatorCountItem.ToolTipText = "Número total de elementos"
+        Me.Label2.AutoSize = True
+        Me.Label2.Location = New System.Drawing.Point(215, 140)
+        Me.Label2.Name = "Label2"
+        Me.Label2.Size = New System.Drawing.Size(38, 13)
+        Me.Label2.TabIndex = 7
+        Me.Label2.Text = "Desde"
         '
-        'BindingNavigatorSeparator1
+        'Label3
         '
-        Me.BindingNavigatorSeparator1.Name = "BindingNavigatorSeparator"
-        Me.BindingNavigatorSeparator1.Size = New System.Drawing.Size(6, 6)
-        '
-        'BindingNavigatorMoveNextItem
-        '
-        Me.BindingNavigatorMoveNextItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image
-        Me.BindingNavigatorMoveNextItem.Image = CType(resources.GetObject("BindingNavigatorMoveNextItem.Image"), System.Drawing.Image)
-        Me.BindingNavigatorMoveNextItem.Name = "BindingNavigatorMoveNextItem"
-        Me.BindingNavigatorMoveNextItem.RightToLeftAutoMirrorImage = True
-        Me.BindingNavigatorMoveNextItem.Size = New System.Drawing.Size(23, 20)
-        Me.BindingNavigatorMoveNextItem.Text = "Mover siguiente"
-        '
-        'BindingNavigatorMoveLastItem
-        '
-        Me.BindingNavigatorMoveLastItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image
-        Me.BindingNavigatorMoveLastItem.Image = CType(resources.GetObject("BindingNavigatorMoveLastItem.Image"), System.Drawing.Image)
-        Me.BindingNavigatorMoveLastItem.Name = "BindingNavigatorMoveLastItem"
-        Me.BindingNavigatorMoveLastItem.RightToLeftAutoMirrorImage = True
-        Me.BindingNavigatorMoveLastItem.Size = New System.Drawing.Size(23, 20)
-        Me.BindingNavigatorMoveLastItem.Text = "Mover último"
-        '
-        'BindingNavigatorSeparator2
-        '
-        Me.BindingNavigatorSeparator2.Name = "BindingNavigatorSeparator"
-        Me.BindingNavigatorSeparator2.Size = New System.Drawing.Size(6, 6)
-        '
-        'BindingNavigatorAddNewItem
-        '
-        Me.BindingNavigatorAddNewItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image
-        Me.BindingNavigatorAddNewItem.Image = CType(resources.GetObject("BindingNavigatorAddNewItem.Image"), System.Drawing.Image)
-        Me.BindingNavigatorAddNewItem.Name = "BindingNavigatorAddNewItem"
-        Me.BindingNavigatorAddNewItem.RightToLeftAutoMirrorImage = True
-        Me.BindingNavigatorAddNewItem.Size = New System.Drawing.Size(23, 22)
-        Me.BindingNavigatorAddNewItem.Text = "Agregar nuevo"
-        '
-        'BindingNavigatorDeleteItem
-        '
-        Me.BindingNavigatorDeleteItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image
-        Me.BindingNavigatorDeleteItem.Image = CType(resources.GetObject("BindingNavigatorDeleteItem.Image"), System.Drawing.Image)
-        Me.BindingNavigatorDeleteItem.Name = "BindingNavigatorDeleteItem"
-        Me.BindingNavigatorDeleteItem.RightToLeftAutoMirrorImage = True
-        Me.BindingNavigatorDeleteItem.Size = New System.Drawing.Size(23, 20)
-        Me.BindingNavigatorDeleteItem.Text = "Eliminar"
-        '
-        'LiqCtaCtrBindingNavigatorSaveItem
-        '
-        Me.LiqCtaCtrBindingNavigatorSaveItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image
-        Me.LiqCtaCtrBindingNavigatorSaveItem.Image = CType(resources.GetObject("LiqCtaCtrBindingNavigatorSaveItem.Image"), System.Drawing.Image)
-        Me.LiqCtaCtrBindingNavigatorSaveItem.Name = "LiqCtaCtrBindingNavigatorSaveItem"
-        Me.LiqCtaCtrBindingNavigatorSaveItem.Size = New System.Drawing.Size(23, 23)
-        Me.LiqCtaCtrBindingNavigatorSaveItem.Text = "Guardar datos"
+        Me.Label3.AutoSize = True
+        Me.Label3.Location = New System.Drawing.Point(215, 180)
+        Me.Label3.Name = "Label3"
+        Me.Label3.Size = New System.Drawing.Size(35, 13)
+        Me.Label3.TabIndex = 8
+        Me.Label3.Text = "Hasta"
         '
         'LiqCtaCtrDataGridView
         '
@@ -200,10 +139,10 @@ Partial Class ResumenCtaCte
         Me.LiqCtaCtrDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.LiqCtaCtrDataGridView.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.DataGridViewTextBoxColumn1, Me.DataGridViewTextBoxColumn2, Me.DataGridViewTextBoxColumn3, Me.DataGridViewTextBoxColumn4, Me.DataGridViewTextBoxColumn5})
         Me.LiqCtaCtrDataGridView.DataSource = Me.LiqCtaCtrBindingSource
-        Me.LiqCtaCtrDataGridView.Location = New System.Drawing.Point(0, 176)
+        Me.LiqCtaCtrDataGridView.Location = New System.Drawing.Point(12, 338)
         Me.LiqCtaCtrDataGridView.Name = "LiqCtaCtrDataGridView"
-        Me.LiqCtaCtrDataGridView.Size = New System.Drawing.Size(544, 220)
-        Me.LiqCtaCtrDataGridView.TabIndex = 1
+        Me.LiqCtaCtrDataGridView.Size = New System.Drawing.Size(542, 268)
+        Me.LiqCtaCtrDataGridView.TabIndex = 9
         '
         'DataGridViewTextBoxColumn1
         '
@@ -240,16 +179,19 @@ Partial Class ResumenCtaCte
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(588, 459)
+        Me.ClientSize = New System.Drawing.Size(566, 618)
         Me.Controls.Add(Me.LiqCtaCtrDataGridView)
-        Me.Controls.Add(Me.LiqCtaCtrBindingNavigator)
+        Me.Controls.Add(Me.Label3)
+        Me.Controls.Add(Me.Label2)
+        Me.Controls.Add(Me.Label1)
+        Me.Controls.Add(Me.HastaPick)
+        Me.Controls.Add(Me.DesdePick)
+        Me.Controls.Add(Me.Socio)
+        Me.Controls.Add(Me.BtnConsulta)
         Me.Name = "ResumenCtaCte"
         Me.Text = "ResumenCtaCte"
         CType(Me.Database1DataSet, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.LiqCtaCtrBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.LiqCtaCtrBindingNavigator, System.ComponentModel.ISupportInitialize).EndInit()
-        Me.LiqCtaCtrBindingNavigator.ResumeLayout(False)
-        Me.LiqCtaCtrBindingNavigator.PerformLayout()
         CType(Me.LiqCtaCtrDataGridView, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
@@ -259,19 +201,13 @@ Partial Class ResumenCtaCte
     Friend WithEvents LiqCtaCtrBindingSource As System.Windows.Forms.BindingSource
     Friend WithEvents LiqCtaCtrTableAdapter As pruebaBD.Database1DataSetTableAdapters.LiqCtaCtrTableAdapter
     Friend WithEvents TableAdapterManager As pruebaBD.Database1DataSetTableAdapters.TableAdapterManager
-    Friend WithEvents LiqCtaCtrBindingNavigator As System.Windows.Forms.BindingNavigator
-    Friend WithEvents BindingNavigatorAddNewItem As System.Windows.Forms.ToolStripButton
-    Friend WithEvents BindingNavigatorCountItem As System.Windows.Forms.ToolStripLabel
-    Friend WithEvents BindingNavigatorDeleteItem As System.Windows.Forms.ToolStripButton
-    Friend WithEvents BindingNavigatorMoveFirstItem As System.Windows.Forms.ToolStripButton
-    Friend WithEvents BindingNavigatorMovePreviousItem As System.Windows.Forms.ToolStripButton
-    Friend WithEvents BindingNavigatorSeparator As System.Windows.Forms.ToolStripSeparator
-    Friend WithEvents BindingNavigatorPositionItem As System.Windows.Forms.ToolStripTextBox
-    Friend WithEvents BindingNavigatorSeparator1 As System.Windows.Forms.ToolStripSeparator
-    Friend WithEvents BindingNavigatorMoveNextItem As System.Windows.Forms.ToolStripButton
-    Friend WithEvents BindingNavigatorMoveLastItem As System.Windows.Forms.ToolStripButton
-    Friend WithEvents BindingNavigatorSeparator2 As System.Windows.Forms.ToolStripSeparator
-    Friend WithEvents LiqCtaCtrBindingNavigatorSaveItem As System.Windows.Forms.ToolStripButton
+    Friend WithEvents BtnConsulta As System.Windows.Forms.Button
+    Friend WithEvents Socio As System.Windows.Forms.TextBox
+    Friend WithEvents DesdePick As System.Windows.Forms.DateTimePicker
+    Friend WithEvents HastaPick As System.Windows.Forms.DateTimePicker
+    Friend WithEvents Label1 As System.Windows.Forms.Label
+    Friend WithEvents Label2 As System.Windows.Forms.Label
+    Friend WithEvents Label3 As System.Windows.Forms.Label
     Friend WithEvents LiqCtaCtrDataGridView As System.Windows.Forms.DataGridView
     Friend WithEvents DataGridViewTextBoxColumn1 As System.Windows.Forms.DataGridViewTextBoxColumn
     Friend WithEvents DataGridViewTextBoxColumn2 As System.Windows.Forms.DataGridViewTextBoxColumn

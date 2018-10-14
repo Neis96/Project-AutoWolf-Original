@@ -23,11 +23,19 @@ Partial Class Finalizar_Viaje
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
-        Me.Database1DataSet = New pruebaBD.Database1DataSet()
-        Me.ViajesBindingSource = New System.Windows.Forms.BindingSource(Me.components)
-        Me.ViajesTableAdapter = New pruebaBD.Database1DataSetTableAdapters.ViajesTableAdapter()
-        Me.TableAdapterManager = New pruebaBD.Database1DataSetTableAdapters.TableAdapterManager()
         Me.ViajesDataGridView = New System.Windows.Forms.DataGridView()
+        Me.TextBox1 = New System.Windows.Forms.TextBox()
+        Me.Label1 = New System.Windows.Forms.Label()
+        Me.Label2 = New System.Windows.Forms.Label()
+        Me.BtnTerminar = New System.Windows.Forms.Button()
+        Me.Label3 = New System.Windows.Forms.Label()
+        Me.TextBoxTotal = New System.Windows.Forms.TextBox()
+        Me.TextBoxKms = New System.Windows.Forms.TextBox()
+        Me.TextBox3 = New System.Windows.Forms.TextBox()
+        Me.Label4 = New System.Windows.Forms.Label()
+        Me.Label5 = New System.Windows.Forms.Label()
+        Me.BtnCalcular = New System.Windows.Forms.Button()
+        Me.TextBoxEstado = New System.Windows.Forms.TextBox()
         Me.DataGridViewTextBoxColumn1 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.DataGridViewTextBoxColumn2 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.DataGridViewTextBoxColumn9 = New System.Windows.Forms.DataGridViewTextBoxColumn()
@@ -39,25 +47,214 @@ Partial Class Finalizar_Viaje
         Me.DataGridViewTextBoxColumn4 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.DataGridViewTextBoxColumn5 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.DataGridViewTextBoxColumn12 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.TextBox1 = New System.Windows.Forms.TextBox()
-        Me.Label1 = New System.Windows.Forms.Label()
-        Me.Label2 = New System.Windows.Forms.Label()
-        Me.ComboBox1 = New System.Windows.Forms.ComboBox()
-        Me.BtnTerminar = New System.Windows.Forms.Button()
-        CType(Me.Database1DataSet, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.ViajesBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.ViajesBindingSource = New System.Windows.Forms.BindingSource(Me.components)
+        Me.Database1DataSet = New pruebaBD.Database1DataSet()
+        Me.ViajesTableAdapter = New pruebaBD.Database1DataSetTableAdapters.ViajesTableAdapter()
+        Me.TableAdapterManager = New pruebaBD.Database1DataSetTableAdapters.TableAdapterManager()
+        Me.ValoresBindingSource = New System.Windows.Forms.BindingSource(Me.components)
+        Me.ValoresTableAdapter = New pruebaBD.Database1DataSetTableAdapters.ValoresTableAdapter()
+        Me.Label6 = New System.Windows.Forms.Label()
+        Me.HastaPick = New System.Windows.Forms.DateTimePicker()
         CType(Me.ViajesDataGridView, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.ViajesBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.Database1DataSet, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.ValoresBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
-        'Database1DataSet
+        'ViajesDataGridView
         '
-        Me.Database1DataSet.DataSetName = "Database1DataSet"
-        Me.Database1DataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
+        Me.ViajesDataGridView.AutoGenerateColumns = False
+        Me.ViajesDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.ViajesDataGridView.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.DataGridViewTextBoxColumn1, Me.DataGridViewTextBoxColumn2, Me.DataGridViewTextBoxColumn9, Me.DataGridViewTextBoxColumn3, Me.DataGridViewTextBoxColumn7, Me.DataGridViewTextBoxColumn8, Me.DataGridViewTextBoxColumn6, Me.DataGridViewTextBoxColumn11, Me.DataGridViewTextBoxColumn4, Me.DataGridViewTextBoxColumn5, Me.DataGridViewTextBoxColumn12})
+        Me.ViajesDataGridView.DataSource = Me.ViajesBindingSource
+        Me.ViajesDataGridView.Location = New System.Drawing.Point(51, 295)
+        Me.ViajesDataGridView.Name = "ViajesDataGridView"
+        Me.ViajesDataGridView.Size = New System.Drawing.Size(900, 220)
+        Me.ViajesDataGridView.TabIndex = 1
+        '
+        'TextBox1
+        '
+        Me.TextBox1.Location = New System.Drawing.Point(218, 27)
+        Me.TextBox1.Name = "TextBox1"
+        Me.TextBox1.Size = New System.Drawing.Size(109, 20)
+        Me.TextBox1.TabIndex = 2
+        '
+        'Label1
+        '
+        Me.Label1.AutoSize = True
+        Me.Label1.Location = New System.Drawing.Point(98, 30)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(96, 13)
+        Me.Label1.TabIndex = 4
+        Me.Label1.Text = "Numero de registro"
+        '
+        'Label2
+        '
+        Me.Label2.AutoSize = True
+        Me.Label2.Location = New System.Drawing.Point(97, 166)
+        Me.Label2.Name = "Label2"
+        Me.Label2.Size = New System.Drawing.Size(40, 13)
+        Me.Label2.TabIndex = 5
+        Me.Label2.Text = "Estado"
+        '
+        'BtnTerminar
+        '
+        Me.BtnTerminar.Location = New System.Drawing.Point(789, 212)
+        Me.BtnTerminar.Name = "BtnTerminar"
+        Me.BtnTerminar.Size = New System.Drawing.Size(98, 36)
+        Me.BtnTerminar.TabIndex = 7
+        Me.BtnTerminar.Text = "Guardar"
+        Me.BtnTerminar.UseVisualStyleBackColor = True
+        '
+        'Label3
+        '
+        Me.Label3.AutoSize = True
+        Me.Label3.Location = New System.Drawing.Point(529, 224)
+        Me.Label3.Name = "Label3"
+        Me.Label3.Size = New System.Drawing.Size(31, 13)
+        Me.Label3.TabIndex = 8
+        Me.Label3.Text = "Total"
+        '
+        'TextBoxTotal
+        '
+        Me.TextBoxTotal.Location = New System.Drawing.Point(618, 221)
+        Me.TextBoxTotal.Name = "TextBoxTotal"
+        Me.TextBoxTotal.Size = New System.Drawing.Size(109, 20)
+        Me.TextBoxTotal.TabIndex = 9
+        '
+        'TextBoxKms
+        '
+        Me.TextBoxKms.Location = New System.Drawing.Point(218, 91)
+        Me.TextBoxKms.Name = "TextBoxKms"
+        Me.TextBoxKms.Size = New System.Drawing.Size(110, 20)
+        Me.TextBoxKms.TabIndex = 10
+        '
+        'TextBox3
+        '
+        Me.TextBox3.Location = New System.Drawing.Point(218, 127)
+        Me.TextBox3.Name = "TextBox3"
+        Me.TextBox3.Size = New System.Drawing.Size(110, 20)
+        Me.TextBox3.TabIndex = 11
+        '
+        'Label4
+        '
+        Me.Label4.AutoSize = True
+        Me.Label4.Location = New System.Drawing.Point(98, 94)
+        Me.Label4.Name = "Label4"
+        Me.Label4.Size = New System.Drawing.Size(77, 13)
+        Me.Label4.TabIndex = 12
+        Me.Label4.Text = "Kms realizados"
+        '
+        'Label5
+        '
+        Me.Label5.AutoSize = True
+        Me.Label5.Location = New System.Drawing.Point(98, 130)
+        Me.Label5.Name = "Label5"
+        Me.Label5.Size = New System.Drawing.Size(66, 13)
+        Me.Label5.TabIndex = 13
+        Me.Label5.Text = "Valor minimo"
+        '
+        'BtnCalcular
+        '
+        Me.BtnCalcular.Location = New System.Drawing.Point(156, 212)
+        Me.BtnCalcular.Name = "BtnCalcular"
+        Me.BtnCalcular.Size = New System.Drawing.Size(98, 36)
+        Me.BtnCalcular.TabIndex = 14
+        Me.BtnCalcular.Text = "Calcular"
+        Me.BtnCalcular.UseVisualStyleBackColor = True
+        '
+        'TextBoxEstado
+        '
+        Me.TextBoxEstado.Location = New System.Drawing.Point(218, 163)
+        Me.TextBoxEstado.Name = "TextBoxEstado"
+        Me.TextBoxEstado.Size = New System.Drawing.Size(110, 20)
+        Me.TextBoxEstado.TabIndex = 15
+        '
+        'DataGridViewTextBoxColumn1
+        '
+        Me.DataGridViewTextBoxColumn1.DataPropertyName = "Registro"
+        Me.DataGridViewTextBoxColumn1.HeaderText = "Registro"
+        Me.DataGridViewTextBoxColumn1.Name = "DataGridViewTextBoxColumn1"
+        Me.DataGridViewTextBoxColumn1.ReadOnly = True
+        Me.DataGridViewTextBoxColumn1.Width = 50
+        '
+        'DataGridViewTextBoxColumn2
+        '
+        Me.DataGridViewTextBoxColumn2.DataPropertyName = "idChofer"
+        Me.DataGridViewTextBoxColumn2.HeaderText = "id Chofer"
+        Me.DataGridViewTextBoxColumn2.Name = "DataGridViewTextBoxColumn2"
+        Me.DataGridViewTextBoxColumn2.Width = 75
+        '
+        'DataGridViewTextBoxColumn9
+        '
+        Me.DataGridViewTextBoxColumn9.DataPropertyName = "idVehiculos"
+        Me.DataGridViewTextBoxColumn9.HeaderText = "id Vehiculos"
+        Me.DataGridViewTextBoxColumn9.Name = "DataGridViewTextBoxColumn9"
+        Me.DataGridViewTextBoxColumn9.Width = 75
+        '
+        'DataGridViewTextBoxColumn3
+        '
+        Me.DataGridViewTextBoxColumn3.DataPropertyName = "idSocios"
+        Me.DataGridViewTextBoxColumn3.HeaderText = "id Socios"
+        Me.DataGridViewTextBoxColumn3.Name = "DataGridViewTextBoxColumn3"
+        Me.DataGridViewTextBoxColumn3.Width = 75
+        '
+        'DataGridViewTextBoxColumn7
+        '
+        Me.DataGridViewTextBoxColumn7.DataPropertyName = "lugar_origen"
+        Me.DataGridViewTextBoxColumn7.HeaderText = "lugar origen"
+        Me.DataGridViewTextBoxColumn7.Name = "DataGridViewTextBoxColumn7"
+        '
+        'DataGridViewTextBoxColumn8
+        '
+        Me.DataGridViewTextBoxColumn8.DataPropertyName = "lugar_destino"
+        Me.DataGridViewTextBoxColumn8.HeaderText = "lugar destino"
+        Me.DataGridViewTextBoxColumn8.Name = "DataGridViewTextBoxColumn8"
+        '
+        'DataGridViewTextBoxColumn6
+        '
+        Me.DataGridViewTextBoxColumn6.DataPropertyName = "Total"
+        Me.DataGridViewTextBoxColumn6.HeaderText = "Total"
+        Me.DataGridViewTextBoxColumn6.Name = "DataGridViewTextBoxColumn6"
+        Me.DataGridViewTextBoxColumn6.Width = 80
+        '
+        'DataGridViewTextBoxColumn11
+        '
+        Me.DataGridViewTextBoxColumn11.DataPropertyName = "Cta_cte"
+        Me.DataGridViewTextBoxColumn11.HeaderText = "Cta cte"
+        Me.DataGridViewTextBoxColumn11.Name = "DataGridViewTextBoxColumn11"
+        Me.DataGridViewTextBoxColumn11.Width = 50
+        '
+        'DataGridViewTextBoxColumn4
+        '
+        Me.DataGridViewTextBoxColumn4.DataPropertyName = "fecha_origen"
+        Me.DataGridViewTextBoxColumn4.HeaderText = "fecha origen"
+        Me.DataGridViewTextBoxColumn4.Name = "DataGridViewTextBoxColumn4"
+        Me.DataGridViewTextBoxColumn4.Width = 80
+        '
+        'DataGridViewTextBoxColumn5
+        '
+        Me.DataGridViewTextBoxColumn5.DataPropertyName = "fecha_destino"
+        Me.DataGridViewTextBoxColumn5.HeaderText = "fecha destino"
+        Me.DataGridViewTextBoxColumn5.Name = "DataGridViewTextBoxColumn5"
+        Me.DataGridViewTextBoxColumn5.Width = 80
+        '
+        'DataGridViewTextBoxColumn12
+        '
+        Me.DataGridViewTextBoxColumn12.DataPropertyName = "Estado"
+        Me.DataGridViewTextBoxColumn12.HeaderText = "Estado"
+        Me.DataGridViewTextBoxColumn12.Name = "DataGridViewTextBoxColumn12"
+        Me.DataGridViewTextBoxColumn12.Width = 80
         '
         'ViajesBindingSource
         '
         Me.ViajesBindingSource.DataMember = "Viajes"
         Me.ViajesBindingSource.DataSource = Me.Database1DataSet
+        '
+        'Database1DataSet
+        '
+        Me.Database1DataSet.DataSetName = "Database1DataSet"
+        Me.Database1DataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
         '
         'ViajesTableAdapter
         '
@@ -78,153 +275,58 @@ Partial Class Finalizar_Viaje
         Me.TableAdapterManager.VehiculoTableAdapter = Nothing
         Me.TableAdapterManager.ViajesTableAdapter = Me.ViajesTableAdapter
         '
-        'ViajesDataGridView
+        'ValoresBindingSource
         '
-        Me.ViajesDataGridView.AutoGenerateColumns = False
-        Me.ViajesDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.ViajesDataGridView.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.DataGridViewTextBoxColumn1, Me.DataGridViewTextBoxColumn2, Me.DataGridViewTextBoxColumn9, Me.DataGridViewTextBoxColumn3, Me.DataGridViewTextBoxColumn7, Me.DataGridViewTextBoxColumn8, Me.DataGridViewTextBoxColumn6, Me.DataGridViewTextBoxColumn11, Me.DataGridViewTextBoxColumn4, Me.DataGridViewTextBoxColumn5, Me.DataGridViewTextBoxColumn12})
-        Me.ViajesDataGridView.DataSource = Me.ViajesBindingSource
-        Me.ViajesDataGridView.Location = New System.Drawing.Point(100, 294)
-        Me.ViajesDataGridView.Name = "ViajesDataGridView"
-        Me.ViajesDataGridView.Size = New System.Drawing.Size(786, 220)
-        Me.ViajesDataGridView.TabIndex = 1
+        Me.ValoresBindingSource.DataMember = "Valores"
+        Me.ValoresBindingSource.DataSource = Me.Database1DataSet
         '
-        'DataGridViewTextBoxColumn1
+        'ValoresTableAdapter
         '
-        Me.DataGridViewTextBoxColumn1.DataPropertyName = "Registro"
-        Me.DataGridViewTextBoxColumn1.HeaderText = "Registro"
-        Me.DataGridViewTextBoxColumn1.Name = "DataGridViewTextBoxColumn1"
-        Me.DataGridViewTextBoxColumn1.ReadOnly = True
-        Me.DataGridViewTextBoxColumn1.Width = 50
+        Me.ValoresTableAdapter.ClearBeforeFill = True
         '
-        'DataGridViewTextBoxColumn2
+        'Label6
         '
-        Me.DataGridViewTextBoxColumn2.DataPropertyName = "idChofer"
-        Me.DataGridViewTextBoxColumn2.HeaderText = "idChofer"
-        Me.DataGridViewTextBoxColumn2.Name = "DataGridViewTextBoxColumn2"
-        Me.DataGridViewTextBoxColumn2.Width = 50
+        Me.Label6.AutoSize = True
+        Me.Label6.Location = New System.Drawing.Point(98, 63)
+        Me.Label6.Name = "Label6"
+        Me.Label6.Size = New System.Drawing.Size(74, 13)
+        Me.Label6.TabIndex = 16
+        Me.Label6.Text = "Fecha destino"
         '
-        'DataGridViewTextBoxColumn9
+        'HastaPick
         '
-        Me.DataGridViewTextBoxColumn9.DataPropertyName = "idVehiculos"
-        Me.DataGridViewTextBoxColumn9.HeaderText = "idVehiculos"
-        Me.DataGridViewTextBoxColumn9.Name = "DataGridViewTextBoxColumn9"
-        Me.DataGridViewTextBoxColumn9.Width = 50
-        '
-        'DataGridViewTextBoxColumn3
-        '
-        Me.DataGridViewTextBoxColumn3.DataPropertyName = "idSocios"
-        Me.DataGridViewTextBoxColumn3.HeaderText = "idSocios"
-        Me.DataGridViewTextBoxColumn3.Name = "DataGridViewTextBoxColumn3"
-        Me.DataGridViewTextBoxColumn3.Width = 50
-        '
-        'DataGridViewTextBoxColumn7
-        '
-        Me.DataGridViewTextBoxColumn7.DataPropertyName = "lugar_origen"
-        Me.DataGridViewTextBoxColumn7.HeaderText = "lugar_origen"
-        Me.DataGridViewTextBoxColumn7.Name = "DataGridViewTextBoxColumn7"
-        Me.DataGridViewTextBoxColumn7.Width = 80
-        '
-        'DataGridViewTextBoxColumn8
-        '
-        Me.DataGridViewTextBoxColumn8.DataPropertyName = "lugar_destino"
-        Me.DataGridViewTextBoxColumn8.HeaderText = "lugar_destino"
-        Me.DataGridViewTextBoxColumn8.Name = "DataGridViewTextBoxColumn8"
-        Me.DataGridViewTextBoxColumn8.Width = 80
-        '
-        'DataGridViewTextBoxColumn6
-        '
-        Me.DataGridViewTextBoxColumn6.DataPropertyName = "Total"
-        Me.DataGridViewTextBoxColumn6.HeaderText = "Total"
-        Me.DataGridViewTextBoxColumn6.Name = "DataGridViewTextBoxColumn6"
-        Me.DataGridViewTextBoxColumn6.Width = 80
-        '
-        'DataGridViewTextBoxColumn11
-        '
-        Me.DataGridViewTextBoxColumn11.DataPropertyName = "Cta_cte"
-        Me.DataGridViewTextBoxColumn11.HeaderText = "Cta_cte"
-        Me.DataGridViewTextBoxColumn11.Name = "DataGridViewTextBoxColumn11"
-        Me.DataGridViewTextBoxColumn11.Width = 50
-        '
-        'DataGridViewTextBoxColumn4
-        '
-        Me.DataGridViewTextBoxColumn4.DataPropertyName = "fecha_origen"
-        Me.DataGridViewTextBoxColumn4.HeaderText = "fecha_origen"
-        Me.DataGridViewTextBoxColumn4.Name = "DataGridViewTextBoxColumn4"
-        Me.DataGridViewTextBoxColumn4.Width = 80
-        '
-        'DataGridViewTextBoxColumn5
-        '
-        Me.DataGridViewTextBoxColumn5.DataPropertyName = "fecha_destino"
-        Me.DataGridViewTextBoxColumn5.HeaderText = "fecha_destino"
-        Me.DataGridViewTextBoxColumn5.Name = "DataGridViewTextBoxColumn5"
-        Me.DataGridViewTextBoxColumn5.Width = 80
-        '
-        'DataGridViewTextBoxColumn12
-        '
-        Me.DataGridViewTextBoxColumn12.DataPropertyName = "Estado"
-        Me.DataGridViewTextBoxColumn12.HeaderText = "Estado"
-        Me.DataGridViewTextBoxColumn12.Name = "DataGridViewTextBoxColumn12"
-        Me.DataGridViewTextBoxColumn12.Width = 80
-        '
-        'TextBox1
-        '
-        Me.TextBox1.Location = New System.Drawing.Point(219, 36)
-        Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(154, 20)
-        Me.TextBox1.TabIndex = 2
-        '
-        'Label1
-        '
-        Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(97, 39)
-        Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(115, 13)
-        Me.Label1.TabIndex = 4
-        Me.Label1.Text = "Numero de facturacion"
-        '
-        'Label2
-        '
-        Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(97, 146)
-        Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(40, 13)
-        Me.Label2.TabIndex = 5
-        Me.Label2.Text = "Estado"
-        '
-        'ComboBox1
-        '
-        Me.ComboBox1.FormattingEnabled = True
-        Me.ComboBox1.Location = New System.Drawing.Point(219, 143)
-        Me.ComboBox1.Name = "ComboBox1"
-        Me.ComboBox1.Size = New System.Drawing.Size(154, 21)
-        Me.ComboBox1.TabIndex = 6
-        '
-        'BtnTerminar
-        '
-        Me.BtnTerminar.Location = New System.Drawing.Point(194, 200)
-        Me.BtnTerminar.Name = "BtnTerminar"
-        Me.BtnTerminar.Size = New System.Drawing.Size(75, 23)
-        Me.BtnTerminar.TabIndex = 7
-        Me.BtnTerminar.Text = "Guardar"
-        Me.BtnTerminar.UseVisualStyleBackColor = True
+        Me.HastaPick.Format = System.Windows.Forms.DateTimePickerFormat.Time
+        Me.HastaPick.Location = New System.Drawing.Point(217, 57)
+        Me.HastaPick.Name = "HastaPick"
+        Me.HastaPick.Size = New System.Drawing.Size(110, 20)
+        Me.HastaPick.TabIndex = 17
         '
         'Finalizar_Viaje
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(1075, 556)
+        Me.ClientSize = New System.Drawing.Size(1058, 569)
+        Me.Controls.Add(Me.HastaPick)
+        Me.Controls.Add(Me.Label6)
+        Me.Controls.Add(Me.TextBoxEstado)
+        Me.Controls.Add(Me.BtnCalcular)
+        Me.Controls.Add(Me.Label5)
+        Me.Controls.Add(Me.Label4)
+        Me.Controls.Add(Me.TextBox3)
+        Me.Controls.Add(Me.TextBoxKms)
+        Me.Controls.Add(Me.TextBoxTotal)
+        Me.Controls.Add(Me.Label3)
         Me.Controls.Add(Me.BtnTerminar)
-        Me.Controls.Add(Me.ComboBox1)
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.TextBox1)
         Me.Controls.Add(Me.ViajesDataGridView)
         Me.Name = "Finalizar_Viaje"
         Me.Text = "Finalizar_Viaje"
-        CType(Me.Database1DataSet, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.ViajesBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.ViajesDataGridView, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.ViajesBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.Database1DataSet, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.ValoresBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -237,7 +339,6 @@ Partial Class Finalizar_Viaje
     Friend WithEvents TextBox1 As System.Windows.Forms.TextBox
     Friend WithEvents Label1 As System.Windows.Forms.Label
     Friend WithEvents Label2 As System.Windows.Forms.Label
-    Friend WithEvents ComboBox1 As System.Windows.Forms.ComboBox
     Friend WithEvents BtnTerminar As System.Windows.Forms.Button
     Friend WithEvents DataGridViewTextBoxColumn1 As System.Windows.Forms.DataGridViewTextBoxColumn
     Friend WithEvents DataGridViewTextBoxColumn2 As System.Windows.Forms.DataGridViewTextBoxColumn
@@ -250,4 +351,16 @@ Partial Class Finalizar_Viaje
     Friend WithEvents DataGridViewTextBoxColumn4 As System.Windows.Forms.DataGridViewTextBoxColumn
     Friend WithEvents DataGridViewTextBoxColumn5 As System.Windows.Forms.DataGridViewTextBoxColumn
     Friend WithEvents DataGridViewTextBoxColumn12 As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents Label3 As System.Windows.Forms.Label
+    Friend WithEvents TextBoxTotal As System.Windows.Forms.TextBox
+    Friend WithEvents TextBoxKms As System.Windows.Forms.TextBox
+    Friend WithEvents TextBox3 As System.Windows.Forms.TextBox
+    Friend WithEvents Label4 As System.Windows.Forms.Label
+    Friend WithEvents Label5 As System.Windows.Forms.Label
+    Friend WithEvents BtnCalcular As System.Windows.Forms.Button
+    Friend WithEvents TextBoxEstado As System.Windows.Forms.TextBox
+    Friend WithEvents ValoresBindingSource As System.Windows.Forms.BindingSource
+    Friend WithEvents ValoresTableAdapter As pruebaBD.Database1DataSetTableAdapters.ValoresTableAdapter
+    Friend WithEvents Label6 As System.Windows.Forms.Label
+    Friend WithEvents HastaPick As System.Windows.Forms.DateTimePicker
 End Class

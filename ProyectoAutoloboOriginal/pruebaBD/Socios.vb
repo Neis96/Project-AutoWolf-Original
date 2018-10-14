@@ -1,6 +1,6 @@
 ﻿Public Class Socios
 
-    Private Sub SociosBindingNavigatorSaveItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles SociosBindingNavigatorSaveItem.Click
+    Private Sub SociosBindingNavigatorSaveItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs)
         Me.Validate()
         Me.SociosBindingSource.EndEdit()
         Me.TableAdapterManager.UpdateAll(Me.Database1DataSet)
@@ -32,7 +32,7 @@
             Me.SociosBindingSource.MoveLast() 'ver ultimo agragado 
 
             'respetar siempre el orden de las instrucciones
-
+            'allá le estan respetando las instrucciones
             Me.SociosBindingSource.AddNew() 'Para agregar el sig
 
             NombreTextBox.Focus()
@@ -40,19 +40,19 @@
         End If
     End Sub
 
-    Private Sub ButConsulta_Click(sender As System.Object, e As System.EventArgs) Handles ButConsulta.Click
-        Me.SociosTableAdapter.FillBy((Me.Database1DataSet.Socios), TextBoxconsultasocio.Text)
+    Private Sub ButConsulta_Click(ByVal sender As System.Object, ByVal e As System.EventArgs)
+        'Me.SociosTableAdapter.FillBy((Me.Database1DataSet.Socios), TextBoxconsultasocio.Text)
 
 
     End Sub
 
-    Private Sub Button2_Click(sender As System.Object, e As System.EventArgs) Handles Button2.Click
+    Private Sub Button2_Click(ByVal sender As System.Object, ByVal e As System.EventArgs)
 
         ModificarSocios.Show()
 
 
 
-            
+
     End Sub
 
     Private Sub Button4_Click(sender As System.Object, e As System.EventArgs) Handles Button4.Click

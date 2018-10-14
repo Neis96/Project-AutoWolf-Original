@@ -35,20 +35,20 @@ Partial Class Inicio
         Me.VehiculosF4ToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.VerToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ResumenToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
+        Me.LiquidacionCtaCteToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
         Me.ResumenToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.LiquidacionChoferToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.LiquidacionCtaCteToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.AyudaToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ConfiguracionToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.CrearUsuariosToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ModificarValoresToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.DgvEstado = New System.Windows.Forms.DataGridView()
         Me.DgvReserva = New System.Windows.Forms.DataGridView()
-        Me.LiquidacionCtaCteToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ViajesBindingSource = New System.Windows.Forms.BindingSource(Me.components)
         Me.Database1DataSet = New pruebaBD.Database1DataSet()
         Me.TableAdapterManager = New pruebaBD.Database1DataSetTableAdapters.TableAdapterManager()
         Me.ViajesTableAdapter = New pruebaBD.Database1DataSetTableAdapters.ViajesTableAdapter()
-        Me.LiquidacionCtaCteToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
         Me.MenuStrip1.SuspendLayout()
         CType(Me.DgvEstado, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.DgvReserva, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -143,8 +143,14 @@ Partial Class Inicio
         '
         Me.ResumenToolStripMenuItem1.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.LiquidacionCtaCteToolStripMenuItem1})
         Me.ResumenToolStripMenuItem1.Name = "ResumenToolStripMenuItem1"
-        Me.ResumenToolStripMenuItem1.Size = New System.Drawing.Size(152, 22)
+        Me.ResumenToolStripMenuItem1.Size = New System.Drawing.Size(123, 22)
         Me.ResumenToolStripMenuItem1.Text = "Resumen"
+        '
+        'LiquidacionCtaCteToolStripMenuItem1
+        '
+        Me.LiquidacionCtaCteToolStripMenuItem1.Name = "LiquidacionCtaCteToolStripMenuItem1"
+        Me.LiquidacionCtaCteToolStripMenuItem1.Size = New System.Drawing.Size(178, 22)
+        Me.LiquidacionCtaCteToolStripMenuItem1.Text = "Liquidacion Cta Cte"
         '
         'ResumenToolStripMenuItem
         '
@@ -158,6 +164,12 @@ Partial Class Inicio
         Me.LiquidacionChoferToolStripMenuItem.Name = "LiquidacionChoferToolStripMenuItem"
         Me.LiquidacionChoferToolStripMenuItem.Size = New System.Drawing.Size(178, 22)
         Me.LiquidacionChoferToolStripMenuItem.Text = "Liquidacion chofer"
+        '
+        'LiquidacionCtaCteToolStripMenuItem
+        '
+        Me.LiquidacionCtaCteToolStripMenuItem.Name = "LiquidacionCtaCteToolStripMenuItem"
+        Me.LiquidacionCtaCteToolStripMenuItem.Size = New System.Drawing.Size(178, 22)
+        Me.LiquidacionCtaCteToolStripMenuItem.Text = "Liquidacion Cta Cte"
         '
         'AyudaToolStripMenuItem
         '
@@ -187,24 +199,18 @@ Partial Class Inicio
         'DgvEstado
         '
         Me.DgvEstado.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.DgvEstado.Location = New System.Drawing.Point(218, 378)
+        Me.DgvEstado.Location = New System.Drawing.Point(260, 87)
         Me.DgvEstado.Name = "DgvEstado"
-        Me.DgvEstado.Size = New System.Drawing.Size(525, 242)
+        Me.DgvEstado.Size = New System.Drawing.Size(854, 207)
         Me.DgvEstado.TabIndex = 11
         '
         'DgvReserva
         '
         Me.DgvReserva.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.DgvReserva.Location = New System.Drawing.Point(785, 137)
+        Me.DgvReserva.Location = New System.Drawing.Point(260, 357)
         Me.DgvReserva.Name = "DgvReserva"
-        Me.DgvReserva.Size = New System.Drawing.Size(422, 354)
+        Me.DgvReserva.Size = New System.Drawing.Size(854, 241)
         Me.DgvReserva.TabIndex = 12
-        '
-        'LiquidacionCtaCteToolStripMenuItem
-        '
-        Me.LiquidacionCtaCteToolStripMenuItem.Name = "LiquidacionCtaCteToolStripMenuItem"
-        Me.LiquidacionCtaCteToolStripMenuItem.Size = New System.Drawing.Size(178, 22)
-        Me.LiquidacionCtaCteToolStripMenuItem.Text = "Liquidacion Cta Cte"
         '
         'ViajesBindingSource
         '
@@ -235,12 +241,6 @@ Partial Class Inicio
         'ViajesTableAdapter
         '
         Me.ViajesTableAdapter.ClearBeforeFill = True
-        '
-        'LiquidacionCtaCteToolStripMenuItem1
-        '
-        Me.LiquidacionCtaCteToolStripMenuItem1.Name = "LiquidacionCtaCteToolStripMenuItem1"
-        Me.LiquidacionCtaCteToolStripMenuItem1.Size = New System.Drawing.Size(178, 22)
-        Me.LiquidacionCtaCteToolStripMenuItem1.Text = "Liquidacion Cta Cte"
         '
         'Inicio
         '

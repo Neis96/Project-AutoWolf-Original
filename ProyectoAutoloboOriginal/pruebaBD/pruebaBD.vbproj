@@ -107,6 +107,12 @@
     <Compile Include="Configuracion.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="ConsultaSocio.Designer.vb">
+      <DependentUpon>ConsultaSocio.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ConsultaSocio.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Database1DataSet.Designer.vb">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -224,6 +230,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Configuracion.resx">
       <DependentUpon>Configuracion.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ConsultaSocio.resx">
+      <DependentUpon>ConsultaSocio.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Finalizar Viaje.resx">
       <DependentUpon>Finalizar Viaje.vb</DependentUpon>

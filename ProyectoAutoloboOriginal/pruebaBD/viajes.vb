@@ -63,9 +63,9 @@
         Me.ViajesBindingSource.Current("IdChofer") = Val(ComboBoxChofer.Text)
         Me.ViajesBindingSource.Current("idSocios") = Val(ComboBoxSocios.Text)
         Me.ViajesBindingSource.Current("idVehiculos") = Val(ComboBoxVehiculo.Text)
-        Me.ViajesBindingSource.Current("fecha_origen") = Fecha_destinoDateTimePicker.Value
-        Me.ViajesBindingSource.Current("fecha_destino") = Fecha_origenDateTimePicker.Value
-        Me.ViajesBindingSource.Current("total") = Val(TotalTextBox.Text)
+        Me.ViajesBindingSource.Current("fecha_origen") = DestinoPick.Value
+        Me.ViajesBindingSource.Current("fecha_destino") = OrigenPick.Value
+        'Me.ViajesBindingSource.Current("total") = Val(TotalTextBox.Text)
         Me.ViajesBindingSource.Current("lugar_origen") = Lugar_origenTextBox.Text
         Me.ViajesBindingSource.Current("lugar_destino") = Lugar_destinoTextBox.Text
         Me.ViajesBindingSource.Current("Reserva") = reserva
@@ -91,8 +91,12 @@
 
     End Sub
 
-    Private Sub Fecha_origenDateTimePicker_ValueChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Fecha_origenDateTimePicker.ValueChanged
+    Private Sub Fecha_origenDateTimePicker_ValueChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles OrigenPick.ValueChanged
 
 
+    End Sub
+
+    Private Sub BtnNuevo_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles BtnNuevo.Click
+        Socios.Show()
     End Sub
 End Class

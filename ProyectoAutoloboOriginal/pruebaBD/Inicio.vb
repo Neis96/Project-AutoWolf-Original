@@ -94,12 +94,7 @@
     End Sub
 
     Private Sub DgvEstado_CellClick(ByVal sender As Object, ByVal e As System.Windows.Forms.DataGridViewCellEventArgs) Handles DgvEstado.CellClick
-        Dim fila As Integer
-        fila = DgvEstado.CurrentCellAddress.Y 'saco la fila de donde hice click
-        Finalizar_Viaje.TextBox1.Text = DgvEstado.Item(0, fila).Value() 'asigno al texbox1 del formulario ventas el valor del art
-
-        Finalizar_Viaje.Show()
-
+     
     End Sub
 
     Private Sub ViajesF1ToolStripMenuItem_Click(sender As System.Object, e As System.EventArgs) Handles ViajesF1ToolStripMenuItem.Click
@@ -121,6 +116,15 @@
     End Sub
 
     Private Sub LiquidacionCtaCteToolStripMenuItem1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles LiquidacionCtaCteToolStripMenuItem1.Click
+
+    End Sub
+
+    Private Sub DgvEstado_CellDoubleClick(ByVal sender As Object, ByVal e As System.Windows.Forms.DataGridViewCellEventArgs) Handles DgvEstado.CellDoubleClick
+        Dim fila As Integer
+        fila = DgvEstado.CurrentCellAddress.Y 'saco la fila de donde hice click
+        Finalizar_Viaje.TextBox1.Text = DgvEstado.Item(0, fila).Value() 'asigno al texbox1 del formulario ventas el valor del art
+
+        Finalizar_Viaje.Show()
 
     End Sub
 End Class

@@ -3,6 +3,10 @@ End Class
 
 Namespace Database1DataSetTableAdapters
     
+    Partial Class LiqCtaCtrTableAdapter
+
+    End Class
+
     Partial Class ViajesTableAdapter
 
     End Class

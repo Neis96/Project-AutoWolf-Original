@@ -27,16 +27,17 @@ Partial Class viajes
         Dim IdSociosLabel As System.Windows.Forms.Label
         Dim Fecha_origenLabel As System.Windows.Forms.Label
         Dim Fecha_destinoLabel As System.Windows.Forms.Label
-        Dim TotalLabel As System.Windows.Forms.Label
         Dim Lugar_origenLabel As System.Windows.Forms.Label
         Dim Lugar_destinoLabel As System.Windows.Forms.Label
+        Dim NombreLabel As System.Windows.Forms.Label
+        Dim NombreLabel1 As System.Windows.Forms.Label
+        Dim DominioLabel As System.Windows.Forms.Label
         Me.Database1DataSet = New pruebaBD.Database1DataSet()
         Me.ViajesBindingSource = New System.Windows.Forms.BindingSource(Me.components)
         Me.ViajesTableAdapter = New pruebaBD.Database1DataSetTableAdapters.ViajesTableAdapter()
         Me.TableAdapterManager = New pruebaBD.Database1DataSetTableAdapters.TableAdapterManager()
-        Me.Fecha_origenDateTimePicker = New System.Windows.Forms.DateTimePicker()
-        Me.Fecha_destinoDateTimePicker = New System.Windows.Forms.DateTimePicker()
-        Me.TotalTextBox = New System.Windows.Forms.TextBox()
+        Me.OrigenPick = New System.Windows.Forms.DateTimePicker()
+        Me.DestinoPick = New System.Windows.Forms.DateTimePicker()
         Me.Lugar_origenTextBox = New System.Windows.Forms.TextBox()
         Me.Lugar_destinoTextBox = New System.Windows.Forms.TextBox()
         Me.Button1 = New System.Windows.Forms.Button()
@@ -53,13 +54,19 @@ Partial Class viajes
         Me.VehiculoTableAdapter = New pruebaBD.Database1DataSetTableAdapters.VehiculoTableAdapter()
         Me.CheckBoxReserva = New System.Windows.Forms.CheckBox()
         Me.CheckCta = New System.Windows.Forms.CheckBox()
+        Me.NombreSocios = New System.Windows.Forms.TextBox()
+        Me.NombreChofer = New System.Windows.Forms.TextBox()
+        Me.DominioTextBox = New System.Windows.Forms.TextBox()
+        Me.BtnNuevo = New System.Windows.Forms.Button()
         IdChoferLabel = New System.Windows.Forms.Label()
         IdSociosLabel = New System.Windows.Forms.Label()
         Fecha_origenLabel = New System.Windows.Forms.Label()
         Fecha_destinoLabel = New System.Windows.Forms.Label()
-        TotalLabel = New System.Windows.Forms.Label()
         Lugar_origenLabel = New System.Windows.Forms.Label()
         Lugar_destinoLabel = New System.Windows.Forms.Label()
+        NombreLabel = New System.Windows.Forms.Label()
+        NombreLabel1 = New System.Windows.Forms.Label()
+        DominioLabel = New System.Windows.Forms.Label()
         CType(Me.Database1DataSet, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.ViajesBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.ChoferBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -70,7 +77,7 @@ Partial Class viajes
         'IdChoferLabel
         '
         IdChoferLabel.AutoSize = True
-        IdChoferLabel.Location = New System.Drawing.Point(66, 46)
+        IdChoferLabel.Location = New System.Drawing.Point(66, 65)
         IdChoferLabel.Name = "IdChoferLabel"
         IdChoferLabel.Size = New System.Drawing.Size(52, 13)
         IdChoferLabel.TabIndex = 3
@@ -79,7 +86,7 @@ Partial Class viajes
         'IdSociosLabel
         '
         IdSociosLabel.AutoSize = True
-        IdSociosLabel.Location = New System.Drawing.Point(66, 72)
+        IdSociosLabel.Location = New System.Drawing.Point(66, 99)
         IdSociosLabel.Name = "IdSociosLabel"
         IdSociosLabel.Size = New System.Drawing.Size(53, 13)
         IdSociosLabel.TabIndex = 5
@@ -88,7 +95,7 @@ Partial Class viajes
         'Fecha_origenLabel
         '
         Fecha_origenLabel.AutoSize = True
-        Fecha_origenLabel.Location = New System.Drawing.Point(67, 138)
+        Fecha_origenLabel.Location = New System.Drawing.Point(66, 165)
         Fecha_origenLabel.Name = "Fecha_origenLabel"
         Fecha_origenLabel.Size = New System.Drawing.Size(69, 13)
         Fecha_origenLabel.TabIndex = 7
@@ -97,25 +104,16 @@ Partial Class viajes
         'Fecha_destinoLabel
         '
         Fecha_destinoLabel.AutoSize = True
-        Fecha_destinoLabel.Location = New System.Drawing.Point(67, 164)
+        Fecha_destinoLabel.Location = New System.Drawing.Point(66, 191)
         Fecha_destinoLabel.Name = "Fecha_destinoLabel"
         Fecha_destinoLabel.Size = New System.Drawing.Size(74, 13)
         Fecha_destinoLabel.TabIndex = 9
         Fecha_destinoLabel.Text = "fecha destino:"
         '
-        'TotalLabel
-        '
-        TotalLabel.AutoSize = True
-        TotalLabel.Location = New System.Drawing.Point(66, 199)
-        TotalLabel.Name = "TotalLabel"
-        TotalLabel.Size = New System.Drawing.Size(34, 13)
-        TotalLabel.TabIndex = 11
-        TotalLabel.Text = "Total:"
-        '
         'Lugar_origenLabel
         '
         Lugar_origenLabel.AutoSize = True
-        Lugar_origenLabel.Location = New System.Drawing.Point(66, 225)
+        Lugar_origenLabel.Location = New System.Drawing.Point(66, 218)
         Lugar_origenLabel.Name = "Lugar_origenLabel"
         Lugar_origenLabel.Size = New System.Drawing.Size(65, 13)
         Lugar_origenLabel.TabIndex = 13
@@ -124,7 +122,7 @@ Partial Class viajes
         'Lugar_destinoLabel
         '
         Lugar_destinoLabel.AutoSize = True
-        Lugar_destinoLabel.Location = New System.Drawing.Point(66, 251)
+        Lugar_destinoLabel.Location = New System.Drawing.Point(66, 247)
         Lugar_destinoLabel.Name = "Lugar_destinoLabel"
         Lugar_destinoLabel.Size = New System.Drawing.Size(70, 13)
         Lugar_destinoLabel.TabIndex = 15
@@ -155,39 +153,32 @@ Partial Class viajes
         Me.TableAdapterManager.TablaDeTurnoTableAdapter = Nothing
         Me.TableAdapterManager.UpdateOrder = pruebaBD.Database1DataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete
         Me.TableAdapterManager.UsuarioTableAdapter = Nothing
+        Me.TableAdapterManager.ValoresTableAdapter = Nothing
         Me.TableAdapterManager.VehiculoTableAdapter = Nothing
         Me.TableAdapterManager.ViajesTableAdapter = Me.ViajesTableAdapter
         '
-        'Fecha_origenDateTimePicker
+        'OrigenPick
         '
-        Me.Fecha_origenDateTimePicker.DataBindings.Add(New System.Windows.Forms.Binding("Value", Me.ViajesBindingSource, "fecha_origen", True))
-        Me.Fecha_origenDateTimePicker.Format = System.Windows.Forms.DateTimePickerFormat.Time
-        Me.Fecha_origenDateTimePicker.Location = New System.Drawing.Point(147, 134)
-        Me.Fecha_origenDateTimePicker.Name = "Fecha_origenDateTimePicker"
-        Me.Fecha_origenDateTimePicker.Size = New System.Drawing.Size(105, 20)
-        Me.Fecha_origenDateTimePicker.TabIndex = 8
+        Me.OrigenPick.DataBindings.Add(New System.Windows.Forms.Binding("Value", Me.ViajesBindingSource, "fecha_origen", True))
+        Me.OrigenPick.Format = System.Windows.Forms.DateTimePickerFormat.Time
+        Me.OrigenPick.Location = New System.Drawing.Point(146, 161)
+        Me.OrigenPick.Name = "OrigenPick"
+        Me.OrigenPick.Size = New System.Drawing.Size(105, 20)
+        Me.OrigenPick.TabIndex = 8
         '
-        'Fecha_destinoDateTimePicker
+        'DestinoPick
         '
-        Me.Fecha_destinoDateTimePicker.DataBindings.Add(New System.Windows.Forms.Binding("Value", Me.ViajesBindingSource, "fecha_destino", True))
-        Me.Fecha_destinoDateTimePicker.Format = System.Windows.Forms.DateTimePickerFormat.Time
-        Me.Fecha_destinoDateTimePicker.Location = New System.Drawing.Point(147, 160)
-        Me.Fecha_destinoDateTimePicker.Name = "Fecha_destinoDateTimePicker"
-        Me.Fecha_destinoDateTimePicker.Size = New System.Drawing.Size(105, 20)
-        Me.Fecha_destinoDateTimePicker.TabIndex = 10
-        '
-        'TotalTextBox
-        '
-        Me.TotalTextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.ViajesBindingSource, "Total", True))
-        Me.TotalTextBox.Location = New System.Drawing.Point(146, 196)
-        Me.TotalTextBox.Name = "TotalTextBox"
-        Me.TotalTextBox.Size = New System.Drawing.Size(106, 20)
-        Me.TotalTextBox.TabIndex = 12
+        Me.DestinoPick.DataBindings.Add(New System.Windows.Forms.Binding("Value", Me.ViajesBindingSource, "fecha_destino", True))
+        Me.DestinoPick.Format = System.Windows.Forms.DateTimePickerFormat.Time
+        Me.DestinoPick.Location = New System.Drawing.Point(146, 187)
+        Me.DestinoPick.Name = "DestinoPick"
+        Me.DestinoPick.Size = New System.Drawing.Size(105, 20)
+        Me.DestinoPick.TabIndex = 10
         '
         'Lugar_origenTextBox
         '
         Me.Lugar_origenTextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.ViajesBindingSource, "lugar_origen", True))
-        Me.Lugar_origenTextBox.Location = New System.Drawing.Point(146, 222)
+        Me.Lugar_origenTextBox.Location = New System.Drawing.Point(146, 218)
         Me.Lugar_origenTextBox.Name = "Lugar_origenTextBox"
         Me.Lugar_origenTextBox.Size = New System.Drawing.Size(106, 20)
         Me.Lugar_origenTextBox.TabIndex = 14
@@ -195,23 +186,23 @@ Partial Class viajes
         'Lugar_destinoTextBox
         '
         Me.Lugar_destinoTextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.ViajesBindingSource, "lugar_destino", True))
-        Me.Lugar_destinoTextBox.Location = New System.Drawing.Point(146, 248)
+        Me.Lugar_destinoTextBox.Location = New System.Drawing.Point(146, 244)
         Me.Lugar_destinoTextBox.Name = "Lugar_destinoTextBox"
         Me.Lugar_destinoTextBox.Size = New System.Drawing.Size(106, 20)
         Me.Lugar_destinoTextBox.TabIndex = 16
         '
         'Button1
         '
-        Me.Button1.Location = New System.Drawing.Point(51, 296)
+        Me.Button1.Location = New System.Drawing.Point(146, 337)
         Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(105, 59)
+        Me.Button1.Size = New System.Drawing.Size(106, 59)
         Me.Button1.TabIndex = 18
         Me.Button1.Text = "agregar"
         Me.Button1.UseVisualStyleBackColor = True
         '
         'Button4
         '
-        Me.Button4.Location = New System.Drawing.Point(209, 296)
+        Me.Button4.Location = New System.Drawing.Point(268, 337)
         Me.Button4.Name = "Button4"
         Me.Button4.Size = New System.Drawing.Size(105, 59)
         Me.Button4.TabIndex = 21
@@ -221,7 +212,7 @@ Partial Class viajes
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(66, 100)
+        Me.Label1.Location = New System.Drawing.Point(66, 132)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(62, 13)
         Me.Label1.TabIndex = 22
@@ -232,7 +223,7 @@ Partial Class viajes
         Me.ComboBoxChofer.DataSource = Me.ChoferBindingSource
         Me.ComboBoxChofer.DisplayMember = "id_chofer"
         Me.ComboBoxChofer.FormattingEnabled = True
-        Me.ComboBoxChofer.Location = New System.Drawing.Point(146, 42)
+        Me.ComboBoxChofer.Location = New System.Drawing.Point(146, 62)
         Me.ComboBoxChofer.Name = "ComboBoxChofer"
         Me.ComboBoxChofer.Size = New System.Drawing.Size(106, 21)
         Me.ComboBoxChofer.TabIndex = 23
@@ -247,7 +238,7 @@ Partial Class viajes
         Me.ComboBoxSocios.DataSource = Me.SociosBindingSource
         Me.ComboBoxSocios.DisplayMember = "id_socio"
         Me.ComboBoxSocios.FormattingEnabled = True
-        Me.ComboBoxSocios.Location = New System.Drawing.Point(146, 69)
+        Me.ComboBoxSocios.Location = New System.Drawing.Point(146, 96)
         Me.ComboBoxSocios.Name = "ComboBoxSocios"
         Me.ComboBoxSocios.Size = New System.Drawing.Size(106, 21)
         Me.ComboBoxSocios.TabIndex = 24
@@ -262,7 +253,7 @@ Partial Class viajes
         Me.ComboBoxVehiculo.DataSource = Me.VehiculoBindingSource
         Me.ComboBoxVehiculo.DisplayMember = "id_vehiculo"
         Me.ComboBoxVehiculo.FormattingEnabled = True
-        Me.ComboBoxVehiculo.Location = New System.Drawing.Point(146, 97)
+        Me.ComboBoxVehiculo.Location = New System.Drawing.Point(146, 129)
         Me.ComboBoxVehiculo.Name = "ComboBoxVehiculo"
         Me.ComboBoxVehiculo.Size = New System.Drawing.Size(106, 21)
         Me.ComboBoxVehiculo.TabIndex = 25
@@ -287,7 +278,7 @@ Partial Class viajes
         'CheckBoxReserva
         '
         Me.CheckBoxReserva.AutoSize = True
-        Me.CheckBoxReserva.Location = New System.Drawing.Point(282, 199)
+        Me.CheckBoxReserva.Location = New System.Drawing.Point(281, 222)
         Me.CheckBoxReserva.Name = "CheckBoxReserva"
         Me.CheckBoxReserva.Size = New System.Drawing.Size(66, 17)
         Me.CheckBoxReserva.TabIndex = 26
@@ -297,18 +288,88 @@ Partial Class viajes
         'CheckCta
         '
         Me.CheckCta.AutoSize = True
-        Me.CheckCta.Location = New System.Drawing.Point(282, 224)
+        Me.CheckCta.Location = New System.Drawing.Point(281, 247)
         Me.CheckCta.Name = "CheckCta"
         Me.CheckCta.Size = New System.Drawing.Size(61, 17)
         Me.CheckCta.TabIndex = 27
         Me.CheckCta.Text = "Cta Cte"
         Me.CheckCta.UseVisualStyleBackColor = True
         '
+        'NombreLabel
+        '
+        NombreLabel.AutoSize = True
+        NombreLabel.Location = New System.Drawing.Point(293, 99)
+        NombreLabel.Name = "NombreLabel"
+        NombreLabel.Size = New System.Drawing.Size(82, 13)
+        NombreLabel.TabIndex = 27
+        NombreLabel.Text = "Nombre Socios:"
+        '
+        'NombreSocios
+        '
+        Me.NombreSocios.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.SociosBindingSource, "nombre", True))
+        Me.NombreSocios.Enabled = False
+        Me.NombreSocios.Location = New System.Drawing.Point(379, 96)
+        Me.NombreSocios.Name = "NombreSocios"
+        Me.NombreSocios.Size = New System.Drawing.Size(100, 20)
+        Me.NombreSocios.TabIndex = 28
+        '
+        'NombreLabel1
+        '
+        NombreLabel1.AutoSize = True
+        NombreLabel1.Location = New System.Drawing.Point(293, 65)
+        NombreLabel1.Name = "NombreLabel1"
+        NombreLabel1.Size = New System.Drawing.Size(80, 13)
+        NombreLabel1.TabIndex = 28
+        NombreLabel1.Text = "Nombre chofer:"
+        '
+        'NombreChofer
+        '
+        Me.NombreChofer.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.ChoferBindingSource, "nombre", True))
+        Me.NombreChofer.Enabled = False
+        Me.NombreChofer.Location = New System.Drawing.Point(379, 62)
+        Me.NombreChofer.Name = "NombreChofer"
+        Me.NombreChofer.Size = New System.Drawing.Size(100, 20)
+        Me.NombreChofer.TabIndex = 29
+        '
+        'DominioLabel
+        '
+        DominioLabel.AutoSize = True
+        DominioLabel.Location = New System.Drawing.Point(293, 132)
+        DominioLabel.Name = "DominioLabel"
+        DominioLabel.Size = New System.Drawing.Size(51, 13)
+        DominioLabel.TabIndex = 29
+        DominioLabel.Text = " Dominio:"
+        '
+        'DominioTextBox
+        '
+        Me.DominioTextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.VehiculoBindingSource, "dominio", True))
+        Me.DominioTextBox.Enabled = False
+        Me.DominioTextBox.Location = New System.Drawing.Point(379, 129)
+        Me.DominioTextBox.Name = "DominioTextBox"
+        Me.DominioTextBox.Size = New System.Drawing.Size(100, 20)
+        Me.DominioTextBox.TabIndex = 30
+        '
+        'BtnNuevo
+        '
+        Me.BtnNuevo.Location = New System.Drawing.Point(389, 337)
+        Me.BtnNuevo.Name = "BtnNuevo"
+        Me.BtnNuevo.Size = New System.Drawing.Size(105, 59)
+        Me.BtnNuevo.TabIndex = 31
+        Me.BtnNuevo.Text = "Nuevo Socio"
+        Me.BtnNuevo.UseVisualStyleBackColor = True
+        '
         'viajes
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(410, 482)
+        Me.ClientSize = New System.Drawing.Size(664, 482)
+        Me.Controls.Add(Me.BtnNuevo)
+        Me.Controls.Add(DominioLabel)
+        Me.Controls.Add(Me.DominioTextBox)
+        Me.Controls.Add(NombreLabel1)
+        Me.Controls.Add(Me.NombreChofer)
+        Me.Controls.Add(NombreLabel)
+        Me.Controls.Add(Me.NombreSocios)
         Me.Controls.Add(Me.CheckCta)
         Me.Controls.Add(Me.CheckBoxReserva)
         Me.Controls.Add(Me.ComboBoxVehiculo)
@@ -320,11 +381,9 @@ Partial Class viajes
         Me.Controls.Add(IdChoferLabel)
         Me.Controls.Add(IdSociosLabel)
         Me.Controls.Add(Fecha_origenLabel)
-        Me.Controls.Add(Me.Fecha_origenDateTimePicker)
+        Me.Controls.Add(Me.OrigenPick)
         Me.Controls.Add(Fecha_destinoLabel)
-        Me.Controls.Add(Me.Fecha_destinoDateTimePicker)
-        Me.Controls.Add(TotalLabel)
-        Me.Controls.Add(Me.TotalTextBox)
+        Me.Controls.Add(Me.DestinoPick)
         Me.Controls.Add(Lugar_origenLabel)
         Me.Controls.Add(Me.Lugar_origenTextBox)
         Me.Controls.Add(Lugar_destinoLabel)
@@ -344,9 +403,8 @@ Partial Class viajes
     Friend WithEvents ViajesBindingSource As System.Windows.Forms.BindingSource
     Friend WithEvents ViajesTableAdapter As pruebaBD.Database1DataSetTableAdapters.ViajesTableAdapter
     Friend WithEvents TableAdapterManager As pruebaBD.Database1DataSetTableAdapters.TableAdapterManager
-    Friend WithEvents Fecha_origenDateTimePicker As System.Windows.Forms.DateTimePicker
-    Friend WithEvents Fecha_destinoDateTimePicker As System.Windows.Forms.DateTimePicker
-    Friend WithEvents TotalTextBox As System.Windows.Forms.TextBox
+    Friend WithEvents OrigenPick As System.Windows.Forms.DateTimePicker
+    Friend WithEvents DestinoPick As System.Windows.Forms.DateTimePicker
     Friend WithEvents Lugar_origenTextBox As System.Windows.Forms.TextBox
     Friend WithEvents Lugar_destinoTextBox As System.Windows.Forms.TextBox
     Friend WithEvents Button1 As System.Windows.Forms.Button
@@ -363,4 +421,8 @@ Partial Class viajes
     Friend WithEvents VehiculoTableAdapter As pruebaBD.Database1DataSetTableAdapters.VehiculoTableAdapter
     Friend WithEvents CheckBoxReserva As System.Windows.Forms.CheckBox
     Friend WithEvents CheckCta As System.Windows.Forms.CheckBox
+    Friend WithEvents NombreSocios As System.Windows.Forms.TextBox
+    Friend WithEvents NombreChofer As System.Windows.Forms.TextBox
+    Friend WithEvents DominioTextBox As System.Windows.Forms.TextBox
+    Friend WithEvents BtnNuevo As System.Windows.Forms.Button
 End Class
