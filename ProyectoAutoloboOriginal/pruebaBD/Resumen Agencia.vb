@@ -11,6 +11,9 @@
         'TODO: esta línea de código carga datos en la tabla 'Database1DataSet.ResumenRemiseria' Puede moverla o quitarla según sea necesario.
         Me.ResumenRemiseriaTableAdapter.Fill(Me.Database1DataSet.ResumenRemiseria)
 
+        DateTimePickerDesde.Value = Now
+        DateTimePickerHasta.Value = Now
+
     End Sub
 
     Private Sub BtnConsultar_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles BtnConsultar.Click

@@ -13,6 +13,9 @@
         'TODO: esta línea de código carga datos en la tabla 'Database1DataSet.LiquidacionChofer' Puede moverla o quitarla según sea necesario.
         Me.LiquidacionChoferTableAdapter.Fill(Me.Database1DataSet.LiquidacionChofer)
 
+        DateTimePickerDesde.Value = Now
+        DateTimePickerHasta.Value = Now
+
     End Sub
 
     Private Sub BtnConsultar_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles BtnConsultar.Click

@@ -118,6 +118,7 @@ Partial Class Resumen_Chofer
         '
         'ComboBoxDueno
         '
+        Me.ComboBoxDueno.DataSource = Me.ChoferBindingSource
         Me.ComboBoxDueno.DisplayMember = "id_chofer"
         Me.ComboBoxDueno.FormattingEnabled = True
         Me.ComboBoxDueno.Location = New System.Drawing.Point(80, 22)
