@@ -19,12 +19,13 @@
         'TODO: esta línea de código carga datos en la tabla 'Database1DataSet.Viajes' Puede moverla o quitarla según sea necesario.
         Me.ViajesTableAdapter.Fill(Me.Database1DataSet.Viajes)
 
-        ComboBoxDueno.Text = ""
 
-        Me.LiquidacionChoferBindingSource.AddNew()
-        ' Resumen.LiquidacionChoferBindingSource.AddNew()
-        '  Resumen.ResumenRemiseriaBindingSource.AddNew()
-        Me.ResumenRemiseriaBindingSource.AddNew()
+
+        'Me.LiquidacionChoferBindingSource.AddNew()
+
+        'Me.ResumenRemiseriaBindingSource.AddNew()
+
+        ComboBoxDueno.Text = ""
     End Sub
 
     Private Sub BtnConsultar_Click(sender As System.Object, e As System.EventArgs) Handles BtnConsultar.Click
@@ -110,7 +111,7 @@
 
         If CheckBoxDueno.Checked Then
 
-            TextBoxPorcent.Text = ValoresBindingSource.Current("Dueño")
+            TextBoxPorcent.Text = ValoresBindingSource.Current("dueño")
 
         Else
 
@@ -122,76 +123,98 @@
     Private Sub BtnLiquidar_Click(sender As System.Object, e As System.EventArgs) Handles BtnLiquidar.Click
 
 
-        'Dim nombre, idChofer As String
-        'Dim total, totAgencia, totChofer As Double
-        'Dim desde, hasta, fechaLiq As Date
+        Dim nombre, idChofer As String
+        Dim totAgencia, totChofer As Double
+        Dim desde, hasta As Date ', fechaLiq
         'total = TextBoxTotal.Text
-        'totAgencia = TextBoxTotAgencia.Text
-        'totChofer = TextBoxTotChofer.Text
-        'desde =
-        'hasta =
-        'nombre = TextBoxNombre.Text
+        totAgencia = TextBoxTotAgencia.Text
+        totChofer = TextBoxTotChofer.Text
+        desde = DateTimePickerDesde.Value
+        hasta = DateTimePickerHasta.Value
+        nombre = TextBoxNombre.Text
         'fechaLiq =  ' nose si hace falta el atributo fechaliq en la tabla liqchofer con la fecha en la que se genero la liq del chofer para hacer los consultas en el otro form
-        'idChofer = ComboBoxDueno.Text
+        idChofer = ComboBoxDueno.Text
+
+
+        If ComboBoxDueno.Text <> "" Then
 
 
 
+            'Me.LiquidacionChoferBindingSource.Current("id_chofer") = Val(ComboBoxDueno.Text)
+            'Me.LiquidacionChoferBindingSource.Current("fecha_liq") = fechaLiq
+            'Me.LiquidacionChoferBindingSource.Current("Desde") = desde
+            'Me.LiquidacionChoferBindingSource.Current("Hasta") = hasta
+            'Me.LiquidacionChoferBindingSource.Current("Monto") = Val(TextBoxTotChofer.Text)
+            'Me.LiquidacionChoferBindingSource.Current("Nombre") = TextBoxNombre.Text
 
-        Me.LiquidacionChoferBindingSource.Current("id_chofer") = Val(ComboBoxDueno.Text)
-        'Me.LiquidacionChoferBindingSource.Current("fecha_liq") = fechaLiq
-        Me.LiquidacionChoferBindingSource.Current("Desde") = DateTimePickerDesde.Value
-        Me.LiquidacionChoferBindingSource.Current("Hasta") = DateTimePickerHasta.Value
-        Me.LiquidacionChoferBindingSource.Current("Monto") = Val(TextBoxTotChofer.Text)
-        Me.LiquidacionChoferBindingSource.Current("Nombre") = TextBoxNombre.Text
+            'Me.Validate()
+            'Me.LiquidacionChoferBindingSource.EndEdit()
+            'Me.TableAdapterManager.UpdateAll(Me.Database1DataSet)
 
+            Me.LiquidacionChoferTableAdapter.Insert1(desde, hasta, totChofer, idChofer, nombre)
+            Me.LiquidacionChoferTableAdapter.Fill(Me.Database1DataSet.LiquidacionChofer)
+            Resumen.LiquidacionChoferTableAdapter.Fill(Resumen.Database1DataSet.LiquidacionChofer)
 
+            Me.ResumenRemiseriaTableAdapter.Insert(desde, totAgencia)
+            Me.ResumenRemiseriaTableAdapter.Fill(Me.Database1DataSet.ResumenRemiseria)
+            Resumen.ResumenRemiseriaTableAdapter.Fill(Resumen.Database1DataSet.ResumenRemiseria)
+            'Me.LiquidacionChoferBindingSource.AddNew()
+            '.LiquidacionChoferTableAdapter.Fill(.Database1DataSet.LiquidacionChofer) 'aca actualiza el form resumen liq chofer
 
-        '.LiquidacionChoferTableAdapter.Fill(.Database1DataSet.LiquidacionChofer) 'aca actualiza el form resumen liq chofer
+            'Me.ResumenRemiseriaBindingSource.Current("fecha_liq") = fechaLiq
+            'Me.ResumenRemiseriaBindingSource.Current("desde") = desde
 
-        'Me.ResumenRemiseriaBindingSource.Current("fecha_liq") = fechaLiq
-        'Me.ResumenRemiseriaBindingSource.Current("desde") = desde
-        Me.ResumenRemiseriaBindingSource.Current("Fecha") = DateTime.Now.ToString("dd/MM/yyyy hh:mm:ss")
-        Me.ResumenRemiseriaBindingSource.Current("Monto") = Val(TextBoxTotAgencia.Text)
+            'If TextBoxTotAgencia.Text <> "" Then
 
+            '    Me.ResumenRemiseriaBindingSource.Current("Fecha") = DateTimePickerDesde.Value
+            '    Me.ResumenRemiseriaBindingSource.Current("Monto") = Val(TextBoxTotAgencia.Text)
 
-        Me.Validate()
-        Me.LiquidacionChoferBindingSource.Current.EndEdit()
-        Me.ResumenRemiseriaBindingSource.Current.EndEdit()
-
-        Me.TableAdapterManager.UpdateAll(Me.Database1DataSet)
-        Resumen.TableAdapterManager.UpdateAll(Resumen.Database1DataSet)
-
-        Me.LiquidacionChoferTableAdapter.Fill(Me.Database1DataSet.LiquidacionChofer)
-        Me.ResumenRemiseriaTableAdapter.Fill(Me.Database1DataSet.ResumenRemiseria)
-
-
-        'Me.TableAdapterManager.UpdateAll(Me.Database1DataSet)
-        'Resumen.LiquidacionChoferTableAdapter.Fill(Resumen.Database1DataSet.LiquidacionChofer)
-        'Resumen.ResumenRemiseriaTableAdapter.Fill(Resumen.Database1DataSet.ResumenRemiseria) 'del otro  otro archivo no usar
+            'DateTime.Now.ToString("dd/MM/yyyy hh:mm:ss")
 
 
-        'Me.ResumenRemiseriaBindingSource.MoveLast()
-        'Me.LiquidacionChoferBindingSource.MoveLast()
+            'Me.ResumenRemiseriaBindingSource.EndEdit()
+
+            'Me.TableAdapterManager.UpdateAll(Me.Database1DataSet)
+            'Resumen.TableAdapterManager.UpdateAll(Resumen.Database1DataSet)
 
 
-        MsgBox("Se liquido con exito")
 
-        Me.LiquidacionChoferBindingSource.AddNew()
+            ' Me.ResumenRemiseriaTableAdapter.Fill(Me.Database1DataSet.ResumenRemiseria)
 
-        Me.ResumenRemiseriaBindingSource.AddNew()
+            'Resumen.MostrarResumen()
 
-        'TextBoxTotal.Text = ""
-        'TextBoxTotAgencia.Text = ""
-        'TextBoxTotChofer.Text = ""
-        'ComboBoxDueno.Text = ""
-        'TextBoxNombre.Text = ""
+            'Me.TableAdapterManager.UpdateAll(Me.Database1DataSet)
+            'Resumen.LiquidacionChoferTableAdapter.Fill(Resumen.Database1DataSet.LiquidacionChofer)
+            'Resumen.ResumenRemiseriaTableAdapter.Fill(Resumen.Database1DataSet.ResumenRemiseria) 'del otro  otro archivo no usar
 
 
-        'else
-        'MsgBox("El campo id chofer esta vacio")
-        'ComboBoxDueno.Focus()
+            'Me.ResumenRemiseriaBindingSource.MoveLast()
+            'Me.LiquidacionChoferBindingSource.MoveLast()
 
-        'End If
+
+            MsgBox("Se liquido con exito")
+
+
+
+            ' Me.ResumenRemiseriaBindingSource.AddNew()
+
+
+
+            'TextBoxTotal.Text = ""
+            'TextBoxTotAgencia.Text = ""
+            'TextBoxTotChofer.Text = ""
+            'ComboBoxDueno.Text = ""
+            'TextBoxNombre.Text = ""
+
+            ' Else
+
+
+            'End If
+        Else
+        MsgBox("El campo id chofer esta vacio")
+        ComboBoxDueno.Focus()
+
+        End If
 
 
 

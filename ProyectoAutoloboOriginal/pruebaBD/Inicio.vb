@@ -28,10 +28,19 @@
 
     Private Sub Inicio_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
         'TODO: esta línea de código carga datos en la tabla 'Database1DataSet.Viajes' Puede moverla o quitarla según sea necesario.
-        Me.ViajesTableAdapter.Fill(Me.Database1DataSet.Viajes)
+        'Me.ViajesTableAdapter.Fill(Me.Database1DataSet.Viajes)
         'conexion.conectar()
         MostrarDatos()
         ' mostrar2()
+        If Registro_Usuario = 2 Then
+            ConfiguracionToolStripMenuItem.Enabled = False
+            ResumenToolStripMenuItem.Enabled = False
+
+
+
+        End If
+
+
 
 
     End Sub
@@ -89,7 +98,7 @@
     End Sub
 
     Private Sub ConfiguracionToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles ConfiguracionToolStripMenuItem.Click
-        Configuracion.Show()
+
 
     End Sub
 
@@ -103,6 +112,19 @@
     End Sub
 
     Private Sub ViajesF1ToolStripMenuItem_Click(sender As System.Object, e As System.EventArgs) Handles ViajesF1ToolStripMenuItem.Click
+
+    End Sub
+
+    Private Sub CrearUsuariosToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles CrearUsuariosToolStripMenuItem.Click
+        RegistroUsuario.Show()
+
+    End Sub
+
+    Private Sub ModificarValoresToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles ModificarValoresToolStripMenuItem.Click
+        Configuracion.Show()
+    End Sub
+
+    Private Sub ResumenToolStripMenuItem_Click(sender As System.Object, e As System.EventArgs) Handles ResumenToolStripMenuItem.Click
 
     End Sub
 End Class

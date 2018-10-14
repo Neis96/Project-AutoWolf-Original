@@ -57,7 +57,8 @@ Namespace My
         <Global.System.Configuration.ApplicationScopedSettingAttribute(),  _
          Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
          Global.System.Configuration.SpecialSettingAttribute(Global.System.Configuration.SpecialSetting.ConnectionString),  _
-         Global.System.Configuration.DefaultSettingValueAttribute("Data Source=|DataDirectory|\PruebaLocalConeccion.sdf")>  _
+         Global.System.Configuration.DefaultSettingValueAttribute("Data Source=C:\Users\karat\Desktop\GIT COD ULT\Liq_funcional\Project-AutoWolf-Ori"& _ 
+            "ginal\ProyectoAutoloboOriginal\pruebaBD\PruebaLocalConeccion.sdf")>  _
         Public ReadOnly Property Database1ConnectionString() As String
             Get
                 Return CType(Me("Database1ConnectionString"),String)

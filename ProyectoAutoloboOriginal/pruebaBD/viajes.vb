@@ -72,11 +72,12 @@
         Me.ViajesBindingSource.Current("Estado") = estado
         MsgBox("datos guardados")
         Me.ViajesBindingSource.EndEdit()
-        ' conexion.
+        ' 
         Me.TableAdapterManager.UpdateAll(Me.Database1DataSet)
         Me.ViajesTableAdapter.Fill(Me.Database1DataSet.Viajes) 'actualizo en este formulario
-        Inicio.ViajesTableAdapter.Fill(Inicio.Database1DataSet.Viajes)
-        conexion.actualizar("VIAJES")
+        ' Inicio.ViajesTableAdapter.Fill(Inicio.Database1DataSet.Viajes)
+        'conexion.actualizar("VIAJES")
+        Inicio.MostrarDatos()
 
         'conexion.da.Fill(conexion.ds)
         'Inicio.StockTableAdapter.Fill(Inicio.Database1DataSet.Viajes) 'actualizo en formulario principal

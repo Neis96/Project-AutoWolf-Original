@@ -121,6 +121,12 @@
     <Compile Include="Finalizar Viaje.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Formulariopepito.Designer.vb">
+      <DependentUpon>Formulariopepito.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formulariopepito.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Inicio.Designer.vb">
       <DependentUpon>Inicio.vb</DependentUpon>
     </Compile>
@@ -131,6 +137,12 @@
       <DependentUpon>Liquidacion Choferes.vb</DependentUpon>
     </Compile>
     <Compile Include="Liquidacion Choferes.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Loggin.Designer.vb">
+      <DependentUpon>Loggin.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Loggin.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="ModificarSocios.Designer.vb">
@@ -145,6 +157,7 @@
     <Compile Include="ModificarVehiculos.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Module1.vb" />
     <Compile Include="My Project\AssemblyInfo.vb" />
     <Compile Include="My Project\Application.Designer.vb">
       <AutoGen>True</AutoGen>
@@ -164,6 +177,12 @@
       <DependentUpon>Vehiculos.vb</DependentUpon>
     </Compile>
     <Compile Include="My Project\Vehiculos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RegistroUsuario.Designer.vb">
+      <DependentUpon>RegistroUsuario.vb</DependentUpon>
+    </Compile>
+    <Compile Include="RegistroUsuario.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Resumen.Designer.vb">
@@ -204,11 +223,17 @@
     <EmbeddedResource Include="Finalizar Viaje.resx">
       <DependentUpon>Finalizar Viaje.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Formulariopepito.resx">
+      <DependentUpon>Formulariopepito.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Inicio.resx">
       <DependentUpon>Inicio.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Liquidacion Choferes.resx">
       <DependentUpon>Liquidacion Choferes.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Loggin.resx">
+      <DependentUpon>Loggin.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ModificarSocios.resx">
       <DependentUpon>ModificarSocios.vb</DependentUpon>
@@ -224,6 +249,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="My Project\Vehiculos.resx">
       <DependentUpon>Vehiculos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RegistroUsuario.resx">
+      <DependentUpon>RegistroUsuario.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Resumen.resx">
       <DependentUpon>Resumen.vb</DependentUpon>

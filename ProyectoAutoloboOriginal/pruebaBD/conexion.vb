@@ -4,7 +4,7 @@ Imports System.Data.SqlServerCe
 Public Class conexion
     Public conexion As New SqlCeConnection("Data Source=C:\Users\User\Desktop\proyecto\kraken\Project-AutoWolf-Original\ProyectoAutoloboOriginal\pruebaBD\PruebaLocalConeccion.sdf")
     Private cmb As SqlCeCommandBuilder
-    Public ds As DataSet = New Database1DataSet()
+    Public ds As DataSet = New Database1DataSet() 'C:\Users\user\Desktop\GITKRAKEN\Project-AutoWolf-Original\ProyectoAutoloboOriginal\pruebaBD\bin\Debug\PruebaLocalConeccion.sdf
     Public da As SqlCeDataAdapter
     Public comando As SqlCeCommand
 
@@ -31,10 +31,12 @@ Public Class conexion
 
     End Sub
 
-    Public Sub actualizar(ByRef tabla As String)
-        ' da = New SqlCeDataAdapter()
-        'da.Fill(ds, tabla)
-    End Sub
+    'Public Sub actualizar(ByRef tabla As String)
+    '    ' da = New SqlCeDataAdapter()
+    '    'da.Fill(ds, tabla)
+    'End Sub
+
+
     'Function insertar(ByVal sql)
     '    conexion.Open()
     '    comando = New SqlCeCommand(sql, conexion)

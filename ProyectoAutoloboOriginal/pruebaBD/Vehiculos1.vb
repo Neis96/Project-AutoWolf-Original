@@ -10,6 +10,10 @@
 
     Private Sub Vehiculos1_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
         'TODO: esta línea de código carga datos en la tabla 'Database1DataSet.Vehiculo' Puede moverla o quitarla según sea necesario.
+        If Registro_Usuario = 2 Then
+            BtnModificar.Enabled = False
+
+        End If
         Me.VehiculoTableAdapter.Fill(Me.Database1DataSet.Vehiculo)
         Me.VehiculoBindingSource.AddNew()
 

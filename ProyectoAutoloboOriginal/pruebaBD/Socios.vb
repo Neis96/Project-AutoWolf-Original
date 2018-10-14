@@ -8,6 +8,9 @@
     End Sub
 
     Private Sub Socios_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
+        If Registro_Usuario = 2 Then
+            Button2.Enabled = False
+        End If
         'TODO: esta línea de código carga datos en la tabla 'Database1DataSet.Socios' Puede moverla o quitarla según sea necesario.
         Me.SociosTableAdapter.Fill(Me.Database1DataSet.Socios)
 
