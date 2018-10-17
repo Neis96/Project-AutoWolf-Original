@@ -29,21 +29,9 @@ Partial Class ModificarSocios
         Dim DireccionLabel As System.Windows.Forms.Label
         Dim Id_socioLabel As System.Windows.Forms.Label
         Dim TelefonoLabel As System.Windows.Forms.Label
-        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(ModificarSocios))
         Me.ButModificar = New System.Windows.Forms.Button()
-        Me.SociosBindingNavigator = New System.Windows.Forms.BindingNavigator(Me.components)
-        Me.BindingNavigatorAddNewItem = New System.Windows.Forms.ToolStripButton()
-        Me.BindingNavigatorCountItem = New System.Windows.Forms.ToolStripLabel()
-        Me.BindingNavigatorDeleteItem = New System.Windows.Forms.ToolStripButton()
-        Me.BindingNavigatorMoveFirstItem = New System.Windows.Forms.ToolStripButton()
-        Me.BindingNavigatorMovePreviousItem = New System.Windows.Forms.ToolStripButton()
-        Me.BindingNavigatorSeparator = New System.Windows.Forms.ToolStripSeparator()
-        Me.BindingNavigatorPositionItem = New System.Windows.Forms.ToolStripTextBox()
-        Me.BindingNavigatorSeparator1 = New System.Windows.Forms.ToolStripSeparator()
-        Me.BindingNavigatorMoveNextItem = New System.Windows.Forms.ToolStripButton()
-        Me.BindingNavigatorMoveLastItem = New System.Windows.Forms.ToolStripButton()
-        Me.BindingNavigatorSeparator2 = New System.Windows.Forms.ToolStripSeparator()
-        Me.SociosBindingNavigatorSaveItem = New System.Windows.Forms.ToolStripButton()
+        Me.SociosBindingSource = New System.Windows.Forms.BindingSource(Me.components)
+        Me.Database1DataSet = New pruebaBD.Database1DataSet()
         Me.NombreTextBox = New System.Windows.Forms.TextBox()
         Me.ApellidoTextBox = New System.Windows.Forms.TextBox()
         Me.DniTextBox = New System.Windows.Forms.TextBox()
@@ -51,18 +39,16 @@ Partial Class ModificarSocios
         Me.Id_socioTextBox = New System.Windows.Forms.TextBox()
         Me.TelefonoTextBox = New System.Windows.Forms.TextBox()
         Me.SociosDataGridView = New System.Windows.Forms.DataGridView()
-        Me.Butconsulta2 = New System.Windows.Forms.Button()
-        Me.ButEliminar = New System.Windows.Forms.Button()
-        Me.TextBoxConsulata2 = New System.Windows.Forms.TextBox()
-        Me.ButVolver = New System.Windows.Forms.Button()
         Me.DataGridViewTextBoxColumn1 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.DataGridViewTextBoxColumn2 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.DataGridViewTextBoxColumn3 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.DataGridViewTextBoxColumn4 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.DataGridViewTextBoxColumn5 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.DataGridViewTextBoxColumn6 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.SociosBindingSource = New System.Windows.Forms.BindingSource(Me.components)
-        Me.Database1DataSet = New pruebaBD.Database1DataSet()
+        Me.Butconsulta2 = New System.Windows.Forms.Button()
+        Me.ButEliminar = New System.Windows.Forms.Button()
+        Me.TextBoxConsulata2 = New System.Windows.Forms.TextBox()
+        Me.ButVolver = New System.Windows.Forms.Button()
         Me.SociosTableAdapter = New pruebaBD.Database1DataSetTableAdapters.SociosTableAdapter()
         Me.TableAdapterManager = New pruebaBD.Database1DataSetTableAdapters.TableAdapterManager()
         NombreLabel = New System.Windows.Forms.Label()
@@ -71,11 +57,9 @@ Partial Class ModificarSocios
         DireccionLabel = New System.Windows.Forms.Label()
         Id_socioLabel = New System.Windows.Forms.Label()
         TelefonoLabel = New System.Windows.Forms.Label()
-        CType(Me.SociosBindingNavigator, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.SociosBindingNavigator.SuspendLayout()
-        CType(Me.SociosDataGridView, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.SociosBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.Database1DataSet, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.SociosDataGridView, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'NombreLabel
@@ -141,116 +125,15 @@ Partial Class ModificarSocios
         Me.ButModificar.Text = "Modificar"
         Me.ButModificar.UseVisualStyleBackColor = True
         '
-        'SociosBindingNavigator
+        'SociosBindingSource
         '
-        Me.SociosBindingNavigator.AddNewItem = Me.BindingNavigatorAddNewItem
-        Me.SociosBindingNavigator.BindingSource = Me.SociosBindingSource
-        Me.SociosBindingNavigator.CountItem = Me.BindingNavigatorCountItem
-        Me.SociosBindingNavigator.DeleteItem = Me.BindingNavigatorDeleteItem
-        Me.SociosBindingNavigator.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.BindingNavigatorMoveFirstItem, Me.BindingNavigatorMovePreviousItem, Me.BindingNavigatorSeparator, Me.BindingNavigatorPositionItem, Me.BindingNavigatorCountItem, Me.BindingNavigatorSeparator1, Me.BindingNavigatorMoveNextItem, Me.BindingNavigatorMoveLastItem, Me.BindingNavigatorSeparator2, Me.BindingNavigatorAddNewItem, Me.BindingNavigatorDeleteItem, Me.SociosBindingNavigatorSaveItem})
-        Me.SociosBindingNavigator.Location = New System.Drawing.Point(0, 0)
-        Me.SociosBindingNavigator.MoveFirstItem = Me.BindingNavigatorMoveFirstItem
-        Me.SociosBindingNavigator.MoveLastItem = Me.BindingNavigatorMoveLastItem
-        Me.SociosBindingNavigator.MoveNextItem = Me.BindingNavigatorMoveNextItem
-        Me.SociosBindingNavigator.MovePreviousItem = Me.BindingNavigatorMovePreviousItem
-        Me.SociosBindingNavigator.Name = "SociosBindingNavigator"
-        Me.SociosBindingNavigator.PositionItem = Me.BindingNavigatorPositionItem
-        Me.SociosBindingNavigator.Size = New System.Drawing.Size(919, 25)
-        Me.SociosBindingNavigator.TabIndex = 1
-        Me.SociosBindingNavigator.Text = "BindingNavigator1"
+        Me.SociosBindingSource.DataMember = "Socios"
+        Me.SociosBindingSource.DataSource = Me.Database1DataSet
         '
-        'BindingNavigatorAddNewItem
+        'Database1DataSet
         '
-        Me.BindingNavigatorAddNewItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image
-        Me.BindingNavigatorAddNewItem.Image = CType(resources.GetObject("BindingNavigatorAddNewItem.Image"), System.Drawing.Image)
-        Me.BindingNavigatorAddNewItem.Name = "BindingNavigatorAddNewItem"
-        Me.BindingNavigatorAddNewItem.RightToLeftAutoMirrorImage = True
-        Me.BindingNavigatorAddNewItem.Size = New System.Drawing.Size(23, 22)
-        Me.BindingNavigatorAddNewItem.Text = "Agregar nuevo"
-        '
-        'BindingNavigatorCountItem
-        '
-        Me.BindingNavigatorCountItem.Name = "BindingNavigatorCountItem"
-        Me.BindingNavigatorCountItem.Size = New System.Drawing.Size(37, 22)
-        Me.BindingNavigatorCountItem.Text = "de {0}"
-        Me.BindingNavigatorCountItem.ToolTipText = "Número total de elementos"
-        '
-        'BindingNavigatorDeleteItem
-        '
-        Me.BindingNavigatorDeleteItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image
-        Me.BindingNavigatorDeleteItem.Image = CType(resources.GetObject("BindingNavigatorDeleteItem.Image"), System.Drawing.Image)
-        Me.BindingNavigatorDeleteItem.Name = "BindingNavigatorDeleteItem"
-        Me.BindingNavigatorDeleteItem.RightToLeftAutoMirrorImage = True
-        Me.BindingNavigatorDeleteItem.Size = New System.Drawing.Size(23, 22)
-        Me.BindingNavigatorDeleteItem.Text = "Eliminar"
-        '
-        'BindingNavigatorMoveFirstItem
-        '
-        Me.BindingNavigatorMoveFirstItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image
-        Me.BindingNavigatorMoveFirstItem.Image = CType(resources.GetObject("BindingNavigatorMoveFirstItem.Image"), System.Drawing.Image)
-        Me.BindingNavigatorMoveFirstItem.Name = "BindingNavigatorMoveFirstItem"
-        Me.BindingNavigatorMoveFirstItem.RightToLeftAutoMirrorImage = True
-        Me.BindingNavigatorMoveFirstItem.Size = New System.Drawing.Size(23, 22)
-        Me.BindingNavigatorMoveFirstItem.Text = "Mover primero"
-        '
-        'BindingNavigatorMovePreviousItem
-        '
-        Me.BindingNavigatorMovePreviousItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image
-        Me.BindingNavigatorMovePreviousItem.Image = CType(resources.GetObject("BindingNavigatorMovePreviousItem.Image"), System.Drawing.Image)
-        Me.BindingNavigatorMovePreviousItem.Name = "BindingNavigatorMovePreviousItem"
-        Me.BindingNavigatorMovePreviousItem.RightToLeftAutoMirrorImage = True
-        Me.BindingNavigatorMovePreviousItem.Size = New System.Drawing.Size(23, 22)
-        Me.BindingNavigatorMovePreviousItem.Text = "Mover anterior"
-        '
-        'BindingNavigatorSeparator
-        '
-        Me.BindingNavigatorSeparator.Name = "BindingNavigatorSeparator"
-        Me.BindingNavigatorSeparator.Size = New System.Drawing.Size(6, 25)
-        '
-        'BindingNavigatorPositionItem
-        '
-        Me.BindingNavigatorPositionItem.AccessibleName = "Posición"
-        Me.BindingNavigatorPositionItem.AutoSize = False
-        Me.BindingNavigatorPositionItem.Name = "BindingNavigatorPositionItem"
-        Me.BindingNavigatorPositionItem.Size = New System.Drawing.Size(50, 23)
-        Me.BindingNavigatorPositionItem.Text = "0"
-        Me.BindingNavigatorPositionItem.ToolTipText = "Posición actual"
-        '
-        'BindingNavigatorSeparator1
-        '
-        Me.BindingNavigatorSeparator1.Name = "BindingNavigatorSeparator1"
-        Me.BindingNavigatorSeparator1.Size = New System.Drawing.Size(6, 25)
-        '
-        'BindingNavigatorMoveNextItem
-        '
-        Me.BindingNavigatorMoveNextItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image
-        Me.BindingNavigatorMoveNextItem.Image = CType(resources.GetObject("BindingNavigatorMoveNextItem.Image"), System.Drawing.Image)
-        Me.BindingNavigatorMoveNextItem.Name = "BindingNavigatorMoveNextItem"
-        Me.BindingNavigatorMoveNextItem.RightToLeftAutoMirrorImage = True
-        Me.BindingNavigatorMoveNextItem.Size = New System.Drawing.Size(23, 22)
-        Me.BindingNavigatorMoveNextItem.Text = "Mover siguiente"
-        '
-        'BindingNavigatorMoveLastItem
-        '
-        Me.BindingNavigatorMoveLastItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image
-        Me.BindingNavigatorMoveLastItem.Image = CType(resources.GetObject("BindingNavigatorMoveLastItem.Image"), System.Drawing.Image)
-        Me.BindingNavigatorMoveLastItem.Name = "BindingNavigatorMoveLastItem"
-        Me.BindingNavigatorMoveLastItem.RightToLeftAutoMirrorImage = True
-        Me.BindingNavigatorMoveLastItem.Size = New System.Drawing.Size(23, 22)
-        Me.BindingNavigatorMoveLastItem.Text = "Mover último"
-        '
-        'BindingNavigatorSeparator2
-        '
-        Me.BindingNavigatorSeparator2.Name = "BindingNavigatorSeparator2"
-        Me.BindingNavigatorSeparator2.Size = New System.Drawing.Size(6, 25)
-        '
-        'SociosBindingNavigatorSaveItem
-        '
-        Me.SociosBindingNavigatorSaveItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image
-        Me.SociosBindingNavigatorSaveItem.Image = CType(resources.GetObject("SociosBindingNavigatorSaveItem.Image"), System.Drawing.Image)
-        Me.SociosBindingNavigatorSaveItem.Name = "SociosBindingNavigatorSaveItem"
-        Me.SociosBindingNavigatorSaveItem.Size = New System.Drawing.Size(23, 22)
-        Me.SociosBindingNavigatorSaveItem.Text = "Guardar datos"
+        Me.Database1DataSet.DataSetName = "Database1DataSet"
+        Me.Database1DataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
         '
         'NombreTextBox
         '
@@ -308,42 +191,8 @@ Partial Class ModificarSocios
         Me.SociosDataGridView.DataSource = Me.SociosBindingSource
         Me.SociosDataGridView.Location = New System.Drawing.Point(49, 342)
         Me.SociosDataGridView.Name = "SociosDataGridView"
-        Me.SociosDataGridView.Size = New System.Drawing.Size(644, 220)
+        Me.SociosDataGridView.Size = New System.Drawing.Size(656, 220)
         Me.SociosDataGridView.TabIndex = 14
-        '
-        'Butconsulta2
-        '
-        Me.Butconsulta2.Location = New System.Drawing.Point(285, 285)
-        Me.Butconsulta2.Name = "Butconsulta2"
-        Me.Butconsulta2.Size = New System.Drawing.Size(141, 23)
-        Me.Butconsulta2.TabIndex = 15
-        Me.Butconsulta2.Text = "Consulta"
-        Me.Butconsulta2.UseVisualStyleBackColor = True
-        '
-        'ButEliminar
-        '
-        Me.ButEliminar.Location = New System.Drawing.Point(285, 188)
-        Me.ButEliminar.Name = "ButEliminar"
-        Me.ButEliminar.Size = New System.Drawing.Size(141, 23)
-        Me.ButEliminar.TabIndex = 16
-        Me.ButEliminar.Text = "Eliminar"
-        Me.ButEliminar.UseVisualStyleBackColor = True
-        '
-        'TextBoxConsulata2
-        '
-        Me.TextBoxConsulata2.Location = New System.Drawing.Point(79, 288)
-        Me.TextBoxConsulata2.Name = "TextBoxConsulata2"
-        Me.TextBoxConsulata2.Size = New System.Drawing.Size(162, 20)
-        Me.TextBoxConsulata2.TabIndex = 17
-        '
-        'ButVolver
-        '
-        Me.ButVolver.Location = New System.Drawing.Point(665, 61)
-        Me.ButVolver.Name = "ButVolver"
-        Me.ButVolver.Size = New System.Drawing.Size(75, 23)
-        Me.ButVolver.TabIndex = 18
-        Me.ButVolver.Text = "Volver"
-        Me.ButVolver.UseVisualStyleBackColor = True
         '
         'DataGridViewTextBoxColumn1
         '
@@ -382,15 +231,39 @@ Partial Class ModificarSocios
         Me.DataGridViewTextBoxColumn6.HeaderText = "telefono"
         Me.DataGridViewTextBoxColumn6.Name = "DataGridViewTextBoxColumn6"
         '
-        'SociosBindingSource
+        'Butconsulta2
         '
-        Me.SociosBindingSource.DataMember = "Socios"
-        Me.SociosBindingSource.DataSource = Me.Database1DataSet
+        Me.Butconsulta2.Location = New System.Drawing.Point(285, 285)
+        Me.Butconsulta2.Name = "Butconsulta2"
+        Me.Butconsulta2.Size = New System.Drawing.Size(141, 23)
+        Me.Butconsulta2.TabIndex = 15
+        Me.Butconsulta2.Text = "Consulta"
+        Me.Butconsulta2.UseVisualStyleBackColor = True
         '
-        'Database1DataSet
+        'ButEliminar
         '
-        Me.Database1DataSet.DataSetName = "Database1DataSet"
-        Me.Database1DataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
+        Me.ButEliminar.Location = New System.Drawing.Point(285, 188)
+        Me.ButEliminar.Name = "ButEliminar"
+        Me.ButEliminar.Size = New System.Drawing.Size(141, 23)
+        Me.ButEliminar.TabIndex = 16
+        Me.ButEliminar.Text = "Eliminar"
+        Me.ButEliminar.UseVisualStyleBackColor = True
+        '
+        'TextBoxConsulata2
+        '
+        Me.TextBoxConsulata2.Location = New System.Drawing.Point(79, 288)
+        Me.TextBoxConsulata2.Name = "TextBoxConsulata2"
+        Me.TextBoxConsulata2.Size = New System.Drawing.Size(162, 20)
+        Me.TextBoxConsulata2.TabIndex = 17
+        '
+        'ButVolver
+        '
+        Me.ButVolver.Location = New System.Drawing.Point(653, 270)
+        Me.ButVolver.Name = "ButVolver"
+        Me.ButVolver.Size = New System.Drawing.Size(75, 23)
+        Me.ButVolver.TabIndex = 18
+        Me.ButVolver.Text = "Volver"
+        Me.ButVolver.UseVisualStyleBackColor = True
         '
         'SociosTableAdapter
         '
@@ -400,10 +273,14 @@ Partial Class ModificarSocios
         '
         Me.TableAdapterManager.BackupDataSetBeforeUpdate = False
         Me.TableAdapterManager.ChoferTableAdapter = Nothing
-        ' Me.TableAdapterManager.ReservaTableAdapter = Nothing
+        Me.TableAdapterManager.LiqCtaCtrTableAdapter = Nothing
+        Me.TableAdapterManager.LiquidacionChoferTableAdapter = Nothing
+        Me.TableAdapterManager.ResumenRemiseriaTableAdapter = Nothing
         Me.TableAdapterManager.SociosTableAdapter = Me.SociosTableAdapter
+        Me.TableAdapterManager.TablaDeTurnoTableAdapter = Nothing
         Me.TableAdapterManager.UpdateOrder = pruebaBD.Database1DataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete
         Me.TableAdapterManager.UsuarioTableAdapter = Nothing
+        Me.TableAdapterManager.ValoresTableAdapter = Nothing
         Me.TableAdapterManager.VehiculoTableAdapter = Nothing
         Me.TableAdapterManager.ViajesTableAdapter = Nothing
         '
@@ -429,16 +306,12 @@ Partial Class ModificarSocios
         Me.Controls.Add(Me.Id_socioTextBox)
         Me.Controls.Add(TelefonoLabel)
         Me.Controls.Add(Me.TelefonoTextBox)
-        Me.Controls.Add(Me.SociosBindingNavigator)
         Me.Controls.Add(Me.ButModificar)
         Me.Name = "ModificarSocios"
         Me.Text = "ModificarSocios"
-        CType(Me.SociosBindingNavigator, System.ComponentModel.ISupportInitialize).EndInit()
-        Me.SociosBindingNavigator.ResumeLayout(False)
-        Me.SociosBindingNavigator.PerformLayout()
-        CType(Me.SociosDataGridView, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.SociosBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.Database1DataSet, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.SociosDataGridView, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -448,19 +321,6 @@ Partial Class ModificarSocios
     Friend WithEvents SociosBindingSource As System.Windows.Forms.BindingSource
     Friend WithEvents SociosTableAdapter As pruebaBD.Database1DataSetTableAdapters.SociosTableAdapter
     Friend WithEvents TableAdapterManager As pruebaBD.Database1DataSetTableAdapters.TableAdapterManager
-    Friend WithEvents SociosBindingNavigator As System.Windows.Forms.BindingNavigator
-    Friend WithEvents BindingNavigatorAddNewItem As System.Windows.Forms.ToolStripButton
-    Friend WithEvents BindingNavigatorCountItem As System.Windows.Forms.ToolStripLabel
-    Friend WithEvents BindingNavigatorDeleteItem As System.Windows.Forms.ToolStripButton
-    Friend WithEvents BindingNavigatorMoveFirstItem As System.Windows.Forms.ToolStripButton
-    Friend WithEvents BindingNavigatorMovePreviousItem As System.Windows.Forms.ToolStripButton
-    Friend WithEvents BindingNavigatorSeparator As System.Windows.Forms.ToolStripSeparator
-    Friend WithEvents BindingNavigatorPositionItem As System.Windows.Forms.ToolStripTextBox
-    Friend WithEvents BindingNavigatorSeparator1 As System.Windows.Forms.ToolStripSeparator
-    Friend WithEvents BindingNavigatorMoveNextItem As System.Windows.Forms.ToolStripButton
-    Friend WithEvents BindingNavigatorMoveLastItem As System.Windows.Forms.ToolStripButton
-    Friend WithEvents BindingNavigatorSeparator2 As System.Windows.Forms.ToolStripSeparator
-    Friend WithEvents SociosBindingNavigatorSaveItem As System.Windows.Forms.ToolStripButton
     Friend WithEvents NombreTextBox As System.Windows.Forms.TextBox
     Friend WithEvents ApellidoTextBox As System.Windows.Forms.TextBox
     Friend WithEvents DniTextBox As System.Windows.Forms.TextBox

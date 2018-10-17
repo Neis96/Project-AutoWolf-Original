@@ -107,12 +107,6 @@
     <Compile Include="Configuracion.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="ConsultaSocio.Designer.vb">
-      <DependentUpon>ConsultaSocio.vb</DependentUpon>
-    </Compile>
-    <Compile Include="ConsultaSocio.vb">
-      <SubType>Form</SubType>
-    </Compile>
     <Compile Include="Database1DataSet.Designer.vb">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -208,6 +202,12 @@
     <Compile Include="Socios.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="TerminarReserva.Designer.vb">
+      <DependentUpon>TerminarReserva.vb</DependentUpon>
+    </Compile>
+    <Compile Include="TerminarReserva.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Vehiculos1.Designer.vb">
       <DependentUpon>Vehiculos1.vb</DependentUpon>
     </Compile>
@@ -230,9 +230,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Configuracion.resx">
       <DependentUpon>Configuracion.vb</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="ConsultaSocio.resx">
-      <DependentUpon>ConsultaSocio.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Finalizar Viaje.resx">
       <DependentUpon>Finalizar Viaje.vb</DependentUpon>
@@ -275,6 +272,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Socios.resx">
       <DependentUpon>Socios.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TerminarReserva.resx">
+      <DependentUpon>TerminarReserva.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Vehiculos1.resx">
       <DependentUpon>Vehiculos1.vb</DependentUpon>

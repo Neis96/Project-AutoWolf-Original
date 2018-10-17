@@ -60,7 +60,7 @@ Partial Class Inicio
         '
         Me.BtnViajes.Location = New System.Drawing.Point(29, 147)
         Me.BtnViajes.Name = "BtnViajes"
-        Me.BtnViajes.Size = New System.Drawing.Size(132, 58)
+        Me.BtnViajes.Size = New System.Drawing.Size(104, 58)
         Me.BtnViajes.TabIndex = 0
         Me.BtnViajes.Text = "Viajes"
         Me.BtnViajes.UseVisualStyleBackColor = True
@@ -69,7 +69,7 @@ Partial Class Inicio
         '
         Me.BtnSocio.Location = New System.Drawing.Point(29, 235)
         Me.BtnSocio.Name = "BtnSocio"
-        Me.BtnSocio.Size = New System.Drawing.Size(132, 59)
+        Me.BtnSocio.Size = New System.Drawing.Size(104, 59)
         Me.BtnSocio.TabIndex = 1
         Me.BtnSocio.Text = "Socio"
         Me.BtnSocio.UseVisualStyleBackColor = True
@@ -78,7 +78,7 @@ Partial Class Inicio
         '
         Me.BtnChoferes.Location = New System.Drawing.Point(29, 325)
         Me.BtnChoferes.Name = "BtnChoferes"
-        Me.BtnChoferes.Size = New System.Drawing.Size(132, 58)
+        Me.BtnChoferes.Size = New System.Drawing.Size(104, 58)
         Me.BtnChoferes.TabIndex = 2
         Me.BtnChoferes.Text = "Choferes"
         Me.BtnChoferes.UseVisualStyleBackColor = True
@@ -87,7 +87,7 @@ Partial Class Inicio
         '
         Me.BtnVehiculos.Location = New System.Drawing.Point(29, 413)
         Me.BtnVehiculos.Name = "BtnVehiculos"
-        Me.BtnVehiculos.Size = New System.Drawing.Size(132, 63)
+        Me.BtnVehiculos.Size = New System.Drawing.Size(104, 63)
         Me.BtnVehiculos.TabIndex = 3
         Me.BtnVehiculos.Text = "Vehiculos"
         Me.BtnVehiculos.UseVisualStyleBackColor = True
@@ -97,7 +97,7 @@ Partial Class Inicio
         Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ArchivoToolStripMenuItem, Me.VerToolStripMenuItem, Me.ResumenToolStripMenuItem, Me.AyudaToolStripMenuItem, Me.ConfiguracionToolStripMenuItem})
         Me.MenuStrip1.Location = New System.Drawing.Point(0, 0)
         Me.MenuStrip1.Name = "MenuStrip1"
-        Me.MenuStrip1.Size = New System.Drawing.Size(1244, 24)
+        Me.MenuStrip1.Size = New System.Drawing.Size(1054, 24)
         Me.MenuStrip1.TabIndex = 10
         Me.MenuStrip1.Text = "MenuStrip1"
         '
@@ -201,7 +201,7 @@ Partial Class Inicio
         Me.DgvEstado.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.DgvEstado.Location = New System.Drawing.Point(260, 87)
         Me.DgvEstado.Name = "DgvEstado"
-        Me.DgvEstado.Size = New System.Drawing.Size(854, 207)
+        Me.DgvEstado.Size = New System.Drawing.Size(627, 222)
         Me.DgvEstado.TabIndex = 11
         '
         'DgvReserva
@@ -209,7 +209,7 @@ Partial Class Inicio
         Me.DgvReserva.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.DgvReserva.Location = New System.Drawing.Point(260, 357)
         Me.DgvReserva.Name = "DgvReserva"
-        Me.DgvReserva.Size = New System.Drawing.Size(854, 241)
+        Me.DgvReserva.Size = New System.Drawing.Size(627, 215)
         Me.DgvReserva.TabIndex = 12
         '
         'ViajesBindingSource
@@ -246,7 +246,7 @@ Partial Class Inicio
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(1244, 632)
+        Me.ClientSize = New System.Drawing.Size(1054, 627)
         Me.Controls.Add(Me.DgvReserva)
         Me.Controls.Add(Me.DgvEstado)
         Me.Controls.Add(Me.BtnVehiculos)

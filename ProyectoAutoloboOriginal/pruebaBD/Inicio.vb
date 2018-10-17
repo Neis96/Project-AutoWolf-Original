@@ -122,9 +122,25 @@
     Private Sub DgvEstado_CellDoubleClick(ByVal sender As Object, ByVal e As System.Windows.Forms.DataGridViewCellEventArgs) Handles DgvEstado.CellDoubleClick
         Dim fila As Integer
         fila = DgvEstado.CurrentCellAddress.Y 'saco la fila de donde hice click
-        Finalizar_Viaje.TextBox1.Text = DgvEstado.Item(0, fila).Value() 'asigno al texbox1 del formulario ventas el valor del art
+        If DgvEstado.Item(0, fila).Value Is DBNull.Value Then
+            Exit Sub
+        Else
+            Finalizar_Viaje.TextBox1.Text = DgvEstado.Item(0, fila).Value() 'asigno al texbox1 del formulario ventas el valor del art
+            Finalizar_Viaje.Show()
+        End If
 
-        Finalizar_Viaje.Show()
+
+    End Sub
+
+    Private Sub DgvReserva_CellDoubleClick(ByVal sender As Object, ByVal e As System.Windows.Forms.DataGridViewCellEventArgs) Handles DgvReserva.CellDoubleClick
+        Dim fila As Integer
+        fila = DgvReserva.CurrentCellAddress.Y 'saco la fila de donde hice click
+        If DgvReserva.Item(0, fila).Value Is DBNull.Value Then
+            Exit Sub
+        Else
+            TerminarReserva.TextBox1.Text = DgvReserva.Item(0, fila).Value() 'asigno al texbox1 del formulario ventas el valor del art
+            TerminarReserva.Show()
+        End If
 
     End Sub
 End Class

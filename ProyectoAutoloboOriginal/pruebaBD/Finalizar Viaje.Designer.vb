@@ -24,18 +24,6 @@ Partial Class Finalizar_Viaje
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
         Me.ViajesDataGridView = New System.Windows.Forms.DataGridView()
-        Me.TextBox1 = New System.Windows.Forms.TextBox()
-        Me.Label1 = New System.Windows.Forms.Label()
-        Me.Label2 = New System.Windows.Forms.Label()
-        Me.BtnTerminar = New System.Windows.Forms.Button()
-        Me.Label3 = New System.Windows.Forms.Label()
-        Me.TextBoxTotal = New System.Windows.Forms.TextBox()
-        Me.TextBoxKms = New System.Windows.Forms.TextBox()
-        Me.TextBox3 = New System.Windows.Forms.TextBox()
-        Me.Label4 = New System.Windows.Forms.Label()
-        Me.Label5 = New System.Windows.Forms.Label()
-        Me.BtnCalcular = New System.Windows.Forms.Button()
-        Me.TextBoxEstado = New System.Windows.Forms.TextBox()
         Me.DataGridViewTextBoxColumn1 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.DataGridViewTextBoxColumn2 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.DataGridViewTextBoxColumn9 = New System.Windows.Forms.DataGridViewTextBoxColumn()
@@ -49,12 +37,26 @@ Partial Class Finalizar_Viaje
         Me.DataGridViewTextBoxColumn12 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.ViajesBindingSource = New System.Windows.Forms.BindingSource(Me.components)
         Me.Database1DataSet = New pruebaBD.Database1DataSet()
+        Me.TextBox1 = New System.Windows.Forms.TextBox()
+        Me.Label1 = New System.Windows.Forms.Label()
+        Me.Label2 = New System.Windows.Forms.Label()
+        Me.BtnTerminar = New System.Windows.Forms.Button()
+        Me.Label3 = New System.Windows.Forms.Label()
+        Me.TextBoxTotal = New System.Windows.Forms.TextBox()
+        Me.TextBoxKms = New System.Windows.Forms.TextBox()
+        Me.TextBox3 = New System.Windows.Forms.TextBox()
+        Me.Label4 = New System.Windows.Forms.Label()
+        Me.Label5 = New System.Windows.Forms.Label()
+        Me.BtnCalcular = New System.Windows.Forms.Button()
         Me.ViajesTableAdapter = New pruebaBD.Database1DataSetTableAdapters.ViajesTableAdapter()
         Me.TableAdapterManager = New pruebaBD.Database1DataSetTableAdapters.TableAdapterManager()
         Me.ValoresBindingSource = New System.Windows.Forms.BindingSource(Me.components)
         Me.ValoresTableAdapter = New pruebaBD.Database1DataSetTableAdapters.ValoresTableAdapter()
         Me.Label6 = New System.Windows.Forms.Label()
         Me.HastaPick = New System.Windows.Forms.DateTimePicker()
+        Me.TextValorKms = New System.Windows.Forms.TextBox()
+        Me.Label7 = New System.Windows.Forms.Label()
+        Me.ComboBox1 = New System.Windows.Forms.ComboBox()
         CType(Me.ViajesDataGridView, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.ViajesBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.Database1DataSet, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -71,104 +73,6 @@ Partial Class Finalizar_Viaje
         Me.ViajesDataGridView.Name = "ViajesDataGridView"
         Me.ViajesDataGridView.Size = New System.Drawing.Size(900, 220)
         Me.ViajesDataGridView.TabIndex = 1
-        '
-        'TextBox1
-        '
-        Me.TextBox1.Location = New System.Drawing.Point(218, 27)
-        Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(109, 20)
-        Me.TextBox1.TabIndex = 2
-        '
-        'Label1
-        '
-        Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(98, 30)
-        Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(96, 13)
-        Me.Label1.TabIndex = 4
-        Me.Label1.Text = "Numero de registro"
-        '
-        'Label2
-        '
-        Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(97, 166)
-        Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(40, 13)
-        Me.Label2.TabIndex = 5
-        Me.Label2.Text = "Estado"
-        '
-        'BtnTerminar
-        '
-        Me.BtnTerminar.Location = New System.Drawing.Point(789, 212)
-        Me.BtnTerminar.Name = "BtnTerminar"
-        Me.BtnTerminar.Size = New System.Drawing.Size(98, 36)
-        Me.BtnTerminar.TabIndex = 7
-        Me.BtnTerminar.Text = "Guardar"
-        Me.BtnTerminar.UseVisualStyleBackColor = True
-        '
-        'Label3
-        '
-        Me.Label3.AutoSize = True
-        Me.Label3.Location = New System.Drawing.Point(529, 224)
-        Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(31, 13)
-        Me.Label3.TabIndex = 8
-        Me.Label3.Text = "Total"
-        '
-        'TextBoxTotal
-        '
-        Me.TextBoxTotal.Location = New System.Drawing.Point(618, 221)
-        Me.TextBoxTotal.Name = "TextBoxTotal"
-        Me.TextBoxTotal.Size = New System.Drawing.Size(109, 20)
-        Me.TextBoxTotal.TabIndex = 9
-        '
-        'TextBoxKms
-        '
-        Me.TextBoxKms.Location = New System.Drawing.Point(218, 91)
-        Me.TextBoxKms.Name = "TextBoxKms"
-        Me.TextBoxKms.Size = New System.Drawing.Size(110, 20)
-        Me.TextBoxKms.TabIndex = 10
-        '
-        'TextBox3
-        '
-        Me.TextBox3.Location = New System.Drawing.Point(218, 127)
-        Me.TextBox3.Name = "TextBox3"
-        Me.TextBox3.Size = New System.Drawing.Size(110, 20)
-        Me.TextBox3.TabIndex = 11
-        '
-        'Label4
-        '
-        Me.Label4.AutoSize = True
-        Me.Label4.Location = New System.Drawing.Point(98, 94)
-        Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(77, 13)
-        Me.Label4.TabIndex = 12
-        Me.Label4.Text = "Kms realizados"
-        '
-        'Label5
-        '
-        Me.Label5.AutoSize = True
-        Me.Label5.Location = New System.Drawing.Point(98, 130)
-        Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(66, 13)
-        Me.Label5.TabIndex = 13
-        Me.Label5.Text = "Valor minimo"
-        '
-        'BtnCalcular
-        '
-        Me.BtnCalcular.Location = New System.Drawing.Point(156, 212)
-        Me.BtnCalcular.Name = "BtnCalcular"
-        Me.BtnCalcular.Size = New System.Drawing.Size(98, 36)
-        Me.BtnCalcular.TabIndex = 14
-        Me.BtnCalcular.Text = "Calcular"
-        Me.BtnCalcular.UseVisualStyleBackColor = True
-        '
-        'TextBoxEstado
-        '
-        Me.TextBoxEstado.Location = New System.Drawing.Point(218, 163)
-        Me.TextBoxEstado.Name = "TextBoxEstado"
-        Me.TextBoxEstado.Size = New System.Drawing.Size(110, 20)
-        Me.TextBoxEstado.TabIndex = 15
         '
         'DataGridViewTextBoxColumn1
         '
@@ -256,6 +160,97 @@ Partial Class Finalizar_Viaje
         Me.Database1DataSet.DataSetName = "Database1DataSet"
         Me.Database1DataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
         '
+        'TextBox1
+        '
+        Me.TextBox1.Location = New System.Drawing.Point(218, 27)
+        Me.TextBox1.Name = "TextBox1"
+        Me.TextBox1.Size = New System.Drawing.Size(109, 20)
+        Me.TextBox1.TabIndex = 2
+        '
+        'Label1
+        '
+        Me.Label1.AutoSize = True
+        Me.Label1.Location = New System.Drawing.Point(98, 30)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(96, 13)
+        Me.Label1.TabIndex = 4
+        Me.Label1.Text = "Numero de registro"
+        '
+        'Label2
+        '
+        Me.Label2.AutoSize = True
+        Me.Label2.Location = New System.Drawing.Point(97, 187)
+        Me.Label2.Name = "Label2"
+        Me.Label2.Size = New System.Drawing.Size(40, 13)
+        Me.Label2.TabIndex = 5
+        Me.Label2.Text = "Estado"
+        '
+        'BtnTerminar
+        '
+        Me.BtnTerminar.Location = New System.Drawing.Point(789, 212)
+        Me.BtnTerminar.Name = "BtnTerminar"
+        Me.BtnTerminar.Size = New System.Drawing.Size(98, 36)
+        Me.BtnTerminar.TabIndex = 7
+        Me.BtnTerminar.Text = "Guardar"
+        Me.BtnTerminar.UseVisualStyleBackColor = True
+        '
+        'Label3
+        '
+        Me.Label3.AutoSize = True
+        Me.Label3.Location = New System.Drawing.Point(529, 224)
+        Me.Label3.Name = "Label3"
+        Me.Label3.Size = New System.Drawing.Size(31, 13)
+        Me.Label3.TabIndex = 8
+        Me.Label3.Text = "Total"
+        '
+        'TextBoxTotal
+        '
+        Me.TextBoxTotal.Location = New System.Drawing.Point(618, 221)
+        Me.TextBoxTotal.Name = "TextBoxTotal"
+        Me.TextBoxTotal.Size = New System.Drawing.Size(109, 20)
+        Me.TextBoxTotal.TabIndex = 9
+        '
+        'TextBoxKms
+        '
+        Me.TextBoxKms.Location = New System.Drawing.Point(218, 91)
+        Me.TextBoxKms.Name = "TextBoxKms"
+        Me.TextBoxKms.Size = New System.Drawing.Size(110, 20)
+        Me.TextBoxKms.TabIndex = 10
+        '
+        'TextBox3
+        '
+        Me.TextBox3.Location = New System.Drawing.Point(218, 151)
+        Me.TextBox3.Name = "TextBox3"
+        Me.TextBox3.Size = New System.Drawing.Size(110, 20)
+        Me.TextBox3.TabIndex = 11
+        '
+        'Label4
+        '
+        Me.Label4.AutoSize = True
+        Me.Label4.Location = New System.Drawing.Point(98, 94)
+        Me.Label4.Name = "Label4"
+        Me.Label4.Size = New System.Drawing.Size(77, 13)
+        Me.Label4.TabIndex = 12
+        Me.Label4.Text = "Kms realizados"
+        '
+        'Label5
+        '
+        Me.Label5.AutoSize = True
+        Me.Label5.Location = New System.Drawing.Point(98, 151)
+        Me.Label5.Name = "Label5"
+        Me.Label5.Size = New System.Drawing.Size(66, 13)
+        Me.Label5.TabIndex = 13
+        Me.Label5.Text = "Valor minimo"
+        '
+        'BtnCalcular
+        '
+        Me.BtnCalcular.Location = New System.Drawing.Point(156, 233)
+        Me.BtnCalcular.Name = "BtnCalcular"
+        Me.BtnCalcular.Size = New System.Drawing.Size(98, 36)
+        Me.BtnCalcular.TabIndex = 14
+        Me.BtnCalcular.Text = "Calcular"
+        Me.BtnCalcular.UseVisualStyleBackColor = True
+        '
         'ViajesTableAdapter
         '
         Me.ViajesTableAdapter.ClearBeforeFill = True
@@ -301,14 +296,40 @@ Partial Class Finalizar_Viaje
         Me.HastaPick.Size = New System.Drawing.Size(110, 20)
         Me.HastaPick.TabIndex = 17
         '
+        'TextValorKms
+        '
+        Me.TextValorKms.Location = New System.Drawing.Point(218, 120)
+        Me.TextValorKms.Name = "TextValorKms"
+        Me.TextValorKms.Size = New System.Drawing.Size(109, 20)
+        Me.TextValorKms.TabIndex = 18
+        '
+        'Label7
+        '
+        Me.Label7.AutoSize = True
+        Me.Label7.Location = New System.Drawing.Point(98, 123)
+        Me.Label7.Name = "Label7"
+        Me.Label7.Size = New System.Drawing.Size(67, 13)
+        Me.Label7.TabIndex = 19
+        Me.Label7.Text = "Valor por Km"
+        '
+        'ComboBox1
+        '
+        Me.ComboBox1.FormattingEnabled = True
+        Me.ComboBox1.Location = New System.Drawing.Point(217, 184)
+        Me.ComboBox1.Name = "ComboBox1"
+        Me.ComboBox1.Size = New System.Drawing.Size(111, 21)
+        Me.ComboBox1.TabIndex = 20
+        '
         'Finalizar_Viaje
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(1058, 569)
+        Me.Controls.Add(Me.ComboBox1)
+        Me.Controls.Add(Me.Label7)
+        Me.Controls.Add(Me.TextValorKms)
         Me.Controls.Add(Me.HastaPick)
         Me.Controls.Add(Me.Label6)
-        Me.Controls.Add(Me.TextBoxEstado)
         Me.Controls.Add(Me.BtnCalcular)
         Me.Controls.Add(Me.Label5)
         Me.Controls.Add(Me.Label4)
@@ -358,9 +379,11 @@ Partial Class Finalizar_Viaje
     Friend WithEvents Label4 As System.Windows.Forms.Label
     Friend WithEvents Label5 As System.Windows.Forms.Label
     Friend WithEvents BtnCalcular As System.Windows.Forms.Button
-    Friend WithEvents TextBoxEstado As System.Windows.Forms.TextBox
     Friend WithEvents ValoresBindingSource As System.Windows.Forms.BindingSource
     Friend WithEvents ValoresTableAdapter As pruebaBD.Database1DataSetTableAdapters.ValoresTableAdapter
     Friend WithEvents Label6 As System.Windows.Forms.Label
     Friend WithEvents HastaPick As System.Windows.Forms.DateTimePicker
+    Friend WithEvents TextValorKms As System.Windows.Forms.TextBox
+    Friend WithEvents Label7 As System.Windows.Forms.Label
+    Friend WithEvents ComboBox1 As System.Windows.Forms.ComboBox
 End Class

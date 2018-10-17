@@ -1,8 +1,8 @@
 ﻿Public Class Finalizar_Viaje
 
-    Const idValor As Integer = 1
-    Public valorKm As Double = Me.ValoresTableAdapter.FillBy((Database1DataSet.Valores), idValor)
-    Public Minimo As Double = Me.ValoresTableAdapter.ValorMinimo((Database1DataSet.Valores), idValor)
+    'Const idValor As Integer = 1
+    'Public valorKm As New DataColumn  = Me.ValoresTableAdapter.FillBy((Database1DataSet.Valores), idValor)
+    'Public Minimo As Double = Me.ValoresTableAdapter.ValorMinimo((Database1DataSet.Valores), idValor)
 
     Private Sub Finalizar_Viaje_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
         'TODO: esta línea de código carga datos en la tabla 'Database1DataSet.Valores' Puede moverla o quitarla según sea necesario.
@@ -10,15 +10,19 @@
         'TODO: esta línea de código carga datos en la tabla 'Database1DataSet.Viajes' Puede moverla o quitarla según sea necesario.
         Me.ViajesTableAdapter.Fill(Me.Database1DataSet.Viajes)
         'cargo el combobox
-        'ComboBox1.Items.Add("Reserva")
-        'ComboBox1.Items.Add("En curso")
-        'ComboBox1.Items.Add("Finalizado")
-        'ComboBox1.Text = "Seleccione el estado actual"
+        ComboBox1.Items.Add("Reserva")
+        ComboBox1.Items.Add("En curso")
+        ComboBox1.Items.Add("Finalizado")
+        ComboBox1.Text = "Seleccione el estado actual"
 
         HastaPick.Value = Now
-        TextBoxEstado.Text = "Finalizado"
-        TextBoxEstado.Enabled = False
+        'TextBoxEstado.Text = "Finalizado"
+        'TextBoxEstado.Enabled = False
         BtnTerminar.Enabled = False
+        TextBox3.Text = ValoresBindingSource.Current("Minimo")
+        TextValorKms.Text = ValoresBindingSource.Current("kms")
+        TextValorKms.Enabled = False
+        TextBox3.Enabled = False
 
 
     End Sub
@@ -34,7 +38,7 @@
         Dim fila, codConsulta, aux As Integer
         Dim total As Double
         'el total queda en comentarios hasta agregar funcionamiento
-        Dim estado As String = TextBoxEstado.Text
+        Dim estado As String = ComboBox1.Text
         total = TextBoxTotal.Text
         codConsulta = Val(TextBox1.Text)
         fila = Me.ViajesBindingSource.Find("Registro", codConsulta)
@@ -55,7 +59,7 @@
                 Me.TableAdapterManager.UpdateAll(Me.Database1DataSet)
                 Me.ViajesTableAdapter.Fill(Me.Database1DataSet.Viajes)
                 Inicio.ViajesTableAdapter.Fill(Inicio.Database1DataSet.Viajes)
-
+                Me.Close()
 
             End If
         End If
@@ -63,8 +67,18 @@
 
     Private Sub BtnCalcular_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles BtnCalcular.Click
         Dim TotalCalculado As Double
-        TotalCalculado = (Val(TextBoxKms.Text) * valorKm) + Minimo
-        TextBoxTotal.Text = TotalCalculado
+        If TextBoxKms.Text <> "" Then
+            TotalCalculado = (Val(TextBoxKms.Text) * TextValorKms.Text) + TextBox3.Text
+            TextBoxTotal.Text = TotalCalculado
+            BtnTerminar.Enabled = True
+
+        Else
+            MsgBox("por favor ingrese la cantidad de Kms Realizados")
+            Exit Sub
+        End If
+
+
+
 
 
     End Sub

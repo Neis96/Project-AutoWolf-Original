@@ -16,7 +16,7 @@
     End Sub
 
 
-    Private Sub SociosBindingNavigatorSaveItem_Click_2(sender As System.Object, e As System.EventArgs) Handles SociosBindingNavigatorSaveItem.Click
+    Private Sub SociosBindingNavigatorSaveItem_Click_2(ByVal sender As System.Object, ByVal e As System.EventArgs)
         Me.Validate()
         Me.SociosBindingSource.EndEdit()
         Me.TableAdapterManager.UpdateAll(Me.Database1DataSet)
