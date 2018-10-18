@@ -54,31 +54,31 @@ Partial Class Liquidacion_Choferes
         Me.TextBoxPorcent = New System.Windows.Forms.TextBox()
         Me.DateTimePickerHasta = New System.Windows.Forms.DateTimePicker()
         Me.ViajesTableAdapter = New pruebaBD.Database1DataSetTableAdapters.ViajesTableAdapter()
-<<<<<<< HEAD
+
         Me.ChoferTableAdapter = New pruebaBD.Database1DataSetTableAdapters.ChoferTableAdapter()
         Me.Label8 = New System.Windows.Forms.Label()
         Me.TextBoxPorcent = New System.Windows.Forms.TextBox()
-=======
+
         Me.TableAdapterManager = New pruebaBD.Database1DataSetTableAdapters.TableAdapterManager()
         Me.ChoferTableAdapter = New pruebaBD.Database1DataSetTableAdapters.ChoferTableAdapter()
         Me.ValoresBindingSource = New System.Windows.Forms.BindingSource(Me.components)
->>>>>>> validacionesYresumen
+
         Me.ValoresTableAdapter = New pruebaBD.Database1DataSetTableAdapters.ValoresTableAdapter()
         Me.LiquidacionChoferTableAdapter = New pruebaBD.Database1DataSetTableAdapters.LiquidacionChoferTableAdapter()
         Me.ResumenRemiseriaTableAdapter = New pruebaBD.Database1DataSetTableAdapters.ResumenRemiseriaTableAdapter()
-<<<<<<< HEAD
-        Me.LiquidacionChoferDataGridView = New System.Windows.Forms.DataGridView()
-        Me.DataGridViewTextBoxColumn13 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.DataGridViewTextBoxColumn14 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.DataGridViewTextBoxColumn15 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.DataGridViewTextBoxColumn16 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.DataGridViewTextBoxColumn17 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.DataGridViewTextBoxColumn18 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+
+        'Me.LiquidacionChoferDataGridView = New System.Windows.Forms.DataGridView()
+        'Me.DataGridViewTextBoxColumn13 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        'Me.DataGridViewTextBoxColumn14 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        'Me.DataGridViewTextBoxColumn15 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        'Me.DataGridViewTextBoxColumn16 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        'Me.DataGridViewTextBoxColumn17 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        'Me.DataGridViewTextBoxColumn18 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.LiquidacionChoferBindingSource = New System.Windows.Forms.BindingSource(Me.components)
-        Me.ResumenRemiseriaDataGridView = New System.Windows.Forms.DataGridView()
-        Me.DataGridViewTextBoxColumn19 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.DataGridViewTextBoxColumn20 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.DataGridViewTextBoxColumn21 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        'Me.ResumenRemiseriaDataGridView = New System.Windows.Forms.DataGridView()
+        'Me.DataGridViewTextBoxColumn19 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        'Me.DataGridViewTextBoxColumn20 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        'Me.DataGridViewTextBoxColumn21 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.ResumenRemiseriaBindingSource = New System.Windows.Forms.BindingSource(Me.components)
         Me.TableAdapterManager = New pruebaBD.Database1DataSetTableAdapters.TableAdapterManager()
         Me.ChoferBindingSource = New System.Windows.Forms.BindingSource(Me.components)
@@ -86,13 +86,13 @@ Partial Class Liquidacion_Choferes
         CType(Me.ViajesDataGridView, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.ViajesBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.Database1DataSet, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.LiquidacionChoferDataGridView, System.ComponentModel.ISupportInitialize).BeginInit()
+
         CType(Me.LiquidacionChoferBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.ResumenRemiseriaDataGridView, System.ComponentModel.ISupportInitialize).BeginInit()
+
         CType(Me.ResumenRemiseriaBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.ChoferBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.ValoresBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
-=======
+
         Me.ComboBoxDueno = New System.Windows.Forms.ComboBox()
         CType(Me.ViajesDataGridView, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.ViajesBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -101,7 +101,7 @@ Partial Class Liquidacion_Choferes
         CType(Me.ValoresBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.LiquidacionChoferBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.ResumenRemiseriaBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
->>>>>>> validacionesYresumen
+
         Me.SuspendLayout()
         '
         'ViajesDataGridView
@@ -343,8 +343,7 @@ Partial Class Liquidacion_Choferes
         '
         Me.ViajesTableAdapter.ClearBeforeFill = True
         '
-<<<<<<< HEAD
-=======
+
         'TableAdapterManager
         '
         Me.TableAdapterManager.BackupDataSetBeforeUpdate = False
@@ -360,12 +359,12 @@ Partial Class Liquidacion_Choferes
         Me.TableAdapterManager.VehiculoTableAdapter = Nothing
         Me.TableAdapterManager.ViajesTableAdapter = Me.ViajesTableAdapter
         '
->>>>>>> validacionesYresumen
+
         'ChoferTableAdapter
         '
         Me.ChoferTableAdapter.ClearBeforeFill = True
         '
-<<<<<<< HEAD
+
         'Label8
         '
         Me.Label8.AutoSize = True
@@ -381,12 +380,12 @@ Partial Class Liquidacion_Choferes
         Me.TextBoxPorcent.Name = "TextBoxPorcent"
         Me.TextBoxPorcent.Size = New System.Drawing.Size(121, 20)
         Me.TextBoxPorcent.TabIndex = 28
-=======
+
         'ValoresBindingSource
         '
         Me.ValoresBindingSource.DataMember = "Valores"
         Me.ValoresBindingSource.DataSource = Me.Database1DataSet
->>>>>>> validacionesYresumen
+
         '
         'ValoresTableAdapter
         '
@@ -399,55 +398,54 @@ Partial Class Liquidacion_Choferes
         'ResumenRemiseriaTableAdapter
         '
         Me.ResumenRemiseriaTableAdapter.ClearBeforeFill = True
-        '
-<<<<<<< HEAD
+        '<<<<<<< HEAD
         'LiquidacionChoferDataGridView
         '
-        Me.LiquidacionChoferDataGridView.AutoGenerateColumns = False
-        Me.LiquidacionChoferDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.LiquidacionChoferDataGridView.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.DataGridViewTextBoxColumn13, Me.DataGridViewTextBoxColumn14, Me.DataGridViewTextBoxColumn15, Me.DataGridViewTextBoxColumn16, Me.DataGridViewTextBoxColumn17, Me.DataGridViewTextBoxColumn18})
-        Me.LiquidacionChoferDataGridView.DataSource = Me.LiquidacionChoferBindingSource
-        Me.LiquidacionChoferDataGridView.Location = New System.Drawing.Point(844, 32)
-        Me.LiquidacionChoferDataGridView.Name = "LiquidacionChoferDataGridView"
-        Me.LiquidacionChoferDataGridView.Size = New System.Drawing.Size(414, 182)
-        Me.LiquidacionChoferDataGridView.TabIndex = 28
-        '
-        'DataGridViewTextBoxColumn13
-        '
-        Me.DataGridViewTextBoxColumn13.DataPropertyName = "Registro"
-        Me.DataGridViewTextBoxColumn13.HeaderText = "Registro"
-        Me.DataGridViewTextBoxColumn13.Name = "DataGridViewTextBoxColumn13"
-        Me.DataGridViewTextBoxColumn13.ReadOnly = True
-        '
-        'DataGridViewTextBoxColumn14
-        '
-        Me.DataGridViewTextBoxColumn14.DataPropertyName = "Desde"
-        Me.DataGridViewTextBoxColumn14.HeaderText = "Desde"
-        Me.DataGridViewTextBoxColumn14.Name = "DataGridViewTextBoxColumn14"
-        '
-        'DataGridViewTextBoxColumn15
-        '
-        Me.DataGridViewTextBoxColumn15.DataPropertyName = "Hasta"
-        Me.DataGridViewTextBoxColumn15.HeaderText = "Hasta"
-        Me.DataGridViewTextBoxColumn15.Name = "DataGridViewTextBoxColumn15"
-        '
-        'DataGridViewTextBoxColumn16
-        '
-        Me.DataGridViewTextBoxColumn16.DataPropertyName = "Monto"
-        Me.DataGridViewTextBoxColumn16.HeaderText = "Monto"
-        Me.DataGridViewTextBoxColumn16.Name = "DataGridViewTextBoxColumn16"
-        '
-        'DataGridViewTextBoxColumn17
-        '
-        Me.DataGridViewTextBoxColumn17.DataPropertyName = "id_chofer"
-        Me.DataGridViewTextBoxColumn17.HeaderText = "id_chofer"
-        Me.DataGridViewTextBoxColumn17.Name = "DataGridViewTextBoxColumn17"
-        '
-        'DataGridViewTextBoxColumn18
-        '
-        Me.DataGridViewTextBoxColumn18.DataPropertyName = "Nombre"
-        Me.DataGridViewTextBoxColumn18.HeaderText = "Nombre"
-        Me.DataGridViewTextBoxColumn18.Name = "DataGridViewTextBoxColumn18"
+        'Me.LiquidacionChoferDataGridView.AutoGenerateColumns = False
+        'Me.LiquidacionChoferDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        'Me.LiquidacionChoferDataGridView.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.DataGridViewTextBoxColumn13, Me.DataGridViewTextBoxColumn14, Me.DataGridViewTextBoxColumn15, Me.DataGridViewTextBoxColumn16, Me.DataGridViewTextBoxColumn17, Me.DataGridViewTextBoxColumn18})
+        'Me.LiquidacionChoferDataGridView.DataSource = Me.LiquidacionChoferBindingSource
+        'Me.LiquidacionChoferDataGridView.Location = New System.Drawing.Point(844, 32)
+        'Me.LiquidacionChoferDataGridView.Name = "LiquidacionChoferDataGridView"
+        'Me.LiquidacionChoferDataGridView.Size = New System.Drawing.Size(414, 182)
+        'Me.LiquidacionChoferDataGridView.TabIndex = 28
+        '        '
+        '        'DataGridViewTextBoxColumn13
+        '        '
+        '        Me.DataGridViewTextBoxColumn13.DataPropertyName = "Registro"
+        '        Me.DataGridViewTextBoxColumn13.HeaderText = "Registro"
+        '        Me.DataGridViewTextBoxColumn13.Name = "DataGridViewTextBoxColumn13"
+        '        Me.DataGridViewTextBoxColumn13.ReadOnly = True
+        '        '
+        '        'DataGridViewTextBoxColumn14
+        '        '
+        '        Me.DataGridViewTextBoxColumn14.DataPropertyName = "Desde"
+        '        Me.DataGridViewTextBoxColumn14.HeaderText = "Desde"
+        '        Me.DataGridViewTextBoxColumn14.Name = "DataGridViewTextBoxColumn14"
+        '        '
+        '        'DataGridViewTextBoxColumn15
+        '        '
+        '        Me.DataGridViewTextBoxColumn15.DataPropertyName = "Hasta"
+        '        Me.DataGridViewTextBoxColumn15.HeaderText = "Hasta"
+        '        Me.DataGridViewTextBoxColumn15.Name = "DataGridViewTextBoxColumn15"
+        '        '
+        '        'DataGridViewTextBoxColumn16
+        '        '
+        '        Me.DataGridViewTextBoxColumn16.DataPropertyName = "Monto"
+        '        Me.DataGridViewTextBoxColumn16.HeaderText = "Monto"
+        '        Me.DataGridViewTextBoxColumn16.Name = "DataGridViewTextBoxColumn16"
+        '        '
+        '        'DataGridViewTextBoxColumn17
+        '        '
+        '        Me.DataGridViewTextBoxColumn17.DataPropertyName = "id_chofer"
+        '        Me.DataGridViewTextBoxColumn17.HeaderText = "id_chofer"
+        '        Me.DataGridViewTextBoxColumn17.Name = "DataGridViewTextBoxColumn17"
+        '        '
+        '        'DataGridViewTextBoxColumn18
+        '        '
+        '        Me.DataGridViewTextBoxColumn18.DataPropertyName = "Nombre"
+        '        Me.DataGridViewTextBoxColumn18.HeaderText = "Nombre"
+        '        Me.DataGridViewTextBoxColumn18.Name = "DataGridViewTextBoxColumn18"
         '
         'LiquidacionChoferBindingSource
         '
@@ -456,32 +454,32 @@ Partial Class Liquidacion_Choferes
         '
         'ResumenRemiseriaDataGridView
         '
-        Me.ResumenRemiseriaDataGridView.AutoGenerateColumns = False
-        Me.ResumenRemiseriaDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.ResumenRemiseriaDataGridView.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.DataGridViewTextBoxColumn19, Me.DataGridViewTextBoxColumn20, Me.DataGridViewTextBoxColumn21})
-        Me.ResumenRemiseriaDataGridView.DataSource = Me.ResumenRemiseriaBindingSource
-        Me.ResumenRemiseriaDataGridView.Location = New System.Drawing.Point(844, 229)
-        Me.ResumenRemiseriaDataGridView.Name = "ResumenRemiseriaDataGridView"
-        Me.ResumenRemiseriaDataGridView.Size = New System.Drawing.Size(414, 220)
-        Me.ResumenRemiseriaDataGridView.TabIndex = 28
+        'Me.ResumenRemiseriaDataGridView.AutoGenerateColumns = False
+        'Me.ResumenRemiseriaDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        'Me.ResumenRemiseriaDataGridView.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.DataGridViewTextBoxColumn19, Me.DataGridViewTextBoxColumn20, Me.DataGridViewTextBoxColumn21})
+        'Me.ResumenRemiseriaDataGridView.DataSource = Me.ResumenRemiseriaBindingSource
+        'Me.ResumenRemiseriaDataGridView.Location = New System.Drawing.Point(844, 229)
+        'Me.ResumenRemiseriaDataGridView.Name = "ResumenRemiseriaDataGridView"
+        'Me.ResumenRemiseriaDataGridView.Size = New System.Drawing.Size(414, 220)
+        'Me.ResumenRemiseriaDataGridView.TabIndex = 28
         '
         'DataGridViewTextBoxColumn19
-        '
-        Me.DataGridViewTextBoxColumn19.DataPropertyName = "Registro"
-        Me.DataGridViewTextBoxColumn19.HeaderText = "Registro"
-        Me.DataGridViewTextBoxColumn19.Name = "DataGridViewTextBoxColumn19"
-        Me.DataGridViewTextBoxColumn19.ReadOnly = True
+        ''
+        'Me.DataGridViewTextBoxColumn19.DataPropertyName = "Registro"
+        'Me.DataGridViewTextBoxColumn19.HeaderText = "Registro"
+        'Me.DataGridViewTextBoxColumn19.Name = "DataGridViewTextBoxColumn19"
+        'Me.DataGridViewTextBoxColumn19.ReadOnly = True
         '
         'DataGridViewTextBoxColumn20
-        '
-        Me.DataGridViewTextBoxColumn20.DataPropertyName = "Fecha"
-        Me.DataGridViewTextBoxColumn20.HeaderText = "Fecha"
-        Me.DataGridViewTextBoxColumn20.Name = "DataGridViewTextBoxColumn20"
-        '
-        'DataGridViewTextBoxColumn21
-=======
-        'ComboBoxDueno
->>>>>>> validacionesYresumen
+        ''
+        'Me.DataGridViewTextBoxColumn20.DataPropertyName = "Fecha"
+        'Me.DataGridViewTextBoxColumn20.HeaderText = "Fecha"
+        'Me.DataGridViewTextBoxColumn20.Name = "DataGridViewTextBoxColumn20"
+        ''
+        '        'DataGridViewTextBoxColumn21
+        '=======
+        '        'ComboBoxDueno
+        '>>>>>>> validacionesYresumen
         '
         Me.ComboBoxDueno.DataSource = Me.ChoferBindingSource
         Me.ComboBoxDueno.DisplayMember = "id_chofer"
@@ -555,19 +553,18 @@ Partial Class Liquidacion_Choferes
         CType(Me.ViajesDataGridView, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.ViajesBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.Database1DataSet, System.ComponentModel.ISupportInitialize).EndInit()
-<<<<<<< HEAD
-        CType(Me.LiquidacionChoferDataGridView, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.LiquidacionChoferBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.ResumenRemiseriaDataGridView, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.ResumenRemiseriaBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
+
+        'CType(Me.LiquidacionChoferBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
+
+        'CType(Me.ResumenRemiseriaBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
+        'CType(Me.ChoferBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
+        'CType(Me.ValoresBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
+
         CType(Me.ChoferBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.ValoresBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
-=======
-        CType(Me.ChoferBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.ValoresBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.LiquidacionChoferBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.ResumenRemiseriaBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
->>>>>>> validacionesYresumen
+
         Me.ResumeLayout(False)
         Me.PerformLayout()
 

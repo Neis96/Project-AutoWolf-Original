@@ -8027,24 +8027,24 @@ Namespace Database1DataSetTableAdapters
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
         Private Sub InitCommandCollection()
-<<<<<<< HEAD
+
             Me._commandCollection = New Global.System.Data.SqlServerCe.SqlCeCommand(3) {}
-=======
+
             Me._commandCollection = New Global.System.Data.SqlServerCe.SqlCeCommand(2) {}
->>>>>>> validacionesYresumen
+
             Me._commandCollection(0) = New Global.System.Data.SqlServerCe.SqlCeCommand()
             Me._commandCollection(0).Connection = Me.Connection
-            Me._commandCollection(0).CommandText = "SELECT Registro, idChofer, idSocios, fecha_origen, fecha_destino, Total, lugar_or"& _ 
+            Me._commandCollection(0).CommandText = "SELECT Registro, idChofer, idSocios, fecha_origen, fecha_destino, Total, lugar_or" & _
                 "igen, lugar_destino, idVehiculos, Reserva, Cta_cte, Estado FROM Viajes"
             Me._commandCollection(0).CommandType = Global.System.Data.CommandType.Text
             Me._commandCollection(1) = New Global.System.Data.SqlServerCe.SqlCeCommand()
             Me._commandCollection(1).Connection = Me.Connection
-            Me._commandCollection(1).CommandText = "SELECT        Registro, idChofer, idSocios, fecha_origen, fecha_destino, Total, l"& _ 
-                "ugar_origen, lugar_destino, idVehiculos, Reserva, Cta_cte, Estado"&Global.Microsoft.VisualBasic.ChrW(13)&Global.Microsoft.VisualBasic.ChrW(10)&"FROM         "& _ 
-                "   Viajes"&Global.Microsoft.VisualBasic.ChrW(13)&Global.Microsoft.VisualBasic.ChrW(10)&"WHERE        (Estado = @estado)"
+            Me._commandCollection(1).CommandText = "SELECT        Registro, idChofer, idSocios, fecha_origen, fecha_destino, Total, l" & _
+                "ugar_origen, lugar_destino, idVehiculos, Reserva, Cta_cte, Estado" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "FROM         " & _
+                "   Viajes" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "WHERE        (Estado = @estado)"
             Me._commandCollection(1).CommandType = Global.System.Data.CommandType.Text
-            Me._commandCollection(1).Parameters.Add(New Global.System.Data.SqlServerCe.SqlCeParameter("@estado", Global.System.Data.SqlDbType.NVarChar, 100, Global.System.Data.ParameterDirection.Input, true, 0, 0, "Estado", Global.System.Data.DataRowVersion.Current, Nothing))
-<<<<<<< HEAD
+            Me._commandCollection(1).Parameters.Add(New Global.System.Data.SqlServerCe.SqlCeParameter("@estado", Global.System.Data.SqlDbType.NVarChar, 100, Global.System.Data.ParameterDirection.Input, True, 0, 0, "Estado", Global.System.Data.DataRowVersion.Current, Nothing))
+
             Me._commandCollection(1).Parameters.Add(New Global.System.Data.SqlServerCe.SqlCeParameter("@desde", Global.System.Data.SqlDbType.DateTime, 8, Global.System.Data.ParameterDirection.Input, true, 0, 0, "fecha_destino", Global.System.Data.DataRowVersion.Current, Nothing))
             Me._commandCollection(1).Parameters.Add(New Global.System.Data.SqlServerCe.SqlCeParameter("@hasta", Global.System.Data.SqlDbType.DateTime, 8, Global.System.Data.ParameterDirection.Input, true, 0, 0, "fecha_destino", Global.System.Data.DataRowVersion.Current, Nothing))
             Me._commandCollection(2) = New Global.System.Data.SqlServerCe.SqlCeCommand()
@@ -8067,7 +8067,7 @@ Namespace Database1DataSetTableAdapters
             Me._commandCollection(3).CommandType = Global.System.Data.CommandType.Text
             Me._commandCollection(3).Parameters.Add(New Global.System.Data.SqlServerCe.SqlCeParameter("@cta", Global.System.Data.SqlDbType.NVarChar, 20, Global.System.Data.ParameterDirection.Input, true, 0, 0, "Cta_cte", Global.System.Data.DataRowVersion.Current, Nothing))
             Me._commandCollection(3).Parameters.Add(New Global.System.Data.SqlServerCe.SqlCeParameter("@estado", Global.System.Data.SqlDbType.NVarChar, 100, Global.System.Data.ParameterDirection.Input, true, 0, 0, "Estado", Global.System.Data.DataRowVersion.Current, Nothing))
-=======
+
             Me._commandCollection(2) = New Global.System.Data.SqlServerCe.SqlCeCommand()
             Me._commandCollection(2).Connection = Me.Connection
             Me._commandCollection(2).CommandText = "SELECT        Registro, idChofer, idSocios, fecha_origen, fecha_destino, Total, l"& _ 
@@ -8079,7 +8079,7 @@ Namespace Database1DataSetTableAdapters
             Me._commandCollection(2).Parameters.Add(New Global.System.Data.SqlServerCe.SqlCeParameter("@estado", Global.System.Data.SqlDbType.NVarChar, 100, Global.System.Data.ParameterDirection.Input, true, 0, 0, "Estado", Global.System.Data.DataRowVersion.Current, Nothing))
             Me._commandCollection(2).Parameters.Add(New Global.System.Data.SqlServerCe.SqlCeParameter("@desde", Global.System.Data.SqlDbType.DateTime, 8, Global.System.Data.ParameterDirection.Input, true, 0, 0, "fecha_destino", Global.System.Data.DataRowVersion.Current, Nothing))
             Me._commandCollection(2).Parameters.Add(New Global.System.Data.SqlServerCe.SqlCeParameter("@hasta", Global.System.Data.SqlDbType.DateTime, 8, Global.System.Data.ParameterDirection.Input, true, 0, 0, "fecha_destino", Global.System.Data.DataRowVersion.Current, Nothing))
->>>>>>> validacionesYresumen
+
         End Sub
         
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
