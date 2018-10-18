@@ -145,6 +145,12 @@
     <Compile Include="Loggin.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="ModificarChofer.Designer.vb">
+      <DependentUpon>ModificarChofer.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ModificarChofer.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="ModificarSocios.Designer.vb">
       <DependentUpon>ModificarSocios.vb</DependentUpon>
     </Compile>
@@ -245,6 +251,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Loggin.resx">
       <DependentUpon>Loggin.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ModificarChofer.resx">
+      <DependentUpon>ModificarChofer.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ModificarSocios.resx">
       <DependentUpon>ModificarSocios.vb</DependentUpon>

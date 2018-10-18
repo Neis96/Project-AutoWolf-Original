@@ -49,6 +49,7 @@ Partial Class Inicio
         Me.Database1DataSet = New pruebaBD.Database1DataSet()
         Me.TableAdapterManager = New pruebaBD.Database1DataSetTableAdapters.TableAdapterManager()
         Me.ViajesTableAdapter = New pruebaBD.Database1DataSetTableAdapters.ViajesTableAdapter()
+        Me.ModificarChoferesToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.MenuStrip1.SuspendLayout()
         CType(Me.DgvEstado, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.DgvReserva, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -111,25 +112,25 @@ Partial Class Inicio
         'ViajesF1ToolStripMenuItem
         '
         Me.ViajesF1ToolStripMenuItem.Name = "ViajesF1ToolStripMenuItem"
-        Me.ViajesF1ToolStripMenuItem.Size = New System.Drawing.Size(139, 22)
+        Me.ViajesF1ToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
         Me.ViajesF1ToolStripMenuItem.Text = "Viajes F1"
         '
         'SociosF2ToolStripMenuItem
         '
         Me.SociosF2ToolStripMenuItem.Name = "SociosF2ToolStripMenuItem"
-        Me.SociosF2ToolStripMenuItem.Size = New System.Drawing.Size(139, 22)
+        Me.SociosF2ToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
         Me.SociosF2ToolStripMenuItem.Text = "Socios     F2"
         '
         'ChoferesF3ToolStripMenuItem
         '
         Me.ChoferesF3ToolStripMenuItem.Name = "ChoferesF3ToolStripMenuItem"
-        Me.ChoferesF3ToolStripMenuItem.Size = New System.Drawing.Size(139, 22)
+        Me.ChoferesF3ToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
         Me.ChoferesF3ToolStripMenuItem.Text = "Choferes F3"
         '
         'VehiculosF4ToolStripMenuItem
         '
         Me.VehiculosF4ToolStripMenuItem.Name = "VehiculosF4ToolStripMenuItem"
-        Me.VehiculosF4ToolStripMenuItem.Size = New System.Drawing.Size(139, 22)
+        Me.VehiculosF4ToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
         Me.VehiculosF4ToolStripMenuItem.Text = "Vehiculos F4"
         '
         'VerToolStripMenuItem
@@ -143,7 +144,7 @@ Partial Class Inicio
         '
         Me.ResumenToolStripMenuItem1.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.LiquidacionCtaCteToolStripMenuItem1})
         Me.ResumenToolStripMenuItem1.Name = "ResumenToolStripMenuItem1"
-        Me.ResumenToolStripMenuItem1.Size = New System.Drawing.Size(123, 22)
+        Me.ResumenToolStripMenuItem1.Size = New System.Drawing.Size(152, 22)
         Me.ResumenToolStripMenuItem1.Text = "Resumen"
         '
         'LiquidacionCtaCteToolStripMenuItem1
@@ -154,7 +155,7 @@ Partial Class Inicio
         '
         'ResumenToolStripMenuItem
         '
-        Me.ResumenToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.LiquidacionChoferToolStripMenuItem, Me.LiquidacionCtaCteToolStripMenuItem})
+        Me.ResumenToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.LiquidacionChoferToolStripMenuItem, Me.LiquidacionCtaCteToolStripMenuItem, Me.ModificarChoferesToolStripMenuItem})
         Me.ResumenToolStripMenuItem.Name = "ResumenToolStripMenuItem"
         Me.ResumenToolStripMenuItem.Size = New System.Drawing.Size(59, 20)
         Me.ResumenToolStripMenuItem.Text = "Gestion"
@@ -242,6 +243,12 @@ Partial Class Inicio
         '
         Me.ViajesTableAdapter.ClearBeforeFill = True
         '
+        'ModificarChoferesToolStripMenuItem
+        '
+        Me.ModificarChoferesToolStripMenuItem.Name = "ModificarChoferesToolStripMenuItem"
+        Me.ModificarChoferesToolStripMenuItem.Size = New System.Drawing.Size(178, 22)
+        Me.ModificarChoferesToolStripMenuItem.Text = "Modificar Choferes"
+        '
         'Inicio
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -296,4 +303,5 @@ Partial Class Inicio
     Friend WithEvents ModificarValoresToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents LiquidacionCtaCteToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents LiquidacionCtaCteToolStripMenuItem1 As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents ModificarChoferesToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
 End Class

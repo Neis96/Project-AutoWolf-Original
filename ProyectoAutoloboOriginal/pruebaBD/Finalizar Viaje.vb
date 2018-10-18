@@ -22,7 +22,8 @@
         TextBox3.Text = ValoresBindingSource.Current("Minimo")
         TextValorKms.Text = ValoresBindingSource.Current("kms")
         TextValorKms.Enabled = False
-        TextBox3.Enabled = False
+        TextBox3.Enabled = False 'este es el textbox del valor minimo
+        TextBox1.Enabled = False 'textbox de registro para que no sea modificable
 
 
     End Sub
@@ -39,7 +40,7 @@
         Dim total As Double
         'el total queda en comentarios hasta agregar funcionamiento
         Dim estado As String = ComboBox1.Text
-        total = TextBoxTotal.Text
+        total = Val(TextBoxTotal.Text)
         codConsulta = Val(TextBox1.Text)
         fila = Me.ViajesBindingSource.Find("Registro", codConsulta)
         If fila = -1 Then
@@ -54,6 +55,7 @@
                 Me.ViajesBindingSource.Current("Total") = total
                 'habilitar la linea de arriba cuando se agregue el total
                 MsgBox("el viaje se ha finalizado con exito")
+                Me.Validate()
 
                 Me.ViajesBindingSource.EndEdit()
                 Me.TableAdapterManager.UpdateAll(Me.Database1DataSet)

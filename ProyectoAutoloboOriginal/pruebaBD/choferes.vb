@@ -10,7 +10,7 @@
     Private Sub choferes_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
         'TODO: esta línea de código carga datos en la tabla 'Database1DataSet.Chofer' Puede moverla o quitarla según sea necesario.
         Me.ChoferTableAdapter.Fill(Me.Database1DataSet.Chofer)
-
+        Me.ChoferBindingSource.AddNew()
     End Sub
 
     Private Sub ButtonSocios_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles ButtonSocios.Click
@@ -42,41 +42,34 @@
         End If
     End Sub
 
-    Private Sub Button2_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button2.Click
-        'eliminar
-        Dim fila, codConsulta, aux As Integer
-        codConsulta = InputBox("Ingrese codigo de consulta")
-        fila = Me.ChoferBindingSource.Find("id", codConsulta)
-        If fila = -1 Then
-            'no se encuentra
-            MsgBox("no se encontro")
-        Else
-            'lo encontro
-            Me.ChoferBindingSource.Position = fila 'situo el puntero en la fila buscada
-            aux = MsgBox("Quiere eliminar?" & codConsulta)
-            If aux = 1 Then 'apreto si
-                Me.ChoferBindingSource.RemoveCurrent() 'borra el registro donde estas situado
-                Me.ChoferBindingSource.EndEdit() 'cierro bd
-                Me.TableAdapterManager.UpdateAll(Me.Database1DataSet) 'guarda 
+    Private Sub Button2_Click(ByVal sender As System.Object, ByVal e As System.EventArgs)
+        'eliminar el cual se paso al formulario modificar
+        'el codigo de aqui corresponde al eliminar usando un inputbox
+        'Dim fila, codConsulta, aux As Integer
+        'codConsulta = InputBox("Ingrese codigo de consulta")
+        'fila = Me.ChoferBindingSource.Find("id", codConsulta)
+        'If fila = -1 Then
+        '    'no se encuentra
+        '    MsgBox("no se encontro")
+        'Else
+        '    'lo encontro
+        '    Me.ChoferBindingSource.Position = fila 'situo el puntero en la fila buscada
+        '    aux = MsgBox("Quiere eliminar?" & codConsulta)
+        '    If aux = 1 Then 'apreto si
+        '        Me.ChoferBindingSource.RemoveCurrent() 'borra el registro donde estas situado
+        '        Me.ChoferBindingSource.EndEdit() 'cierro bd
+        '        Me.TableAdapterManager.UpdateAll(Me.Database1DataSet) 'guarda 
+        '        Me.ChoferTableAdapter.Fill(Me.Database1DataSet.Chofer) ' actualiza el form anterior
 
-                Me.ChoferTableAdapter.Fill(Me.Database1DataSet.Chofer) ' actualiza el form anterior
 
-
-            End If
-        End If
+        '    End If
+        'End If
     End Sub
 
     Private Sub Button1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button1.Click
         'modificar
-        Dim direccion, nombre, apellido As String
-        Dim telefono, dni, id As Integer
-        direccion = DireccionTextBox.Text
-        nombre = NombreTextBox.Text
-        apellido = ApellidoTextBox.Text
-        telefono = TelefonoTextBox.Text
-        dni = DniTextBox.Text
-        id = Id_choferTextBox.Text
-        Me.ChoferTableAdapter.EsUnaCagada(telefono, direccion, dni, nombre, apellido, id)
+        ModificarChofer.Show()
+
     End Sub
 
     Private Sub DireccionTextBox_TextChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles DireccionTextBox.TextChanged

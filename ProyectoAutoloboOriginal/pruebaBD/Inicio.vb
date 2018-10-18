@@ -143,4 +143,9 @@
         End If
 
     End Sub
+
+    Private Sub ModificarChoferesToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles ModificarChoferesToolStripMenuItem.Click
+        ModificarChofer.Show()
+
+    End Sub
 End Class

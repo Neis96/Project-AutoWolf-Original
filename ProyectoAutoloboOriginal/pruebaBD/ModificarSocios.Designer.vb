@@ -65,7 +65,7 @@ Partial Class ModificarSocios
         'NombreLabel
         '
         NombreLabel.AutoSize = True
-        NombreLabel.Location = New System.Drawing.Point(46, 84)
+        NombreLabel.Location = New System.Drawing.Point(54, 93)
         NombreLabel.Name = "NombreLabel"
         NombreLabel.Size = New System.Drawing.Size(45, 13)
         NombreLabel.TabIndex = 2
@@ -74,7 +74,7 @@ Partial Class ModificarSocios
         'ApellidoLabel
         '
         ApellidoLabel.AutoSize = True
-        ApellidoLabel.Location = New System.Drawing.Point(46, 110)
+        ApellidoLabel.Location = New System.Drawing.Point(54, 119)
         ApellidoLabel.Name = "ApellidoLabel"
         ApellidoLabel.Size = New System.Drawing.Size(46, 13)
         ApellidoLabel.TabIndex = 4
@@ -83,7 +83,7 @@ Partial Class ModificarSocios
         'DniLabel
         '
         DniLabel.AutoSize = True
-        DniLabel.Location = New System.Drawing.Point(46, 136)
+        DniLabel.Location = New System.Drawing.Point(54, 145)
         DniLabel.Name = "DniLabel"
         DniLabel.Size = New System.Drawing.Size(24, 13)
         DniLabel.TabIndex = 6
@@ -92,7 +92,7 @@ Partial Class ModificarSocios
         'DireccionLabel
         '
         DireccionLabel.AutoSize = True
-        DireccionLabel.Location = New System.Drawing.Point(46, 162)
+        DireccionLabel.Location = New System.Drawing.Point(54, 171)
         DireccionLabel.Name = "DireccionLabel"
         DireccionLabel.Size = New System.Drawing.Size(53, 13)
         DireccionLabel.TabIndex = 8
@@ -101,7 +101,7 @@ Partial Class ModificarSocios
         'Id_socioLabel
         '
         Id_socioLabel.AutoSize = True
-        Id_socioLabel.Location = New System.Drawing.Point(46, 188)
+        Id_socioLabel.Location = New System.Drawing.Point(54, 197)
         Id_socioLabel.Name = "Id_socioLabel"
         Id_socioLabel.Size = New System.Drawing.Size(46, 13)
         Id_socioLabel.TabIndex = 10
@@ -110,7 +110,7 @@ Partial Class ModificarSocios
         'TelefonoLabel
         '
         TelefonoLabel.AutoSize = True
-        TelefonoLabel.Location = New System.Drawing.Point(46, 214)
+        TelefonoLabel.Location = New System.Drawing.Point(54, 223)
         TelefonoLabel.Name = "TelefonoLabel"
         TelefonoLabel.Size = New System.Drawing.Size(48, 13)
         TelefonoLabel.TabIndex = 12
@@ -118,7 +118,7 @@ Partial Class ModificarSocios
         '
         'ButModificar
         '
-        Me.ButModificar.Location = New System.Drawing.Point(285, 110)
+        Me.ButModificar.Location = New System.Drawing.Point(285, 161)
         Me.ButModificar.Name = "ButModificar"
         Me.ButModificar.Size = New System.Drawing.Size(141, 23)
         Me.ButModificar.TabIndex = 0
@@ -138,7 +138,7 @@ Partial Class ModificarSocios
         'NombreTextBox
         '
         Me.NombreTextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.SociosBindingSource, "nombre", True))
-        Me.NombreTextBox.Location = New System.Drawing.Point(105, 81)
+        Me.NombreTextBox.Location = New System.Drawing.Point(113, 90)
         Me.NombreTextBox.Name = "NombreTextBox"
         Me.NombreTextBox.Size = New System.Drawing.Size(100, 20)
         Me.NombreTextBox.TabIndex = 3
@@ -146,7 +146,7 @@ Partial Class ModificarSocios
         'ApellidoTextBox
         '
         Me.ApellidoTextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.SociosBindingSource, "apellido", True))
-        Me.ApellidoTextBox.Location = New System.Drawing.Point(105, 107)
+        Me.ApellidoTextBox.Location = New System.Drawing.Point(113, 116)
         Me.ApellidoTextBox.Name = "ApellidoTextBox"
         Me.ApellidoTextBox.Size = New System.Drawing.Size(100, 20)
         Me.ApellidoTextBox.TabIndex = 5
@@ -154,7 +154,7 @@ Partial Class ModificarSocios
         'DniTextBox
         '
         Me.DniTextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.SociosBindingSource, "dni", True))
-        Me.DniTextBox.Location = New System.Drawing.Point(105, 133)
+        Me.DniTextBox.Location = New System.Drawing.Point(113, 142)
         Me.DniTextBox.Name = "DniTextBox"
         Me.DniTextBox.Size = New System.Drawing.Size(100, 20)
         Me.DniTextBox.TabIndex = 7
@@ -162,7 +162,7 @@ Partial Class ModificarSocios
         'DireccionTextBox
         '
         Me.DireccionTextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.SociosBindingSource, "direccion", True))
-        Me.DireccionTextBox.Location = New System.Drawing.Point(105, 159)
+        Me.DireccionTextBox.Location = New System.Drawing.Point(113, 168)
         Me.DireccionTextBox.Name = "DireccionTextBox"
         Me.DireccionTextBox.Size = New System.Drawing.Size(100, 20)
         Me.DireccionTextBox.TabIndex = 9
@@ -170,7 +170,7 @@ Partial Class ModificarSocios
         'Id_socioTextBox
         '
         Me.Id_socioTextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.SociosBindingSource, "id_socio", True))
-        Me.Id_socioTextBox.Location = New System.Drawing.Point(105, 185)
+        Me.Id_socioTextBox.Location = New System.Drawing.Point(113, 194)
         Me.Id_socioTextBox.Name = "Id_socioTextBox"
         Me.Id_socioTextBox.Size = New System.Drawing.Size(100, 20)
         Me.Id_socioTextBox.TabIndex = 11
@@ -178,7 +178,7 @@ Partial Class ModificarSocios
         'TelefonoTextBox
         '
         Me.TelefonoTextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.SociosBindingSource, "telefono", True))
-        Me.TelefonoTextBox.Location = New System.Drawing.Point(105, 211)
+        Me.TelefonoTextBox.Location = New System.Drawing.Point(113, 220)
         Me.TelefonoTextBox.Name = "TelefonoTextBox"
         Me.TelefonoTextBox.Size = New System.Drawing.Size(100, 20)
         Me.TelefonoTextBox.TabIndex = 13
@@ -233,7 +233,7 @@ Partial Class ModificarSocios
         '
         'Butconsulta2
         '
-        Me.Butconsulta2.Location = New System.Drawing.Point(285, 285)
+        Me.Butconsulta2.Location = New System.Drawing.Point(285, 236)
         Me.Butconsulta2.Name = "Butconsulta2"
         Me.Butconsulta2.Size = New System.Drawing.Size(141, 23)
         Me.Butconsulta2.TabIndex = 15
@@ -242,7 +242,7 @@ Partial Class ModificarSocios
         '
         'ButEliminar
         '
-        Me.ButEliminar.Location = New System.Drawing.Point(285, 188)
+        Me.ButEliminar.Location = New System.Drawing.Point(285, 197)
         Me.ButEliminar.Name = "ButEliminar"
         Me.ButEliminar.Size = New System.Drawing.Size(141, 23)
         Me.ButEliminar.TabIndex = 16
@@ -258,9 +258,9 @@ Partial Class ModificarSocios
         '
         'ButVolver
         '
-        Me.ButVolver.Location = New System.Drawing.Point(653, 270)
+        Me.ButVolver.Location = New System.Drawing.Point(662, 246)
         Me.ButVolver.Name = "ButVolver"
-        Me.ButVolver.Size = New System.Drawing.Size(75, 23)
+        Me.ButVolver.Size = New System.Drawing.Size(88, 38)
         Me.ButVolver.TabIndex = 18
         Me.ButVolver.Text = "Volver"
         Me.ButVolver.UseVisualStyleBackColor = True
