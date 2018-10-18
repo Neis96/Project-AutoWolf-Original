@@ -79,7 +79,7 @@
     End Sub
 
     Private Sub ResumenToolStripMenuItem1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles ResumenToolStripMenuItem1.Click
-        Resumen.Show()
+        ' Resumen.Show()
 
     End Sub
 
@@ -110,6 +110,7 @@
         Configuracion.Show()
     End Sub
 
+<<<<<<< HEAD
     Private Sub LiquidacionCtaCteToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles LiquidacionCtaCteToolStripMenuItem.Click
         LiquidacionCta.Show()
 
@@ -146,6 +147,17 @@
 
     Private Sub ModificarChoferesToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles ModificarChoferesToolStripMenuItem.Click
         ModificarChofer.Show()
+=======
+    Private Sub LiquidacionChoferToolStripMenuItem1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles LiquidacionChoferToolStripMenuItem1.Click
+
+        Resumen_Chofer.Show()
+
+    End Sub
+
+    Private Sub AgenciaToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles AgenciaToolStripMenuItem.Click
+
+        Resumen_Agencia.Show()
+>>>>>>> validacionesYresumen
 
     End Sub
 End Class

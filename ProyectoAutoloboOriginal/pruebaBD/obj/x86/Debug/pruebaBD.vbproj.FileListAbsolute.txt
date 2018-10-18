@@ -119,6 +119,7 @@ D:\GIT COD ULT\Liq_funcional\Project-AutoWolf-Original\ProyectoAutoloboOriginal\
 D:\GIT COD ULT\Liq_funcional\Project-AutoWolf-Original\ProyectoAutoloboOriginal\pruebaBD\obj\x86\Debug\pruebaBD.Vehiculos1.resources
 D:\GIT COD ULT\Liq_funcional\Project-AutoWolf-Original\ProyectoAutoloboOriginal\pruebaBD\obj\x86\Debug\pruebaBD.viajes.resources
 D:\GIT COD ULT\Liq_funcional\Project-AutoWolf-Original\ProyectoAutoloboOriginal\pruebaBD\obj\x86\Debug\pruebaBD.vbproj.GenerateResource.Cache
+<<<<<<< HEAD
 C:\Users\thoma\Desktop\thom\programacion\Ejercicios visual\krak\Project-AutoWolf-Original\ProyectoAutoloboOriginal\pruebaBD\obj\x86\Debug\pruebaBD.vbprojResolveAssemblyReference.cache
 C:\Users\thoma\Desktop\thom\programacion\Ejercicios visual\krak\Project-AutoWolf-Original\ProyectoAutoloboOriginal\pruebaBD\obj\x86\Debug\pruebaBD.LiquidacionCta.resources
 C:\Users\thoma\Desktop\thom\programacion\Ejercicios visual\krak\Project-AutoWolf-Original\ProyectoAutoloboOriginal\pruebaBD\obj\x86\Debug\pruebaBD.Loggin.resources
@@ -126,3 +127,10 @@ C:\Users\thoma\Desktop\thom\programacion\Ejercicios visual\krak\Project-AutoWolf
 C:\Users\thoma\Desktop\thom\programacion\Ejercicios visual\krak\Project-AutoWolf-Original\ProyectoAutoloboOriginal\pruebaBD\obj\x86\Debug\pruebaBD.ResumenCtaCte.resources
 C:\Users\thoma\Desktop\thom\programacion\Ejercicios visual\krak\Project-AutoWolf-Original\ProyectoAutoloboOriginal\pruebaBD\obj\x86\Debug\pruebaBD.TerminarReserva.resources
 C:\Users\thoma\Desktop\thom\programacion\Ejercicios visual\krak\Project-AutoWolf-Original\ProyectoAutoloboOriginal\pruebaBD\obj\x86\Debug\pruebaBD.ModificarChofer.resources
+=======
+C:\Users\user\Desktop\GITKRAKEN\Project-AutoWolf-Original\ProyectoAutoloboOriginal\pruebaBD\obj\x86\Debug\pruebaBD.vbprojResolveAssemblyReference.cache
+C:\Users\user\Desktop\GITKRAKEN\Project-AutoWolf-Original\ProyectoAutoloboOriginal\pruebaBD\obj\x86\Debug\pruebaBD.Loggin.resources
+C:\Users\user\Desktop\GITKRAKEN\Project-AutoWolf-Original\ProyectoAutoloboOriginal\pruebaBD\obj\x86\Debug\pruebaBD.RegistroUsuario.resources
+C:\Users\user\Desktop\GITKRAKEN\Project-AutoWolf-Original\ProyectoAutoloboOriginal\pruebaBD\obj\x86\Debug\pruebaBD.Resumen_Agencia.resources
+C:\Users\user\Desktop\GITKRAKEN\Project-AutoWolf-Original\ProyectoAutoloboOriginal\pruebaBD\obj\x86\Debug\pruebaBD.Resumen_Chofer.resources
+>>>>>>> validacionesYresumen
