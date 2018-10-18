@@ -40,18 +40,6 @@ Partial Class Vehiculos1
         Me.VehiculoBindingSource = New System.Windows.Forms.BindingSource(Me.components)
         Me.Database1DataSet = New pruebaBD.Database1DataSet()
         Me.VehiculoDataGridView = New System.Windows.Forms.DataGridView()
-        Me.VehiculoTableAdapter = New pruebaBD.Database1DataSetTableAdapters.VehiculoTableAdapter()
-        Me.TableAdapterManager = New pruebaBD.Database1DataSetTableAdapters.TableAdapterManager()
-        Me.BtnConsulta = New System.Windows.Forms.Button()
-        Me.DateTimePickerVtv = New System.Windows.Forms.DateTimePicker()
-        Me.DateTimePickerAno = New System.Windows.Forms.DateTimePicker()
-        Me.DateTimePickerGnc = New System.Windows.Forms.DateTimePicker()
-        Me.TextBoxSeguro = New System.Windows.Forms.TextBox()
-        Me.TextBoxDueno = New System.Windows.Forms.TextBox()
-        Me.TextBoxColor = New System.Windows.Forms.TextBox()
-        Me.TextBoxModelo = New System.Windows.Forms.TextBox()
-        Me.TextBoxMarca = New System.Windows.Forms.TextBox()
-        Me.TextBoxDominio = New System.Windows.Forms.TextBox()
         Me.DataGridViewTextBoxColumn10 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.DataGridViewTextBoxColumn4 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.DataGridViewTextBoxColumn2 = New System.Windows.Forms.DataGridViewTextBoxColumn()
@@ -62,6 +50,17 @@ Partial Class Vehiculos1
         Me.DataGridViewTextBoxColumn5 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.DataGridViewTextBoxColumn6 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.DataGridViewTextBoxColumn7 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.VehiculoTableAdapter = New pruebaBD.Database1DataSetTableAdapters.VehiculoTableAdapter()
+        Me.TableAdapterManager = New pruebaBD.Database1DataSetTableAdapters.TableAdapterManager()
+        Me.DateTimePickerVtv = New System.Windows.Forms.DateTimePicker()
+        Me.DateTimePickerAno = New System.Windows.Forms.DateTimePicker()
+        Me.DateTimePickerGnc = New System.Windows.Forms.DateTimePicker()
+        Me.TextBoxSeguro = New System.Windows.Forms.TextBox()
+        Me.TextBoxDueno = New System.Windows.Forms.TextBox()
+        Me.TextBoxColor = New System.Windows.Forms.TextBox()
+        Me.TextBoxModelo = New System.Windows.Forms.TextBox()
+        Me.TextBoxMarca = New System.Windows.Forms.TextBox()
+        Me.TextBoxDominio = New System.Windows.Forms.TextBox()
         ModeloLabel = New System.Windows.Forms.Label()
         MarcaLabel = New System.Windows.Forms.Label()
         AñoLabel = New System.Windows.Forms.Label()
@@ -175,9 +174,9 @@ Partial Class Vehiculos1
         '
         'BtnVolver
         '
-        Me.BtnVolver.Location = New System.Drawing.Point(979, 62)
+        Me.BtnVolver.Location = New System.Drawing.Point(959, 12)
         Me.BtnVolver.Name = "BtnVolver"
-        Me.BtnVolver.Size = New System.Drawing.Size(75, 23)
+        Me.BtnVolver.Size = New System.Drawing.Size(111, 50)
         Me.BtnVolver.TabIndex = 31
         Me.BtnVolver.Text = "Volver"
         Me.BtnVolver.UseVisualStyleBackColor = True
@@ -222,96 +221,6 @@ Partial Class Vehiculos1
         Me.VehiculoDataGridView.ReadOnly = True
         Me.VehiculoDataGridView.Size = New System.Drawing.Size(1033, 220)
         Me.VehiculoDataGridView.TabIndex = 52
-        '
-        'VehiculoTableAdapter
-        '
-        Me.VehiculoTableAdapter.ClearBeforeFill = True
-        '
-        'TableAdapterManager
-        '
-        Me.TableAdapterManager.BackupDataSetBeforeUpdate = False
-        Me.TableAdapterManager.ChoferTableAdapter = Nothing
-        Me.TableAdapterManager.SociosTableAdapter = Nothing
-        Me.TableAdapterManager.UpdateOrder = pruebaBD.Database1DataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete
-        Me.TableAdapterManager.UsuarioTableAdapter = Nothing
-        Me.TableAdapterManager.VehiculoTableAdapter = Me.VehiculoTableAdapter
-        Me.TableAdapterManager.ViajesTableAdapter = Nothing
-        '
-        'BtnConsulta
-        '
-        Me.BtnConsulta.Location = New System.Drawing.Point(650, 322)
-        Me.BtnConsulta.Name = "BtnConsulta"
-        Me.BtnConsulta.Size = New System.Drawing.Size(75, 23)
-        Me.BtnConsulta.TabIndex = 70
-        Me.BtnConsulta.Text = "Consultar"
-        Me.BtnConsulta.UseVisualStyleBackColor = True
-        '
-        'DateTimePickerVtv
-        '
-        Me.DateTimePickerVtv.Format = System.Windows.Forms.DateTimePickerFormat.[Short]
-        Me.DateTimePickerVtv.Location = New System.Drawing.Point(282, 98)
-        Me.DateTimePickerVtv.Name = "DateTimePickerVtv"
-        Me.DateTimePickerVtv.Size = New System.Drawing.Size(100, 20)
-        Me.DateTimePickerVtv.TabIndex = 115
-        '
-        'DateTimePickerAno
-        '
-        Me.DateTimePickerAno.CustomFormat = "yyyy"
-        Me.DateTimePickerAno.Format = System.Windows.Forms.DateTimePickerFormat.[Short]
-        Me.DateTimePickerAno.Location = New System.Drawing.Point(83, 153)
-        Me.DateTimePickerAno.Name = "DateTimePickerAno"
-        Me.DateTimePickerAno.Size = New System.Drawing.Size(100, 20)
-        Me.DateTimePickerAno.TabIndex = 114
-        '
-        'DateTimePickerGnc
-        '
-        Me.DateTimePickerGnc.Format = System.Windows.Forms.DateTimePickerFormat.[Short]
-        Me.DateTimePickerGnc.Location = New System.Drawing.Point(282, 72)
-        Me.DateTimePickerGnc.Name = "DateTimePickerGnc"
-        Me.DateTimePickerGnc.Size = New System.Drawing.Size(100, 20)
-        Me.DateTimePickerGnc.TabIndex = 113
-        '
-        'TextBoxSeguro
-        '
-        Me.TextBoxSeguro.Location = New System.Drawing.Point(282, 46)
-        Me.TextBoxSeguro.Name = "TextBoxSeguro"
-        Me.TextBoxSeguro.Size = New System.Drawing.Size(100, 20)
-        Me.TextBoxSeguro.TabIndex = 112
-        '
-        'TextBoxDueno
-        '
-        Me.TextBoxDueno.Location = New System.Drawing.Point(83, 208)
-        Me.TextBoxDueno.Name = "TextBoxDueno"
-        Me.TextBoxDueno.Size = New System.Drawing.Size(100, 20)
-        Me.TextBoxDueno.TabIndex = 111
-        '
-        'TextBoxColor
-        '
-        Me.TextBoxColor.Location = New System.Drawing.Point(83, 181)
-        Me.TextBoxColor.Name = "TextBoxColor"
-        Me.TextBoxColor.Size = New System.Drawing.Size(100, 20)
-        Me.TextBoxColor.TabIndex = 110
-        '
-        'TextBoxModelo
-        '
-        Me.TextBoxModelo.Location = New System.Drawing.Point(83, 120)
-        Me.TextBoxModelo.Name = "TextBoxModelo"
-        Me.TextBoxModelo.Size = New System.Drawing.Size(100, 20)
-        Me.TextBoxModelo.TabIndex = 109
-        '
-        'TextBoxMarca
-        '
-        Me.TextBoxMarca.Location = New System.Drawing.Point(83, 82)
-        Me.TextBoxMarca.Name = "TextBoxMarca"
-        Me.TextBoxMarca.Size = New System.Drawing.Size(100, 20)
-        Me.TextBoxMarca.TabIndex = 108
-        '
-        'TextBoxDominio
-        '
-        Me.TextBoxDominio.Location = New System.Drawing.Point(83, 49)
-        Me.TextBoxDominio.Name = "TextBoxDominio"
-        Me.TextBoxDominio.Size = New System.Drawing.Size(100, 20)
-        Me.TextBoxDominio.TabIndex = 107
         '
         'DataGridViewTextBoxColumn10
         '
@@ -384,6 +293,93 @@ Partial Class Vehiculos1
         Me.DataGridViewTextBoxColumn7.Name = "DataGridViewTextBoxColumn7"
         Me.DataGridViewTextBoxColumn7.ReadOnly = True
         '
+        'VehiculoTableAdapter
+        '
+        Me.VehiculoTableAdapter.ClearBeforeFill = True
+        '
+        'TableAdapterManager
+        '
+        Me.TableAdapterManager.BackupDataSetBeforeUpdate = False
+        Me.TableAdapterManager.ChoferTableAdapter = Nothing
+        Me.TableAdapterManager.LiqCtaCtrTableAdapter = Nothing
+        Me.TableAdapterManager.LiquidacionChoferTableAdapter = Nothing
+        Me.TableAdapterManager.ResumenRemiseriaTableAdapter = Nothing
+        Me.TableAdapterManager.SociosTableAdapter = Nothing
+        Me.TableAdapterManager.TablaDeTurnoTableAdapter = Nothing
+        Me.TableAdapterManager.UpdateOrder = pruebaBD.Database1DataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete
+        Me.TableAdapterManager.Usuario1TableAdapter = Nothing
+        Me.TableAdapterManager.UsuarioTableAdapter = Nothing
+        Me.TableAdapterManager.ValoresTableAdapter = Nothing
+        Me.TableAdapterManager.VehiculoTableAdapter = Me.VehiculoTableAdapter
+        Me.TableAdapterManager.ViajesTableAdapter = Nothing
+        '
+        'DateTimePickerVtv
+        '
+        Me.DateTimePickerVtv.Format = System.Windows.Forms.DateTimePickerFormat.[Short]
+        Me.DateTimePickerVtv.Location = New System.Drawing.Point(282, 98)
+        Me.DateTimePickerVtv.Name = "DateTimePickerVtv"
+        Me.DateTimePickerVtv.Size = New System.Drawing.Size(100, 20)
+        Me.DateTimePickerVtv.TabIndex = 115
+        '
+        'DateTimePickerAno
+        '
+        Me.DateTimePickerAno.CustomFormat = "yyyy"
+        Me.DateTimePickerAno.Format = System.Windows.Forms.DateTimePickerFormat.[Short]
+        Me.DateTimePickerAno.Location = New System.Drawing.Point(83, 153)
+        Me.DateTimePickerAno.Name = "DateTimePickerAno"
+        Me.DateTimePickerAno.Size = New System.Drawing.Size(100, 20)
+        Me.DateTimePickerAno.TabIndex = 114
+        '
+        'DateTimePickerGnc
+        '
+        Me.DateTimePickerGnc.Format = System.Windows.Forms.DateTimePickerFormat.[Short]
+        Me.DateTimePickerGnc.Location = New System.Drawing.Point(282, 72)
+        Me.DateTimePickerGnc.Name = "DateTimePickerGnc"
+        Me.DateTimePickerGnc.Size = New System.Drawing.Size(100, 20)
+        Me.DateTimePickerGnc.TabIndex = 113
+        '
+        'TextBoxSeguro
+        '
+        Me.TextBoxSeguro.Location = New System.Drawing.Point(282, 46)
+        Me.TextBoxSeguro.Name = "TextBoxSeguro"
+        Me.TextBoxSeguro.Size = New System.Drawing.Size(100, 20)
+        Me.TextBoxSeguro.TabIndex = 112
+        '
+        'TextBoxDueno
+        '
+        Me.TextBoxDueno.Location = New System.Drawing.Point(83, 208)
+        Me.TextBoxDueno.Name = "TextBoxDueno"
+        Me.TextBoxDueno.Size = New System.Drawing.Size(100, 20)
+        Me.TextBoxDueno.TabIndex = 111
+        '
+        'TextBoxColor
+        '
+        Me.TextBoxColor.Location = New System.Drawing.Point(83, 181)
+        Me.TextBoxColor.Name = "TextBoxColor"
+        Me.TextBoxColor.Size = New System.Drawing.Size(100, 20)
+        Me.TextBoxColor.TabIndex = 110
+        '
+        'TextBoxModelo
+        '
+        Me.TextBoxModelo.Location = New System.Drawing.Point(83, 120)
+        Me.TextBoxModelo.Name = "TextBoxModelo"
+        Me.TextBoxModelo.Size = New System.Drawing.Size(100, 20)
+        Me.TextBoxModelo.TabIndex = 109
+        '
+        'TextBoxMarca
+        '
+        Me.TextBoxMarca.Location = New System.Drawing.Point(83, 82)
+        Me.TextBoxMarca.Name = "TextBoxMarca"
+        Me.TextBoxMarca.Size = New System.Drawing.Size(100, 20)
+        Me.TextBoxMarca.TabIndex = 108
+        '
+        'TextBoxDominio
+        '
+        Me.TextBoxDominio.Location = New System.Drawing.Point(83, 49)
+        Me.TextBoxDominio.Name = "TextBoxDominio"
+        Me.TextBoxDominio.Size = New System.Drawing.Size(100, 20)
+        Me.TextBoxDominio.TabIndex = 107
+        '
         'Vehiculos1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -407,7 +403,6 @@ Partial Class Vehiculos1
         Me.Controls.Add(Venc_vtvLabel)
         Me.Controls.Add(ColorLabel)
         Me.Controls.Add(DueñoLabel)
-        Me.Controls.Add(Me.BtnConsulta)
         Me.Controls.Add(Me.VehiculoDataGridView)
         Me.Controls.Add(Me.TextBoxConsulta)
         Me.Controls.Add(Me.Label1)
@@ -433,7 +428,6 @@ Partial Class Vehiculos1
     Friend WithEvents VehiculoTableAdapter As pruebaBD.Database1DataSetTableAdapters.VehiculoTableAdapter
     Friend WithEvents TableAdapterManager As pruebaBD.Database1DataSetTableAdapters.TableAdapterManager
     Friend WithEvents VehiculoDataGridView As System.Windows.Forms.DataGridView
-    Friend WithEvents BtnConsulta As System.Windows.Forms.Button
     Friend WithEvents DateTimePickerVtv As System.Windows.Forms.DateTimePicker
     Friend WithEvents DateTimePickerAno As System.Windows.Forms.DateTimePicker
     Friend WithEvents DateTimePickerGnc As System.Windows.Forms.DateTimePicker

@@ -9,15 +9,25 @@
     End Sub
 
     Private Sub Vehiculos1_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
+        If Registro_Usuario = 2 Then
+            BtnModificar.Enabled = False
+        End If
+
+
         'TODO: esta línea de código carga datos en la tabla 'Database1DataSet.Vehiculo' Puede moverla o quitarla según sea necesario.
         Me.VehiculoTableAdapter.Fill(Me.Database1DataSet.Vehiculo)
         Me.VehiculoBindingSource.AddNew()
+
+        DateTimePickerGnc.Value = Now
+        DateTimePickerVtv.Value = Now
+        DateTimePickerAno.Value = Now
+
 
     End Sub
 
     Private Sub BtnAgregar_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles BtnAgregar.Click
 
-        Dim dominio, marca, modelo, año, color, dueño, seguro, vtv, gnc As String
+        Dim dominio, marca, modelo, año, color, dueño, seguro, vtv, gnc, FechaHoy As String
         dominio = UCase(TextBoxDominio.Text)
         marca = TextBoxMarca.Text
         modelo = TextBoxModelo.Text
@@ -27,7 +37,7 @@
         seguro = TextBoxSeguro.Text
         vtv = DateTimePickerGnc.Text
         gnc = DateTimePickerGnc.Text
-
+        FechaHoy = Now
         If TextBoxDominio.Text <> "" Then
             If Len(TextBoxDominio.Text) >= 6 And Len(TextBoxDominio.Text) <= 7 Then
 
@@ -37,53 +47,70 @@
                             If TextBoxColor.Text <> "" Then
                                 If TextBoxDueno.Text <> "" Then
                                     If TextBoxSeguro.Text <> "" Then
+                                        If DateTimePickerVtv.Value > FechaHoy Then
+                                            If DateTimePickerGnc.Value > FechaHoy Then
 
-                                        Me.VehiculoBindingSource.Current("dominio") = dominio
-                                        Me.VehiculoBindingSource.Current("marca") = marca
-                                        Me.VehiculoBindingSource.Current("modelo") = modelo
-                                        Me.VehiculoBindingSource.Current("año") = año
-                                        Me.VehiculoBindingSource.Current("color") = color
-                                        Me.VehiculoBindingSource.Current("dueño") = dueño
-                                        Me.VehiculoBindingSource.Current("seguro") = seguro
-                                        Me.VehiculoBindingSource.Current("venc_gnc ") = gnc
-                                        Me.VehiculoBindingSource.Current("venc_vtv") = vtv
+                                                Me.VehiculoBindingSource.Current("dominio") = dominio
+                                                Me.VehiculoBindingSource.Current("marca") = marca
+                                                Me.VehiculoBindingSource.Current("modelo") = modelo
+                                                Me.VehiculoBindingSource.Current("año") = año
+                                                Me.VehiculoBindingSource.Current("color") = color
+                                                Me.VehiculoBindingSource.Current("dueño") = dueño
+                                                Me.VehiculoBindingSource.Current("seguro") = seguro
+                                                Me.VehiculoBindingSource.Current("venc_gnc ") = gnc
+                                                Me.VehiculoBindingSource.Current("venc_vtv") = vtv
 
-                                        Me.Validate()
-                                        Me.VehiculoBindingSource.Current.EndEdit() 'finalizo edicion
+                                                Me.Validate()
+                                                Me.VehiculoBindingSource.Current.EndEdit() 'finalizo edicion
 
-                                        Me.TableAdapterManager.UpdateAll(Me.Database1DataSet) 'guardo en disco
+                                                Me.TableAdapterManager.UpdateAll(Me.Database1DataSet) 'guardo en disco
 
-                                        MsgBox("Registro guardado con exito")
-
-
-                                        Me.VehiculoTableAdapter.Fill(Me.Database1DataSet.Vehiculo) 'Actuliza el form en el que estas
-
-
-                                        'respetar siempre el orden de las instrucciones
+                                                MsgBox("Registro guardado con exito")
 
 
-                                        'pasa el valor del ID a strig 'veo el dato que necesite
+                                                Me.VehiculoTableAdapter.Fill(Me.Database1DataSet.Vehiculo) 'Actuliza el form en el que estas
 
 
-                                        Me.VehiculoBindingSource.AddNew() 'Para agregar el sig
+                                                'respetar siempre el orden de las instrucciones
 
-                                        TextBoxDominio.Text = ""
-                                        TextBoxMarca.Text = ""
-                                        TextBoxModelo.Text = ""
-                                        TextBoxColor.Text = ""
-                                        TextBoxDueno.Text = ""
-                                        TextBoxSeguro.Text = ""
-                                        TextBoxDominio.Focus()
+
+                                                'pasa el valor del ID a strig 'veo el dato que necesite
+
+
+                                                Me.VehiculoBindingSource.AddNew() 'Para agregar el sig
+
+                                                TextBoxDominio.Text = ""
+                                                TextBoxMarca.Text = ""
+                                                TextBoxModelo.Text = ""
+                                                TextBoxColor.Text = ""
+                                                TextBoxDueno.Text = ""
+                                                TextBoxSeguro.Text = ""
+                                                TextBoxDominio.Focus()
+
+                                            Else
+
+                                                MsgBox("La fecha de GNC es menor a la fecha del dia")
+                                                DateTimePickerGnc.Focus()
+
+
+                                            End If
+
+                                        Else
+                                            MsgBox("La fecha de VTV es menor a la fecha del dia")
+                                            DateTimePickerVtv.Focus()
+
+
+                                        End If
+                                        Else
+                                            MsgBox("El campo Seguro esta vacio")
+                                            TextBoxSeguro.Focus()
+
+                                        End If
                                     Else
-                                        MsgBox("El campo Seguro esta vacio")
-                                        TextBoxSeguro.Focus()
+                                        MsgBox("El campo dueño esta vacio")
+                                        TextBoxDueno.Focus()
 
                                     End If
-                                Else
-                                    MsgBox("El campo dueño esta vacio")
-                                    TextBoxDueno.Focus()
-
-                                End If
                                 Else
                                     MsgBox("El campo color esta vacio")
                                     TextBoxColor.Focus()
@@ -150,7 +177,7 @@
 
     End Sub
 
-    Private Sub BtnConsulta_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles BtnConsulta.Click
+    Private Sub BtnConsulta_Click(ByVal sender As System.Object, ByVal e As System.EventArgs)
 
         'If TextBoxConsulta.Text <> "" Then
         '    If Len(TextBoxConsulta.Text) >= 6 And Len(TextBoxConsulta.Text) <= 7 Then

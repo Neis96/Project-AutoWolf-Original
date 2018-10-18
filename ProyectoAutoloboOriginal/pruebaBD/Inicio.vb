@@ -27,11 +27,20 @@
 
 
     Private Sub Inicio_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
+
         'TODO: esta línea de código carga datos en la tabla 'Database1DataSet.Viajes' Puede moverla o quitarla según sea necesario.
         'Me.ViajesTableAdapter.Fill(Me.Database1DataSet.Viajes)
         'conexion.conectar()
         MostrarDatos()
         ' mostrar2()
+        If Registro_Usuario = 2 Then
+            ConfiguracionToolStripMenuItem.Enabled = False
+            ResumenToolStripMenuItem.Enabled = False
+
+
+
+        End If
+
 
 
     End Sub
@@ -84,7 +93,7 @@
     End Sub
 
     Private Sub LiquidacionChoferToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles LiquidacionChoferToolStripMenuItem.Click
-        'Liquidacion_Choferes.Show()
+        Liquidacion_Chofer.Show()
 
     End Sub
 

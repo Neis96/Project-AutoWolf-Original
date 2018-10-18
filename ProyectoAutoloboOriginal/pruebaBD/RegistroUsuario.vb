@@ -2,16 +2,21 @@
 
  
     Private Sub RegistroUsuario_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
+        'TODO: esta línea de código carga datos en la tabla 'Database1DataSet.Usuario1' Puede moverla o quitarla según sea necesario.
+        Me.Usuario1TableAdapter.Fill(Me.Database1DataSet.Usuario1)
         'TODO: esta línea de código carga datos en la tabla 'Database1DataSet.Usuario' Puede moverla o quitarla según sea necesario.
-        Me.UsuarioTableAdapter.Fill(Me.Database1DataSet.Usuario)
+        'Me.Usuario1TableAdapter.Fill(Me.Database1DataSet.Usuario)
+        'Me.UsuarioBindingSource.AddNew()
+        ComboBoxtipo.Items.Add("Administrador")
+        ComboBoxtipo.Items.Add("Usuario Normal")
 
     End Sub
 
     Private Sub Button1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button1.Click
-        Me.UsuarioTableAdapter.insertar(Usuarios_TextBox.Text, ContraseñasTextBox.Text, Nombre_TextBox.Text, Apelllido_TextBox.Text, AdministradorTextBox.Text)
+        Me.Usuario1TableAdapter.insertarUsuario(TextBox1.Text, TextBox2.Text, ComboBoxtipo.Text)
         Me.Hide()
         Inicio.Show()
-        Me.UsuarioTableAdapter.Fill(Me.Database1DataSet.Usuario)
+        Me.Usuario1TableAdapter.Fill(Me.Database1DataSet.Usuario1)
 
         MsgBox("se ha registrado con exito")
 

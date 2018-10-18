@@ -127,6 +127,12 @@
     <Compile Include="Inicio.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Liquidacion Chofer.Designer.vb">
+      <DependentUpon>Liquidacion Chofer.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Liquidacion Chofer.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="LiquidacionCta.Designer.vb">
       <DependentUpon>LiquidacionCta.vb</DependentUpon>
     </Compile>
@@ -157,6 +163,7 @@
     <Compile Include="ModificarVehiculos.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Module1.vb" />
     <Compile Include="My Project\AssemblyInfo.vb" />
     <Compile Include="My Project\Application.Designer.vb">
       <AutoGen>True</AutoGen>
@@ -248,6 +255,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Inicio.resx">
       <DependentUpon>Inicio.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Liquidacion Chofer.resx">
+      <DependentUpon>Liquidacion Chofer.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="LiquidacionCta.resx">
       <DependentUpon>LiquidacionCta.vb</DependentUpon>

@@ -117,31 +117,40 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <metadata name="TipoLabel.GenerateMember" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>False</value>
-  </metadata>
-  <metadata name="ContraseñaLabel.GenerateMember" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>False</value>
-  </metadata>
-  <metadata name="Id_usuarioLabel.GenerateMember" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>False</value>
-  </metadata>
   <metadata name="Database1DataSet.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>17, 17</value>
   </metadata>
-  <metadata name="UsuarioBindingSource.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+  <metadata name="ChoferBindingSource.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>169, 17</value>
   </metadata>
-  <metadata name="UsuarioTableAdapter.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>341, 17</value>
+  <metadata name="ChoferTableAdapter.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>336, 17</value>
   </metadata>
   <metadata name="TableAdapterManager.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>507, 17</value>
+    <value>497, 17</value>
   </metadata>
-  <metadata name="Usuario1BindingSource.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>680, 17</value>
+  <metadata name="LiquidacionChoferTableAdapter.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>1082, 17</value>
   </metadata>
-  <metadata name="Usuario1TableAdapter.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>859, 17</value>
+  <metadata name="ResumenRemiseriaTableAdapter.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>250, 56</value>
+  </metadata>
+  <metadata name="ValoresTableAdapter.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>649, 56</value>
+  </metadata>
+  <metadata name="ViajesTableAdapter.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>976, 56</value>
+  </metadata>
+  <metadata name="LiquidacionChoferBindingSource.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>853, 17</value>
+  </metadata>
+  <metadata name="ResumenRemiseriaBindingSource.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 56</value>
+  </metadata>
+  <metadata name="ValoresBindingSource.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>478, 56</value>
+  </metadata>
+  <metadata name="ViajesBindingSource.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>814, 56</value>
   </metadata>
 </root>

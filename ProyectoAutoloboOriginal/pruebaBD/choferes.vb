@@ -8,6 +8,11 @@
     End Sub
 
     Private Sub choferes_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
+        If Registro_Usuario = 2 Then
+            Button1.Enabled = False
+
+        End If
+
         'TODO: esta línea de código carga datos en la tabla 'Database1DataSet.Chofer' Puede moverla o quitarla según sea necesario.
         Me.ChoferTableAdapter.Fill(Me.Database1DataSet.Chofer)
         Me.ChoferBindingSource.AddNew()
