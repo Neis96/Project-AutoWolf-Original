@@ -49,6 +49,7 @@ Partial Class Socios
         Me.DataGridViewTextBoxColumn4 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.DataGridViewTextBoxColumn6 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.Button2 = New System.Windows.Forms.Button()
+        Me.ToolTip1 = New System.Windows.Forms.ToolTip(Me.components)
         NombreLabel = New System.Windows.Forms.Label()
         ApellidoLabel = New System.Windows.Forms.Label()
         DniLabel = New System.Windows.Forms.Label()
@@ -62,56 +63,65 @@ Partial Class Socios
         'NombreLabel
         '
         NombreLabel.AutoSize = True
+        NombreLabel.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         NombreLabel.Location = New System.Drawing.Point(37, 34)
         NombreLabel.Name = "NombreLabel"
-        NombreLabel.Size = New System.Drawing.Size(45, 13)
+        NombreLabel.Size = New System.Drawing.Size(67, 17)
         NombreLabel.TabIndex = 31
         NombreLabel.Text = "nombre:"
         '
         'ApellidoLabel
         '
         ApellidoLabel.AutoSize = True
+        ApellidoLabel.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         ApellidoLabel.Location = New System.Drawing.Point(37, 60)
         ApellidoLabel.Name = "ApellidoLabel"
-        ApellidoLabel.Size = New System.Drawing.Size(46, 13)
+        ApellidoLabel.Size = New System.Drawing.Size(70, 17)
         ApellidoLabel.TabIndex = 32
         ApellidoLabel.Text = "apellido:"
         '
         'DniLabel
         '
         DniLabel.AutoSize = True
+        DniLabel.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         DniLabel.Location = New System.Drawing.Point(37, 86)
         DniLabel.Name = "DniLabel"
-        DniLabel.Size = New System.Drawing.Size(24, 13)
+        DniLabel.Size = New System.Drawing.Size(35, 17)
         DniLabel.TabIndex = 33
         DniLabel.Text = "dni:"
         '
         'DireccionLabel
         '
         DireccionLabel.AutoSize = True
+        DireccionLabel.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         DireccionLabel.Location = New System.Drawing.Point(37, 112)
         DireccionLabel.Name = "DireccionLabel"
-        DireccionLabel.Size = New System.Drawing.Size(53, 13)
+        DireccionLabel.Size = New System.Drawing.Size(79, 17)
         DireccionLabel.TabIndex = 34
         DireccionLabel.Text = "direccion:"
         '
         'TelefonoLabel
         '
         TelefonoLabel.AutoSize = True
+        TelefonoLabel.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         TelefonoLabel.Location = New System.Drawing.Point(37, 139)
         TelefonoLabel.Name = "TelefonoLabel"
-        TelefonoLabel.Size = New System.Drawing.Size(48, 13)
+        TelefonoLabel.Size = New System.Drawing.Size(72, 17)
         TelefonoLabel.TabIndex = 35
         TelefonoLabel.Text = "telefono:"
         '
         'ButAgregar
         '
+        Me.ButAgregar.BackgroundImage = Global.pruebaBD.My.Resources.Resources.icons8_más_2_matemáticas_80
+        Me.ButAgregar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center
+        Me.ButAgregar.FlatAppearance.BorderSize = 0
+        Me.ButAgregar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.ButAgregar.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.ButAgregar.Location = New System.Drawing.Point(225, 69)
+        Me.ButAgregar.Location = New System.Drawing.Point(243, 60)
         Me.ButAgregar.Name = "ButAgregar"
-        Me.ButAgregar.Size = New System.Drawing.Size(119, 30)
+        Me.ButAgregar.Size = New System.Drawing.Size(119, 92)
         Me.ButAgregar.TabIndex = 0
-        Me.ButAgregar.Text = "Agregar"
+        Me.ToolTip1.SetToolTip(Me.ButAgregar, "AGREGAR")
         Me.ButAgregar.UseVisualStyleBackColor = True
         '
         'SociosBindingSource
@@ -126,12 +136,16 @@ Partial Class Socios
         '
         'Button4
         '
+        Me.Button4.BackgroundImage = Global.pruebaBD.My.Resources.Resources.icons8_izquierda_en_círculo_2_64
+        Me.Button4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center
+        Me.Button4.FlatAppearance.BorderSize = 0
+        Me.Button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Button4.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button4.Location = New System.Drawing.Point(563, 20)
+        Me.Button4.Location = New System.Drawing.Point(829, 47)
         Me.Button4.Name = "Button4"
-        Me.Button4.Size = New System.Drawing.Size(92, 40)
+        Me.Button4.Size = New System.Drawing.Size(92, 78)
         Me.Button4.TabIndex = 17
-        Me.Button4.Text = "Volver"
+        Me.ToolTip1.SetToolTip(Me.Button4, "VOLVER")
         Me.Button4.UseVisualStyleBackColor = True
         '
         'SociosTableAdapter
@@ -156,35 +170,35 @@ Partial Class Socios
         '
         'TextBoxtelefono
         '
-        Me.TextBoxtelefono.Location = New System.Drawing.Point(88, 136)
+        Me.TextBoxtelefono.Location = New System.Drawing.Point(127, 139)
         Me.TextBoxtelefono.Name = "TextBoxtelefono"
         Me.TextBoxtelefono.Size = New System.Drawing.Size(100, 20)
         Me.TextBoxtelefono.TabIndex = 43
         '
         'TextBoxdireccion
         '
-        Me.TextBoxdireccion.Location = New System.Drawing.Point(88, 110)
+        Me.TextBoxdireccion.Location = New System.Drawing.Point(127, 113)
         Me.TextBoxdireccion.Name = "TextBoxdireccion"
         Me.TextBoxdireccion.Size = New System.Drawing.Size(100, 20)
         Me.TextBoxdireccion.TabIndex = 42
         '
         'TextBoxDni
         '
-        Me.TextBoxDni.Location = New System.Drawing.Point(88, 84)
+        Me.TextBoxDni.Location = New System.Drawing.Point(127, 87)
         Me.TextBoxDni.Name = "TextBoxDni"
         Me.TextBoxDni.Size = New System.Drawing.Size(100, 20)
         Me.TextBoxDni.TabIndex = 41
         '
         'TextBoxApellido
         '
-        Me.TextBoxApellido.Location = New System.Drawing.Point(88, 58)
+        Me.TextBoxApellido.Location = New System.Drawing.Point(127, 61)
         Me.TextBoxApellido.Name = "TextBoxApellido"
         Me.TextBoxApellido.Size = New System.Drawing.Size(100, 20)
         Me.TextBoxApellido.TabIndex = 40
         '
         'TextBoxNombr
         '
-        Me.TextBoxNombr.Location = New System.Drawing.Point(88, 31)
+        Me.TextBoxNombr.Location = New System.Drawing.Point(127, 34)
         Me.TextBoxNombr.Name = "TextBoxNombr"
         Me.TextBoxNombr.Size = New System.Drawing.Size(100, 20)
         Me.TextBoxNombr.TabIndex = 39
@@ -192,15 +206,16 @@ Partial Class Socios
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(26, 219)
+        Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label1.Location = New System.Drawing.Point(18, 260)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(39, 13)
+        Me.Label1.Size = New System.Drawing.Size(91, 17)
         Me.Label1.TabIndex = 38
-        Me.Label1.Text = "Label1"
+        Me.Label1.Text = "Ingrese Dni"
         '
         'TextBoxconsultasocio
         '
-        Me.TextBoxconsultasocio.Location = New System.Drawing.Point(82, 213)
+        Me.TextBoxconsultasocio.Location = New System.Drawing.Point(127, 257)
         Me.TextBoxconsultasocio.Name = "TextBoxconsultasocio"
         Me.TextBoxconsultasocio.Size = New System.Drawing.Size(100, 20)
         Me.TextBoxconsultasocio.TabIndex = 37
@@ -211,7 +226,7 @@ Partial Class Socios
         Me.SociosDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.SociosDataGridView.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.DataGridViewTextBoxColumn5, Me.DataGridViewTextBoxColumn3, Me.DataGridViewTextBoxColumn1, Me.DataGridViewTextBoxColumn2, Me.DataGridViewTextBoxColumn4, Me.DataGridViewTextBoxColumn6})
         Me.SociosDataGridView.DataSource = Me.SociosBindingSource
-        Me.SociosDataGridView.Location = New System.Drawing.Point(12, 243)
+        Me.SociosDataGridView.Location = New System.Drawing.Point(82, 304)
         Me.SociosDataGridView.Name = "SociosDataGridView"
         Me.SociosDataGridView.Size = New System.Drawing.Size(643, 220)
         Me.SociosDataGridView.TabIndex = 36
@@ -255,18 +270,23 @@ Partial Class Socios
         '
         'Button2
         '
-        Me.Button2.Location = New System.Drawing.Point(206, 213)
+        Me.Button2.BackgroundImage = Global.pruebaBD.My.Resources.Resources.icons8_editar_archivo_64
+        Me.Button2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center
+        Me.Button2.FlatAppearance.BorderSize = 0
+        Me.Button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button2.Location = New System.Drawing.Point(225, 218)
         Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(120, 24)
+        Me.Button2.Size = New System.Drawing.Size(120, 69)
         Me.Button2.TabIndex = 44
-        Me.Button2.Text = "modificar"
+        Me.ToolTip1.SetToolTip(Me.Button2, "MODIFICAR")
         Me.Button2.UseVisualStyleBackColor = True
         '
         'Socios
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(669, 482)
+        Me.BackColor = System.Drawing.SystemColors.Highlight
+        Me.ClientSize = New System.Drawing.Size(1000, 550)
         Me.Controls.Add(Me.Button2)
         Me.Controls.Add(Me.TextBoxtelefono)
         Me.Controls.Add(Me.TextBoxdireccion)
@@ -313,4 +333,5 @@ Partial Class Socios
     Friend WithEvents DataGridViewTextBoxColumn4 As System.Windows.Forms.DataGridViewTextBoxColumn
     Friend WithEvents DataGridViewTextBoxColumn6 As System.Windows.Forms.DataGridViewTextBoxColumn
     Friend WithEvents Button2 As System.Windows.Forms.Button
+    Friend WithEvents ToolTip1 As System.Windows.Forms.ToolTip
 End Class

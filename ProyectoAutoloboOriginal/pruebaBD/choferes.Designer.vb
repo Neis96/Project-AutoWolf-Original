@@ -28,7 +28,6 @@ Partial Class choferes
         Dim DniLabel As System.Windows.Forms.Label
         Dim NombreLabel As System.Windows.Forms.Label
         Dim ApellidoLabel As System.Windows.Forms.Label
-        Dim Id_choferLabel As System.Windows.Forms.Label
         Me.ChoferBindingSource = New System.Windows.Forms.BindingSource(Me.components)
         Me.Database1DataSet = New pruebaBD.Database1DataSet()
         Me.TelefonoTextBox = New System.Windows.Forms.TextBox()
@@ -36,17 +35,16 @@ Partial Class choferes
         Me.DniTextBox = New System.Windows.Forms.TextBox()
         Me.NombreTextBox = New System.Windows.Forms.TextBox()
         Me.ApellidoTextBox = New System.Windows.Forms.TextBox()
-        Me.Id_choferTextBox = New System.Windows.Forms.TextBox()
-        Me.ButtonSocios = New System.Windows.Forms.Button()
-        Me.Button1 = New System.Windows.Forms.Button()
         Me.ChoferTableAdapter = New pruebaBD.Database1DataSetTableAdapters.ChoferTableAdapter()
         Me.TableAdapterManager = New pruebaBD.Database1DataSetTableAdapters.TableAdapterManager()
+        Me.ToolTip1 = New System.Windows.Forms.ToolTip(Me.components)
+        Me.Button1 = New System.Windows.Forms.Button()
+        Me.ButtonSocios = New System.Windows.Forms.Button()
         TelefonoLabel = New System.Windows.Forms.Label()
         DireccionLabel = New System.Windows.Forms.Label()
         DniLabel = New System.Windows.Forms.Label()
         NombreLabel = New System.Windows.Forms.Label()
         ApellidoLabel = New System.Windows.Forms.Label()
-        Id_choferLabel = New System.Windows.Forms.Label()
         CType(Me.ChoferBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.Database1DataSet, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
@@ -54,56 +52,52 @@ Partial Class choferes
         'TelefonoLabel
         '
         TelefonoLabel.AutoSize = True
-        TelefonoLabel.Location = New System.Drawing.Point(148, 175)
+        TelefonoLabel.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        TelefonoLabel.Location = New System.Drawing.Point(132, 175)
         TelefonoLabel.Name = "TelefonoLabel"
-        TelefonoLabel.Size = New System.Drawing.Size(48, 13)
+        TelefonoLabel.Size = New System.Drawing.Size(72, 17)
         TelefonoLabel.TabIndex = 3
         TelefonoLabel.Text = "telefono:"
         '
         'DireccionLabel
         '
         DireccionLabel.AutoSize = True
-        DireccionLabel.Location = New System.Drawing.Point(148, 211)
+        DireccionLabel.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DireccionLabel.Location = New System.Drawing.Point(132, 211)
         DireccionLabel.Name = "DireccionLabel"
-        DireccionLabel.Size = New System.Drawing.Size(53, 13)
+        DireccionLabel.Size = New System.Drawing.Size(79, 17)
         DireccionLabel.TabIndex = 5
         DireccionLabel.Text = "direccion:"
         '
         'DniLabel
         '
         DniLabel.AutoSize = True
-        DniLabel.Location = New System.Drawing.Point(148, 137)
+        DniLabel.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DniLabel.Location = New System.Drawing.Point(132, 137)
         DniLabel.Name = "DniLabel"
-        DniLabel.Size = New System.Drawing.Size(24, 13)
+        DniLabel.Size = New System.Drawing.Size(35, 17)
         DniLabel.TabIndex = 7
         DniLabel.Text = "dni:"
         '
         'NombreLabel
         '
         NombreLabel.AutoSize = True
-        NombreLabel.Location = New System.Drawing.Point(148, 68)
+        NombreLabel.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        NombreLabel.Location = New System.Drawing.Point(132, 68)
         NombreLabel.Name = "NombreLabel"
-        NombreLabel.Size = New System.Drawing.Size(45, 13)
+        NombreLabel.Size = New System.Drawing.Size(67, 17)
         NombreLabel.TabIndex = 9
         NombreLabel.Text = "nombre:"
         '
         'ApellidoLabel
         '
         ApellidoLabel.AutoSize = True
-        ApellidoLabel.Location = New System.Drawing.Point(148, 102)
+        ApellidoLabel.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        ApellidoLabel.Location = New System.Drawing.Point(132, 102)
         ApellidoLabel.Name = "ApellidoLabel"
-        ApellidoLabel.Size = New System.Drawing.Size(46, 13)
+        ApellidoLabel.Size = New System.Drawing.Size(70, 17)
         ApellidoLabel.TabIndex = 11
         ApellidoLabel.Text = "apellido:"
-        '
-        'Id_choferLabel
-        '
-        Id_choferLabel.AutoSize = True
-        Id_choferLabel.Location = New System.Drawing.Point(148, 36)
-        Id_choferLabel.Name = "Id_choferLabel"
-        Id_choferLabel.Size = New System.Drawing.Size(51, 13)
-        Id_choferLabel.TabIndex = 13
-        Id_choferLabel.Text = "id chofer:"
         '
         'ChoferBindingSource
         '
@@ -155,32 +149,6 @@ Partial Class choferes
         Me.ApellidoTextBox.Size = New System.Drawing.Size(126, 20)
         Me.ApellidoTextBox.TabIndex = 12
         '
-        'Id_choferTextBox
-        '
-        Me.Id_choferTextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.ChoferBindingSource, "id_chofer", True))
-        Me.Id_choferTextBox.Location = New System.Drawing.Point(215, 33)
-        Me.Id_choferTextBox.Name = "Id_choferTextBox"
-        Me.Id_choferTextBox.Size = New System.Drawing.Size(126, 20)
-        Me.Id_choferTextBox.TabIndex = 14
-        '
-        'ButtonSocios
-        '
-        Me.ButtonSocios.Location = New System.Drawing.Point(117, 300)
-        Me.ButtonSocios.Name = "ButtonSocios"
-        Me.ButtonSocios.Size = New System.Drawing.Size(106, 68)
-        Me.ButtonSocios.TabIndex = 16
-        Me.ButtonSocios.Text = "agregar"
-        Me.ButtonSocios.UseVisualStyleBackColor = True
-        '
-        'Button1
-        '
-        Me.Button1.Location = New System.Drawing.Point(317, 300)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(95, 68)
-        Me.Button1.TabIndex = 17
-        Me.Button1.Text = "modificar"
-        Me.Button1.UseVisualStyleBackColor = True
-        '
         'ChoferTableAdapter
         '
         Me.ChoferTableAdapter.ClearBeforeFill = True
@@ -195,15 +163,43 @@ Partial Class choferes
         Me.TableAdapterManager.SociosTableAdapter = Nothing
         Me.TableAdapterManager.TablaDeTurnoTableAdapter = Nothing
         Me.TableAdapterManager.UpdateOrder = pruebaBD.Database1DataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete
+        Me.TableAdapterManager.Usuario1TableAdapter = Nothing
         Me.TableAdapterManager.UsuarioTableAdapter = Nothing
         Me.TableAdapterManager.ValoresTableAdapter = Nothing
         Me.TableAdapterManager.VehiculoTableAdapter = Nothing
         Me.TableAdapterManager.ViajesTableAdapter = Nothing
         '
+        'Button1
+        '
+        Me.Button1.BackgroundImage = Global.pruebaBD.My.Resources.Resources.icons8_editar_archivo_64
+        Me.Button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center
+        Me.Button1.FlatAppearance.BorderSize = 0
+        Me.Button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button1.Location = New System.Drawing.Point(303, 289)
+        Me.Button1.Name = "Button1"
+        Me.Button1.Size = New System.Drawing.Size(95, 95)
+        Me.Button1.TabIndex = 17
+        Me.ToolTip1.SetToolTip(Me.Button1, "MODIFICAR")
+        Me.Button1.UseVisualStyleBackColor = True
+        '
+        'ButtonSocios
+        '
+        Me.ButtonSocios.BackgroundImage = Global.pruebaBD.My.Resources.Resources.icons8_más_2_matemáticas_80
+        Me.ButtonSocios.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center
+        Me.ButtonSocios.FlatAppearance.BorderSize = 0
+        Me.ButtonSocios.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.ButtonSocios.Location = New System.Drawing.Point(117, 300)
+        Me.ButtonSocios.Name = "ButtonSocios"
+        Me.ButtonSocios.Size = New System.Drawing.Size(106, 84)
+        Me.ButtonSocios.TabIndex = 16
+        Me.ToolTip1.SetToolTip(Me.ButtonSocios, "AGREAR")
+        Me.ButtonSocios.UseVisualStyleBackColor = True
+        '
         'choferes
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+        Me.BackColor = System.Drawing.SystemColors.MenuHighlight
         Me.ClientSize = New System.Drawing.Size(531, 450)
         Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.ButtonSocios)
@@ -217,8 +213,6 @@ Partial Class choferes
         Me.Controls.Add(Me.NombreTextBox)
         Me.Controls.Add(ApellidoLabel)
         Me.Controls.Add(Me.ApellidoTextBox)
-        Me.Controls.Add(Id_choferLabel)
-        Me.Controls.Add(Me.Id_choferTextBox)
         Me.Name = "choferes"
         Me.Text = "choferes"
         CType(Me.ChoferBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
@@ -236,8 +230,8 @@ Partial Class choferes
     Friend WithEvents DniTextBox As System.Windows.Forms.TextBox
     Friend WithEvents NombreTextBox As System.Windows.Forms.TextBox
     Friend WithEvents ApellidoTextBox As System.Windows.Forms.TextBox
-    Friend WithEvents Id_choferTextBox As System.Windows.Forms.TextBox
     Friend WithEvents DataGridViewTextBoxColumn1 As System.Windows.Forms.DataGridViewTextBoxColumn
     Friend WithEvents ButtonSocios As System.Windows.Forms.Button
     Friend WithEvents Button1 As System.Windows.Forms.Button
+    Friend WithEvents ToolTip1 As System.Windows.Forms.ToolTip
 End Class

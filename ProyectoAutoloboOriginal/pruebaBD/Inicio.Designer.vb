@@ -23,10 +23,6 @@ Partial Class Inicio
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
-        Me.BtnViajes = New System.Windows.Forms.Button()
-        Me.BtnSocio = New System.Windows.Forms.Button()
-        Me.BtnChoferes = New System.Windows.Forms.Button()
-        Me.BtnVehiculos = New System.Windows.Forms.Button()
         Me.MenuStrip1 = New System.Windows.Forms.MenuStrip()
         Me.ArchivoToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ViajesF1ToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
@@ -35,68 +31,37 @@ Partial Class Inicio
         Me.VehiculosF4ToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.VerToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ResumenToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
-        Me.LiquidacionCtaCteToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
+        Me.LiquidacionChoferToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
+        Me.AgenciaToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ResumenToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.LiquidacionChoferToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.LiquidacionCtaCteToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ModificarChoferesToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.AyudaToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ConfiguracionToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.CrearUsuariosToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ModificarValoresToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.LiquidacionCtaCteToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
         Me.DgvEstado = New System.Windows.Forms.DataGridView()
         Me.DgvReserva = New System.Windows.Forms.DataGridView()
         Me.ViajesBindingSource = New System.Windows.Forms.BindingSource(Me.components)
         Me.Database1DataSet = New pruebaBD.Database1DataSet()
         Me.TableAdapterManager = New pruebaBD.Database1DataSetTableAdapters.TableAdapterManager()
         Me.ViajesTableAdapter = New pruebaBD.Database1DataSetTableAdapters.ViajesTableAdapter()
-
-        Me.ModificarChoferesToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-
-        Me.LiquidacionChoferToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
-        Me.AgenciaToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-
+        Me.ToolTip1 = New System.Windows.Forms.ToolTip(Me.components)
+        Me.CerrarSesionToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.Button1 = New System.Windows.Forms.Button()
+        Me.BtnVehiculos = New System.Windows.Forms.Button()
+        Me.BtnChoferes = New System.Windows.Forms.Button()
+        Me.BtnSocio = New System.Windows.Forms.Button()
+        Me.BtnViajes = New System.Windows.Forms.Button()
+        Me.ToolTip2 = New System.Windows.Forms.ToolTip(Me.components)
         Me.MenuStrip1.SuspendLayout()
         CType(Me.DgvEstado, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.DgvReserva, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.ViajesBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.Database1DataSet, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
-        '
-        'BtnViajes
-        '
-        Me.BtnViajes.Location = New System.Drawing.Point(29, 147)
-        Me.BtnViajes.Name = "BtnViajes"
-        Me.BtnViajes.Size = New System.Drawing.Size(104, 58)
-        Me.BtnViajes.TabIndex = 0
-        Me.BtnViajes.Text = "Viajes"
-        Me.BtnViajes.UseVisualStyleBackColor = True
-        '
-        'BtnSocio
-        '
-        Me.BtnSocio.Location = New System.Drawing.Point(29, 235)
-        Me.BtnSocio.Name = "BtnSocio"
-        Me.BtnSocio.Size = New System.Drawing.Size(104, 59)
-        Me.BtnSocio.TabIndex = 1
-        Me.BtnSocio.Text = "Socio"
-        Me.BtnSocio.UseVisualStyleBackColor = True
-        '
-        'BtnChoferes
-        '
-        Me.BtnChoferes.Location = New System.Drawing.Point(29, 325)
-        Me.BtnChoferes.Name = "BtnChoferes"
-        Me.BtnChoferes.Size = New System.Drawing.Size(104, 58)
-        Me.BtnChoferes.TabIndex = 2
-        Me.BtnChoferes.Text = "Choferes"
-        Me.BtnChoferes.UseVisualStyleBackColor = True
-        '
-        'BtnVehiculos
-        '
-        Me.BtnVehiculos.Location = New System.Drawing.Point(29, 413)
-        Me.BtnVehiculos.Name = "BtnVehiculos"
-        Me.BtnVehiculos.Size = New System.Drawing.Size(104, 63)
-        Me.BtnVehiculos.TabIndex = 3
-        Me.BtnVehiculos.Text = "Vehiculos"
-        Me.BtnVehiculos.UseVisualStyleBackColor = True
         '
         'MenuStrip1
         '
@@ -117,57 +82,52 @@ Partial Class Inicio
         'ViajesF1ToolStripMenuItem
         '
         Me.ViajesF1ToolStripMenuItem.Name = "ViajesF1ToolStripMenuItem"
-
-        Me.ViajesF1ToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
-
-
+        Me.ViajesF1ToolStripMenuItem.Size = New System.Drawing.Size(139, 22)
         Me.ViajesF1ToolStripMenuItem.Text = "Viajes F1"
         '
         'SociosF2ToolStripMenuItem
         '
         Me.SociosF2ToolStripMenuItem.Name = "SociosF2ToolStripMenuItem"
-
-        Me.SociosF2ToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
-
+        Me.SociosF2ToolStripMenuItem.Size = New System.Drawing.Size(139, 22)
         Me.SociosF2ToolStripMenuItem.Text = "Socios     F2"
         '
         'ChoferesF3ToolStripMenuItem
         '
         Me.ChoferesF3ToolStripMenuItem.Name = "ChoferesF3ToolStripMenuItem"
-
-        Me.ChoferesF3ToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
-
+        Me.ChoferesF3ToolStripMenuItem.Size = New System.Drawing.Size(139, 22)
         Me.ChoferesF3ToolStripMenuItem.Text = "Choferes F3"
         '
         'VehiculosF4ToolStripMenuItem
         '
         Me.VehiculosF4ToolStripMenuItem.Name = "VehiculosF4ToolStripMenuItem"
-
-        Me.VehiculosF4ToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
-
+        Me.VehiculosF4ToolStripMenuItem.Size = New System.Drawing.Size(139, 22)
         Me.VehiculosF4ToolStripMenuItem.Text = "Vehiculos F4"
         '
         'VerToolStripMenuItem
         '
         Me.VerToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ResumenToolStripMenuItem1})
         Me.VerToolStripMenuItem.Name = "VerToolStripMenuItem"
-        Me.VerToolStripMenuItem.Size = New System.Drawing.Size(36, 20)
+        Me.VerToolStripMenuItem.Size = New System.Drawing.Size(35, 20)
         Me.VerToolStripMenuItem.Text = "Ver"
         '
         'ResumenToolStripMenuItem1
         '
-
         Me.ResumenToolStripMenuItem1.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.LiquidacionChoferToolStripMenuItem1, Me.AgenciaToolStripMenuItem})
-
         Me.ResumenToolStripMenuItem1.Name = "ResumenToolStripMenuItem1"
-        Me.ResumenToolStripMenuItem1.Size = New System.Drawing.Size(152, 22)
+        Me.ResumenToolStripMenuItem1.Size = New System.Drawing.Size(123, 22)
         Me.ResumenToolStripMenuItem1.Text = "Resumen"
         '
-        'LiquidacionCtaCteToolStripMenuItem1
+        'LiquidacionChoferToolStripMenuItem1
         '
-        Me.LiquidacionCtaCteToolStripMenuItem1.Name = "LiquidacionCtaCteToolStripMenuItem1"
-        Me.LiquidacionCtaCteToolStripMenuItem1.Size = New System.Drawing.Size(178, 22)
-        Me.LiquidacionCtaCteToolStripMenuItem1.Text = "Liquidacion Cta Cte"
+        Me.LiquidacionChoferToolStripMenuItem1.Name = "LiquidacionChoferToolStripMenuItem1"
+        Me.LiquidacionChoferToolStripMenuItem1.Size = New System.Drawing.Size(173, 22)
+        Me.LiquidacionChoferToolStripMenuItem1.Text = "Liquidacion chofer"
+        '
+        'AgenciaToolStripMenuItem
+        '
+        Me.AgenciaToolStripMenuItem.Name = "AgenciaToolStripMenuItem"
+        Me.AgenciaToolStripMenuItem.Size = New System.Drawing.Size(173, 22)
+        Me.AgenciaToolStripMenuItem.Text = "Agencia"
         '
         'ResumenToolStripMenuItem
         '
@@ -188,6 +148,12 @@ Partial Class Inicio
         Me.LiquidacionCtaCteToolStripMenuItem.Size = New System.Drawing.Size(178, 22)
         Me.LiquidacionCtaCteToolStripMenuItem.Text = "Liquidacion Cta Cte"
         '
+        'ModificarChoferesToolStripMenuItem
+        '
+        Me.ModificarChoferesToolStripMenuItem.Name = "ModificarChoferesToolStripMenuItem"
+        Me.ModificarChoferesToolStripMenuItem.Size = New System.Drawing.Size(178, 22)
+        Me.ModificarChoferesToolStripMenuItem.Text = "Modificar Choferes"
+        '
         'AyudaToolStripMenuItem
         '
         Me.AyudaToolStripMenuItem.Name = "AyudaToolStripMenuItem"
@@ -196,7 +162,7 @@ Partial Class Inicio
         '
         'ConfiguracionToolStripMenuItem
         '
-        Me.ConfiguracionToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.CrearUsuariosToolStripMenuItem, Me.ModificarValoresToolStripMenuItem})
+        Me.ConfiguracionToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.CrearUsuariosToolStripMenuItem, Me.ModificarValoresToolStripMenuItem, Me.CerrarSesionToolStripMenuItem})
         Me.ConfiguracionToolStripMenuItem.Name = "ConfiguracionToolStripMenuItem"
         Me.ConfiguracionToolStripMenuItem.Size = New System.Drawing.Size(95, 20)
         Me.ConfiguracionToolStripMenuItem.Text = "Configuracion"
@@ -204,18 +170,20 @@ Partial Class Inicio
         'CrearUsuariosToolStripMenuItem
         '
         Me.CrearUsuariosToolStripMenuItem.Name = "CrearUsuariosToolStripMenuItem"
-
-        Me.CrearUsuariosToolStripMenuItem.Size = New System.Drawing.Size(166, 22)
-
+        Me.CrearUsuariosToolStripMenuItem.Size = New System.Drawing.Size(165, 22)
         Me.CrearUsuariosToolStripMenuItem.Text = "Crear Usuarios"
         '
         'ModificarValoresToolStripMenuItem
         '
         Me.ModificarValoresToolStripMenuItem.Name = "ModificarValoresToolStripMenuItem"
-
-        Me.ModificarValoresToolStripMenuItem.Size = New System.Drawing.Size(166, 22)
-
+        Me.ModificarValoresToolStripMenuItem.Size = New System.Drawing.Size(165, 22)
         Me.ModificarValoresToolStripMenuItem.Text = "Modificar Valores"
+        '
+        'LiquidacionCtaCteToolStripMenuItem1
+        '
+        Me.LiquidacionCtaCteToolStripMenuItem1.Name = "LiquidacionCtaCteToolStripMenuItem1"
+        Me.LiquidacionCtaCteToolStripMenuItem1.Size = New System.Drawing.Size(178, 22)
+        Me.LiquidacionCtaCteToolStripMenuItem1.Text = "Liquidacion Cta Cte"
         '
         'DgvEstado
         '
@@ -254,6 +222,7 @@ Partial Class Inicio
         Me.TableAdapterManager.SociosTableAdapter = Nothing
         Me.TableAdapterManager.TablaDeTurnoTableAdapter = Nothing
         Me.TableAdapterManager.UpdateOrder = pruebaBD.Database1DataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete
+        Me.TableAdapterManager.Usuario1TableAdapter = Nothing
         Me.TableAdapterManager.UsuarioTableAdapter = Nothing
         Me.TableAdapterManager.ValoresTableAdapter = Nothing
         Me.TableAdapterManager.VehiculoTableAdapter = Nothing
@@ -263,31 +232,84 @@ Partial Class Inicio
         '
         Me.ViajesTableAdapter.ClearBeforeFill = True
         '
-
-        'ModificarChoferesToolStripMenuItem
+        'CerrarSesionToolStripMenuItem
         '
-        Me.ModificarChoferesToolStripMenuItem.Name = "ModificarChoferesToolStripMenuItem"
-        Me.ModificarChoferesToolStripMenuItem.Size = New System.Drawing.Size(178, 22)
-        Me.ModificarChoferesToolStripMenuItem.Text = "Modificar Choferes"
-
-        'LiquidacionChoferToolStripMenuItem1
+        Me.CerrarSesionToolStripMenuItem.Name = "CerrarSesionToolStripMenuItem"
+        Me.CerrarSesionToolStripMenuItem.Size = New System.Drawing.Size(165, 22)
+        Me.CerrarSesionToolStripMenuItem.Text = "Cerrar Sesion"
         '
-        Me.LiquidacionChoferToolStripMenuItem1.Name = "LiquidacionChoferToolStripMenuItem1"
-        Me.LiquidacionChoferToolStripMenuItem1.Size = New System.Drawing.Size(173, 22)
-        Me.LiquidacionChoferToolStripMenuItem1.Text = "Liquidacion chofer"
+        'Button1
         '
-        'AgenciaToolStripMenuItem
+        Me.Button1.BackgroundImage = Global.pruebaBD.My.Resources.Resources.icons8_señal_de_salida_filled_100
+        Me.Button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center
+        Me.Button1.FlatAppearance.BorderSize = 0
+        Me.Button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button1.Location = New System.Drawing.Point(924, 463)
+        Me.Button1.Name = "Button1"
+        Me.Button1.Size = New System.Drawing.Size(118, 109)
+        Me.Button1.TabIndex = 13
+        Me.ToolTip1.SetToolTip(Me.Button1, "SALIR")
+        Me.Button1.UseVisualStyleBackColor = True
         '
-        Me.AgenciaToolStripMenuItem.Name = "AgenciaToolStripMenuItem"
-        Me.AgenciaToolStripMenuItem.Size = New System.Drawing.Size(173, 22)
-        Me.AgenciaToolStripMenuItem.Text = "Agencia"
-
+        'BtnVehiculos
+        '
+        Me.BtnVehiculos.BackgroundImage = Global.pruebaBD.My.Resources.Resources.icons8_volante_64
+        Me.BtnVehiculos.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center
+        Me.BtnVehiculos.FlatAppearance.BorderSize = 0
+        Me.BtnVehiculos.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.BtnVehiculos.Location = New System.Drawing.Point(29, 458)
+        Me.BtnVehiculos.Name = "BtnVehiculos"
+        Me.BtnVehiculos.Size = New System.Drawing.Size(104, 81)
+        Me.BtnVehiculos.TabIndex = 3
+        Me.ToolTip1.SetToolTip(Me.BtnVehiculos, "VEHICULOS")
+        Me.BtnVehiculos.UseVisualStyleBackColor = True
+        '
+        'BtnChoferes
+        '
+        Me.BtnChoferes.BackgroundImage = Global.pruebaBD.My.Resources.Resources.icons8_conductor_80
+        Me.BtnChoferes.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center
+        Me.BtnChoferes.FlatAppearance.BorderSize = 0
+        Me.BtnChoferes.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.BtnChoferes.Location = New System.Drawing.Point(29, 329)
+        Me.BtnChoferes.Name = "BtnChoferes"
+        Me.BtnChoferes.Size = New System.Drawing.Size(104, 85)
+        Me.BtnChoferes.TabIndex = 2
+        Me.ToolTip1.SetToolTip(Me.BtnChoferes, "CHOFERES")
+        Me.BtnChoferes.UseVisualStyleBackColor = True
+        '
+        'BtnSocio
+        '
+        Me.BtnSocio.BackgroundImage = Global.pruebaBD.My.Resources.Resources.icons8_agregar_usuario_grupo_mujer_hombre_64
+        Me.BtnSocio.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center
+        Me.BtnSocio.FlatAppearance.BorderSize = 0
+        Me.BtnSocio.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.BtnSocio.Location = New System.Drawing.Point(29, 225)
+        Me.BtnSocio.Name = "BtnSocio"
+        Me.BtnSocio.Size = New System.Drawing.Size(104, 84)
+        Me.BtnSocio.TabIndex = 1
+        Me.ToolTip1.SetToolTip(Me.BtnSocio, "SOCIOS")
+        Me.BtnSocio.UseVisualStyleBackColor = True
+        '
+        'BtnViajes
+        '
+        Me.BtnViajes.BackgroundImage = Global.pruebaBD.My.Resources.Resources.icons8_garaje_80
+        Me.BtnViajes.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center
+        Me.BtnViajes.FlatAppearance.BorderSize = 0
+        Me.BtnViajes.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.BtnViajes.Location = New System.Drawing.Point(29, 106)
+        Me.BtnViajes.Name = "BtnViajes"
+        Me.BtnViajes.Size = New System.Drawing.Size(104, 101)
+        Me.BtnViajes.TabIndex = 0
+        Me.ToolTip1.SetToolTip(Me.BtnViajes, "VIAJES")
+        Me.BtnViajes.UseVisualStyleBackColor = True
         '
         'Inicio
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+        Me.BackColor = System.Drawing.SystemColors.Highlight
         Me.ClientSize = New System.Drawing.Size(1054, 627)
+        Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.DgvReserva)
         Me.Controls.Add(Me.DgvEstado)
         Me.Controls.Add(Me.BtnVehiculos)
@@ -342,5 +364,9 @@ Partial Class Inicio
 
     Friend WithEvents LiquidacionChoferToolStripMenuItem1 As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents AgenciaToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents ToolTip1 As System.Windows.Forms.ToolTip
+    Friend WithEvents CerrarSesionToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents Button1 As System.Windows.Forms.Button
+    Friend WithEvents ToolTip2 As System.Windows.Forms.ToolTip
 
 End Class

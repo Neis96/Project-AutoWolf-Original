@@ -94,4 +94,27 @@
         vista.RowFilter = "Registro = " & Val(Me.TextBox1.Text)
         Me.ViajesDataGridView.DataSource = vista 'ACTUALIZO LA GRILLA
     End Sub
+
+    Private Sub BtnEliminar_Click(sender As System.Object, e As System.EventArgs) Handles BtnEliminar.Click
+        Dim fila, codConsulta, aux As Integer
+        codConsulta = TextBox1.Text
+        fila = Me.ViajesBindingSource.Find("Registro", codConsulta)
+        If fila = -1 Then
+            'no se encuentra
+            MsgBox("no se encontro")
+        Else
+            'lo encontro
+            Me.ViajesBindingSource.Position = fila 'situo el puntero en la fila buscada
+            aux = MsgBox("Quiere eliminar?" & "" & codConsulta)
+            If aux = 1 Then 'apreto si
+                Me.ViajesBindingSource.RemoveCurrent() 'borra el registro donde estas situado
+                Me.ViajesBindingSource.EndEdit() 'cierro bd
+                Me.TableAdapterManager.UpdateAll(Me.Database1DataSet) 'guarda 
+
+                Me.ViajesTableAdapter.Fill(Me.Database1DataSet.Viajes) ' actualiza el form anterior
+
+
+            End If
+        End If
+    End Sub
 End Class

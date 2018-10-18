@@ -40,6 +40,7 @@ Partial Class ResumenCtaCte
         Me.DataGridViewTextBoxColumn3 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.DataGridViewTextBoxColumn4 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.DataGridViewTextBoxColumn5 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.ToolTip1 = New System.Windows.Forms.ToolTip(Me.components)
         CType(Me.Database1DataSet, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.LiqCtaCtrBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.LiqCtaCtrDataGridView, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -69,6 +70,7 @@ Partial Class ResumenCtaCte
         Me.TableAdapterManager.SociosTableAdapter = Nothing
         Me.TableAdapterManager.TablaDeTurnoTableAdapter = Nothing
         Me.TableAdapterManager.UpdateOrder = pruebaBD.Database1DataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete
+        Me.TableAdapterManager.Usuario1TableAdapter = Nothing
         Me.TableAdapterManager.UsuarioTableAdapter = Nothing
         Me.TableAdapterManager.ValoresTableAdapter = Nothing
         Me.TableAdapterManager.VehiculoTableAdapter = Nothing
@@ -76,11 +78,15 @@ Partial Class ResumenCtaCte
         '
         'BtnConsulta
         '
+        Me.BtnConsulta.BackgroundImage = Global.pruebaBD.My.Resources.Resources.icons8_google_web_search_64
+        Me.BtnConsulta.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center
+        Me.BtnConsulta.FlatAppearance.BorderSize = 0
+        Me.BtnConsulta.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.BtnConsulta.Location = New System.Drawing.Point(236, 228)
         Me.BtnConsulta.Name = "BtnConsulta"
-        Me.BtnConsulta.Size = New System.Drawing.Size(105, 60)
+        Me.BtnConsulta.Size = New System.Drawing.Size(105, 75)
         Me.BtnConsulta.TabIndex = 2
-        Me.BtnConsulta.Text = "Consultar"
+        Me.ToolTip1.SetToolTip(Me.BtnConsulta, "CONSULTAR")
         Me.BtnConsulta.UseVisualStyleBackColor = True
         '
         'Socio
@@ -109,27 +115,30 @@ Partial Class ResumenCtaCte
         'Label1
         '
         Me.Label1.AutoSize = True
+        Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label1.Location = New System.Drawing.Point(215, 97)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(44, 13)
+        Me.Label1.Size = New System.Drawing.Size(64, 17)
         Me.Label1.TabIndex = 6
         Me.Label1.Text = "Id socio"
         '
         'Label2
         '
         Me.Label2.AutoSize = True
+        Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label2.Location = New System.Drawing.Point(215, 140)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(38, 13)
+        Me.Label2.Size = New System.Drawing.Size(54, 17)
         Me.Label2.TabIndex = 7
         Me.Label2.Text = "Desde"
         '
         'Label3
         '
         Me.Label3.AutoSize = True
+        Me.Label3.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label3.Location = New System.Drawing.Point(215, 180)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(35, 13)
+        Me.Label3.Size = New System.Drawing.Size(50, 17)
         Me.Label3.TabIndex = 8
         Me.Label3.Text = "Hasta"
         '
@@ -179,6 +188,7 @@ Partial Class ResumenCtaCte
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+        Me.BackColor = System.Drawing.SystemColors.Highlight
         Me.ClientSize = New System.Drawing.Size(566, 618)
         Me.Controls.Add(Me.LiqCtaCtrDataGridView)
         Me.Controls.Add(Me.Label3)
@@ -214,4 +224,5 @@ Partial Class ResumenCtaCte
     Friend WithEvents DataGridViewTextBoxColumn3 As System.Windows.Forms.DataGridViewTextBoxColumn
     Friend WithEvents DataGridViewTextBoxColumn4 As System.Windows.Forms.DataGridViewTextBoxColumn
     Friend WithEvents DataGridViewTextBoxColumn5 As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents ToolTip1 As System.Windows.Forms.ToolTip
 End Class

@@ -49,6 +49,8 @@ Partial Class LiquidacionCta
         Me.TextBoxTotal = New System.Windows.Forms.TextBox()
         Me.LiqCtaCtrBindingSource = New System.Windows.Forms.BindingSource(Me.components)
         Me.LiqCtaCtrTableAdapter = New pruebaBD.Database1DataSetTableAdapters.LiqCtaCtrTableAdapter()
+        Me.ToolTip1 = New System.Windows.Forms.ToolTip(Me.components)
+        Me.Label4 = New System.Windows.Forms.Label()
         CType(Me.Viajes2DataGridView, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.ViajesBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.Database1DataSet, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -57,7 +59,7 @@ Partial Class LiquidacionCta
         '
         'TextSocio
         '
-        Me.TextSocio.Location = New System.Drawing.Point(152, 36)
+        Me.TextSocio.Location = New System.Drawing.Point(218, 35)
         Me.TextSocio.Name = "TextSocio"
         Me.TextSocio.Size = New System.Drawing.Size(100, 20)
         Me.TextSocio.TabIndex = 1
@@ -65,15 +67,16 @@ Partial Class LiquidacionCta
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(49, 39)
+        Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label1.Location = New System.Drawing.Point(70, 38)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(87, 13)
+        Me.Label1.Size = New System.Drawing.Size(130, 17)
         Me.Label1.TabIndex = 2
         Me.Label1.Text = "Numero de socio"
         '
         'TimePickDesde
         '
-        Me.TimePickDesde.Location = New System.Drawing.Point(152, 80)
+        Me.TimePickDesde.Location = New System.Drawing.Point(178, 80)
         Me.TimePickDesde.Name = "TimePickDesde"
         Me.TimePickDesde.Size = New System.Drawing.Size(200, 20)
         Me.TimePickDesde.TabIndex = 3
@@ -81,16 +84,17 @@ Partial Class LiquidacionCta
         'Label2
         '
         Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(49, 80)
+        Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label2.Location = New System.Drawing.Point(98, 84)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(38, 13)
+        Me.Label2.Size = New System.Drawing.Size(54, 17)
         Me.Label2.TabIndex = 4
         Me.Label2.Text = "Desde"
         '
         'DatePickHasta
         '
         Me.DatePickHasta.Enabled = False
-        Me.DatePickHasta.Location = New System.Drawing.Point(152, 112)
+        Me.DatePickHasta.Location = New System.Drawing.Point(178, 109)
         Me.DatePickHasta.Name = "DatePickHasta"
         Me.DatePickHasta.Size = New System.Drawing.Size(200, 20)
         Me.DatePickHasta.TabIndex = 5
@@ -98,19 +102,24 @@ Partial Class LiquidacionCta
         'Label3
         '
         Me.Label3.AutoSize = True
-        Me.Label3.Location = New System.Drawing.Point(49, 112)
+        Me.Label3.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label3.Location = New System.Drawing.Point(98, 113)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(35, 13)
+        Me.Label3.Size = New System.Drawing.Size(50, 17)
         Me.Label3.TabIndex = 6
         Me.Label3.Text = "Hasta"
         '
         'BtnConsultar
         '
-        Me.BtnConsultar.Location = New System.Drawing.Point(78, 157)
+        Me.BtnConsultar.BackgroundImage = Global.pruebaBD.My.Resources.Resources.icons8_google_web_search_64
+        Me.BtnConsultar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center
+        Me.BtnConsultar.FlatAppearance.BorderSize = 0
+        Me.BtnConsultar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.BtnConsultar.Location = New System.Drawing.Point(569, 75)
         Me.BtnConsultar.Name = "BtnConsultar"
-        Me.BtnConsultar.Size = New System.Drawing.Size(75, 23)
+        Me.BtnConsultar.Size = New System.Drawing.Size(75, 73)
         Me.BtnConsultar.TabIndex = 7
-        Me.BtnConsultar.Text = "Consultar"
+        Me.ToolTip1.SetToolTip(Me.BtnConsultar, "CONSULTAR")
         Me.BtnConsultar.UseVisualStyleBackColor = True
         '
         'Viajes2DataGridView
@@ -203,6 +212,7 @@ Partial Class LiquidacionCta
         Me.TableAdapterManager.SociosTableAdapter = Nothing
         Me.TableAdapterManager.TablaDeTurnoTableAdapter = Nothing
         Me.TableAdapterManager.UpdateOrder = pruebaBD.Database1DataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete
+        Me.TableAdapterManager.Usuario1TableAdapter = Nothing
         Me.TableAdapterManager.UsuarioTableAdapter = Nothing
         Me.TableAdapterManager.ValoresTableAdapter = Nothing
         Me.TableAdapterManager.VehiculoTableAdapter = Nothing
@@ -210,25 +220,33 @@ Partial Class LiquidacionCta
         '
         'BtnCalcular
         '
-        Me.BtnCalcular.Location = New System.Drawing.Point(474, 81)
+        Me.BtnCalcular.BackgroundImage = Global.pruebaBD.My.Resources.Resources.icons8_calculadora_filled_50
+        Me.BtnCalcular.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center
+        Me.BtnCalcular.FlatAppearance.BorderSize = 0
+        Me.BtnCalcular.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.BtnCalcular.Location = New System.Drawing.Point(452, 80)
         Me.BtnCalcular.Name = "BtnCalcular"
-        Me.BtnCalcular.Size = New System.Drawing.Size(75, 23)
+        Me.BtnCalcular.Size = New System.Drawing.Size(75, 63)
         Me.BtnCalcular.TabIndex = 9
-        Me.BtnCalcular.Text = "Calcular"
+        Me.ToolTip1.SetToolTip(Me.BtnCalcular, "CALCULAR")
         Me.BtnCalcular.UseVisualStyleBackColor = True
         '
         'BtnLiquidar
         '
-        Me.BtnLiquidar.Location = New System.Drawing.Point(813, 81)
+        Me.BtnLiquidar.BackgroundImage = Global.pruebaBD.My.Resources.Resources.icons8_montón_de_dinero_48
+        Me.BtnLiquidar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center
+        Me.BtnLiquidar.FlatAppearance.BorderSize = 0
+        Me.BtnLiquidar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.BtnLiquidar.Location = New System.Drawing.Point(698, 80)
         Me.BtnLiquidar.Name = "BtnLiquidar"
-        Me.BtnLiquidar.Size = New System.Drawing.Size(75, 23)
+        Me.BtnLiquidar.Size = New System.Drawing.Size(75, 63)
         Me.BtnLiquidar.TabIndex = 10
-        Me.BtnLiquidar.Text = "Liquidar"
+        Me.ToolTip1.SetToolTip(Me.BtnLiquidar, "LIQUIDAR")
         Me.BtnLiquidar.UseVisualStyleBackColor = True
         '
         'TextBoxTotal
         '
-        Me.TextBoxTotal.Location = New System.Drawing.Point(592, 83)
+        Me.TextBoxTotal.Location = New System.Drawing.Point(178, 158)
         Me.TextBoxTotal.Name = "TextBoxTotal"
         Me.TextBoxTotal.Size = New System.Drawing.Size(181, 20)
         Me.TextBoxTotal.TabIndex = 11
@@ -242,11 +260,23 @@ Partial Class LiquidacionCta
         '
         Me.LiqCtaCtrTableAdapter.ClearBeforeFill = True
         '
+        'Label4
+        '
+        Me.Label4.AutoSize = True
+        Me.Label4.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label4.Location = New System.Drawing.Point(101, 164)
+        Me.Label4.Name = "Label4"
+        Me.Label4.Size = New System.Drawing.Size(45, 17)
+        Me.Label4.TabIndex = 12
+        Me.Label4.Text = "Total"
+        '
         'LiquidacionCta
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+        Me.BackColor = System.Drawing.SystemColors.Highlight
         Me.ClientSize = New System.Drawing.Size(1093, 720)
+        Me.Controls.Add(Me.Label4)
         Me.Controls.Add(Me.TextBoxTotal)
         Me.Controls.Add(Me.BtnLiquidar)
         Me.Controls.Add(Me.BtnCalcular)
@@ -294,4 +324,6 @@ Partial Class LiquidacionCta
     Friend WithEvents TextBoxTotal As System.Windows.Forms.TextBox
     Friend WithEvents LiqCtaCtrBindingSource As System.Windows.Forms.BindingSource
     Friend WithEvents LiqCtaCtrTableAdapter As pruebaBD.Database1DataSetTableAdapters.LiqCtaCtrTableAdapter
+    Friend WithEvents ToolTip1 As System.Windows.Forms.ToolTip
+    Friend WithEvents Label4 As System.Windows.Forms.Label
 End Class

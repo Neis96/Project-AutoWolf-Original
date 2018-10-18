@@ -40,14 +40,12 @@ Partial Class Finalizar_Viaje
         Me.TextBox1 = New System.Windows.Forms.TextBox()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
-        Me.BtnTerminar = New System.Windows.Forms.Button()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.TextBoxTotal = New System.Windows.Forms.TextBox()
         Me.TextBoxKms = New System.Windows.Forms.TextBox()
         Me.TextBox3 = New System.Windows.Forms.TextBox()
         Me.Label4 = New System.Windows.Forms.Label()
         Me.Label5 = New System.Windows.Forms.Label()
-        Me.BtnCalcular = New System.Windows.Forms.Button()
         Me.ViajesTableAdapter = New pruebaBD.Database1DataSetTableAdapters.ViajesTableAdapter()
         Me.TableAdapterManager = New pruebaBD.Database1DataSetTableAdapters.TableAdapterManager()
         Me.ValoresBindingSource = New System.Windows.Forms.BindingSource(Me.components)
@@ -57,6 +55,9 @@ Partial Class Finalizar_Viaje
         Me.TextValorKms = New System.Windows.Forms.TextBox()
         Me.Label7 = New System.Windows.Forms.Label()
         Me.ComboBox1 = New System.Windows.Forms.ComboBox()
+        Me.ToolTip1 = New System.Windows.Forms.ToolTip(Me.components)
+        Me.BtnCalcular = New System.Windows.Forms.Button()
+        Me.BtnTerminar = New System.Windows.Forms.Button()
         CType(Me.ViajesDataGridView, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.ViajesBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.Database1DataSet, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -69,7 +70,7 @@ Partial Class Finalizar_Viaje
         Me.ViajesDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.ViajesDataGridView.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.DataGridViewTextBoxColumn1, Me.DataGridViewTextBoxColumn2, Me.DataGridViewTextBoxColumn9, Me.DataGridViewTextBoxColumn3, Me.DataGridViewTextBoxColumn7, Me.DataGridViewTextBoxColumn8, Me.DataGridViewTextBoxColumn6, Me.DataGridViewTextBoxColumn11, Me.DataGridViewTextBoxColumn4, Me.DataGridViewTextBoxColumn5, Me.DataGridViewTextBoxColumn12})
         Me.ViajesDataGridView.DataSource = Me.ViajesBindingSource
-        Me.ViajesDataGridView.Location = New System.Drawing.Point(51, 295)
+        Me.ViajesDataGridView.Location = New System.Drawing.Point(75, 51)
         Me.ViajesDataGridView.Name = "ViajesDataGridView"
         Me.ViajesDataGridView.Size = New System.Drawing.Size(900, 220)
         Me.ViajesDataGridView.TabIndex = 1
@@ -162,7 +163,7 @@ Partial Class Finalizar_Viaje
         '
         'TextBox1
         '
-        Me.TextBox1.Location = New System.Drawing.Point(218, 27)
+        Me.TextBox1.Location = New System.Drawing.Point(236, 344)
         Me.TextBox1.Name = "TextBox1"
         Me.TextBox1.Size = New System.Drawing.Size(109, 20)
         Me.TextBox1.TabIndex = 2
@@ -170,56 +171,50 @@ Partial Class Finalizar_Viaje
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(98, 30)
+        Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label1.Location = New System.Drawing.Point(82, 347)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(96, 13)
+        Me.Label1.Size = New System.Drawing.Size(148, 17)
         Me.Label1.TabIndex = 4
         Me.Label1.Text = "Numero de registro"
         '
         'Label2
         '
         Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(97, 187)
+        Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label2.Location = New System.Drawing.Point(81, 504)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(40, 13)
+        Me.Label2.Size = New System.Drawing.Size(58, 17)
         Me.Label2.TabIndex = 5
         Me.Label2.Text = "Estado"
-        '
-        'BtnTerminar
-        '
-        Me.BtnTerminar.Location = New System.Drawing.Point(789, 212)
-        Me.BtnTerminar.Name = "BtnTerminar"
-        Me.BtnTerminar.Size = New System.Drawing.Size(98, 36)
-        Me.BtnTerminar.TabIndex = 7
-        Me.BtnTerminar.Text = "Guardar"
-        Me.BtnTerminar.UseVisualStyleBackColor = True
         '
         'Label3
         '
         Me.Label3.AutoSize = True
-        Me.Label3.Location = New System.Drawing.Point(529, 224)
+        Me.Label3.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label3.Location = New System.Drawing.Point(413, 488)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(31, 13)
+        Me.Label3.Size = New System.Drawing.Size(45, 17)
         Me.Label3.TabIndex = 8
         Me.Label3.Text = "Total"
         '
         'TextBoxTotal
         '
-        Me.TextBoxTotal.Location = New System.Drawing.Point(618, 221)
+        Me.TextBoxTotal.Location = New System.Drawing.Point(486, 485)
         Me.TextBoxTotal.Name = "TextBoxTotal"
         Me.TextBoxTotal.Size = New System.Drawing.Size(109, 20)
         Me.TextBoxTotal.TabIndex = 9
         '
         'TextBoxKms
         '
-        Me.TextBoxKms.Location = New System.Drawing.Point(218, 91)
+        Me.TextBoxKms.Location = New System.Drawing.Point(236, 408)
         Me.TextBoxKms.Name = "TextBoxKms"
         Me.TextBoxKms.Size = New System.Drawing.Size(110, 20)
         Me.TextBoxKms.TabIndex = 10
         '
         'TextBox3
         '
-        Me.TextBox3.Location = New System.Drawing.Point(218, 151)
+        Me.TextBox3.Location = New System.Drawing.Point(236, 468)
         Me.TextBox3.Name = "TextBox3"
         Me.TextBox3.Size = New System.Drawing.Size(110, 20)
         Me.TextBox3.TabIndex = 11
@@ -227,29 +222,22 @@ Partial Class Finalizar_Viaje
         'Label4
         '
         Me.Label4.AutoSize = True
-        Me.Label4.Location = New System.Drawing.Point(98, 94)
+        Me.Label4.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label4.Location = New System.Drawing.Point(82, 411)
         Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(77, 13)
+        Me.Label4.Size = New System.Drawing.Size(118, 17)
         Me.Label4.TabIndex = 12
         Me.Label4.Text = "Kms realizados"
         '
         'Label5
         '
         Me.Label5.AutoSize = True
-        Me.Label5.Location = New System.Drawing.Point(98, 151)
+        Me.Label5.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label5.Location = New System.Drawing.Point(82, 468)
         Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(66, 13)
+        Me.Label5.Size = New System.Drawing.Size(101, 17)
         Me.Label5.TabIndex = 13
         Me.Label5.Text = "Valor minimo"
-        '
-        'BtnCalcular
-        '
-        Me.BtnCalcular.Location = New System.Drawing.Point(156, 233)
-        Me.BtnCalcular.Name = "BtnCalcular"
-        Me.BtnCalcular.Size = New System.Drawing.Size(98, 36)
-        Me.BtnCalcular.TabIndex = 14
-        Me.BtnCalcular.Text = "Calcular"
-        Me.BtnCalcular.UseVisualStyleBackColor = True
         '
         'ViajesTableAdapter
         '
@@ -265,6 +253,7 @@ Partial Class Finalizar_Viaje
         Me.TableAdapterManager.SociosTableAdapter = Nothing
         Me.TableAdapterManager.TablaDeTurnoTableAdapter = Nothing
         Me.TableAdapterManager.UpdateOrder = pruebaBD.Database1DataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete
+        Me.TableAdapterManager.Usuario1TableAdapter = Nothing
         Me.TableAdapterManager.UsuarioTableAdapter = Nothing
         Me.TableAdapterManager.ValoresTableAdapter = Nothing
         Me.TableAdapterManager.VehiculoTableAdapter = Nothing
@@ -282,23 +271,24 @@ Partial Class Finalizar_Viaje
         'Label6
         '
         Me.Label6.AutoSize = True
-        Me.Label6.Location = New System.Drawing.Point(98, 63)
+        Me.Label6.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label6.Location = New System.Drawing.Point(82, 380)
         Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(74, 13)
+        Me.Label6.Size = New System.Drawing.Size(110, 17)
         Me.Label6.TabIndex = 16
         Me.Label6.Text = "Fecha destino"
         '
         'HastaPick
         '
         Me.HastaPick.Format = System.Windows.Forms.DateTimePickerFormat.Time
-        Me.HastaPick.Location = New System.Drawing.Point(217, 57)
+        Me.HastaPick.Location = New System.Drawing.Point(235, 374)
         Me.HastaPick.Name = "HastaPick"
         Me.HastaPick.Size = New System.Drawing.Size(110, 20)
         Me.HastaPick.TabIndex = 17
         '
         'TextValorKms
         '
-        Me.TextValorKms.Location = New System.Drawing.Point(218, 120)
+        Me.TextValorKms.Location = New System.Drawing.Point(236, 437)
         Me.TextValorKms.Name = "TextValorKms"
         Me.TextValorKms.Size = New System.Drawing.Size(109, 20)
         Me.TextValorKms.TabIndex = 18
@@ -306,24 +296,52 @@ Partial Class Finalizar_Viaje
         'Label7
         '
         Me.Label7.AutoSize = True
-        Me.Label7.Location = New System.Drawing.Point(98, 123)
+        Me.Label7.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label7.Location = New System.Drawing.Point(82, 440)
         Me.Label7.Name = "Label7"
-        Me.Label7.Size = New System.Drawing.Size(67, 13)
+        Me.Label7.Size = New System.Drawing.Size(102, 17)
         Me.Label7.TabIndex = 19
         Me.Label7.Text = "Valor por Km"
         '
         'ComboBox1
         '
         Me.ComboBox1.FormattingEnabled = True
-        Me.ComboBox1.Location = New System.Drawing.Point(217, 184)
+        Me.ComboBox1.Location = New System.Drawing.Point(235, 501)
         Me.ComboBox1.Name = "ComboBox1"
         Me.ComboBox1.Size = New System.Drawing.Size(111, 21)
         Me.ComboBox1.TabIndex = 20
+        '
+        'BtnCalcular
+        '
+        Me.BtnCalcular.BackgroundImage = Global.pruebaBD.My.Resources.Resources.icons8_calculadora_filled_100
+        Me.BtnCalcular.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center
+        Me.BtnCalcular.FlatAppearance.BorderSize = 0
+        Me.BtnCalcular.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.BtnCalcular.Location = New System.Drawing.Point(648, 421)
+        Me.BtnCalcular.Name = "BtnCalcular"
+        Me.BtnCalcular.Size = New System.Drawing.Size(104, 91)
+        Me.BtnCalcular.TabIndex = 14
+        Me.ToolTip1.SetToolTip(Me.BtnCalcular, "CALCULAR")
+        Me.BtnCalcular.UseVisualStyleBackColor = True
+        '
+        'BtnTerminar
+        '
+        Me.BtnTerminar.BackgroundImage = Global.pruebaBD.My.Resources.Resources.icons8_más_2_matemáticas_80
+        Me.BtnTerminar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center
+        Me.BtnTerminar.FlatAppearance.BorderSize = 0
+        Me.BtnTerminar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.BtnTerminar.Location = New System.Drawing.Point(794, 434)
+        Me.BtnTerminar.Name = "BtnTerminar"
+        Me.BtnTerminar.Size = New System.Drawing.Size(98, 85)
+        Me.BtnTerminar.TabIndex = 7
+        Me.ToolTip1.SetToolTip(Me.BtnTerminar, "GUARDAR")
+        Me.BtnTerminar.UseVisualStyleBackColor = True
         '
         'Finalizar_Viaje
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+        Me.BackColor = System.Drawing.SystemColors.Highlight
         Me.ClientSize = New System.Drawing.Size(1058, 569)
         Me.Controls.Add(Me.ComboBox1)
         Me.Controls.Add(Me.Label7)
@@ -386,4 +404,5 @@ Partial Class Finalizar_Viaje
     Friend WithEvents TextValorKms As System.Windows.Forms.TextBox
     Friend WithEvents Label7 As System.Windows.Forms.Label
     Friend WithEvents ComboBox1 As System.Windows.Forms.ComboBox
+    Friend WithEvents ToolTip1 As System.Windows.Forms.ToolTip
 End Class

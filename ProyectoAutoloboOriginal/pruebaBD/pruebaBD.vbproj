@@ -203,12 +203,6 @@
     <Compile Include="Resumen Chofer.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Resumen.Designer.vb">
-      <DependentUpon>Resumen.vb</DependentUpon>
-    </Compile>
-    <Compile Include="Resumen.vb">
-      <SubType>Form</SubType>
-    </Compile>
     <Compile Include="ResumenCtaCte.Designer.vb">
       <DependentUpon>ResumenCtaCte.vb</DependentUpon>
     </Compile>
@@ -292,9 +286,6 @@
     <EmbeddedResource Include="Resumen Chofer.resx">
       <DependentUpon>Resumen Chofer.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Resumen.resx">
-      <DependentUpon>Resumen.vb</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="ResumenCtaCte.resx">
       <DependentUpon>ResumenCtaCte.vb</DependentUpon>
     </EmbeddedResource>
@@ -340,6 +331,31 @@
     <Content Include="PruebaLocalConeccion.sdf">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
+    <None Include="Resources\icons8-señal-de-salida-filled-100.png" />
+    <None Include="Resources\icons8-señal-de-salida-filled-50.png" />
+    <None Include="Resources\icons8-más-80.png" />
+    <None Include="Resources\icons8-guardar-como-64.png" />
+    <None Include="Resources\icons8-montón-de-dinero-48.png" />
+    <None Include="Resources\icons8-montón-de-dinero-96.png" />
+    <None Include="Resources\icons8-calculadora-filled-50.png" />
+    <None Include="Resources\icons8-calculadora-filled-100.png" />
+    <None Include="Resources\icons8-google-web-search-64.png" />
+    <None Include="Resources\icons8-terminal-punto-de-venta-64.png" />
+    <None Include="Resources\icons8-terminal-punto-de-venta-48.png" />
+    <None Include="Resources\icons8-basura-64.png" />
+    <None Include="Resources\icons8-izquierda-en-círculo-2-64.png" />
+    <None Include="Resources\icons8-editar-archivo-64.png" />
+    <None Include="Resources\icons8-editar-archivo-80.png" />
+    <None Include="Resources\icons8-más-2-matemáticas-80.png" />
+    <None Include="Resources\icons8-más-2-matemáticas-30.png" />
+    <None Include="Resources\icons8-agregar-archivo-64.png" />
+    <None Include="Resources\icons8-volante-64.png" />
+    <None Include="Resources\icons8-volante-80.png" />
+    <None Include="Resources\icons8-coche-retro-48.png" />
+    <None Include="Resources\icons8-agregar-usuario-grupo-mujer-hombre-64.png" />
+    <None Include="Resources\Exit_41038.png" />
+    <None Include="Resources\icons8-conductor-80.png" />
+    <None Include="Resources\icons8-garaje-80.png" />
   </ItemGroup>
   <ItemGroup>
     <BootstrapperPackage Include=".NETFramework,Version=v4.0,Profile=Client">

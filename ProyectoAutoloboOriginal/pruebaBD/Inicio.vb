@@ -34,7 +34,9 @@
         MostrarDatos()
         ' mostrar2()
         If Registro_Usuario = 2 Then
-            ConfiguracionToolStripMenuItem.Enabled = False
+            ModificarValoresToolStripMenuItem.Enabled = False
+            CrearUsuariosToolStripMenuItem.Enabled = False
+
             ResumenToolStripMenuItem.Enabled = False
 
 
@@ -167,6 +169,16 @@
 
         Resumen_Agencia.Show()
 
+
+    End Sub
+
+    Private Sub CerrarSesionToolStripMenuItem_Click(sender As System.Object, e As System.EventArgs) Handles CerrarSesionToolStripMenuItem.Click
+        Loggin.Show()
+        Me.Close()
+    End Sub
+
+    Private Sub Button1_Click(sender As System.Object, e As System.EventArgs) Handles Button1.Click
+        End
 
     End Sub
 End Class

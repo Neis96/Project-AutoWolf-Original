@@ -26,8 +26,6 @@ Partial Class RegistroUsuario
         Dim TipoLabel As System.Windows.Forms.Label
         Dim ContraseñaLabel As System.Windows.Forms.Label
         Dim Id_usuarioLabel As System.Windows.Forms.Label
-        Me.Button1 = New System.Windows.Forms.Button()
-        Me.ButtEliminar = New System.Windows.Forms.Button()
         Me.ComboBoxtipo = New System.Windows.Forms.ComboBox()
         Me.TextBox2 = New System.Windows.Forms.TextBox()
         Me.TextBox1 = New System.Windows.Forms.TextBox()
@@ -41,6 +39,8 @@ Partial Class RegistroUsuario
         Me.DataGridViewTextBoxColumn1 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.DataGridViewTextBoxColumn2 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.DataGridViewTextBoxColumn3 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.ButtEliminar = New System.Windows.Forms.Button()
+        Me.Button1 = New System.Windows.Forms.Button()
         TipoLabel = New System.Windows.Forms.Label()
         ContraseñaLabel = New System.Windows.Forms.Label()
         Id_usuarioLabel = New System.Windows.Forms.Label()
@@ -50,48 +50,33 @@ Partial Class RegistroUsuario
         CType(Me.Usuario1DataGridView, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
-        'Button1
-        '
-        Me.Button1.Location = New System.Drawing.Point(86, 260)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(75, 23)
-        Me.Button1.TabIndex = 11
-        Me.Button1.Text = "Agregar"
-        Me.Button1.UseVisualStyleBackColor = True
-        '
-        'ButtEliminar
-        '
-        Me.ButtEliminar.Location = New System.Drawing.Point(239, 260)
-        Me.ButtEliminar.Name = "ButtEliminar"
-        Me.ButtEliminar.Size = New System.Drawing.Size(75, 23)
-        Me.ButtEliminar.TabIndex = 12
-        Me.ButtEliminar.Text = "Eliminar"
-        Me.ButtEliminar.UseVisualStyleBackColor = True
-        '
         'TipoLabel
         '
         TipoLabel.AutoSize = True
-        TipoLabel.Location = New System.Drawing.Point(111, 187)
+        TipoLabel.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        TipoLabel.Location = New System.Drawing.Point(118, 180)
         TipoLabel.Name = "TipoLabel"
-        TipoLabel.Size = New System.Drawing.Size(27, 13)
+        TipoLabel.Size = New System.Drawing.Size(40, 17)
         TipoLabel.TabIndex = 27
         TipoLabel.Text = "tipo:"
         '
         'ContraseñaLabel
         '
         ContraseñaLabel.AutoSize = True
-        ContraseñaLabel.Location = New System.Drawing.Point(88, 139)
+        ContraseñaLabel.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        ContraseñaLabel.Location = New System.Drawing.Point(73, 132)
         ContraseñaLabel.Name = "ContraseñaLabel"
-        ContraseñaLabel.Size = New System.Drawing.Size(63, 13)
+        ContraseñaLabel.Size = New System.Drawing.Size(94, 17)
         ContraseñaLabel.TabIndex = 28
         ContraseñaLabel.Text = "contraseña:"
         '
         'Id_usuarioLabel
         '
         Id_usuarioLabel.AutoSize = True
-        Id_usuarioLabel.Location = New System.Drawing.Point(83, 90)
+        Id_usuarioLabel.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Id_usuarioLabel.Location = New System.Drawing.Point(79, 83)
         Id_usuarioLabel.Name = "Id_usuarioLabel"
-        Id_usuarioLabel.Size = New System.Drawing.Size(55, 13)
+        Id_usuarioLabel.Size = New System.Drawing.Size(85, 17)
         Id_usuarioLabel.TabIndex = 29
         Id_usuarioLabel.Text = "id usuario:"
         '
@@ -162,7 +147,7 @@ Partial Class RegistroUsuario
         Me.Usuario1DataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.Usuario1DataGridView.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.DataGridViewTextBoxColumn1, Me.DataGridViewTextBoxColumn2, Me.DataGridViewTextBoxColumn3})
         Me.Usuario1DataGridView.DataSource = Me.Usuario1BindingSource
-        Me.Usuario1DataGridView.Location = New System.Drawing.Point(62, 343)
+        Me.Usuario1DataGridView.Location = New System.Drawing.Point(408, 73)
         Me.Usuario1DataGridView.Name = "Usuario1DataGridView"
         Me.Usuario1DataGridView.Size = New System.Drawing.Size(351, 220)
         Me.Usuario1DataGridView.TabIndex = 29
@@ -185,11 +170,36 @@ Partial Class RegistroUsuario
         Me.DataGridViewTextBoxColumn3.HeaderText = "tipo"
         Me.DataGridViewTextBoxColumn3.Name = "DataGridViewTextBoxColumn3"
         '
+        'ButtEliminar
+        '
+        Me.ButtEliminar.BackgroundImage = Global.pruebaBD.My.Resources.Resources.icons8_basura_64
+        Me.ButtEliminar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center
+        Me.ButtEliminar.FlatAppearance.BorderSize = 0
+        Me.ButtEliminar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.ButtEliminar.Location = New System.Drawing.Point(205, 239)
+        Me.ButtEliminar.Name = "ButtEliminar"
+        Me.ButtEliminar.Size = New System.Drawing.Size(89, 89)
+        Me.ButtEliminar.TabIndex = 12
+        Me.ButtEliminar.UseVisualStyleBackColor = True
+        '
+        'Button1
+        '
+        Me.Button1.BackgroundImage = Global.pruebaBD.My.Resources.Resources.icons8_más_80
+        Me.Button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center
+        Me.Button1.FlatAppearance.BorderSize = 0
+        Me.Button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button1.Location = New System.Drawing.Point(52, 239)
+        Me.Button1.Name = "Button1"
+        Me.Button1.Size = New System.Drawing.Size(98, 89)
+        Me.Button1.TabIndex = 11
+        Me.Button1.UseVisualStyleBackColor = True
+        '
         'RegistroUsuario
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(603, 621)
+        Me.BackColor = System.Drawing.SystemColors.Highlight
+        Me.ClientSize = New System.Drawing.Size(771, 360)
         Me.Controls.Add(Me.Usuario1DataGridView)
         Me.Controls.Add(TipoLabel)
         Me.Controls.Add(ContraseñaLabel)

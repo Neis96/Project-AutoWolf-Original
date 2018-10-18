@@ -39,6 +39,7 @@ Partial Class Resumen_Agencia
         Me.DataGridViewTextBoxColumn1 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.DataGridViewTextBoxColumn2 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.DataGridViewTextBoxColumn3 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.ToolTip1 = New System.Windows.Forms.ToolTip(Me.components)
         CType(Me.Database1DataSet, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.ResumenRemiseriaBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.ResumenRemiseriaDataGridView, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -46,20 +47,28 @@ Partial Class Resumen_Agencia
         '
         'BtnCalcular
         '
-        Me.BtnCalcular.Location = New System.Drawing.Point(228, 117)
+        Me.BtnCalcular.BackgroundImage = Global.pruebaBD.My.Resources.Resources.icons8_calculadora_filled_50
+        Me.BtnCalcular.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center
+        Me.BtnCalcular.FlatAppearance.BorderSize = 0
+        Me.BtnCalcular.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.BtnCalcular.Location = New System.Drawing.Point(249, 105)
         Me.BtnCalcular.Name = "BtnCalcular"
-        Me.BtnCalcular.Size = New System.Drawing.Size(75, 20)
+        Me.BtnCalcular.Size = New System.Drawing.Size(75, 57)
         Me.BtnCalcular.TabIndex = 51
-        Me.BtnCalcular.Text = "Calcular"
+        Me.ToolTip1.SetToolTip(Me.BtnCalcular, "CALCULAR")
         Me.BtnCalcular.UseVisualStyleBackColor = True
         '
         'BtnConsultar
         '
-        Me.BtnConsultar.Location = New System.Drawing.Point(228, 40)
+        Me.BtnConsultar.BackgroundImage = Global.pruebaBD.My.Resources.Resources.icons8_google_web_search_64
+        Me.BtnConsultar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center
+        Me.BtnConsultar.FlatAppearance.BorderSize = 0
+        Me.BtnConsultar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.BtnConsultar.Location = New System.Drawing.Point(249, 19)
         Me.BtnConsultar.Name = "BtnConsultar"
-        Me.BtnConsultar.Size = New System.Drawing.Size(75, 38)
+        Me.BtnConsultar.Size = New System.Drawing.Size(75, 63)
         Me.BtnConsultar.TabIndex = 50
-        Me.BtnConsultar.Text = "Consultar"
+        Me.ToolTip1.SetToolTip(Me.BtnConsultar, "CONSULTAR")
         Me.BtnConsultar.UseVisualStyleBackColor = True
         '
         'TextBoxTotal
@@ -138,6 +147,7 @@ Partial Class Resumen_Agencia
         Me.TableAdapterManager.SociosTableAdapter = Nothing
         Me.TableAdapterManager.TablaDeTurnoTableAdapter = Nothing
         Me.TableAdapterManager.UpdateOrder = pruebaBD.Database1DataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete
+        Me.TableAdapterManager.Usuario1TableAdapter = Nothing
         Me.TableAdapterManager.UsuarioTableAdapter = Nothing
         Me.TableAdapterManager.ValoresTableAdapter = Nothing
         Me.TableAdapterManager.VehiculoTableAdapter = Nothing
@@ -177,6 +187,7 @@ Partial Class Resumen_Agencia
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+        Me.BackColor = System.Drawing.SystemColors.Highlight
         Me.ClientSize = New System.Drawing.Size(456, 445)
         Me.Controls.Add(Me.ResumenRemiseriaDataGridView)
         Me.Controls.Add(Me.BtnCalcular)
@@ -212,4 +223,5 @@ Partial Class Resumen_Agencia
     Friend WithEvents DataGridViewTextBoxColumn1 As System.Windows.Forms.DataGridViewTextBoxColumn
     Friend WithEvents DataGridViewTextBoxColumn2 As System.Windows.Forms.DataGridViewTextBoxColumn
     Friend WithEvents DataGridViewTextBoxColumn3 As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents ToolTip1 As System.Windows.Forms.ToolTip
 End Class

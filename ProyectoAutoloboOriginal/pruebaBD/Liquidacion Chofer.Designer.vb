@@ -27,9 +27,6 @@ Partial Class Liquidacion_Chofer
         Me.DateTimePickerHasta = New System.Windows.Forms.DateTimePicker()
         Me.TextBoxPorcent = New System.Windows.Forms.TextBox()
         Me.Label8 = New System.Windows.Forms.Label()
-        Me.BtnLiquidar = New System.Windows.Forms.Button()
-        Me.BtnCalcular = New System.Windows.Forms.Button()
-        Me.BtnConsultar = New System.Windows.Forms.Button()
         Me.TextBoxNombre = New System.Windows.Forms.TextBox()
         Me.TextBoxTotAgencia = New System.Windows.Forms.TextBox()
         Me.Label7 = New System.Windows.Forms.Label()
@@ -63,6 +60,10 @@ Partial Class Liquidacion_Chofer
         Me.DataGridViewTextBoxColumn5 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.DataGridViewTextBoxColumn6 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.DataGridViewTextBoxColumn12 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.BtnLiquidar = New System.Windows.Forms.Button()
+        Me.BtnCalcular = New System.Windows.Forms.Button()
+        Me.BtnConsultar = New System.Windows.Forms.Button()
+        Me.ToolTip1 = New System.Windows.Forms.ToolTip(Me.components)
         CType(Me.Database1DataSet, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.ChoferBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.LiquidacionChoferBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -74,6 +75,7 @@ Partial Class Liquidacion_Chofer
         '
         'ComboBoxDueno
         '
+        Me.ComboBoxDueno.DataSource = Me.LiquidacionChoferBindingSource
         Me.ComboBoxDueno.DisplayMember = "id_chofer"
         Me.ComboBoxDueno.FormattingEnabled = True
         Me.ComboBoxDueno.Location = New System.Drawing.Point(86, 27)
@@ -102,38 +104,12 @@ Partial Class Liquidacion_Chofer
         'Label8
         '
         Me.Label8.AutoSize = True
-        Me.Label8.Location = New System.Drawing.Point(28, 102)
+        Me.Label8.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label8.Location = New System.Drawing.Point(12, 100)
         Me.Label8.Name = "Label8"
-        Me.Label8.Size = New System.Drawing.Size(58, 13)
+        Me.Label8.Size = New System.Drawing.Size(76, 15)
         Me.Label8.TabIndex = 47
         Me.Label8.Text = "Porcentaje"
-        '
-        'BtnLiquidar
-        '
-        Me.BtnLiquidar.Location = New System.Drawing.Point(552, 163)
-        Me.BtnLiquidar.Name = "BtnLiquidar"
-        Me.BtnLiquidar.Size = New System.Drawing.Size(75, 23)
-        Me.BtnLiquidar.TabIndex = 46
-        Me.BtnLiquidar.Text = "Liquidar"
-        Me.BtnLiquidar.UseVisualStyleBackColor = True
-        '
-        'BtnCalcular
-        '
-        Me.BtnCalcular.Location = New System.Drawing.Point(448, 69)
-        Me.BtnCalcular.Name = "BtnCalcular"
-        Me.BtnCalcular.Size = New System.Drawing.Size(75, 23)
-        Me.BtnCalcular.TabIndex = 45
-        Me.BtnCalcular.Text = "Calcular"
-        Me.BtnCalcular.UseVisualStyleBackColor = True
-        '
-        'BtnConsultar
-        '
-        Me.BtnConsultar.Location = New System.Drawing.Point(448, 31)
-        Me.BtnConsultar.Name = "BtnConsultar"
-        Me.BtnConsultar.Size = New System.Drawing.Size(75, 23)
-        Me.BtnConsultar.TabIndex = 44
-        Me.BtnConsultar.Text = "Consultar"
-        Me.BtnConsultar.UseVisualStyleBackColor = True
         '
         'TextBoxNombre
         '
@@ -146,7 +122,7 @@ Partial Class Liquidacion_Chofer
         'TextBoxTotAgencia
         '
         Me.TextBoxTotAgencia.Enabled = False
-        Me.TextBoxTotAgencia.Location = New System.Drawing.Point(404, 165)
+        Me.TextBoxTotAgencia.Location = New System.Drawing.Point(429, 165)
         Me.TextBoxTotAgencia.Name = "TextBoxTotAgencia"
         Me.TextBoxTotAgencia.Size = New System.Drawing.Size(100, 20)
         Me.TextBoxTotAgencia.TabIndex = 42
@@ -154,9 +130,10 @@ Partial Class Liquidacion_Chofer
         'Label7
         '
         Me.Label7.AutoSize = True
-        Me.Label7.Location = New System.Drawing.Point(349, 168)
+        Me.Label7.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label7.Location = New System.Drawing.Point(352, 166)
         Me.Label7.Name = "Label7"
-        Me.Label7.Size = New System.Drawing.Size(49, 13)
+        Me.Label7.Size = New System.Drawing.Size(62, 15)
         Me.Label7.TabIndex = 41
         Me.Label7.Text = "Agencia:"
         '
@@ -171,9 +148,10 @@ Partial Class Liquidacion_Chofer
         'Label6
         '
         Me.Label6.AutoSize = True
-        Me.Label6.Location = New System.Drawing.Point(191, 168)
+        Me.Label6.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label6.Location = New System.Drawing.Point(175, 166)
         Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(41, 13)
+        Me.Label6.Size = New System.Drawing.Size(53, 15)
         Me.Label6.TabIndex = 39
         Me.Label6.Text = "Chofer:"
         '
@@ -188,9 +166,10 @@ Partial Class Liquidacion_Chofer
         'Label5
         '
         Me.Label5.AutoSize = True
-        Me.Label5.Location = New System.Drawing.Point(27, 168)
+        Me.Label5.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label5.Location = New System.Drawing.Point(11, 166)
         Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(34, 13)
+        Me.Label5.Size = New System.Drawing.Size(43, 15)
         Me.Label5.TabIndex = 37
         Me.Label5.Text = "Total:"
         '
@@ -205,36 +184,40 @@ Partial Class Liquidacion_Chofer
         'Label4
         '
         Me.Label4.AutoSize = True
-        Me.Label4.Location = New System.Drawing.Point(237, 67)
+        Me.Label4.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label4.Location = New System.Drawing.Point(221, 65)
         Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(35, 13)
+        Me.Label4.Size = New System.Drawing.Size(44, 15)
         Me.Label4.TabIndex = 35
         Me.Label4.Text = "Hasta"
         '
         'Label3
         '
         Me.Label3.AutoSize = True
-        Me.Label3.Location = New System.Drawing.Point(237, 29)
+        Me.Label3.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label3.Location = New System.Drawing.Point(221, 27)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(38, 13)
+        Me.Label3.Size = New System.Drawing.Size(48, 15)
         Me.Label3.TabIndex = 34
         Me.Label3.Text = "Desde"
         '
         'Label2
         '
         Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(27, 68)
+        Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label2.Location = New System.Drawing.Point(11, 66)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(44, 13)
+        Me.Label2.Size = New System.Drawing.Size(58, 15)
         Me.Label2.TabIndex = 33
         Me.Label2.Text = "Nombre"
         '
         'CheckBoxDueno
         '
         Me.CheckBoxDueno.AutoSize = True
-        Me.CheckBoxDueno.Location = New System.Drawing.Point(30, 130)
+        Me.CheckBoxDueno.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.CheckBoxDueno.Location = New System.Drawing.Point(14, 128)
         Me.CheckBoxDueno.Name = "CheckBoxDueno"
-        Me.CheckBoxDueno.Size = New System.Drawing.Size(58, 17)
+        Me.CheckBoxDueno.Size = New System.Drawing.Size(68, 19)
         Me.CheckBoxDueno.TabIndex = 32
         Me.CheckBoxDueno.Text = "Dueño"
         Me.CheckBoxDueno.UseVisualStyleBackColor = True
@@ -242,9 +225,10 @@ Partial Class Liquidacion_Chofer
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(28, 30)
+        Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label1.Location = New System.Drawing.Point(12, 28)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(52, 13)
+        Me.Label1.Size = New System.Drawing.Size(67, 15)
         Me.Label1.TabIndex = 31
         Me.Label1.Text = "ID Chofer"
         '
@@ -272,6 +256,7 @@ Partial Class Liquidacion_Chofer
         Me.TableAdapterManager.SociosTableAdapter = Nothing
         Me.TableAdapterManager.TablaDeTurnoTableAdapter = Nothing
         Me.TableAdapterManager.UpdateOrder = pruebaBD.Database1DataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete
+        Me.TableAdapterManager.Usuario1TableAdapter = Nothing
         Me.TableAdapterManager.UsuarioTableAdapter = Nothing
         Me.TableAdapterManager.ValoresTableAdapter = Me.ValoresTableAdapter
         Me.TableAdapterManager.VehiculoTableAdapter = Nothing
@@ -367,10 +352,50 @@ Partial Class Liquidacion_Chofer
         Me.DataGridViewTextBoxColumn12.HeaderText = "Estado"
         Me.DataGridViewTextBoxColumn12.Name = "DataGridViewTextBoxColumn12"
         '
+        'BtnLiquidar
+        '
+        Me.BtnLiquidar.BackgroundImage = Global.pruebaBD.My.Resources.Resources.icons8_montón_de_dinero_48
+        Me.BtnLiquidar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center
+        Me.BtnLiquidar.FlatAppearance.BorderSize = 0
+        Me.BtnLiquidar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.BtnLiquidar.Location = New System.Drawing.Point(654, 46)
+        Me.BtnLiquidar.Name = "BtnLiquidar"
+        Me.BtnLiquidar.Size = New System.Drawing.Size(75, 76)
+        Me.BtnLiquidar.TabIndex = 46
+        Me.ToolTip1.SetToolTip(Me.BtnLiquidar, "LIQUIDAR")
+        Me.BtnLiquidar.UseVisualStyleBackColor = True
+        '
+        'BtnCalcular
+        '
+        Me.BtnCalcular.BackgroundImage = Global.pruebaBD.My.Resources.Resources.icons8_calculadora_filled_50
+        Me.BtnCalcular.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center
+        Me.BtnCalcular.FlatAppearance.BorderSize = 0
+        Me.BtnCalcular.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.BtnCalcular.Location = New System.Drawing.Point(553, 46)
+        Me.BtnCalcular.Name = "BtnCalcular"
+        Me.BtnCalcular.Size = New System.Drawing.Size(66, 76)
+        Me.BtnCalcular.TabIndex = 45
+        Me.ToolTip1.SetToolTip(Me.BtnCalcular, "CALCULAR")
+        Me.BtnCalcular.UseVisualStyleBackColor = True
+        '
+        'BtnConsultar
+        '
+        Me.BtnConsultar.BackgroundImage = Global.pruebaBD.My.Resources.Resources.icons8_google_web_search_64
+        Me.BtnConsultar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center
+        Me.BtnConsultar.FlatAppearance.BorderSize = 0
+        Me.BtnConsultar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.BtnConsultar.Location = New System.Drawing.Point(454, 41)
+        Me.BtnConsultar.Name = "BtnConsultar"
+        Me.BtnConsultar.Size = New System.Drawing.Size(75, 81)
+        Me.BtnConsultar.TabIndex = 44
+        Me.ToolTip1.SetToolTip(Me.BtnConsultar, "BUSCAR")
+        Me.BtnConsultar.UseVisualStyleBackColor = True
+        '
         'Liquidacion_Chofer
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+        Me.BackColor = System.Drawing.SystemColors.Highlight
         Me.ClientSize = New System.Drawing.Size(770, 518)
         Me.Controls.Add(Me.ViajesDataGridView)
         Me.Controls.Add(Me.ComboBoxDueno)
@@ -446,4 +471,5 @@ Partial Class Liquidacion_Chofer
     Friend WithEvents DataGridViewTextBoxColumn5 As System.Windows.Forms.DataGridViewTextBoxColumn
     Friend WithEvents DataGridViewTextBoxColumn6 As System.Windows.Forms.DataGridViewTextBoxColumn
     Friend WithEvents DataGridViewTextBoxColumn12 As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents ToolTip1 As System.Windows.Forms.ToolTip
 End Class

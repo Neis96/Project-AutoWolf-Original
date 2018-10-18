@@ -220,16 +220,116 @@ TableAdapterManager is used to coordinate TableAdapters in the dataset to enable
 </summary>
 </member><member name="P:pruebaBD.My.Resources.Resources.ResourceManager">
 	<summary>
-  Returns the cached ResourceManager instance used by this class.
+  Devuelve la instancia de ResourceManager almacenada en caché utilizada por esta clase.
 </summary>
 </member><member name="P:pruebaBD.My.Resources.Resources.Culture">
 	<summary>
-  Overrides the current thread's CurrentUICulture property for all
-  resource lookups using this strongly typed resource class.
+  Reemplaza la propiedad CurrentUICulture del subproceso actual para todas las
+  búsquedas de recursos mediante esta clase de recurso fuertemente tipado.
+</summary>
+</member><member name="P:pruebaBD.My.Resources.Resources.Exit_41038">
+	<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member><member name="P:pruebaBD.My.Resources.Resources.icons8_agregar_archivo_64">
+	<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member><member name="P:pruebaBD.My.Resources.Resources.icons8_agregar_usuario_grupo_mujer_hombre_64">
+	<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member><member name="P:pruebaBD.My.Resources.Resources.icons8_basura_64">
+	<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member><member name="P:pruebaBD.My.Resources.Resources.icons8_calculadora_filled_100">
+	<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member><member name="P:pruebaBD.My.Resources.Resources.icons8_calculadora_filled_50">
+	<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member><member name="P:pruebaBD.My.Resources.Resources.icons8_coche_retro_48">
+	<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member><member name="P:pruebaBD.My.Resources.Resources.icons8_conductor_80">
+	<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member><member name="P:pruebaBD.My.Resources.Resources.icons8_editar_archivo_64">
+	<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member><member name="P:pruebaBD.My.Resources.Resources.icons8_editar_archivo_80">
+	<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member><member name="P:pruebaBD.My.Resources.Resources.icons8_garaje_80">
+	<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member><member name="P:pruebaBD.My.Resources.Resources.icons8_google_web_search_64">
+	<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member><member name="P:pruebaBD.My.Resources.Resources.icons8_guardar_como_64">
+	<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member><member name="P:pruebaBD.My.Resources.Resources.icons8_izquierda_en_círculo_2_64">
+	<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member><member name="P:pruebaBD.My.Resources.Resources.icons8_más_2_matemáticas_30">
+	<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member><member name="P:pruebaBD.My.Resources.Resources.icons8_más_2_matemáticas_80">
+	<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member><member name="P:pruebaBD.My.Resources.Resources.icons8_más_80">
+	<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member><member name="P:pruebaBD.My.Resources.Resources.icons8_montón_de_dinero_48">
+	<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member><member name="P:pruebaBD.My.Resources.Resources.icons8_montón_de_dinero_96">
+	<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member><member name="P:pruebaBD.My.Resources.Resources.icons8_señal_de_salida_filled_100">
+	<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member><member name="P:pruebaBD.My.Resources.Resources.icons8_señal_de_salida_filled_50">
+	<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member><member name="P:pruebaBD.My.Resources.Resources.icons8_terminal_punto_de_venta_48">
+	<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member><member name="P:pruebaBD.My.Resources.Resources.icons8_terminal_punto_de_venta_64">
+	<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member><member name="P:pruebaBD.My.Resources.Resources.icons8_volante_64">
+	<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member><member name="P:pruebaBD.My.Resources.Resources.icons8_volante_80">
+	<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
 </summary>
 </member><member name="T:pruebaBD.My.Resources.Resources">
 	<summary>
-  A strongly-typed resource class, for looking up localized strings, etc.
+  Clase de recurso fuertemente tipado, para buscar cadenas traducidas, etc.
 </summary>
 </member>
 </members>

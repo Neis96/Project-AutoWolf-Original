@@ -58,6 +58,7 @@ Partial Class viajes
         Me.NombreChofer = New System.Windows.Forms.TextBox()
         Me.DominioTextBox = New System.Windows.Forms.TextBox()
         Me.BtnNuevo = New System.Windows.Forms.Button()
+        Me.ToolTip1 = New System.Windows.Forms.ToolTip(Me.components)
         IdChoferLabel = New System.Windows.Forms.Label()
         IdSociosLabel = New System.Windows.Forms.Label()
         Fecha_origenLabel = New System.Windows.Forms.Label()
@@ -77,56 +78,92 @@ Partial Class viajes
         'IdChoferLabel
         '
         IdChoferLabel.AutoSize = True
-        IdChoferLabel.Location = New System.Drawing.Point(66, 65)
+        IdChoferLabel.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        IdChoferLabel.Location = New System.Drawing.Point(32, 62)
         IdChoferLabel.Name = "IdChoferLabel"
-        IdChoferLabel.Size = New System.Drawing.Size(52, 13)
+        IdChoferLabel.Size = New System.Drawing.Size(79, 17)
         IdChoferLabel.TabIndex = 3
         IdChoferLabel.Text = "id Chofer:"
         '
         'IdSociosLabel
         '
         IdSociosLabel.AutoSize = True
-        IdSociosLabel.Location = New System.Drawing.Point(66, 99)
+        IdSociosLabel.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        IdSociosLabel.Location = New System.Drawing.Point(32, 96)
         IdSociosLabel.Name = "IdSociosLabel"
-        IdSociosLabel.Size = New System.Drawing.Size(53, 13)
+        IdSociosLabel.Size = New System.Drawing.Size(79, 17)
         IdSociosLabel.TabIndex = 5
         IdSociosLabel.Text = "id Socios:"
         '
         'Fecha_origenLabel
         '
         Fecha_origenLabel.AutoSize = True
-        Fecha_origenLabel.Location = New System.Drawing.Point(66, 165)
+        Fecha_origenLabel.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Fecha_origenLabel.Location = New System.Drawing.Point(32, 162)
         Fecha_origenLabel.Name = "Fecha_origenLabel"
-        Fecha_origenLabel.Size = New System.Drawing.Size(69, 13)
+        Fecha_origenLabel.Size = New System.Drawing.Size(104, 17)
         Fecha_origenLabel.TabIndex = 7
         Fecha_origenLabel.Text = "fecha origen:"
         '
         'Fecha_destinoLabel
         '
         Fecha_destinoLabel.AutoSize = True
-        Fecha_destinoLabel.Location = New System.Drawing.Point(66, 191)
+        Fecha_destinoLabel.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Fecha_destinoLabel.Location = New System.Drawing.Point(32, 188)
         Fecha_destinoLabel.Name = "Fecha_destinoLabel"
-        Fecha_destinoLabel.Size = New System.Drawing.Size(74, 13)
+        Fecha_destinoLabel.Size = New System.Drawing.Size(111, 17)
         Fecha_destinoLabel.TabIndex = 9
         Fecha_destinoLabel.Text = "fecha destino:"
         '
         'Lugar_origenLabel
         '
         Lugar_origenLabel.AutoSize = True
-        Lugar_origenLabel.Location = New System.Drawing.Point(66, 218)
+        Lugar_origenLabel.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Lugar_origenLabel.Location = New System.Drawing.Point(32, 215)
         Lugar_origenLabel.Name = "Lugar_origenLabel"
-        Lugar_origenLabel.Size = New System.Drawing.Size(65, 13)
+        Lugar_origenLabel.Size = New System.Drawing.Size(101, 17)
         Lugar_origenLabel.TabIndex = 13
         Lugar_origenLabel.Text = "lugar origen:"
         '
         'Lugar_destinoLabel
         '
         Lugar_destinoLabel.AutoSize = True
-        Lugar_destinoLabel.Location = New System.Drawing.Point(66, 247)
+        Lugar_destinoLabel.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Lugar_destinoLabel.Location = New System.Drawing.Point(32, 244)
         Lugar_destinoLabel.Name = "Lugar_destinoLabel"
-        Lugar_destinoLabel.Size = New System.Drawing.Size(70, 13)
+        Lugar_destinoLabel.Size = New System.Drawing.Size(108, 17)
         Lugar_destinoLabel.TabIndex = 15
         Lugar_destinoLabel.Text = "lugar destino:"
+        '
+        'NombreLabel
+        '
+        NombreLabel.AutoSize = True
+        NombreLabel.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        NombreLabel.Location = New System.Drawing.Point(278, 96)
+        NombreLabel.Name = "NombreLabel"
+        NombreLabel.Size = New System.Drawing.Size(122, 17)
+        NombreLabel.TabIndex = 27
+        NombreLabel.Text = "Nombre Socios:"
+        '
+        'NombreLabel1
+        '
+        NombreLabel1.AutoSize = True
+        NombreLabel1.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        NombreLabel1.Location = New System.Drawing.Point(278, 62)
+        NombreLabel1.Name = "NombreLabel1"
+        NombreLabel1.Size = New System.Drawing.Size(120, 17)
+        NombreLabel1.TabIndex = 28
+        NombreLabel1.Text = "Nombre chofer:"
+        '
+        'DominioLabel
+        '
+        DominioLabel.AutoSize = True
+        DominioLabel.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DominioLabel.Location = New System.Drawing.Point(278, 129)
+        DominioLabel.Name = "DominioLabel"
+        DominioLabel.Size = New System.Drawing.Size(76, 17)
+        DominioLabel.TabIndex = 29
+        DominioLabel.Text = " Dominio:"
         '
         'Database1DataSet
         '
@@ -152,6 +189,7 @@ Partial Class viajes
         Me.TableAdapterManager.SociosTableAdapter = Nothing
         Me.TableAdapterManager.TablaDeTurnoTableAdapter = Nothing
         Me.TableAdapterManager.UpdateOrder = pruebaBD.Database1DataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete
+        Me.TableAdapterManager.Usuario1TableAdapter = Nothing
         Me.TableAdapterManager.UsuarioTableAdapter = Nothing
         Me.TableAdapterManager.ValoresTableAdapter = Nothing
         Me.TableAdapterManager.VehiculoTableAdapter = Nothing
@@ -193,28 +231,37 @@ Partial Class viajes
         '
         'Button1
         '
-        Me.Button1.Location = New System.Drawing.Point(146, 337)
+        Me.Button1.BackgroundImage = Global.pruebaBD.My.Resources.Resources.icons8_más_2_matemáticas_80
+        Me.Button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center
+        Me.Button1.FlatAppearance.BorderSize = 0
+        Me.Button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button1.Location = New System.Drawing.Point(134, 337)
         Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(106, 59)
+        Me.Button1.Size = New System.Drawing.Size(106, 86)
         Me.Button1.TabIndex = 18
-        Me.Button1.Text = "agregar"
+        Me.ToolTip1.SetToolTip(Me.Button1, "AGREGAR")
         Me.Button1.UseVisualStyleBackColor = True
         '
         'Button4
         '
-        Me.Button4.Location = New System.Drawing.Point(268, 337)
+        Me.Button4.BackgroundImage = Global.pruebaBD.My.Resources.Resources.icons8_izquierda_en_círculo_2_64
+        Me.Button4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center
+        Me.Button4.FlatAppearance.BorderSize = 0
+        Me.Button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button4.Location = New System.Drawing.Point(532, 37)
         Me.Button4.Name = "Button4"
-        Me.Button4.Size = New System.Drawing.Size(105, 59)
+        Me.Button4.Size = New System.Drawing.Size(105, 79)
         Me.Button4.TabIndex = 21
-        Me.Button4.Text = "volver"
+        Me.ToolTip1.SetToolTip(Me.Button4, "VOLVER")
         Me.Button4.UseVisualStyleBackColor = True
         '
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(66, 132)
+        Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label1.Location = New System.Drawing.Point(32, 129)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(62, 13)
+        Me.Label1.Size = New System.Drawing.Size(93, 17)
         Me.Label1.TabIndex = 22
         Me.Label1.Text = "id Vehiculo:"
         '
@@ -227,6 +274,7 @@ Partial Class viajes
         Me.ComboBoxChofer.Name = "ComboBoxChofer"
         Me.ComboBoxChofer.Size = New System.Drawing.Size(106, 21)
         Me.ComboBoxChofer.TabIndex = 23
+        Me.ComboBoxChofer.ValueMember = "id_chofer"
         '
         'ChoferBindingSource
         '
@@ -242,6 +290,7 @@ Partial Class viajes
         Me.ComboBoxSocios.Name = "ComboBoxSocios"
         Me.ComboBoxSocios.Size = New System.Drawing.Size(106, 21)
         Me.ComboBoxSocios.TabIndex = 24
+        Me.ComboBoxSocios.ValueMember = "id_socio"
         '
         'SociosBindingSource
         '
@@ -257,6 +306,7 @@ Partial Class viajes
         Me.ComboBoxVehiculo.Name = "ComboBoxVehiculo"
         Me.ComboBoxVehiculo.Size = New System.Drawing.Size(106, 21)
         Me.ComboBoxVehiculo.TabIndex = 25
+        Me.ComboBoxVehiculo.ValueMember = "id_vehiculo"
         '
         'VehiculoBindingSource
         '
@@ -278,9 +328,10 @@ Partial Class viajes
         'CheckBoxReserva
         '
         Me.CheckBoxReserva.AutoSize = True
-        Me.CheckBoxReserva.Location = New System.Drawing.Point(281, 222)
+        Me.CheckBoxReserva.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.CheckBoxReserva.Location = New System.Drawing.Point(266, 219)
         Me.CheckBoxReserva.Name = "CheckBoxReserva"
-        Me.CheckBoxReserva.Size = New System.Drawing.Size(66, 17)
+        Me.CheckBoxReserva.Size = New System.Drawing.Size(87, 21)
         Me.CheckBoxReserva.TabIndex = 26
         Me.CheckBoxReserva.Text = "Reserva"
         Me.CheckBoxReserva.UseVisualStyleBackColor = True
@@ -288,80 +339,59 @@ Partial Class viajes
         'CheckCta
         '
         Me.CheckCta.AutoSize = True
-        Me.CheckCta.Location = New System.Drawing.Point(281, 247)
+        Me.CheckCta.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.CheckCta.Location = New System.Drawing.Point(266, 244)
         Me.CheckCta.Name = "CheckCta"
-        Me.CheckCta.Size = New System.Drawing.Size(61, 17)
+        Me.CheckCta.Size = New System.Drawing.Size(80, 21)
         Me.CheckCta.TabIndex = 27
         Me.CheckCta.Text = "Cta Cte"
         Me.CheckCta.UseVisualStyleBackColor = True
-        '
-        'NombreLabel
-        '
-        NombreLabel.AutoSize = True
-        NombreLabel.Location = New System.Drawing.Point(293, 99)
-        NombreLabel.Name = "NombreLabel"
-        NombreLabel.Size = New System.Drawing.Size(82, 13)
-        NombreLabel.TabIndex = 27
-        NombreLabel.Text = "Nombre Socios:"
         '
         'NombreSocios
         '
         Me.NombreSocios.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.SociosBindingSource, "nombre", True))
         Me.NombreSocios.Enabled = False
-        Me.NombreSocios.Location = New System.Drawing.Point(379, 96)
+        Me.NombreSocios.Location = New System.Drawing.Point(404, 95)
         Me.NombreSocios.Name = "NombreSocios"
         Me.NombreSocios.Size = New System.Drawing.Size(100, 20)
         Me.NombreSocios.TabIndex = 28
-        '
-        'NombreLabel1
-        '
-        NombreLabel1.AutoSize = True
-        NombreLabel1.Location = New System.Drawing.Point(293, 65)
-        NombreLabel1.Name = "NombreLabel1"
-        NombreLabel1.Size = New System.Drawing.Size(80, 13)
-        NombreLabel1.TabIndex = 28
-        NombreLabel1.Text = "Nombre chofer:"
         '
         'NombreChofer
         '
         Me.NombreChofer.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.ChoferBindingSource, "nombre", True))
         Me.NombreChofer.Enabled = False
-        Me.NombreChofer.Location = New System.Drawing.Point(379, 62)
+        Me.NombreChofer.Location = New System.Drawing.Point(404, 61)
         Me.NombreChofer.Name = "NombreChofer"
         Me.NombreChofer.Size = New System.Drawing.Size(100, 20)
         Me.NombreChofer.TabIndex = 29
-        '
-        'DominioLabel
-        '
-        DominioLabel.AutoSize = True
-        DominioLabel.Location = New System.Drawing.Point(293, 132)
-        DominioLabel.Name = "DominioLabel"
-        DominioLabel.Size = New System.Drawing.Size(51, 13)
-        DominioLabel.TabIndex = 29
-        DominioLabel.Text = " Dominio:"
         '
         'DominioTextBox
         '
         Me.DominioTextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.VehiculoBindingSource, "dominio", True))
         Me.DominioTextBox.Enabled = False
-        Me.DominioTextBox.Location = New System.Drawing.Point(379, 129)
+        Me.DominioTextBox.Location = New System.Drawing.Point(404, 128)
         Me.DominioTextBox.Name = "DominioTextBox"
         Me.DominioTextBox.Size = New System.Drawing.Size(100, 20)
         Me.DominioTextBox.TabIndex = 30
         '
         'BtnNuevo
         '
-        Me.BtnNuevo.Location = New System.Drawing.Point(389, 337)
+        Me.BtnNuevo.BackgroundImage = Global.pruebaBD.My.Resources.Resources.icons8_agregar_usuario_grupo_mujer_hombre_64
+        Me.BtnNuevo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center
+        Me.BtnNuevo.FlatAppearance.BorderSize = 0
+        Me.BtnNuevo.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.BtnNuevo.Location = New System.Drawing.Point(281, 337)
         Me.BtnNuevo.Name = "BtnNuevo"
-        Me.BtnNuevo.Size = New System.Drawing.Size(105, 59)
+        Me.BtnNuevo.Size = New System.Drawing.Size(105, 86)
         Me.BtnNuevo.TabIndex = 31
-        Me.BtnNuevo.Text = "Nuevo Socio"
+        Me.ToolTip1.SetToolTip(Me.BtnNuevo, "NUEVO USUARIO")
         Me.BtnNuevo.UseVisualStyleBackColor = True
         '
         'viajes
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+        Me.BackColor = System.Drawing.SystemColors.Highlight
         Me.ClientSize = New System.Drawing.Size(664, 482)
         Me.Controls.Add(Me.BtnNuevo)
         Me.Controls.Add(DominioLabel)
@@ -425,4 +455,5 @@ Partial Class viajes
     Friend WithEvents NombreChofer As System.Windows.Forms.TextBox
     Friend WithEvents DominioTextBox As System.Windows.Forms.TextBox
     Friend WithEvents BtnNuevo As System.Windows.Forms.Button
+    Friend WithEvents ToolTip1 As System.Windows.Forms.ToolTip
 End Class

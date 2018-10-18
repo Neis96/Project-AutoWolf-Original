@@ -152,11 +152,11 @@
 
                 Me.LiquidacionChoferTableAdapter.Insert1(desde, hasta, totChofer, idChofer, nombre)
                 Me.LiquidacionChoferTableAdapter.Fill(Me.Database1DataSet.LiquidacionChofer)
-                Resumen.LiquidacionChoferTableAdapter.Fill(Resumen.Database1DataSet.LiquidacionChofer)
+                'Resumen.LiquidacionChoferTableAdapter.Fill(Resumen.Database1DataSet.LiquidacionChofer)
 
                 Me.ResumenRemiseriaTableAdapter.Insert(hasta, totAgencia)
                 Me.ResumenRemiseriaTableAdapter.Fill(Me.Database1DataSet.ResumenRemiseria)
-                Resumen.ResumenRemiseriaTableAdapter.Fill(Resumen.Database1DataSet.ResumenRemiseria)
+                'Resumen.ResumenRemiseriaTableAdapter.Fill(Resumen.Database1DataSet.ResumenRemiseria)
                 'Me.LiquidacionChoferBindingSource.AddNew()
                 '.LiquidacionChoferTableAdapter.Fill(.Database1DataSet.LiquidacionChofer) 'aca actualiza el form resumen liq chofer
 

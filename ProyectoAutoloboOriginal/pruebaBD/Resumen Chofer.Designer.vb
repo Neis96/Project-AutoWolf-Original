@@ -31,11 +31,12 @@ Partial Class Resumen_Chofer
         Me.DateTimePickerHasta = New System.Windows.Forms.DateTimePicker()
         Me.DateTimePickerDesde = New System.Windows.Forms.DateTimePicker()
         Me.ComboBoxDueno = New System.Windows.Forms.ComboBox()
+        Me.ChoferBindingSource = New System.Windows.Forms.BindingSource(Me.components)
+        Me.Database1DataSet = New pruebaBD.Database1DataSet()
         Me.Label4 = New System.Windows.Forms.Label()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Label1 = New System.Windows.Forms.Label()
-        Me.Database1DataSet = New pruebaBD.Database1DataSet()
         Me.LiquidacionChoferBindingSource = New System.Windows.Forms.BindingSource(Me.components)
         Me.LiquidacionChoferTableAdapter = New pruebaBD.Database1DataSetTableAdapters.LiquidacionChoferTableAdapter()
         Me.TableAdapterManager = New pruebaBD.Database1DataSetTableAdapters.TableAdapterManager()
@@ -47,29 +48,38 @@ Partial Class Resumen_Chofer
         Me.DataGridViewTextBoxColumn2 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.DataGridViewTextBoxColumn3 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.DataGridViewTextBoxColumn4 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.ChoferBindingSource = New System.Windows.Forms.BindingSource(Me.components)
+        Me.ToolTip1 = New System.Windows.Forms.ToolTip(Me.components)
+        CType(Me.ChoferBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.Database1DataSet, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.LiquidacionChoferBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.LiquidacionChoferDataGridView, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.ChoferBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'BtnCalcular
         '
-        Me.BtnCalcular.Location = New System.Drawing.Point(477, 105)
+        Me.BtnCalcular.BackgroundImage = Global.pruebaBD.My.Resources.Resources.icons8_calculadora_filled_50
+        Me.BtnCalcular.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center
+        Me.BtnCalcular.FlatAppearance.BorderSize = 0
+        Me.BtnCalcular.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.BtnCalcular.Location = New System.Drawing.Point(477, 112)
         Me.BtnCalcular.Name = "BtnCalcular"
-        Me.BtnCalcular.Size = New System.Drawing.Size(75, 23)
+        Me.BtnCalcular.Size = New System.Drawing.Size(75, 49)
         Me.BtnCalcular.TabIndex = 47
-        Me.BtnCalcular.Text = "Calcular"
+        Me.ToolTip1.SetToolTip(Me.BtnCalcular, "CALCULAR")
+        Me.BtnCalcular.UseCompatibleTextRendering = True
         Me.BtnCalcular.UseVisualStyleBackColor = True
         '
         'BtnConsultar
         '
+        Me.BtnConsultar.BackgroundImage = Global.pruebaBD.My.Resources.Resources.icons8_google_web_search_64
+        Me.BtnConsultar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center
+        Me.BtnConsultar.FlatAppearance.BorderSize = 0
+        Me.BtnConsultar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.BtnConsultar.Location = New System.Drawing.Point(477, 20)
         Me.BtnConsultar.Name = "BtnConsultar"
-        Me.BtnConsultar.Size = New System.Drawing.Size(75, 44)
+        Me.BtnConsultar.Size = New System.Drawing.Size(75, 62)
         Me.BtnConsultar.TabIndex = 46
-        Me.BtnConsultar.Text = "Consultar"
+        Me.ToolTip1.SetToolTip(Me.BtnConsultar, "CONSULTAR")
         Me.BtnConsultar.UseVisualStyleBackColor = True
         '
         'TextBoxTotal
@@ -83,9 +93,10 @@ Partial Class Resumen_Chofer
         'Label5
         '
         Me.Label5.AutoSize = True
-        Me.Label5.Location = New System.Drawing.Point(40, 115)
+        Me.Label5.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label5.Location = New System.Drawing.Point(30, 117)
         Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(34, 13)
+        Me.Label5.Size = New System.Drawing.Size(43, 15)
         Me.Label5.TabIndex = 44
         Me.Label5.Text = "Total:"
         '
@@ -127,46 +138,55 @@ Partial Class Resumen_Chofer
         Me.ComboBoxDueno.TabIndex = 40
         Me.ComboBoxDueno.ValueMember = "id_chofer"
         '
+        'ChoferBindingSource
+        '
+        Me.ChoferBindingSource.DataMember = "Chofer"
+        Me.ChoferBindingSource.DataSource = Me.Database1DataSet
+        '
+        'Database1DataSet
+        '
+        Me.Database1DataSet.DataSetName = "Database1DataSet"
+        Me.Database1DataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
+        '
         'Label4
         '
         Me.Label4.AutoSize = True
-        Me.Label4.Location = New System.Drawing.Point(227, 63)
+        Me.Label4.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label4.Location = New System.Drawing.Point(217, 65)
         Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(35, 13)
+        Me.Label4.Size = New System.Drawing.Size(44, 15)
         Me.Label4.TabIndex = 39
         Me.Label4.Text = "Hasta"
         '
         'Label3
         '
         Me.Label3.AutoSize = True
-        Me.Label3.Location = New System.Drawing.Point(227, 25)
+        Me.Label3.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label3.Location = New System.Drawing.Point(217, 27)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(38, 13)
+        Me.Label3.Size = New System.Drawing.Size(48, 15)
         Me.Label3.TabIndex = 38
         Me.Label3.Text = "Desde"
         '
         'Label2
         '
         Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(21, 63)
+        Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label2.Location = New System.Drawing.Point(11, 65)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(44, 13)
+        Me.Label2.Size = New System.Drawing.Size(58, 15)
         Me.Label2.TabIndex = 37
         Me.Label2.Text = "Nombre"
         '
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(22, 25)
+        Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label1.Location = New System.Drawing.Point(12, 27)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(52, 13)
+        Me.Label1.Size = New System.Drawing.Size(67, 15)
         Me.Label1.TabIndex = 36
         Me.Label1.Text = "ID Chofer"
-        '
-        'Database1DataSet
-        '
-        Me.Database1DataSet.DataSetName = "Database1DataSet"
-        Me.Database1DataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
         '
         'LiquidacionChoferBindingSource
         '
@@ -187,6 +207,7 @@ Partial Class Resumen_Chofer
         Me.TableAdapterManager.SociosTableAdapter = Nothing
         Me.TableAdapterManager.TablaDeTurnoTableAdapter = Nothing
         Me.TableAdapterManager.UpdateOrder = pruebaBD.Database1DataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete
+        Me.TableAdapterManager.Usuario1TableAdapter = Nothing
         Me.TableAdapterManager.UsuarioTableAdapter = Nothing
         Me.TableAdapterManager.ValoresTableAdapter = Nothing
         Me.TableAdapterManager.VehiculoTableAdapter = Nothing
@@ -244,15 +265,11 @@ Partial Class Resumen_Chofer
         Me.DataGridViewTextBoxColumn4.HeaderText = "Monto"
         Me.DataGridViewTextBoxColumn4.Name = "DataGridViewTextBoxColumn4"
         '
-        'ChoferBindingSource
-        '
-        Me.ChoferBindingSource.DataMember = "Chofer"
-        Me.ChoferBindingSource.DataSource = Me.Database1DataSet
-        '
         'Resumen_Chofer
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+        Me.BackColor = System.Drawing.SystemColors.Highlight
         Me.ClientSize = New System.Drawing.Size(709, 435)
         Me.Controls.Add(Me.LiquidacionChoferDataGridView)
         Me.Controls.Add(Me.BtnCalcular)
@@ -269,10 +286,10 @@ Partial Class Resumen_Chofer
         Me.Controls.Add(Me.Label1)
         Me.Name = "Resumen_Chofer"
         Me.Text = "Resumen_Chofer"
+        CType(Me.ChoferBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.Database1DataSet, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.LiquidacionChoferBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.LiquidacionChoferDataGridView, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.ChoferBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -302,4 +319,5 @@ Partial Class Resumen_Chofer
     Friend WithEvents DataGridViewTextBoxColumn4 As System.Windows.Forms.DataGridViewTextBoxColumn
     Friend WithEvents ChoferTableAdapter As pruebaBD.Database1DataSetTableAdapters.ChoferTableAdapter
     Friend WithEvents ChoferBindingSource As System.Windows.Forms.BindingSource
+    Friend WithEvents ToolTip1 As System.Windows.Forms.ToolTip
 End Class

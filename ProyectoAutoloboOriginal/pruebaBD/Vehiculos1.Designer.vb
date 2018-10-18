@@ -34,9 +34,6 @@ Partial Class Vehiculos1
         Dim DueñoLabel As System.Windows.Forms.Label
         Me.TextBoxConsulta = New System.Windows.Forms.TextBox()
         Me.Label1 = New System.Windows.Forms.Label()
-        Me.BtnVolver = New System.Windows.Forms.Button()
-        Me.BtnModificar = New System.Windows.Forms.Button()
-        Me.BtnAgregar = New System.Windows.Forms.Button()
         Me.VehiculoBindingSource = New System.Windows.Forms.BindingSource(Me.components)
         Me.Database1DataSet = New pruebaBD.Database1DataSet()
         Me.VehiculoDataGridView = New System.Windows.Forms.DataGridView()
@@ -61,6 +58,10 @@ Partial Class Vehiculos1
         Me.TextBoxModelo = New System.Windows.Forms.TextBox()
         Me.TextBoxMarca = New System.Windows.Forms.TextBox()
         Me.TextBoxDominio = New System.Windows.Forms.TextBox()
+        Me.ToolTip1 = New System.Windows.Forms.ToolTip(Me.components)
+        Me.BtnVolver = New System.Windows.Forms.Button()
+        Me.BtnModificar = New System.Windows.Forms.Button()
+        Me.BtnAgregar = New System.Windows.Forms.Button()
         ModeloLabel = New System.Windows.Forms.Label()
         MarcaLabel = New System.Windows.Forms.Label()
         AñoLabel = New System.Windows.Forms.Label()
@@ -78,87 +79,96 @@ Partial Class Vehiculos1
         'ModeloLabel
         '
         ModeloLabel.AutoSize = True
-        ModeloLabel.Location = New System.Drawing.Point(32, 120)
+        ModeloLabel.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        ModeloLabel.Location = New System.Drawing.Point(10, 121)
         ModeloLabel.Name = "ModeloLabel"
-        ModeloLabel.Size = New System.Drawing.Size(44, 13)
+        ModeloLabel.Size = New System.Drawing.Size(65, 17)
         ModeloLabel.TabIndex = 98
         ModeloLabel.Text = "modelo:"
         '
         'MarcaLabel
         '
         MarcaLabel.AutoSize = True
-        MarcaLabel.Location = New System.Drawing.Point(30, 82)
+        MarcaLabel.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        MarcaLabel.Location = New System.Drawing.Point(8, 83)
         MarcaLabel.Name = "MarcaLabel"
-        MarcaLabel.Size = New System.Drawing.Size(39, 13)
+        MarcaLabel.Size = New System.Drawing.Size(57, 17)
         MarcaLabel.TabIndex = 99
         MarcaLabel.Text = "marca:"
         '
         'AñoLabel
         '
         AñoLabel.AutoSize = True
-        AñoLabel.Location = New System.Drawing.Point(32, 153)
+        AñoLabel.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        AñoLabel.Location = New System.Drawing.Point(10, 154)
         AñoLabel.Name = "AñoLabel"
-        AñoLabel.Size = New System.Drawing.Size(28, 13)
+        AñoLabel.Size = New System.Drawing.Size(40, 17)
         AñoLabel.TabIndex = 100
         AñoLabel.Text = "año:"
         '
         'DominioLabel
         '
         DominioLabel.AutoSize = True
-        DominioLabel.Location = New System.Drawing.Point(30, 49)
+        DominioLabel.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DominioLabel.Location = New System.Drawing.Point(8, 50)
         DominioLabel.Name = "DominioLabel"
-        DominioLabel.Size = New System.Drawing.Size(46, 13)
+        DominioLabel.Size = New System.Drawing.Size(69, 17)
         DominioLabel.TabIndex = 101
         DominioLabel.Text = "dominio:"
         '
         'SeguroLabel
         '
         SeguroLabel.AutoSize = True
-        SeguroLabel.Location = New System.Drawing.Point(224, 49)
+        SeguroLabel.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        SeguroLabel.Location = New System.Drawing.Point(234, 47)
         SeguroLabel.Name = "SeguroLabel"
-        SeguroLabel.Size = New System.Drawing.Size(42, 13)
+        SeguroLabel.Size = New System.Drawing.Size(63, 17)
         SeguroLabel.TabIndex = 102
         SeguroLabel.Text = "seguro:"
         '
         'Venc_gnc_Label
         '
         Venc_gnc_Label.AutoSize = True
+        Venc_gnc_Label.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Venc_gnc_Label.Location = New System.Drawing.Point(224, 78)
         Venc_gnc_Label.Name = "Venc_gnc_Label"
-        Venc_gnc_Label.Size = New System.Drawing.Size(58, 13)
+        Venc_gnc_Label.Size = New System.Drawing.Size(83, 17)
         Venc_gnc_Label.TabIndex = 103
         Venc_gnc_Label.Text = "venc gnc :"
         '
         'Venc_vtvLabel
         '
         Venc_vtvLabel.AutoSize = True
+        Venc_vtvLabel.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Venc_vtvLabel.Location = New System.Drawing.Point(224, 98)
         Venc_vtvLabel.Name = "Venc_vtvLabel"
-        Venc_vtvLabel.Size = New System.Drawing.Size(52, 13)
+        Venc_vtvLabel.Size = New System.Drawing.Size(73, 17)
         Venc_vtvLabel.TabIndex = 104
         Venc_vtvLabel.Text = "venc vtv:"
         '
         'ColorLabel
         '
         ColorLabel.AutoSize = True
-        ColorLabel.Location = New System.Drawing.Point(32, 181)
+        ColorLabel.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        ColorLabel.Location = New System.Drawing.Point(10, 182)
         ColorLabel.Name = "ColorLabel"
-        ColorLabel.Size = New System.Drawing.Size(33, 13)
+        ColorLabel.Size = New System.Drawing.Size(49, 17)
         ColorLabel.TabIndex = 105
         ColorLabel.Text = "color:"
         '
         'DueñoLabel
         '
         DueñoLabel.AutoSize = True
-        DueñoLabel.Location = New System.Drawing.Point(32, 207)
+        DueñoLabel.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DueñoLabel.Location = New System.Drawing.Point(10, 208)
         DueñoLabel.Name = "DueñoLabel"
-        DueñoLabel.Size = New System.Drawing.Size(40, 13)
+        DueñoLabel.Size = New System.Drawing.Size(58, 17)
         DueñoLabel.TabIndex = 106
         DueñoLabel.Text = "dueño:"
         '
         'TextBoxConsulta
         '
-        Me.TextBoxConsulta.Location = New System.Drawing.Point(133, 324)
+        Me.TextBoxConsulta.Location = New System.Drawing.Point(197, 325)
         Me.TextBoxConsulta.Name = "TextBoxConsulta"
         Me.TextBoxConsulta.Size = New System.Drawing.Size(136, 20)
         Me.TextBoxConsulta.TabIndex = 51
@@ -166,38 +176,12 @@ Partial Class Vehiculos1
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(16, 327)
+        Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label1.Location = New System.Drawing.Point(8, 328)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(111, 13)
+        Me.Label1.Size = New System.Drawing.Size(172, 17)
         Me.Label1.TabIndex = 50
         Me.Label1.Text = "Consultar por dominio:"
-        '
-        'BtnVolver
-        '
-        Me.BtnVolver.Location = New System.Drawing.Point(959, 12)
-        Me.BtnVolver.Name = "BtnVolver"
-        Me.BtnVolver.Size = New System.Drawing.Size(111, 50)
-        Me.BtnVolver.TabIndex = 31
-        Me.BtnVolver.Text = "Volver"
-        Me.BtnVolver.UseVisualStyleBackColor = True
-        '
-        'BtnModificar
-        '
-        Me.BtnModificar.Location = New System.Drawing.Point(282, 322)
-        Me.BtnModificar.Name = "BtnModificar"
-        Me.BtnModificar.Size = New System.Drawing.Size(75, 23)
-        Me.BtnModificar.TabIndex = 29
-        Me.BtnModificar.Text = "Modificar"
-        Me.BtnModificar.UseVisualStyleBackColor = True
-        '
-        'BtnAgregar
-        '
-        Me.BtnAgregar.Location = New System.Drawing.Point(243, 168)
-        Me.BtnAgregar.Name = "BtnAgregar"
-        Me.BtnAgregar.Size = New System.Drawing.Size(139, 60)
-        Me.BtnAgregar.TabIndex = 28
-        Me.BtnAgregar.Text = "Agregar"
-        Me.BtnAgregar.UseVisualStyleBackColor = True
         '
         'VehiculoBindingSource
         '
@@ -316,7 +300,7 @@ Partial Class Vehiculos1
         'DateTimePickerVtv
         '
         Me.DateTimePickerVtv.Format = System.Windows.Forms.DateTimePickerFormat.[Short]
-        Me.DateTimePickerVtv.Location = New System.Drawing.Point(282, 98)
+        Me.DateTimePickerVtv.Location = New System.Drawing.Point(308, 98)
         Me.DateTimePickerVtv.Name = "DateTimePickerVtv"
         Me.DateTimePickerVtv.Size = New System.Drawing.Size(100, 20)
         Me.DateTimePickerVtv.TabIndex = 115
@@ -325,7 +309,7 @@ Partial Class Vehiculos1
         '
         Me.DateTimePickerAno.CustomFormat = "yyyy"
         Me.DateTimePickerAno.Format = System.Windows.Forms.DateTimePickerFormat.[Short]
-        Me.DateTimePickerAno.Location = New System.Drawing.Point(83, 153)
+        Me.DateTimePickerAno.Location = New System.Drawing.Point(83, 154)
         Me.DateTimePickerAno.Name = "DateTimePickerAno"
         Me.DateTimePickerAno.Size = New System.Drawing.Size(100, 20)
         Me.DateTimePickerAno.TabIndex = 114
@@ -333,57 +317,100 @@ Partial Class Vehiculos1
         'DateTimePickerGnc
         '
         Me.DateTimePickerGnc.Format = System.Windows.Forms.DateTimePickerFormat.[Short]
-        Me.DateTimePickerGnc.Location = New System.Drawing.Point(282, 72)
+        Me.DateTimePickerGnc.Location = New System.Drawing.Point(308, 72)
         Me.DateTimePickerGnc.Name = "DateTimePickerGnc"
         Me.DateTimePickerGnc.Size = New System.Drawing.Size(100, 20)
         Me.DateTimePickerGnc.TabIndex = 113
         '
         'TextBoxSeguro
         '
-        Me.TextBoxSeguro.Location = New System.Drawing.Point(282, 46)
+        Me.TextBoxSeguro.Location = New System.Drawing.Point(308, 46)
         Me.TextBoxSeguro.Name = "TextBoxSeguro"
         Me.TextBoxSeguro.Size = New System.Drawing.Size(100, 20)
         Me.TextBoxSeguro.TabIndex = 112
         '
         'TextBoxDueno
         '
-        Me.TextBoxDueno.Location = New System.Drawing.Point(83, 208)
+        Me.TextBoxDueno.Location = New System.Drawing.Point(83, 209)
         Me.TextBoxDueno.Name = "TextBoxDueno"
         Me.TextBoxDueno.Size = New System.Drawing.Size(100, 20)
         Me.TextBoxDueno.TabIndex = 111
         '
         'TextBoxColor
         '
-        Me.TextBoxColor.Location = New System.Drawing.Point(83, 181)
+        Me.TextBoxColor.Location = New System.Drawing.Point(83, 182)
         Me.TextBoxColor.Name = "TextBoxColor"
         Me.TextBoxColor.Size = New System.Drawing.Size(100, 20)
         Me.TextBoxColor.TabIndex = 110
         '
         'TextBoxModelo
         '
-        Me.TextBoxModelo.Location = New System.Drawing.Point(83, 120)
+        Me.TextBoxModelo.Location = New System.Drawing.Point(83, 121)
         Me.TextBoxModelo.Name = "TextBoxModelo"
         Me.TextBoxModelo.Size = New System.Drawing.Size(100, 20)
         Me.TextBoxModelo.TabIndex = 109
         '
         'TextBoxMarca
         '
-        Me.TextBoxMarca.Location = New System.Drawing.Point(83, 82)
+        Me.TextBoxMarca.Location = New System.Drawing.Point(83, 83)
         Me.TextBoxMarca.Name = "TextBoxMarca"
         Me.TextBoxMarca.Size = New System.Drawing.Size(100, 20)
         Me.TextBoxMarca.TabIndex = 108
         '
         'TextBoxDominio
         '
-        Me.TextBoxDominio.Location = New System.Drawing.Point(83, 49)
+        Me.TextBoxDominio.Location = New System.Drawing.Point(83, 50)
         Me.TextBoxDominio.Name = "TextBoxDominio"
         Me.TextBoxDominio.Size = New System.Drawing.Size(100, 20)
         Me.TextBoxDominio.TabIndex = 107
+        '
+        'BtnVolver
+        '
+        Me.BtnVolver.BackColor = System.Drawing.SystemColors.Highlight
+        Me.BtnVolver.BackgroundImage = Global.pruebaBD.My.Resources.Resources.icons8_izquierda_en_círculo_2_64
+        Me.BtnVolver.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center
+        Me.BtnVolver.FlatAppearance.BorderSize = 0
+        Me.BtnVolver.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.BtnVolver.Location = New System.Drawing.Point(929, 34)
+        Me.BtnVolver.Name = "BtnVolver"
+        Me.BtnVolver.Size = New System.Drawing.Size(111, 68)
+        Me.BtnVolver.TabIndex = 31
+        Me.ToolTip1.SetToolTip(Me.BtnVolver, "VOLVER")
+        Me.BtnVolver.UseVisualStyleBackColor = False
+        '
+        'BtnModificar
+        '
+        Me.BtnModificar.BackColor = System.Drawing.SystemColors.Highlight
+        Me.BtnModificar.BackgroundImage = Global.pruebaBD.My.Resources.Resources.icons8_editar_archivo_64
+        Me.BtnModificar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center
+        Me.BtnModificar.FlatAppearance.BorderSize = 0
+        Me.BtnModificar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.BtnModificar.Location = New System.Drawing.Point(392, 280)
+        Me.BtnModificar.Name = "BtnModificar"
+        Me.BtnModificar.Size = New System.Drawing.Size(75, 65)
+        Me.BtnModificar.TabIndex = 29
+        Me.ToolTip1.SetToolTip(Me.BtnModificar, "MODIFICAR")
+        Me.BtnModificar.UseVisualStyleBackColor = False
+        '
+        'BtnAgregar
+        '
+        Me.BtnAgregar.BackColor = System.Drawing.SystemColors.Highlight
+        Me.BtnAgregar.BackgroundImage = Global.pruebaBD.My.Resources.Resources.icons8_más_2_matemáticas_80
+        Me.BtnAgregar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
+        Me.BtnAgregar.FlatAppearance.BorderSize = 0
+        Me.BtnAgregar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.BtnAgregar.Location = New System.Drawing.Point(257, 141)
+        Me.BtnAgregar.Name = "BtnAgregar"
+        Me.BtnAgregar.Size = New System.Drawing.Size(76, 60)
+        Me.BtnAgregar.TabIndex = 28
+        Me.ToolTip1.SetToolTip(Me.BtnAgregar, "AGREGAR VEHICULO")
+        Me.BtnAgregar.UseVisualStyleBackColor = False
         '
         'Vehiculos1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+        Me.BackColor = System.Drawing.SystemColors.Highlight
         Me.ClientSize = New System.Drawing.Size(1082, 601)
         Me.Controls.Add(Me.DateTimePickerVtv)
         Me.Controls.Add(Me.DateTimePickerAno)
@@ -421,7 +448,6 @@ Partial Class Vehiculos1
     Friend WithEvents TextBoxConsulta As System.Windows.Forms.TextBox
     Friend WithEvents Label1 As System.Windows.Forms.Label
     Friend WithEvents BtnVolver As System.Windows.Forms.Button
-    Friend WithEvents BtnModificar As System.Windows.Forms.Button
     Friend WithEvents BtnAgregar As System.Windows.Forms.Button
     Friend WithEvents Database1DataSet As pruebaBD.Database1DataSet
     Friend WithEvents VehiculoBindingSource As System.Windows.Forms.BindingSource
@@ -447,4 +473,6 @@ Partial Class Vehiculos1
     Friend WithEvents DataGridViewTextBoxColumn5 As System.Windows.Forms.DataGridViewTextBoxColumn
     Friend WithEvents DataGridViewTextBoxColumn6 As System.Windows.Forms.DataGridViewTextBoxColumn
     Friend WithEvents DataGridViewTextBoxColumn7 As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents BtnModificar As System.Windows.Forms.Button
+    Friend WithEvents ToolTip1 As System.Windows.Forms.ToolTip
 End Class

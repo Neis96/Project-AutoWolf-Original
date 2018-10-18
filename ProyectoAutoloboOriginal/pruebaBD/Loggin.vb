@@ -14,6 +14,8 @@
         Me.Usuario1TableAdapter.Fill(Me.Database1DataSet.Usuario1)
         'TODO: esta línea de código carga datos en la tabla 'Database1DataSet.Usuario' Puede moverla o quitarla según sea necesario.
         'Me.UsuarioTableAdapter.Fill(Me.Database1DataSet.Usuario)
+        Textbox1.Text = ""
+        TextBox2.Text = ""
 
     End Sub
 
@@ -45,8 +47,12 @@
                     Else
                         Registro_Usuario = 1
                     End If
+
                     Inicio.Show()
+                    Textbox1.Text = ""
+                    TextBox2.Text = ""
                     Me.Hide()
+
                 Else
 
                     TextBox2.Text = ""

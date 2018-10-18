@@ -53,7 +53,6 @@ C:\Users\User\Desktop\proyecto\kraken\Project-AutoWolf-Original\ProyectoAutolobo
 C:\Users\User\Desktop\proyecto\kraken\Project-AutoWolf-Original\ProyectoAutoloboOriginal\pruebaBD\obj\x86\Debug\pruebaBD.RegistroUsuario.resources
 C:\Users\User\Desktop\proyecto\kraken\Project-AutoWolf-Original\ProyectoAutoloboOriginal\pruebaBD\obj\x86\Debug\pruebaBD.Resumen_Agencia.resources
 C:\Users\User\Desktop\proyecto\kraken\Project-AutoWolf-Original\ProyectoAutoloboOriginal\pruebaBD\obj\x86\Debug\pruebaBD.Resumen_Chofer.resources
-C:\Users\User\Desktop\proyecto\kraken\Project-AutoWolf-Original\ProyectoAutoloboOriginal\pruebaBD\obj\x86\Debug\pruebaBD.Resumen.resources
 C:\Users\User\Desktop\proyecto\kraken\Project-AutoWolf-Original\ProyectoAutoloboOriginal\pruebaBD\obj\x86\Debug\pruebaBD.ResumenCtaCte.resources
 C:\Users\User\Desktop\proyecto\kraken\Project-AutoWolf-Original\ProyectoAutoloboOriginal\pruebaBD\obj\x86\Debug\pruebaBD.Socios.resources
 C:\Users\User\Desktop\proyecto\kraken\Project-AutoWolf-Original\ProyectoAutoloboOriginal\pruebaBD\obj\x86\Debug\pruebaBD.TerminarReserva.resources

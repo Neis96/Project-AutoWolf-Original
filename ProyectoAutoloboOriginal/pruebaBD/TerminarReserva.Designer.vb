@@ -36,14 +36,9 @@ Partial Class TerminarReserva
         Me.ViajesBindingSource = New System.Windows.Forms.BindingSource(Me.components)
         Me.ViajesTableAdapter = New pruebaBD.Database1DataSetTableAdapters.ViajesTableAdapter()
         Me.TableAdapterManager = New pruebaBD.Database1DataSetTableAdapters.TableAdapterManager()
+        Me.ChoferTableAdapter = New pruebaBD.Database1DataSetTableAdapters.ChoferTableAdapter()
+        Me.VehiculoTableAdapter = New pruebaBD.Database1DataSetTableAdapters.VehiculoTableAdapter()
         Me.ViajesDataGridView = New System.Windows.Forms.DataGridView()
-        Me.Label1 = New System.Windows.Forms.Label()
-        Me.IdSociosTextBox = New System.Windows.Forms.TextBox()
-        Me.Fecha_origenDateTimePicker = New System.Windows.Forms.DateTimePicker()
-        Me.Fecha_destinoDateTimePicker = New System.Windows.Forms.DateTimePicker()
-        Me.Lugar_origenTextBox = New System.Windows.Forms.TextBox()
-        Me.Lugar_destinoTextBox = New System.Windows.Forms.TextBox()
-        Me.ComboBox1 = New System.Windows.Forms.ComboBox()
         Me.DataGridViewTextBoxColumn1 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.DataGridViewTextBoxColumn3 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.DataGridViewTextBoxColumn4 = New System.Windows.Forms.DataGridViewTextBoxColumn()
@@ -51,15 +46,21 @@ Partial Class TerminarReserva
         Me.DataGridViewTextBoxColumn7 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.DataGridViewTextBoxColumn8 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.DataGridViewTextBoxColumn11 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Label1 = New System.Windows.Forms.Label()
+        Me.IdSociosTextBox = New System.Windows.Forms.TextBox()
+        Me.Fecha_origenDateTimePicker = New System.Windows.Forms.DateTimePicker()
+        Me.Fecha_destinoDateTimePicker = New System.Windows.Forms.DateTimePicker()
+        Me.Lugar_origenTextBox = New System.Windows.Forms.TextBox()
+        Me.Lugar_destinoTextBox = New System.Windows.Forms.TextBox()
+        Me.ComboBox1 = New System.Windows.Forms.ComboBox()
         Me.BtnActualizar = New System.Windows.Forms.Button()
         Me.BtnEliminar = New System.Windows.Forms.Button()
         Me.ChoferBindingSource = New System.Windows.Forms.BindingSource(Me.components)
-        Me.ChoferTableAdapter = New pruebaBD.Database1DataSetTableAdapters.ChoferTableAdapter()
         Me.Id_choferComboBox = New System.Windows.Forms.ComboBox()
         Me.VehiculoBindingSource = New System.Windows.Forms.BindingSource(Me.components)
-        Me.VehiculoTableAdapter = New pruebaBD.Database1DataSetTableAdapters.VehiculoTableAdapter()
         Me.Id_vehiculoComboBox = New System.Windows.Forms.ComboBox()
         Me.BtnVolver = New System.Windows.Forms.Button()
+        Me.ToolTip1 = New System.Windows.Forms.ToolTip(Me.components)
         IdChoferLabel = New System.Windows.Forms.Label()
         IdSociosLabel = New System.Windows.Forms.Label()
         Fecha_origenLabel = New System.Windows.Forms.Label()
@@ -74,6 +75,86 @@ Partial Class TerminarReserva
         CType(Me.ChoferBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.VehiculoBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
+        '
+        'IdChoferLabel
+        '
+        IdChoferLabel.AutoSize = True
+        IdChoferLabel.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        IdChoferLabel.Location = New System.Drawing.Point(21, 321)
+        IdChoferLabel.Name = "IdChoferLabel"
+        IdChoferLabel.Size = New System.Drawing.Size(79, 17)
+        IdChoferLabel.TabIndex = 8
+        IdChoferLabel.Text = "id Chofer:"
+        '
+        'IdSociosLabel
+        '
+        IdSociosLabel.AutoSize = True
+        IdSociosLabel.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        IdSociosLabel.Location = New System.Drawing.Point(21, 295)
+        IdSociosLabel.Name = "IdSociosLabel"
+        IdSociosLabel.Size = New System.Drawing.Size(79, 17)
+        IdSociosLabel.TabIndex = 10
+        IdSociosLabel.Text = "id Socios:"
+        '
+        'Fecha_origenLabel
+        '
+        Fecha_origenLabel.AutoSize = True
+        Fecha_origenLabel.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Fecha_origenLabel.Location = New System.Drawing.Point(21, 377)
+        Fecha_origenLabel.Name = "Fecha_origenLabel"
+        Fecha_origenLabel.Size = New System.Drawing.Size(104, 17)
+        Fecha_origenLabel.TabIndex = 12
+        Fecha_origenLabel.Text = "fecha origen:"
+        '
+        'Fecha_destinoLabel
+        '
+        Fecha_destinoLabel.AutoSize = True
+        Fecha_destinoLabel.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Fecha_destinoLabel.Location = New System.Drawing.Point(21, 403)
+        Fecha_destinoLabel.Name = "Fecha_destinoLabel"
+        Fecha_destinoLabel.Size = New System.Drawing.Size(111, 17)
+        Fecha_destinoLabel.TabIndex = 14
+        Fecha_destinoLabel.Text = "fecha destino:"
+        '
+        'Lugar_origenLabel
+        '
+        Lugar_origenLabel.AutoSize = True
+        Lugar_origenLabel.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Lugar_origenLabel.Location = New System.Drawing.Point(21, 432)
+        Lugar_origenLabel.Name = "Lugar_origenLabel"
+        Lugar_origenLabel.Size = New System.Drawing.Size(101, 17)
+        Lugar_origenLabel.TabIndex = 18
+        Lugar_origenLabel.Text = "lugar origen:"
+        '
+        'Lugar_destinoLabel
+        '
+        Lugar_destinoLabel.AutoSize = True
+        Lugar_destinoLabel.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Lugar_destinoLabel.Location = New System.Drawing.Point(21, 458)
+        Lugar_destinoLabel.Name = "Lugar_destinoLabel"
+        Lugar_destinoLabel.Size = New System.Drawing.Size(108, 17)
+        Lugar_destinoLabel.TabIndex = 20
+        Lugar_destinoLabel.Text = "lugar destino:"
+        '
+        'IdVehiculosLabel
+        '
+        IdVehiculosLabel.AutoSize = True
+        IdVehiculosLabel.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        IdVehiculosLabel.Location = New System.Drawing.Point(21, 350)
+        IdVehiculosLabel.Name = "IdVehiculosLabel"
+        IdVehiculosLabel.Size = New System.Drawing.Size(101, 17)
+        IdVehiculosLabel.TabIndex = 22
+        IdVehiculosLabel.Text = "id Vehiculos:"
+        '
+        'EstadoLabel
+        '
+        EstadoLabel.AutoSize = True
+        EstadoLabel.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        EstadoLabel.Location = New System.Drawing.Point(21, 489)
+        EstadoLabel.Name = "EstadoLabel"
+        EstadoLabel.Size = New System.Drawing.Size(63, 17)
+        EstadoLabel.TabIndex = 28
+        EstadoLabel.Text = "Estado:"
         '
         'TextBox1
         '
@@ -106,10 +187,19 @@ Partial Class TerminarReserva
         Me.TableAdapterManager.SociosTableAdapter = Nothing
         Me.TableAdapterManager.TablaDeTurnoTableAdapter = Nothing
         Me.TableAdapterManager.UpdateOrder = pruebaBD.Database1DataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete
+        Me.TableAdapterManager.Usuario1TableAdapter = Nothing
         Me.TableAdapterManager.UsuarioTableAdapter = Nothing
         Me.TableAdapterManager.ValoresTableAdapter = Nothing
         Me.TableAdapterManager.VehiculoTableAdapter = Me.VehiculoTableAdapter
         Me.TableAdapterManager.ViajesTableAdapter = Me.ViajesTableAdapter
+        '
+        'ChoferTableAdapter
+        '
+        Me.ChoferTableAdapter.ClearBeforeFill = True
+        '
+        'VehiculoTableAdapter
+        '
+        Me.VehiculoTableAdapter.ClearBeforeFill = True
         '
         'ViajesDataGridView
         '
@@ -121,137 +211,6 @@ Partial Class TerminarReserva
         Me.ViajesDataGridView.Name = "ViajesDataGridView"
         Me.ViajesDataGridView.Size = New System.Drawing.Size(610, 132)
         Me.ViajesDataGridView.TabIndex = 5
-        '
-        'Label1
-        '
-        Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(67, 276)
-        Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(46, 13)
-        Me.Label1.TabIndex = 6
-        Me.Label1.Text = "Registro"
-        '
-        'IdChoferLabel
-        '
-        IdChoferLabel.AutoSize = True
-        IdChoferLabel.Location = New System.Drawing.Point(67, 325)
-        IdChoferLabel.Name = "IdChoferLabel"
-        IdChoferLabel.Size = New System.Drawing.Size(52, 13)
-        IdChoferLabel.TabIndex = 8
-        IdChoferLabel.Text = "id Chofer:"
-        '
-        'IdSociosLabel
-        '
-        IdSociosLabel.AutoSize = True
-        IdSociosLabel.Location = New System.Drawing.Point(67, 299)
-        IdSociosLabel.Name = "IdSociosLabel"
-        IdSociosLabel.Size = New System.Drawing.Size(53, 13)
-        IdSociosLabel.TabIndex = 10
-        IdSociosLabel.Text = "id Socios:"
-        '
-        'IdSociosTextBox
-        '
-        Me.IdSociosTextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.ViajesBindingSource, "idSocios", True))
-        Me.IdSociosTextBox.Location = New System.Drawing.Point(147, 296)
-        Me.IdSociosTextBox.Name = "IdSociosTextBox"
-        Me.IdSociosTextBox.Size = New System.Drawing.Size(110, 20)
-        Me.IdSociosTextBox.TabIndex = 11
-        '
-        'Fecha_origenLabel
-        '
-        Fecha_origenLabel.AutoSize = True
-        Fecha_origenLabel.Location = New System.Drawing.Point(67, 381)
-        Fecha_origenLabel.Name = "Fecha_origenLabel"
-        Fecha_origenLabel.Size = New System.Drawing.Size(69, 13)
-        Fecha_origenLabel.TabIndex = 12
-        Fecha_origenLabel.Text = "fecha origen:"
-        '
-        'Fecha_origenDateTimePicker
-        '
-        Me.Fecha_origenDateTimePicker.DataBindings.Add(New System.Windows.Forms.Binding("Value", Me.ViajesBindingSource, "fecha_origen", True))
-        Me.Fecha_origenDateTimePicker.Format = System.Windows.Forms.DateTimePickerFormat.Time
-        Me.Fecha_origenDateTimePicker.Location = New System.Drawing.Point(147, 378)
-        Me.Fecha_origenDateTimePicker.Name = "Fecha_origenDateTimePicker"
-        Me.Fecha_origenDateTimePicker.Size = New System.Drawing.Size(110, 20)
-        Me.Fecha_origenDateTimePicker.TabIndex = 13
-        '
-        'Fecha_destinoLabel
-        '
-        Fecha_destinoLabel.AutoSize = True
-        Fecha_destinoLabel.Location = New System.Drawing.Point(67, 407)
-        Fecha_destinoLabel.Name = "Fecha_destinoLabel"
-        Fecha_destinoLabel.Size = New System.Drawing.Size(74, 13)
-        Fecha_destinoLabel.TabIndex = 14
-        Fecha_destinoLabel.Text = "fecha destino:"
-        '
-        'Fecha_destinoDateTimePicker
-        '
-        Me.Fecha_destinoDateTimePicker.DataBindings.Add(New System.Windows.Forms.Binding("Value", Me.ViajesBindingSource, "fecha_destino", True))
-        Me.Fecha_destinoDateTimePicker.Format = System.Windows.Forms.DateTimePickerFormat.Time
-        Me.Fecha_destinoDateTimePicker.Location = New System.Drawing.Point(147, 404)
-        Me.Fecha_destinoDateTimePicker.Name = "Fecha_destinoDateTimePicker"
-        Me.Fecha_destinoDateTimePicker.Size = New System.Drawing.Size(110, 20)
-        Me.Fecha_destinoDateTimePicker.TabIndex = 15
-        '
-        'Lugar_origenLabel
-        '
-        Lugar_origenLabel.AutoSize = True
-        Lugar_origenLabel.Location = New System.Drawing.Point(67, 436)
-        Lugar_origenLabel.Name = "Lugar_origenLabel"
-        Lugar_origenLabel.Size = New System.Drawing.Size(65, 13)
-        Lugar_origenLabel.TabIndex = 18
-        Lugar_origenLabel.Text = "lugar origen:"
-        '
-        'Lugar_origenTextBox
-        '
-        Me.Lugar_origenTextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.ViajesBindingSource, "lugar_origen", True))
-        Me.Lugar_origenTextBox.Location = New System.Drawing.Point(147, 433)
-        Me.Lugar_origenTextBox.Name = "Lugar_origenTextBox"
-        Me.Lugar_origenTextBox.Size = New System.Drawing.Size(110, 20)
-        Me.Lugar_origenTextBox.TabIndex = 19
-        '
-        'Lugar_destinoLabel
-        '
-        Lugar_destinoLabel.AutoSize = True
-        Lugar_destinoLabel.Location = New System.Drawing.Point(67, 462)
-        Lugar_destinoLabel.Name = "Lugar_destinoLabel"
-        Lugar_destinoLabel.Size = New System.Drawing.Size(70, 13)
-        Lugar_destinoLabel.TabIndex = 20
-        Lugar_destinoLabel.Text = "lugar destino:"
-        '
-        'Lugar_destinoTextBox
-        '
-        Me.Lugar_destinoTextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.ViajesBindingSource, "lugar_destino", True))
-        Me.Lugar_destinoTextBox.Location = New System.Drawing.Point(147, 459)
-        Me.Lugar_destinoTextBox.Name = "Lugar_destinoTextBox"
-        Me.Lugar_destinoTextBox.Size = New System.Drawing.Size(110, 20)
-        Me.Lugar_destinoTextBox.TabIndex = 21
-        '
-        'IdVehiculosLabel
-        '
-        IdVehiculosLabel.AutoSize = True
-        IdVehiculosLabel.Location = New System.Drawing.Point(67, 354)
-        IdVehiculosLabel.Name = "IdVehiculosLabel"
-        IdVehiculosLabel.Size = New System.Drawing.Size(67, 13)
-        IdVehiculosLabel.TabIndex = 22
-        IdVehiculosLabel.Text = "id Vehiculos:"
-        '
-        'EstadoLabel
-        '
-        EstadoLabel.AutoSize = True
-        EstadoLabel.Location = New System.Drawing.Point(67, 493)
-        EstadoLabel.Name = "EstadoLabel"
-        EstadoLabel.Size = New System.Drawing.Size(43, 13)
-        EstadoLabel.TabIndex = 28
-        EstadoLabel.Text = "Estado:"
-        '
-        'ComboBox1
-        '
-        Me.ComboBox1.FormattingEnabled = True
-        Me.ComboBox1.Location = New System.Drawing.Point(147, 487)
-        Me.ComboBox1.Name = "ComboBox1"
-        Me.ComboBox1.Size = New System.Drawing.Size(110, 21)
-        Me.ComboBox1.TabIndex = 29
         '
         'DataGridViewTextBoxColumn1
         '
@@ -300,32 +259,96 @@ Partial Class TerminarReserva
         Me.DataGridViewTextBoxColumn11.Name = "DataGridViewTextBoxColumn11"
         Me.DataGridViewTextBoxColumn11.Width = 50
         '
+        'Label1
+        '
+        Me.Label1.AutoSize = True
+        Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label1.Location = New System.Drawing.Point(21, 272)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(69, 17)
+        Me.Label1.TabIndex = 6
+        Me.Label1.Text = "Registro"
+        '
+        'IdSociosTextBox
+        '
+        Me.IdSociosTextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.ViajesBindingSource, "idSocios", True))
+        Me.IdSociosTextBox.Location = New System.Drawing.Point(147, 296)
+        Me.IdSociosTextBox.Name = "IdSociosTextBox"
+        Me.IdSociosTextBox.Size = New System.Drawing.Size(110, 20)
+        Me.IdSociosTextBox.TabIndex = 11
+        '
+        'Fecha_origenDateTimePicker
+        '
+        Me.Fecha_origenDateTimePicker.DataBindings.Add(New System.Windows.Forms.Binding("Value", Me.ViajesBindingSource, "fecha_origen", True))
+        Me.Fecha_origenDateTimePicker.Format = System.Windows.Forms.DateTimePickerFormat.Time
+        Me.Fecha_origenDateTimePicker.Location = New System.Drawing.Point(147, 378)
+        Me.Fecha_origenDateTimePicker.Name = "Fecha_origenDateTimePicker"
+        Me.Fecha_origenDateTimePicker.Size = New System.Drawing.Size(110, 20)
+        Me.Fecha_origenDateTimePicker.TabIndex = 13
+        '
+        'Fecha_destinoDateTimePicker
+        '
+        Me.Fecha_destinoDateTimePicker.DataBindings.Add(New System.Windows.Forms.Binding("Value", Me.ViajesBindingSource, "fecha_destino", True))
+        Me.Fecha_destinoDateTimePicker.Format = System.Windows.Forms.DateTimePickerFormat.Time
+        Me.Fecha_destinoDateTimePicker.Location = New System.Drawing.Point(147, 404)
+        Me.Fecha_destinoDateTimePicker.Name = "Fecha_destinoDateTimePicker"
+        Me.Fecha_destinoDateTimePicker.Size = New System.Drawing.Size(110, 20)
+        Me.Fecha_destinoDateTimePicker.TabIndex = 15
+        '
+        'Lugar_origenTextBox
+        '
+        Me.Lugar_origenTextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.ViajesBindingSource, "lugar_origen", True))
+        Me.Lugar_origenTextBox.Location = New System.Drawing.Point(147, 433)
+        Me.Lugar_origenTextBox.Name = "Lugar_origenTextBox"
+        Me.Lugar_origenTextBox.Size = New System.Drawing.Size(110, 20)
+        Me.Lugar_origenTextBox.TabIndex = 19
+        '
+        'Lugar_destinoTextBox
+        '
+        Me.Lugar_destinoTextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.ViajesBindingSource, "lugar_destino", True))
+        Me.Lugar_destinoTextBox.Location = New System.Drawing.Point(147, 459)
+        Me.Lugar_destinoTextBox.Name = "Lugar_destinoTextBox"
+        Me.Lugar_destinoTextBox.Size = New System.Drawing.Size(110, 20)
+        Me.Lugar_destinoTextBox.TabIndex = 21
+        '
+        'ComboBox1
+        '
+        Me.ComboBox1.FormattingEnabled = True
+        Me.ComboBox1.Location = New System.Drawing.Point(147, 487)
+        Me.ComboBox1.Name = "ComboBox1"
+        Me.ComboBox1.Size = New System.Drawing.Size(110, 21)
+        Me.ComboBox1.TabIndex = 29
+        '
         'BtnActualizar
         '
-        Me.BtnActualizar.Location = New System.Drawing.Point(391, 280)
+        Me.BtnActualizar.BackgroundImage = Global.pruebaBD.My.Resources.Resources.icons8_editar_archivo_64
+        Me.BtnActualizar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center
+        Me.BtnActualizar.FlatAppearance.BorderSize = 0
+        Me.BtnActualizar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.BtnActualizar.Location = New System.Drawing.Point(391, 266)
         Me.BtnActualizar.Name = "BtnActualizar"
-        Me.BtnActualizar.Size = New System.Drawing.Size(112, 51)
+        Me.BtnActualizar.Size = New System.Drawing.Size(112, 72)
         Me.BtnActualizar.TabIndex = 30
-        Me.BtnActualizar.Text = "Actualizar"
+        Me.ToolTip1.SetToolTip(Me.BtnActualizar, "ACTUALIZAR")
         Me.BtnActualizar.UseVisualStyleBackColor = True
         '
         'BtnEliminar
         '
-        Me.BtnEliminar.Location = New System.Drawing.Point(391, 351)
+        Me.BtnEliminar.BackgroundImage = Global.pruebaBD.My.Resources.Resources.icons8_basura_64
+        Me.BtnEliminar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center
+        Me.BtnEliminar.FlatAppearance.BorderSize = 0
+        Me.BtnEliminar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.BtnEliminar.Location = New System.Drawing.Point(565, 266)
         Me.BtnEliminar.Name = "BtnEliminar"
-        Me.BtnEliminar.Size = New System.Drawing.Size(112, 53)
+        Me.BtnEliminar.Size = New System.Drawing.Size(112, 73)
         Me.BtnEliminar.TabIndex = 31
-        Me.BtnEliminar.Text = "Eliminar"
+        Me.ToolTip1.SetToolTip(Me.BtnEliminar, "ELIMINAR")
         Me.BtnEliminar.UseVisualStyleBackColor = True
         '
         'ChoferBindingSource
         '
         Me.ChoferBindingSource.DataMember = "Chofer"
         Me.ChoferBindingSource.DataSource = Me.Database1DataSet
-        '
-        'ChoferTableAdapter
-        '
-        Me.ChoferTableAdapter.ClearBeforeFill = True
         '
         'Id_choferComboBox
         '
@@ -341,10 +364,6 @@ Partial Class TerminarReserva
         Me.VehiculoBindingSource.DataMember = "Vehiculo"
         Me.VehiculoBindingSource.DataSource = Me.Database1DataSet
         '
-        'VehiculoTableAdapter
-        '
-        Me.VehiculoTableAdapter.ClearBeforeFill = True
-        '
         'Id_vehiculoComboBox
         '
         Me.Id_vehiculoComboBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.VehiculoBindingSource, "id_vehiculo", True))
@@ -356,17 +375,21 @@ Partial Class TerminarReserva
         '
         'BtnVolver
         '
-        Me.BtnVolver.Location = New System.Drawing.Point(663, 468)
+        Me.BtnVolver.BackgroundImage = Global.pruebaBD.My.Resources.Resources.icons8_izquierda_en_círculo_2_64
+        Me.BtnVolver.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center
+        Me.BtnVolver.FlatAppearance.BorderSize = 0
+        Me.BtnVolver.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.BtnVolver.Location = New System.Drawing.Point(663, 450)
         Me.BtnVolver.Name = "BtnVolver"
-        Me.BtnVolver.Size = New System.Drawing.Size(75, 62)
+        Me.BtnVolver.Size = New System.Drawing.Size(75, 80)
         Me.BtnVolver.TabIndex = 34
-        Me.BtnVolver.Text = "Volver"
         Me.BtnVolver.UseVisualStyleBackColor = True
         '
         'TerminarReserva
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+        Me.BackColor = System.Drawing.SystemColors.Highlight
         Me.ClientSize = New System.Drawing.Size(779, 553)
         Me.Controls.Add(Me.BtnVolver)
         Me.Controls.Add(Me.Id_vehiculoComboBox)
@@ -430,4 +453,5 @@ Partial Class TerminarReserva
     Friend WithEvents VehiculoBindingSource As System.Windows.Forms.BindingSource
     Friend WithEvents Id_vehiculoComboBox As System.Windows.Forms.ComboBox
     Friend WithEvents BtnVolver As System.Windows.Forms.Button
+    Friend WithEvents ToolTip1 As System.Windows.Forms.ToolTip
 End Class
