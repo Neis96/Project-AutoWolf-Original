@@ -1,136 +1,31 @@
-C:\Users\User\Desktop\proyecto\kraken\Project-AutoWolf-Original\ProyectoAutoloboOriginal\pruebaBD\bin\Debug\PruebaLocalConeccion.sdf
-C:\Users\User\Desktop\proyecto\kraken\Project-AutoWolf-Original\ProyectoAutoloboOriginal\pruebaBD\bin\Debug\pruebaBD.exe.config
-C:\Users\User\Desktop\proyecto\kraken\Project-AutoWolf-Original\ProyectoAutoloboOriginal\pruebaBD\bin\Debug\pruebaBD.exe
-C:\Users\User\Desktop\proyecto\kraken\Project-AutoWolf-Original\ProyectoAutoloboOriginal\pruebaBD\bin\Debug\pruebaBD.pdb
-C:\Users\User\Desktop\proyecto\kraken\Project-AutoWolf-Original\ProyectoAutoloboOriginal\pruebaBD\bin\Debug\pruebaBD.xml
-C:\Users\User\Desktop\proyecto\kraken\Project-AutoWolf-Original\ProyectoAutoloboOriginal\pruebaBD\obj\x86\Debug\pruebaBD.Ayuda.resources
-C:\Users\User\Desktop\proyecto\kraken\Project-AutoWolf-Original\ProyectoAutoloboOriginal\pruebaBD\obj\x86\Debug\pruebaBD.choferes.resources
-C:\Users\User\Desktop\proyecto\kraken\Project-AutoWolf-Original\ProyectoAutoloboOriginal\pruebaBD\obj\x86\Debug\pruebaBD.Configuracion.resources
-C:\Users\User\Desktop\proyecto\kraken\Project-AutoWolf-Original\ProyectoAutoloboOriginal\pruebaBD\obj\x86\Debug\pruebaBD.Finalizar_Viaje.resources
-C:\Users\User\Desktop\proyecto\kraken\Project-AutoWolf-Original\ProyectoAutoloboOriginal\pruebaBD\obj\x86\Debug\pruebaBD.Inicio.resources
-C:\Users\User\Desktop\proyecto\kraken\Project-AutoWolf-Original\ProyectoAutoloboOriginal\pruebaBD\obj\x86\Debug\pruebaBD.ModificarSocios.resources
-C:\Users\User\Desktop\proyecto\kraken\Project-AutoWolf-Original\ProyectoAutoloboOriginal\pruebaBD\obj\x86\Debug\pruebaBD.ModificarVehiculos.resources
-C:\Users\User\Desktop\proyecto\kraken\Project-AutoWolf-Original\ProyectoAutoloboOriginal\pruebaBD\obj\x86\Debug\pruebaBD.Resources.resources
-C:\Users\User\Desktop\proyecto\kraken\Project-AutoWolf-Original\ProyectoAutoloboOriginal\pruebaBD\obj\x86\Debug\pruebaBD.Vehiculos.resources
-C:\Users\User\Desktop\proyecto\kraken\Project-AutoWolf-Original\ProyectoAutoloboOriginal\pruebaBD\obj\x86\Debug\pruebaBD.Resumen.resources
-C:\Users\User\Desktop\proyecto\kraken\Project-AutoWolf-Original\ProyectoAutoloboOriginal\pruebaBD\obj\x86\Debug\pruebaBD.Socios.resources
-C:\Users\User\Desktop\proyecto\kraken\Project-AutoWolf-Original\ProyectoAutoloboOriginal\pruebaBD\obj\x86\Debug\pruebaBD.Vehiculos1.resources
-C:\Users\User\Desktop\proyecto\kraken\Project-AutoWolf-Original\ProyectoAutoloboOriginal\pruebaBD\obj\x86\Debug\pruebaBD.viajes.resources
-C:\Users\User\Desktop\proyecto\kraken\Project-AutoWolf-Original\ProyectoAutoloboOriginal\pruebaBD\obj\x86\Debug\pruebaBD.vbproj.GenerateResource.Cache
-C:\Users\User\Desktop\proyecto\kraken\Project-AutoWolf-Original\ProyectoAutoloboOriginal\pruebaBD\obj\x86\Debug\pruebaBD.exe
-C:\Users\User\Desktop\proyecto\kraken\Project-AutoWolf-Original\ProyectoAutoloboOriginal\pruebaBD\obj\x86\Debug\pruebaBD.xml
-C:\Users\User\Desktop\proyecto\kraken\Project-AutoWolf-Original\ProyectoAutoloboOriginal\pruebaBD\obj\x86\Debug\pruebaBD.pdb
-C:\Users\User\Desktop\proyecto\kraken\Project-AutoWolf-Original\ProyectoAutoloboOriginal\pruebaBD\obj\x86\Debug\pruebaBD.Liquidacion_Choferes.resources
-C:\Users\thoma\Desktop\thom\programacion\Ejercicios visual\krak\Project-AutoWolf-Original\ProyectoAutoloboOriginal\pruebaBD\bin\Debug\pruebaBD.exe.config
-C:\Users\thoma\Desktop\thom\programacion\Ejercicios visual\krak\Project-AutoWolf-Original\ProyectoAutoloboOriginal\pruebaBD\obj\x86\Debug\pruebaBD.exe
-C:\Users\thoma\Desktop\thom\programacion\Ejercicios visual\krak\Project-AutoWolf-Original\ProyectoAutoloboOriginal\pruebaBD\obj\x86\Debug\pruebaBD.xml
-C:\Users\thoma\Desktop\thom\programacion\Ejercicios visual\krak\Project-AutoWolf-Original\ProyectoAutoloboOriginal\pruebaBD\obj\x86\Debug\pruebaBD.pdb
 C:\Users\thoma\Desktop\thom\programacion\Ejercicios visual\krak\Project-AutoWolf-Original\ProyectoAutoloboOriginal\pruebaBD\bin\Debug\PruebaLocalConeccion.sdf
+C:\Users\thoma\Desktop\thom\programacion\Ejercicios visual\krak\Project-AutoWolf-Original\ProyectoAutoloboOriginal\pruebaBD\bin\Debug\pruebaBD.exe.config
 C:\Users\thoma\Desktop\thom\programacion\Ejercicios visual\krak\Project-AutoWolf-Original\ProyectoAutoloboOriginal\pruebaBD\bin\Debug\pruebaBD.exe
 C:\Users\thoma\Desktop\thom\programacion\Ejercicios visual\krak\Project-AutoWolf-Original\ProyectoAutoloboOriginal\pruebaBD\bin\Debug\pruebaBD.pdb
 C:\Users\thoma\Desktop\thom\programacion\Ejercicios visual\krak\Project-AutoWolf-Original\ProyectoAutoloboOriginal\pruebaBD\bin\Debug\pruebaBD.xml
+C:\Users\thoma\Desktop\thom\programacion\Ejercicios visual\krak\Project-AutoWolf-Original\ProyectoAutoloboOriginal\pruebaBD\obj\x86\Debug\pruebaBD.vbprojResolveAssemblyReference.cache
 C:\Users\thoma\Desktop\thom\programacion\Ejercicios visual\krak\Project-AutoWolf-Original\ProyectoAutoloboOriginal\pruebaBD\obj\x86\Debug\pruebaBD.Ayuda.resources
 C:\Users\thoma\Desktop\thom\programacion\Ejercicios visual\krak\Project-AutoWolf-Original\ProyectoAutoloboOriginal\pruebaBD\obj\x86\Debug\pruebaBD.choferes.resources
 C:\Users\thoma\Desktop\thom\programacion\Ejercicios visual\krak\Project-AutoWolf-Original\ProyectoAutoloboOriginal\pruebaBD\obj\x86\Debug\pruebaBD.Configuracion.resources
 C:\Users\thoma\Desktop\thom\programacion\Ejercicios visual\krak\Project-AutoWolf-Original\ProyectoAutoloboOriginal\pruebaBD\obj\x86\Debug\pruebaBD.Finalizar_Viaje.resources
 C:\Users\thoma\Desktop\thom\programacion\Ejercicios visual\krak\Project-AutoWolf-Original\ProyectoAutoloboOriginal\pruebaBD\obj\x86\Debug\pruebaBD.Inicio.resources
-C:\Users\thoma\Desktop\thom\programacion\Ejercicios visual\krak\Project-AutoWolf-Original\ProyectoAutoloboOriginal\pruebaBD\obj\x86\Debug\pruebaBD.Liquidacion_Choferes.resources
+C:\Users\thoma\Desktop\thom\programacion\Ejercicios visual\krak\Project-AutoWolf-Original\ProyectoAutoloboOriginal\pruebaBD\obj\x86\Debug\pruebaBD.LiquidacionCta.resources
+C:\Users\thoma\Desktop\thom\programacion\Ejercicios visual\krak\Project-AutoWolf-Original\ProyectoAutoloboOriginal\pruebaBD\obj\x86\Debug\pruebaBD.Loggin.resources
+C:\Users\thoma\Desktop\thom\programacion\Ejercicios visual\krak\Project-AutoWolf-Original\ProyectoAutoloboOriginal\pruebaBD\obj\x86\Debug\pruebaBD.ModificarChofer.resources
 C:\Users\thoma\Desktop\thom\programacion\Ejercicios visual\krak\Project-AutoWolf-Original\ProyectoAutoloboOriginal\pruebaBD\obj\x86\Debug\pruebaBD.ModificarSocios.resources
 C:\Users\thoma\Desktop\thom\programacion\Ejercicios visual\krak\Project-AutoWolf-Original\ProyectoAutoloboOriginal\pruebaBD\obj\x86\Debug\pruebaBD.ModificarVehiculos.resources
 C:\Users\thoma\Desktop\thom\programacion\Ejercicios visual\krak\Project-AutoWolf-Original\ProyectoAutoloboOriginal\pruebaBD\obj\x86\Debug\pruebaBD.Resources.resources
 C:\Users\thoma\Desktop\thom\programacion\Ejercicios visual\krak\Project-AutoWolf-Original\ProyectoAutoloboOriginal\pruebaBD\obj\x86\Debug\pruebaBD.Vehiculos.resources
+C:\Users\thoma\Desktop\thom\programacion\Ejercicios visual\krak\Project-AutoWolf-Original\ProyectoAutoloboOriginal\pruebaBD\obj\x86\Debug\pruebaBD.RegistroUsuario.resources
+C:\Users\thoma\Desktop\thom\programacion\Ejercicios visual\krak\Project-AutoWolf-Original\ProyectoAutoloboOriginal\pruebaBD\obj\x86\Debug\pruebaBD.Resumen_Agencia.resources
+C:\Users\thoma\Desktop\thom\programacion\Ejercicios visual\krak\Project-AutoWolf-Original\ProyectoAutoloboOriginal\pruebaBD\obj\x86\Debug\pruebaBD.Resumen_Chofer.resources
 C:\Users\thoma\Desktop\thom\programacion\Ejercicios visual\krak\Project-AutoWolf-Original\ProyectoAutoloboOriginal\pruebaBD\obj\x86\Debug\pruebaBD.Resumen.resources
+C:\Users\thoma\Desktop\thom\programacion\Ejercicios visual\krak\Project-AutoWolf-Original\ProyectoAutoloboOriginal\pruebaBD\obj\x86\Debug\pruebaBD.ResumenCtaCte.resources
 C:\Users\thoma\Desktop\thom\programacion\Ejercicios visual\krak\Project-AutoWolf-Original\ProyectoAutoloboOriginal\pruebaBD\obj\x86\Debug\pruebaBD.Socios.resources
+C:\Users\thoma\Desktop\thom\programacion\Ejercicios visual\krak\Project-AutoWolf-Original\ProyectoAutoloboOriginal\pruebaBD\obj\x86\Debug\pruebaBD.TerminarReserva.resources
 C:\Users\thoma\Desktop\thom\programacion\Ejercicios visual\krak\Project-AutoWolf-Original\ProyectoAutoloboOriginal\pruebaBD\obj\x86\Debug\pruebaBD.Vehiculos1.resources
 C:\Users\thoma\Desktop\thom\programacion\Ejercicios visual\krak\Project-AutoWolf-Original\ProyectoAutoloboOriginal\pruebaBD\obj\x86\Debug\pruebaBD.viajes.resources
 C:\Users\thoma\Desktop\thom\programacion\Ejercicios visual\krak\Project-AutoWolf-Original\ProyectoAutoloboOriginal\pruebaBD\obj\x86\Debug\pruebaBD.vbproj.GenerateResource.Cache
-C:\Users\user\Desktop\GITKRAKEN\Project-AutoWolf-Original\ProyectoAutoloboOriginal\pruebaBD\bin\Debug\pruebaBD.exe.config
-C:\Users\user\Desktop\GITKRAKEN\Project-AutoWolf-Original\ProyectoAutoloboOriginal\pruebaBD\obj\x86\Debug\pruebaBD.exe
-C:\Users\user\Desktop\GITKRAKEN\Project-AutoWolf-Original\ProyectoAutoloboOriginal\pruebaBD\obj\x86\Debug\pruebaBD.xml
-C:\Users\user\Desktop\GITKRAKEN\Project-AutoWolf-Original\ProyectoAutoloboOriginal\pruebaBD\obj\x86\Debug\pruebaBD.pdb
-C:\Users\user\Desktop\GITKRAKEN\Project-AutoWolf-Original\ProyectoAutoloboOriginal\pruebaBD\bin\Debug\PruebaLocalConeccion.sdf
-C:\Users\user\Desktop\GITKRAKEN\Project-AutoWolf-Original\ProyectoAutoloboOriginal\pruebaBD\bin\Debug\pruebaBD.exe
-C:\Users\user\Desktop\GITKRAKEN\Project-AutoWolf-Original\ProyectoAutoloboOriginal\pruebaBD\bin\Debug\pruebaBD.pdb
-C:\Users\user\Desktop\GITKRAKEN\Project-AutoWolf-Original\ProyectoAutoloboOriginal\pruebaBD\bin\Debug\pruebaBD.xml
-C:\Users\user\Desktop\GITKRAKEN\Project-AutoWolf-Original\ProyectoAutoloboOriginal\pruebaBD\obj\x86\Debug\pruebaBD.Ayuda.resources
-C:\Users\user\Desktop\GITKRAKEN\Project-AutoWolf-Original\ProyectoAutoloboOriginal\pruebaBD\obj\x86\Debug\pruebaBD.choferes.resources
-C:\Users\user\Desktop\GITKRAKEN\Project-AutoWolf-Original\ProyectoAutoloboOriginal\pruebaBD\obj\x86\Debug\pruebaBD.Configuracion.resources
-C:\Users\user\Desktop\GITKRAKEN\Project-AutoWolf-Original\ProyectoAutoloboOriginal\pruebaBD\obj\x86\Debug\pruebaBD.Finalizar_Viaje.resources
-C:\Users\user\Desktop\GITKRAKEN\Project-AutoWolf-Original\ProyectoAutoloboOriginal\pruebaBD\obj\x86\Debug\pruebaBD.Inicio.resources
-C:\Users\user\Desktop\GITKRAKEN\Project-AutoWolf-Original\ProyectoAutoloboOriginal\pruebaBD\obj\x86\Debug\pruebaBD.Liquidacion_Choferes.resources
-C:\Users\user\Desktop\GITKRAKEN\Project-AutoWolf-Original\ProyectoAutoloboOriginal\pruebaBD\obj\x86\Debug\pruebaBD.ModificarSocios.resources
-C:\Users\user\Desktop\GITKRAKEN\Project-AutoWolf-Original\ProyectoAutoloboOriginal\pruebaBD\obj\x86\Debug\pruebaBD.ModificarVehiculos.resources
-C:\Users\user\Desktop\GITKRAKEN\Project-AutoWolf-Original\ProyectoAutoloboOriginal\pruebaBD\obj\x86\Debug\pruebaBD.Resources.resources
-C:\Users\user\Desktop\GITKRAKEN\Project-AutoWolf-Original\ProyectoAutoloboOriginal\pruebaBD\obj\x86\Debug\pruebaBD.Vehiculos.resources
-C:\Users\user\Desktop\GITKRAKEN\Project-AutoWolf-Original\ProyectoAutoloboOriginal\pruebaBD\obj\x86\Debug\pruebaBD.Resumen.resources
-C:\Users\user\Desktop\GITKRAKEN\Project-AutoWolf-Original\ProyectoAutoloboOriginal\pruebaBD\obj\x86\Debug\pruebaBD.Socios.resources
-C:\Users\user\Desktop\GITKRAKEN\Project-AutoWolf-Original\ProyectoAutoloboOriginal\pruebaBD\obj\x86\Debug\pruebaBD.Vehiculos1.resources
-C:\Users\user\Desktop\GITKRAKEN\Project-AutoWolf-Original\ProyectoAutoloboOriginal\pruebaBD\obj\x86\Debug\pruebaBD.viajes.resources
-C:\Users\user\Desktop\GITKRAKEN\Project-AutoWolf-Original\ProyectoAutoloboOriginal\pruebaBD\obj\x86\Debug\pruebaBD.vbproj.GenerateResource.Cache
-C:\Users\karat\Desktop\GIT COD ULT\Liq_funcional\Project-AutoWolf-Original\ProyectoAutoloboOriginal\pruebaBD\bin\Debug\pruebaBD.exe.config
-C:\Users\karat\Desktop\GIT COD ULT\Liq_funcional\Project-AutoWolf-Original\ProyectoAutoloboOriginal\pruebaBD\obj\x86\Debug\pruebaBD.exe
-C:\Users\karat\Desktop\GIT COD ULT\Liq_funcional\Project-AutoWolf-Original\ProyectoAutoloboOriginal\pruebaBD\obj\x86\Debug\pruebaBD.xml
-C:\Users\karat\Desktop\GIT COD ULT\Liq_funcional\Project-AutoWolf-Original\ProyectoAutoloboOriginal\pruebaBD\obj\x86\Debug\pruebaBD.pdb
-C:\Users\karat\Desktop\GIT COD ULT\Liq_funcional\Project-AutoWolf-Original\ProyectoAutoloboOriginal\pruebaBD\bin\Debug\PruebaLocalConeccion.sdf
-C:\Users\karat\Desktop\GIT COD ULT\Liq_funcional\Project-AutoWolf-Original\ProyectoAutoloboOriginal\pruebaBD\bin\Debug\pruebaBD.exe
-C:\Users\karat\Desktop\GIT COD ULT\Liq_funcional\Project-AutoWolf-Original\ProyectoAutoloboOriginal\pruebaBD\bin\Debug\pruebaBD.pdb
-C:\Users\karat\Desktop\GIT COD ULT\Liq_funcional\Project-AutoWolf-Original\ProyectoAutoloboOriginal\pruebaBD\bin\Debug\pruebaBD.xml
-C:\Users\karat\Desktop\GIT COD ULT\Liq_funcional\Project-AutoWolf-Original\ProyectoAutoloboOriginal\pruebaBD\obj\x86\Debug\pruebaBD.vbprojResolveAssemblyReference.cache
-C:\Users\karat\Desktop\GIT COD ULT\Liq_funcional\Project-AutoWolf-Original\ProyectoAutoloboOriginal\pruebaBD\obj\x86\Debug\pruebaBD.Ayuda.resources
-C:\Users\karat\Desktop\GIT COD ULT\Liq_funcional\Project-AutoWolf-Original\ProyectoAutoloboOriginal\pruebaBD\obj\x86\Debug\pruebaBD.choferes.resources
-C:\Users\karat\Desktop\GIT COD ULT\Liq_funcional\Project-AutoWolf-Original\ProyectoAutoloboOriginal\pruebaBD\obj\x86\Debug\pruebaBD.Configuracion.resources
-C:\Users\karat\Desktop\GIT COD ULT\Liq_funcional\Project-AutoWolf-Original\ProyectoAutoloboOriginal\pruebaBD\obj\x86\Debug\pruebaBD.Finalizar_Viaje.resources
-C:\Users\karat\Desktop\GIT COD ULT\Liq_funcional\Project-AutoWolf-Original\ProyectoAutoloboOriginal\pruebaBD\obj\x86\Debug\pruebaBD.Inicio.resources
-C:\Users\karat\Desktop\GIT COD ULT\Liq_funcional\Project-AutoWolf-Original\ProyectoAutoloboOriginal\pruebaBD\obj\x86\Debug\pruebaBD.Liquidacion_Choferes.resources
-C:\Users\karat\Desktop\GIT COD ULT\Liq_funcional\Project-AutoWolf-Original\ProyectoAutoloboOriginal\pruebaBD\obj\x86\Debug\pruebaBD.ModificarSocios.resources
-C:\Users\karat\Desktop\GIT COD ULT\Liq_funcional\Project-AutoWolf-Original\ProyectoAutoloboOriginal\pruebaBD\obj\x86\Debug\pruebaBD.ModificarVehiculos.resources
-C:\Users\karat\Desktop\GIT COD ULT\Liq_funcional\Project-AutoWolf-Original\ProyectoAutoloboOriginal\pruebaBD\obj\x86\Debug\pruebaBD.Resources.resources
-C:\Users\karat\Desktop\GIT COD ULT\Liq_funcional\Project-AutoWolf-Original\ProyectoAutoloboOriginal\pruebaBD\obj\x86\Debug\pruebaBD.Vehiculos.resources
-C:\Users\karat\Desktop\GIT COD ULT\Liq_funcional\Project-AutoWolf-Original\ProyectoAutoloboOriginal\pruebaBD\obj\x86\Debug\pruebaBD.Resumen.resources
-C:\Users\karat\Desktop\GIT COD ULT\Liq_funcional\Project-AutoWolf-Original\ProyectoAutoloboOriginal\pruebaBD\obj\x86\Debug\pruebaBD.Socios.resources
-C:\Users\karat\Desktop\GIT COD ULT\Liq_funcional\Project-AutoWolf-Original\ProyectoAutoloboOriginal\pruebaBD\obj\x86\Debug\pruebaBD.Vehiculos1.resources
-C:\Users\karat\Desktop\GIT COD ULT\Liq_funcional\Project-AutoWolf-Original\ProyectoAutoloboOriginal\pruebaBD\obj\x86\Debug\pruebaBD.viajes.resources
-C:\Users\karat\Desktop\GIT COD ULT\Liq_funcional\Project-AutoWolf-Original\ProyectoAutoloboOriginal\pruebaBD\obj\x86\Debug\pruebaBD.vbproj.GenerateResource.Cache
-C:\Users\karat\Desktop\GIT COD ULT\Liq_funcional\Project-AutoWolf-Original\ProyectoAutoloboOriginal\pruebaBD\obj\x86\Debug\pruebaBD.Loggin.resources
-C:\Users\karat\Desktop\GIT COD ULT\Liq_funcional\Project-AutoWolf-Original\ProyectoAutoloboOriginal\pruebaBD\obj\x86\Debug\pruebaBD.RegistroUsuario.resources
-D:\GIT COD ULT\Liq_funcional\Project-AutoWolf-Original\ProyectoAutoloboOriginal\pruebaBD\bin\Debug\pruebaBD.exe.config
-D:\GIT COD ULT\Liq_funcional\Project-AutoWolf-Original\ProyectoAutoloboOriginal\pruebaBD\obj\x86\Debug\pruebaBD.exe
-D:\GIT COD ULT\Liq_funcional\Project-AutoWolf-Original\ProyectoAutoloboOriginal\pruebaBD\obj\x86\Debug\pruebaBD.xml
-D:\GIT COD ULT\Liq_funcional\Project-AutoWolf-Original\ProyectoAutoloboOriginal\pruebaBD\obj\x86\Debug\pruebaBD.pdb
-D:\GIT COD ULT\Liq_funcional\Project-AutoWolf-Original\ProyectoAutoloboOriginal\pruebaBD\bin\Debug\PruebaLocalConeccion.sdf
-D:\GIT COD ULT\Liq_funcional\Project-AutoWolf-Original\ProyectoAutoloboOriginal\pruebaBD\bin\Debug\pruebaBD.exe
-D:\GIT COD ULT\Liq_funcional\Project-AutoWolf-Original\ProyectoAutoloboOriginal\pruebaBD\bin\Debug\pruebaBD.pdb
-D:\GIT COD ULT\Liq_funcional\Project-AutoWolf-Original\ProyectoAutoloboOriginal\pruebaBD\bin\Debug\pruebaBD.xml
-D:\GIT COD ULT\Liq_funcional\Project-AutoWolf-Original\ProyectoAutoloboOriginal\pruebaBD\obj\x86\Debug\pruebaBD.vbprojResolveAssemblyReference.cache
-D:\GIT COD ULT\Liq_funcional\Project-AutoWolf-Original\ProyectoAutoloboOriginal\pruebaBD\obj\x86\Debug\pruebaBD.Ayuda.resources
-D:\GIT COD ULT\Liq_funcional\Project-AutoWolf-Original\ProyectoAutoloboOriginal\pruebaBD\obj\x86\Debug\pruebaBD.choferes.resources
-D:\GIT COD ULT\Liq_funcional\Project-AutoWolf-Original\ProyectoAutoloboOriginal\pruebaBD\obj\x86\Debug\pruebaBD.Configuracion.resources
-D:\GIT COD ULT\Liq_funcional\Project-AutoWolf-Original\ProyectoAutoloboOriginal\pruebaBD\obj\x86\Debug\pruebaBD.Finalizar_Viaje.resources
-D:\GIT COD ULT\Liq_funcional\Project-AutoWolf-Original\ProyectoAutoloboOriginal\pruebaBD\obj\x86\Debug\pruebaBD.Inicio.resources
-D:\GIT COD ULT\Liq_funcional\Project-AutoWolf-Original\ProyectoAutoloboOriginal\pruebaBD\obj\x86\Debug\pruebaBD.Liquidacion_Choferes.resources
-D:\GIT COD ULT\Liq_funcional\Project-AutoWolf-Original\ProyectoAutoloboOriginal\pruebaBD\obj\x86\Debug\pruebaBD.Loggin.resources
-D:\GIT COD ULT\Liq_funcional\Project-AutoWolf-Original\ProyectoAutoloboOriginal\pruebaBD\obj\x86\Debug\pruebaBD.ModificarSocios.resources
-D:\GIT COD ULT\Liq_funcional\Project-AutoWolf-Original\ProyectoAutoloboOriginal\pruebaBD\obj\x86\Debug\pruebaBD.ModificarVehiculos.resources
-D:\GIT COD ULT\Liq_funcional\Project-AutoWolf-Original\ProyectoAutoloboOriginal\pruebaBD\obj\x86\Debug\pruebaBD.Resources.resources
-D:\GIT COD ULT\Liq_funcional\Project-AutoWolf-Original\ProyectoAutoloboOriginal\pruebaBD\obj\x86\Debug\pruebaBD.Vehiculos.resources
-D:\GIT COD ULT\Liq_funcional\Project-AutoWolf-Original\ProyectoAutoloboOriginal\pruebaBD\obj\x86\Debug\pruebaBD.RegistroUsuario.resources
-D:\GIT COD ULT\Liq_funcional\Project-AutoWolf-Original\ProyectoAutoloboOriginal\pruebaBD\obj\x86\Debug\pruebaBD.Resumen.resources
-D:\GIT COD ULT\Liq_funcional\Project-AutoWolf-Original\ProyectoAutoloboOriginal\pruebaBD\obj\x86\Debug\pruebaBD.Socios.resources
-D:\GIT COD ULT\Liq_funcional\Project-AutoWolf-Original\ProyectoAutoloboOriginal\pruebaBD\obj\x86\Debug\pruebaBD.Vehiculos1.resources
-D:\GIT COD ULT\Liq_funcional\Project-AutoWolf-Original\ProyectoAutoloboOriginal\pruebaBD\obj\x86\Debug\pruebaBD.viajes.resources
-D:\GIT COD ULT\Liq_funcional\Project-AutoWolf-Original\ProyectoAutoloboOriginal\pruebaBD\obj\x86\Debug\pruebaBD.vbproj.GenerateResource.Cache
-<<<<<<< HEAD
-C:\Users\thoma\Desktop\thom\programacion\Ejercicios visual\krak\Project-AutoWolf-Original\ProyectoAutoloboOriginal\pruebaBD\obj\x86\Debug\pruebaBD.vbprojResolveAssemblyReference.cache
-C:\Users\thoma\Desktop\thom\programacion\Ejercicios visual\krak\Project-AutoWolf-Original\ProyectoAutoloboOriginal\pruebaBD\obj\x86\Debug\pruebaBD.LiquidacionCta.resources
-C:\Users\thoma\Desktop\thom\programacion\Ejercicios visual\krak\Project-AutoWolf-Original\ProyectoAutoloboOriginal\pruebaBD\obj\x86\Debug\pruebaBD.Loggin.resources
-C:\Users\thoma\Desktop\thom\programacion\Ejercicios visual\krak\Project-AutoWolf-Original\ProyectoAutoloboOriginal\pruebaBD\obj\x86\Debug\pruebaBD.RegistroUsuario.resources
-C:\Users\thoma\Desktop\thom\programacion\Ejercicios visual\krak\Project-AutoWolf-Original\ProyectoAutoloboOriginal\pruebaBD\obj\x86\Debug\pruebaBD.ResumenCtaCte.resources
-C:\Users\thoma\Desktop\thom\programacion\Ejercicios visual\krak\Project-AutoWolf-Original\ProyectoAutoloboOriginal\pruebaBD\obj\x86\Debug\pruebaBD.TerminarReserva.resources
-C:\Users\thoma\Desktop\thom\programacion\Ejercicios visual\krak\Project-AutoWolf-Original\ProyectoAutoloboOriginal\pruebaBD\obj\x86\Debug\pruebaBD.ModificarChofer.resources
-=======
-C:\Users\user\Desktop\GITKRAKEN\Project-AutoWolf-Original\ProyectoAutoloboOriginal\pruebaBD\obj\x86\Debug\pruebaBD.vbprojResolveAssemblyReference.cache
-C:\Users\user\Desktop\GITKRAKEN\Project-AutoWolf-Original\ProyectoAutoloboOriginal\pruebaBD\obj\x86\Debug\pruebaBD.Loggin.resources
-C:\Users\user\Desktop\GITKRAKEN\Project-AutoWolf-Original\ProyectoAutoloboOriginal\pruebaBD\obj\x86\Debug\pruebaBD.RegistroUsuario.resources
-C:\Users\user\Desktop\GITKRAKEN\Project-AutoWolf-Original\ProyectoAutoloboOriginal\pruebaBD\obj\x86\Debug\pruebaBD.Resumen_Agencia.resources
-C:\Users\user\Desktop\GITKRAKEN\Project-AutoWolf-Original\ProyectoAutoloboOriginal\pruebaBD\obj\x86\Debug\pruebaBD.Resumen_Chofer.resources
->>>>>>> validacionesYresumen
+C:\Users\thoma\Desktop\thom\programacion\Ejercicios visual\krak\Project-AutoWolf-Original\ProyectoAutoloboOriginal\pruebaBD\obj\x86\Debug\pruebaBD.exe
+C:\Users\thoma\Desktop\thom\programacion\Ejercicios visual\krak\Project-AutoWolf-Original\ProyectoAutoloboOriginal\pruebaBD\obj\x86\Debug\pruebaBD.xml
+C:\Users\thoma\Desktop\thom\programacion\Ejercicios visual\krak\Project-AutoWolf-Original\ProyectoAutoloboOriginal\pruebaBD\obj\x86\Debug\pruebaBD.pdb

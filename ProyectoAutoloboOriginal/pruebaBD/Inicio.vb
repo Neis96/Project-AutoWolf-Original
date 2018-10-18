@@ -84,7 +84,7 @@
     End Sub
 
     Private Sub LiquidacionChoferToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles LiquidacionChoferToolStripMenuItem.Click
-        Liquidacion_Choferes.Show()
+        'Liquidacion_Choferes.Show()
 
     End Sub
 
