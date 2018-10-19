@@ -1,13 +1,15 @@
-﻿Public Class Inicio
+﻿
+
+
+Public Class Inicio
 
     Dim conexion As conexion = New conexion()
     Dim conexion2 As conexion = New conexion()
 
-    Private Sub Inicio_KeyDown(sender As Object, e As System.Windows.Forms.KeyEventArgs) Handles Me.KeyDown
+    Private Sub Inicio_KeyDown(ByVal sender As Object, ByVal e As System.Windows.Forms.KeyEventArgs) Handles Me.KeyDown
         If e.KeyCode = Keys.F1 Then
 
             viajes.ShowDialog()
-
         ElseIf e.KeyCode = Keys.F2 Then
             Socios.Show()
 
@@ -57,7 +59,7 @@
         DgvReserva.DataSource = conexion2.ds.Tables("viajes")
     End Sub
 
-    
+
 
     Private Sub BtnViajes_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles BtnViajes.Click
 
@@ -105,10 +107,13 @@
     End Sub
 
     Private Sub DgvEstado_CellClick(ByVal sender As Object, ByVal e As System.Windows.Forms.DataGridViewCellEventArgs) Handles DgvEstado.CellClick
-     
+
     End Sub
 
-    Private Sub ViajesF1ToolStripMenuItem_Click(sender As System.Object, e As System.EventArgs) Handles ViajesF1ToolStripMenuItem.Click
+    Private Sub ViajesF1ToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles ViajesF1ToolStripMenuItem.Click
+
+        viajes.Show()
+
 
     End Sub
 
@@ -172,13 +177,55 @@
 
     End Sub
 
-    Private Sub CerrarSesionToolStripMenuItem_Click(sender As System.Object, e As System.EventArgs) Handles CerrarSesionToolStripMenuItem.Click
+    Private Sub CerrarSesionToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles CerrarSesionToolStripMenuItem.Click
         Loggin.Show()
         Me.Close()
     End Sub
 
-    Private Sub Button1_Click(sender As System.Object, e As System.EventArgs) Handles Button1.Click
+    Private Sub Button1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button1.Click
         End
+
+    End Sub
+
+    Private Sub ContactoToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles ContactoToolStripMenuItem.Click
+        MsgBox("Contactenos las 24hs a traves de nuestro Email: neoprogrammingcrew@gmail.com. Responderemos a la brevedad")
+    End Sub
+
+    Private Sub ManualDeUsuarioToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs)
+        manual()
+
+    End Sub
+
+    Private Sub ManualDeUsuarioToolStripMenuItem_Click_1(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles ManualDeUsuarioToolStripMenuItem.Click
+        manual()
+
+    End Sub
+
+    Private Sub Timer1_Tick(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Timer1.Tick
+
+        Label3.Text = TimeOfDay.TimeOfDay.ToString
+
+
+    End Sub
+
+    Private Sub SociosF2ToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles SociosF2ToolStripMenuItem.Click
+
+        Socios.Show()
+
+
+    End Sub
+
+    Private Sub ChoferesF3ToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles ChoferesF3ToolStripMenuItem.Click
+
+        choferes.Show()
+
+
+    End Sub
+
+    Private Sub VehiculosF4ToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles VehiculosF4ToolStripMenuItem.Click
+
+        Vehiculos1.Show()
+
 
     End Sub
 End Class

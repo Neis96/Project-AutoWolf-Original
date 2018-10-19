@@ -19,6 +19,8 @@
         Me.ViajesTableAdapter.Fill(Me.Database1DataSet.Viajes)
         ' Me.dtViaje = Me.taViaje.GetData
         Me.ViajesBindingSource.AddNew()
+        DestinoPick.Value = Now
+        OrigenPick.Value = Now
 
     End Sub
 

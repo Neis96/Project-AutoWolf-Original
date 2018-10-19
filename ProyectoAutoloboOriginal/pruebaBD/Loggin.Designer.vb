@@ -161,6 +161,7 @@ Partial Class Loggin
         Me.Controls.Add(Me.ButtonCancela)
         Me.Controls.Add(Me.ButtonIngreso)
         Me.Name = "Loggin"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Loggin"
         CType(Me.Database1DataSet, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.Usuario1BindingSource, System.ComponentModel.ISupportInitialize).EndInit()

@@ -25,8 +25,12 @@
 
     Private Sub ButtonIngreso_Click_1(sender As System.Object, e As System.EventArgs) Handles ButtonIngreso.Click
 
-        If Textbox1.Text = "" Or TextBox2.Text = "" Then
-            MsgBox("Todos los campos tienen que estar completos", "Ingreso")
+        If Textbox1.Text = "" Then
+            MsgBox("Todos los campos tienen que estar completos")
+        ElseIf TextBox2.Text = "" Then
+
+
+            MsgBox("Todos los campos tienen que estar completos")
             Textbox1.Text = ""
             TextBox2.Text = ""
             Textbox1.Focus()
@@ -66,6 +70,19 @@
     Private Sub ButtonCancela_Click(sender As System.Object, e As System.EventArgs) Handles ButtonCancela.Click
 
         Close()
+
+    End Sub
+
+    Private Sub Button1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button1.Click
+        Dim i As Integer = 0
+
+
+        i = i + 1
+        If i > 10 Then
+            MsgBox("felicidades tiene tiempo libre :D")
+        End If
+
+
 
     End Sub
 End Class

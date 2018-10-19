@@ -80,4 +80,13 @@
     Private Sub DireccionTextBox_TextChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles DireccionTextBox.TextChanged
 
     End Sub
+
+    Private Sub Button2_Click_1(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button2.Click
+
+        Inicio.Show()
+
+        Me.Close()
+
+
+    End Sub
 End Class

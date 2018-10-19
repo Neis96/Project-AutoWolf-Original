@@ -40,6 +40,7 @@ Partial Class choferes
         Me.ToolTip1 = New System.Windows.Forms.ToolTip(Me.components)
         Me.Button1 = New System.Windows.Forms.Button()
         Me.ButtonSocios = New System.Windows.Forms.Button()
+        Me.Button2 = New System.Windows.Forms.Button()
         TelefonoLabel = New System.Windows.Forms.Label()
         DireccionLabel = New System.Windows.Forms.Label()
         DniLabel = New System.Windows.Forms.Label()
@@ -129,6 +130,7 @@ Partial Class choferes
         '
         Me.DniTextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.ChoferBindingSource, "dni", True))
         Me.DniTextBox.Location = New System.Drawing.Point(215, 134)
+        Me.DniTextBox.MaxLength = 8
         Me.DniTextBox.Name = "DniTextBox"
         Me.DniTextBox.Size = New System.Drawing.Size(126, 20)
         Me.DniTextBox.TabIndex = 8
@@ -195,12 +197,25 @@ Partial Class choferes
         Me.ToolTip1.SetToolTip(Me.ButtonSocios, "AGREAR")
         Me.ButtonSocios.UseVisualStyleBackColor = True
         '
+        'Button2
+        '
+        Me.Button2.BackgroundImage = Global.pruebaBD.My.Resources.Resources.icons8_izquierda_en_círculo_2_64
+        Me.Button2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center
+        Me.Button2.FlatAppearance.BorderSize = 0
+        Me.Button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button2.Location = New System.Drawing.Point(397, 52)
+        Me.Button2.Name = "Button2"
+        Me.Button2.Size = New System.Drawing.Size(75, 67)
+        Me.Button2.TabIndex = 18
+        Me.Button2.UseVisualStyleBackColor = True
+        '
         'choferes
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.SystemColors.MenuHighlight
         Me.ClientSize = New System.Drawing.Size(531, 450)
+        Me.Controls.Add(Me.Button2)
         Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.ButtonSocios)
         Me.Controls.Add(TelefonoLabel)
@@ -214,6 +229,7 @@ Partial Class choferes
         Me.Controls.Add(ApellidoLabel)
         Me.Controls.Add(Me.ApellidoTextBox)
         Me.Name = "choferes"
+        Me.ShowInTaskbar = False
         Me.Text = "choferes"
         CType(Me.ChoferBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.Database1DataSet, System.ComponentModel.ISupportInitialize).EndInit()
@@ -234,4 +250,5 @@ Partial Class choferes
     Friend WithEvents ButtonSocios As System.Windows.Forms.Button
     Friend WithEvents Button1 As System.Windows.Forms.Button
     Friend WithEvents ToolTip1 As System.Windows.Forms.ToolTip
+    Friend WithEvents Button2 As System.Windows.Forms.Button
 End Class

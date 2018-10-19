@@ -38,9 +38,12 @@ Partial Class Inicio
         Me.LiquidacionCtaCteToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ModificarChoferesToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.AyudaToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ManualDeUsuarioToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ContactoToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ConfiguracionToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.CrearUsuariosToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ModificarValoresToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.CerrarSesionToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.LiquidacionCtaCteToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
         Me.DgvEstado = New System.Windows.Forms.DataGridView()
         Me.DgvReserva = New System.Windows.Forms.DataGridView()
@@ -49,13 +52,16 @@ Partial Class Inicio
         Me.TableAdapterManager = New pruebaBD.Database1DataSetTableAdapters.TableAdapterManager()
         Me.ViajesTableAdapter = New pruebaBD.Database1DataSetTableAdapters.ViajesTableAdapter()
         Me.ToolTip1 = New System.Windows.Forms.ToolTip(Me.components)
-        Me.CerrarSesionToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.Button1 = New System.Windows.Forms.Button()
         Me.BtnVehiculos = New System.Windows.Forms.Button()
         Me.BtnChoferes = New System.Windows.Forms.Button()
         Me.BtnSocio = New System.Windows.Forms.Button()
         Me.BtnViajes = New System.Windows.Forms.Button()
         Me.ToolTip2 = New System.Windows.Forms.ToolTip(Me.components)
+        Me.Label1 = New System.Windows.Forms.Label()
+        Me.Label2 = New System.Windows.Forms.Label()
+        Me.Timer1 = New System.Windows.Forms.Timer(Me.components)
+        Me.Label3 = New System.Windows.Forms.Label()
         Me.MenuStrip1.SuspendLayout()
         CType(Me.DgvEstado, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.DgvReserva, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -88,19 +94,19 @@ Partial Class Inicio
         'SociosF2ToolStripMenuItem
         '
         Me.SociosF2ToolStripMenuItem.Name = "SociosF2ToolStripMenuItem"
-        Me.SociosF2ToolStripMenuItem.Size = New System.Drawing.Size(139, 22)
+        Me.SociosF2ToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
         Me.SociosF2ToolStripMenuItem.Text = "Socios     F2"
         '
         'ChoferesF3ToolStripMenuItem
         '
         Me.ChoferesF3ToolStripMenuItem.Name = "ChoferesF3ToolStripMenuItem"
-        Me.ChoferesF3ToolStripMenuItem.Size = New System.Drawing.Size(139, 22)
+        Me.ChoferesF3ToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
         Me.ChoferesF3ToolStripMenuItem.Text = "Choferes F3"
         '
         'VehiculosF4ToolStripMenuItem
         '
         Me.VehiculosF4ToolStripMenuItem.Name = "VehiculosF4ToolStripMenuItem"
-        Me.VehiculosF4ToolStripMenuItem.Size = New System.Drawing.Size(139, 22)
+        Me.VehiculosF4ToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
         Me.VehiculosF4ToolStripMenuItem.Text = "Vehiculos F4"
         '
         'VerToolStripMenuItem
@@ -156,9 +162,22 @@ Partial Class Inicio
         '
         'AyudaToolStripMenuItem
         '
+        Me.AyudaToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ManualDeUsuarioToolStripMenuItem, Me.ContactoToolStripMenuItem})
         Me.AyudaToolStripMenuItem.Name = "AyudaToolStripMenuItem"
         Me.AyudaToolStripMenuItem.Size = New System.Drawing.Size(53, 20)
         Me.AyudaToolStripMenuItem.Text = "Ayuda"
+        '
+        'ManualDeUsuarioToolStripMenuItem
+        '
+        Me.ManualDeUsuarioToolStripMenuItem.Name = "ManualDeUsuarioToolStripMenuItem"
+        Me.ManualDeUsuarioToolStripMenuItem.Size = New System.Drawing.Size(172, 22)
+        Me.ManualDeUsuarioToolStripMenuItem.Text = "Manual de usuario"
+        '
+        'ContactoToolStripMenuItem
+        '
+        Me.ContactoToolStripMenuItem.Name = "ContactoToolStripMenuItem"
+        Me.ContactoToolStripMenuItem.Size = New System.Drawing.Size(172, 22)
+        Me.ContactoToolStripMenuItem.Text = "Contacto"
         '
         'ConfiguracionToolStripMenuItem
         '
@@ -178,6 +197,12 @@ Partial Class Inicio
         Me.ModificarValoresToolStripMenuItem.Name = "ModificarValoresToolStripMenuItem"
         Me.ModificarValoresToolStripMenuItem.Size = New System.Drawing.Size(165, 22)
         Me.ModificarValoresToolStripMenuItem.Text = "Modificar Valores"
+        '
+        'CerrarSesionToolStripMenuItem
+        '
+        Me.CerrarSesionToolStripMenuItem.Name = "CerrarSesionToolStripMenuItem"
+        Me.CerrarSesionToolStripMenuItem.Size = New System.Drawing.Size(165, 22)
+        Me.CerrarSesionToolStripMenuItem.Text = "Cerrar Sesion"
         '
         'LiquidacionCtaCteToolStripMenuItem1
         '
@@ -231,12 +256,6 @@ Partial Class Inicio
         'ViajesTableAdapter
         '
         Me.ViajesTableAdapter.ClearBeforeFill = True
-        '
-        'CerrarSesionToolStripMenuItem
-        '
-        Me.CerrarSesionToolStripMenuItem.Name = "CerrarSesionToolStripMenuItem"
-        Me.CerrarSesionToolStripMenuItem.Size = New System.Drawing.Size(165, 22)
-        Me.CerrarSesionToolStripMenuItem.Text = "Cerrar Sesion"
         '
         'Button1
         '
@@ -303,12 +322,48 @@ Partial Class Inicio
         Me.ToolTip1.SetToolTip(Me.BtnViajes, "VIAJES")
         Me.BtnViajes.UseVisualStyleBackColor = True
         '
+        'Label1
+        '
+        Me.Label1.AutoSize = True
+        Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label1.Location = New System.Drawing.Point(260, 50)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(214, 31)
+        Me.Label1.TabIndex = 14
+        Me.Label1.Text = "Viajes en curso"
+        '
+        'Label2
+        '
+        Me.Label2.AutoSize = True
+        Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label2.Location = New System.Drawing.Point(268, 323)
+        Me.Label2.Name = "Label2"
+        Me.Label2.Size = New System.Drawing.Size(138, 31)
+        Me.Label2.TabIndex = 15
+        Me.Label2.Text = "Reservas"
+        '
+        'Timer1
+        '
+        Me.Timer1.Enabled = True
+        '
+        'Label3
+        '
+        Me.Label3.AutoSize = True
+        Me.Label3.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label3.Location = New System.Drawing.Point(26, 50)
+        Me.Label3.Name = "Label3"
+        Me.Label3.Size = New System.Drawing.Size(0, 31)
+        Me.Label3.TabIndex = 16
+        '
         'Inicio
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.SystemColors.Highlight
         Me.ClientSize = New System.Drawing.Size(1054, 627)
+        Me.Controls.Add(Me.Label3)
+        Me.Controls.Add(Me.Label2)
+        Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.DgvReserva)
         Me.Controls.Add(Me.DgvEstado)
@@ -319,7 +374,10 @@ Partial Class Inicio
         Me.Controls.Add(Me.MenuStrip1)
         Me.KeyPreview = True
         Me.MainMenuStrip = Me.MenuStrip1
+        Me.MaximizeBox = False
+        Me.MinimizeBox = False
         Me.Name = "Inicio"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Inicio"
         Me.MenuStrip1.ResumeLayout(False)
         Me.MenuStrip1.PerformLayout()
@@ -368,5 +426,11 @@ Partial Class Inicio
     Friend WithEvents CerrarSesionToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents Button1 As System.Windows.Forms.Button
     Friend WithEvents ToolTip2 As System.Windows.Forms.ToolTip
+    Friend WithEvents ManualDeUsuarioToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents ContactoToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents Label1 As System.Windows.Forms.Label
+    Friend WithEvents Label2 As System.Windows.Forms.Label
+    Friend WithEvents Timer1 As System.Windows.Forms.Timer
+    Friend WithEvents Label3 As System.Windows.Forms.Label
 
 End Class

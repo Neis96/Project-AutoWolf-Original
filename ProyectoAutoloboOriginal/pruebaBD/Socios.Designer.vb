@@ -185,6 +185,7 @@ Partial Class Socios
         'TextBoxDni
         '
         Me.TextBoxDni.Location = New System.Drawing.Point(127, 87)
+        Me.TextBoxDni.MaxLength = 8
         Me.TextBoxDni.Name = "TextBoxDni"
         Me.TextBoxDni.Size = New System.Drawing.Size(100, 20)
         Me.TextBoxDni.TabIndex = 41

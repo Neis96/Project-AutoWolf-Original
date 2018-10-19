@@ -360,6 +360,7 @@ Partial Class Vehiculos1
         'TextBoxDominio
         '
         Me.TextBoxDominio.Location = New System.Drawing.Point(83, 50)
+        Me.TextBoxDominio.MaxLength = 7
         Me.TextBoxDominio.Name = "TextBoxDominio"
         Me.TextBoxDominio.Size = New System.Drawing.Size(100, 20)
         Me.TextBoxDominio.TabIndex = 107

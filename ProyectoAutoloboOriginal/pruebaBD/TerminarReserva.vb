@@ -20,6 +20,7 @@
         TextBox1.Enabled = False
         IdSociosTextBox.Enabled = False
         Fecha_origenDateTimePicker.Value = Now
+        Fecha_destinoDateTimePicker.Value = Now
     End Sub
 
     Private Sub BtnActualizar_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles BtnActualizar.Click
