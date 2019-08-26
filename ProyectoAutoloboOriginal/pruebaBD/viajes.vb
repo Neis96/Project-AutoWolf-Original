@@ -101,4 +101,8 @@
     Private Sub BtnNuevo_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles BtnNuevo.Click
         Socios.Show()
     End Sub
+
+    Private Sub ComboBoxChofer_SelectedIndexChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles ComboBoxChofer.SelectedIndexChanged
+
+    End Sub
 End Class
