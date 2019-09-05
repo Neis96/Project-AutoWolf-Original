@@ -94,10 +94,10 @@
     <Compile Include="Ayuda.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="choferes.Designer.vb">
+    <Compile Include="Nuevo\choferes.Designer.vb">
       <DependentUpon>choferes.vb</DependentUpon>
     </Compile>
-    <Compile Include="choferes.vb">
+    <Compile Include="Nuevo\choferes.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="conexion.vb" />
@@ -115,10 +115,10 @@
     <Compile Include="Database1DataSet.vb">
       <DependentUpon>Database1DataSet.xsd</DependentUpon>
     </Compile>
-    <Compile Include="Finalizar Viaje.Designer.vb">
+    <Compile Include="Viajes\Finalizar Viaje.Designer.vb">
       <DependentUpon>Finalizar Viaje.vb</DependentUpon>
     </Compile>
-    <Compile Include="Finalizar Viaje.vb">
+    <Compile Include="Viajes\Finalizar Viaje.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Inicio.Designer.vb">
@@ -127,40 +127,40 @@
     <Compile Include="Inicio.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Liquidacion Chofer.Designer.vb">
+    <Compile Include="Facturacion\Liquidacion Chofer.Designer.vb">
       <DependentUpon>Liquidacion Chofer.vb</DependentUpon>
     </Compile>
-    <Compile Include="Liquidacion Chofer.vb">
+    <Compile Include="Facturacion\Liquidacion Chofer.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="LiquidacionCta.Designer.vb">
+    <Compile Include="Facturacion\LiquidacionCta.Designer.vb">
       <DependentUpon>LiquidacionCta.vb</DependentUpon>
     </Compile>
-    <Compile Include="LiquidacionCta.vb">
+    <Compile Include="Facturacion\LiquidacionCta.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Loggin.Designer.vb">
+    <Compile Include="Busqueda\Loggin\Loggin.Designer.vb">
       <DependentUpon>Loggin.vb</DependentUpon>
     </Compile>
-    <Compile Include="Loggin.vb">
+    <Compile Include="Busqueda\Loggin\Loggin.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="ModificarChofer.Designer.vb">
+    <Compile Include="Busqueda\Modificacion\ModificarChofer.Designer.vb">
       <DependentUpon>ModificarChofer.vb</DependentUpon>
     </Compile>
-    <Compile Include="ModificarChofer.vb">
+    <Compile Include="Busqueda\Modificacion\ModificarChofer.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="ModificarSocios.Designer.vb">
+    <Compile Include="Busqueda\Modificacion\ModificarSocios.Designer.vb">
       <DependentUpon>ModificarSocios.vb</DependentUpon>
     </Compile>
-    <Compile Include="ModificarSocios.vb">
+    <Compile Include="Busqueda\Modificacion\ModificarSocios.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="ModificarVehiculos.Designer.vb">
+    <Compile Include="Busqueda\Modificacion\ModificarVehiculos.Designer.vb">
       <DependentUpon>ModificarVehiculos.vb</DependentUpon>
     </Compile>
-    <Compile Include="ModificarVehiculos.vb">
+    <Compile Include="Busqueda\Modificacion\ModificarVehiculos.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Module1.vb" />
@@ -185,52 +185,52 @@
     <Compile Include="My Project\Vehiculos.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="RegistroUsuario.Designer.vb">
+    <Compile Include="Busqueda\Loggin\RegistroUsuario.Designer.vb">
       <DependentUpon>RegistroUsuario.vb</DependentUpon>
     </Compile>
-    <Compile Include="RegistroUsuario.vb">
+    <Compile Include="Busqueda\Loggin\RegistroUsuario.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Resumen Agencia.Designer.vb">
+    <Compile Include="Facturacion\Resumen\Resumen Agencia.Designer.vb">
       <DependentUpon>Resumen Agencia.vb</DependentUpon>
     </Compile>
-    <Compile Include="Resumen Agencia.vb">
+    <Compile Include="Facturacion\Resumen\Resumen Agencia.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Resumen Chofer.Designer.vb">
+    <Compile Include="Facturacion\Resumen\Resumen Chofer.Designer.vb">
       <DependentUpon>Resumen Chofer.vb</DependentUpon>
     </Compile>
-    <Compile Include="Resumen Chofer.vb">
+    <Compile Include="Facturacion\Resumen\Resumen Chofer.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="ResumenCtaCte.Designer.vb">
+    <Compile Include="Facturacion\Resumen\ResumenCtaCte.Designer.vb">
       <DependentUpon>ResumenCtaCte.vb</DependentUpon>
     </Compile>
-    <Compile Include="ResumenCtaCte.vb">
+    <Compile Include="Facturacion\Resumen\ResumenCtaCte.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Socios.Designer.vb">
+    <Compile Include="Nuevo\Socios.Designer.vb">
       <DependentUpon>Socios.vb</DependentUpon>
     </Compile>
-    <Compile Include="Socios.vb">
+    <Compile Include="Nuevo\Socios.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="TerminarReserva.Designer.vb">
+    <Compile Include="Viajes\TerminarReserva.Designer.vb">
       <DependentUpon>TerminarReserva.vb</DependentUpon>
     </Compile>
-    <Compile Include="TerminarReserva.vb">
+    <Compile Include="Viajes\TerminarReserva.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Vehiculos1.Designer.vb">
+    <Compile Include="Nuevo\Vehiculos1.Designer.vb">
       <DependentUpon>Vehiculos1.vb</DependentUpon>
     </Compile>
-    <Compile Include="Vehiculos1.vb">
+    <Compile Include="Nuevo\Vehiculos1.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="viajes.Designer.vb">
+    <Compile Include="Viajes\viajes.Designer.vb">
       <DependentUpon>viajes.vb</DependentUpon>
     </Compile>
-    <Compile Include="viajes.vb">
+    <Compile Include="Viajes\viajes.vb">
       <SubType>Form</SubType>
     </Compile>
   </ItemGroup>
@@ -238,34 +238,34 @@
     <EmbeddedResource Include="Ayuda.resx">
       <DependentUpon>Ayuda.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="choferes.resx">
+    <EmbeddedResource Include="Nuevo\choferes.resx">
       <DependentUpon>choferes.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Configuracion.resx">
       <DependentUpon>Configuracion.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Finalizar Viaje.resx">
+    <EmbeddedResource Include="Viajes\Finalizar Viaje.resx">
       <DependentUpon>Finalizar Viaje.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Inicio.resx">
       <DependentUpon>Inicio.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Liquidacion Chofer.resx">
+    <EmbeddedResource Include="Facturacion\Liquidacion Chofer.resx">
       <DependentUpon>Liquidacion Chofer.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="LiquidacionCta.resx">
+    <EmbeddedResource Include="Facturacion\LiquidacionCta.resx">
       <DependentUpon>LiquidacionCta.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Loggin.resx">
+    <EmbeddedResource Include="Busqueda\Loggin\Loggin.resx">
       <DependentUpon>Loggin.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="ModificarChofer.resx">
+    <EmbeddedResource Include="Busqueda\Modificacion\ModificarChofer.resx">
       <DependentUpon>ModificarChofer.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="ModificarSocios.resx">
+    <EmbeddedResource Include="Busqueda\Modificacion\ModificarSocios.resx">
       <DependentUpon>ModificarSocios.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="ModificarVehiculos.resx">
+    <EmbeddedResource Include="Busqueda\Modificacion\ModificarVehiculos.resx">
       <DependentUpon>ModificarVehiculos.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="My Project\Resources.resx">
@@ -277,28 +277,28 @@
     <EmbeddedResource Include="My Project\Vehiculos.resx">
       <DependentUpon>Vehiculos.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="RegistroUsuario.resx">
+    <EmbeddedResource Include="Busqueda\Loggin\RegistroUsuario.resx">
       <DependentUpon>RegistroUsuario.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Resumen Agencia.resx">
+    <EmbeddedResource Include="Facturacion\Resumen\Resumen Agencia.resx">
       <DependentUpon>Resumen Agencia.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Resumen Chofer.resx">
+    <EmbeddedResource Include="Facturacion\Resumen\Resumen Chofer.resx">
       <DependentUpon>Resumen Chofer.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="ResumenCtaCte.resx">
+    <EmbeddedResource Include="Facturacion\Resumen\ResumenCtaCte.resx">
       <DependentUpon>ResumenCtaCte.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Socios.resx">
+    <EmbeddedResource Include="Nuevo\Socios.resx">
       <DependentUpon>Socios.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="TerminarReserva.resx">
+    <EmbeddedResource Include="Viajes\TerminarReserva.resx">
       <DependentUpon>TerminarReserva.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Vehiculos1.resx">
+    <EmbeddedResource Include="Nuevo\Vehiculos1.resx">
       <DependentUpon>Vehiculos1.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="viajes.resx">
+    <EmbeddedResource Include="Viajes\viajes.resx">
       <DependentUpon>viajes.vb</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
